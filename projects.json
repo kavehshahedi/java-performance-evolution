@@ -1,0 +1,62 @@
+[
+    {
+        "name": "hdrhistogram",
+        "git_url": "https://github.com/HdrHistogram/HdrHistogram"
+    },
+    {
+        "name": "jctools",
+        "git_url": "https://github.com/JCTools/JCTools"
+    },
+    {
+        "name": "simpleflatmapper",
+        "git_url": "https://github.com/arnaudroger/SimpleFlatMapper"
+    },
+    {
+        "name": "objenesis",
+        "git_url": "https://github.com/easymock/objenesis"
+    },
+    {
+        "name": "apm-agent-java",
+        "git_url": "https://github.com/elastic/apm-agent-java"
+    },
+    {
+        "name": "jetty",
+        "git_url": "https://github.com/eclipse/jetty.project"
+    },
+    {
+        "name": "netty",
+        "git_url": "https://github.com/netty/netty"
+    },
+    {
+        "name": "zipkin",
+        "git_url": "https://github.com/openzipkin/zipkin"
+    },
+    {
+        "name": "client-java",
+        "git_url": "https://github.com/prometheus/client_java"
+    },
+    {
+        "name": "chronicle-core",
+        "git_url": "https://github.com/OpenHFT/Chronicle-Core"
+    },
+    {
+        "name": "fastjson2",
+        "git_url": "https://github.com/alibaba/fastjson2"
+    },
+    {
+        "name": "jdbi",
+        "git_url": "https://github.com/jdbi/jdbi"
+    },
+    {
+        "name": "feign",
+        "git_url": "https://github.com/OpenFeign/feign"
+    },
+    {
+        "name": "protostuff",
+        "git_url": "https://github.com/protostuff/protostuff"
+    },
+    {
+        "name": "jersey",
+        "git_url": "https://github.com/eclipse-ee4j/jersey"
+    }
+]

@@ -1,0 +1,2658 @@
+[
+    {
+        "commit": "cb59fd8e61c05e25cad83c7b727c941a8273d4d1",
+        "previous_commit": "5b6c642badd85b962cd7be09081e4738a9cf2c48",
+        "date": 1487654171,
+        "releases": {
+            "previous": "cb59fd8e61c05e25cad83c7b727c941a8273d4d1",
+            "next": "cb59fd8e61c05e25cad83c7b727c941a8273d4d1"
+        },
+        "commit_message": "Fixes concurrency race with auto-ranging in ConcurrentDoubleHistogram:\n\n- Moves integerToDouble (i2d) conversion tracking purely to int histograms\n- Adds new double-converting value recording methods (package local) to allow WRP use of i2d ratios in concurrent cases\n- Adds new i2d ratio parameters in shift methods (package local) to allow DoubleHistogram to indicate ratio shift with values shift\n- Adds i2d ratio tracking to active an inactive portions of ConcurrentHistogram\n- Applies i2d ratio to inactive part as part of WRP flip\n- Uses active i2d ratio in recording in ConcurrentHistogram\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "cb59fd8e61c05e25cad83c7b727c941a8273d4d1": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double integerToDoubleValueConversionRatio)",
+                    "public void org.HdrHistogram.AbstractHistogram.shiftValuesLeft(final int numberOfBinaryOrdersOfMagnitude)",
+                    "public void org.HdrHistogram.AbstractHistogram.shiftValuesRight(final int numberOfBinaryOrdersOfMagnitude)",
+                    "void org.HdrHistogram.AbstractHistogram.shiftValuesRight(final int numberOfBinaryOrdersOfMagnitude, final double newIntegerToDoubleValueConversionRatio)",
+                    "void org.HdrHistogram.AbstractHistogram.shiftValuesLeft(final int numberOfBinaryOrdersOfMagnitude, final double newIntegerToDoubleValueConversionRatio)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public double org.HdrHistogram.DoubleHistogram.getStdDeviation()",
+                    "public double org.HdrHistogram.DoubleHistogram.medianEquivalentValue(final double value)",
+                    "public long org.HdrHistogram.DoubleHistogram.getCountAtValue(final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.getCountBetweenValues(final double lowValue, final double highValue)",
+                    "private void org.HdrHistogram.DoubleHistogram.shiftCoveredRangeToTheLeft(final int numberOfBinaryOrdersOfMagnitude)",
+                    "public void org.HdrHistogram.DoubleHistogram.subtract(final DoubleHistogram otherHistogram)",
+                    "public double org.HdrHistogram.DoubleHistogram.getValueAtPercentile(final double percentile)",
+                    "public double org.HdrHistogram.DoubleHistogram.lowestEquivalentValue(final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.sizeOfEquivalentValueRange(final double value)",
+                    "public void org.HdrHistogram.DoubleHistogram.add(final DoubleHistogram fromHistogram)",
+                    "public double org.HdrHistogram.DoubleHistogram.getMinValue()",
+                    "public void org.HdrHistogram.DoubleHistogram.addWhileCorrectingForCoordinatedOmission(final DoubleHistogram fromHistogram, final double expectedIntervalBetweenValueSamples)",
+                    "public double org.HdrHistogram.DoubleHistogram.nextNonEquivalentValue(final double value)",
+                    "private void org.HdrHistogram.DoubleHistogram.setTrackableValueRange(final double lowestValueInAutoRange, final double highestValueInAutoRange)",
+                    "public double org.HdrHistogram.DoubleHistogram.getIntegerToDoubleValueConversionRatio()",
+                    "private void org.HdrHistogram.DoubleHistogram.recordCountAtValue(final long count, final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.getPercentileAtOrBelowValue(final double value)",
+                    "public void org.HdrHistogram.DoubleHistogram.outputPercentileDistribution(final PrintStream printStream, final int percentileTicksPerHalfDistance, final Double outputValueUnitScalingRatio, final boolean useCsvFormat)",
+                    "public double org.HdrHistogram.DoubleHistogram.getMaxValue()",
+                    "public double org.HdrHistogram.DoubleHistogram.getMinNonZeroValue()",
+                    "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.getMean()",
+                    "private void org.HdrHistogram.DoubleHistogram.shiftCoveredRangeToTheRight(final int numberOfBinaryOrdersOfMagnitude)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleLinearIterator.java": [
+                    "public void org.HdrHistogram.DoubleLinearIterator.reset(final double valueUnitsPerBucket)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleLogarithmicIterator.java": [
+                    "public void org.HdrHistogram.DoubleLogarithmicIterator.reset(final double valueUnitsInFirstBucket, final double logBase)"
+                ]
+            },
+            "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double integerToDoubleValueConversionRatio)",
+                    "public void org.HdrHistogram.AbstractHistogram.shiftValuesLeft(final int numberOfBinaryOrdersOfMagnitude)",
+                    "public void org.HdrHistogram.AbstractHistogram.shiftValuesRight(final int numberOfBinaryOrdersOfMagnitude)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public double org.HdrHistogram.DoubleHistogram.getStdDeviation()",
+                    "public double org.HdrHistogram.DoubleHistogram.medianEquivalentValue(final double value)",
+                    "public long org.HdrHistogram.DoubleHistogram.getCountAtValue(final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.getCountBetweenValues(final double lowValue, final double highValue)",
+                    "private void org.HdrHistogram.DoubleHistogram.shiftCoveredRangeToTheLeft(final int numberOfBinaryOrdersOfMagnitude)",
+                    "public void org.HdrHistogram.DoubleHistogram.subtract(final DoubleHistogram otherHistogram)",
+                    "public double org.HdrHistogram.DoubleHistogram.getValueAtPercentile(final double percentile)",
+                    "public double org.HdrHistogram.DoubleHistogram.lowestEquivalentValue(final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.sizeOfEquivalentValueRange(final double value)",
+                    "public void org.HdrHistogram.DoubleHistogram.add(final DoubleHistogram fromHistogram)",
+                    "public double org.HdrHistogram.DoubleHistogram.getMinValue()",
+                    "public void org.HdrHistogram.DoubleHistogram.addWhileCorrectingForCoordinatedOmission(final DoubleHistogram fromHistogram, final double expectedIntervalBetweenValueSamples)",
+                    "public double org.HdrHistogram.DoubleHistogram.nextNonEquivalentValue(final double value)",
+                    "private void org.HdrHistogram.DoubleHistogram.setTrackableValueRange(final double lowestValueInAutoRange, final double highestValueInAutoRange)",
+                    "public double org.HdrHistogram.DoubleHistogram.getIntegerToDoubleValueConversionRatio()",
+                    "private void org.HdrHistogram.DoubleHistogram.recordCountAtValue(final long count, final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.getPercentileAtOrBelowValue(final double value)",
+                    "public void org.HdrHistogram.DoubleHistogram.outputPercentileDistribution(final PrintStream printStream, final int percentileTicksPerHalfDistance, final Double outputValueUnitScalingRatio, final boolean useCsvFormat)",
+                    "public double org.HdrHistogram.DoubleHistogram.getMaxValue()",
+                    "public double org.HdrHistogram.DoubleHistogram.getMinNonZeroValue()",
+                    "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(final double value)",
+                    "public double org.HdrHistogram.DoubleHistogram.getMean()",
+                    "private void org.HdrHistogram.DoubleHistogram.shiftCoveredRangeToTheRight(final int numberOfBinaryOrdersOfMagnitude)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleLinearIterator.java": [
+                    "public void org.HdrHistogram.DoubleLinearIterator.reset(final double valueUnitsPerBucket)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleLogarithmicIterator.java": [
+                    "public void org.HdrHistogram.DoubleLogarithmicIterator.reset(final double valueUnitsInFirstBucket, final double logBase)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "fe288b16baaabca43d0503a7a558696b1013cea6",
+        "previous_commit": "52ef7ff855fffccd5b090eb954b9ffca17178a92",
+        "date": 1572859691,
+        "releases": {
+            "previous": "fe288b16baaabca43d0503a7a558696b1013cea6",
+            "next": "fe288b16baaabca43d0503a7a558696b1013cea6"
+        },
+        "commit_message": "Introduce packed histogram variants (#162)\n\n* Add PackedLongArray and ConcurrentPackedLongArray\r\n\r\n* Add packed histogram variants\r\n\r\n* Updated recorder variants to support packed option\r\n\r\n* - Update tests to use JUnit5\r\n   - Make most tests parametrized to cover various histogram variants\r\n   - Add packed histogram tests\r\n\r\n* Make Base64Helper package private\r\n\r\n\r\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "fe288b16baaabca43d0503a7a558696b1013cea6": {
+                "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java": [
+                    "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()"
+                ],
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "void org.HdrHistogram.ConcurrentHistogram.incrementCountAtIndex(final int index)",
+                    "private void org.HdrHistogram.ConcurrentHistogram.setNormalizingIndexOffsetForInactive(final int newNormalizingIndexOffset, final int shiftedAmount, final boolean lowestHalfBucketPopulated, final double newIntegerToDoubleValueConversionRatio)",
+                    "public void org.HdrHistogram.ConcurrentHistogram.recordConvertedDoubleValueWithCount(final double value, final long count)",
+                    "private void org.HdrHistogram.ConcurrentHistogram.setNormalizingIndexOffset( final int newNormalizingIndexOffset, final int shiftedAmount, final boolean lowestHalfBucketPopulated, final double newIntegerToDoubleValueConversionRatio)",
+                    "void org.HdrHistogram.ConcurrentHistogram.setIntegerToDoubleValueConversionRatio(final double integerToDoubleValueConversionRatio)",
+                    "void org.HdrHistogram.ConcurrentHistogram.resize(final long newHighestTrackableValue)",
+                    "void org.HdrHistogram.ConcurrentHistogram.recordConvertedDoubleValue(final double value)",
+                    "void org.HdrHistogram.ConcurrentHistogram.addToCountAtIndex(final int index, final long value)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleRecorder.java": [
+                    "private void org.HdrHistogram.DoubleRecorder.performIntervalSample()",
+                    "public synchronized DoubleHistogram org.HdrHistogram.DoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.DoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/Recorder.java": [
+                    "private void org.HdrHistogram.Recorder.performIntervalSample()",
+                    "private void org.HdrHistogram.Recorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterDoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.SingleWriterDoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterDoubleRecorder.performIntervalSample()",
+                    "private void org.HdrHistogram.SingleWriterDoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterRecorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.SingleWriterRecorder.getIntervalHistogram(Histogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterRecorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterRecorder.performIntervalSample()"
+                ]
+            },
+            "52ef7ff855fffccd5b090eb954b9ffca17178a92": {
+                "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java": [
+                    "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()"
+                ],
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "void org.HdrHistogram.ConcurrentHistogram.incrementCountAtIndex(final int index)",
+                    "private void org.HdrHistogram.ConcurrentHistogram.setNormalizingIndexOffsetForInactive(final int newNormalizingIndexOffset, final int shiftedAmount, final boolean lowestHalfBucketPopulated, final double newIntegerToDoubleValueConversionRatio)",
+                    "public void org.HdrHistogram.ConcurrentHistogram.recordConvertedDoubleValueWithCount(final double value, final long count)",
+                    "private void org.HdrHistogram.ConcurrentHistogram.setNormalizingIndexOffset( final int newNormalizingIndexOffset, final int shiftedAmount, final boolean lowestHalfBucketPopulated, final double newIntegerToDoubleValueConversionRatio)",
+                    "void org.HdrHistogram.ConcurrentHistogram.setIntegerToDoubleValueConversionRatio(final double integerToDoubleValueConversionRatio)",
+                    "void org.HdrHistogram.ConcurrentHistogram.resize(final long newHighestTrackableValue)",
+                    "void org.HdrHistogram.ConcurrentHistogram.recordConvertedDoubleValue(final double value)",
+                    "void org.HdrHistogram.ConcurrentHistogram.addToCountAtIndex(final int index, final long value)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleRecorder.java": [
+                    "private void org.HdrHistogram.DoubleRecorder.performIntervalSample()",
+                    "public synchronized DoubleHistogram org.HdrHistogram.DoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.DoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/Recorder.java": [
+                    "private void org.HdrHistogram.Recorder.performIntervalSample()",
+                    "private void org.HdrHistogram.Recorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterDoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.SingleWriterDoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterDoubleRecorder.performIntervalSample()",
+                    "private void org.HdrHistogram.SingleWriterDoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterRecorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.SingleWriterRecorder.getIntervalHistogram(Histogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterRecorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterRecorder.performIntervalSample()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "ad76bb512b510a37f6a55fdea32f8f3dd3355771",
+        "previous_commit": "5071aec2809d7d2f0564c1e81ce73c6d9e470731",
+        "date": 1596905914,
+        "releases": {
+            "previous": "ad76bb512b510a37f6a55fdea32f8f3dd3355771",
+            "next": "ad76bb512b510a37f6a55fdea32f8f3dd3355771"
+        },
+        "commit_message": "Correct spelling\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "ad76bb512b510a37f6a55fdea32f8f3dd3355771": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleRecorder.java": [
+                    "private void org.HdrHistogram.DoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforceContainingInstance)",
+                    "public synchronized DoubleHistogram org.HdrHistogram.DoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforceContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogWriter.java": [
+                    "public synchronized void org.HdrHistogram.HistogramLogWriter.outputIntervalHistogram(final double startTimeStampSec, final double endTimeStampSec, final EncodableHistogram histogram, final double maxValueUnitRatio)"
+                ],
+                "src/main/java/org/HdrHistogram/Recorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.Recorder.getIntervalHistogram(Histogram histogramToRecycle, boolean enforceContainingInstance)",
+                    "private void org.HdrHistogram.Recorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforceContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterDoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.SingleWriterDoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforceContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterDoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforceContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterRecorder.java": [
+                    "private void org.HdrHistogram.SingleWriterRecorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforceContainingInstance)",
+                    "public synchronized Histogram org.HdrHistogram.SingleWriterRecorder.getIntervalHistogram(Histogram histogramToRecycle, boolean enforceContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [
+                    "private int org.HdrHistogram.packedarray.AbstractPackedArrayContext.findFirstPotentiallyPopulatedVirtualIndexStartingAt(final int startingVirtualIndex)",
+                    "private void org.HdrHistogram.packedarray.AbstractPackedArrayContext.findFirstNonZeroValueVirtualIndexStartingAt(final int startingVirtualIndex)",
+                    "public boolean org.HdrHistogram.packedarray.AbstractPackedArrayContext.hasNext()",
+                    "public IterationValue org.HdrHistogram.packedarray.AbstractPackedArrayContext.next()"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedLongArray.java": [
+                    "public boolean org.HdrHistogram.packedarray.AbstractPackedLongArray.hasNext()",
+                    "public Long org.HdrHistogram.packedarray.AbstractPackedLongArray.next()"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/PackedArrayRecorder.java": [
+                    "private void org.HdrHistogram.packedarray.PackedArrayRecorder.validateFitAsReplacementArray(final PackedLongArray replacementArray, final boolean enforceContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/PackedArraySingleWriterRecorder.java": [
+                    "private void org.HdrHistogram.packedarray.PackedArraySingleWriterRecorder.validateFitAsReplacementArray(final PackedLongArray replacementArray, final boolean enforceContainingInstance)"
+                ]
+            },
+            "5071aec2809d7d2f0564c1e81ce73c6d9e470731": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.DoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.DoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogWriter.java": [
+                    "public synchronized void org.HdrHistogram.HistogramLogWriter.outputIntervalHistogram(final double startTimeStampSec, final double endTimeStampSec, final EncodableHistogram histogram, final double maxValueUnitRatio)"
+                ],
+                "src/main/java/org/HdrHistogram/Recorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.Recorder.getIntervalHistogram(Histogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.Recorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterDoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.SingleWriterDoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterDoubleRecorder.validateFitAsReplacementHistogram(DoubleHistogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterRecorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.SingleWriterRecorder.getIntervalHistogram(Histogram histogramToRecycle, boolean enforeContainingInstance)",
+                    "private void org.HdrHistogram.SingleWriterRecorder.validateFitAsReplacementHistogram(Histogram replacementHistogram, boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [
+                    "private int org.HdrHistogram.packedarray.AbstractPackedArrayContext.findFirstPotentiallyPopulatedVirtualIndexStartingAt(final int startingVirtualIndex)",
+                    "private void org.HdrHistogram.packedarray.AbstractPackedArrayContext.findFirstNonZeroValueVirtualIndexStartingAt(final int startingVirtualIndex)",
+                    "public boolean org.HdrHistogram.packedarray.AbstractPackedArrayContext.hasNext()",
+                    "public IterationValue org.HdrHistogram.packedarray.AbstractPackedArrayContext.next()"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedLongArray.java": [
+                    "public boolean org.HdrHistogram.packedarray.AbstractPackedLongArray.hasNext()",
+                    "public Long org.HdrHistogram.packedarray.AbstractPackedLongArray.next()"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/PackedArrayRecorder.java": [
+                    "private void org.HdrHistogram.packedarray.PackedArrayRecorder.validateFitAsReplacementArray(final PackedLongArray replacementArray, final boolean enforeContainingInstance)"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/PackedArraySingleWriterRecorder.java": [
+                    "private void org.HdrHistogram.packedarray.PackedArraySingleWriterRecorder.validateFitAsReplacementArray(final PackedLongArray replacementArray, final boolean enforeContainingInstance)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "e1c1d608fc185fac1f7c42412f4321cacb7993cb",
+        "previous_commit": "7ebdb5e8ef3ff93a3ada16e053748babfc2d18e1",
+        "date": 1572910568,
+        "releases": {
+            "previous": "e1c1d608fc185fac1f7c42412f4321cacb7993cb",
+            "next": "e1c1d608fc185fac1f7c42412f4321cacb7993cb"
+        },
+        "commit_message": "Change class hierarchy, make ConcurrentPackedLongArray a subclass of PackedLongArray\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "e1c1d608fc185fac1f7c42412f4321cacb7993cb": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [
+                    "boolean org.HdrHistogram.packedarray.AbstractPackedArrayContext.isPacked()"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedLongArray.java": [
+                    "public String org.HdrHistogram.packedarray.AbstractPackedLongArray.toString()",
+                    "public int org.HdrHistogram.packedarray.AbstractPackedLongArray.length()",
+                    "public int org.HdrHistogram.packedarray.AbstractPackedLongArray.getPhysicalLength()",
+                    "public void org.HdrHistogram.packedarray.AbstractPackedLongArray.set(final int index, final long value)",
+                    "public long org.HdrHistogram.packedarray.AbstractPackedLongArray.get(final int index)",
+                    "public Iterable<IterationValue> org.HdrHistogram.packedarray.AbstractPackedLongArray.nonZeroValues()",
+                    "public void org.HdrHistogram.packedarray.AbstractPackedLongArray.add(final int index, final long value)"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/ConcurrentPackedLongArray.java": [
+                    "public void org.HdrHistogram.packedarray.ConcurrentPackedLongArray.setVirtualLength(final int newVirtualArrayLength)",
+                    "void org.HdrHistogram.packedarray.ConcurrentPackedLongArray.resizeStorageArray(int newPhysicalLengthInLongs)",
+                    "void org.HdrHistogram.packedarray.ConcurrentPackedLongArray.clearContents()"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/PackedLongArray.java": [
+                    "public void org.HdrHistogram.packedarray.PackedLongArray.setVirtualLength(final int newVirtualArrayLength)",
+                    "void org.HdrHistogram.packedarray.PackedLongArray.resizeStorageArray(int newPhysicalLengthInLongs)",
+                    "void org.HdrHistogram.packedarray.PackedLongArray.clearContents()"
+                ]
+            },
+            "7ebdb5e8ef3ff93a3ada16e053748babfc2d18e1": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [],
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedLongArray.java": [
+                    "public String org.HdrHistogram.packedarray.AbstractPackedLongArray.toString()",
+                    "public int org.HdrHistogram.packedarray.AbstractPackedLongArray.length()",
+                    "public int org.HdrHistogram.packedarray.AbstractPackedLongArray.getPhysicalLength()",
+                    "public void org.HdrHistogram.packedarray.AbstractPackedLongArray.set(final int index, final long value)",
+                    "public long org.HdrHistogram.packedarray.AbstractPackedLongArray.get(final int index)",
+                    "public Iterable<IterationValue> org.HdrHistogram.packedarray.AbstractPackedLongArray.nonZeroValues()",
+                    "public void org.HdrHistogram.packedarray.AbstractPackedLongArray.add(final int index, final long value)"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/ConcurrentPackedLongArray.java": [
+                    "public void org.HdrHistogram.packedarray.ConcurrentPackedLongArray.setVirtualLength(final int newVirtualArrayLength)",
+                    "void org.HdrHistogram.packedarray.ConcurrentPackedLongArray.resizeStorageArray(int newPhysicalLengthInLongs)",
+                    "void org.HdrHistogram.packedarray.ConcurrentPackedLongArray.clearContents()"
+                ],
+                "src/main/java/org/HdrHistogram/packedarray/PackedLongArray.java": [
+                    "public void org.HdrHistogram.packedarray.PackedLongArray.setVirtualLength(final int newVirtualArrayLength)",
+                    "void org.HdrHistogram.packedarray.PackedLongArray.resizeStorageArray(int newPhysicalLengthInLongs)",
+                    "void org.HdrHistogram.packedarray.PackedLongArray.clearContents()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "bc7aef6c231e1215d5be1b38074203694b71ebaf",
+        "previous_commit": "6debea175f7882e60ea30521482e6f39a9c1236c",
+        "date": 1446746303,
+        "releases": {
+            "previous": "bc7aef6c231e1215d5be1b38074203694b71ebaf",
+            "next": "bc7aef6c231e1215d5be1b38074203694b71ebaf"
+        },
+        "commit_message": "Corrected off-by-one starting behavior for Linear and Logarithmic iterators:\n\n - First interation now including only the \"0th\" iteration range, and not 0+1 as it did before.\n\n - Logical termination conditions remain the same, but logic is now stated in terms of the\n    highest/lowest values of the current iteration step, rather than  levels of the next iteration step.\n\n - Adjusted tests to match. Some tests requied a +/- 1 change (in either count or index) due to this edge behavior.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "bc7aef6c231e1215d5be1b38074203694b71ebaf": {
+                "src/main/java/org/HdrHistogram/LinearIterator.java": [
+                    "public boolean org.HdrHistogram.LinearIterator.hasNext()",
+                    "void org.HdrHistogram.LinearIterator.incrementIterationLevel()",
+                    "boolean org.HdrHistogram.LinearIterator.reachedIterationLevel()",
+                    "long org.HdrHistogram.LinearIterator.getValueIteratedTo()",
+                    "private void org.HdrHistogram.LinearIterator.reset(final AbstractHistogram histogram, final long valueUnitsPerBucket)"
+                ],
+                "src/main/java/org/HdrHistogram/LogarithmicIterator.java": [
+                    "public boolean org.HdrHistogram.LogarithmicIterator.hasNext()",
+                    "long org.HdrHistogram.LogarithmicIterator.getValueIteratedTo()",
+                    "void org.HdrHistogram.LogarithmicIterator.incrementIterationLevel()",
+                    "boolean org.HdrHistogram.LogarithmicIterator.reachedIterationLevel()",
+                    "private void org.HdrHistogram.LogarithmicIterator.reset(final AbstractHistogram histogram, final long valueUnitsInFirstBucket, final double logBase)"
+                ]
+            },
+            "6debea175f7882e60ea30521482e6f39a9c1236c": {
+                "src/main/java/org/HdrHistogram/LinearIterator.java": [
+                    "public boolean org.HdrHistogram.LinearIterator.hasNext()",
+                    "void org.HdrHistogram.LinearIterator.incrementIterationLevel()",
+                    "boolean org.HdrHistogram.LinearIterator.reachedIterationLevel()",
+                    "long org.HdrHistogram.LinearIterator.getValueIteratedTo()",
+                    "private void org.HdrHistogram.LinearIterator.reset(final AbstractHistogram histogram, final long valueUnitsPerBucket)"
+                ],
+                "src/main/java/org/HdrHistogram/LogarithmicIterator.java": [
+                    "public boolean org.HdrHistogram.LogarithmicIterator.hasNext()",
+                    "long org.HdrHistogram.LogarithmicIterator.getValueIteratedTo()",
+                    "void org.HdrHistogram.LogarithmicIterator.incrementIterationLevel()",
+                    "boolean org.HdrHistogram.LogarithmicIterator.reachedIterationLevel()",
+                    "private void org.HdrHistogram.LogarithmicIterator.reset(final AbstractHistogram histogram, final long valueUnitsInFirstBucket, final double logBase)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "e0b6c609fe7b489a8ab716dd640c8d39b7d7a6ce",
+        "previous_commit": "32e62f68d9e277850807f2b538bcab5971f11a55",
+        "date": 1441811248,
+        "releases": {
+            "previous": "e0b6c609fe7b489a8ab716dd640c8d39b7d7a6ce",
+            "next": "e0b6c609fe7b489a8ab716dd640c8d39b7d7a6ce"
+        },
+        "commit_message": "Changes V2 encoding from TZLE (traling zero length) to ZLE (zero length). Negative counts simply represent repeated zeros.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "e0b6c609fe7b489a8ab716dd640c8d39b7d7a6ce": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+                    "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+                    "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+                    "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()"
+                ]
+            },
+            "32e62f68d9e277850807f2b538bcab5971f11a55": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+                    "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+                    "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+                    "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "c2f33887b56530fd4cfa10a541697288bb1af794",
+        "previous_commit": "fc382620affc0fedb79d726b6f0c4e4f9bced784",
+        "date": 1454632636,
+        "releases": {
+            "previous": "c2f33887b56530fd4cfa10a541697288bb1af794",
+            "next": "c2f33887b56530fd4cfa10a541697288bb1af794"
+        },
+        "commit_message": "copy/add related tweaks:\n\n - Keep Max and minNonZeroValue tracking in whole unitMagnitude units. This avoids\n    situations where copies or adds can end up with differing values of Max or\n    minNonZeroValue for identical data.\n\n - Simplify subtract to drop \"optimized\" case when array layouts match, in order to avoid\n    edge cases with Max and minNonZeroValue tracking.\n\n - Force concurrent histogram adds to use individual value recordings instead of \"optimized\"\n    path that is used when array layouts match. Needed to avoid races when other concurrent\n    histogram can be resized in the middle of the add operation. [this resize is possible for other\n    histograms too, but adds in the presense of concurrent recording are not valid for those].\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "c2f33887b56530fd4cfa10a541697288bb1af794": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)",
+                    "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(final long minNonZeroValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(final long value)",
+                    "public void org.HdrHistogram.AbstractHistogram.add(final AbstractHistogram otherHistogram)",
+                    "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(final long maxValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)"
+                ]
+            },
+            "fc382620affc0fedb79d726b6f0c4e4f9bced784": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)",
+                    "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(final long minNonZeroValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(final long value)",
+                    "public void org.HdrHistogram.AbstractHistogram.add(final AbstractHistogram otherHistogram)",
+                    "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(final long maxValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "3e30f0891536f7cbda44b1be3146158f72317800",
+        "previous_commit": "14d58c3d3e8c08892ee8654117857f04baa8f19a",
+        "date": 1462215996,
+        "releases": {
+            "previous": "3e30f0891536f7cbda44b1be3146158f72317800",
+            "next": "3e30f0891536f7cbda44b1be3146158f72317800"
+        },
+        "commit_message": "Adds optional \"Tag=tag\" text field to Histogram log files\n\n - EncodeableHistogram support optional tag association via getTag()/setTag()\n - HistogramLogReader will set tag if found in log file\n - HistogramLogWriter will output use Tag=tag field if tag is associated with histogram\n - HistogramLogProcessor will accept an optional -tag option (defaults to no tag)\n - HistogramLogProcessor supports -listtags option to list tags in an input file\n - Added tagged test file\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "3e30f0891536f7cbda44b1be3146158f72317800": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public void org.HdrHistogram.DoubleHistogram.setStartTimeStamp(final long timeStampMsec)",
+                    "public void org.HdrHistogram.DoubleHistogram.setEndTimeStamp(final long timeStampMsec)",
+                    "public long org.HdrHistogram.DoubleHistogram.getStartTimeStamp()",
+                    "public long org.HdrHistogram.DoubleHistogram.getEndTimeStamp()"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogWriter.java": [
+                    "public synchronized void org.HdrHistogram.HistogramLogWriter.outputIntervalHistogram(final double startTimeStampSec, final double endTimeStampSec, final EncodableHistogram histogram, final double maxValueUnitRatio)"
+                ]
+            },
+            "14d58c3d3e8c08892ee8654117857f04baa8f19a": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public void org.HdrHistogram.DoubleHistogram.setStartTimeStamp(final long timeStampMsec)",
+                    "public void org.HdrHistogram.DoubleHistogram.setEndTimeStamp(final long timeStampMsec)",
+                    "public long org.HdrHistogram.DoubleHistogram.getStartTimeStamp()",
+                    "public long org.HdrHistogram.DoubleHistogram.getEndTimeStamp()"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogWriter.java": [
+                    "public void org.HdrHistogram.HistogramLogWriter.outputIntervalHistogram(final double startTimeStampSec, final double endTimeStampSec, final EncodableHistogram histogram, final double maxValueUnitRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "2e9a4051ac7163c7a4f1f48540cc980d46e0fdd0",
+        "previous_commit": "3421897b51087d1e1b14fc561d2ca62da8dff468",
+        "date": 1441904072,
+        "releases": {
+            "previous": "2e9a4051ac7163c7a4f1f48540cc980d46e0fdd0",
+            "next": "2e9a4051ac7163c7a4f1f48540cc980d46e0fdd0"
+        },
+        "commit_message": "Cleanup for release. Removes ZLE control API. Code always encodes with V2 encoding, but can decode V1 and V0.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "2e9a4051ac7163c7a4f1f48540cc980d46e0fdd0": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "synchronized public int org.HdrHistogram.AbstractHistogram.encodeIntoCompressedByteBuffer( final ByteBuffer targetBuffer, final int compressionLevel)",
+                    "static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)",
+                    "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "synchronized public int org.HdrHistogram.AbstractHistogram.encodeIntoByteBuffer(final ByteBuffer buffer)",
+                    "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()"
+                ]
+            },
+            "3421897b51087d1e1b14fc561d2ca62da8dff468": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "synchronized public int org.HdrHistogram.AbstractHistogram.encodeIntoCompressedByteBuffer( final ByteBuffer targetBuffer, final int compressionLevel)",
+                    "static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)",
+                    "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "synchronized public int org.HdrHistogram.AbstractHistogram.encodeIntoByteBuffer(final ByteBuffer buffer)",
+                    "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "a8a41f329865c220bb6bf137146fe3f93ec7ac58",
+        "previous_commit": "07794264f62e5aed954c8513a279305bf5c460b0",
+        "date": 1562367038,
+        "releases": {
+            "previous": "a8a41f329865c220bb6bf137146fe3f93ec7ac58",
+            "next": "a8a41f329865c220bb6bf137146fe3f93ec7ac58"
+        },
+        "commit_message": "Cosmetic cleanups\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "a8a41f329865c220bb6bf137146fe3f93ec7ac58": {
+                "src/main/java/org/HdrHistogram/AtomicHistogram.java": [
+                    "public static AtomicHistogram org.HdrHistogram.AtomicHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "public static ConcurrentHistogram org.HdrHistogram.ConcurrentHistogram.decodeFromCompressedByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)",
+                    "public static ConcurrentHistogram org.HdrHistogram.ConcurrentHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/Histogram.java": [
+                    "public static Histogram org.HdrHistogram.Histogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/IntCountsHistogram.java": [
+                    "public static IntCountsHistogram org.HdrHistogram.IntCountsHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/ShortCountsHistogram.java": [
+                    "public static ShortCountsHistogram org.HdrHistogram.ShortCountsHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ]
+            },
+            "07794264f62e5aed954c8513a279305bf5c460b0": {
+                "src/main/java/org/HdrHistogram/AtomicHistogram.java": [
+                    "public static AtomicHistogram org.HdrHistogram.AtomicHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "public static ConcurrentHistogram org.HdrHistogram.ConcurrentHistogram.decodeFromCompressedByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)",
+                    "public static ConcurrentHistogram org.HdrHistogram.ConcurrentHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/Histogram.java": [
+                    "public static Histogram org.HdrHistogram.Histogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/IntCountsHistogram.java": [
+                    "public static IntCountsHistogram org.HdrHistogram.IntCountsHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ],
+                "src/main/java/org/HdrHistogram/ShortCountsHistogram.java": [
+                    "public static ShortCountsHistogram org.HdrHistogram.ShortCountsHistogram.decodeFromByteBuffer(final ByteBuffer buffer, final long minBarForHighestTrackableValue)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "c24ac346a6e66dfcec1e81a9d16e568648bc65c0",
+        "previous_commit": "ddadad81471562f2c9851ccc4d0d4f4747cca9d3",
+        "date": 1441767205,
+        "releases": {
+            "previous": "c24ac346a6e66dfcec1e81a9d16e568648bc65c0",
+            "next": "c24ac346a6e66dfcec1e81a9d16e568648bc65c0"
+        },
+        "commit_message": "Changes required byte count per word for TZLE with LEB128 + ZigZag to 9 bytes (from 16).\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+                    "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(final int cookie)",
+                    "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+                    "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)"
+                ]
+            },
+            "ddadad81471562f2c9851ccc4d0d4f4747cca9d3": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+                    "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(final int cookie)",
+                    "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+                    "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "32e62f68d9e277850807f2b538bcab5971f11a55",
+        "previous_commit": "c24ac346a6e66dfcec1e81a9d16e568648bc65c0",
+        "date": 1441772439,
+        "releases": {
+            "previous": "32e62f68d9e277850807f2b538bcab5971f11a55",
+            "next": "32e62f68d9e277850807f2b538bcab5971f11a55"
+        },
+        "commit_message": "Places V2maxWordSizeInBytes in constant field (instead of literal 9). Some cleanup.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "32e62f68d9e277850807f2b538bcab5971f11a55": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+                    "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(final int cookie)",
+                    "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+                    "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)"
+                ]
+            },
+            "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(final int relevantLength)",
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+                    "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(final int cookie)",
+                    "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+                    "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f4b5004799da6a8203554cea610f1b294caee37a",
+        "previous_commit": "c2f33887b56530fd4cfa10a541697288bb1af794",
+        "date": 1454692785,
+        "releases": {
+            "previous": "f4b5004799da6a8203554cea610f1b294caee37a",
+            "next": "f4b5004799da6a8203554cea610f1b294caee37a"
+        },
+        "commit_message": "unit-equivalent max/min tweak: clean up max for unit-equivalency, and make min slightly faster.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f4b5004799da6a8203554cea610f1b294caee37a": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(final long minNonZeroValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(final long value)",
+                    "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(final long maxValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)"
+                ]
+            },
+            "c2f33887b56530fd4cfa10a541697288bb1af794": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(final long minNonZeroValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(final long value)",
+                    "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(final long maxValue)",
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)",
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "47e26f9cda921ee493254b77ea0ce185a99e0018",
+        "previous_commit": "e692d03654c59dfa9c5b307ad380933b8d0f36bb",
+        "date": 1550287919,
+        "releases": {
+            "previous": "47e26f9cda921ee493254b77ea0ce185a99e0018",
+            "next": "47e26f9cda921ee493254b77ea0ce185a99e0018"
+        },
+        "commit_message": "Consistency: change overflow exception type to be IllegalStateException everywhere\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "47e26f9cda921ee493254b77ea0ce185a99e0018": {
+                "src/main/java/org/HdrHistogram/IntCountsHistogram.java": [
+                    "void org.HdrHistogram.IntCountsHistogram.setCountAtNormalizedIndex(int index, long value)",
+                    "void org.HdrHistogram.IntCountsHistogram.addToCountAtIndex(final int index, final long value)"
+                ],
+                "src/main/java/org/HdrHistogram/ShortCountsHistogram.java": [
+                    "void org.HdrHistogram.ShortCountsHistogram.addToCountAtIndex(final int index, final long value)",
+                    "void org.HdrHistogram.ShortCountsHistogram.setCountAtNormalizedIndex(int index, long value)"
+                ]
+            },
+            "e692d03654c59dfa9c5b307ad380933b8d0f36bb": {
+                "src/main/java/org/HdrHistogram/IntCountsHistogram.java": [
+                    "void org.HdrHistogram.IntCountsHistogram.setCountAtNormalizedIndex(int index, long value)",
+                    "void org.HdrHistogram.IntCountsHistogram.addToCountAtIndex(final int index, final long value)"
+                ],
+                "src/main/java/org/HdrHistogram/ShortCountsHistogram.java": [
+                    "void org.HdrHistogram.ShortCountsHistogram.addToCountAtIndex(final int index, final long value)",
+                    "void org.HdrHistogram.ShortCountsHistogram.setCountAtNormalizedIndex(int index, long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "2410f249276a271dc8fe555806d3204b2e2ea370",
+        "previous_commit": "e3088c0c4b9141ff2cdcf0168af453ef761aa661",
+        "date": 1562366318,
+        "releases": {
+            "previous": "2410f249276a271dc8fe555806d3204b2e2ea370",
+            "next": "2410f249276a271dc8fe555806d3204b2e2ea370"
+        },
+        "commit_message": "Cosmetic cleanup\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "2410f249276a271dc8fe555806d3204b2e2ea370": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.recordSingleValue(final long value)",
+                    "private static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)",
+                    "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(final long value)",
+                    "private void org.HdrHistogram.AbstractHistogram.recordCountAtValue(final long count, final long value)"
+                ]
+            },
+            "e3088c0c4b9141ff2cdcf0168af453ef761aa661": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.recordSingleValue(final long value)",
+                    "private static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)",
+                    "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(final long value)",
+                    "private void org.HdrHistogram.AbstractHistogram.recordCountAtValue(final long count, final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "5b6c642badd85b962cd7be09081e4738a9cf2c48",
+        "previous_commit": "6c19efc72a90ba8ec6d8242b82d9e645794c6886",
+        "date": 1487653739,
+        "releases": {
+            "previous": "5b6c642badd85b962cd7be09081e4738a9cf2c48",
+            "next": "5b6c642badd85b962cd7be09081e4738a9cf2c48"
+        },
+        "commit_message": "Cleans up iterator and adds additional concurrent modification detection at next()\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+                "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java": [
+                    "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()",
+                    "void org.HdrHistogram.AbstractHistogramIterator.resetIterator(final AbstractHistogram histogram)",
+                    "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()"
+                ],
+                "src/main/java/org/HdrHistogram/AllValuesIterator.java": [
+                    "public boolean org.HdrHistogram.AllValuesIterator.hasNext()"
+                ]
+            },
+            "6c19efc72a90ba8ec6d8242b82d9e645794c6886": {
+                "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java": [
+                    "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()",
+                    "void org.HdrHistogram.AbstractHistogramIterator.resetIterator(final AbstractHistogram histogram)",
+                    "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()"
+                ],
+                "src/main/java/org/HdrHistogram/AllValuesIterator.java": [
+                    "public boolean org.HdrHistogram.AllValuesIterator.hasNext()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "df72c88c91a54f3d1d3af2e39499e6102e8e16d5",
+        "previous_commit": "1e8ee58fa4da12e878e3231a16add1bb3e7806e1",
+        "date": 1527025837,
+        "releases": {
+            "previous": "df72c88c91a54f3d1d3af2e39499e6102e8e16d5",
+            "next": "df72c88c91a54f3d1d3af2e39499e6102e8e16d5"
+        },
+        "commit_message": "Added optional-enforcement-mode for containing instance on recycling\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "df72c88c91a54f3d1d3af2e39499e6102e8e16d5": {
+                "src/main/java/org/HdrHistogram/DoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.DoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle)"
+                ],
+                "src/main/java/org/HdrHistogram/Recorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.Recorder.getIntervalHistogram(Histogram histogramToRecycle)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterDoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.SingleWriterDoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterRecorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.SingleWriterRecorder.getIntervalHistogram(Histogram histogramToRecycle)"
+                ]
+            },
+            "1e8ee58fa4da12e878e3231a16add1bb3e7806e1": {
+                "src/main/java/org/HdrHistogram/DoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.DoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle)"
+                ],
+                "src/main/java/org/HdrHistogram/Recorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.Recorder.getIntervalHistogram(Histogram histogramToRecycle)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterDoubleRecorder.java": [
+                    "public synchronized DoubleHistogram org.HdrHistogram.SingleWriterDoubleRecorder.getIntervalHistogram(DoubleHistogram histogramToRecycle)"
+                ],
+                "src/main/java/org/HdrHistogram/SingleWriterRecorder.java": [
+                    "public synchronized Histogram org.HdrHistogram.SingleWriterRecorder.getIntervalHistogram(Histogram histogramToRecycle)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "c410c5c2699b69ce0eb026ff954fefc4045ec363",
+        "previous_commit": "296902df060cbdc1d689f63f8dec3e5fe4bf7ee0",
+        "date": 1505431779,
+        "releases": {
+            "previous": "c410c5c2699b69ce0eb026ff954fefc4045ec363",
+            "next": "c410c5c2699b69ce0eb026ff954fefc4045ec363"
+        },
+        "commit_message": "Move to Base64Helper API to remain portable across Java 6...9...\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "c410c5c2699b69ce0eb026ff954fefc4045ec363": {
+                "src/main/java/org/HdrHistogram/AbstractHistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.AbstractHistogramLogReader.nextIntervalHistogram(final Double rangeStartTimeSec, final Double rangeEndTimeSec, boolean absolute)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogWriter.java": [
+                    "public synchronized void org.HdrHistogram.HistogramLogWriter.outputIntervalHistogram(final double startTimeStampSec, final double endTimeStampSec, final EncodableHistogram histogram, final double maxValueUnitRatio)"
+                ]
+            },
+            "296902df060cbdc1d689f63f8dec3e5fe4bf7ee0": {
+                "src/main/java/org/HdrHistogram/AbstractHistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.AbstractHistogramLogReader.nextIntervalHistogram(final Double rangeStartTimeSec, final Double rangeEndTimeSec, boolean absolute)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogWriter.java": [
+                    "public synchronized void org.HdrHistogram.HistogramLogWriter.outputIntervalHistogram(final double startTimeStampSec, final double endTimeStampSec, final EncodableHistogram histogram, final double maxValueUnitRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "a41719a5f97eb0a477183b2a4ae6862dca0fbe3c",
+        "previous_commit": "d486ea7b26063fe9979de5f48cc8db43bc61b6cb",
+        "date": 1547890585,
+        "releases": {
+            "previous": "a41719a5f97eb0a477183b2a4ae6862dca0fbe3c",
+            "next": "a41719a5f97eb0a477183b2a4ae6862dca0fbe3c"
+        },
+        "commit_message": "Cosmetics\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "a41719a5f97eb0a477183b2a4ae6862dca0fbe3c": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "public boolean org.HdrHistogram.HistogramLogReader.onException(Throwable t)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogScanner.java": [
+                    "public EncodableHistogram org.HdrHistogram.HistogramLogScanner.read()",
+                    "public void org.HdrHistogram.HistogramLogScanner.process(EventHandler handler)"
+                ]
+            },
+            "d486ea7b26063fe9979de5f48cc8db43bc61b6cb": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "public boolean org.HdrHistogram.HistogramLogReader.onException(Throwable t)"
+                ],
+                "src/main/java/org/HdrHistogram/HistogramLogScanner.java": [
+                    "public EncodableHistogram org.HdrHistogram.HistogramLogScanner.read()",
+                    "public void org.HdrHistogram.HistogramLogScanner.process(EventHandler handler)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f33c0116b285ec1a3c5d64ebd5e8802b618c9193",
+        "previous_commit": "1b51671cf06062671af931f98a8af2a53d335a70",
+        "date": 1546193012,
+        "releases": {
+            "previous": "f33c0116b285ec1a3c5d64ebd5e8802b618c9193",
+            "next": "f33c0116b285ec1a3c5d64ebd5e8802b618c9193"
+        },
+        "commit_message": "Fixes (non concurrent) shift left logic when already normalized, or when unit maghnitude is non-1\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f33c0116b285ec1a3c5d64ebd5e8802b618c9193": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.shiftLowestHalfBucketContentsLeft(int shiftAmount, int preShiftZeroIndex)",
+                    "void org.HdrHistogram.AbstractHistogram.nonConcurrentNormalizingIndexShift(int shiftAmount, boolean lowestHalfBucketPopulated)",
+                    "void org.HdrHistogram.AbstractHistogram.shiftValuesLeft(final int numberOfBinaryOrdersOfMagnitude, final double newIntegerToDoubleValueConversionRatio)"
+                ]
+            },
+            "1b51671cf06062671af931f98a8af2a53d335a70": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.nonConcurrentNormalizingIndexShift(int shiftAmount, boolean lowestHalfBucketPopulated)",
+                    "private void org.HdrHistogram.AbstractHistogram.shiftLowestHalfBucketContentsLeft(int shiftAmount)",
+                    "void org.HdrHistogram.AbstractHistogram.shiftValuesLeft(final int numberOfBinaryOrdersOfMagnitude, final double newIntegerToDoubleValueConversionRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd",
+        "previous_commit": "6c85d5e2f4b789f9a86823d00c02845d17c60e3a",
+        "date": 1441750905,
+        "releases": {
+            "previous": "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd",
+            "next": "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd"
+        },
+        "commit_message": "Adjusts V2 encoding to use ZigZag+LEB128 (no other word sizes or non-TZLE), disabling TZLE causes V1 encoding (for now)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(final int cookie)",
+                    "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+                    "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()"
+                ]
+            },
+            "6c85d5e2f4b789f9a86823d00c02845d17c60e3a": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(final int cookie)",
+                    "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+                    "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "753fe5c16ddb089b42a6ff920c06e50ead032945",
+        "previous_commit": "47e26f9cda921ee493254b77ea0ce185a99e0018",
+        "date": 1562309120,
+        "releases": {
+            "previous": "753fe5c16ddb089b42a6ff920c06e50ead032945",
+            "next": "753fe5c16ddb089b42a6ff920c06e50ead032945"
+        },
+        "commit_message": "Fix concurrency race in value recording, where a value that had passed the range check can become invalid through concurrent adjustment.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "753fe5c16ddb089b42a6ff920c06e50ead032945": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "private void org.HdrHistogram.DoubleHistogram.recordCountAtValue(final long count, final double value)",
+                    "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(final double value)"
+                ]
+            },
+            "47e26f9cda921ee493254b77ea0ce185a99e0018": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "private void org.HdrHistogram.DoubleHistogram.recordCountAtValue(final long count, final double value)",
+                    "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(final double value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "016ab97811fcef1594eab6a02dd44d516624ee73",
+        "previous_commit": "bc7aef6c231e1215d5be1b38074203694b71ebaf",
+        "date": 1446788975,
+        "releases": {
+            "previous": "016ab97811fcef1594eab6a02dd44d516624ee73",
+            "next": "016ab97811fcef1594eab6a02dd44d516624ee73"
+        },
+        "commit_message": "Corrected AIOOB on linear and logarithmic iterators:\n\n - Can happen when last step covers a range that includes a count, but also goes beyond counts array length.\n\n - Avoided by indicating iteration level is reached when currentIndex reaches end of counts array.\n\n - Add scanning test to verify o AIOOB across range of step sizes and recorded values.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "016ab97811fcef1594eab6a02dd44d516624ee73": {
+                "src/main/java/org/HdrHistogram/LinearIterator.java": [
+                    "boolean org.HdrHistogram.LinearIterator.reachedIterationLevel()"
+                ],
+                "src/main/java/org/HdrHistogram/LogarithmicIterator.java": [
+                    "boolean org.HdrHistogram.LogarithmicIterator.reachedIterationLevel()"
+                ]
+            },
+            "bc7aef6c231e1215d5be1b38074203694b71ebaf": {
+                "src/main/java/org/HdrHistogram/LinearIterator.java": [
+                    "boolean org.HdrHistogram.LinearIterator.reachedIterationLevel()"
+                ],
+                "src/main/java/org/HdrHistogram/LogarithmicIterator.java": [
+                    "boolean org.HdrHistogram.LogarithmicIterator.reachedIterationLevel()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "b2c0e9899f22191a3eb50d3c02acd42de365e444",
+        "previous_commit": "f33c0116b285ec1a3c5d64ebd5e8802b618c9193",
+        "date": 1546193747,
+        "releases": {
+            "previous": "b2c0e9899f22191a3eb50d3c02acd42de365e444",
+            "next": "b2c0e9899f22191a3eb50d3c02acd42de365e444"
+        },
+        "commit_message": "Fix logic for shifting left the lowest inactive half-bucket (adjust for before-shift normalized zero index)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "b2c0e9899f22191a3eb50d3c02acd42de365e444": {
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "private void org.HdrHistogram.ConcurrentHistogram.shiftLowestInactiveHalfBucketContentsLeft(final int shiftAmount, final int preShiftZeroIndex)",
+                    "private void org.HdrHistogram.ConcurrentHistogram.setNormalizingIndexOffset( final int normalizingIndexOffset, final int shiftedAmount, final boolean lowestHalfBucketPopulated, final double newIntegerToDoubleValueConversionRatio)"
+                ]
+            },
+            "f33c0116b285ec1a3c5d64ebd5e8802b618c9193": {
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "private void org.HdrHistogram.ConcurrentHistogram.shiftLowestInactiveHalfBucketContentsLeft(final int shiftAmount)",
+                    "private void org.HdrHistogram.ConcurrentHistogram.setNormalizingIndexOffset( final int normalizingIndexOffset, final int shiftedAmount, final boolean lowestHalfBucketPopulated, final double newIntegerToDoubleValueConversionRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "bb8ecbb4c4da80b5c8f54b4414f2fa86f7953574",
+        "previous_commit": "7ee9151fe3e3c85e3d650b55dcb87e945967be92",
+        "date": 1562432366,
+        "releases": {
+            "previous": "bb8ecbb4c4da80b5c8f54b4414f2fa86f7953574",
+            "next": "bb8ecbb4c4da80b5c8f54b4414f2fa86f7953574"
+        },
+        "commit_message": "Make decoded histograms autosize by default\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "bb8ecbb4c4da80b5c8f54b4414f2fa86f7953574": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "static <T extends DoubleHistogram> T org.HdrHistogram.DoubleHistogram.constructHistogramFromBuffer( int cookie, final ByteBuffer buffer, final Class<T> doubleHistogramClass, final Class<? extends AbstractHistogram> histogramClass, final long minBarForHighestToLowestValueRatio)"
+                ]
+            },
+            "7ee9151fe3e3c85e3d650b55dcb87e945967be92": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "static <T extends DoubleHistogram> T org.HdrHistogram.DoubleHistogram.constructHistogramFromBuffer( int cookie, final ByteBuffer buffer, final Class<T> doubleHistogramClass, final Class<? extends AbstractHistogram> histogramClass, final long minBarForHighestToLowestValueRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "dda4dbf358aa2cdc81c5629875f956ce87c81723",
+        "previous_commit": "377de7da9b08c4f6cf159b3157f4a0e0492b9c39",
+        "date": 1621994156,
+        "releases": {
+            "previous": "dda4dbf358aa2cdc81c5629875f956ce87c81723",
+            "next": "dda4dbf358aa2cdc81c5629875f956ce87c81723"
+        },
+        "commit_message": "Handle IndexOutOfBoundsException properly on Java 8 (#180)\n\nOn JDK 11 it throws ArrayIndexOutOfBoundsException whereas on JDK 8 it's IndexOutOfBoundsException",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "dda4dbf358aa2cdc81c5629875f956ce87c81723": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "private void org.HdrHistogram.DoubleHistogram.recordCountAtValue(final long count, final double value)",
+                    "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(final double value)"
+                ]
+            },
+            "377de7da9b08c4f6cf159b3157f4a0e0492b9c39": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "private void org.HdrHistogram.DoubleHistogram.recordCountAtValue(final long count, final double value)",
+                    "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(final double value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c",
+        "previous_commit": "77579557702b198a1fa97c16164b3486e0ff0d20",
+        "date": 1547890822,
+        "releases": {
+            "previous": "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c",
+            "next": "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c"
+        },
+        "commit_message": "Refactoring suggested by Cliff Click. Revamped JavaDoc.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": {
+                "src/main/java/org/HdrHistogram/WriterReaderPhaser.java": [
+                    "public void org.HdrHistogram.WriterReaderPhaser.flipPhase(long yieldTimeNsec)",
+                    "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)"
+                ]
+            },
+            "77579557702b198a1fa97c16164b3486e0ff0d20": {
+                "src/main/java/org/HdrHistogram/WriterReaderPhaser.java": [
+                    "public void org.HdrHistogram.WriterReaderPhaser.flipPhase(long yieldTimeNsec)",
+                    "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "e0e83cb99a4030c046f778604625e347a1bc37c8",
+        "previous_commit": "b24c8b0cc00952c5c47aceeabbacf6567aeee9ee",
+        "date": 1487464578,
+        "releases": {
+            "previous": "e0e83cb99a4030c046f778604625e347a1bc37c8",
+            "next": "e0e83cb99a4030c046f778604625e347a1bc37c8"
+        },
+        "commit_message": "A more complete fix to handling large unit magnitudes: disallow combinations of unit magnitude and sub bucket count that occupy more than 62 bits\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "e0e83cb99a4030c046f778604625e347a1bc37c8": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(final long value)"
+                ]
+            },
+            "b24c8b0cc00952c5c47aceeabbacf6567aeee9ee": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "a55c40ffb4c8df4c21d9cd4db34855da1b30e1d4",
+        "previous_commit": "2413b056441604ee2a41dbb546fd91f9ee50d9be",
+        "date": 1446419281,
+        "releases": {
+            "previous": "a55c40ffb4c8df4c21d9cd4db34855da1b30e1d4",
+            "next": "a55c40ffb4c8df4c21d9cd4db34855da1b30e1d4"
+        },
+        "commit_message": "Added hashCode() override to work with equals() override.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "a55c40ffb4c8df4c21d9cd4db34855da1b30e1d4": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public boolean org.HdrHistogram.AbstractHistogram.equals(final Object other)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public boolean org.HdrHistogram.DoubleHistogram.equals(final Object other)"
+                ]
+            },
+            "2413b056441604ee2a41dbb546fd91f9ee50d9be": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public boolean org.HdrHistogram.AbstractHistogram.equals(final Object other)"
+                ],
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public boolean org.HdrHistogram.DoubleHistogram.equals(final Object other)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "1573093e11ef85902562e5fab73bacba7ce8e943",
+        "previous_commit": "98cacd53338656807d8183ae8bb49e88f66585b0",
+        "date": 1562431124,
+        "releases": {
+            "previous": "1573093e11ef85902562e5fab73bacba7ce8e943",
+            "next": "1573093e11ef85902562e5fab73bacba7ce8e943"
+        },
+        "commit_message": "Add decoders to ConcurrentDoubleHistogram\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "1573093e11ef85902562e5fab73bacba7ce8e943": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public static DoubleHistogram org.HdrHistogram.DoubleHistogram.decodeFromCompressedByteBuffer( final ByteBuffer buffer, Class<? extends AbstractHistogram> internalCountsHistogramClass, long minBarForHighestToLowestValueRatio)",
+                    "public static DoubleHistogram org.HdrHistogram.DoubleHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<? extends AbstractHistogram> internalCountsHistogramClass, long minBarForHighestToLowestValueRatio)"
+                ]
+            },
+            "98cacd53338656807d8183ae8bb49e88f66585b0": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public static DoubleHistogram org.HdrHistogram.DoubleHistogram.decodeFromCompressedByteBuffer( final ByteBuffer buffer, Class<? extends AbstractHistogram> internalCountsHistogramClass, long minBarForHighestToLowestValueRatio)",
+                    "public static DoubleHistogram org.HdrHistogram.DoubleHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<? extends AbstractHistogram> internalCountsHistogramClass, long minBarForHighestToLowestValueRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "49edbc5708832c8c574a363efff79b5b5d977038",
+        "previous_commit": "86cf659fb91344c0fd180c9d1bb15e8222d55780",
+        "date": 1487397897,
+        "releases": {
+            "previous": "49edbc5708832c8c574a363efff79b5b5d977038",
+            "next": "49edbc5708832c8c574a363efff79b5b5d977038"
+        },
+        "commit_message": "Simplify a few calculations in init, and use subBucketHalfCount instead of subBucketCount/2.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "49edbc5708832c8c574a363efff79b5b5d977038": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "int org.HdrHistogram.AbstractHistogram.getLengthForNumberOfBuckets(final int numberOfBuckets)"
+                ]
+            },
+            "86cf659fb91344c0fd180c9d1bb15e8222d55780": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.init(final long lowestDiscernibleValue, final long highestTrackableValue, final int numberOfSignificantValueDigits, final double integerToDoubleValueConversionRatio, final int normalizingIndexOffset)",
+                    "int org.HdrHistogram.AbstractHistogram.getLengthForNumberOfBuckets(final int numberOfBuckets)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "e82afbbc1b20761b9195caf67603f4e0c48625e7",
+        "previous_commit": "e9559a48564a768252516829a5b48dd6b0d31607",
+        "date": 1539413580,
+        "releases": {
+            "previous": "e82afbbc1b20761b9195caf67603f4e0c48625e7",
+            "next": "e82afbbc1b20761b9195caf67603f4e0c48625e7"
+        },
+        "commit_message": "small cleanups to pacify code quality tools\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "e82afbbc1b20761b9195caf67603f4e0c48625e7": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "e9559a48564a768252516829a5b48dd6b0d31607": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "5c9bf39b6d94b9a6579ba3317f898bd17c01e6c4",
+        "previous_commit": "7dc269c31ee70a50c25cbf316b6e89dc20d9ada9",
+        "date": 1492010042,
+        "releases": {
+            "previous": "5c9bf39b6d94b9a6579ba3317f898bd17c01e6c4",
+            "next": "5c9bf39b6d94b9a6579ba3317f898bd17c01e6c4"
+        },
+        "commit_message": "Use the same exception type for both error cases in subtract()\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "5c9bf39b6d94b9a6579ba3317f898bd17c01e6c4": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)"
+                ]
+            },
+            "7dc269c31ee70a50c25cbf316b6e89dc20d9ada9": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "1f39a46dfb0c49bb0e48c847adf856d68001d3de",
+        "previous_commit": "45a56bb87960c5a8c46f0ab9222ac48c3c9850bb",
+        "date": 1491927059,
+        "releases": {
+            "previous": "1f39a46dfb0c49bb0e48c847adf856d68001d3de",
+            "next": "1f39a46dfb0c49bb0e48c847adf856d68001d3de"
+        },
+        "commit_message": "Don't try to resize in subtract() when handling a large subtrahend.\n\nAlso, split up testSubtract into individual cases: it was failing\nafter `histogram` had zero counts because of the new check for\nthe minuend's max value.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "1f39a46dfb0c49bb0e48c847adf856d68001d3de": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)"
+                ]
+            },
+            "45a56bb87960c5a8c46f0ab9222ac48c3c9850bb": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "1beb18b80ff5b84b87817ca0a2a4d1884254c969",
+        "previous_commit": "b2c0e9899f22191a3eb50d3c02acd42de365e444",
+        "date": 1546366635,
+        "releases": {
+            "previous": "1beb18b80ff5b84b87817ca0a2a4d1884254c969",
+            "next": "1beb18b80ff5b84b87817ca0a2a4d1884254c969"
+        },
+        "commit_message": "Refactored/Rationalized resize logic, made it fail all-or-nothing on OOM.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "1beb18b80ff5b84b87817ca0a2a4d1884254c969": {
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "void org.HdrHistogram.ConcurrentHistogram.resize(final long newHighestTrackableValue)"
+                ]
+            },
+            "b2c0e9899f22191a3eb50d3c02acd42de365e444": {
+                "src/main/java/org/HdrHistogram/ConcurrentHistogram.java": [
+                    "void org.HdrHistogram.ConcurrentHistogram.resize(final long newHighestTrackableValue)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "72645ccd837a5650ba056b05361b1ebf5ef8c8ab",
+        "previous_commit": "10992b893cf8103de138941817c8d19fb0daa39c",
+        "date": 1508447974,
+        "releases": {
+            "previous": "72645ccd837a5650ba056b05361b1ebf5ef8c8ab",
+            "next": "72645ccd837a5650ba056b05361b1ebf5ef8c8ab"
+        },
+        "commit_message": "Linear iterator was stopping one iteration shy of the full complement of\nlinear steps in the final bucket.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "72645ccd837a5650ba056b05361b1ebf5ef8c8ab": {
+                "src/main/java/org/HdrHistogram/LinearIterator.java": [
+                    "public boolean org.HdrHistogram.LinearIterator.hasNext()"
+                ]
+            },
+            "10992b893cf8103de138941817c8d19fb0daa39c": {
+                "src/main/java/org/HdrHistogram/LinearIterator.java": [
+                    "public boolean org.HdrHistogram.LinearIterator.hasNext()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "426451ba6f3f3bc8331db187de0da3b133e39274",
+        "previous_commit": "b8c45a6ee98003f5b5b97e6579d2ee4ad72ff761",
+        "date": 1578276265,
+        "releases": {
+            "previous": "426451ba6f3f3bc8331db187de0da3b133e39274",
+            "next": "426451ba6f3f3bc8331db187de0da3b133e39274"
+        },
+        "commit_message": "cosmetics\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "426451ba6f3f3bc8331db187de0da3b133e39274": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [
+                    "void org.HdrHistogram.packedarray.AbstractPackedArrayContext.init(final int virtualLength)"
+                ]
+            },
+            "b8c45a6ee98003f5b5b97e6579d2ee4ad72ff761": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [
+                    "void org.HdrHistogram.packedarray.AbstractPackedArrayContext.init(final int virtualLength)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "69064c4cc9837ef8178452eb56aef7184a550c84",
+        "previous_commit": "1383017d64fc5bac9c332ea5973d89ee31aa767d",
+        "date": 1529514617,
+        "releases": {
+            "previous": "69064c4cc9837ef8178452eb56aef7184a550c84",
+            "next": "69064c4cc9837ef8178452eb56aef7184a550c84"
+        },
+        "commit_message": "Fix reset()\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "69064c4cc9837ef8178452eb56aef7184a550c84": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public void org.HdrHistogram.DoubleHistogram.reset()"
+                ]
+            },
+            "1383017d64fc5bac9c332ea5973d89ee31aa767d": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public void org.HdrHistogram.DoubleHistogram.reset()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "b8c45a6ee98003f5b5b97e6579d2ee4ad72ff761",
+        "previous_commit": "ffb9aeb2dbfa72f5a0248f527b8cf26f38405e58",
+        "date": 1578159716,
+        "releases": {
+            "previous": "b8c45a6ee98003f5b5b97e6579d2ee4ad72ff761",
+            "next": "b8c45a6ee98003f5b5b97e6579d2ee4ad72ff761"
+        },
+        "commit_message": "Fix top level shifting while populating context (#165)\n\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "b8c45a6ee98003f5b5b97e6579d2ee4ad72ff761": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [
+                    "void org.HdrHistogram.packedarray.AbstractPackedArrayContext.populateEquivalentEntriesWithZerosFromOther(final AbstractPackedArrayContext other)"
+                ]
+            },
+            "ffb9aeb2dbfa72f5a0248f527b8cf26f38405e58": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedArrayContext.java": [
+                    "void org.HdrHistogram.packedarray.AbstractPackedArrayContext.populateEquivalentEntriesWithZerosFromOther(final AbstractPackedArrayContext other)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "8d181efcd113b38dd2a84509c75d9c419d452c2b",
+        "previous_commit": "70f89f80699877bf1953baa19c2482d56c63ca03",
+        "date": 1459283373,
+        "releases": {
+            "previous": "8d181efcd113b38dd2a84509c75d9c419d452c2b",
+            "next": "8d181efcd113b38dd2a84509c75d9c419d452c2b"
+        },
+        "commit_message": "Fix race in updateMinNonZeroValue\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "8d181efcd113b38dd2a84509c75d9c419d452c2b": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(final long value)"
+                ]
+            },
+            "70f89f80699877bf1953baa19c2482d56c63ca03": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "7f1f7ede55015582dce00bcb33e45d79fa1a1a92",
+        "previous_commit": "2268ca2607c54d2e10c160109521cd639d3e1a2c",
+        "date": 1562372216,
+        "releases": {
+            "previous": "7f1f7ede55015582dce00bcb33e45d79fa1a1a92",
+            "next": "7f1f7ede55015582dce00bcb33e45d79fa1a1a92"
+        },
+        "commit_message": "Some defensive refactoring\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "7f1f7ede55015582dce00bcb33e45d79fa1a1a92": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "2268ca2607c54d2e10c160109521cd639d3e1a2c": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f1a99237c3a7ffd6528bfdfcb706937d84568578",
+        "previous_commit": "a2173bcc69c6948d2a8c4a0c18b60341038bde92",
+        "date": 1502904425,
+        "releases": {
+            "previous": "f1a99237c3a7ffd6528bfdfcb706937d84568578",
+            "next": "f1a99237c3a7ffd6528bfdfcb706937d84568578"
+        },
+        "commit_message": "Changes getValueAtPercentile internal math details around fp roundoff\n\n - Use Math.nextAfter() instead of ulp()\n\n - Change fpCountAtPercentile computation order (multiply ahead of\n   devide) to reduce roundoff effects\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f1a99237c3a7ffd6528bfdfcb706937d84568578": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.getValueAtPercentile(final double percentile)"
+                ]
+            },
+            "a2173bcc69c6948d2a8c4a0c18b60341038bde92": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.getValueAtPercentile(final double percentile)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "42e251a452220f62e287712fd60445549811d6a9",
+        "previous_commit": "3b13614ba54143c66d43265398f2e2b0cd66d60f",
+        "date": 1546496688,
+        "releases": {
+            "previous": "42e251a452220f62e287712fd60445549811d6a9",
+            "next": "42e251a452220f62e287712fd60445549811d6a9"
+        },
+        "commit_message": "Refactor new correctLogWithKnownCoordinatedOmission option\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "42e251a452220f62e287712fd60445549811d6a9": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogProcessor.getIntervalHistogram()"
+                ]
+            },
+            "3b13614ba54143c66d43265398f2e2b0cd66d60f": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogProcessor.getIntervalHistogram()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "b7622c26c63437dab6399fda38deab974d0b665c",
+        "previous_commit": "ea7ae16cb9d2bce1b0da66417fe8540a0fe8a62b",
+        "date": 1541407293,
+        "releases": {
+            "previous": "b7622c26c63437dab6399fda38deab974d0b665c",
+            "next": "b7622c26c63437dab6399fda38deab974d0b665c"
+        },
+        "commit_message": "Fix exception when comparing histograms with different bucket counts\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "b7622c26c63437dab6399fda38deab974d0b665c": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public boolean org.HdrHistogram.AbstractHistogram.equals(final Object other)"
+                ]
+            },
+            "ea7ae16cb9d2bce1b0da66417fe8540a0fe8a62b": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public boolean org.HdrHistogram.AbstractHistogram.equals(final Object other)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "debd680c844339f0913c4400ee3e22e9045e8d47",
+        "previous_commit": "ea7ae16cb9d2bce1b0da66417fe8540a0fe8a62b",
+        "date": 1539411111,
+        "releases": {
+            "previous": "debd680c844339f0913c4400ee3e22e9045e8d47",
+            "next": "debd680c844339f0913c4400ee3e22e9045e8d47"
+        },
+        "commit_message": "Address potential long overflow vefore conversion to double.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "debd680c844339f0913c4400ee3e22e9045e8d47": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public double org.HdrHistogram.AbstractHistogram.getMean()"
+                ]
+            },
+            "ea7ae16cb9d2bce1b0da66417fe8540a0fe8a62b": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public double org.HdrHistogram.AbstractHistogram.getMean()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "5c7226c4ffc0e603390e4c70de3f1df35ce61a66",
+        "previous_commit": "457d9fe5e1c7d9b286bf4883602aee9994c964ec",
+        "date": 1496450291,
+        "releases": {
+            "previous": "5c7226c4ffc0e603390e4c70de3f1df35ce61a66",
+            "next": "5c7226c4ffc0e603390e4c70de3f1df35ce61a66"
+        },
+        "commit_message": "Changes getValueAtPercentile() behavior:\n\n - getValueAtPercentile() now strictly returns the largest value that (100% - percentile) of the overall recorded value entries in the histogram are either larger than or equivalent to.\n - Adjust unit tests to pass with new behavior\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "5c7226c4ffc0e603390e4c70de3f1df35ce61a66": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.getValueAtPercentile(final double percentile)"
+                ]
+            },
+            "457d9fe5e1c7d9b286bf4883602aee9994c964ec": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.getValueAtPercentile(final double percentile)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "e9559a48564a768252516829a5b48dd6b0d31607",
+        "previous_commit": "4674d9e50bc3067e6bc2e9725518e19a480aafe1",
+        "date": 1539413113,
+        "releases": {
+            "previous": "e9559a48564a768252516829a5b48dd6b0d31607",
+            "next": "e9559a48564a768252516829a5b48dd6b0d31607"
+        },
+        "commit_message": "Changed initialization logic to pacify code quality tools\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "e9559a48564a768252516829a5b48dd6b0d31607": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "4674d9e50bc3067e6bc2e9725518e19a480aafe1": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "030aac1ea20b8c09e7c522a4594388534164d643",
+        "previous_commit": "9866a4cc8ec363626723154998230a358e8e06e5",
+        "date": 1452244287,
+        "releases": {
+            "previous": "030aac1ea20b8c09e7c522a4594388534164d643",
+            "next": "030aac1ea20b8c09e7c522a4594388534164d643"
+        },
+        "commit_message": "Fix possible class cast exception\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "030aac1ea20b8c09e7c522a4594388534164d643": {
+                "src/main/java/org/HdrHistogram/SynchronizedDoubleHistogram.java": [
+                    "public synchronized boolean org.HdrHistogram.SynchronizedDoubleHistogram.equals(final Object other)"
+                ]
+            },
+            "9866a4cc8ec363626723154998230a358e8e06e5": {
+                "src/main/java/org/HdrHistogram/SynchronizedDoubleHistogram.java": [
+                    "public synchronized boolean org.HdrHistogram.SynchronizedDoubleHistogram.equals(final Object other)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "4708c3a25fc335e7076f4118ab8fbb43f183debe",
+        "previous_commit": "2413b056441604ee2a41dbb546fd91f9ee50d9be",
+        "date": 1444034662,
+        "releases": {
+            "previous": "4708c3a25fc335e7076f4118ab8fbb43f183debe",
+            "next": "4708c3a25fc335e7076f4118ab8fbb43f183debe"
+        },
+        "commit_message": "Fixed missing spaces in multi-line messages (and a missing parenthesis as well).\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "4708c3a25fc335e7076f4118ab8fbb43f183debe": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)"
+                ]
+            },
+            "2413b056441604ee2a41dbb546fd91f9ee50d9be": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "fb8eb6baca91138e2dce86931d0d8c51b1de76ba",
+        "previous_commit": "ad520e5fc2a337fdafdd8e825660f1fb1efc11ec",
+        "date": 1541411048,
+        "releases": {
+            "previous": "fb8eb6baca91138e2dce86931d0d8c51b1de76ba",
+            "next": "fb8eb6baca91138e2dce86931d0d8c51b1de76ba"
+        },
+        "commit_message": "Revert exception handling to original state\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "fb8eb6baca91138e2dce86931d0d8c51b1de76ba": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "public boolean org.HdrHistogram.HistogramLogReader.onException(Throwable t)"
+                ]
+            },
+            "ad520e5fc2a337fdafdd8e825660f1fb1efc11ec": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "public boolean org.HdrHistogram.HistogramLogReader.onException(Throwable t)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "9993cd3f27875c9331cf9a571be013c4af27d681",
+        "previous_commit": "5c072c079b2a1c1b0ddec7e776bb363984818a85",
+        "date": 1512053475,
+        "releases": {
+            "previous": "9993cd3f27875c9331cf9a571be013c4af27d681",
+            "next": "9993cd3f27875c9331cf9a571be013c4af27d681"
+        },
+        "commit_message": "Added the guilty value to the ArrayIndexOutOfBoundsException when outside the allowed Histogram range\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "9993cd3f27875c9331cf9a571be013c4af27d681": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.handleRecordException(final long count, final long value, Exception ex)"
+                ]
+            },
+            "5c072c079b2a1c1b0ddec7e776bb363984818a85": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private void org.HdrHistogram.AbstractHistogram.handleRecordException(final long count, final long value, Exception ex)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "5e931a181682ed8b275ad44fdc1dcef5519188e4",
+        "previous_commit": "1f0d1dc9d4055c1b1118fa59c7905072b0ff0e0f",
+        "date": 1474556885,
+        "releases": {
+            "previous": "5e931a181682ed8b275ad44fdc1dcef5519188e4",
+            "next": "5e931a181682ed8b275ad44fdc1dcef5519188e4"
+        },
+        "commit_message": "Adds optional moving window percentile reporting (to separate file)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "5e931a181682ed8b275ad44fdc1dcef5519188e4": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "1f0d1dc9d4055c1b1118fa59c7905072b0ff0e0f": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "167386b8e63fd7098cd57f9a257e13bceb30a543",
+        "previous_commit": "f4b5004799da6a8203554cea610f1b294caee37a",
+        "date": 1459255215,
+        "releases": {
+            "previous": "167386b8e63fd7098cd57f9a257e13bceb30a543",
+            "next": "167386b8e63fd7098cd57f9a257e13bceb30a543"
+        },
+        "commit_message": "Fix race condition in AbstractHistogram.updatedMaxValue\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "167386b8e63fd7098cd57f9a257e13bceb30a543": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)"
+                ]
+            },
+            "f4b5004799da6a8203554cea610f1b294caee37a": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "7dc269c31ee70a50c25cbf316b6e89dc20d9ada9",
+        "previous_commit": "1f39a46dfb0c49bb0e48c847adf856d68001d3de",
+        "date": 1491956770,
+        "releases": {
+            "previous": "7dc269c31ee70a50c25cbf316b6e89dc20d9ada9",
+            "next": "7dc269c31ee70a50c25cbf316b6e89dc20d9ada9"
+        },
+        "commit_message": "More precise check if subtrahend can fit in subtract()\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "7dc269c31ee70a50c25cbf316b6e89dc20d9ada9": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)"
+                ]
+            },
+            "1f39a46dfb0c49bb0e48c847adf856d68001d3de": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.subtract(final AbstractHistogram otherHistogram)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "6b685ccb865c43b3031c37c014f57cd0b7eed63b",
+        "previous_commit": "3e30f0891536f7cbda44b1be3146158f72317800",
+        "date": 1462713068,
+        "releases": {
+            "previous": "6b685ccb865c43b3031c37c014f57cd0b7eed63b",
+            "next": "6b685ccb865c43b3031c37c014f57cd0b7eed63b"
+        },
+        "commit_message": "Reset times and tag. Fix #97",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "6b685ccb865c43b3031c37c014f57cd0b7eed63b": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.reset()"
+                ]
+            },
+            "3e30f0891536f7cbda44b1be3146158f72317800": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public void org.HdrHistogram.AbstractHistogram.reset()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "5a19174f03959134f8b82b690767ac4a2de243de",
+        "previous_commit": "7f1f7ede55015582dce00bcb33e45d79fa1a1a92",
+        "date": 1562372563,
+        "releases": {
+            "previous": "5a19174f03959134f8b82b690767ac4a2de243de",
+            "next": "5a19174f03959134f8b82b690767ac4a2de243de"
+        },
+        "commit_message": "cleanup\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "5a19174f03959134f8b82b690767ac4a2de243de": {
+                "src/main/java/org/HdrHistogram/HistogramLogScanner.java": [
+                    "public void org.HdrHistogram.HistogramLogScanner.process(EventHandler handler)"
+                ]
+            },
+            "7f1f7ede55015582dce00bcb33e45d79fa1a1a92": {
+                "src/main/java/org/HdrHistogram/HistogramLogScanner.java": [
+                    "public void org.HdrHistogram.HistogramLogScanner.process(EventHandler handler)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "70f89f80699877bf1953baa19c2482d56c63ca03",
+        "previous_commit": "8e463bf8407ce63fdcdc08ec17c4893ce36c46dd",
+        "date": 1459260964,
+        "releases": {
+            "previous": "70f89f80699877bf1953baa19c2482d56c63ca03",
+            "next": "70f89f80699877bf1953baa19c2482d56c63ca03"
+        },
+        "commit_message": "Simplifies updateMaxValue\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "70f89f80699877bf1953baa19c2482d56c63ca03": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)"
+                ]
+            },
+            "8e463bf8407ce63fdcdc08ec17c4893ce36c46dd": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "d590c3a84b0e3b81c77039f78813aaf2c3697007",
+        "previous_commit": "fbec20ab08278502cfe69b7f522413a693641f3c",
+        "date": 1478273597,
+        "releases": {
+            "previous": "d590c3a84b0e3b81c77039f78813aaf2c3697007",
+            "next": "d590c3a84b0e3b81c77039f78813aaf2c3697007"
+        },
+        "commit_message": "Changes [optional] moving percentile window reporting logic to use a time window rather than an interval count window\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "d590c3a84b0e3b81c77039f78813aaf2c3697007": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "fbec20ab08278502cfe69b7f522413a693641f3c": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "4399d30dd73d7a38e37890812a7c63f2fa0588f2",
+        "previous_commit": "ed88d66017a32f1ed1b1634e13dbac67618316fb",
+        "date": 1475255310,
+        "releases": {
+            "previous": "4399d30dd73d7a38e37890812a7c63f2fa0588f2",
+            "next": "4399d30dd73d7a38e37890812a7c63f2fa0588f2"
+        },
+        "commit_message": "Adds hasNext() method and makes reader advance to next line when encountering format errors (but still returns null).\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "4399d30dd73d7a38e37890812a7c63f2fa0588f2": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ]
+            },
+            "ed88d66017a32f1ed1b1634e13dbac67618316fb": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "ad5a4419aa6cbbcd87f5c1ff733c017010b55e3d",
+        "previous_commit": "c0069c610ef4a2c17f82f7c1f48c4da557c395d6",
+        "date": 1573050174,
+        "releases": {
+            "previous": "ad5a4419aa6cbbcd87f5c1ff733c017010b55e3d",
+            "next": "ad5a4419aa6cbbcd87f5c1ff733c017010b55e3d"
+        },
+        "commit_message": "Fix unpacked modes, add equals, prepare for Recorder use cases.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "ad5a4419aa6cbbcd87f5c1ff733c017010b55e3d": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedLongArray.java": [
+                    "public void org.HdrHistogram.packedarray.AbstractPackedLongArray.set(final int index, final long value)"
+                ]
+            },
+            "c0069c610ef4a2c17f82f7c1f48c4da557c395d6": {
+                "src/main/java/org/HdrHistogram/packedarray/AbstractPackedLongArray.java": [
+                    "public void org.HdrHistogram.packedarray.AbstractPackedLongArray.set(final int index, final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "7ee9151fe3e3c85e3d650b55dcb87e945967be92",
+        "previous_commit": "1573093e11ef85902562e5fab73bacba7ce8e943",
+        "date": 1562432108,
+        "releases": {
+            "previous": "7ee9151fe3e3c85e3d650b55dcb87e945967be92",
+            "next": "7ee9151fe3e3c85e3d650b55dcb87e945967be92"
+        },
+        "commit_message": "Move constructor argument types to static final\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "7ee9151fe3e3c85e3d650b55dcb87e945967be92": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "static <T extends DoubleHistogram> T org.HdrHistogram.DoubleHistogram.constructHistogramFromBuffer( int cookie, final ByteBuffer buffer, final Class<T> doubleHistogramClass, final Class<? extends AbstractHistogram> histogramClass, final long minBarForHighestToLowestValueRatio)"
+                ]
+            },
+            "1573093e11ef85902562e5fab73bacba7ce8e943": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "static <T extends DoubleHistogram> T org.HdrHistogram.DoubleHistogram.constructHistogramFromBuffer( int cookie, final ByteBuffer buffer, final Class<T> doubleHistogramClass, final Class<? extends AbstractHistogram> histogramClass, final long minBarForHighestToLowestValueRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "05015c9d37c611363f42b6d61cb0de11965f5cff",
+        "previous_commit": "dda4dbf358aa2cdc81c5629875f956ce87c81723",
+        "date": 1621995893,
+        "releases": {
+            "previous": "05015c9d37c611363f42b6d61cb0de11965f5cff",
+            "next": "05015c9d37c611363f42b6d61cb0de11965f5cff"
+        },
+        "commit_message": "Fixes https://github.com/HdrHistogram/HdrHistogram/issues/178\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "05015c9d37c611363f42b6d61cb0de11965f5cff": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public double org.HdrHistogram.DoubleHistogram.getMaxValue()"
+                ]
+            },
+            "dda4dbf358aa2cdc81c5629875f956ce87c81723": {
+                "src/main/java/org/HdrHistogram/DoubleHistogram.java": [
+                    "public double org.HdrHistogram.DoubleHistogram.getMaxValue()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "c458630d7060f04668da2b5cf1c5603b37d7bfea",
+        "previous_commit": "55010cfe93133354a6d08dc8cdce25b69d4cf542",
+        "date": 1487978436,
+        "releases": {
+            "previous": "c458630d7060f04668da2b5cf1c5603b37d7bfea",
+            "next": "c458630d7060f04668da2b5cf1c5603b37d7bfea"
+        },
+        "commit_message": "Cleanup (remove unnecesary logic)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "c458630d7060f04668da2b5cf1c5603b37d7bfea": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(final long value)"
+                ]
+            },
+            "55010cfe93133354a6d08dc8cdce25b69d4cf542": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "1efbe23b6ebc1efe491a354dca87c7d09ecf77d2",
+        "previous_commit": "fca1366c47371dc5e69124b6180e4aea9d7fcdb7",
+        "date": 1502919804,
+        "releases": {
+            "previous": "1efbe23b6ebc1efe491a354dca87c7d09ecf77d2",
+            "next": "1efbe23b6ebc1efe491a354dca87c7d09ecf77d2"
+        },
+        "commit_message": "Cleans up fp computation details in getValueAtPercentile\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "1efbe23b6ebc1efe491a354dca87c7d09ecf77d2": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.getValueAtPercentile(final double percentile)"
+                ]
+            },
+            "fca1366c47371dc5e69124b6180e4aea9d7fcdb7": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "public long org.HdrHistogram.AbstractHistogram.getValueAtPercentile(final double percentile)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "ad520e5fc2a337fdafdd8e825660f1fb1efc11ec",
+        "previous_commit": "7e9548e02bff17a382197475895488ac75424c08",
+        "date": 1539444238,
+        "releases": {
+            "previous": "ad520e5fc2a337fdafdd8e825660f1fb1efc11ec",
+            "next": "ad520e5fc2a337fdafdd8e825660f1fb1efc11ec"
+        },
+        "commit_message": "Clean up double/regular histogram logic\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "ad520e5fc2a337fdafdd8e825660f1fb1efc11ec": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "7e9548e02bff17a382197475895488ac75424c08": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "a7d042e8b910aee595ca453dd531b646a3c62031",
+        "previous_commit": "10992b893cf8103de138941817c8d19fb0daa39c",
+        "date": 1511556500,
+        "releases": {
+            "previous": "a7d042e8b910aee595ca453dd531b646a3c62031",
+            "next": "a7d042e8b910aee595ca453dd531b646a3c62031"
+        },
+        "commit_message": "Cosmetics and Javadoc touchups\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "a7d042e8b910aee595ca453dd531b646a3c62031": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "10992b893cf8103de138941817c8d19fb0daa39c": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "b731df4279a14d63b8571390031f58a1ac1952e1",
+        "previous_commit": "df88b39ccf99496e2b8e61f7940bafbcb03799df",
+        "date": 1463581434,
+        "releases": {
+            "previous": "b731df4279a14d63b8571390031f58a1ac1952e1",
+            "next": "b731df4279a14d63b8571390031f58a1ac1952e1"
+        },
+        "commit_message": "touchups\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "b731df4279a14d63b8571390031f58a1ac1952e1": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            },
+            "df88b39ccf99496e2b8e61f7940bafbcb03799df": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "public void org.HdrHistogram.HistogramLogProcessor.run()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f8be039d5ec8fc10ed383b557df8643701db009b",
+        "previous_commit": "86cf659fb91344c0fd180c9d1bb15e8222d55780",
+        "date": 1487364807,
+        "releases": {
+            "previous": "f8be039d5ec8fc10ed383b557df8643701db009b",
+            "next": "f8be039d5ec8fc10ed383b557df8643701db009b"
+        },
+        "commit_message": "Avoid an infinite loop in bucket calculations when unitMagnitude is big.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f8be039d5ec8fc10ed383b557df8643701db009b": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(final long value)"
+                ]
+            },
+            "86cf659fb91344c0fd180c9d1bb15e8222d55780": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(final long value)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "d279c913888f2fdf8dbec31f77ec2d3573f01c59",
+        "previous_commit": "463fcbddf40a9963273076cca86557b664b8ac59",
+        "date": 1527520853,
+        "releases": {
+            "previous": "d279c913888f2fdf8dbec31f77ec2d3573f01c59",
+            "next": "d279c913888f2fdf8dbec31f77ec2d3573f01c59"
+        },
+        "commit_message": "Added Coordinated Omission correction on HistogramLogProcessor\n\nHistogramLogProcessor doesn't allow to correct CO while processing\ninterval histograms: it adds the ability to configure it with\nthe expected interval and perform the correction while processing.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "d279c913888f2fdf8dbec31f77ec2d3573f01c59": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogProcessor.getIntervalHistogram()"
+                ]
+            },
+            "463fcbddf40a9963273076cca86557b664b8ac59": {
+                "src/main/java/org/HdrHistogram/HistogramLogProcessor.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogProcessor.getIntervalHistogram()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "795e99337fbedc794220f0f3b32c55ee3899beb0",
+        "previous_commit": "463fcbddf40a9963273076cca86557b664b8ac59",
+        "date": 1529407191,
+        "releases": {
+            "previous": "795e99337fbedc794220f0f3b32c55ee3899beb0",
+            "next": "795e99337fbedc794220f0f3b32c55ee3899beb0"
+        },
+        "commit_message": "Refactor HistogramLogReader and AbstractLogReader for de-duplication\n\nAlso allows an easier path to developing custom readers and a close\nmethod.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "795e99337fbedc794220f0f3b32c55ee3899beb0": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ]
+            },
+            "463fcbddf40a9963273076cca86557b664b8ac59": {
+                "src/main/java/org/HdrHistogram/HistogramLogReader.java": [
+                    "private EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(final double rangeStartTimeSec, final double rangeEndTimeSec, boolean absolute)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "72b2636dbd4df8499f6ad921e136fc4f426f8c20",
+        "previous_commit": "9464c8fcaf977c5bcfcb5f3d4b6c7cb492aaf049",
+        "date": 1452182351,
+        "releases": {
+            "previous": "72b2636dbd4df8499f6ad921e136fc4f426f8c20",
+            "next": "72b2636dbd4df8499f6ad921e136fc4f426f8c20"
+        },
+        "commit_message": "Eagerly end() Inflaters to avoid a native leak\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "72b2636dbd4df8499f6ad921e136fc4f426f8c20": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromCompressedByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue)"
+                ]
+            },
+            "9464c8fcaf977c5bcfcb5f3d4b6c7cb492aaf049": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromCompressedByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "18b6ae4cfa31634db050f2fd29bbcba5e1f8fb3f",
+        "previous_commit": "32c24af481c84b0e2615f16723a701443fdcf8c5",
+        "date": 1562435200,
+        "releases": {
+            "previous": "18b6ae4cfa31634db050f2fd29bbcba5e1f8fb3f",
+            "next": "18b6ae4cfa31634db050f2fd29bbcba5e1f8fb3f"
+        },
+        "commit_message": "Allow decoded histograms to reject auto-resize\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "18b6ae4cfa31634db050f2fd29bbcba5e1f8fb3f": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)"
+                ]
+            },
+            "32c24af481c84b0e2615f16723a701443fdcf8c5": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "private static <T extends AbstractHistogram> T org.HdrHistogram.AbstractHistogram.decodeFromByteBuffer( final ByteBuffer buffer, final Class<T> histogramClass, final long minBarForHighestTrackableValue, final Inflater decompressor)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "941dc5e12699dc2e4e26d0135b0823ad94a5569a",
+        "previous_commit": "1beb18b80ff5b84b87817ca0a2a4d1884254c969",
+        "date": 1546397989,
+        "releases": {
+            "previous": "941dc5e12699dc2e4e26d0135b0823ad94a5569a",
+            "next": "941dc5e12699dc2e4e26d0135b0823ad94a5569a"
+        },
+        "commit_message": "Makes setIntegerToDoubleValueConversionRatio abstract, and supplies an explictly named  non-Concurrent implementation. Intended to make sure implementations are intentional.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "HdrHistogram-benchmarks",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "941dc5e12699dc2e4e26d0135b0823ad94a5569a": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": []
+            },
+            "1beb18b80ff5b84b87817ca0a2a4d1884254c969": {
+                "src/main/java/org/HdrHistogram/AbstractHistogram.java": [
+                    "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double integerToDoubleValueConversionRatio)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    }
+]

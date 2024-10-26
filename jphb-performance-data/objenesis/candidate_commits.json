@@ -1,0 +1,2551 @@
+[
+    {
+        "commit": "2597f94790d1a4b3891b9b2f3ef0c237071f521e",
+        "previous_commit": "0eada9c634866eb82b48cda6760b1c2d55dde4bd",
+        "date": 1538708004,
+        "releases": {
+            "previous": "2597f94790d1a4b3891b9b2f3ef0c237071f521e",
+            "next": "2597f94790d1a4b3891b9b2f3ef0c237071f521e"
+        },
+        "commit_message": "Code cleanup to go Java 8\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "2597f94790d1a4b3891b9b2f3ef0c237071f521e": {
+                "main/src/main/java/org/objenesis/instantiator/android/Android10Instantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.Android10Instantiator<T>.getNewStaticMethod()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/android/Android17Instantiator.java": [
+                    "private static Integer org.objenesis.instantiator.android.Android17Instantiator<T>.findConstructorIdForJavaLangObjectConstructor()",
+                    "private static Method org.objenesis.instantiator.android.Android17Instantiator<T>.getNewInstanceMethod()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/android/Android18Instantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.Android18Instantiator<T>.getNewInstanceMethod()",
+                    "private static Long org.objenesis.instantiator.android.Android18Instantiator<T>.findConstructorIdForJavaLangObjectConstructor()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/android/AndroidSerializationInstantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.AndroidSerializationInstantiator<T>.getNewInstanceMethod()",
+                    "public T org.objenesis.instantiator.android.AndroidSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/basic/ObjectStreamClassInstantiator.java": [
+                    "private static void org.objenesis.instantiator.basic.ObjectStreamClassInstantiator<T>.initialize()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/gcj/GCJInstantiator.java": [
+                    "public T org.objenesis.instantiator.gcj.GCJInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/gcj/GCJInstantiatorBase.java": [
+                    "private static void org.objenesis.instantiator.gcj.GCJInstantiatorBase<T>.initialize()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/perc/PercSerializationInstantiator.java": [
+                    "public T org.objenesis.instantiator.perc.PercSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/SunReflectionFactoryHelper.java": [
+                    "public static <T> Constructor<T> org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(Class<T> type, Constructor<?> constructor)",
+                    "private static Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(Class<?> reflectionFactoryClass)"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/util/ClassDefinitionUtils.java": [
+                    "public static byte[] org.objenesis.instantiator.util.ClassDefinitionUtils.readClass(String className)",
+                    "public static <T> T org.objenesis.instantiator.util.ClassDefinitionUtils.newInstance(Class<T> clazz)",
+                    "public static void org.objenesis.instantiator.util.ClassDefinitionUtils.writeClass(String fileName, byte[] bytes)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/PlatformDescription.java": [
+                    "public static String org.objenesis.strategy.PlatformDescription.describePlatform()"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SingleInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SingleInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/TextReporter.java": [
+                    "private void org.objenesis.tck.TextReporter.printResult(long totalTime)",
+                    "private void org.objenesis.tck.TextReporter.addResult(Candidate.CandidateType type, boolean success, Exception exception)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "public static SortedSet<String> org.objenesis.tck.search.ClassEnumerator.getClassesForPackage(Package pkg, ClassLoader classLoader)",
+                    "private static void org.objenesis.tck.search.ClassEnumerator.processDirectory(File directory, String pkgname, SortedSet<String> classes)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            },
+            "0eada9c634866eb82b48cda6760b1c2d55dde4bd": {
+                "main/src/main/java/org/objenesis/instantiator/android/Android10Instantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.Android10Instantiator<T>.getNewStaticMethod()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/android/Android17Instantiator.java": [
+                    "private static Integer org.objenesis.instantiator.android.Android17Instantiator<T>.findConstructorIdForJavaLangObjectConstructor()",
+                    "private static Method org.objenesis.instantiator.android.Android17Instantiator<T>.getNewInstanceMethod()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/android/Android18Instantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.Android18Instantiator<T>.getNewInstanceMethod()",
+                    "private static Long org.objenesis.instantiator.android.Android18Instantiator<T>.findConstructorIdForJavaLangObjectConstructor()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/android/AndroidSerializationInstantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.AndroidSerializationInstantiator<T>.getNewInstanceMethod()",
+                    "public T org.objenesis.instantiator.android.AndroidSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/basic/ObjectStreamClassInstantiator.java": [
+                    "private static void org.objenesis.instantiator.basic.ObjectStreamClassInstantiator<T>.initialize()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/gcj/GCJInstantiator.java": [
+                    "public T org.objenesis.instantiator.gcj.GCJInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/gcj/GCJInstantiatorBase.java": [
+                    "private static void org.objenesis.instantiator.gcj.GCJInstantiatorBase<T>.initialize()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/perc/PercSerializationInstantiator.java": [
+                    "public T org.objenesis.instantiator.perc.PercSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/SunReflectionFactoryHelper.java": [
+                    "public static <T> Constructor<T> org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(Class<T> type, Constructor<?> constructor)",
+                    "private static Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(Class<?> reflectionFactoryClass)"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/util/ClassDefinitionUtils.java": [
+                    "public static byte[] org.objenesis.instantiator.util.ClassDefinitionUtils.readClass(String className)",
+                    "public static <T> T org.objenesis.instantiator.util.ClassDefinitionUtils.newInstance(Class<T> clazz)",
+                    "public static void org.objenesis.instantiator.util.ClassDefinitionUtils.writeClass(String fileName, byte[] bytes)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/PlatformDescription.java": [
+                    "public static String org.objenesis.strategy.PlatformDescription.describePlatform()"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SingleInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SingleInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/TextReporter.java": [
+                    "private void org.objenesis.tck.TextReporter.printResult(long totalTime)",
+                    "private void org.objenesis.tck.TextReporter.addResult(Candidate.CandidateType type, boolean success, Exception exception)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "public static SortedSet<String> org.objenesis.tck.search.ClassEnumerator.getClassesForPackage(Package pkg, ClassLoader classLoader)",
+                    "private static void org.objenesis.tck.search.ClassEnumerator.processDirectory(File directory, String pkgname, SortedSet<String> classes)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "cd23ea6c70c398d0ce59454137d2f52578c22b7f",
+        "previous_commit": "bf5af4603e2783ce3ea2cf0edcd5dcbc831bd67e",
+        "date": 1376864565,
+        "releases": {
+            "previous": "cd23ea6c70c398d0ce59454137d2f52578c22b7f",
+            "next": "cd23ea6c70c398d0ce59454137d2f52578c22b7f"
+        },
+        "commit_message": "Remove unecessary arrays\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "cd23ea6c70c398d0ce59454137d2f52578c22b7f": {
+                "main/src/org/objenesis/instantiator/android/Android23Instantiator.java": [
+                    "public Object org.objenesis.instantiator.android.Android23Instantiator.newInstance()",
+                    "private static Method org.objenesis.instantiator.android.Android23Instantiator.getNewStaticMethod()"
+                ],
+                "main/src/org/objenesis/instantiator/android/Android30Instantiator.java": [
+                    "public Object org.objenesis.instantiator.android.Android30Instantiator.newInstance()",
+                    "private static Integer org.objenesis.instantiator.android.Android30Instantiator.findConstructorIdForJavaLangObjectConstructor()",
+                    "private static Method org.objenesis.instantiator.android.Android30Instantiator.getNewInstanceMethod()"
+                ],
+                "main/src/org/objenesis/instantiator/android/AndroidSerializationInstantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.AndroidSerializationInstantiator.getNewInstanceMethod()",
+                    "public Object org.objenesis.instantiator.android.AndroidSerializationInstantiator.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/sun/SunReflectionFactoryHelper.java": [
+                    "private static Method org.objenesis.instantiator.sun.SunReflectionFactoryHelper.getNewConstructorForSerializationMethod(Class reflectionFactoryClass)",
+                    "public static Constructor org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(Class type, Constructor constructor)",
+                    "private static Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(Class reflectionFactoryClass)"
+                ],
+                "main/src/org/objenesis/strategy/SingleInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.SingleInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            },
+            "bf5af4603e2783ce3ea2cf0edcd5dcbc831bd67e": {
+                "main/src/org/objenesis/instantiator/android/Android23Instantiator.java": [
+                    "public Object org.objenesis.instantiator.android.Android23Instantiator.newInstance()",
+                    "private static Method org.objenesis.instantiator.android.Android23Instantiator.getNewStaticMethod()"
+                ],
+                "main/src/org/objenesis/instantiator/android/Android30Instantiator.java": [
+                    "public Object org.objenesis.instantiator.android.Android30Instantiator.newInstance()",
+                    "private static Integer org.objenesis.instantiator.android.Android30Instantiator.findConstructorIdForJavaLangObjectConstructor()",
+                    "private static Method org.objenesis.instantiator.android.Android30Instantiator.getNewInstanceMethod()"
+                ],
+                "main/src/org/objenesis/instantiator/android/AndroidSerializationInstantiator.java": [
+                    "private static Method org.objenesis.instantiator.android.AndroidSerializationInstantiator.getNewInstanceMethod()",
+                    "public Object org.objenesis.instantiator.android.AndroidSerializationInstantiator.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/sun/SunReflectionFactoryHelper.java": [
+                    "private static Method org.objenesis.instantiator.sun.SunReflectionFactoryHelper.getNewConstructorForSerializationMethod(Class reflectionFactoryClass)",
+                    "public static Constructor org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(Class type, Constructor constructor)",
+                    "private static Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(Class reflectionFactoryClass)"
+                ],
+                "main/src/org/objenesis/strategy/SingleInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.SingleInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "0b58301e52a8eb0d860d9db763cfb4a86529f305",
+        "previous_commit": "065e3c8119928b87a33653c03217fbadfa13b6c2",
+        "date": 1376939581,
+        "releases": {
+            "previous": "0b58301e52a8eb0d860d9db763cfb4a86529f305",
+            "next": "0b58301e52a8eb0d860d9db763cfb4a86529f305"
+        },
+        "commit_message": "Generify the code\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "0b58301e52a8eb0d860d9db763cfb4a86529f305": {
+                "main/src/org/objenesis/instantiator/jrockit/JRockitLegacyInstantiator.java": [
+                    "private static void org.objenesis.instantiator.jrockit.JRockitLegacyInstantiator<T>.initialize()"
+                ],
+                "tck/src/org/objenesis/tck/CandidateLoader.java": [
+                    "private void org.objenesis.tck.CandidateLoader.handlePropertyEntry(String key, String value)",
+                    "public void org.objenesis.tck.CandidateLoader.loadFrom(InputStream inputStream)"
+                ],
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "public void org.objenesis.tck.TCK.runTests(Reporter reporter)"
+                ],
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.printResult(boolean parentConstructorTest)",
+                    "private int org.objenesis.tck.TextReporter.lengthOfLongestStringIn(Collection<String> descriptions)",
+                    "public void org.objenesis.tck.TextReporter.startTests(String platformDescription, Collection<String> allCandidates, Collection<String> allInstantiators)",
+                    "public void org.objenesis.tck.TextReporter.result(boolean instantiatedObject)",
+                    "public void org.objenesis.tck.TextReporter.exception(Exception exception)"
+                ]
+            },
+            "065e3c8119928b87a33653c03217fbadfa13b6c2": {
+                "main/src/org/objenesis/instantiator/jrockit/JRockitLegacyInstantiator.java": [
+                    "private static void org.objenesis.instantiator.jrockit.JRockitLegacyInstantiator.initialize()"
+                ],
+                "tck/src/org/objenesis/tck/CandidateLoader.java": [
+                    "private void org.objenesis.tck.CandidateLoader.handlePropertyEntry(String key, String value)",
+                    "public void org.objenesis.tck.CandidateLoader.loadFrom(InputStream inputStream)"
+                ],
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "public void org.objenesis.tck.TCK.runTests(Reporter reporter)"
+                ],
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.printResult(boolean parentConstructorTest)",
+                    "public void org.objenesis.tck.TextReporter.startTests(String platformDescription, Collection allCandidates, Collection allInstantiators)",
+                    "private int org.objenesis.tck.TextReporter.lengthOfLongestStringIn(Collection descriptions)",
+                    "public void org.objenesis.tck.TextReporter.result(boolean instantiatedObject)",
+                    "public void org.objenesis.tck.TextReporter.exception(Exception exception)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "cb6689d406c9464a59be7907388c186180829f79",
+        "previous_commit": "b949cdbb024bba0465c4146076b484a37f3fcd27",
+        "date": 1538970855,
+        "releases": {
+            "previous": "cb6689d406c9464a59be7907388c186180829f79",
+            "next": "cb6689d406c9464a59be7907388c186180829f79"
+        },
+        "commit_message": "Add a ClassUtils for normal code without MethodHandles\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "cb6689d406c9464a59be7907388c186180829f79": {
+                "main/src/main/java/org/objenesis/instantiator/basic/NewInstanceInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.NewInstanceInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type)",
+                    "public T org.objenesis.instantiator.basic.ProxyingInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, String className)",
+                    "private ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/util/ClassDefinitionUtils.java": [
+                    "public static byte[] org.objenesis.instantiator.util.ClassDefinitionUtils.readClass(String className)"
+                ]
+            },
+            "b949cdbb024bba0465c4146076b484a37f3fcd27": {
+                "main/src/main/java/org/objenesis/instantiator/basic/NewInstanceInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.NewInstanceInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type)",
+                    "public T org.objenesis.instantiator.basic.ProxyingInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, String className)",
+                    "private ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/util/ClassDefinitionUtils.java": [
+                    "public static byte[] org.objenesis.instantiator.util.ClassDefinitionUtils.readClass(String className)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "8cbcd5c74d6979849487d1b685c11c60ad58af79",
+        "previous_commit": "b5b48773e20f9a867a8d2f8eff738a0ab07ce5b4",
+        "date": 1376985141,
+        "releases": {
+            "previous": "8cbcd5c74d6979849487d1b685c11c60ad58af79",
+            "next": "8cbcd5c74d6979849487d1b685c11c60ad58af79"
+        },
+        "commit_message": "Use Class.cast\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "8cbcd5c74d6979849487d1b685c11c60ad58af79": {
+                "main/src/org/objenesis/instantiator/android/Android23Instantiator.java": [
+                    "public T org.objenesis.instantiator.android.Android23Instantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/android/Android30Instantiator.java": [
+                    "public T org.objenesis.instantiator.android.Android30Instantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/android/AndroidSerializationInstantiator.java": [
+                    "public T org.objenesis.instantiator.android.AndroidSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/gcj/GCJInstantiator.java": [
+                    "public T org.objenesis.instantiator.gcj.GCJInstantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/gcj/GCJSerializationInstantiator.java": [
+                    "public T org.objenesis.instantiator.gcj.GCJSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/jrockit/JRockitLegacyInstantiator.java": [
+                    "public T org.objenesis.instantiator.jrockit.JRockitLegacyInstantiator<T>.newInstance()"
+                ]
+            },
+            "b5b48773e20f9a867a8d2f8eff738a0ab07ce5b4": {
+                "main/src/org/objenesis/instantiator/android/Android23Instantiator.java": [
+                    "public T org.objenesis.instantiator.android.Android23Instantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/android/Android30Instantiator.java": [
+                    "public T org.objenesis.instantiator.android.Android30Instantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/android/AndroidSerializationInstantiator.java": [
+                    "public T org.objenesis.instantiator.android.AndroidSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/gcj/GCJInstantiator.java": [
+                    "public T org.objenesis.instantiator.gcj.GCJInstantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/gcj/GCJSerializationInstantiator.java": [
+                    "public T org.objenesis.instantiator.gcj.GCJSerializationInstantiator<T>.newInstance()"
+                ],
+                "main/src/org/objenesis/instantiator/jrockit/JRockitLegacyInstantiator.java": [
+                    "public T org.objenesis.instantiator.jrockit.JRockitLegacyInstantiator<T>.newInstance()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "220161bfeec32e59ec09a17fc172a397fdc4e146",
+        "previous_commit": "b2ebe1ada55223cef259528debecd7d0e52d30f6",
+        "date": 1497909329,
+        "releases": {
+            "previous": "220161bfeec32e59ec09a17fc172a397fdc4e146",
+            "next": "220161bfeec32e59ec09a17fc172a397fdc4e146"
+        },
+        "commit_message": "Refactor the TCK to provide a better insight of the serialization behavior (close #54)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "220161bfeec32e59ec09a17fc172a397fdc4e146": {
+                "gae/src/main/java/org/objenesis/gae/JspReporter.java": [
+                    "public void org.objenesis.gae.JspReporter.endTests()"
+                ],
+                "tck-android/src/main/java/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "private void org.objenesis.tck.android.TckInstrumentation.launch()"
+                ],
+                "tck/src/main/java/org/objenesis/tck/Main.java": [
+                    "public static void org.objenesis.tck.Main.main(String[] args)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/TextReporter.java": [
+                    "private int org.objenesis.tck.TextReporter.lengthOfLongestStringIn(Collection<String> descriptions)",
+                    "public void org.objenesis.tck.TextReporter.endTests()"
+                ]
+            },
+            "b2ebe1ada55223cef259528debecd7d0e52d30f6": {
+                "gae/src/main/java/org/objenesis/gae/JspReporter.java": [
+                    "public void org.objenesis.gae.JspReporter.endTests()"
+                ],
+                "tck-android/src/main/java/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "private void org.objenesis.tck.android.TckInstrumentation.launch()"
+                ],
+                "tck/src/main/java/org/objenesis/tck/Main.java": [
+                    "public static void org.objenesis.tck.Main.main(String[] args)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/TextReporter.java": [
+                    "private int org.objenesis.tck.TextReporter.lengthOfLongestStringIn(Collection<String> descriptions)",
+                    "public void org.objenesis.tck.TextReporter.endTests()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "274228d8618e625ebeb4bacd22b1b80d11d01469",
+        "previous_commit": "67fea5f9f299fdd2d2ce1bffa330a7468fd3e5c8",
+        "date": 1484233336,
+        "releases": {
+            "previous": "274228d8618e625ebeb4bacd22b1b80d11d01469",
+            "next": "274228d8618e625ebeb4bacd22b1b80d11d01469"
+        },
+        "commit_message": "Use SunReflectionFactorySerializationInstantiator for Java 9 (close #45)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "274228d8618e625ebeb4bacd22b1b80d11d01469": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void org.objenesis.gae.JspWriterListener.instantiatorSupported(Class<?> c)",
+                    "public void org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/SystemOutListener.java": [
+                    "public void org.objenesis.tck.search.SystemOutListener.instantiatorUnsupported(Class<?> c, Throwable t)",
+                    "public void org.objenesis.tck.search.SystemOutListener.instantiatorSupported(Class<?> c)"
+                ]
+            },
+            "67fea5f9f299fdd2d2ce1bffa330a7468fd3e5c8": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void org.objenesis.gae.JspWriterListener.instantiatorSupported(Class<?> c)",
+                    "public void org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/SystemOutListener.java": [
+                    "public void org.objenesis.tck.search.SystemOutListener.instantiatorUnsupported(Class<?> c, Throwable t)",
+                    "public void org.objenesis.tck.search.SystemOutListener.instantiatorSupported(Class<?> c)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f4a5ea96a9843bb8c2f6e394035d10172e51f17f",
+        "previous_commit": "633c5384d73f722a60e1a7ce8df9ee4698eff5cd",
+        "date": 1539835096,
+        "releases": {
+            "previous": "f4a5ea96a9843bb8c2f6e394035d10172e51f17f",
+            "next": "f4a5ea96a9843bb8c2f6e394035d10172e51f17f"
+        },
+        "commit_message": "Some code cleanup\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f4a5ea96a9843bb8c2f6e394035d10172e51f17f": {
+                "gae/src/main/java/org/objenesis/gae/JspReporter.java": [
+                    "private void org.objenesis.gae.JspReporter.printResult(long totalTime)",
+                    "private void org.objenesis.gae.JspReporter.addResult(Candidate.CandidateType type, boolean success, Exception exception)"
+                ],
+                "tck-android/src/main/java/org/objenesis/tck/android/ObjenesisTest.java": [
+                    "public void org.objenesis.tck.android.ObjenesisTest.exception(Candidate.CandidateType type, Exception exception)"
+                ]
+            },
+            "633c5384d73f722a60e1a7ce8df9ee4698eff5cd": {
+                "gae/src/main/java/org/objenesis/gae/JspReporter.java": [
+                    "private void org.objenesis.gae.JspReporter.printResult(long totalTime)",
+                    "private void org.objenesis.gae.JspReporter.addResult(Candidate.CandidateType type, boolean success, Exception exception)"
+                ],
+                "tck-android/src/main/java/org/objenesis/tck/android/ObjenesisTest.java": [
+                    "public void org.objenesis.tck.android.ObjenesisTest.exception(Candidate.CandidateType type, Exception exception)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "0eada9c634866eb82b48cda6760b1c2d55dde4bd",
+        "previous_commit": "a5196c8f8441ea4713954396ace5b17829a04f4f",
+        "date": 1538706271,
+        "releases": {
+            "previous": "0eada9c634866eb82b48cda6760b1c2d55dde4bd",
+            "next": "0eada9c634866eb82b48cda6760b1c2d55dde4bd"
+        },
+        "commit_message": "Apply some automated code cleanup\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "0eada9c634866eb82b48cda6760b1c2d55dde4bd": {
+                "main/src/main/java/org/objenesis/ObjenesisHelper.java": [
+                    "public static <T extends Serializable> T org.objenesis.ObjenesisHelper.newSerializableInstance(Class<T> clazz)"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/gcj/GCJInstantiatorBase.java": [
+                    "private static void org.objenesis.instantiator.gcj.GCJInstantiatorBase<T>.initialize()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, String className)"
+                ]
+            },
+            "a5196c8f8441ea4713954396ace5b17829a04f4f": {
+                "main/src/main/java/org/objenesis/ObjenesisHelper.java": [
+                    "public static <T extends Serializable> T org.objenesis.ObjenesisHelper.newSerializableInstance(Class<T> clazz)"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/gcj/GCJInstantiatorBase.java": [
+                    "private static void org.objenesis.instantiator.gcj.GCJInstantiatorBase<T>.initialize()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, String className)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "389692eed57fdf21d639463eac20ade31e44bf55",
+        "previous_commit": "14a9ea3fa97ae00261a6a0565e3d6f24a2c6fdf8",
+        "date": 1534964060,
+        "releases": {
+            "previous": "389692eed57fdf21d639463eac20ade31e44bf55",
+            "next": "389692eed57fdf21d639463eac20ade31e44bf55"
+        },
+        "commit_message": "Ignore deprecation in Java 9, 10, 11\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "389692eed57fdf21d639463eac20ade31e44bf55": {
+                "main/src/main/java/org/objenesis/instantiator/basic/NewInstanceInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.NewInstanceInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.ProxyingInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "14a9ea3fa97ae00261a6a0565e3d6f24a2c6fdf8": {
+                "main/src/main/java/org/objenesis/instantiator/basic/NewInstanceInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.NewInstanceInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.ProxyingInstantiator<T>.newInstance()"
+                ],
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "3a74141368b6555336744e4ab0a992c6e03f9a39",
+        "previous_commit": "5bc2568680630d6030741bdc4d9481e3abb4f894",
+        "date": 1484195009,
+        "releases": {
+            "previous": "3a74141368b6555336744e4ab0a992c6e03f9a39",
+            "next": "3a74141368b6555336744e4ab0a992c6e03f9a39"
+        },
+        "commit_message": "Skip instantiators that can\u2019t be loaded\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "3a74141368b6555336744e4ab0a992c6e03f9a39": {
+                "tck/src/main/java/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "private static void org.objenesis.tck.search.ClassEnumerator.processDirectory(File directory, String pkgname, SortedSet<String> classes)",
+                    "private static void org.objenesis.tck.search.ClassEnumerator.processJarfile(URL resource, String pkgname, SortedSet<String> classes)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            },
+            "5bc2568680630d6030741bdc4d9481e3abb4f894": {
+                "tck/src/main/java/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "private static void org.objenesis.tck.search.ClassEnumerator.processDirectory(File directory, String pkgname, SortedSet<Class<?>> classes)",
+                    "private static void org.objenesis.tck.search.ClassEnumerator.processJarfile(URL resource, String pkgname, SortedSet<Class<?>> classes)"
+                ],
+                "tck/src/main/java/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "107892d9b8809a5623278e387dec352d0504bc39",
+        "previous_commit": "a2df0f31c6900d23542908367e5bd0f9337001dc",
+        "date": 1461156562,
+        "releases": {
+            "previous": "107892d9b8809a5623278e387dec352d0504bc39",
+            "next": "107892d9b8809a5623278e387dec352d0504bc39"
+        },
+        "commit_message": "Fixed an issue with Android N's OpenJDK where invalid instantiator is used\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "107892d9b8809a5623278e387dec352d0504bc39": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "a2df0f31c6900d23542908367e5bd0f9337001dc": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "d93407c366c17fea94956f7bd2994e0823375816",
+        "previous_commit": "c3a90668851711f3fb990fa644fa1edde98d16ad",
+        "date": 1682473208,
+        "releases": {
+            "previous": "d93407c366c17fea94956f7bd2994e0823375816",
+            "next": "d93407c366c17fea94956f7bd2994e0823375816"
+        },
+        "commit_message": "Remove old GAE support (close #199)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "d93407c366c17fea94956f7bd2994e0823375816": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "c3a90668851711f3fb990fa644fa1edde98d16ad": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "653b04693744c46aaf90b3de9c95668292d06e5f",
+        "previous_commit": "17cba2bc1a612d0fc20d673ce88fda91be26a979",
+        "date": 1462761665,
+        "releases": {
+            "previous": "653b04693744c46aaf90b3de9c95668292d06e5f",
+            "next": "653b04693744c46aaf90b3de9c95668292d06e5f"
+        },
+        "commit_message": "Calculate if Android OpenJDK only once at startup\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "653b04693744c46aaf90b3de9c95668292d06e5f": {
+                "main/src/main/java/org/objenesis/strategy/PlatformDescription.java": [
+                    "public static boolean org.objenesis.strategy.PlatformDescription.isGoogleAppEngine()",
+                    "public static boolean org.objenesis.strategy.PlatformDescription.isAndroidOpenJDK()"
+                ]
+            },
+            "17cba2bc1a612d0fc20d673ce88fda91be26a979": {
+                "main/src/main/java/org/objenesis/strategy/PlatformDescription.java": [
+                    "public static boolean org.objenesis.strategy.PlatformDescription.isGoogleAppEngine()",
+                    "public static boolean org.objenesis.strategy.PlatformDescription.isAndroidOpenJDK()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "c719792d37e8e1c2ddf181cfb28322ab9c47b306",
+        "previous_commit": "ef196c4449edce2587561ef409bcf90338a0cb56",
+        "date": 1380488278,
+        "releases": {
+            "previous": "c719792d37e8e1c2ddf181cfb28322ab9c47b306",
+            "next": "c719792d37e8e1c2ddf181cfb28322ab9c47b306"
+        },
+        "commit_message": "Make it easier to call the TCK programmatically (#25)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "c719792d37e8e1c2ddf181cfb28322ab9c47b306": {
+                "tck/src/org/objenesis/tck/Main.java": [
+                    "public static void org.objenesis.tck.Main.runTest(Objenesis objenesis, Reporter reporter, String description, String candidates)",
+                    "public static boolean org.objenesis.tck.Main.run(Reporter reporter)"
+                ]
+            },
+            "ef196c4449edce2587561ef409bcf90338a0cb56": {
+                "tck/src/org/objenesis/tck/Main.java": [
+                    "private static void org.objenesis.tck.Main.runTest(Objenesis objenesis, Reporter reporter, String description, String candidates)",
+                    "public static boolean org.objenesis.tck.Main.run(Reporter reporter)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "0015347007087e9ef493e93d73ce76744833d1a1",
+        "previous_commit": "f8bfa496f8ece8fd9d3d15b23b3cc80f93545055",
+        "date": 1436375759,
+        "releases": {
+            "previous": "0015347007087e9ef493e93d73ce76744833d1a1",
+            "next": "0015347007087e9ef493e93d73ce76744833d1a1"
+        },
+        "commit_message": "Be able to customize the class loader\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "0015347007087e9ef493e93d73ce76744833d1a1": {
+                "tck/src/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "public static List<Class<?>> org.objenesis.tck.search.ClassEnumerator.getClassesForPackage(Package pkg, ClassLoader classLoader)",
+                    "public static List<Class<?>> org.objenesis.tck.search.ClassEnumerator.getClassesForPackage(Package pkg)"
+                ]
+            },
+            "f8bfa496f8ece8fd9d3d15b23b3cc80f93545055": {
+                "tck/src/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "public static List<Class<?>> org.objenesis.tck.search.ClassEnumerator.getClassesForPackage(Package pkg)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f8bfa496f8ece8fd9d3d15b23b3cc80f93545055",
+        "previous_commit": "02a8dbf04f668c6cacd6b5bdcf84cb609526eee5",
+        "date": 1436375722,
+        "releases": {
+            "previous": "f8bfa496f8ece8fd9d3d15b23b3cc80f93545055",
+            "next": "f8bfa496f8ece8fd9d3d15b23b3cc80f93545055"
+        },
+        "commit_message": "Add a listener to have a flexible output\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f8bfa496f8ece8fd9d3d15b23b3cc80f93545055": {
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)",
+                    "public static void org.objenesis.tck.search.SearchWorkingInstantiator.main(String[] args)"
+                ]
+            },
+            "02a8dbf04f668c6cacd6b5bdcf84cb609526eee5": {
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public static void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)",
+                    "public static void org.objenesis.tck.search.SearchWorkingInstantiator.main(String[] args)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "8b19735d991d3d8ffdf7177eb290174306e03831",
+        "previous_commit": "36975d06878af78dcbef0e3dfd139169c5c22b3b",
+        "date": 1381327137,
+        "releases": {
+            "previous": "8b19735d991d3d8ffdf7177eb290174306e03831",
+            "next": "8b19735d991d3d8ffdf7177eb290174306e03831"
+        },
+        "commit_message": "List the actual instantiators that were used (#26)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "8b19735d991d3d8ffdf7177eb290174306e03831": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "public void org.objenesis.tck.TCK.runTests(Reporter reporter)"
+                ],
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.printResult(boolean parentConstructorTest)"
+                ]
+            },
+            "36975d06878af78dcbef0e3dfd139169c5c22b3b": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "public void org.objenesis.tck.TCK.runTests(Reporter reporter)"
+                ],
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.printResult(boolean parentConstructorTest)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa",
+        "previous_commit": "f692dd56815abf3d7e479439fd8f88dc1163d7f1",
+        "date": 1436243846,
+        "releases": {
+            "previous": "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa",
+            "next": "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa"
+        },
+        "commit_message": "Use the JVM Name, not the Vendor for the constant (close #32)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa": {
+                "main/src/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "f692dd56815abf3d7e479439fd8f88dc1163d7f1": {
+                "main/src/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "35aa1c499a20dc027518129e354968fae0cc0229",
+        "previous_commit": "10fa3943efa8d06f398f2a97b36ade01c18cc848",
+        "date": 1380059934,
+        "releases": {
+            "previous": "35aa1c499a20dc027518129e354968fae0cc0229",
+            "next": "35aa1c499a20dc027518129e354968fae0cc0229"
+        },
+        "commit_message": "Add support for Android API level 18\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "35aa1c499a20dc027518129e354968fae0cc0229": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ]
+            },
+            "10fa3943efa8d06f398f2a97b36ade01c18cc848": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "e3c311a9540a65b920333830694fe586c0ee2a58",
+        "previous_commit": "d026990b801dcaf381f1a06d6bbfec4e7828c879",
+        "date": 1374426466,
+        "releases": {
+            "previous": "e3c311a9540a65b920333830694fe586c0ee2a58",
+            "next": "e3c311a9540a65b920333830694fe586c0ee2a58"
+        },
+        "commit_message": "Move constants to a dedicated constant class\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "e3c311a9540a65b920333830694fe586c0ee2a58": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ],
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ]
+            },
+            "d026990b801dcaf381f1a06d6bbfec4e7828c879": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ],
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "03019b01fece343467c2cddd2c457b0e2bd56276",
+        "previous_commit": "8cbcd5c74d6979849487d1b685c11c60ad58af79",
+        "date": 1376985151,
+        "releases": {
+            "previous": "03019b01fece343467c2cddd2c457b0e2bd56276",
+            "next": "03019b01fece343467c2cddd2c457b0e2bd56276"
+        },
+        "commit_message": "USe varargs\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "03019b01fece343467c2cddd2c457b0e2bd56276": {
+                "main/src/org/objenesis/instantiator/basic/ObjectStreamClassInstantiator.java": [
+                    "private static void org.objenesis.instantiator.basic.ObjectStreamClassInstantiator<T>.initialize()",
+                    "public T org.objenesis.instantiator.basic.ObjectStreamClassInstantiator<T>.newInstance()"
+                ]
+            },
+            "8cbcd5c74d6979849487d1b685c11c60ad58af79": {
+                "main/src/org/objenesis/instantiator/basic/ObjectStreamClassInstantiator.java": [
+                    "private static void org.objenesis.instantiator.basic.ObjectStreamClassInstantiator<T>.initialize()",
+                    "public T org.objenesis.instantiator.basic.ObjectStreamClassInstantiator<T>.newInstance()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "ef196c4449edce2587561ef409bcf90338a0cb56",
+        "previous_commit": "bde0b9288a0913644e17377113d5d17767812d68",
+        "date": 1380062489,
+        "releases": {
+            "previous": "ef196c4449edce2587561ef409bcf90338a0cb56",
+            "next": "ef196c4449edce2587561ef409bcf90338a0cb56"
+        },
+        "commit_message": "Prevent System.exit from android\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "ef196c4449edce2587561ef409bcf90338a0cb56": {
+                "tck-android/src/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "public void org.objenesis.tck.android.TckInstrumentation.onCreate(Bundle arguments)"
+                ],
+                "tck/src/org/objenesis/tck/Main.java": [
+                    "public static void org.objenesis.tck.Main.main(String[] args)"
+                ]
+            },
+            "bde0b9288a0913644e17377113d5d17767812d68": {
+                "tck-android/src/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "public void org.objenesis.tck.android.TckInstrumentation.onCreate(Bundle arguments)"
+                ],
+                "tck/src/org/objenesis/tck/Main.java": [
+                    "public static void org.objenesis.tck.Main.main(String[] args)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f195e5d3cfb754dcf7be3b178262cab878a95e1c",
+        "previous_commit": "6b27b2a3ffe65b197692977776579781b7011cb0",
+        "date": 1436844258,
+        "releases": {
+            "previous": "f195e5d3cfb754dcf7be3b178262cab878a95e1c",
+            "next": "f195e5d3cfb754dcf7be3b178262cab878a95e1c"
+        },
+        "commit_message": "Remove sout\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f195e5d3cfb754dcf7be3b178262cab878a95e1c": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void main.java.org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)",
+                    "public void main.java.org.objenesis.gae.JspWriterListener.instantiatorSupported(Class<?> c)"
+                ]
+            },
+            "6b27b2a3ffe65b197692977776579781b7011cb0": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void main.java.org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)",
+                    "public void main.java.org.objenesis.gae.JspWriterListener.instantiatorSupported(Class<?> c)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "042798f88eaf0cf95a1dc941743dbf5c0f3cc7da",
+        "previous_commit": "f4e9029cda6d9df6d4d6a69fe117b5193e38022b",
+        "date": 1381419530,
+        "releases": {
+            "previous": "042798f88eaf0cf95a1dc941743dbf5c0f3cc7da",
+            "next": "042798f88eaf0cf95a1dc941743dbf5c0f3cc7da"
+        },
+        "commit_message": "Support explicitely OpenJDK (#27)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "042798f88eaf0cf95a1dc941743dbf5c0f3cc7da": {
+                "main/src/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "f4e9029cda6d9df6d4d6a69fe117b5193e38022b": {
+                "main/src/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "d8e5d780280fe8b1046e6f36793e25fe0744b3b4",
+        "previous_commit": "eea7ccdeae914972617df61f4bd5913d4ee91f4e",
+        "date": 1436845065,
+        "releases": {
+            "previous": "d8e5d780280fe8b1046e6f36793e25fe0744b3b4",
+            "next": "d8e5d780280fe8b1046e6f36793e25fe0744b3b4"
+        },
+        "commit_message": "ObjectInputStreamInstantiator works on GAE\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "d8e5d780280fe8b1046e6f36793e25fe0744b3b4": {
+                "main/src/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "eea7ccdeae914972617df61f4bd5913d4ee91f4e": {
+                "main/src/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "b29d490b64f8540a07d32dc8757b6adc2123be51",
+        "previous_commit": "e21a2faa407e0fa542c83b2b7191246597839394",
+        "date": 1438225292,
+        "releases": {
+            "previous": "b29d490b64f8540a07d32dc8757b6adc2123be51",
+            "next": "b29d490b64f8540a07d32dc8757b6adc2123be51"
+        },
+        "commit_message": "Don't recreate the dedicated instantiator if it already exists\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "b29d490b64f8540a07d32dc8757b6adc2123be51": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, String className)",
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "e21a2faa407e0fa542c83b2b7191246597839394": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)",
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, int suffix)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "1fe465d214b2d718cbac7f8072a6776e2917d5ca",
+        "previous_commit": "1690a92cafba70afc8f333d0dd94d867dd1277b2",
+        "date": 1436325058,
+        "releases": {
+            "previous": "1fe465d214b2d718cbac7f8072a6776e2917d5ca",
+            "next": "1fe465d214b2d718cbac7f8072a6776e2917d5ca"
+        },
+        "commit_message": "Have a reusable describe platform method\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "1fe465d214b2d718cbac7f8072a6776e2917d5ca": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ],
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public static void org.objenesis.tck.search.SearchWorkingInstantiator.main(String[] args)"
+                ]
+            },
+            "1690a92cafba70afc8f333d0dd94d867dd1277b2": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ],
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public static void org.objenesis.tck.search.SearchWorkingInstantiator.main(String[] args)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "6c033aa1d4f4d4617a6b3c74ad1341b7cb6c1f13",
+        "previous_commit": "ec90e03fc831cafa734375e2e53cef614fadcc05",
+        "date": 1497064899,
+        "releases": {
+            "previous": "6c033aa1d4f4d4617a6b3c74ad1341b7cb6c1f13",
+            "next": "6c033aa1d4f4d4617a6b3c74ad1341b7cb6c1f13"
+        },
+        "commit_message": "Support Java 9 during build\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "6c033aa1d4f4d4617a6b3c74ad1341b7cb6c1f13": {
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, String className)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "ec90e03fc831cafa734375e2e53cef614fadcc05": {
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, String className)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "b4273d9afc081a3d211c2e3916deecbc0cf37efd",
+        "previous_commit": "d3424ae7d3669f9be00da9397a96b23aa55e2e90",
+        "date": 1495780878,
+        "releases": {
+            "previous": "b4273d9afc081a3d211c2e3916deecbc0cf37efd",
+            "next": "b4273d9afc081a3d211c2e3916deecbc0cf37efd"
+        },
+        "commit_message": "Support new Java 8 GAE platform (close #51)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "b4273d9afc081a3d211c2e3916deecbc0cf37efd": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "d3424ae7d3669f9be00da9397a96b23aa55e2e90": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ],
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "96041f2556876089077b84a75c2397d5f452f7be",
+        "previous_commit": "13e3f7fc9df151eba065e7fec052c1bb0c596c1e",
+        "date": 1393173495,
+        "releases": {
+            "previous": "96041f2556876089077b84a75c2397d5f452f7be",
+            "next": "96041f2556876089077b84a75c2397d5f452f7be"
+        },
+        "commit_message": "Upgrade copyrights to 2014\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "96041f2556876089077b84a75c2397d5f452f7be": {
+                "main/src/org/objenesis/instantiator/sun/UnsafeFactoryInstantiator.java": [
+                    "public T org.objenesis.instantiator.sun.UnsafeFactoryInstantiator<T>.newInstance()"
+                ]
+            },
+            "13e3f7fc9df151eba065e7fec052c1bb0c596c1e": {
+                "main/src/org/objenesis/instantiator/sun/UnsafeFactoryInstantiator.java": [
+                    "public T org.objenesis.instantiator.sun.UnsafeFactoryInstantiator<T>.newInstance()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "fbbfefa33f476cc845e1b74c79992e6f843b177b",
+        "previous_commit": "2a74707a865282ebebf0e7568afce4fb6ae98d33",
+        "date": 1437481351,
+        "releases": {
+            "previous": "fbbfefa33f476cc845e1b74c79992e6f843b177b",
+            "next": "fbbfefa33f476cc845e1b74c79992e6f843b177b"
+        },
+        "commit_message": "Now working instantiator\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "fbbfefa33f476cc845e1b74c79992e6f843b177b": {
+                "main/src/org/objenesis/instantiator/basic/ProxyObjectInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.ProxyObjectInstantiator<T>.newInstance()"
+                ]
+            },
+            "2a74707a865282ebebf0e7568afce4fb6ae98d33": {
+                "main/src/org/objenesis/instantiator/basic/ProxyObjectInstantiator.java": [
+                    "public T org.objenesis.instantiator.basic.ProxyObjectInstantiator<T>.newInstance()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "bf158d76673fccd152d01f772d08411609d00568",
+        "previous_commit": "fed0c88e313508c5f7f7739c8d960204adc41de9",
+        "date": 1614909033,
+        "releases": {
+            "previous": "bf158d76673fccd152d01f772d08411609d00568",
+            "next": "bf158d76673fccd152d01f772d08411609d00568"
+        },
+        "commit_message": "Fix raw type\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "bf158d76673fccd152d01f772d08411609d00568": {
+                "main/src/main/java/org/objenesis/instantiator/sun/SunReflectionFactoryInstantiator.java": [
+                    "private static Constructor<Object> org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator<T>.getJavaLangObjectConstructor()"
+                ]
+            },
+            "fed0c88e313508c5f7f7739c8d960204adc41de9": {
+                "main/src/main/java/org/objenesis/instantiator/sun/SunReflectionFactoryInstantiator.java": [
+                    "private static Constructor<Object> org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator<T>.getJavaLangObjectConstructor()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "dcceccbad32b5e43eaaccf40f6d105877cf94bd7",
+        "previous_commit": "3938c80acc5b60cc4550f493fe4d0a882a367a36",
+        "date": 1462848990,
+        "releases": {
+            "previous": "dcceccbad32b5e43eaaccf40f6d105877cf94bd7",
+            "next": "dcceccbad32b5e43eaaccf40f6d105877cf94bd7"
+        },
+        "commit_message": "Move Android once step higher in the decision tree\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "dcceccbad32b5e43eaaccf40f6d105877cf94bd7": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "3938c80acc5b60cc4550f493fe4d0a882a367a36": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "dd8c230abedd9462f506c5866e907ee0c29ea46e",
+        "previous_commit": "b8b93fa2b3b7444a4e95100f658a5a053a83f4e4",
+        "date": 1377128142,
+        "releases": {
+            "previous": "dd8c230abedd9462f506c5866e907ee0c29ea46e",
+            "next": "dd8c230abedd9462f506c5866e907ee0c29ea46e"
+        },
+        "commit_message": "Should return the value from putIfAbsent\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "dd8c230abedd9462f506c5866e907ee0c29ea46e": {
+                "main/src/org/objenesis/ObjenesisBase.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.ObjenesisBase.getInstantiatorOf(Class<T> clazz)"
+                ]
+            },
+            "b8b93fa2b3b7444a4e95100f658a5a053a83f4e4": {
+                "main/src/org/objenesis/ObjenesisBase.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.ObjenesisBase.getInstantiatorOf(Class<T> clazz)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "3c9cb54fe3de57af117fda358a55886f7131fbbe",
+        "previous_commit": "eb17cf8701435584549c57333ef431cd02888cbf",
+        "date": 1616376759,
+        "releases": {
+            "previous": "3c9cb54fe3de57af117fda358a55886f7131fbbe",
+            "next": "3c9cb54fe3de57af117fda358a55886f7131fbbe"
+        },
+        "commit_message": "Bridge to exotic instantiator to keep compatibility\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "3c9cb54fe3de57af117fda358a55886f7131fbbe": {
+                "tck/src/main/java/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            },
+            "eb17cf8701435584549c57333ef431cd02888cbf": {
+                "tck/src/main/java/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "cc27000852fdb504d3a2aaeffc827019a56be3a4",
+        "previous_commit": "10e9f67bf83c86e33e7dcb556144af9e01f8948e",
+        "date": 1376520679,
+        "releases": {
+            "previous": "cc27000852fdb504d3a2aaeffc827019a56be3a4",
+            "next": "cc27000852fdb504d3a2aaeffc827019a56be3a4"
+        },
+        "commit_message": "Keep the HotSpot instantiator for BEA. It's the one we validated to be working\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "cc27000852fdb504d3a2aaeffc827019a56be3a4": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            },
+            "10e9f67bf83c86e33e7dcb556144af9e01f8948e": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "1690a92cafba70afc8f333d0dd94d867dd1277b2",
+        "previous_commit": "cea69caeba3576494123c17f661ff73a62cb30d9",
+        "date": 1436282013,
+        "releases": {
+            "previous": "1690a92cafba70afc8f333d0dd94d867dd1277b2",
+            "next": "1690a92cafba70afc8f333d0dd94d867dd1277b2"
+        },
+        "commit_message": "A tiny refactoring to call it from the code\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "1690a92cafba70afc8f333d0dd94d867dd1277b2": {
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public static void org.objenesis.tck.search.SearchWorkingInstantiator.main(String[] args)"
+                ]
+            },
+            "cea69caeba3576494123c17f661ff73a62cb30d9": {
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public static void org.objenesis.tck.search.SearchWorkingInstantiator.main(String[] args)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "bf5af4603e2783ce3ea2cf0edcd5dcbc831bd67e",
+        "previous_commit": "cbbed129feb952e4cd221e6812127d57418c4270",
+        "date": 1376864536,
+        "releases": {
+            "previous": "bf5af4603e2783ce3ea2cf0edcd5dcbc831bd67e",
+            "next": "bf5af4603e2783ce3ea2cf0edcd5dcbc831bd67e"
+        },
+        "commit_message": "Move to StringBuilder\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "bf5af4603e2783ce3ea2cf0edcd5dcbc831bd67e": {
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "private String org.objenesis.tck.TextReporter.pad(String text, int width)"
+                ]
+            },
+            "cbbed129feb952e4cd221e6812127d57418c4270": {
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "private String org.objenesis.tck.TextReporter.pad(String text, int width)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "c47b4888e385c81d08001d23f2cad399f31b0fb8",
+        "previous_commit": "f1714c872043d402bfd1e44e0de2d97b3051f43d",
+        "date": 1437655793,
+        "releases": {
+            "previous": "c47b4888e385c81d08001d23f2cad399f31b0fb8",
+            "next": "c47b4888e385c81d08001d23f2cad399f31b0fb8"
+        },
+        "commit_message": "Another unused field\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "c47b4888e385c81d08001d23f2cad399f31b0fb8": {
+                "main/src/org/objenesis/instantiator/basic/ProxyObjectInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyObjectInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            },
+            "f1714c872043d402bfd1e44e0de2d97b3051f43d": {
+                "main/src/org/objenesis/instantiator/basic/ProxyObjectInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyObjectInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "75b56e64a483d19c97ba8888f3a4add0f347079f",
+        "previous_commit": "cf02b46cd969e39c565cbde018fe2b19ab909a09",
+        "date": 1437017555,
+        "releases": {
+            "previous": "75b56e64a483d19c97ba8888f3a4add0f347079f",
+            "next": "75b56e64a483d19c97ba8888f3a4add0f347079f"
+        },
+        "commit_message": "Select the GAE instantiator depending on if the type is serializable\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "75b56e64a483d19c97ba8888f3a4add0f347079f": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "cf02b46cd969e39c565cbde018fe2b19ab909a09": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "a02840354310387dcb2193afc3fb1a9cb0eceebd",
+        "previous_commit": "3195b794e02054e82b53457e2425378b25387fbd",
+        "date": 1376956007,
+        "releases": {
+            "previous": "a02840354310387dcb2193afc3fb1a9cb0eceebd",
+            "next": "a02840354310387dcb2193afc3fb1a9cb0eceebd"
+        },
+        "commit_message": "Remove unused parameter\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "a02840354310387dcb2193afc3fb1a9cb0eceebd": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "public void org.objenesis.tck.TCK.runTests(Reporter reporter)"
+                ]
+            },
+            "3195b794e02054e82b53457e2425378b25387fbd": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "public void org.objenesis.tck.TCK.runTests(Reporter reporter)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "5bc2568680630d6030741bdc4d9481e3abb4f894",
+        "previous_commit": "ddf2a2ebf7b43cd0fa581aaf878f3641bdd2766e",
+        "date": 1483705806,
+        "releases": {
+            "previous": "5bc2568680630d6030741bdc4d9481e3abb4f894",
+            "next": "5bc2568680630d6030741bdc4d9481e3abb4f894"
+        },
+        "commit_message": "Check we are not trying to instantiate a primitive type (close #44)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "5bc2568680630d6030741bdc4d9481e3abb4f894": {
+                "main/src/main/java/org/objenesis/ObjenesisBase.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.ObjenesisBase.getInstantiatorOf(Class<T> clazz)"
+                ]
+            },
+            "ddf2a2ebf7b43cd0fa581aaf878f3641bdd2766e": {
+                "main/src/main/java/org/objenesis/ObjenesisBase.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.ObjenesisBase.getInstantiatorOf(Class<T> clazz)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec",
+        "previous_commit": "30ba05b59f9dc94d88dfbdb150f22163d28ad32c",
+        "date": 1463560665,
+        "releases": {
+            "previous": "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec",
+            "next": "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec"
+        },
+        "commit_message": "Remove obsolete JRockit instantiator (close #40)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "30ba05b59f9dc94d88dfbdb150f22163d28ad32c": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "423ff5ff378beb2b8e8a9e990da6dfec27904844",
+        "previous_commit": "d32d7b504b48f71eb6b25b495abc1374551c69d3",
+        "date": 1437794179,
+        "releases": {
+            "previous": "423ff5ff378beb2b8e8a9e990da6dfec27904844",
+            "next": "423ff5ff378beb2b8e8a9e990da6dfec27904844"
+        },
+        "commit_message": "Use a safe name\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "423ff5ff378beb2b8e8a9e990da6dfec27904844": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "d32d7b504b48f71eb6b25b495abc1374551c69d3": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "35aa8049283032f87ddb94445f65841a09e08f7b",
+        "previous_commit": "02c7d402eaf09d94f12dc7a5d37572e649ac9d59",
+        "date": 1539909671,
+        "releases": {
+            "previous": "35aa8049283032f87ddb94445f65841a09e08f7b",
+            "next": "35aa8049283032f87ddb94445f65841a09e08f7b"
+        },
+        "commit_message": "No IOException thrown anymore\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "35aa8049283032f87ddb94445f65841a09e08f7b": {
+                "tck-android/src/main/java/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "public void org.objenesis.tck.android.TckInstrumentation.onCreate(Bundle arguments)"
+                ]
+            },
+            "02c7d402eaf09d94f12dc7a5d37572e649ac9d59": {
+                "tck-android/src/main/java/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "public void org.objenesis.tck.android.TckInstrumentation.onCreate(Bundle arguments)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "783c9fdbf87aad6ae956f667d31030613e4e026b",
+        "previous_commit": "ed9dd4311c4d5385dd637cfbb0ec26fcb73677c6",
+        "date": 1377073927,
+        "releases": {
+            "previous": "783c9fdbf87aad6ae956f667d31030613e4e026b",
+            "next": "783c9fdbf87aad6ae956f667d31030613e4e026b"
+        },
+        "commit_message": "Replace the synchronization with a ConcurrentHashMap\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "783c9fdbf87aad6ae956f667d31030613e4e026b": {
+                "main/src/org/objenesis/ObjenesisBase.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.ObjenesisBase.getInstantiatorOf(Class<T> clazz)"
+                ]
+            },
+            "ed9dd4311c4d5385dd637cfbb0ec26fcb73677c6": {
+                "main/src/org/objenesis/ObjenesisBase.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.ObjenesisBase.getInstantiatorOf(Class<T> clazz)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "e9b9f9acf983dcb1b51dc33d20c8f0c94b22d80e",
+        "previous_commit": "e3c311a9540a65b920333830694fe586c0ee2a58",
+        "date": 1374426484,
+        "releases": {
+            "previous": "e9b9f9acf983dcb1b51dc33d20c8f0c94b22d80e",
+            "next": "e9b9f9acf983dcb1b51dc33d20c8f0c94b22d80e"
+        },
+        "commit_message": "Retrieve also the stderr content\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "e9b9f9acf983dcb1b51dc33d20c8f0c94b22d80e": {
+                "tck-android/src/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "public void org.objenesis.tck.android.TckInstrumentation.onCreate(Bundle arguments)"
+                ]
+            },
+            "e3c311a9540a65b920333830694fe586c0ee2a58": {
+                "tck-android/src/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "public void org.objenesis.tck.android.TckInstrumentation.onCreate(Bundle arguments)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "10fa3943efa8d06f398f2a97b36ade01c18cc848",
+        "previous_commit": "2c34411327e02ecc6bc2c73b5b5e9b769bdc794d",
+        "date": 1380044901,
+        "releases": {
+            "previous": "10fa3943efa8d06f398f2a97b36ade01c18cc848",
+            "next": "10fa3943efa8d06f398f2a97b36ade01c18cc848"
+        },
+        "commit_message": "Return 1 when the TCK fails (#24)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "10fa3943efa8d06f398f2a97b36ade01c18cc848": {
+                "tck/src/org/objenesis/tck/Main.java": [
+                    "public static void org.objenesis.tck.Main.main(String[] args)"
+                ]
+            },
+            "2c34411327e02ecc6bc2c73b5b5e9b769bdc794d": {
+                "tck/src/org/objenesis/tck/Main.java": [
+                    "public static void org.objenesis.tck.Main.main(String[] args)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "98eea3fb7b385f3828d8ad725a927e99638bb437",
+        "previous_commit": "11f8950d9418ce0169ed7089107272c36d7566fd",
+        "date": 1374932351,
+        "releases": {
+            "previous": "98eea3fb7b385f3828d8ad725a927e99638bb437",
+            "next": "98eea3fb7b385f3828d8ad725a927e99638bb437"
+        },
+        "commit_message": "Do not synchronize when the cache isn't used\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "98eea3fb7b385f3828d8ad725a927e99638bb437": {
+                "main/src/org/objenesis/ObjenesisBase.java": [
+                    "public ObjectInstantiator org.objenesis.ObjenesisBase.getInstantiatorOf(Class clazz)"
+                ]
+            },
+            "11f8950d9418ce0169ed7089107272c36d7566fd": {
+                "main/src/org/objenesis/ObjenesisBase.java": [
+                    "public synchronized ObjectInstantiator org.objenesis.ObjenesisBase.getInstantiatorOf(Class clazz)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "f1714c872043d402bfd1e44e0de2d97b3051f43d",
+        "previous_commit": "2b9a09e622a2f72102610f92a029ac7856ed01e5",
+        "date": 1437655632,
+        "releases": {
+            "previous": "f1714c872043d402bfd1e44e0de2d97b3051f43d",
+            "next": "f1714c872043d402bfd1e44e0de2d97b3051f43d"
+        },
+        "commit_message": "Remove unused entries in the constant pool\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "f1714c872043d402bfd1e44e0de2d97b3051f43d": {
+                "main/src/org/objenesis/instantiator/basic/ProxyObjectInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyObjectInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            },
+            "2b9a09e622a2f72102610f92a029ac7856ed01e5": {
+                "main/src/org/objenesis/instantiator/basic/ProxyObjectInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyObjectInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "bda08ce50ea529889ee69a54ab5edcc4a256eb98",
+        "previous_commit": "e5e9c412b620e7ba60b1cce263faf4f4b3e6f254",
+        "date": 1437659512,
+        "releases": {
+            "previous": "bda08ce50ea529889ee69a54ab5edcc4a256eb98",
+            "next": "bda08ce50ea529889ee69a54ab5edcc4a256eb98"
+        },
+        "commit_message": "Really bypass the constructor\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "bda08ce50ea529889ee69a54ab5edcc4a256eb98": {
+                "main/src/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            },
+            "e5e9c412b620e7ba60b1cce263faf4f4b3e6f254": {
+                "main/src/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "55a323f90208aca3d31df459f186267af751ac94",
+        "previous_commit": "e1c250c0bfe78789d98908e7a239b9b16892477f",
+        "date": 1437684876,
+        "releases": {
+            "previous": "55a323f90208aca3d31df459f186267af751ac94",
+            "next": "55a323f90208aca3d31df459f186267af751ac94"
+        },
+        "commit_message": "Rollback the previous changes since they are also requiring a -Xverify:none and remove some more unused fields (close #23)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "55a323f90208aca3d31df459f186267af751ac94": {
+                "main/src/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            },
+            "e1c250c0bfe78789d98908e7a239b9b16892477f": {
+                "main/src/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "294abaf3be90a24f236dcba22fd04fbd8bfee8be",
+        "previous_commit": "cd2b1f6f5ded1ee4a30e2d75b36a1f7e3d75bbdb",
+        "date": 1374431200,
+        "releases": {
+            "previous": "294abaf3be90a24f236dcba22fd04fbd8bfee8be",
+            "next": "294abaf3be90a24f236dcba22fd04fbd8bfee8be"
+        },
+        "commit_message": "Remove Android specific code\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "294abaf3be90a24f236dcba22fd04fbd8bfee8be": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ]
+            },
+            "cd2b1f6f5ded1ee4a30e2d75b36a1f7e3d75bbdb": {
+                "tck/src/org/objenesis/tck/TCK.java": [
+                    "protected String org.objenesis.tck.TCK.describePlatform()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "dc58f3d26b821ce64277a682413c0bc56e152aa9",
+        "previous_commit": "9e2b623b3104f2364186489b3d965a15ab754893",
+        "date": 1538798837,
+        "releases": {
+            "previous": "dc58f3d26b821ce64277a682413c0bc56e152aa9",
+            "next": "dc58f3d26b821ce64277a682413c0bc56e152aa9"
+        },
+        "commit_message": "Drop JRockit support (close #64)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "dc58f3d26b821ce64277a682413c0bc56e152aa9": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "9e2b623b3104f2364186489b3d965a15ab754893": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "11",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "e1c250c0bfe78789d98908e7a239b9b16892477f",
+        "previous_commit": "fd6dd5e3becc92594d3be31ad63f77a01e108cc5",
+        "date": 1437684139,
+        "releases": {
+            "previous": "e1c250c0bfe78789d98908e7a239b9b16892477f",
+            "next": "e1c250c0bfe78789d98908e7a239b9b16892477f"
+        },
+        "commit_message": "An attempt to call the Object constructor directly. Also work only with -Xverify:none\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "e1c250c0bfe78789d98908e7a239b9b16892477f": {
+                "main/src/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            },
+            "fd6dd5e3becc92594d3be31ad63f77a01e108cc5": {
+                "main/src/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type, String suffix)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "29967c4fd4a56856dd99990109de7eb5db090923",
+        "previous_commit": "98eea3fb7b385f3828d8ad725a927e99638bb437",
+        "date": 1374932377,
+        "releases": {
+            "previous": "29967c4fd4a56856dd99990109de7eb5db090923",
+            "next": "29967c4fd4a56856dd99990109de7eb5db090923"
+        },
+        "commit_message": "Use the constant from the base class\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "29967c4fd4a56856dd99990109de7eb5db090923": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            },
+            "98eea3fb7b385f3828d8ad725a927e99638bb437": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "1403430d5302191ea1d52d397599750bdb27b5ed",
+        "previous_commit": "d026990b801dcaf381f1a06d6bbfec4e7828c879",
+        "date": 1374393389,
+        "releases": {
+            "previous": "1403430d5302191ea1d52d397599750bdb27b5ed",
+            "next": "1403430d5302191ea1d52d397599750bdb27b5ed"
+        },
+        "commit_message": "Support for Android 2.2 (Froyo) and 2.3 (Gingerbread) when using standard instantiation strategy (ObjenesisStd).\n\nAndroid 3.0 and above were already supported so this should make Objenesis work on all Android platforms since 2.2 up to at least 4.2.2.\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "1403430d5302191ea1d52d397599750bdb27b5ed": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            },
+            "d026990b801dcaf381f1a06d6bbfec4e7828c879": {
+                "main/src/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "4c901029eb8445d84dc49b4ed910097c062acb69",
+        "previous_commit": "1b4afdf6844f0836fe12d68e4adfc6b8c1fe2d17",
+        "date": 1438223947,
+        "releases": {
+            "previous": "4c901029eb8445d84dc49b4ed910097c062acb69",
+            "next": "4c901029eb8445d84dc49b4ed910097c062acb69"
+        },
+        "commit_message": "Have a MagicInstantiator without ASM\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "4c901029eb8445d84dc49b4ed910097c062acb69": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, int suffix)"
+                ]
+            },
+            "1b4afdf6844f0836fe12d68e4adfc6b8c1fe2d17": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private byte[] org.objenesis.instantiator.sun.MagicInstantiator<T>.writeExtendingClass(Class<?> type, int suffix)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "2ce5d077307648570771076b3b6dcd92d9fcced4",
+        "previous_commit": "380e5ad06ae518be32d2a2f73f5f811dc222d3b1",
+        "date": 1463978794,
+        "releases": {
+            "previous": "2ce5d077307648570771076b3b6dcd92d9fcced4",
+            "next": "2ce5d077307648570771076b3b6dcd92d9fcced4"
+        },
+        "commit_message": "Rename variable to have an accurate name\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "2ce5d077307648570771076b3b6dcd92d9fcced4": {
+                "tck-android/src/main/java/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "private void org.objenesis.tck.android.TckInstrumentation.launch()"
+                ]
+            },
+            "380e5ad06ae518be32d2a2f73f5f811dc222d3b1": {
+                "tck-android/src/main/java/org/objenesis/tck/android/TckInstrumentation.java": [
+                    "private void org.objenesis.tck.android.TckInstrumentation.launch()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "eaa746e5d9f5676a96a9d20d1a3dc60c3dbf0613",
+        "previous_commit": "6da1cf82d5ed8f7130dd371fe5b5b2101eada151",
+        "date": 1614908803,
+        "releases": {
+            "previous": "eaa746e5d9f5676a96a9d20d1a3dc60c3dbf0613",
+            "next": "eaa746e5d9f5676a96a9d20d1a3dc60c3dbf0613"
+        },
+        "commit_message": "Unnecessary toString\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "eaa746e5d9f5676a96a9d20d1a3dc60c3dbf0613": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)"
+                ]
+            },
+            "6da1cf82d5ed8f7130dd371fe5b5b2101eada151": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "1b4afdf6844f0836fe12d68e4adfc6b8c1fe2d17",
+        "previous_commit": "42f006e3237965691c6fdd67cad60c03423b88cd",
+        "date": 1438052227,
+        "releases": {
+            "previous": "1b4afdf6844f0836fe12d68e4adfc6b8c1fe2d17",
+            "next": "1b4afdf6844f0836fe12d68e4adfc6b8c1fe2d17"
+        },
+        "commit_message": "Make the JVM crash\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "1b4afdf6844f0836fe12d68e4adfc6b8c1fe2d17": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "42f006e3237965691c6fdd67cad60c03423b88cd": {
+                "main/src/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private <T> ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "dec6eb1d3396c9aed4199a4f13e89783bef83834",
+        "previous_commit": "c99a897bc94749934604f8a9a7ba64241a8370a7",
+        "date": 1461466815,
+        "releases": {
+            "previous": "dec6eb1d3396c9aed4199a4f13e89783bef83834",
+            "next": "dec6eb1d3396c9aed4199a4f13e89783bef83834"
+        },
+        "commit_message": "Use Unsafe because ObjectStream is calling the constructor of the first non-serializable class\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "dec6eb1d3396c9aed4199a4f13e89783bef83834": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "c99a897bc94749934604f8a9a7ba64241a8370a7": {
+                "main/src/main/java/org/objenesis/strategy/StdInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "7b7692f4706907601c9caeaa81d3798dafe46e92",
+        "previous_commit": "35e6e46cadcbee42d1d510c99776003b38dc5c2c",
+        "date": 1570159837,
+        "releases": {
+            "previous": "7b7692f4706907601c9caeaa81d3798dafe46e92",
+            "next": "7b7692f4706907601c9caeaa81d3798dafe46e92"
+        },
+        "commit_message": "Proxy system class loader classes\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "7b7692f4706907601c9caeaa81d3798dafe46e92": {
+                "main/src/main/java/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type, String subclassName)"
+                ]
+            },
+            "35e6e46cadcbee42d1d510c99776003b38dc5c2c": {
+                "main/src/main/java/org/objenesis/instantiator/basic/ProxyingInstantiator.java": [
+                    "private static byte[] org.objenesis.instantiator.basic.ProxyingInstantiator<T>.writeExtendingClass(Class<?> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "9b091e3889ab468f4cc14a6d7b64f5b8be5e1342",
+        "previous_commit": "b5da971ef770581cc4594e3ed370cdd8428b3295",
+        "date": 1497931948,
+        "releases": {
+            "previous": "9b091e3889ab468f4cc14a6d7b64f5b8be5e1342",
+            "next": "9b091e3889ab468f4cc14a6d7b64f5b8be5e1342"
+        },
+        "commit_message": "Switch to ReflectionFactory to prevent warnings in Java 9 (close #53)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "9b091e3889ab468f4cc14a6d7b64f5b8be5e1342": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "b5da971ef770581cc4594e3ed370cdd8428b3295": {
+                "main/src/main/java/org/objenesis/strategy/SerializingInstantiatorStrategy.java": [
+                    "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "0f2901cc96892a56f386f2662e8e5770be19a55a",
+        "previous_commit": "96041f2556876089077b84a75c2397d5f452f7be",
+        "date": 1393176447,
+        "releases": {
+            "previous": "0f2901cc96892a56f386f2662e8e5770be19a55a",
+            "next": "0f2901cc96892a56f386f2662e8e5770be19a55a"
+        },
+        "commit_message": "Shouldn't have removed the type.cast in the previous commit\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "0f2901cc96892a56f386f2662e8e5770be19a55a": {
+                "main/src/org/objenesis/instantiator/sun/UnsafeFactoryInstantiator.java": [
+                    "public T org.objenesis.instantiator.sun.UnsafeFactoryInstantiator<T>.newInstance()"
+                ]
+            },
+            "96041f2556876089077b84a75c2397d5f452f7be": {
+                "main/src/org/objenesis/instantiator/sun/UnsafeFactoryInstantiator.java": [
+                    "public T org.objenesis.instantiator.sun.UnsafeFactoryInstantiator<T>.newInstance()"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "82c11f75f991f360de4cb60763c51a0f768ac07c",
+        "previous_commit": "8b19735d991d3d8ffdf7177eb290174306e03831",
+        "date": 1381339658,
+        "releases": {
+            "previous": "82c11f75f991f360de4cb60763c51a0f768ac07c",
+            "next": "82c11f75f991f360de4cb60763c51a0f768ac07c"
+        },
+        "commit_message": "Should putAll to be able to reuse the reporter\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "82c11f75f991f360de4cb60763c51a0f768ac07c": {
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.startTests(String platformDescription, Map<String, Object> allCandidates, Map<String, Object> allInstantiators)"
+                ]
+            },
+            "8b19735d991d3d8ffdf7177eb290174306e03831": {
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.startTests(String platformDescription, Map<String, Object> allCandidates, Map<String, Object> allInstantiators)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "2f90a3b3d3786c4fc0c0b37ea47808985af41c00",
+        "previous_commit": "d70ed22730493a7194c1f37092aae2473768841f",
+        "date": 1436846784,
+        "releases": {
+            "previous": "2f90a3b3d3786c4fc0c0b37ea47808985af41c00",
+            "next": "2f90a3b3d3786c4fc0c0b37ea47808985af41c00"
+        },
+        "commit_message": "Prevent duplicated. Because the TCK jar and the objenesis jar contain the same classes\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "2f90a3b3d3786c4fc0c0b37ea47808985af41c00": {
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            },
+            "d70ed22730493a7194c1f37092aae2473768841f": {
+                "tck/src/org/objenesis/tck/search/SearchWorkingInstantiator.java": [
+                    "public void org.objenesis.tck.search.SearchWorkingInstantiator.searchForInstantiator(Class<?> toInstantiate)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "67fea5f9f299fdd2d2ce1bffa330a7468fd3e5c8",
+        "previous_commit": "3a74141368b6555336744e4ab0a992c6e03f9a39",
+        "date": 1484195784,
+        "releases": {
+            "previous": "67fea5f9f299fdd2d2ce1bffa330a7468fd3e5c8",
+            "next": "67fea5f9f299fdd2d2ce1bffa330a7468fd3e5c8"
+        },
+        "commit_message": "Sort instantiators by simple name\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "67fea5f9f299fdd2d2ce1bffa330a7468fd3e5c8": {
+                "tck/src/main/java/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "public static SortedSet<String> org.objenesis.tck.search.ClassEnumerator.getClassesForPackage(Package pkg, ClassLoader classLoader)"
+                ]
+            },
+            "3a74141368b6555336744e4ab0a992c6e03f9a39": {
+                "tck/src/main/java/org/objenesis/tck/search/ClassEnumerator.java": [
+                    "public static SortedSet<String> org.objenesis.tck.search.ClassEnumerator.getClassesForPackage(Package pkg, ClassLoader classLoader)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "62cd8fcb690afb3e8b3af8dab2293989bc31a8c3",
+        "previous_commit": "82c11f75f991f360de4cb60763c51a0f768ac07c",
+        "date": 1381342563,
+        "releases": {
+            "previous": "62cd8fcb690afb3e8b3af8dab2293989bc31a8c3",
+            "next": "62cd8fcb690afb3e8b3af8dab2293989bc31a8c3"
+        },
+        "commit_message": "Should print the instantiator, not the strategy\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "microbenchmarks.jar"
+        },
+        "method_changes": {
+            "62cd8fcb690afb3e8b3af8dab2293989bc31a8c3": {
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.printResult(boolean parentConstructorTest)"
+                ]
+            },
+            "82c11f75f991f360de4cb60763c51a0f768ac07c": {
+                "tck/src/org/objenesis/tck/TextReporter.java": [
+                    "public void org.objenesis.tck.TextReporter.printResult(boolean parentConstructorTest)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    },
+    {
+        "commit": "5f9d20b5aa1223217ff79f74acffe1c2bc67899a",
+        "previous_commit": "dc58f3d26b821ce64277a682413c0bc56e152aa9",
+        "date": 1538878436,
+        "releases": {
+            "previous": "5f9d20b5aa1223217ff79f74acffe1c2bc67899a",
+            "next": "5f9d20b5aa1223217ff79f74acffe1c2bc67899a"
+        },
+        "commit_message": "Support Java 11 (close #61)\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "5f9d20b5aa1223217ff79f74acffe1c2bc67899a": {
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            },
+            "dc58f3d26b821ce64277a682413c0bc56e152aa9": {
+                "main/src/main/java/org/objenesis/instantiator/sun/MagicInstantiator.java": [
+                    "private ObjectInstantiator<T> org.objenesis.instantiator.sun.MagicInstantiator<T>.newInstantiatorOf(Class<T> type)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": false
+        }
+    },
+    {
+        "commit": "7f601f43966cae9e6a3f42737a41a971da71be97",
+        "previous_commit": "099984ee3da98d89a1a7bb30c42a5c6d5853220d",
+        "date": 1437794109,
+        "releases": {
+            "previous": "7f601f43966cae9e6a3f42737a41a971da71be97",
+            "next": "7f601f43966cae9e6a3f42737a41a971da71be97"
+        },
+        "commit_message": "Show the entire stacktrace on error\n",
+        "jmh_dependency": {
+            "benchmark_directory": "benchmark",
+            "benchmark_name": "benchmarks.jar"
+        },
+        "method_changes": {
+            "7f601f43966cae9e6a3f42737a41a971da71be97": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void main.java.org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)"
+                ]
+            },
+            "099984ee3da98d89a1a7bb30c42a5c6d5853220d": {
+                "gae/src/main/java/org/objenesis/gae/JspWriterListener.java": [
+                    "public void main.java.org.objenesis.gae.JspWriterListener.instantiatorUnsupported(Class<?> c, Throwable t)"
+                ]
+            }
+        },
+        "java_version": {
+            "version": "1.8",
+            "should_update_pom": true
+        }
+    }
+]

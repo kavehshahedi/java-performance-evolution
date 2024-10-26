@@ -1,0 +1,480 @@
+{
+    "2597f94790d1a4b3891b9b2f3ef0c237071f521e": {
+        "2597f94790d1a4b3891b9b2f3ef0c237071f521e": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.single": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.SingleInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 43263538912,
+                    "self_execution_time": 13420267050,
+                    "average_self_time": 74750.14370457015,
+                    "cumulative_execution_time": 43263538912,
+                    "min_execution_time": -22606383,
+                    "max_execution_time": 139801645,
+                    "call_count": 179538
+                }
+            },
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "private static java.lang.Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(java.lang.Class)": {
+                    "total_execution_time": 2049342567,
+                    "self_execution_time": 1832178969,
+                    "average_self_time": 13955.737281486841,
+                    "cumulative_execution_time": 2049342567,
+                    "min_execution_time": -1278661,
+                    "max_execution_time": 1419281,
+                    "call_count": 131311
+                },
+                "public static java.lang.reflect.Constructor org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(java.lang.Class,java.lang.reflect.Constructor)": {
+                    "total_execution_time": 7471036276,
+                    "self_execution_time": 5259166219,
+                    "average_self_time": 46561.07212798357,
+                    "cumulative_execution_time": 7471036276,
+                    "min_execution_time": -2459508,
+                    "max_execution_time": 3035261,
+                    "call_count": 112959
+                },
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 8511856108,
+                    "self_execution_time": 2768691236,
+                    "average_self_time": 27908.78721838617,
+                    "cumulative_execution_time": 8511856108,
+                    "min_execution_time": -3065288,
+                    "max_execution_time": 3392182,
+                    "call_count": 99207
+                }
+            }
+        },
+        "0eada9c634866eb82b48cda6760b1c2d55dde4bd": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.single": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.SingleInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 44965458396,
+                    "self_execution_time": 13276762647,
+                    "average_self_time": 76441.61929354866,
+                    "cumulative_execution_time": 44965458396,
+                    "min_execution_time": -27323311,
+                    "max_execution_time": 147394720,
+                    "call_count": 173740
+                }
+            },
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "private static java.lang.Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(java.lang.Class)": {
+                    "total_execution_time": 1896666169,
+                    "self_execution_time": 1712572997,
+                    "average_self_time": 12867.781178150124,
+                    "cumulative_execution_time": 1896666169,
+                    "min_execution_time": -762294,
+                    "max_execution_time": 905139,
+                    "call_count": 133096
+                },
+                "public static java.lang.reflect.Constructor org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(java.lang.Class,java.lang.reflect.Constructor)": {
+                    "total_execution_time": 7738297587,
+                    "self_execution_time": 5630465224,
+                    "average_self_time": 48762.54881481289,
+                    "cumulative_execution_time": 7738297587,
+                    "min_execution_time": -2327973,
+                    "max_execution_time": 2736523,
+                    "call_count": 115470
+                },
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 8806423676,
+                    "self_execution_time": 2728214131,
+                    "average_self_time": 26762.94026878556,
+                    "cumulative_execution_time": 8806423676,
+                    "min_execution_time": -2273531,
+                    "max_execution_time": 2509166,
+                    "call_count": 101942
+                }
+            }
+        }
+    },
+    "107892d9b8809a5623278e387dec352d0504bc39": {
+        "107892d9b8809a5623278e387dec352d0504bc39": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 12211992466,
+                    "self_execution_time": 2016888761,
+                    "average_self_time": 104713.60578370802,
+                    "cumulative_execution_time": 12211992466,
+                    "min_execution_time": -37408303,
+                    "max_execution_time": 131257341,
+                    "call_count": 19429
+                }
+            }
+        },
+        "a2df0f31c6900d23542908367e5bd0f9337001dc": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 12966065995,
+                    "self_execution_time": 2026603235,
+                    "average_self_time": 103620.16745065957,
+                    "cumulative_execution_time": 12966065995,
+                    "min_execution_time": -53189847,
+                    "max_execution_time": 138612649,
+                    "call_count": 19688
+                }
+            }
+        }
+    },
+    "d93407c366c17fea94956f7bd2994e0823375816": {
+        "d93407c366c17fea94956f7bd2994e0823375816": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 44889881096,
+                    "self_execution_time": 13391003933,
+                    "average_self_time": 73946.67807719918,
+                    "cumulative_execution_time": 44889881096,
+                    "min_execution_time": -90424613,
+                    "max_execution_time": 143807050,
+                    "call_count": 180996
+                }
+            }
+        },
+        "c3a90668851711f3fb990fa644fa1edde98d16ad": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 46758864322,
+                    "self_execution_time": 13446651937,
+                    "average_self_time": 75807.03538730409,
+                    "cumulative_execution_time": 46758864322,
+                    "min_execution_time": -45062624,
+                    "max_execution_time": 144193208,
+                    "call_count": 177344
+                }
+            }
+        }
+    },
+    "653b04693744c46aaf90b3de9c95668292d06e5f": {
+        "653b04693744c46aaf90b3de9c95668292d06e5f": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public static boolean org.objenesis.strategy.PlatformDescription.isGoogleAppEngine()": {
+                    "total_execution_time": 2318404616,
+                    "self_execution_time": 1434892338,
+                    "average_self_time": 71533.59280123636,
+                    "cumulative_execution_time": 2318404616,
+                    "min_execution_time": -3462037,
+                    "max_execution_time": 3868340,
+                    "call_count": 20011
+                }
+            }
+        },
+        "17cba2bc1a612d0fc20d673ce88fda91be26a979": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public static boolean org.objenesis.strategy.PlatformDescription.isGoogleAppEngine()": {
+                    "total_execution_time": 2468018709,
+                    "self_execution_time": 1488225188,
+                    "average_self_time": 75034.0419481698,
+                    "cumulative_execution_time": 2468018709,
+                    "min_execution_time": -4377437,
+                    "max_execution_time": 4862961,
+                    "call_count": 19780
+                }
+            }
+        }
+    },
+    "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa": {
+        "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.std": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 41491498289,
+                    "self_execution_time": 13389248615,
+                    "average_self_time": 90325.69410994853,
+                    "cumulative_execution_time": 41491498289,
+                    "min_execution_time": -24223595,
+                    "max_execution_time": 157826154,
+                    "call_count": 148253
+                }
+            }
+        },
+        "f692dd56815abf3d7e479439fd8f88dc1163d7f1": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.std": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 41309886726,
+                    "self_execution_time": 13463522094,
+                    "average_self_time": 92542.33834415919,
+                    "cumulative_execution_time": 41309886726,
+                    "min_execution_time": -84834199,
+                    "max_execution_time": 166883721,
+                    "call_count": 145498
+                }
+            }
+        }
+    },
+    "d8e5d780280fe8b1046e6f36793e25fe0744b3b4": {
+        "d8e5d780280fe8b1046e6f36793e25fe0744b3b4": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.std": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 41517254285,
+                    "self_execution_time": 13521913185,
+                    "average_self_time": 90856.58640569252,
+                    "cumulative_execution_time": 41517254285,
+                    "min_execution_time": -26861973,
+                    "max_execution_time": 160320866,
+                    "call_count": 148828
+                }
+            }
+        },
+        "eea7ccdeae914972617df61f4bd5913d4ee91f4e": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.std": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 42878811580,
+                    "self_execution_time": 13525786185,
+                    "average_self_time": 90120.83942432622,
+                    "cumulative_execution_time": 42878811580,
+                    "min_execution_time": -36195896,
+                    "max_execution_time": 159177623,
+                    "call_count": 150120
+                }
+            }
+        }
+    },
+    "b4273d9afc081a3d211c2e3916deecbc0cf37efd": {
+        "b4273d9afc081a3d211c2e3916deecbc0cf37efd": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 45693348536,
+                    "self_execution_time": 13397228606,
+                    "average_self_time": 76726.14328994164,
+                    "cumulative_execution_time": 45693348536,
+                    "min_execution_time": -37039609,
+                    "max_execution_time": 140874481,
+                    "call_count": 174466
+                }
+            }
+        },
+        "d3424ae7d3669f9be00da9397a96b23aa55e2e90": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 45433740342,
+                    "self_execution_time": 13380746313,
+                    "average_self_time": 75013.01337601399,
+                    "cumulative_execution_time": 45433740342,
+                    "min_execution_time": -83663225,
+                    "max_execution_time": 145087903,
+                    "call_count": 178284
+                }
+            }
+        }
+    },
+    "96041f2556876089077b84a75c2397d5f452f7be": {
+        "96041f2556876089077b84a75c2397d5f452f7be": {
+            "org.objenesis.benchmark.CreateObject.createObjectWithUnsafe": {
+                "public java.lang.Object org.objenesis.instantiator.sun.UnsafeFactoryInstantiator.newInstance()": {
+                    "total_execution_time": 7323665577,
+                    "self_execution_time": 7323665577,
+                    "average_self_time": 2650.801276742681,
+                    "cumulative_execution_time": 7323665577,
+                    "min_execution_time": 1822,
+                    "max_execution_time": 52106,
+                    "call_count": 2762812
+                }
+            }
+        },
+        "13e3f7fc9df151eba065e7fec052c1bb0c596c1e": {
+            "org.objenesis.benchmark.CreateObject.createObjectWithUnsafe": {
+                "public java.lang.Object org.objenesis.instantiator.sun.UnsafeFactoryInstantiator.newInstance()": {
+                    "total_execution_time": 7393750940,
+                    "self_execution_time": 7393750940,
+                    "average_self_time": 2710.0311697070324,
+                    "cumulative_execution_time": 7393750940,
+                    "min_execution_time": 1839,
+                    "max_execution_time": 35622,
+                    "call_count": 2728290
+                }
+            }
+        }
+    },
+    "bf158d76673fccd152d01f772d08411609d00568": {
+        "bf158d76673fccd152d01f772d08411609d00568": {
+            "org.objenesis.benchmark.CreateObject.createObjectWithConstructor": {
+                "private static java.lang.reflect.Constructor org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.getJavaLangObjectConstructor()": {
+                    "total_execution_time": 20170640,
+                    "self_execution_time": 20170640,
+                    "average_self_time": 6723546.666666667,
+                    "cumulative_execution_time": 20170640,
+                    "min_execution_time": 5326890,
+                    "max_execution_time": 7626725,
+                    "call_count": 3
+                }
+            }
+        },
+        "fed0c88e313508c5f7f7739c8d960204adc41de9": {
+            "org.objenesis.benchmark.CreateObject.createObjectWithConstructor": {
+                "private static java.lang.reflect.Constructor org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.getJavaLangObjectConstructor()": {
+                    "total_execution_time": 18357534,
+                    "self_execution_time": 18357534,
+                    "average_self_time": 6119178.0,
+                    "cumulative_execution_time": 18357534,
+                    "min_execution_time": 5441452,
+                    "max_execution_time": 7424739,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "dcceccbad32b5e43eaaccf40f6d105877cf94bd7": {
+        "dcceccbad32b5e43eaaccf40f6d105877cf94bd7": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 4452906773,
+                    "self_execution_time": 206895930,
+                    "average_self_time": 2224687.419354839,
+                    "cumulative_execution_time": 4452906773,
+                    "min_execution_time": 20342980,
+                    "max_execution_time": 107154859,
+                    "call_count": 96
+                }
+            }
+        },
+        "3938c80acc5b60cc4550f493fe4d0a882a367a36": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 3519659387,
+                    "self_execution_time": 241056313,
+                    "average_self_time": 2592003.365591398,
+                    "cumulative_execution_time": 3519659387,
+                    "min_execution_time": 19155683,
+                    "max_execution_time": 82473786,
+                    "call_count": 95
+                }
+            }
+        }
+    },
+    "75b56e64a483d19c97ba8888f3a4add0f347079f": {
+        "75b56e64a483d19c97ba8888f3a4add0f347079f": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.std": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 42955453546,
+                    "self_execution_time": 13471884049,
+                    "average_self_time": 89558.81036396876,
+                    "cumulative_execution_time": 42955453546,
+                    "min_execution_time": -34644969,
+                    "max_execution_time": 157477717,
+                    "call_count": 150421
+                }
+            }
+        },
+        "cf02b46cd969e39c565cbde018fe2b19ab909a09": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.std": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 42779984052,
+                    "self_execution_time": 13622007539,
+                    "average_self_time": 87804.04624825159,
+                    "cumulative_execution_time": 42779984052,
+                    "min_execution_time": -43090381,
+                    "max_execution_time": 158414301,
+                    "call_count": 155117
+                }
+            }
+        }
+    },
+    "5bc2568680630d6030741bdc4d9481e3abb4f894": {
+        "5bc2568680630d6030741bdc4d9481e3abb4f894": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.ObjenesisBase.getInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 45129194088,
+                    "self_execution_time": 13329429275,
+                    "average_self_time": 77912.51724319332,
+                    "cumulative_execution_time": 45129194088,
+                    "min_execution_time": -59498280,
+                    "max_execution_time": 148154875,
+                    "call_count": 170982
+                }
+            }
+        },
+        "ddf2a2ebf7b43cd0fa581aaf878f3641bdd2766e": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.uncachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.ObjenesisBase.getInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 45148821000,
+                    "self_execution_time": 13352673812,
+                    "average_self_time": 74316.9431630972,
+                    "cumulative_execution_time": 45148821000,
+                    "min_execution_time": -59821312,
+                    "max_execution_time": 141756842,
+                    "call_count": 179640
+                }
+            }
+        }
+    },
+    "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec": {
+        "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 4197272425,
+                    "self_execution_time": 214010547,
+                    "average_self_time": 2301188.6774193547,
+                    "cumulative_execution_time": 4197272425,
+                    "min_execution_time": 18862069,
+                    "max_execution_time": 89414026,
+                    "call_count": 96
+                }
+            }
+        },
+        "30ba05b59f9dc94d88dfbdb150f22163d28ad32c": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 5090869921,
+                    "self_execution_time": 163468960,
+                    "average_self_time": 1776836.5217391304,
+                    "cumulative_execution_time": 5090869921,
+                    "min_execution_time": 21249737,
+                    "max_execution_time": 94591231,
+                    "call_count": 96
+                }
+            }
+        }
+    },
+    "dec6eb1d3396c9aed4199a4f13e89783bef83834": {
+        "dec6eb1d3396c9aed4199a4f13e89783bef83834": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 13046303770,
+                    "self_execution_time": 2051081336,
+                    "average_self_time": 102945.25878337683,
+                    "cumulative_execution_time": 13046303770,
+                    "min_execution_time": -22538923,
+                    "max_execution_time": 126060324,
+                    "call_count": 20156
+                }
+            }
+        },
+        "c99a897bc94749934604f8a9a7ba64241a8370a7": {
+            "org.objenesis.benchmark.ConcurrentGetInstantiator.cachedStd": {
+                "public org.objenesis.instantiator.ObjectInstantiator org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(java.lang.Class)": {
+                    "total_execution_time": 16124882144,
+                    "self_execution_time": 2597034031,
+                    "average_self_time": 131555.34324502305,
+                    "cumulative_execution_time": 16124882144,
+                    "min_execution_time": -31485053,
+                    "max_execution_time": 159330678,
+                    "call_count": 19809
+                }
+            }
+        }
+    },
+    "0f2901cc96892a56f386f2662e8e5770be19a55a": {
+        "0f2901cc96892a56f386f2662e8e5770be19a55a": {
+            "org.objenesis.benchmark.CreateObject.createObjectWithUnsafe": {
+                "public java.lang.Object org.objenesis.instantiator.sun.UnsafeFactoryInstantiator.newInstance()": {
+                    "total_execution_time": 7292368276,
+                    "self_execution_time": 7292368276,
+                    "average_self_time": 2796.792624388089,
+                    "cumulative_execution_time": 7292368276,
+                    "min_execution_time": 1831,
+                    "max_execution_time": 45282,
+                    "call_count": 2607404
+                }
+            }
+        },
+        "96041f2556876089077b84a75c2397d5f452f7be": {
+            "org.objenesis.benchmark.CreateObject.createObjectWithUnsafe": {
+                "public java.lang.Object org.objenesis.instantiator.sun.UnsafeFactoryInstantiator.newInstance()": {
+                    "total_execution_time": 7345449217,
+                    "self_execution_time": 7345449217,
+                    "average_self_time": 2717.8973667053697,
+                    "cumulative_execution_time": 7345449217,
+                    "min_execution_time": 1804,
+                    "max_execution_time": 52119,
+                    "call_count": 2702622
+                }
+            }
+        }
+    }
+}

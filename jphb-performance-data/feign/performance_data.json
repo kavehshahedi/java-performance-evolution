@@ -1,0 +1,3354 @@
+{
+    "2d761cb6a92efc6b4a95e7092c945f47431b76cd": {
+        "2d761cb6a92efc6b4a95e7092c945f47431b76cd": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 274728065,
+                    "self_execution_time": 274728065,
+                    "average_self_time": 3631.42327468838,
+                    "cumulative_execution_time": 274728065,
+                    "min_execution_time": 1429,
+                    "max_execution_time": 273580,
+                    "call_count": 75653
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.headers(java.util.Map)": {
+                    "total_execution_time": 84385328,
+                    "self_execution_time": 72322447,
+                    "average_self_time": 2875.186729744772,
+                    "cumulative_execution_time": 84385328,
+                    "min_execution_time": 1350,
+                    "max_execution_time": 502970,
+                    "call_count": 25250
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.header(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 190348142,
+                    "self_execution_time": 190348142,
+                    "average_self_time": 7543.320202900848,
+                    "cumulative_execution_time": 190348142,
+                    "min_execution_time": 2490,
+                    "max_execution_time": 324540,
+                    "call_count": 25234
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.method(feign.Request$HttpMethod)": {
+                    "total_execution_time": 2078228,
+                    "self_execution_time": 2078228,
+                    "average_self_time": 115457.11111111111,
+                    "cumulative_execution_time": 2078228,
+                    "min_execution_time": 73020,
+                    "max_execution_time": 285510,
+                    "call_count": 18
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.decodeSlash(boolean)": {
+                    "total_execution_time": 7331210,
+                    "self_execution_time": 7331210,
+                    "average_self_time": 407289.44444444444,
+                    "cumulative_execution_time": 7331210,
+                    "min_execution_time": 88850,
+                    "max_execution_time": 1782120,
+                    "call_count": 18
+                },
+                "public java.lang.String feign.RequestTemplate.method()": {
+                    "total_execution_time": 1623871,
+                    "self_execution_time": 1623871,
+                    "average_self_time": 90215.05555555556,
+                    "cumulative_execution_time": 1623871,
+                    "min_execution_time": 57490,
+                    "max_execution_time": 134820,
+                    "call_count": 18
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.query(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 642664086,
+                    "self_execution_time": 642664086,
+                    "average_self_time": 8523.170287260285,
+                    "cumulative_execution_time": 642664086,
+                    "min_execution_time": 2709,
+                    "max_execution_time": 88250,
+                    "call_count": 75402
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.bodyTemplate(java.lang.String)": {
+                    "total_execution_time": 10675620,
+                    "self_execution_time": 10675620,
+                    "average_self_time": 3558540.0,
+                    "cumulative_execution_time": 10675620,
+                    "min_execution_time": 3445520,
+                    "max_execution_time": 3681960,
+                    "call_count": 3
+                },
+                "public java.lang.String feign.RequestTemplate.bodyTemplate()": {
+                    "total_execution_time": 735111,
+                    "self_execution_time": 735111,
+                    "average_self_time": 245037.0,
+                    "cumulative_execution_time": 735111,
+                    "min_execution_time": 202490,
+                    "max_execution_time": 284261,
+                    "call_count": 3
+                },
+                "public java.util.Map feign.RequestTemplate.queries()": {
+                    "total_execution_time": 496856257,
+                    "self_execution_time": 496856257,
+                    "average_self_time": 9926.008011027649,
+                    "cumulative_execution_time": 496856257,
+                    "min_execution_time": 1450,
+                    "max_execution_time": 55700,
+                    "call_count": 50056
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.queries(java.util.Map)": {
+                    "total_execution_time": 74333762,
+                    "self_execution_time": 74333762,
+                    "average_self_time": 2972.8748200287955,
+                    "cumulative_execution_time": 74333762,
+                    "min_execution_time": 1320,
+                    "max_execution_time": 17960,
+                    "call_count": 25004
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.header(java.lang.String,java.lang.String[])": {
+                    "total_execution_time": 347058115,
+                    "self_execution_time": 174641529,
+                    "average_self_time": 6979.798129571161,
+                    "cumulative_execution_time": 347058115,
+                    "min_execution_time": 5130,
+                    "max_execution_time": 63230,
+                    "call_count": 24968
+                },
+                "public java.lang.String feign.RequestTemplate.queryLine()": {
+                    "total_execution_time": 910792997,
+                    "self_execution_time": 910792997,
+                    "average_self_time": 18121.988041942735,
+                    "cumulative_execution_time": 910792997,
+                    "min_execution_time": 9960,
+                    "max_execution_time": 144661,
+                    "call_count": 50259
+                },
+                "public java.lang.String feign.RequestTemplate.url()": {
+                    "total_execution_time": 1432221348,
+                    "self_execution_time": 526648612,
+                    "average_self_time": 10469.735040356249,
+                    "cumulative_execution_time": 1432221348,
+                    "min_execution_time": 13150,
+                    "max_execution_time": 192450,
+                    "call_count": 50234
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 980202864,
+                    "self_execution_time": 219246067,
+                    "average_self_time": 8707.151191421763,
+                    "cumulative_execution_time": 980202864,
+                    "min_execution_time": 19170,
+                    "max_execution_time": 256200,
+                    "call_count": 25119
+                },
+                "feign.Request feign.SynchronousMethodHandler.targetRequest(feign.RequestTemplate)": {
+                    "total_execution_time": 1966183972,
+                    "self_execution_time": 239026086,
+                    "average_self_time": 9566.017769240005,
+                    "cumulative_execution_time": 1966183972,
+                    "min_execution_time": 38300,
+                    "max_execution_time": 421680,
+                    "call_count": 25092
+                },
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 398736068,
+                    "self_execution_time": 398736068,
+                    "average_self_time": 15905.543420160357,
+                    "cumulative_execution_time": 398736068,
+                    "min_execution_time": 4131,
+                    "max_execution_time": 100630,
+                    "call_count": 25069
+                }
+            }
+        },
+        "d7cc9b6c7ee34da15ee2cf0e1c0824b3040e5737": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 299660947,
+                    "self_execution_time": 299660947,
+                    "average_self_time": 6235.1424677486475,
+                    "cumulative_execution_time": 299660947,
+                    "min_execution_time": 1450,
+                    "max_execution_time": 165671,
+                    "call_count": 48060
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.headers(java.util.Map)": {
+                    "total_execution_time": 3398703,
+                    "self_execution_time": 3398703,
+                    "average_self_time": 84967.575,
+                    "cumulative_execution_time": 3398703,
+                    "min_execution_time": 53350,
+                    "max_execution_time": 184700,
+                    "call_count": 40
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.method(java.lang.String)": {
+                    "total_execution_time": 2276621,
+                    "self_execution_time": 2276621,
+                    "average_self_time": 133918.88235294117,
+                    "cumulative_execution_time": 2276621,
+                    "min_execution_time": 85251,
+                    "max_execution_time": 278450,
+                    "call_count": 17
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.decodeSlash(boolean)": {
+                    "total_execution_time": 1398419,
+                    "self_execution_time": 1398419,
+                    "average_self_time": 77689.94444444444,
+                    "cumulative_execution_time": 1398419,
+                    "min_execution_time": 55100,
+                    "max_execution_time": 139460,
+                    "call_count": 18
+                },
+                "public java.lang.String feign.RequestTemplate.method()": {
+                    "total_execution_time": 1591609,
+                    "self_execution_time": 1591609,
+                    "average_self_time": 88422.72222222222,
+                    "cumulative_execution_time": 1591609,
+                    "min_execution_time": 55860,
+                    "max_execution_time": 153920,
+                    "call_count": 18
+                },
+                "public java.lang.String feign.RequestTemplate.url()": {
+                    "total_execution_time": 134872042,
+                    "self_execution_time": 134872042,
+                    "average_self_time": 2825.314577790812,
+                    "cumulative_execution_time": 134872042,
+                    "min_execution_time": 1310,
+                    "max_execution_time": 18130,
+                    "call_count": 47737
+                },
+                "public java.util.Map feign.RequestTemplate.queries()": {
+                    "total_execution_time": 1417987,
+                    "self_execution_time": 1417987,
+                    "average_self_time": 83411.0,
+                    "cumulative_execution_time": 1417987,
+                    "min_execution_time": 56990,
+                    "max_execution_time": 120030,
+                    "call_count": 17
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.query(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 2082960,
+                    "self_execution_time": 2082960,
+                    "average_self_time": 138864.0,
+                    "cumulative_execution_time": 2082960,
+                    "min_execution_time": 66310,
+                    "max_execution_time": 395821,
+                    "call_count": 15
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.bodyTemplate(java.lang.String)": {
+                    "total_execution_time": 271070,
+                    "self_execution_time": 271070,
+                    "average_self_time": 90356.66666666667,
+                    "cumulative_execution_time": 271070,
+                    "min_execution_time": 70460,
+                    "max_execution_time": 125270,
+                    "call_count": 3
+                },
+                "public java.lang.String feign.RequestTemplate.bodyTemplate()": {
+                    "total_execution_time": 673750,
+                    "self_execution_time": 673750,
+                    "average_self_time": 224583.33333333334,
+                    "cumulative_execution_time": 673750,
+                    "min_execution_time": 207350,
+                    "max_execution_time": 251520,
+                    "call_count": 3
+                },
+                "feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map,java.util.Map)": {
+                    "total_execution_time": 894130402,
+                    "self_execution_time": 894130402,
+                    "average_self_time": 18690.016764214048,
+                    "cumulative_execution_time": 894130402,
+                    "min_execution_time": 5060,
+                    "max_execution_time": 109100,
+                    "call_count": 47840
+                },
+                "public java.lang.String feign.RequestTemplate.queryLine()": {
+                    "total_execution_time": 214305997,
+                    "self_execution_time": 214305997,
+                    "average_self_time": 4462.56995606272,
+                    "cumulative_execution_time": 214305997,
+                    "min_execution_time": 1720,
+                    "max_execution_time": 101569,
+                    "call_count": 48023
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 1083217476,
+                    "self_execution_time": 592283606,
+                    "average_self_time": 12335.900818528315,
+                    "cumulative_execution_time": 1083217476,
+                    "min_execution_time": 8090,
+                    "max_execution_time": 263030,
+                    "call_count": 47949
+                },
+                "feign.Request feign.SynchronousMethodHandler.targetRequest(feign.RequestTemplate)": {
+                    "total_execution_time": 1733361940,
+                    "self_execution_time": 524616460,
+                    "average_self_time": 10961.938651845041,
+                    "cumulative_execution_time": 1733361940,
+                    "min_execution_time": 13920,
+                    "max_execution_time": 316600,
+                    "call_count": 47863
+                },
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 555655856,
+                    "self_execution_time": 555655856,
+                    "average_self_time": 11595.489482470784,
+                    "cumulative_execution_time": 555655856,
+                    "min_execution_time": 3550,
+                    "max_execution_time": 102790,
+                    "call_count": 47920
+                }
+            }
+        }
+    },
+    "9875a16f4ad3117904dde1c5a5ce3d08de7d1009": {
+        "9875a16f4ad3117904dde1c5a5ce3d08de7d1009": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static java.util.Map feign.RequestTemplate.parseAndDecodeQueries(java.lang.String)": {
+                    "total_execution_time": 14945977,
+                    "self_execution_time": 14945977,
+                    "average_self_time": 2490996.1666666665,
+                    "cumulative_execution_time": 14945977,
+                    "min_execution_time": 166710,
+                    "max_execution_time": 5500869,
+                    "call_count": 6
+                },
+                "public static feign.Request feign.Request.create(feign.Request$HttpMethod,java.lang.String,java.util.Map,byte[],java.nio.charset.Charset)": {
+                    "total_execution_time": 67699002,
+                    "self_execution_time": 67699002,
+                    "average_self_time": 4198.648102207889,
+                    "cumulative_execution_time": 67699002,
+                    "min_execution_time": 1520,
+                    "max_execution_time": 37190,
+                    "call_count": 16124
+                },
+                "public static feign.Request feign.Request.create(java.lang.String,java.lang.String,java.util.Map,byte[],java.nio.charset.Charset)": {
+                    "total_execution_time": 303556233,
+                    "self_execution_time": 231709217,
+                    "average_self_time": 14256.39678828524,
+                    "cumulative_execution_time": 303556233,
+                    "min_execution_time": 5490,
+                    "max_execution_time": 316100,
+                    "call_count": 16238
+                },
+                "public java.lang.String feign.Request.method()": {
+                    "total_execution_time": 201690424,
+                    "self_execution_time": 201690424,
+                    "average_self_time": 4162.857048503612,
+                    "cumulative_execution_time": 201690424,
+                    "min_execution_time": 1190,
+                    "max_execution_time": 42190,
+                    "call_count": 48450
+                },
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 12203614396,
+                    "self_execution_time": 11978841281,
+                    "average_self_time": 738659.5104519948,
+                    "cumulative_execution_time": 12203614396,
+                    "min_execution_time": 266620,
+                    "max_execution_time": 5551159,
+                    "call_count": 16217
+                }
+            }
+        },
+        "68f04c90c2ad550b251172213ad8f08082f5abb6": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static java.util.Map feign.RequestTemplate.parseAndDecodeQueries(java.lang.String)": {
+                    "total_execution_time": 14383986,
+                    "self_execution_time": 14383986,
+                    "average_self_time": 2397331.0,
+                    "cumulative_execution_time": 14383986,
+                    "min_execution_time": 161170,
+                    "max_execution_time": 5058188,
+                    "call_count": 6
+                },
+                "public static feign.Request feign.Request.create(java.lang.String,java.lang.String,java.util.Map,byte[],java.nio.charset.Charset)": {
+                    "total_execution_time": 173058976,
+                    "self_execution_time": 173058976,
+                    "average_self_time": 9771.822473178994,
+                    "cumulative_execution_time": 173058976,
+                    "min_execution_time": 2310,
+                    "max_execution_time": 340020,
+                    "call_count": 17710
+                },
+                "public java.lang.String feign.Request.method()": {
+                    "total_execution_time": 243295883,
+                    "self_execution_time": 243295883,
+                    "average_self_time": 4581.325707076413,
+                    "cumulative_execution_time": 243295883,
+                    "min_execution_time": 1200,
+                    "max_execution_time": 135880,
+                    "call_count": 53106
+                },
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 12399347518,
+                    "self_execution_time": 12157817625,
+                    "average_self_time": 688321.2152522221,
+                    "cumulative_execution_time": 12399347518,
+                    "min_execution_time": 270110,
+                    "max_execution_time": 5258009,
+                    "call_count": 17662
+                }
+            }
+        }
+    },
+    "fb4f304a0e593eb4044792e1e02a736a52ff850d": {
+        "fb4f304a0e593eb4044792e1e02a736a52ff850d": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "feign.Request$Options feign.SynchronousMethodHandler.findOptions(java.lang.Object[])": {
+                    "total_execution_time": 2267823719,
+                    "self_execution_time": 2267823719,
+                    "average_self_time": 7039.214448893441,
+                    "cumulative_execution_time": 2267823719,
+                    "min_execution_time": 1800,
+                    "max_execution_time": 36110,
+                    "call_count": 322170
+                },
+                "feign.Request feign.SynchronousMethodHandler.targetRequest(feign.RequestTemplate)": {
+                    "total_execution_time": 2632456716,
+                    "self_execution_time": 2632456716,
+                    "average_self_time": 8158.912238724554,
+                    "cumulative_execution_time": 2632456716,
+                    "min_execution_time": 5580,
+                    "max_execution_time": 89630,
+                    "call_count": 322648
+                },
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 4812063583,
+                    "self_execution_time": 2185506687,
+                    "average_self_time": 6770.907298801967,
+                    "cumulative_execution_time": 4812063583,
+                    "min_execution_time": 8571,
+                    "max_execution_time": 169590,
+                    "call_count": 322660
+                },
+                "public java.lang.Object feign.SynchronousMethodHandler.invoke(java.lang.Object[]) throws java.lang.Throwable": {
+                    "total_execution_time": 12578899665,
+                    "self_execution_time": 5533246931,
+                    "average_self_time": 17173.06351856737,
+                    "cumulative_execution_time": 12578899665,
+                    "min_execution_time": 22209,
+                    "max_execution_time": 298890,
+                    "call_count": 322214
+                }
+            }
+        },
+        "0b361518e41d27337de13e4a78eec3af9bb1b9dc": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "feign.Request$Options feign.SynchronousMethodHandler.findOptions(java.lang.Object[])": {
+                    "total_execution_time": 2248247662,
+                    "self_execution_time": 2248247662,
+                    "average_self_time": 7049.21257556375,
+                    "cumulative_execution_time": 2248247662,
+                    "min_execution_time": 1800,
+                    "max_execution_time": 33581,
+                    "call_count": 318936
+                },
+                "feign.Request feign.SynchronousMethodHandler.targetRequest(feign.RequestTemplate)": {
+                    "total_execution_time": 2656401239,
+                    "self_execution_time": 2656401239,
+                    "average_self_time": 8309.511448877322,
+                    "cumulative_execution_time": 2656401239,
+                    "min_execution_time": 5660,
+                    "max_execution_time": 121460,
+                    "call_count": 319682
+                },
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 4721492697,
+                    "self_execution_time": 2082331245,
+                    "average_self_time": 6512.658083543924,
+                    "cumulative_execution_time": 4721492697,
+                    "min_execution_time": 8540,
+                    "max_execution_time": 193501,
+                    "call_count": 319605
+                },
+                "public java.lang.Object feign.SynchronousMethodHandler.invoke(java.lang.Object[]) throws java.lang.Throwable": {
+                    "total_execution_time": 12452862610,
+                    "self_execution_time": 5510568736,
+                    "average_self_time": 17267.256813752218,
+                    "cumulative_execution_time": 12452862610,
+                    "min_execution_time": 21729,
+                    "max_execution_time": 315010,
+                    "call_count": 319167
+                }
+            }
+        }
+    },
+    "4da6d5cad674e4eeae5b56035ac1f94992499449": {
+        "4da6d5cad674e4eeae5b56035ac1f94992499449": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.RequestTemplate feign.RequestTemplate.bodyTemplate(java.lang.String)": {
+                    "total_execution_time": 22794131,
+                    "self_execution_time": 22794131,
+                    "average_self_time": 7598043.666666667,
+                    "cumulative_execution_time": 22794131,
+                    "min_execution_time": 6710480,
+                    "max_execution_time": 8966090,
+                    "call_count": 3
+                },
+                "public java.lang.String feign.RequestTemplate.bodyTemplate()": {
+                    "total_execution_time": 865591,
+                    "self_execution_time": 865591,
+                    "average_self_time": 288530.3333333333,
+                    "cumulative_execution_time": 865591,
+                    "min_execution_time": 245370,
+                    "max_execution_time": 361261,
+                    "call_count": 3
+                },
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 806455296,
+                    "self_execution_time": 806455296,
+                    "average_self_time": 11940.763658977168,
+                    "cumulative_execution_time": 806455296,
+                    "min_execution_time": 1620,
+                    "max_execution_time": 156590,
+                    "call_count": 67538
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 2155517939,
+                    "self_execution_time": 2026228724,
+                    "average_self_time": 60243.46565974906,
+                    "cumulative_execution_time": 2155517939,
+                    "min_execution_time": 31550,
+                    "max_execution_time": 341010,
+                    "call_count": 33604
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 753274576,
+                    "self_execution_time": 753274576,
+                    "average_self_time": 22298.10478953289,
+                    "cumulative_execution_time": 753274576,
+                    "min_execution_time": 10409,
+                    "max_execution_time": 276000,
+                    "call_count": 33782
+                },
+                "public byte[] feign.Request.body()": {
+                    "total_execution_time": 171694250,
+                    "self_execution_time": 171694250,
+                    "average_self_time": 5137.008945935434,
+                    "cumulative_execution_time": 171694250,
+                    "min_execution_time": 1369,
+                    "max_execution_time": 30080,
+                    "call_count": 33423
+                }
+            }
+        },
+        "4b2a48ee6ae7cf25a9ba515ac5a198db076217d3": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.RequestTemplate feign.RequestTemplate.bodyTemplate(java.lang.String)": {
+                    "total_execution_time": 23669189,
+                    "self_execution_time": 23669189,
+                    "average_self_time": 7889729.666666667,
+                    "cumulative_execution_time": 23669189,
+                    "min_execution_time": 7070850,
+                    "max_execution_time": 9070979,
+                    "call_count": 3
+                },
+                "public java.lang.String feign.RequestTemplate.bodyTemplate()": {
+                    "total_execution_time": 863499,
+                    "self_execution_time": 863499,
+                    "average_self_time": 287833.0,
+                    "cumulative_execution_time": 863499,
+                    "min_execution_time": 213659,
+                    "max_execution_time": 358870,
+                    "call_count": 3
+                },
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 778346614,
+                    "self_execution_time": 778346614,
+                    "average_self_time": 12374.34998410175,
+                    "cumulative_execution_time": 778346614,
+                    "min_execution_time": 1700,
+                    "max_execution_time": 134410,
+                    "call_count": 62900
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 2052884563,
+                    "self_execution_time": 1930105345,
+                    "average_self_time": 61621.39534512483,
+                    "cumulative_execution_time": 2052884563,
+                    "min_execution_time": 31780,
+                    "max_execution_time": 319890,
+                    "call_count": 31300
+                },
+                "public byte[] feign.RequestTemplate.body()": {
+                    "total_execution_time": 201382380,
+                    "self_execution_time": 201382380,
+                    "average_self_time": 6459.53233256351,
+                    "cumulative_execution_time": 201382380,
+                    "min_execution_time": 1491,
+                    "max_execution_time": 30770,
+                    "call_count": 31176
+                },
+                "public static feign.Request feign.Request.create(feign.Request$HttpMethod,java.lang.String,java.util.Map,byte[],java.nio.charset.Charset)": {
+                    "total_execution_time": 90900570,
+                    "self_execution_time": 90900570,
+                    "average_self_time": 2913.666581191102,
+                    "cumulative_execution_time": 90900570,
+                    "min_execution_time": 1320,
+                    "max_execution_time": 19640,
+                    "call_count": 31198
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 1159160803,
+                    "self_execution_time": 859450642,
+                    "average_self_time": 27322.31186419125,
+                    "cumulative_execution_time": 1159160803,
+                    "min_execution_time": 16300,
+                    "max_execution_time": 335501,
+                    "call_count": 31409
+                },
+                "public byte[] feign.Request.body()": {
+                    "total_execution_time": 194342496,
+                    "self_execution_time": 194342496,
+                    "average_self_time": 6223.141823305261,
+                    "cumulative_execution_time": 194342496,
+                    "min_execution_time": 1400,
+                    "max_execution_time": 31790,
+                    "call_count": 31229
+                }
+            }
+        }
+    },
+    "f16553db43ed062d1de878b38ecff0268ad440ba": {
+        "f16553db43ed062d1de878b38ecff0268ad440ba": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "private java.lang.String feign.template.Template.encode(java.lang.String,boolean)": {
+                    "total_execution_time": 1392177768,
+                    "self_execution_time": 1392177768,
+                    "average_self_time": 3456.233504302362,
+                    "cumulative_execution_time": 1392177768,
+                    "min_execution_time": 1320,
+                    "max_execution_time": 49430,
+                    "call_count": 402802
+                },
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 1670817728,
+                    "self_execution_time": 1670817728,
+                    "average_self_time": 2373.823050617247,
+                    "cumulative_execution_time": 1670817728,
+                    "min_execution_time": 1300,
+                    "max_execution_time": 19630,
+                    "call_count": 703851
+                },
+                "private java.lang.String feign.template.QueryTemplate.queryString(java.lang.String,java.lang.String)": {
+                    "total_execution_time": 3378314264,
+                    "self_execution_time": 3378314264,
+                    "average_self_time": 5595.162347298407,
+                    "cumulative_execution_time": 3378314264,
+                    "min_execution_time": 3660,
+                    "max_execution_time": 59060,
+                    "call_count": 603792
+                },
+                "public java.lang.String feign.template.QueryTemplate.expand(java.util.Map)": {
+                    "total_execution_time": 5577014186,
+                    "self_execution_time": 2676717319,
+                    "average_self_time": 8873.733425052627,
+                    "cumulative_execution_time": 5577014186,
+                    "min_execution_time": 11790,
+                    "max_execution_time": 89650,
+                    "call_count": 301560
+                },
+                "public java.lang.String feign.template.QueryTemplate.toString()": {
+                    "total_execution_time": 3303892578,
+                    "self_execution_time": 1641254303,
+                    "average_self_time": 5443.08792823268,
+                    "cumulative_execution_time": 3303892578,
+                    "min_execution_time": 6600,
+                    "max_execution_time": 81670,
+                    "call_count": 301673
+                }
+            }
+        },
+        "f72db36968d499874e5bd1bdc39289dd62e45ddd": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "private java.lang.String feign.template.Template.encode(java.lang.String,boolean)": {
+                    "total_execution_time": 991422435,
+                    "self_execution_time": 991422435,
+                    "average_self_time": 3330.743453896754,
+                    "cumulative_execution_time": 991422435,
+                    "min_execution_time": 1320,
+                    "max_execution_time": 52080,
+                    "call_count": 297658
+                },
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 1280732819,
+                    "self_execution_time": 1280732819,
+                    "average_self_time": 2691.333231765618,
+                    "cumulative_execution_time": 1280732819,
+                    "min_execution_time": 1309,
+                    "max_execution_time": 27160,
+                    "call_count": 475873
+                },
+                "private java.lang.String feign.template.QueryTemplate.queryString(java.lang.String)": {
+                    "total_execution_time": 3967552679,
+                    "self_execution_time": 3967552679,
+                    "average_self_time": 5558.742807705779,
+                    "cumulative_execution_time": 3967552679,
+                    "min_execution_time": 3669,
+                    "max_execution_time": 51960,
+                    "call_count": 713750
+                },
+                "public java.lang.String feign.template.QueryTemplate.expand(java.util.Map)": {
+                    "total_execution_time": 5220119211,
+                    "self_execution_time": 2477871163,
+                    "average_self_time": 6958.865749816049,
+                    "cumulative_execution_time": 5220119211,
+                    "min_execution_time": 9130,
+                    "max_execution_time": 80590,
+                    "call_count": 356557
+                },
+                "public java.lang.String feign.template.QueryTemplate.toString()": {
+                    "total_execution_time": 3806678081,
+                    "self_execution_time": 1812091679,
+                    "average_self_time": 5118.411449182847,
+                    "cumulative_execution_time": 3806678081,
+                    "min_execution_time": 6610,
+                    "max_execution_time": 61460,
+                    "call_count": 356312
+                }
+            }
+        }
+    },
+    "989fbd7c1f4029c6ad5900f0c3e591323cc11ffc": {
+        "989fbd7c1f4029c6ad5900f0c3e591323cc11ffc": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 1898828368,
+                    "self_execution_time": 1898828368,
+                    "average_self_time": 9578.528677650098,
+                    "cumulative_execution_time": 1898828368,
+                    "min_execution_time": 2430,
+                    "max_execution_time": 210250,
+                    "call_count": 198238
+                }
+            }
+        },
+        "02d97371fe3a84bfd3222e18b94d791c5841170e": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 1943661224,
+                    "self_execution_time": 1943661224,
+                    "average_self_time": 9898.710111787324,
+                    "cumulative_execution_time": 1943661224,
+                    "min_execution_time": 2560,
+                    "max_execution_time": 263020,
+                    "call_count": 196355
+                }
+            }
+        }
+    },
+    "c2fcbededea1aad841a7da91aadc5bacdb86bc6d": {
+        "c2fcbededea1aad841a7da91aadc5bacdb86bc6d": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 12524418061,
+                    "self_execution_time": 12524418061,
+                    "average_self_time": 672993.9850080602,
+                    "cumulative_execution_time": 12524418061,
+                    "min_execution_time": 275410,
+                    "max_execution_time": 4288480,
+                    "call_count": 18610
+                }
+            }
+        },
+        "524c0d91d11cc09f9cf91a5ad7b2346573906c8f": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 12489451944,
+                    "self_execution_time": 12489451944,
+                    "average_self_time": 664226.5566133064,
+                    "cumulative_execution_time": 12489451944,
+                    "min_execution_time": 252660,
+                    "max_execution_time": 4602360,
+                    "call_count": 18803
+                }
+            }
+        }
+    },
+    "4b2a48ee6ae7cf25a9ba515ac5a198db076217d3": {
+        "4b2a48ee6ae7cf25a9ba515ac5a198db076217d3": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.lang.Object feign.SynchronousMethodHandler.invoke(java.lang.Object[]) throws java.lang.Throwable": {
+                    "total_execution_time": 11069050920,
+                    "self_execution_time": 11069050920,
+                    "average_self_time": 56642.654603697694,
+                    "cumulative_execution_time": 11069050920,
+                    "min_execution_time": 41230,
+                    "max_execution_time": 366790,
+                    "call_count": 195419
+                }
+            }
+        },
+        "6b608d0356776da6892567059b0acef35afb919e": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.lang.Object feign.SynchronousMethodHandler.invoke(java.lang.Object[]) throws java.lang.Throwable": {
+                    "total_execution_time": 11083700038,
+                    "self_execution_time": 11083700038,
+                    "average_self_time": 58997.27488449337,
+                    "cumulative_execution_time": 11083700038,
+                    "min_execution_time": 41069,
+                    "max_execution_time": 389780,
+                    "call_count": 187868
+                }
+            }
+        }
+    },
+    "bc8b4b1fc53f0fc0911f486a5150fedab6813798": {
+        "bc8b4b1fc53f0fc0911f486a5150fedab6813798": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.lang.Object feign.InvocationContext.proceed() throws java.lang.Exception": {
+                    "total_execution_time": 3620538603,
+                    "self_execution_time": 3620538603,
+                    "average_self_time": 7203.045127725609,
+                    "cumulative_execution_time": 3620538603,
+                    "min_execution_time": 1530,
+                    "max_execution_time": 46130,
+                    "call_count": 502640
+                }
+            }
+        },
+        "6105f37fa4655e14a7c28ad0afc55eefd9c53cb2": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.lang.Object feign.InvocationContext.proceed() throws java.lang.Exception": {
+                    "total_execution_time": 3605704133,
+                    "self_execution_time": 3605704133,
+                    "average_self_time": 7026.060782556168,
+                    "cumulative_execution_time": 3605704133,
+                    "min_execution_time": 1540,
+                    "max_execution_time": 41640,
+                    "call_count": 513190
+                }
+            }
+        }
+    },
+    "ed2cef04658a28b5ca8c50645032df0d5c7fd7b7": {
+        "ed2cef04658a28b5ca8c50645032df0d5c7fd7b7": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 2748105496,
+                    "self_execution_time": 2748105496,
+                    "average_self_time": 1963.943928265914,
+                    "cumulative_execution_time": 2748105496,
+                    "min_execution_time": 1280,
+                    "max_execution_time": 44960,
+                    "call_count": 1399279
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 9450942528,
+                    "self_execution_time": 6759859944,
+                    "average_self_time": 4835.437872992733,
+                    "cumulative_execution_time": 9450942528,
+                    "min_execution_time": 4270,
+                    "max_execution_time": 49300,
+                    "call_count": 1397493
+                }
+            }
+        },
+        "a25423c0233ea1f0b0da8802b60c128133a1e640": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 6905781,
+                    "self_execution_time": 6905781,
+                    "average_self_time": 121154.05263157895,
+                    "cumulative_execution_time": 6905781,
+                    "min_execution_time": 64670,
+                    "max_execution_time": 284050,
+                    "call_count": 57
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 6327566233,
+                    "self_execution_time": 6327566233,
+                    "average_self_time": 2604.8521715038946,
+                    "cumulative_execution_time": 6327566233,
+                    "min_execution_time": 1640,
+                    "max_execution_time": 23870,
+                    "call_count": 2429146
+                }
+            }
+        }
+    },
+    "cb611eff4dcbc0e0242fbe5b09a63f0cef92277f": {
+        "cb611eff4dcbc0e0242fbe5b09a63f0cef92277f": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static feign.Response$Body feign.okhttp.OkHttpClient.toBody(okhttp3.ResponseBody) throws java.io.IOException": {
+                    "total_execution_time": 1103494731,
+                    "self_execution_time": 1103494731,
+                    "average_self_time": 25187.61797265527,
+                    "cumulative_execution_time": 1103494731,
+                    "min_execution_time": 4550,
+                    "max_execution_time": 347020,
+                    "call_count": 43811
+                }
+            }
+        },
+        "5835dcbd25d4ae2c19f66d33bfab96e145e0cfcb": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static feign.Response$Body feign.okhttp.OkHttpClient.toBody(okhttp3.ResponseBody) throws java.io.IOException": {
+                    "total_execution_time": 1133899763,
+                    "self_execution_time": 1133899763,
+                    "average_self_time": 25082.39350100648,
+                    "cumulative_execution_time": 1133899763,
+                    "min_execution_time": 4590,
+                    "max_execution_time": 286440,
+                    "call_count": 45207
+                }
+            }
+        }
+    },
+    "9ed47d5d25ef2bbb39dcb19306c1308d71247eb6": {
+        "9ed47d5d25ef2bbb39dcb19306c1308d71247eb6": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.String feign.RequestTemplate.queryLine()": {
+                    "total_execution_time": 5953846191,
+                    "self_execution_time": 5953846191,
+                    "average_self_time": 2657.3039098724917,
+                    "cumulative_execution_time": 5953846191,
+                    "min_execution_time": 1540,
+                    "max_execution_time": 29310,
+                    "call_count": 2240559
+                }
+            }
+        },
+        "ea51e7014e944261401cb7d426c9755c2fa337c3": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.String feign.RequestTemplate.queryLine()": {
+                    "total_execution_time": 5921953134,
+                    "self_execution_time": 5921953134,
+                    "average_self_time": 2509.0704053608606,
+                    "cumulative_execution_time": 5921953134,
+                    "min_execution_time": 1449,
+                    "max_execution_time": 27070,
+                    "call_count": 2360218
+                }
+            }
+        }
+    },
+    "85f2f504793283bb66ffde5b80fd2cc6ccfebd88": {
+        "85f2f504793283bb66ffde5b80fd2cc6ccfebd88": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate) throws java.lang.Throwable": {
+                    "total_execution_time": 7371433598,
+                    "self_execution_time": 7371433598,
+                    "average_self_time": 3197.2185695814974,
+                    "cumulative_execution_time": 7371433598,
+                    "min_execution_time": 2000,
+                    "max_execution_time": 84450,
+                    "call_count": 2305577
+                }
+            }
+        },
+        "7670103bc60fc346f9f9fbcbe011fb2535d9f326": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate) throws java.lang.Throwable": {
+                    "total_execution_time": 7364089556,
+                    "self_execution_time": 7364089556,
+                    "average_self_time": 3286.887005036946,
+                    "cumulative_execution_time": 7364089556,
+                    "min_execution_time": 1970,
+                    "max_execution_time": 87160,
+                    "call_count": 2240445
+                }
+            }
+        }
+    },
+    "b6d8bb1a46d390cd675c05880d3e0aa03ff5880e": {
+        "b6d8bb1a46d390cd675c05880d3e0aa03ff5880e": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 1116852601,
+                    "self_execution_time": 1116852601,
+                    "average_self_time": 32832.18981685628,
+                    "cumulative_execution_time": 1116852601,
+                    "min_execution_time": 8150,
+                    "max_execution_time": 202110,
+                    "call_count": 34017
+                }
+            }
+        },
+        "4da6d5cad674e4eeae5b56035ac1f94992499449": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 1098252676,
+                    "self_execution_time": 1098252676,
+                    "average_self_time": 33629.93159200172,
+                    "cumulative_execution_time": 1098252676,
+                    "min_execution_time": 9440,
+                    "max_execution_time": 197550,
+                    "call_count": 32657
+                }
+            }
+        }
+    },
+    "fc6bf6f356dd15e24c29869a2a575d06d97800bc": {
+        "fc6bf6f356dd15e24c29869a2a575d06d97800bc": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 8026074,
+                    "self_execution_time": 8026074,
+                    "average_self_time": 140808.31578947368,
+                    "cumulative_execution_time": 8026074,
+                    "min_execution_time": 91990,
+                    "max_execution_time": 309080,
+                    "call_count": 57
+                }
+            }
+        },
+        "f06856c07abb6b3b080ca69e1fc69605cd129ff3": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 8968579,
+                    "self_execution_time": 8968579,
+                    "average_self_time": 157343.49122807017,
+                    "cumulative_execution_time": 8968579,
+                    "min_execution_time": 88330,
+                    "max_execution_time": 434970,
+                    "call_count": 57
+                }
+            }
+        }
+    },
+    "eed6dbe51c41bf6f0a2fdba69de991172fdf3a84": {
+        "eed6dbe51c41bf6f0a2fdba69de991172fdf3a84": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.nio.charset.Charset feign.Response.charset()": {
+                    "total_execution_time": 6469060275,
+                    "self_execution_time": 6469060275,
+                    "average_self_time": 4129.624095356467,
+                    "cumulative_execution_time": 6469060275,
+                    "min_execution_time": 1309,
+                    "max_execution_time": 35370,
+                    "call_count": 1566501
+                }
+            }
+        },
+        "1d57e1f13e8014cbc5f58dc6e91abb45c9c80e00": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.nio.charset.Charset feign.Response.charset()": {
+                    "total_execution_time": 6618519887,
+                    "self_execution_time": 6618519887,
+                    "average_self_time": 4164.885740193969,
+                    "cumulative_execution_time": 6618519887,
+                    "min_execution_time": 1320,
+                    "max_execution_time": 34320,
+                    "call_count": 1589124
+                }
+            }
+        }
+    },
+    "005619f56b875f6d858a3eeda39905be8ab5fcfc": {
+        "ee68ebfff49e14abb5c0a0be86355152ecbfc976": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public feign.RequestTemplate feign.RequestTemplate.header(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 7516289,
+                    "self_execution_time": 7516289,
+                    "average_self_time": 147378.21568627452,
+                    "cumulative_execution_time": 7516289,
+                    "min_execution_time": 89450,
+                    "max_execution_time": 309170,
+                    "call_count": 51
+                }
+            }
+        }
+    },
+    "cb036e48e47c537eb874241fa586ea77272d892f": {
+        "cb036e48e47c537eb874241fa586ea77272d892f": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 2650982581,
+                    "self_execution_time": 2650982581,
+                    "average_self_time": 5444.971904088993,
+                    "cumulative_execution_time": 2650982581,
+                    "min_execution_time": 1390,
+                    "max_execution_time": 147951,
+                    "call_count": 486868
+                }
+            }
+        },
+        "d436ca153b4f88ea630d14bfe3fd646ada1ba407": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 2134953683,
+                    "self_execution_time": 2134953683,
+                    "average_self_time": 8622.48713868572,
+                    "cumulative_execution_time": 2134953683,
+                    "min_execution_time": 1430,
+                    "max_execution_time": 294099,
+                    "call_count": 247603
+                }
+            }
+        }
+    },
+    "96a6bbd2c85223ae5f49b6dd324f0be192f0e3be": {
+        "96a6bbd2c85223ae5f49b6dd324f0be192f0e3be": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public feign.RequestTemplate feign.RequestTemplate.target(java.lang.String)": {
+                    "total_execution_time": 3775682199,
+                    "self_execution_time": 3775682199,
+                    "average_self_time": 7953.191442437724,
+                    "cumulative_execution_time": 3775682199,
+                    "min_execution_time": 1871,
+                    "max_execution_time": 50480,
+                    "call_count": 474738
+                }
+            }
+        },
+        "80020559599fd97a04182f517e5976c6d9f4fd29": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public feign.RequestTemplate feign.RequestTemplate.target(java.lang.String)": {
+                    "total_execution_time": 3585976396,
+                    "self_execution_time": 3585976396,
+                    "average_self_time": 8049.546555687246,
+                    "cumulative_execution_time": 3585976396,
+                    "min_execution_time": 1840,
+                    "max_execution_time": 49590,
+                    "call_count": 445488
+                }
+            }
+        }
+    },
+    "32eacdcca272ec623a5c2c9953a5140068c28265": {
+        "32eacdcca272ec623a5c2c9953a5140068c28265": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public feign.RequestTemplate feign.RequestTemplate.header(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 7416971,
+                    "self_execution_time": 7416971,
+                    "average_self_time": 145430.80392156861,
+                    "cumulative_execution_time": 7416971,
+                    "min_execution_time": 87390,
+                    "max_execution_time": 315260,
+                    "call_count": 51
+                }
+            }
+        },
+        "903a5d78dd144e006db9ddcbf8f1858a67f1ee8d": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public feign.RequestTemplate feign.RequestTemplate.header(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 7472691,
+                    "self_execution_time": 7472691,
+                    "average_self_time": 146523.35294117648,
+                    "cumulative_execution_time": 7472691,
+                    "min_execution_time": 88240,
+                    "max_execution_time": 320300,
+                    "call_count": 51
+                }
+            }
+        }
+    },
+    "468c44cfa1f9fcca6d1584009bbbdb4489cfaa3b": {
+        "468c44cfa1f9fcca6d1584009bbbdb4489cfaa3b": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "feign.Request$Options feign.SynchronousMethodHandler.findOptions(java.lang.Object[])": {
+                    "total_execution_time": 3741297925,
+                    "self_execution_time": 3741297925,
+                    "average_self_time": 7754.129973408831,
+                    "cumulative_execution_time": 3741297925,
+                    "min_execution_time": 1900,
+                    "max_execution_time": 53580,
+                    "call_count": 482491
+                }
+            }
+        },
+        "a3a19fda6eda622bdd6d785f74a3cc36d554670a": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "feign.Request$Options feign.SynchronousMethodHandler.findOptions(java.lang.Object[])": {
+                    "total_execution_time": 3377218156,
+                    "self_execution_time": 3377218156,
+                    "average_self_time": 7362.971151749819,
+                    "cumulative_execution_time": 3377218156,
+                    "min_execution_time": 1580,
+                    "max_execution_time": 48231,
+                    "call_count": 458676
+                }
+            }
+        }
+    },
+    "3d5f5ecce760d3a8fd6a80501b77272695209612": {
+        "3d5f5ecce760d3a8fd6a80501b77272695209612": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.lang.Object feign.ResponseHandler.handleResponse(java.lang.String,feign.Response,java.lang.reflect.Type,long) throws java.lang.Exception": {
+                    "total_execution_time": 3595556778,
+                    "self_execution_time": 3595556778,
+                    "average_self_time": 7272.566298543689,
+                    "cumulative_execution_time": 3595556778,
+                    "min_execution_time": 1500,
+                    "max_execution_time": 53170,
+                    "call_count": 494400
+                }
+            }
+        },
+        "7b9706df86670836416c44326da81b27ba35c411": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public java.lang.Object feign.ResponseHandler.handleResponse(java.lang.String,feign.Response,java.lang.reflect.Type,long) throws java.lang.Exception": {
+                    "total_execution_time": 3412485940,
+                    "self_execution_time": 3412485940,
+                    "average_self_time": 7469.696307711166,
+                    "cumulative_execution_time": 3412485940,
+                    "min_execution_time": 1520,
+                    "max_execution_time": 56760,
+                    "call_count": 456844
+                }
+            }
+        }
+    },
+    "d851bf2fc08f3b60be09ad5b2b176ed1146f52ef": {
+        "d851bf2fc08f3b60be09ad5b2b176ed1146f52ef": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static feign.Response feign.okhttp.OkHttpClient.toFeignResponse(okhttp3.Response,feign.Request) throws java.io.IOException": {
+                    "total_execution_time": 1131465077,
+                    "self_execution_time": 1131465077,
+                    "average_self_time": 38486.51576584238,
+                    "cumulative_execution_time": 1131465077,
+                    "min_execution_time": 7690,
+                    "max_execution_time": 602540,
+                    "call_count": 29399
+                }
+            }
+        },
+        "ecde6bc9bcbf5ddbc3001a8092e311775d766c93": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static feign.Response feign.okhttp.OkHttpClient.toFeignResponse(okhttp3.Response,feign.Request) throws java.io.IOException": {
+                    "total_execution_time": 1143378895,
+                    "self_execution_time": 1143378895,
+                    "average_self_time": 41389.281266968326,
+                    "cumulative_execution_time": 1143378895,
+                    "min_execution_time": 7280,
+                    "max_execution_time": 708170,
+                    "call_count": 27625
+                }
+            }
+        }
+    },
+    "b46ad267525d9aa4b130d9034a217a9fbda46072": {
+        "b46ad267525d9aa4b130d9034a217a9fbda46072": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 8813638,
+                    "self_execution_time": 8813638,
+                    "average_self_time": 154625.22807017545,
+                    "cumulative_execution_time": 8813638,
+                    "min_execution_time": 91270,
+                    "max_execution_time": 524810,
+                    "call_count": 57
+                }
+            }
+        },
+        "fc6bf6f356dd15e24c29869a2a575d06d97800bc": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 7977643,
+                    "self_execution_time": 7977643,
+                    "average_self_time": 139958.64912280702,
+                    "cumulative_execution_time": 7977643,
+                    "min_execution_time": 83309,
+                    "max_execution_time": 296400,
+                    "call_count": 57
+                }
+            }
+        }
+    },
+    "697b1c3162255c3e36f0bb73ebab0980dbe56f30": {
+        "697b1c3162255c3e36f0bb73ebab0980dbe56f30": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 5465023831,
+                    "self_execution_time": 5465023831,
+                    "average_self_time": 11583.56948521697,
+                    "cumulative_execution_time": 5465023831,
+                    "min_execution_time": 4640,
+                    "max_execution_time": 153190,
+                    "call_count": 471791
+                }
+            }
+        },
+        "efe6356def9f063f3f4513841c22269a2a49fd3f": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 5514928282,
+                    "self_execution_time": 5514928282,
+                    "average_self_time": 11962.578835829638,
+                    "cumulative_execution_time": 5514928282,
+                    "min_execution_time": 4660,
+                    "max_execution_time": 140580,
+                    "call_count": 461015
+                }
+            }
+        }
+    },
+    "75e569fb3f87b4f5e3a638dd65e90cc8a5adf8d1": {
+        "75e569fb3f87b4f5e3a638dd65e90cc8a5adf8d1": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 17957722994,
+                    "self_execution_time": 17957722994,
+                    "average_self_time": 12681.783862573047,
+                    "cumulative_execution_time": 17957722994,
+                    "min_execution_time": 4291,
+                    "max_execution_time": 339730,
+                    "call_count": 1416025
+                },
+                "public java.lang.Object feign.jackson.JacksonIteratorDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 18806860554,
+                    "self_execution_time": 18806860554,
+                    "average_self_time": 7542.1426123990905,
+                    "cumulative_execution_time": 18806860554,
+                    "min_execution_time": 2420,
+                    "max_execution_time": 503360,
+                    "call_count": 2493570
+                }
+            },
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.RequestTemplate feign.RequestTemplate.bodyTemplate(java.lang.String)": {
+                    "total_execution_time": 24457060,
+                    "self_execution_time": 24457060,
+                    "average_self_time": 8152353.333333333,
+                    "cumulative_execution_time": 24457060,
+                    "min_execution_time": 7383100,
+                    "max_execution_time": 9417180,
+                    "call_count": 3
+                },
+                "public java.lang.String feign.RequestTemplate.bodyTemplate()": {
+                    "total_execution_time": 1029439,
+                    "self_execution_time": 1029439,
+                    "average_self_time": 343146.3333333333,
+                    "cumulative_execution_time": 1029439,
+                    "min_execution_time": 337569,
+                    "max_execution_time": 352390,
+                    "call_count": 3
+                },
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 551569799,
+                    "self_execution_time": 551569799,
+                    "average_self_time": 9798.021085728496,
+                    "cumulative_execution_time": 551569799,
+                    "min_execution_time": 2040,
+                    "max_execution_time": 78199,
+                    "call_count": 56294
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 1204314285,
+                    "self_execution_time": 1059986056,
+                    "average_self_time": 37589.49097485726,
+                    "cumulative_execution_time": 1204314285,
+                    "min_execution_time": 14060,
+                    "max_execution_time": 293380,
+                    "call_count": 28169
+                },
+                "public static feign.Request feign.Request.create(feign.Request$HttpMethod,java.lang.String,java.util.Map,feign.Request$Body,feign.RequestTemplate)": {
+                    "total_execution_time": 130380208,
+                    "self_execution_time": 130380208,
+                    "average_self_time": 4645.485926031497,
+                    "cumulative_execution_time": 130380208,
+                    "min_execution_time": 1500,
+                    "max_execution_time": 26749,
+                    "call_count": 28066
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 547598717,
+                    "self_execution_time": 410086410,
+                    "average_self_time": 14474.319144430327,
+                    "cumulative_execution_time": 547598717,
+                    "min_execution_time": 7160,
+                    "max_execution_time": 389629,
+                    "call_count": 28318
+                },
+                "public java.util.Map feign.Request.headers()": {
+                    "total_execution_time": 225561780,
+                    "self_execution_time": 225561780,
+                    "average_self_time": 4017.2718529600343,
+                    "cumulative_execution_time": 225561780,
+                    "min_execution_time": 1240,
+                    "max_execution_time": 23380,
+                    "call_count": 56148
+                },
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 821177034,
+                    "self_execution_time": 589618088,
+                    "average_self_time": 21060.045290566846,
+                    "cumulative_execution_time": 821177034,
+                    "min_execution_time": 10200,
+                    "max_execution_time": 130660,
+                    "call_count": 28027
+                },
+                "private static feign.Response$Body feign.okhttp.OkHttpClient.toBody(okhttp3.ResponseBody) throws java.io.IOException": {
+                    "total_execution_time": 613520631,
+                    "self_execution_time": 613520631,
+                    "average_self_time": 21656.217119661138,
+                    "cumulative_execution_time": 613520631,
+                    "min_execution_time": 4660,
+                    "max_execution_time": 203720,
+                    "call_count": 28330
+                }
+            }
+        },
+        "ee2054160a18e19b2f13bedca8d83eea8ac9a373": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 17283776081,
+                    "self_execution_time": 17283776081,
+                    "average_self_time": 11554.222172975979,
+                    "cumulative_execution_time": 17283776081,
+                    "min_execution_time": 4230,
+                    "max_execution_time": 342080,
+                    "call_count": 1495884
+                },
+                "public java.lang.Object feign.jackson.JacksonIteratorDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 19270827409,
+                    "self_execution_time": 19270827409,
+                    "average_self_time": 9023.5536051927,
+                    "cumulative_execution_time": 19270827409,
+                    "min_execution_time": 2440,
+                    "max_execution_time": 675790,
+                    "call_count": 2135614
+                }
+            },
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.RequestTemplate feign.RequestTemplate.bodyTemplate(java.lang.String)": {
+                    "total_execution_time": 67669629,
+                    "self_execution_time": 67669629,
+                    "average_self_time": 22556543.0,
+                    "cumulative_execution_time": 67669629,
+                    "min_execution_time": 19130740,
+                    "max_execution_time": 25911070,
+                    "call_count": 3
+                },
+                "public java.lang.String feign.RequestTemplate.bodyTemplate()": {
+                    "total_execution_time": 1105870,
+                    "self_execution_time": 1105870,
+                    "average_self_time": 368623.3333333333,
+                    "cumulative_execution_time": 1105870,
+                    "min_execution_time": 327060,
+                    "max_execution_time": 406010,
+                    "call_count": 3
+                },
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 578393457,
+                    "self_execution_time": 578393457,
+                    "average_self_time": 11355.520899185236,
+                    "cumulative_execution_time": 578393457,
+                    "min_execution_time": 2060,
+                    "max_execution_time": 117360,
+                    "call_count": 50935
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 1198747630,
+                    "self_execution_time": 1037269754,
+                    "average_self_time": 40932.47125212107,
+                    "cumulative_execution_time": 1198747630,
+                    "min_execution_time": 13810,
+                    "max_execution_time": 299290,
+                    "call_count": 25365
+                },
+                "public static feign.Request feign.Request.create(feign.Request$HttpMethod,java.lang.String,java.util.Map,feign.Request$Body,feign.RequestTemplate)": {
+                    "total_execution_time": 135709329,
+                    "self_execution_time": 135709329,
+                    "average_self_time": 5308.818565896022,
+                    "cumulative_execution_time": 135709329,
+                    "min_execution_time": 1380,
+                    "max_execution_time": 111490,
+                    "call_count": 25563
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 537451880,
+                    "self_execution_time": 405387450,
+                    "average_self_time": 15859.608387778257,
+                    "cumulative_execution_time": 537451880,
+                    "min_execution_time": 7040,
+                    "max_execution_time": 369860,
+                    "call_count": 25550
+                },
+                "public java.util.Map feign.Request.headers()": {
+                    "total_execution_time": 206260064,
+                    "self_execution_time": 206260064,
+                    "average_self_time": 4087.028434422494,
+                    "cumulative_execution_time": 206260064,
+                    "min_execution_time": 1260,
+                    "max_execution_time": 22971,
+                    "call_count": 50467
+                },
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 788851193,
+                    "self_execution_time": 571911323,
+                    "average_self_time": 22681.392940709895,
+                    "cumulative_execution_time": 788851193,
+                    "min_execution_time": 10420,
+                    "max_execution_time": 136620,
+                    "call_count": 25253
+                },
+                "private static feign.Response$Body feign.okhttp.OkHttpClient.toBody(okhttp3.ResponseBody) throws java.io.IOException": {
+                    "total_execution_time": 590237553,
+                    "self_execution_time": 590237553,
+                    "average_self_time": 23096.754177264724,
+                    "cumulative_execution_time": 590237553,
+                    "min_execution_time": 4120,
+                    "max_execution_time": 227880,
+                    "call_count": 25555
+                }
+            }
+        }
+    },
+    "a7b7c01806324126dd844a9a912e309754bc4dc9": {
+        "a7b7c01806324126dd844a9a912e309754bc4dc9": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "private void feign.template.Template.parseTemplate()": {
+                    "total_execution_time": 3157282265,
+                    "self_execution_time": 1707925090,
+                    "average_self_time": 23033.379501011463,
+                    "cumulative_execution_time": 3157282265,
+                    "min_execution_time": 1389,
+                    "max_execution_time": 492100,
+                    "call_count": 74116
+                },
+                "private static boolean feign.template.UriUtils.isUnreserved(int)": {
+                    "total_execution_time": 5496275291,
+                    "self_execution_time": 5496275291,
+                    "average_self_time": 2051.011998714823,
+                    "cumulative_execution_time": 5496275291,
+                    "min_execution_time": 1209,
+                    "max_execution_time": 18941,
+                    "call_count": 2679787
+                },
+                "private static boolean feign.template.UriUtils.isReserved(int)": {
+                    "total_execution_time": 20384056,
+                    "self_execution_time": 20384056,
+                    "average_self_time": 2200.589010039944,
+                    "cumulative_execution_time": 20384056,
+                    "min_execution_time": 1250,
+                    "max_execution_time": 32991,
+                    "call_count": 9263
+                },
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 4721847,
+                    "self_execution_time": 4721847,
+                    "average_self_time": 104929.93333333333,
+                    "cumulative_execution_time": 4721847,
+                    "min_execution_time": 57560,
+                    "max_execution_time": 336029,
+                    "call_count": 45
+                },
+                "public static feign.template.QueryTemplate feign.template.QueryTemplate.create(java.lang.String,java.lang.Iterable,java.nio.charset.Charset,feign.CollectionFormat)": {
+                    "total_execution_time": 3139193095,
+                    "self_execution_time": 243262451,
+                    "average_self_time": 8826.328906788578,
+                    "cumulative_execution_time": 3139193095,
+                    "min_execution_time": 38289,
+                    "max_execution_time": 515510,
+                    "call_count": 27632
+                },
+                "public java.util.List feign.template.QueryTemplate.getValues()": {
+                    "total_execution_time": 314763531,
+                    "self_execution_time": 314763531,
+                    "average_self_time": 2857.6418182808584,
+                    "cumulative_execution_time": 314763531,
+                    "min_execution_time": 1400,
+                    "max_execution_time": 19920,
+                    "call_count": 110148
+                },
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 154152129,
+                    "self_execution_time": 154152129,
+                    "average_self_time": 2108.8419519001886,
+                    "cumulative_execution_time": 154152129,
+                    "min_execution_time": 1250,
+                    "max_execution_time": 11400,
+                    "call_count": 73098
+                },
+                "public static java.lang.String feign.template.UriUtils.encode(java.lang.String,java.nio.charset.Charset)": {
+                    "total_execution_time": 8503124450,
+                    "self_execution_time": 4505762502,
+                    "average_self_time": 27126.479524629445,
+                    "cumulative_execution_time": 8503124450,
+                    "min_execution_time": 6440,
+                    "max_execution_time": 210220,
+                    "call_count": 165694
+                },
+                "public java.lang.CharSequence feign.CollectionFormat.join(java.lang.String,java.util.Collection,java.nio.charset.Charset)": {
+                    "total_execution_time": 8991964200,
+                    "self_execution_time": 502602805,
+                    "average_self_time": 6144.4388004596685,
+                    "cumulative_execution_time": 8991964200,
+                    "min_execution_time": 37830,
+                    "max_execution_time": 375821,
+                    "call_count": 82698
+                },
+                "public java.lang.String feign.template.QueryTemplate.expand(java.util.Map)": {
+                    "total_execution_time": 3367283155,
+                    "self_execution_time": 244692084,
+                    "average_self_time": 8837.796944414345,
+                    "cumulative_execution_time": 3367283155,
+                    "min_execution_time": 45970,
+                    "max_execution_time": 430690,
+                    "call_count": 27576
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 7155310556,
+                    "self_execution_time": 450475186,
+                    "average_self_time": 49410.46243281781,
+                    "cumulative_execution_time": 7155310556,
+                    "min_execution_time": 496070,
+                    "max_execution_time": 2227430,
+                    "call_count": 9148
+                },
+                "public java.lang.String feign.template.QueryTemplate.toString()": {
+                    "total_execution_time": 6512920662,
+                    "self_execution_time": 380111352,
+                    "average_self_time": 6966.7226040578435,
+                    "cumulative_execution_time": 6512920662,
+                    "min_execution_time": 43570,
+                    "max_execution_time": 391010,
+                    "call_count": 55051
+                }
+            }
+        },
+        "033de93ccac0db19d31676d49dacc1b570c747e6": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "private void feign.template.Template.parseTemplate()": {
+                    "total_execution_time": 1501692598,
+                    "self_execution_time": 1504552726,
+                    "average_self_time": 2581.0089787488077,
+                    "cumulative_execution_time": 1501692598,
+                    "min_execution_time": 1520,
+                    "max_execution_time": 233809,
+                    "call_count": 582916
+                },
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String,feign.template.UriUtils$FragmentType)": {
+                    "total_execution_time": 5819113,
+                    "self_execution_time": 5819113,
+                    "average_self_time": 129313.62222222223,
+                    "cumulative_execution_time": 5819113,
+                    "min_execution_time": 75970,
+                    "max_execution_time": 811480,
+                    "call_count": 45
+                },
+                "public static feign.template.QueryTemplate feign.template.QueryTemplate.create(java.lang.String,java.lang.Iterable,java.nio.charset.Charset,feign.CollectionFormat)": {
+                    "total_execution_time": 2506325061,
+                    "self_execution_time": 1406813878,
+                    "average_self_time": 6453.333874622703,
+                    "cumulative_execution_time": 2506325061,
+                    "min_execution_time": 7140,
+                    "max_execution_time": 90560,
+                    "call_count": 218137
+                },
+                "public java.util.List feign.template.QueryTemplate.getValues()": {
+                    "total_execution_time": 825848777,
+                    "self_execution_time": 825848777,
+                    "average_self_time": 1908.5061402292476,
+                    "cumulative_execution_time": 825848777,
+                    "min_execution_time": 1249,
+                    "max_execution_time": 10091,
+                    "call_count": 432720
+                },
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 1144440449,
+                    "self_execution_time": 1144440449,
+                    "average_self_time": 1966.906217775089,
+                    "cumulative_execution_time": 1144440449,
+                    "min_execution_time": 1260,
+                    "max_execution_time": 18020,
+                    "call_count": 581848
+                },
+                "public java.lang.CharSequence feign.CollectionFormat.join(java.lang.String,java.util.Collection,java.nio.charset.Charset)": {
+                    "total_execution_time": 1667163638,
+                    "self_execution_time": 1667163638,
+                    "average_self_time": 2547.205206361429,
+                    "cumulative_execution_time": 1667163638,
+                    "min_execution_time": 1589,
+                    "max_execution_time": 27180,
+                    "call_count": 654507
+                },
+                "public java.lang.String feign.template.QueryTemplate.expand(java.util.Map)": {
+                    "total_execution_time": 3120953547,
+                    "self_execution_time": 1731332336,
+                    "average_self_time": 7937.012735291151,
+                    "cumulative_execution_time": 3120953547,
+                    "min_execution_time": 9509,
+                    "max_execution_time": 74460,
+                    "call_count": 217985
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 8852181379,
+                    "self_execution_time": 2249455081,
+                    "average_self_time": 31165.383925849983,
+                    "cumulative_execution_time": 8852181379,
+                    "min_execution_time": 81709,
+                    "max_execution_time": 454760,
+                    "call_count": 72321
+                },
+                "public java.lang.String feign.template.QueryTemplate.toString()": {
+                    "total_execution_time": 3140425097,
+                    "self_execution_time": 2025283080,
+                    "average_self_time": 4640.249003345095,
+                    "cumulative_execution_time": 3140425097,
+                    "min_execution_time": 4450,
+                    "max_execution_time": 62530,
+                    "call_count": 436273
+                }
+            }
+        }
+    },
+    "04a85e6961123d4fdb2ab9e4eabbfe09b4eea0a6": {
+        "04a85e6961123d4fdb2ab9e4eabbfe09b4eea0a6": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 17772776741,
+                    "self_execution_time": 17772776741,
+                    "average_self_time": 12631.403814841322,
+                    "cumulative_execution_time": 17772776741,
+                    "min_execution_time": 4200,
+                    "max_execution_time": 351350,
+                    "call_count": 1407031
+                },
+                "public java.lang.Object feign.jackson.JacksonIteratorDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 18867898428,
+                    "self_execution_time": 18867898428,
+                    "average_self_time": 7451.63831003137,
+                    "cumulative_execution_time": 18867898428,
+                    "min_execution_time": 2410,
+                    "max_execution_time": 558151,
+                    "call_count": 2532047
+                }
+            },
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "void feign.AsyncResponseHandler.handleResponse(java.util.concurrent.CompletableFuture,java.lang.String,feign.Response,java.lang.reflect.Type,long)": {
+                    "total_execution_time": 3874654437,
+                    "self_execution_time": 3874654437,
+                    "average_self_time": 6526.5362090833905,
+                    "cumulative_execution_time": 3874654437,
+                    "min_execution_time": 1400,
+                    "max_execution_time": 47891,
+                    "call_count": 593677
+                }
+            }
+        },
+        "c4686e0e0e9b50de7618ff4c651044633089a64f": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 17507453733,
+                    "self_execution_time": 17507453733,
+                    "average_self_time": 12286.751560981258,
+                    "cumulative_execution_time": 17507453733,
+                    "min_execution_time": 4271,
+                    "max_execution_time": 360030,
+                    "call_count": 1424905
+                },
+                "public java.lang.Object feign.jackson.JacksonIteratorDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 19161950090,
+                    "self_execution_time": 19161950090,
+                    "average_self_time": 10510.404894629653,
+                    "cumulative_execution_time": 19161950090,
+                    "min_execution_time": 2370,
+                    "max_execution_time": 816640,
+                    "call_count": 1823141
+                }
+            },
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "void feign.AsyncResponseHandler.handleResponse(java.util.concurrent.CompletableFuture,java.lang.String,feign.Response,java.lang.reflect.Type,long)": {
+                    "total_execution_time": 3916878108,
+                    "self_execution_time": 3916878108,
+                    "average_self_time": 6557.551728756353,
+                    "cumulative_execution_time": 3916878108,
+                    "min_execution_time": 1440,
+                    "max_execution_time": 44600,
+                    "call_count": 597308
+                }
+            }
+        }
+    },
+    "262488506ffafbedfa7215fa42efccfd3f3b470c": {
+        "262488506ffafbedfa7215fa42efccfd3f3b470c": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 1665485187,
+                    "self_execution_time": 1665485187,
+                    "average_self_time": 2492.7076793440924,
+                    "cumulative_execution_time": 1665485187,
+                    "min_execution_time": 1530,
+                    "max_execution_time": 44531,
+                    "call_count": 668143
+                },
+                "public static feign.Request feign.Request.create(feign.Request$HttpMethod,java.lang.String,java.util.Map,feign.Request$Body,feign.RequestTemplate)": {
+                    "total_execution_time": 821284976,
+                    "self_execution_time": 821284976,
+                    "average_self_time": 2477.0476839647963,
+                    "cumulative_execution_time": 821284976,
+                    "min_execution_time": 1380,
+                    "max_execution_time": 13471,
+                    "call_count": 331558
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 3414794614,
+                    "self_execution_time": 2553919433,
+                    "average_self_time": 7644.565670806356,
+                    "cumulative_execution_time": 3414794614,
+                    "min_execution_time": 6210,
+                    "max_execution_time": 124770,
+                    "call_count": 333952
+                },
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 7467211267,
+                    "self_execution_time": 4052102056,
+                    "average_self_time": 12128.12041615286,
+                    "cumulative_execution_time": 7467211267,
+                    "min_execution_time": 11520,
+                    "max_execution_time": 272200,
+                    "call_count": 334008
+                }
+            }
+        },
+        "d5389a57db17ad9a311813bcb8539ff891d9ac3a": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 1659859040,
+                    "self_execution_time": 1659859040,
+                    "average_self_time": 2473.455099252089,
+                    "cumulative_execution_time": 1659859040,
+                    "min_execution_time": 1520,
+                    "max_execution_time": 40400,
+                    "call_count": 671069
+                },
+                "public static feign.Request feign.Request.create(feign.Request$HttpMethod,java.lang.String,java.util.Map,feign.Request$Body)": {
+                    "total_execution_time": 861996867,
+                    "self_execution_time": 861996867,
+                    "average_self_time": 2573.762654627863,
+                    "cumulative_execution_time": 861996867,
+                    "min_execution_time": 1330,
+                    "max_execution_time": 20020,
+                    "call_count": 334917
+                },
+                "public feign.Request feign.RequestTemplate.request()": {
+                    "total_execution_time": 3461451743,
+                    "self_execution_time": 2594172684,
+                    "average_self_time": 7730.06953023734,
+                    "cumulative_execution_time": 3461451743,
+                    "min_execution_time": 6180,
+                    "max_execution_time": 122900,
+                    "call_count": 335476
+                },
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 7491323808,
+                    "self_execution_time": 4031960132,
+                    "average_self_time": 12014.971577397802,
+                    "cumulative_execution_time": 7491323808,
+                    "min_execution_time": 11360,
+                    "max_execution_time": 243820,
+                    "call_count": 335490
+                }
+            }
+        }
+    },
+    "f52158bc24bab0c6c3f858c6b07dd09d4f59dc65": {
+        "f52158bc24bab0c6c3f858c6b07dd09d4f59dc65": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "feign.Request$Options feign.SynchronousMethodHandler.findOptions(java.lang.Object[])": {
+                    "total_execution_time": 1253028209,
+                    "self_execution_time": 1253028209,
+                    "average_self_time": 12228.841155516518,
+                    "cumulative_execution_time": 1253028209,
+                    "min_execution_time": 2310,
+                    "max_execution_time": 86710,
+                    "call_count": 102465
+                }
+            }
+        },
+        "c595301a952c062cb4b782a81ec6338e06f7f3ce": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "feign.Request$Options feign.SynchronousMethodHandler.findOptions(java.lang.Object[])": {
+                    "total_execution_time": 1282777021,
+                    "self_execution_time": 1282777021,
+                    "average_self_time": 12140.381792886752,
+                    "cumulative_execution_time": 1282777021,
+                    "min_execution_time": 2220,
+                    "max_execution_time": 90901,
+                    "call_count": 105662
+                }
+            }
+        }
+    },
+    "29935b2287d455677171277f4e02926b5d9dd5a9": {
+        "29935b2287d455677171277f4e02926b5d9dd5a9": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "private void feign.template.Template.parseFragment(java.lang.String,boolean)": {
+                    "total_execution_time": 6512286385,
+                    "self_execution_time": 3242130563,
+                    "average_self_time": 5540.199970608389,
+                    "cumulative_execution_time": 6512286385,
+                    "min_execution_time": 1420,
+                    "max_execution_time": 307899,
+                    "call_count": 585102
+                },
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String,feign.template.UriUtils$FragmentType)": {
+                    "total_execution_time": 403929054,
+                    "self_execution_time": 403929054,
+                    "average_self_time": 3454.274594650065,
+                    "cumulative_execution_time": 403929054,
+                    "min_execution_time": 1710,
+                    "max_execution_time": 58140,
+                    "call_count": 116936
+                },
+                "public static java.lang.String feign.template.UriUtils.encodeReserved(java.lang.String,feign.template.UriUtils$FragmentType,java.nio.charset.Charset)": {
+                    "total_execution_time": 1897900189,
+                    "self_execution_time": 1897900189,
+                    "average_self_time": 2449.431282611866,
+                    "cumulative_execution_time": 1897900189,
+                    "min_execution_time": 1409,
+                    "max_execution_time": 38411,
+                    "call_count": 774833
+                },
+                "public static java.lang.String feign.template.UriUtils.pathEncode(java.lang.String,java.nio.charset.Charset)": {
+                    "total_execution_time": 2881977588,
+                    "self_execution_time": 1837715116,
+                    "average_self_time": 4331.393840830776,
+                    "cumulative_execution_time": 2881977588,
+                    "min_execution_time": 4000,
+                    "max_execution_time": 221140,
+                    "call_count": 424218
+                },
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 580301320,
+                    "self_execution_time": 580301320,
+                    "average_self_time": 2836.591210155589,
+                    "cumulative_execution_time": 580301320,
+                    "min_execution_time": 1310,
+                    "max_execution_time": 32340,
+                    "call_count": 204577
+                },
+                "public static java.lang.String feign.template.UriUtils.queryEncode(java.lang.String,java.nio.charset.Charset)": {
+                    "total_execution_time": 2406538812,
+                    "self_execution_time": 1556973344,
+                    "average_self_time": 4440.033832667459,
+                    "cumulative_execution_time": 2406538812,
+                    "min_execution_time": 4040,
+                    "max_execution_time": 50690,
+                    "call_count": 350484
+                }
+            }
+        },
+        "92e6ad85630ca3318e9f5e4cf12ac58806bb2645": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "private void feign.template.Template.parseFragment(java.lang.String,boolean)": {
+                    "total_execution_time": 6428912093,
+                    "self_execution_time": 2933910770,
+                    "average_self_time": 5230.3934858762605,
+                    "cumulative_execution_time": 6428912093,
+                    "min_execution_time": 1430,
+                    "max_execution_time": 224780,
+                    "call_count": 560671
+                },
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 379423524,
+                    "self_execution_time": 379423524,
+                    "average_self_time": 3384.5370322465546,
+                    "cumulative_execution_time": 379423524,
+                    "min_execution_time": 1789,
+                    "max_execution_time": 75930,
+                    "call_count": 112105
+                },
+                "public static java.lang.String feign.template.UriUtils.encodeReserved(java.lang.String,java.lang.String,java.nio.charset.Charset)": {
+                    "total_execution_time": 2746746049,
+                    "self_execution_time": 2746746049,
+                    "average_self_time": 3699.2266177700503,
+                    "cumulative_execution_time": 2746746049,
+                    "min_execution_time": 1360,
+                    "max_execution_time": 49650,
+                    "call_count": 742519
+                },
+                "public static java.lang.String feign.template.UriUtils.pathEncode(java.lang.String,java.nio.charset.Charset)": {
+                    "total_execution_time": 3099560226,
+                    "self_execution_time": 1709468765,
+                    "average_self_time": 4219.462369705212,
+                    "cumulative_execution_time": 3099560226,
+                    "min_execution_time": 4000,
+                    "max_execution_time": 59501,
+                    "call_count": 405852
+                },
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 484467065,
+                    "self_execution_time": 484467065,
+                    "average_self_time": 2502.3478990728545,
+                    "cumulative_execution_time": 484467065,
+                    "min_execution_time": 1320,
+                    "max_execution_time": 12220,
+                    "call_count": 193605
+                },
+                "public static java.lang.String feign.template.UriUtils.queryEncode(java.lang.String,java.nio.charset.Charset)": {
+                    "total_execution_time": 2899415336,
+                    "self_execution_time": 1494593845,
+                    "average_self_time": 4472.635726768892,
+                    "cumulative_execution_time": 2899415336,
+                    "min_execution_time": 5070,
+                    "max_execution_time": 65400,
+                    "call_count": 335801
+                }
+            }
+        }
+    },
+    "368818ab9ab741fa335a9dd739c4d2cc5fe04e70": {
+        "368818ab9ab741fa335a9dd739c4d2cc5fe04e70": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target,java.lang.Object)": {
+                    "total_execution_time": 71960938,
+                    "self_execution_time": 71960938,
+                    "average_self_time": 23986979.333333332,
+                    "cumulative_execution_time": 71960938,
+                    "min_execution_time": 21948819,
+                    "max_execution_time": 25539090,
+                    "call_count": 3
+                },
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target)": {
+                    "total_execution_time": 84091419,
+                    "self_execution_time": 12130481,
+                    "average_self_time": 4043493.6666666665,
+                    "cumulative_execution_time": 84091419,
+                    "min_execution_time": 25804599,
+                    "max_execution_time": 29793440,
+                    "call_count": 3
+                },
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 6993331312,
+                    "self_execution_time": 6993331312,
+                    "average_self_time": 12538.31204628539,
+                    "cumulative_execution_time": 6993331312,
+                    "min_execution_time": 5190,
+                    "max_execution_time": 195250,
+                    "call_count": 557757
+                }
+            }
+        },
+        "58d49da0eba0ced60e7a09f24ee562c10f8f10a2": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target)": {
+                    "total_execution_time": 103876909,
+                    "self_execution_time": 103876909,
+                    "average_self_time": 34625636.333333336,
+                    "cumulative_execution_time": 103876909,
+                    "min_execution_time": 27990170,
+                    "max_execution_time": 45567280,
+                    "call_count": 3
+                },
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 6913699936,
+                    "self_execution_time": 6913699936,
+                    "average_self_time": 12165.8597434043,
+                    "cumulative_execution_time": 6913699936,
+                    "min_execution_time": 5160,
+                    "max_execution_time": 217910,
+                    "call_count": 568287
+                }
+            }
+        }
+    },
+    "a9e631ac9beed8a59b52b480f75231695624c2a0": {
+        "a9e631ac9beed8a59b52b480f75231695624c2a0": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "protected final void feign.DeclarativeContract.processAnnotationOnClass(feign.MethodMetadata,java.lang.Class)": {
+                    "total_execution_time": 1865003913,
+                    "self_execution_time": 1865003913,
+                    "average_self_time": 7135.957547837599,
+                    "cumulative_execution_time": 1865003913,
+                    "min_execution_time": 2350,
+                    "max_execution_time": 421020,
+                    "call_count": 261353
+                },
+                "protected final void feign.DeclarativeContract.processAnnotationOnMethod(feign.MethodMetadata,java.lang.annotation.Annotation,java.lang.reflect.Method)": {
+                    "total_execution_time": 3215015927,
+                    "self_execution_time": 3215015927,
+                    "average_self_time": 8202.55471191699,
+                    "cumulative_execution_time": 3215015927,
+                    "min_execution_time": 2220,
+                    "max_execution_time": 349089,
+                    "call_count": 391953
+                },
+                "protected final boolean feign.DeclarativeContract.processAnnotationsOnParameter(feign.MethodMetadata,java.lang.annotation.Annotation[],int)": {
+                    "total_execution_time": 2145756430,
+                    "self_execution_time": 2145756430,
+                    "average_self_time": 6166.976861152545,
+                    "cumulative_execution_time": 2145756430,
+                    "min_execution_time": 1800,
+                    "max_execution_time": 93460,
+                    "call_count": 347943
+                }
+            }
+        },
+        "68f79847449c6df36010e9c4118c4244854ea67c": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "protected final void feign.DeclarativeContract.processAnnotationOnClass(feign.MethodMetadata,java.lang.Class)": {
+                    "total_execution_time": 1759530598,
+                    "self_execution_time": 1759530598,
+                    "average_self_time": 6024.1805202719825,
+                    "cumulative_execution_time": 1759530598,
+                    "min_execution_time": 2020,
+                    "max_execution_time": 401310,
+                    "call_count": 292078
+                },
+                "protected final void feign.DeclarativeContract.processAnnotationOnMethod(feign.MethodMetadata,java.lang.annotation.Annotation,java.lang.reflect.Method)": {
+                    "total_execution_time": 3274857452,
+                    "self_execution_time": 3274857452,
+                    "average_self_time": 7477.748339410933,
+                    "cumulative_execution_time": 3274857452,
+                    "min_execution_time": 2180,
+                    "max_execution_time": 232910,
+                    "call_count": 437947
+                },
+                "protected final boolean feign.DeclarativeContract.processAnnotationsOnParameter(feign.MethodMetadata,java.lang.annotation.Annotation[],int)": {
+                    "total_execution_time": 2046165800,
+                    "self_execution_time": 2046165800,
+                    "average_self_time": 5260.904822876654,
+                    "cumulative_execution_time": 2046165800,
+                    "min_execution_time": 1370,
+                    "max_execution_time": 82540,
+                    "call_count": 388938
+                }
+            }
+        }
+    },
+    "819b2df8c54d9266abf4cde9b17ab7890ed95cc6": {
+        "819b2df8c54d9266abf4cde9b17ab7890ed95cc6": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "private static java.lang.String feign.template.UriUtils.encodeChunk(java.lang.String,java.nio.charset.Charset,boolean)": {
+                    "total_execution_time": 3159201584,
+                    "self_execution_time": 3159201584,
+                    "average_self_time": 2257.5529830097644,
+                    "cumulative_execution_time": 3159201584,
+                    "min_execution_time": 1380,
+                    "max_execution_time": 33750,
+                    "call_count": 1399392
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.decodeSlash(boolean)": {
+                    "total_execution_time": 46187750,
+                    "self_execution_time": 24438432,
+                    "average_self_time": 698240.9142857143,
+                    "cumulative_execution_time": 46187750,
+                    "min_execution_time": 187540,
+                    "max_execution_time": 5858490,
+                    "call_count": 36
+                },
+                "public static feign.template.QueryTemplate feign.template.QueryTemplate.create(java.lang.String,java.lang.Iterable,java.nio.charset.Charset,feign.CollectionFormat,boolean)": {
+                    "total_execution_time": 2921632428,
+                    "self_execution_time": 1734036007,
+                    "average_self_time": 6606.279290468335,
+                    "cumulative_execution_time": 2921632428,
+                    "min_execution_time": 7110,
+                    "max_execution_time": 148810,
+                    "call_count": 262365
+                },
+                "private feign.RequestTemplate feign.RequestTemplate.appendQuery(java.lang.String,java.lang.Iterable,feign.CollectionFormat)": {
+                    "total_execution_time": 4018207658,
+                    "self_execution_time": 1086945728,
+                    "average_self_time": 4140.020141232393,
+                    "cumulative_execution_time": 4018207658,
+                    "min_execution_time": 9680,
+                    "max_execution_time": 256750,
+                    "call_count": 262450
+                },
+                "public java.lang.CharSequence feign.CollectionFormat.join(java.lang.String,java.util.Collection,java.nio.charset.Charset)": {
+                    "total_execution_time": 5578961693,
+                    "self_execution_time": 3813637276,
+                    "average_self_time": 4848.057638133206,
+                    "cumulative_execution_time": 5578961693,
+                    "min_execution_time": 4060,
+                    "max_execution_time": 57360,
+                    "call_count": 786604
+                }
+            }
+        },
+        "49e137349d32acc6c7e886b4646fca578b412eb5": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "private static java.lang.String feign.template.UriUtils.encodeChunk(java.lang.String,java.nio.charset.Charset,boolean)": {
+                    "total_execution_time": 3955407491,
+                    "self_execution_time": 3955407491,
+                    "average_self_time": 2270.2439793076096,
+                    "cumulative_execution_time": 3955407491,
+                    "min_execution_time": 1420,
+                    "max_execution_time": 30060,
+                    "call_count": 1742283
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.decodeSlash(boolean)": {
+                    "total_execution_time": 14283430,
+                    "self_execution_time": 9664839,
+                    "average_self_time": 284259.9705882353,
+                    "cumulative_execution_time": 14283430,
+                    "min_execution_time": 245270,
+                    "max_execution_time": 1778990,
+                    "call_count": 34
+                },
+                "public static feign.template.QueryTemplate feign.template.QueryTemplate.create(java.lang.String,java.lang.Iterable,java.nio.charset.Charset,feign.CollectionFormat)": {
+                    "total_execution_time": 2346054493,
+                    "self_execution_time": 1396737214,
+                    "average_self_time": 6677.649398085731,
+                    "cumulative_execution_time": 2346054493,
+                    "min_execution_time": 7220,
+                    "max_execution_time": 164221,
+                    "call_count": 209097
+                },
+                "private feign.RequestTemplate feign.RequestTemplate.appendQuery(java.lang.String,java.lang.Iterable,feign.CollectionFormat)": {
+                    "total_execution_time": 3232715203,
+                    "self_execution_time": 883892664,
+                    "average_self_time": 4224.987160980087,
+                    "cumulative_execution_time": 3232715203,
+                    "min_execution_time": 9829,
+                    "max_execution_time": 266190,
+                    "call_count": 209131
+                },
+                "public java.lang.CharSequence feign.CollectionFormat.join(java.lang.String,java.util.Collection,java.nio.charset.Charset)": {
+                    "total_execution_time": 7150099626,
+                    "self_execution_time": 4296657894,
+                    "average_self_time": 6860.207776904949,
+                    "cumulative_execution_time": 7150099626,
+                    "min_execution_time": 6871,
+                    "max_execution_time": 63720,
+                    "call_count": 626638
+                }
+            }
+        }
+    },
+    "d1199f64aec365a24551b00ec1780e56af04870d": {
+        "d1199f64aec365a24551b00ec1780e56af04870d": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 1232179582,
+                    "self_execution_time": 1232179582,
+                    "average_self_time": 33958.37348766708,
+                    "cumulative_execution_time": 1232179582,
+                    "min_execution_time": 6750,
+                    "max_execution_time": 206410,
+                    "call_count": 36285
+                }
+            }
+        },
+        "03ff13ed54d7c628314855074004a4a3da7c1f0a": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 1257061610,
+                    "self_execution_time": 1257061610,
+                    "average_self_time": 33059.68888070692,
+                    "cumulative_execution_time": 1257061610,
+                    "min_execution_time": 6840,
+                    "max_execution_time": 234060,
+                    "call_count": 38024
+                }
+            }
+        }
+    },
+    "efc6cf4c59486d42ded8ce1f9f8b2792ab21c28a": {
+        "efc6cf4c59486d42ded8ce1f9f8b2792ab21c28a": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {}
+        },
+        "744fd725ac60b534ff553ec96dcd6494631e677f": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {}
+        }
+    },
+    "5c57213b349c3e76910f595b67b13d0d34f64566": {
+        "5c57213b349c3e76910f595b67b13d0d34f64566": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 17726444283,
+                    "self_execution_time": 17726444283,
+                    "average_self_time": 12413.128681969692,
+                    "cumulative_execution_time": 17726444283,
+                    "min_execution_time": 4300,
+                    "max_execution_time": 350690,
+                    "call_count": 1428040
+                },
+                "public java.lang.Object feign.jackson.JacksonIteratorDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 19319751913,
+                    "self_execution_time": 19319751913,
+                    "average_self_time": 7697.658205641675,
+                    "cumulative_execution_time": 19319751913,
+                    "min_execution_time": 2420,
+                    "max_execution_time": 462600,
+                    "call_count": 2509822
+                }
+            }
+        },
+        "a2904ad189efd640f65d2ae527425d7dbada3beb": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 17859077953,
+                    "self_execution_time": 17859077953,
+                    "average_self_time": 12149.685563373814,
+                    "cumulative_execution_time": 17859077953,
+                    "min_execution_time": 4280,
+                    "max_execution_time": 324101,
+                    "call_count": 1469921
+                },
+                "public java.lang.Object feign.jackson.JacksonIteratorDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 18732793750,
+                    "self_execution_time": 18732793750,
+                    "average_self_time": 7323.980425642385,
+                    "cumulative_execution_time": 18732793750,
+                    "min_execution_time": 2420,
+                    "max_execution_time": 474290,
+                    "call_count": 2557734
+                }
+            }
+        }
+    },
+    "542312e6163327bee0eee481094e9f932fd67140": {
+        "542312e6163327bee0eee481094e9f932fd67140": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target,java.lang.Object)": {
+                    "total_execution_time": 92768268,
+                    "self_execution_time": 92768268,
+                    "average_self_time": 30922756.0,
+                    "cumulative_execution_time": 92768268,
+                    "min_execution_time": 26248729,
+                    "max_execution_time": 34536130,
+                    "call_count": 3
+                },
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target)": {
+                    "total_execution_time": 108427039,
+                    "self_execution_time": 15658771,
+                    "average_self_time": 5219590.333333333,
+                    "cumulative_execution_time": 108427039,
+                    "min_execution_time": 31424770,
+                    "max_execution_time": 40482240,
+                    "call_count": 3
+                }
+            }
+        },
+        "f8c57dabe49ded5433e7b7d08b5b7432455284aa": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target,java.lang.Object)": {
+                    "total_execution_time": 80185128,
+                    "self_execution_time": 80185128,
+                    "average_self_time": 26728376.0,
+                    "cumulative_execution_time": 80185128,
+                    "min_execution_time": 23789780,
+                    "max_execution_time": 29575159,
+                    "call_count": 3
+                },
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target)": {
+                    "total_execution_time": 93761308,
+                    "self_execution_time": 13576180,
+                    "average_self_time": 4525393.333333333,
+                    "cumulative_execution_time": 93761308,
+                    "min_execution_time": 28218490,
+                    "max_execution_time": 34105789,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "f8ad8670e3dc73862f52eec475464a301e8c41cc": {
+        "f8ad8670e3dc73862f52eec475464a301e8c41cc": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public static feign.template.HeaderTemplate feign.template.HeaderTemplate.create(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 470937594,
+                    "self_execution_time": 470937594,
+                    "average_self_time": 2583.9913636064352,
+                    "cumulative_execution_time": 470937594,
+                    "min_execution_time": 1390,
+                    "max_execution_time": 384130,
+                    "call_count": 182252
+                },
+                "public java.util.Collection feign.template.HeaderTemplate.getValues()": {
+                    "total_execution_time": 2703562363,
+                    "self_execution_time": 2703562363,
+                    "average_self_time": 4972.333904704803,
+                    "cumulative_execution_time": 2703562363,
+                    "min_execution_time": 1550,
+                    "max_execution_time": 27700,
+                    "call_count": 543721
+                },
+                "public java.lang.String feign.template.HeaderTemplate.expand(java.util.Map)": {
+                    "total_execution_time": 904955935,
+                    "self_execution_time": 904955935,
+                    "average_self_time": 5016.8025889070595,
+                    "cumulative_execution_time": 904955935,
+                    "min_execution_time": 1560,
+                    "max_execution_time": 22850,
+                    "call_count": 180385
+                },
+                "public java.lang.String feign.template.HeaderTemplate.getName()": {
+                    "total_execution_time": 349274451,
+                    "self_execution_time": 349274451,
+                    "average_self_time": 1933.1535511080608,
+                    "cumulative_execution_time": 349274451,
+                    "min_execution_time": 1270,
+                    "max_execution_time": 11309,
+                    "call_count": 180676
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 6101058469,
+                    "self_execution_time": 3901208701,
+                    "average_self_time": 21526.0478337159,
+                    "cumulative_execution_time": 6101058469,
+                    "min_execution_time": 18380,
+                    "max_execution_time": 202810,
+                    "call_count": 181069
+                }
+            }
+        },
+        "784301a9cb397d50a1c90bb028ef03da7b466f42": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedContract": {
+                "public static feign.template.HeaderTemplate feign.template.HeaderTemplate.create(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 103242725,
+                    "self_execution_time": 103242725,
+                    "average_self_time": 1947975.9433962265,
+                    "cumulative_execution_time": 103242725,
+                    "min_execution_time": 107660,
+                    "max_execution_time": 22227189,
+                    "call_count": 53
+                },
+                "public java.util.Collection feign.template.HeaderTemplate.getValues()": {
+                    "total_execution_time": 2836205674,
+                    "self_execution_time": 2836205674,
+                    "average_self_time": 4459.23955354237,
+                    "cumulative_execution_time": 2836205674,
+                    "min_execution_time": 1340,
+                    "max_execution_time": 29520,
+                    "call_count": 636029
+                },
+                "public java.lang.String feign.template.HeaderTemplate.expand(java.util.Map)": {
+                    "total_execution_time": 1030639369,
+                    "self_execution_time": 1030639369,
+                    "average_self_time": 4869.476780390545,
+                    "cumulative_execution_time": 1030639369,
+                    "min_execution_time": 1650,
+                    "max_execution_time": 35889,
+                    "call_count": 211653
+                },
+                "public java.lang.String feign.template.HeaderTemplate.getName()": {
+                    "total_execution_time": 393738031,
+                    "self_execution_time": 393738031,
+                    "average_self_time": 1864.669563405428,
+                    "cumulative_execution_time": 393738031,
+                    "min_execution_time": 1250,
+                    "max_execution_time": 10800,
+                    "call_count": 211157
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 5740741148,
+                    "self_execution_time": 3878642298,
+                    "average_self_time": 18357.569222322665,
+                    "cumulative_execution_time": 5740741148,
+                    "min_execution_time": 15830,
+                    "max_execution_time": 170770,
+                    "call_count": 211161
+                }
+            }
+        }
+    },
+    "a259a729a8107acaf4d188367a72ef04f9434210": {
+        "a259a729a8107acaf4d188367a72ef04f9434210": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 7076233176,
+                    "self_execution_time": 7076233176,
+                    "average_self_time": 12109.062119358288,
+                    "cumulative_execution_time": 7076233176,
+                    "min_execution_time": 5160,
+                    "max_execution_time": 273300,
+                    "call_count": 584375
+                }
+            }
+        },
+        "75a3c1cf6f0e57c2d1eaa5f8be2538489e605650": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 6933199503,
+                    "self_execution_time": 6933199503,
+                    "average_self_time": 11946.191996815818,
+                    "cumulative_execution_time": 6933199503,
+                    "min_execution_time": 5130,
+                    "max_execution_time": 230220,
+                    "call_count": 580369
+                }
+            }
+        }
+    },
+    "470631be507caf2f27a4c693537f9e2f93852dc3": {
+        "470631be507caf2f27a4c693537f9e2f93852dc3": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static feign.Response feign.okhttp.OkHttpClient.toFeignResponse(okhttp3.Response,feign.Request) throws java.io.IOException": {
+                    "total_execution_time": 1172359598,
+                    "self_execution_time": 1172359598,
+                    "average_self_time": 38444.32195441876,
+                    "cumulative_execution_time": 1172359598,
+                    "min_execution_time": 7360,
+                    "max_execution_time": 512710,
+                    "call_count": 30495
+                }
+            }
+        },
+        "79ba51019920d49a6a295dcc56785c59360fba4a": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "private static feign.Response feign.okhttp.OkHttpClient.toFeignResponse(okhttp3.Response,feign.Request) throws java.io.IOException": {
+                    "total_execution_time": 1066919739,
+                    "self_execution_time": 1066919739,
+                    "average_self_time": 102362.05881224216,
+                    "cumulative_execution_time": 1066919739,
+                    "min_execution_time": 16990,
+                    "max_execution_time": 1380810,
+                    "call_count": 10423
+                }
+            }
+        }
+    },
+    "6771866f9d4ebea14b3ca16a38c12f5a3f0af128": {
+        "6771866f9d4ebea14b3ca16a38c12f5a3f0af128": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 4041298903,
+                    "self_execution_time": 4041298903,
+                    "average_self_time": 9268.056358732794,
+                    "cumulative_execution_time": 4041298903,
+                    "min_execution_time": 1760,
+                    "max_execution_time": 344850,
+                    "call_count": 436046
+                },
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 717432040,
+                    "self_execution_time": 717432040,
+                    "average_self_time": 5805.922521020644,
+                    "cumulative_execution_time": 717432040,
+                    "min_execution_time": 1620,
+                    "max_execution_time": 30330,
+                    "call_count": 123569
+                },
+                "public java.lang.String feign.RequestTemplate.url()": {
+                    "total_execution_time": 792698609,
+                    "self_execution_time": 792698609,
+                    "average_self_time": 6374.42993502525,
+                    "cumulative_execution_time": 792698609,
+                    "min_execution_time": 3490,
+                    "max_execution_time": 83000,
+                    "call_count": 124356
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.target(java.lang.String)": {
+                    "total_execution_time": 232099395,
+                    "self_execution_time": 232099395,
+                    "average_self_time": 3733.6024290195446,
+                    "cumulative_execution_time": 232099395,
+                    "min_execution_time": 1780,
+                    "max_execution_time": 50710,
+                    "call_count": 62165
+                }
+            }
+        },
+        "7ba16df534d82e85eba6dba713fb156328634df4": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 4075944442,
+                    "self_execution_time": 4075944442,
+                    "average_self_time": 9427.462234126213,
+                    "cumulative_execution_time": 4075944442,
+                    "min_execution_time": 1770,
+                    "max_execution_time": 333290,
+                    "call_count": 432348
+                },
+                "public static feign.RequestTemplate feign.RequestTemplate.from(feign.RequestTemplate)": {
+                    "total_execution_time": 716160739,
+                    "self_execution_time": 716160739,
+                    "average_self_time": 5828.74766210618,
+                    "cumulative_execution_time": 716160739,
+                    "min_execution_time": 1640,
+                    "max_execution_time": 39450,
+                    "call_count": 122867
+                },
+                "public java.lang.String feign.RequestTemplate.url()": {
+                    "total_execution_time": 754622496,
+                    "self_execution_time": 754622496,
+                    "average_self_time": 6129.063010672341,
+                    "cumulative_execution_time": 754622496,
+                    "min_execution_time": 3410,
+                    "max_execution_time": 61831,
+                    "call_count": 123122
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.target(java.lang.String)": {
+                    "total_execution_time": 206760403,
+                    "self_execution_time": 206760403,
+                    "average_self_time": 3396.140060117278,
+                    "cumulative_execution_time": 206760403,
+                    "min_execution_time": 1800,
+                    "max_execution_time": 21611,
+                    "call_count": 60881
+                }
+            }
+        }
+    },
+    "b6db37ee3ad7990809425da225c413defa4ce786": {
+        "b6db37ee3ad7990809425da225c413defa4ce786": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 2297699453,
+                    "self_execution_time": 2297699453,
+                    "average_self_time": 23407.934606098268,
+                    "cumulative_execution_time": 2297699453,
+                    "min_execution_time": 6849,
+                    "max_execution_time": 485850,
+                    "call_count": 98159
+                }
+            }
+        },
+        "292b474c5cacf98404f6f8cd2fec3ef0a5901274": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 2254621082,
+                    "self_execution_time": 2254621082,
+                    "average_self_time": 22556.586849950978,
+                    "cumulative_execution_time": 2254621082,
+                    "min_execution_time": 6610,
+                    "max_execution_time": 434760,
+                    "call_count": 99954
+                }
+            }
+        }
+    },
+    "e1a70289cdc203707237e4642dc56e1a96e88e63": {
+        "e1a70289cdc203707237e4642dc56e1a96e88e63": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 9143969,
+                    "self_execution_time": 9143969,
+                    "average_self_time": 160420.50877192983,
+                    "cumulative_execution_time": 9143969,
+                    "min_execution_time": 71430,
+                    "max_execution_time": 420270,
+                    "call_count": 57
+                }
+            }
+        },
+        "55b35f711d82658c84366e56e5f589050ab856a9": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 10645375,
+                    "self_execution_time": 10645375,
+                    "average_self_time": 186760.9649122807,
+                    "cumulative_execution_time": 10645375,
+                    "min_execution_time": 84350,
+                    "max_execution_time": 1254220,
+                    "call_count": 57
+                }
+            }
+        }
+    },
+    "7ba16df534d82e85eba6dba713fb156328634df4": {
+        "7ba16df534d82e85eba6dba713fb156328634df4": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public static feign.template.QueryTemplate feign.template.QueryTemplate.create(java.lang.String,java.lang.Iterable,java.nio.charset.Charset,feign.CollectionFormat)": {
+                    "total_execution_time": 2718953138,
+                    "self_execution_time": 2718953138,
+                    "average_self_time": 5503.730897534513,
+                    "cumulative_execution_time": 2718953138,
+                    "min_execution_time": 2030,
+                    "max_execution_time": 75710,
+                    "call_count": 494020
+                },
+                "private java.lang.String feign.template.QueryTemplate.queryString(java.lang.String,java.lang.String)": {
+                    "total_execution_time": 2058123369,
+                    "self_execution_time": 2058123369,
+                    "average_self_time": 3707.5755188583225,
+                    "cumulative_execution_time": 2058123369,
+                    "min_execution_time": 1720,
+                    "max_execution_time": 36990,
+                    "call_count": 555113
+                }
+            }
+        },
+        "6c4dfbd39fbb49a6f97c646fdbe8f767054261f2": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public static feign.template.QueryTemplate feign.template.QueryTemplate.create(java.lang.String,java.lang.Iterable,java.nio.charset.Charset,feign.CollectionFormat)": {
+                    "total_execution_time": 2757829129,
+                    "self_execution_time": 2757829129,
+                    "average_self_time": 5478.002469027902,
+                    "cumulative_execution_time": 2757829129,
+                    "min_execution_time": 2030,
+                    "max_execution_time": 95380,
+                    "call_count": 503437
+                },
+                "private java.lang.String feign.template.QueryTemplate.queryString(java.lang.String,java.lang.String)": {
+                    "total_execution_time": 2072391133,
+                    "self_execution_time": 2072391133,
+                    "average_self_time": 3664.0513948879156,
+                    "cumulative_execution_time": 2072391133,
+                    "min_execution_time": 1740,
+                    "max_execution_time": 37100,
+                    "call_count": 565601
+                }
+            }
+        }
+    },
+    "4ee8cd8f1ec6fd48e5ed604f96dfeb91ea7d4d65": {
+        "4ee8cd8f1ec6fd48e5ed604f96dfeb91ea7d4d65": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.parseFeignContract": {
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 4504907794,
+                    "self_execution_time": 4504907794,
+                    "average_self_time": 6594.877108793545,
+                    "cumulative_execution_time": 4504907794,
+                    "min_execution_time": 1911,
+                    "max_execution_time": 173730,
+                    "call_count": 683092
+                }
+            }
+        },
+        "c1b853c7aa33290adc618824669c56a31dabadd5": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.parseFeignContract": {
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 4560887096,
+                    "self_execution_time": 4560887096,
+                    "average_self_time": 6275.583640974342,
+                    "cumulative_execution_time": 4560887096,
+                    "min_execution_time": 1810,
+                    "max_execution_time": 220300,
+                    "call_count": 726767
+                }
+            }
+        }
+    },
+    "92b2f511a991031cf1e4a1839e08249a5841f9d7": {
+        "92b2f511a991031cf1e4a1839e08249a5841f9d7": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 60675438,
+                    "self_execution_time": 60675438,
+                    "average_self_time": 1189714.4705882352,
+                    "cumulative_execution_time": 60675438,
+                    "min_execution_time": 93230,
+                    "max_execution_time": 18564910,
+                    "call_count": 51
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 7140561154,
+                    "self_execution_time": 7140561154,
+                    "average_self_time": 13291.886916152282,
+                    "cumulative_execution_time": 7140561154,
+                    "min_execution_time": 6730,
+                    "max_execution_time": 100320,
+                    "call_count": 537212
+                }
+            }
+        },
+        "9a60ea609932625f3702f36e0a66aa29552920e0": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.template.HeaderTemplate feign.template.HeaderTemplate.create(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 969162232,
+                    "self_execution_time": 969162232,
+                    "average_self_time": 2255.0403745206804,
+                    "cumulative_execution_time": 969162232,
+                    "min_execution_time": 1320,
+                    "max_execution_time": 249350,
+                    "call_count": 429776
+                },
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 3849127312,
+                    "self_execution_time": 2818239289,
+                    "average_self_time": 6568.464929985829,
+                    "cumulative_execution_time": 3849127312,
+                    "min_execution_time": 3950,
+                    "max_execution_time": 304520,
+                    "call_count": 429702
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 9870489783,
+                    "self_execution_time": 6190434852,
+                    "average_self_time": 14453.333143437503,
+                    "cumulative_execution_time": 9870489783,
+                    "min_execution_time": 11670,
+                    "max_execution_time": 138420,
+                    "call_count": 428066
+                }
+            }
+        }
+    },
+    "2b141a00ec6d569f0b0abb4408eb4799c31c62b8": {
+        "2b141a00ec6d569f0b0abb4408eb4799c31c62b8": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 7076220205,
+                    "self_execution_time": 7076220205,
+                    "average_self_time": 12106.305322263035,
+                    "cumulative_execution_time": 7076220205,
+                    "min_execution_time": 5140,
+                    "max_execution_time": 208990,
+                    "call_count": 584507
+                }
+            }
+        },
+        "542312e6163327bee0eee481094e9f932fd67140": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "void feign.AsyncResponseHandler.handleResponse(java.util.concurrent.CompletableFuture,java.lang.String,feign.Response,java.lang.reflect.Type,long)": {
+                    "total_execution_time": 1428439688,
+                    "self_execution_time": 1428439688,
+                    "average_self_time": 2981.7054948358063,
+                    "cumulative_execution_time": 1428439688,
+                    "min_execution_time": 1390,
+                    "max_execution_time": 20160,
+                    "call_count": 479068
+                },
+                "java.lang.Object feign.SynchronousMethodHandler.executeAndDecode(feign.RequestTemplate,feign.Request$Options) throws java.lang.Throwable": {
+                    "total_execution_time": 8579160297,
+                    "self_execution_time": 7114021303,
+                    "average_self_time": 14769.890820646227,
+                    "cumulative_execution_time": 8579160297,
+                    "min_execution_time": 7980,
+                    "max_execution_time": 261380,
+                    "call_count": 481451
+                }
+            }
+        }
+    },
+    "246df3746ac3af05945a170940ff7e78a97ce038": {
+        "246df3746ac3af05945a170940ff7e78a97ce038": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 4868344163,
+                    "self_execution_time": 4868344163,
+                    "average_self_time": 10445.745532764022,
+                    "cumulative_execution_time": 4868344163,
+                    "min_execution_time": 1740,
+                    "max_execution_time": 404731,
+                    "call_count": 466060
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.target(java.lang.String)": {
+                    "total_execution_time": 393056350,
+                    "self_execution_time": 393056350,
+                    "average_self_time": 5940.188759086582,
+                    "cumulative_execution_time": 393056350,
+                    "min_execution_time": 1849,
+                    "max_execution_time": 39000,
+                    "call_count": 66169
+                }
+            }
+        },
+        "8af587e6f5e42c84bb32eae69c45aaa2a9b595fb": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 4758710142,
+                    "self_execution_time": 4758710142,
+                    "average_self_time": 10111.662463664643,
+                    "cumulative_execution_time": 4758710142,
+                    "min_execution_time": 1710,
+                    "max_execution_time": 422210,
+                    "call_count": 470616
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.target(java.lang.String)": {
+                    "total_execution_time": 337949927,
+                    "self_execution_time": 337949927,
+                    "average_self_time": 5049.605937901563,
+                    "cumulative_execution_time": 337949927,
+                    "min_execution_time": 1780,
+                    "max_execution_time": 28620,
+                    "call_count": 66926
+                }
+            }
+        }
+    },
+    "089a59f98076d64b3086b98366ebbf0d2114769b": {
+        "089a59f98076d64b3086b98366ebbf0d2114769b": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 2281133033,
+                    "self_execution_time": 2281133033,
+                    "average_self_time": 2829.1894714648047,
+                    "cumulative_execution_time": 2281133033,
+                    "min_execution_time": 1240,
+                    "max_execution_time": 38471,
+                    "call_count": 806285
+                },
+                "private java.lang.String feign.template.QueryTemplate.queryString(java.lang.String,java.lang.String)": {
+                    "total_execution_time": 1952218920,
+                    "self_execution_time": 1952218920,
+                    "average_self_time": 2830.0123364263795,
+                    "cumulative_execution_time": 1952218920,
+                    "min_execution_time": 1690,
+                    "max_execution_time": 26190,
+                    "call_count": 689827
+                }
+            }
+        },
+        "32019a22ab3524ee984a09a547c4596a3c5fed80": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public java.lang.String feign.template.Template.expand(java.util.Map)": {
+                    "total_execution_time": 2296904638,
+                    "self_execution_time": 2296904638,
+                    "average_self_time": 2850.624120235059,
+                    "cumulative_execution_time": 2296904638,
+                    "min_execution_time": 1249,
+                    "max_execution_time": 35400,
+                    "call_count": 805755
+                },
+                "private java.lang.String feign.template.QueryTemplate.queryString(java.lang.String,java.lang.String)": {
+                    "total_execution_time": 1998070441,
+                    "self_execution_time": 1998070441,
+                    "average_self_time": 2893.104346453683,
+                    "cumulative_execution_time": 1998070441,
+                    "min_execution_time": 1649,
+                    "max_execution_time": 42250,
+                    "call_count": 690632
+                }
+            }
+        }
+    },
+    "72f379a03d24826ae64e43a3d3e737c2a94ee717": {
+        "72f379a03d24826ae64e43a3d3e737c2a94ee717": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 3333018552,
+                    "self_execution_time": 3333018552,
+                    "average_self_time": 2958.9824566076027,
+                    "cumulative_execution_time": 3333018552,
+                    "min_execution_time": 1530,
+                    "max_execution_time": 63580,
+                    "call_count": 1126407
+                },
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable,boolean)": {
+                    "total_execution_time": 2165792140,
+                    "self_execution_time": 2165792140,
+                    "average_self_time": 5762.828953145247,
+                    "cumulative_execution_time": 2165792140,
+                    "min_execution_time": 1551,
+                    "max_execution_time": 254440,
+                    "call_count": 375821
+                }
+            }
+        },
+        "1ce671a903c7fceaa851b4466f9a9e1de7e6f4e6": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.util.Map feign.RequestTemplate.headers()": {
+                    "total_execution_time": 3425136128,
+                    "self_execution_time": 3425136128,
+                    "average_self_time": 3779.902673305788,
+                    "cumulative_execution_time": 3425136128,
+                    "min_execution_time": 1550,
+                    "max_execution_time": 69350,
+                    "call_count": 906144
+                },
+                "private feign.RequestTemplate feign.RequestTemplate.appendHeader(java.lang.String,java.lang.Iterable,boolean)": {
+                    "total_execution_time": 2041871684,
+                    "self_execution_time": 2041871684,
+                    "average_self_time": 6753.136781111196,
+                    "cumulative_execution_time": 2041871684,
+                    "min_execution_time": 1570,
+                    "max_execution_time": 298940,
+                    "call_count": 302359
+                }
+            }
+        }
+    },
+    "7230f7c6eea82eb2b340e5d2e76cba1cf87bcf13": {
+        "7230f7c6eea82eb2b340e5d2e76cba1cf87bcf13": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public static feign.stream.StreamDecoder feign.stream.StreamDecoder.create(feign.codec.Decoder)": {
+                    "total_execution_time": 33146429,
+                    "self_execution_time": 33146429,
+                    "average_self_time": 5524404.833333333,
+                    "cumulative_execution_time": 33146429,
+                    "min_execution_time": 4484160,
+                    "max_execution_time": 6314590,
+                    "call_count": 6
+                },
+                "public java.lang.Object feign.stream.StreamDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException,feign.FeignException": {
+                    "total_execution_time": 9560261660,
+                    "self_execution_time": 9560261660,
+                    "average_self_time": 7594.639776869871,
+                    "cumulative_execution_time": 9560261660,
+                    "min_execution_time": 2450,
+                    "max_execution_time": 503610,
+                    "call_count": 1258817
+                }
+            }
+        },
+        "e1a70289cdc203707237e4642dc56e1a96e88e63": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public static feign.stream.StreamDecoder feign.stream.StreamDecoder.create(feign.codec.Decoder)": {
+                    "total_execution_time": 30002840,
+                    "self_execution_time": 30002840,
+                    "average_self_time": 5000473.333333333,
+                    "cumulative_execution_time": 30002840,
+                    "min_execution_time": 4450350,
+                    "max_execution_time": 5838150,
+                    "call_count": 6
+                },
+                "public java.lang.Object feign.stream.StreamDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException,feign.FeignException": {
+                    "total_execution_time": 9381810873,
+                    "self_execution_time": 9381810873,
+                    "average_self_time": 7824.9443043232395,
+                    "cumulative_execution_time": 9381810873,
+                    "min_execution_time": 2500,
+                    "max_execution_time": 553051,
+                    "call_count": 1198962
+                }
+            }
+        }
+    },
+    "23ee09ef88a02ead7c8c925cdab7b094053b3d9e": {
+        "23ee09ef88a02ead7c8c925cdab7b094053b3d9e": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public java.lang.Object feign.SynchronousMethodHandler.invoke(java.lang.Object[]) throws java.lang.Throwable": {
+                    "total_execution_time": 3794504508,
+                    "self_execution_time": 3794504508,
+                    "average_self_time": 36006.79908524145,
+                    "cumulative_execution_time": 3794504508,
+                    "min_execution_time": 15590,
+                    "max_execution_time": 469690,
+                    "call_count": 105383
+                }
+            }
+        },
+        "2ee3f99624bad5ea6ba8390e5b3295c06734f4a4": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public java.lang.Object feign.SynchronousMethodHandler.invoke(java.lang.Object[]) throws java.lang.Throwable": {
+                    "total_execution_time": 3768230712,
+                    "self_execution_time": 3768230712,
+                    "average_self_time": 51835.46153846154,
+                    "cumulative_execution_time": 3768230712,
+                    "min_execution_time": 15490,
+                    "max_execution_time": 855380,
+                    "call_count": 72696
+                }
+            }
+        }
+    },
+    "37d973c00476c88731edd36733bc3d65763285ac": {
+        "37d973c00476c88731edd36733bc3d65763285ac": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 2423549243,
+                    "self_execution_time": 2423549243,
+                    "average_self_time": 29497.562627037158,
+                    "cumulative_execution_time": 2423549243,
+                    "min_execution_time": 9510,
+                    "max_execution_time": 195180,
+                    "call_count": 82161
+                }
+            }
+        },
+        "187cba9c5d13335f3119cb4d778416c1b8c742d8": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 2357718925,
+                    "self_execution_time": 2357718925,
+                    "average_self_time": 27953.274349398303,
+                    "cumulative_execution_time": 2357718925,
+                    "min_execution_time": 9260,
+                    "max_execution_time": 171690,
+                    "call_count": 84345
+                }
+            }
+        }
+    },
+    "b596abe348ee4a2ce71ba66fc9b3e3b6fb5236f7": {
+        "b596abe348ee4a2ce71ba66fc9b3e3b6fb5236f7": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 1244232657,
+                    "self_execution_time": 1244232657,
+                    "average_self_time": 54120.602740321876,
+                    "cumulative_execution_time": 1244232657,
+                    "min_execution_time": 13909,
+                    "max_execution_time": 327850,
+                    "call_count": 22990
+                }
+            }
+        },
+        "92b2f511a991031cf1e4a1839e08249a5841f9d7": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "static okhttp3.Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request)": {
+                    "total_execution_time": 1198532011,
+                    "self_execution_time": 1198532011,
+                    "average_self_time": 46348.73780888665,
+                    "cumulative_execution_time": 1198532011,
+                    "min_execution_time": 11650,
+                    "max_execution_time": 257660,
+                    "call_count": 25859
+                }
+            }
+        }
+    },
+    "318fb0e955b8cfcf64f70d6aeea0ba5795f8a7eb": {
+        "318fb0e955b8cfcf64f70d6aeea0ba5795f8a7eb": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "private feign.RequestTemplate feign.RequestTemplate.appendQuery(java.lang.String,java.lang.Iterable,feign.CollectionFormat)": {
+                    "total_execution_time": 2155258407,
+                    "self_execution_time": 2155258407,
+                    "average_self_time": 4454.992211416228,
+                    "cumulative_execution_time": 2155258407,
+                    "min_execution_time": 2050,
+                    "max_execution_time": 414450,
+                    "call_count": 483785
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.query(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 5606958866,
+                    "self_execution_time": 3348037672,
+                    "average_self_time": 6935.660811057159,
+                    "cumulative_execution_time": 5606958866,
+                    "min_execution_time": 4620,
+                    "max_execution_time": 478280,
+                    "call_count": 483752
+                }
+            }
+        },
+        "6771866f9d4ebea14b3ca16a38c12f5a3f0af128": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "private feign.RequestTemplate feign.RequestTemplate.appendQuery(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 2065662599,
+                    "self_execution_time": 2065662599,
+                    "average_self_time": 3965.214434893444,
+                    "cumulative_execution_time": 2065662599,
+                    "min_execution_time": 2070,
+                    "max_execution_time": 117961,
+                    "call_count": 520946
+                },
+                "public feign.RequestTemplate feign.RequestTemplate.query(java.lang.String,java.lang.Iterable)": {
+                    "total_execution_time": 5501414240,
+                    "self_execution_time": 3421825692,
+                    "average_self_time": 6579.19409803537,
+                    "cumulative_execution_time": 5501414240,
+                    "min_execution_time": 4680,
+                    "max_execution_time": 155800,
+                    "call_count": 520627
+                }
+            }
+        }
+    },
+    "b79d6fcf83bc56b6ab0459c0f63688a2b6197b28": {
+        "b79d6fcf83bc56b6ab0459c0f63688a2b6197b28": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 16854602372,
+                    "self_execution_time": 16854602372,
+                    "average_self_time": 16393.31099394148,
+                    "cumulative_execution_time": 16854602372,
+                    "min_execution_time": 4290,
+                    "max_execution_time": 556480,
+                    "call_count": 1028139
+                }
+            }
+        },
+        "4cf1a5498513535499f956a4639481a26f65fc06": {
+            "feign.benchmark.DecoderIteratorsBenchmark.decode": {
+                "public java.lang.Object feign.jackson.JacksonDecoder.decode(feign.Response,java.lang.reflect.Type) throws java.io.IOException": {
+                    "total_execution_time": 17774392675,
+                    "self_execution_time": 17774392675,
+                    "average_self_time": 12193.115833413365,
+                    "cumulative_execution_time": 17774392675,
+                    "min_execution_time": 4350,
+                    "max_execution_time": 343070,
+                    "call_count": 1457740
+                }
+            }
+        }
+    },
+    "a39c0ea9c3861261ed185718d6c1c69b70fafd31": {
+        "a39c0ea9c3861261ed185718d6c1c69b70fafd31": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 10682698,
+                    "self_execution_time": 10682698,
+                    "average_self_time": 187415.75438596492,
+                    "cumulative_execution_time": 10682698,
+                    "min_execution_time": 69490,
+                    "max_execution_time": 740140,
+                    "call_count": 57
+                }
+            }
+        },
+        "b596abe348ee4a2ce71ba66fc9b3e3b6fb5236f7": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String)": {
+                    "total_execution_time": 8698300,
+                    "self_execution_time": 8698300,
+                    "average_self_time": 152601.75438596492,
+                    "cumulative_execution_time": 8698300,
+                    "min_execution_time": 73810,
+                    "max_execution_time": 390040,
+                    "call_count": 57
+                }
+            }
+        }
+    },
+    "fdc7bc2fb85ef6c816f36750ece1a18fa80d4ef3": {
+        "fdc7bc2fb85ef6c816f36750ece1a18fa80d4ef3": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 10606345051,
+                    "self_execution_time": 10606345051,
+                    "average_self_time": 374412.0676009602,
+                    "cumulative_execution_time": 10606345051,
+                    "min_execution_time": 117961,
+                    "max_execution_time": 4215039,
+                    "call_count": 28328
+                }
+            }
+        },
+        "d27d385e1a1673446aa1f6a778a91fbaa2442679": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 10492211731,
+                    "self_execution_time": 10492211731,
+                    "average_self_time": 342323.38437194127,
+                    "cumulative_execution_time": 10492211731,
+                    "min_execution_time": 103301,
+                    "max_execution_time": 6314150,
+                    "call_count": 30650
+                }
+            }
+        }
+    },
+    "f73fe7058a3a7da0aa307220e766f1fb2f4b58dd": {
+        "f73fe7058a3a7da0aa307220e766f1fb2f4b58dd": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.util.List feign.template.QueryTemplate.getVariables()": {
+                    "total_execution_time": 9553381,
+                    "self_execution_time": 9553381,
+                    "average_self_time": 280981.79411764705,
+                    "cumulative_execution_time": 9553381,
+                    "min_execution_time": 107010,
+                    "max_execution_time": 3896641,
+                    "call_count": 34
+                }
+            }
+        },
+        "a7b7c01806324126dd844a9a912e309754bc4dc9": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.util.List feign.template.QueryTemplate.getVariables()": {
+                    "total_execution_time": 12254782,
+                    "self_execution_time": 12254782,
+                    "average_self_time": 350136.6285714286,
+                    "cumulative_execution_time": 12254782,
+                    "min_execution_time": 88581,
+                    "max_execution_time": 4047981,
+                    "call_count": 35
+                }
+            }
+        }
+    },
+    "45cff0673a4236ff31ed84ae30c51aa1c9b2204c": {
+        "45cff0673a4236ff31ed84ae30c51aa1c9b2204c": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target,java.lang.Object)": {
+                    "total_execution_time": 110496501,
+                    "self_execution_time": 110496501,
+                    "average_self_time": 36832167.0,
+                    "cumulative_execution_time": 110496501,
+                    "min_execution_time": 35587201,
+                    "max_execution_time": 38040970,
+                    "call_count": 3
+                }
+            }
+        },
+        "d09b88efb6e285c6ee54c15ef4b0dcab12c40185": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public java.lang.Object feign.ReflectiveFeign.newInstance(feign.Target,java.lang.Object)": {
+                    "total_execution_time": 89023661,
+                    "self_execution_time": 89023661,
+                    "average_self_time": 29674553.666666668,
+                    "cumulative_execution_time": 89023661,
+                    "min_execution_time": 27030530,
+                    "max_execution_time": 32481750,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "028ae86753324e379dcc13580e8f8ad5c45213a2": {
+        "028ae86753324e379dcc13580e8f8ad5c45213a2": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 5206226140,
+                    "self_execution_time": 5206226140,
+                    "average_self_time": 10260.898804655242,
+                    "cumulative_execution_time": 5206226140,
+                    "min_execution_time": 1690,
+                    "max_execution_time": 489449,
+                    "call_count": 507385
+                }
+            }
+        },
+        "d3af6a9b5e6763660ec0ec4a9a9b72065b6dd70a": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.uri(java.lang.String,boolean)": {
+                    "total_execution_time": 5197018009,
+                    "self_execution_time": 5197018009,
+                    "average_self_time": 9772.651730375786,
+                    "cumulative_execution_time": 5197018009,
+                    "min_execution_time": 1689,
+                    "max_execution_time": 378710,
+                    "call_count": 531792
+                }
+            }
+        }
+    },
+    "9e23599df3325c407e752d9fd6fcd302637e9ab9": {
+        "9e23599df3325c407e752d9fd6fcd302637e9ab9": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 10868348153,
+                    "self_execution_time": 10868348153,
+                    "average_self_time": 315061.1129696197,
+                    "cumulative_execution_time": 10868348153,
+                    "min_execution_time": 103540,
+                    "max_execution_time": 4865150,
+                    "call_count": 34496
+                }
+            }
+        },
+        "cca3887ce0bb2562b0e6d6432731c9f5e946739e": {
+            "feign.benchmark.RealRequestBenchmarks.query_feignUsingOkHttp": {
+                "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request,feign.Request$Options) throws java.io.IOException": {
+                    "total_execution_time": 10839888855,
+                    "self_execution_time": 10839888855,
+                    "average_self_time": 308943.1657023969,
+                    "cumulative_execution_time": 10839888855,
+                    "min_execution_time": 93690,
+                    "max_execution_time": 4317360,
+                    "call_count": 35087
+                }
+            }
+        }
+    },
+    "033de93ccac0db19d31676d49dacc1b570c747e6": {
+        "033de93ccac0db19d31676d49dacc1b570c747e6": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String,feign.template.UriUtils$FragmentType)": {
+                    "total_execution_time": 8772601,
+                    "self_execution_time": 8772601,
+                    "average_self_time": 194946.6888888889,
+                    "cumulative_execution_time": 8772601,
+                    "min_execution_time": 92760,
+                    "max_execution_time": 414910,
+                    "call_count": 45
+                }
+            }
+        },
+        "d3eb9cf3bd9f8e2a5711100c91ce33f44a54b0b0": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedApi": {
+                "public static feign.template.Expression feign.template.Expressions.create(java.lang.String,feign.template.UriUtils$FragmentType)": {
+                    "total_execution_time": 8808777,
+                    "self_execution_time": 8808777,
+                    "average_self_time": 195750.6,
+                    "cumulative_execution_time": 8808777,
+                    "min_execution_time": 84660,
+                    "max_execution_time": 360000,
+                    "call_count": 45
+                }
+            }
+        }
+    },
+    "ce662052d788bb4c35f89c8f67a75cdaf3c68c83": {
+        "ce662052d788bb4c35f89c8f67a75cdaf3c68c83": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 2659909148,
+                    "self_execution_time": 2659909148,
+                    "average_self_time": 25132.129104188516,
+                    "cumulative_execution_time": 2659909148,
+                    "min_execution_time": 9720,
+                    "max_execution_time": 169920,
+                    "call_count": 105837
+                }
+            }
+        },
+        "6b8ed38ef5e8310bc5d93e7b2293d15762312d09": {
+            "feign.benchmark.WhatShouldWeCacheBenchmarks.buildAndQuery_fake_cachedFeign": {
+                "public feign.RequestTemplate feign.RequestTemplate.resolve(java.util.Map)": {
+                    "total_execution_time": 2822069043,
+                    "self_execution_time": 2822069043,
+                    "average_self_time": 28802.5009491733,
+                    "cumulative_execution_time": 2822069043,
+                    "min_execution_time": 11340,
+                    "max_execution_time": 180520,
+                    "call_count": 97980
+                }
+            }
+        }
+    }
+}

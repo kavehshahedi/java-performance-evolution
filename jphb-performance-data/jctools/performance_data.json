@@ -1,0 +1,3070 @@
+{
+    "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1": {
+        "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 4360966567,
+                    "self_execution_time": 4008620230,
+                    "average_self_time": 45220.542720483725,
+                    "cumulative_execution_time": 4360966567,
+                    "min_execution_time": 1861,
+                    "max_execution_time": 568452,
+                    "call_count": 89245
+                },
+                "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 1771152389,
+                    "self_execution_time": 629658953,
+                    "average_self_time": 321418.5569167943,
+                    "cumulative_execution_time": 1771152389,
+                    "min_execution_time": 1889,
+                    "max_execution_time": 1920668,
+                    "call_count": 1960
+                },
+                "public java.lang.Object org.jctools.queues.SpscArrayQueue.poll()": {
+                    "total_execution_time": 4876880316,
+                    "self_execution_time": 4876880316,
+                    "average_self_time": 2344.37673044438,
+                    "cumulative_execution_time": 4876880316,
+                    "min_execution_time": 1833,
+                    "max_execution_time": 23000,
+                    "call_count": 2080246
+                },
+                "final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lpConsumerIndex()": {
+                    "total_execution_time": 2640955622,
+                    "self_execution_time": 2634668353,
+                    "average_self_time": 2629.5958625810813,
+                    "cumulative_execution_time": 2640955622,
+                    "min_execution_time": 1846,
+                    "max_execution_time": 51410,
+                    "call_count": 1001921
+                },
+                "public final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lvConsumerIndex()": {
+                    "total_execution_time": 1124089416,
+                    "self_execution_time": 1118247426,
+                    "average_self_time": 7714.126047695587,
+                    "cumulative_execution_time": 1124089416,
+                    "min_execution_time": 1877,
+                    "max_execution_time": 38072,
+                    "call_count": 144949
+                },
+                "public final long org.jctools.queues.SpmcArrayQueueProducerIndexField.lvProducerIndex()": {
+                    "total_execution_time": 265443286,
+                    "self_execution_time": 256655357,
+                    "average_self_time": 10451.413324103107,
+                    "cumulative_execution_time": 265443286,
+                    "min_execution_time": 2025,
+                    "max_execution_time": 137784,
+                    "call_count": 24558
+                },
+                "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 10169907900,
+                    "self_execution_time": 9678431407,
+                    "average_self_time": 50376.74906439171,
+                    "cumulative_execution_time": 10169907900,
+                    "min_execution_time": 1892,
+                    "max_execution_time": 693390,
+                    "call_count": 192859
+                }
+            },
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 8065398507,
+                    "self_execution_time": 8065398507,
+                    "average_self_time": 2510.6291039286834,
+                    "cumulative_execution_time": 8065398507,
+                    "min_execution_time": 1849,
+                    "max_execution_time": 94566,
+                    "call_count": 3212501
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 7788108092,
+                    "self_execution_time": 7788108092,
+                    "average_self_time": 2528.566296185548,
+                    "cumulative_execution_time": 7788108092,
+                    "min_execution_time": 1833,
+                    "max_execution_time": 102920,
+                    "call_count": 3080049
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 320928243,
+                    "self_execution_time": 320928243,
+                    "average_self_time": 5330.325587961733,
+                    "cumulative_execution_time": 320928243,
+                    "min_execution_time": 2380,
+                    "max_execution_time": 45715,
+                    "call_count": 60208
+                }
+            }
+        },
+        "84dbbbaa3bb95d04efe23921a6898d5feb1d3c17": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 1094368538,
+                    "self_execution_time": 1024196317,
+                    "average_self_time": 30016.59731543624,
+                    "cumulative_execution_time": 1094368538,
+                    "min_execution_time": 1900,
+                    "max_execution_time": 549308,
+                    "call_count": 33802
+                },
+                "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 1397365825,
+                    "self_execution_time": 839588093,
+                    "average_self_time": 400184.98236415634,
+                    "cumulative_execution_time": 1397365825,
+                    "min_execution_time": 1906,
+                    "max_execution_time": 1660633,
+                    "call_count": 2099
+                },
+                "public java.lang.Object org.jctools.queues.SpscArrayQueue.poll()": {
+                    "total_execution_time": 5182357461,
+                    "self_execution_time": 5182357461,
+                    "average_self_time": 2309.1279837917705,
+                    "cumulative_execution_time": 5182357461,
+                    "min_execution_time": 1815,
+                    "max_execution_time": 21326,
+                    "call_count": 2244292
+                },
+                "protected final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lpConsumerIndex()": {
+                    "total_execution_time": 5132593310,
+                    "self_execution_time": 5128869757,
+                    "average_self_time": 2469.9256436705887,
+                    "cumulative_execution_time": 5132593310,
+                    "min_execution_time": 1835,
+                    "max_execution_time": 32859,
+                    "call_count": 2076469
+                },
+                "public final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lvConsumerIndex()": {
+                    "total_execution_time": 1139389095,
+                    "self_execution_time": 1134075494,
+                    "average_self_time": 7508.345321168947,
+                    "cumulative_execution_time": 1139389095,
+                    "min_execution_time": 1867,
+                    "max_execution_time": 28628,
+                    "call_count": 151015
+                },
+                "public final long org.jctools.queues.SpmcArrayQueueProducerIndexField.lvProducerIndex()": {
+                    "total_execution_time": 339971674,
+                    "self_execution_time": 333323419,
+                    "average_self_time": 11527.300421911745,
+                    "cumulative_execution_time": 339971674,
+                    "min_execution_time": 1959,
+                    "max_execution_time": 154018,
+                    "call_count": 28916
+                },
+                "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 9000757627,
+                    "self_execution_time": 8604417326,
+                    "average_self_time": 54277.98344740577,
+                    "cumulative_execution_time": 9000757627,
+                    "min_execution_time": 1886,
+                    "max_execution_time": 692128,
+                    "call_count": 159072
+                }
+            },
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 8011160457,
+                    "self_execution_time": 8011160457,
+                    "average_self_time": 2534.995257302719,
+                    "cumulative_execution_time": 8011160457,
+                    "min_execution_time": 1843,
+                    "max_execution_time": 114494,
+                    "call_count": 3160227
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 7773565559,
+                    "self_execution_time": 7773565559,
+                    "average_self_time": 2545.6727396394926,
+                    "cumulative_execution_time": 7773565559,
+                    "min_execution_time": 1849,
+                    "max_execution_time": 91865,
+                    "call_count": 3053639
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 297950781,
+                    "self_execution_time": 297950781,
+                    "average_self_time": 5010.186500529688,
+                    "cumulative_execution_time": 297950781,
+                    "min_execution_time": 2089,
+                    "max_execution_time": 24513,
+                    "call_count": 59469
+                }
+            }
+        }
+    },
+    "78965db4efd244c428cea9825527f4ab8101ab00": {
+        "78965db4efd244c428cea9825527f4ab8101ab00": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 14456333999,
+                    "self_execution_time": 14456333999,
+                    "average_self_time": 678860.4836346561,
+                    "cumulative_execution_time": 14456333999,
+                    "min_execution_time": 2779,
+                    "max_execution_time": 2989021,
+                    "call_count": 21295
+                },
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 7671306066,
+                    "self_execution_time": 7671306066,
+                    "average_self_time": 3908.1511916812838,
+                    "cumulative_execution_time": 7671306066,
+                    "min_execution_time": 1898,
+                    "max_execution_time": 60322,
+                    "call_count": 1962899
+                },
+                "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 13572495091,
+                    "self_execution_time": 13572495091,
+                    "average_self_time": 470026.8420487602,
+                    "cumulative_execution_time": 13572495091,
+                    "min_execution_time": 1875,
+                    "max_execution_time": 3825007,
+                    "call_count": 28876
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 8989898394,
+                    "self_execution_time": 8989898394,
+                    "average_self_time": 7519.9824620985255,
+                    "cumulative_execution_time": 8989898394,
+                    "min_execution_time": 2841,
+                    "max_execution_time": 89921,
+                    "call_count": 1195468
+                }
+            }
+        },
+        "d751cda56d66b23b89ff29d9eeb7e2b710bb29d3": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 14504205426,
+                    "self_execution_time": 14504205426,
+                    "average_self_time": 742814.9864795657,
+                    "cumulative_execution_time": 14504205426,
+                    "min_execution_time": 3230,
+                    "max_execution_time": 2885104,
+                    "call_count": 19526
+                },
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 7807594112,
+                    "self_execution_time": 7807594112,
+                    "average_self_time": 2989.559779753563,
+                    "cumulative_execution_time": 7807594112,
+                    "min_execution_time": 1935,
+                    "max_execution_time": 39719,
+                    "call_count": 2611620
+                },
+                "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 13225049712,
+                    "self_execution_time": 13225049712,
+                    "average_self_time": 112182.21981694645,
+                    "cumulative_execution_time": 13225049712,
+                    "min_execution_time": 1884,
+                    "max_execution_time": 1020906,
+                    "call_count": 117889
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 9010565094,
+                    "self_execution_time": 9010565094,
+                    "average_self_time": 7009.79995238925,
+                    "cumulative_execution_time": 9010565094,
+                    "min_execution_time": 2807,
+                    "max_execution_time": 74869,
+                    "call_count": 1285424
+                }
+            }
+        }
+    },
+    "e5da44dc316d8ce2914b5081a39506a06cf24c0c": {
+        "e5da44dc316d8ce2914b5081a39506a06cf24c0c": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 14293111803,
+                    "self_execution_time": 14293111803,
+                    "average_self_time": 712233.9945684673,
+                    "cumulative_execution_time": 14293111803,
+                    "min_execution_time": 1912,
+                    "max_execution_time": 2283244,
+                    "call_count": 20068
+                },
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 7966375695,
+                    "self_execution_time": 7966375695,
+                    "average_self_time": 3288.015815658571,
+                    "cumulative_execution_time": 7966375695,
+                    "min_execution_time": 1860,
+                    "max_execution_time": 34715,
+                    "call_count": 2422852
+                },
+                "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 13413429515,
+                    "self_execution_time": 13413429515,
+                    "average_self_time": 113362.82476779663,
+                    "cumulative_execution_time": 13413429515,
+                    "min_execution_time": 1892,
+                    "max_execution_time": 1022754,
+                    "call_count": 118323
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 9118009240,
+                    "self_execution_time": 9118009240,
+                    "average_self_time": 7138.178365031573,
+                    "cumulative_execution_time": 9118009240,
+                    "min_execution_time": 2868,
+                    "max_execution_time": 82241,
+                    "call_count": 1277358
+                }
+            }
+        },
+        "bfaa2da99397d196f77be18a3680087e896a337f": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 14151424374,
+                    "self_execution_time": 14151424374,
+                    "average_self_time": 863998.0691128884,
+                    "cumulative_execution_time": 14151424374,
+                    "min_execution_time": 1962,
+                    "max_execution_time": 4298691,
+                    "call_count": 16379
+                },
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 7768764904,
+                    "self_execution_time": 7768764904,
+                    "average_self_time": 4675.010954624122,
+                    "cumulative_execution_time": 7768764904,
+                    "min_execution_time": 1863,
+                    "max_execution_time": 100988,
+                    "call_count": 1661764
+                },
+                "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 13710352288,
+                    "self_execution_time": 13710352288,
+                    "average_self_time": 152212.0954770522,
+                    "cumulative_execution_time": 13710352288,
+                    "min_execution_time": 1881,
+                    "max_execution_time": 1181463,
+                    "call_count": 90074
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 8810594130,
+                    "self_execution_time": 8810594130,
+                    "average_self_time": 7271.6509991449575,
+                    "cumulative_execution_time": 8810594130,
+                    "min_execution_time": 2811,
+                    "max_execution_time": 76912,
+                    "call_count": 1211636
+                }
+            }
+        }
+    },
+    "4db7bd71c4a70093eeafc4545668a7d227d940d0": {
+        "4db7bd71c4a70093eeafc4545668a7d227d940d0": {
+            "org.jctools.jmh.collections.SetOps.contains": {
+                "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 7254668128,
+                    "self_execution_time": 7254668128,
+                    "average_self_time": 2833.412016872364,
+                    "cumulative_execution_time": 7254668128,
+                    "min_execution_time": 1807,
+                    "max_execution_time": 46136,
+                    "call_count": 2560400
+                }
+            },
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 136068274,
+                    "self_execution_time": 136068274,
+                    "average_self_time": 88759.47423352902,
+                    "cumulative_execution_time": 136068274,
+                    "min_execution_time": 24340,
+                    "max_execution_time": 897166,
+                    "call_count": 1533
+                },
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 7179594225,
+                    "self_execution_time": 7179594225,
+                    "average_self_time": 4482.987552450172,
+                    "cumulative_execution_time": 7179594225,
+                    "min_execution_time": 1813,
+                    "max_execution_time": 82201,
+                    "call_count": 1601520
+                }
+            }
+        },
+        "615c6583174a1a9a8928b6ed0efa8f2e1a1b6798": {
+            "org.jctools.jmh.collections.SetOps.contains": {
+                "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 7324749360,
+                    "self_execution_time": 7324749360,
+                    "average_self_time": 2776.429809831741,
+                    "cumulative_execution_time": 7324749360,
+                    "min_execution_time": 1794,
+                    "max_execution_time": 48886,
+                    "call_count": 2638190
+                }
+            },
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 90718437,
+                    "self_execution_time": 90718437,
+                    "average_self_time": 59177.0626223092,
+                    "cumulative_execution_time": 90718437,
+                    "min_execution_time": 28841,
+                    "max_execution_time": 333778,
+                    "call_count": 1533
+                },
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 7407622710,
+                    "self_execution_time": 7407622710,
+                    "average_self_time": 2678.2716711342955,
+                    "cumulative_execution_time": 7407622710,
+                    "min_execution_time": 1796,
+                    "max_execution_time": 47906,
+                    "call_count": 2765822
+                }
+            }
+        }
+    },
+    "c9f203a781b11719268b7bcff58694206540fd3f": {
+        "c9f203a781b11719268b7bcff58694206540fd3f": {
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 116120153,
+                    "self_execution_time": 98743233,
+                    "average_self_time": 64411.76320939335,
+                    "cumulative_execution_time": 116120153,
+                    "min_execution_time": 18530,
+                    "max_execution_time": 426890,
+                    "call_count": 1532
+                },
+                "private boolean org.jctools.sets.OpenHashSet.addSlowPath(java.lang.Object[],int,java.lang.Object,int)": {
+                    "total_execution_time": 17541001,
+                    "self_execution_time": 17541001,
+                    "average_self_time": 42165.86778846154,
+                    "cumulative_execution_time": 17541001,
+                    "min_execution_time": 19528,
+                    "max_execution_time": 280921,
+                    "call_count": 416
+                },
+                "private void org.jctools.sets.OpenHashSet.compactAndRemove(java.lang.Object[],int,int)": {
+                    "total_execution_time": 69177,
+                    "self_execution_time": 69177,
+                    "average_self_time": 69177.0,
+                    "cumulative_execution_time": 69177,
+                    "min_execution_time": 69177,
+                    "max_execution_time": 69177,
+                    "call_count": 1
+                }
+            },
+            "org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone.tpt": {
+                "private static org.jctools.util.Template org.jctools.util.Template.fromStream(java.io.InputStream)": {
+                    "total_execution_time": 33857579,
+                    "self_execution_time": 33857579,
+                    "average_self_time": 3077961.727272727,
+                    "cumulative_execution_time": 33857579,
+                    "min_execution_time": 501578,
+                    "max_execution_time": 7203415,
+                    "call_count": 11
+                }
+            }
+        },
+        "ef3048d48851becf582841a61edf8863f8a6233d": {
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 120207114,
+                    "self_execution_time": 103911188,
+                    "average_self_time": 67782.90150032616,
+                    "cumulative_execution_time": 120207114,
+                    "min_execution_time": 10878,
+                    "max_execution_time": 652441,
+                    "call_count": 1532
+                },
+                "private boolean org.jctools.sets.OpenHashSet.addSlowPath(java.lang.Object[],int,java.lang.Object,int)": {
+                    "total_execution_time": 16470142,
+                    "self_execution_time": 16470142,
+                    "average_self_time": 40970.50248756219,
+                    "cumulative_execution_time": 16470142,
+                    "min_execution_time": 11540,
+                    "max_execution_time": 160651,
+                    "call_count": 402
+                },
+                "private void org.jctools.sets.OpenHashSet.compactAndRemove(java.lang.Object[],int,int)": {
+                    "total_execution_time": 56711,
+                    "self_execution_time": 56711,
+                    "average_self_time": 56711.0,
+                    "cumulative_execution_time": 56711,
+                    "min_execution_time": 56711,
+                    "max_execution_time": 56711,
+                    "call_count": 1
+                }
+            },
+            "org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone.tpt": {
+                "private static org.jctools.util.Template org.jctools.util.Template.fromStream(java.io.InputStream)": {
+                    "total_execution_time": 43951480,
+                    "self_execution_time": 43951480,
+                    "average_self_time": 3995589.090909091,
+                    "cumulative_execution_time": 43951480,
+                    "min_execution_time": 524629,
+                    "max_execution_time": 12691270,
+                    "call_count": 11
+                }
+            }
+        }
+    },
+    "d9bab162bb15262cf89ce2dd28c564321e91ec75": {
+        "d9bab162bb15262cf89ce2dd28c564321e91ec75": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22154275228,
+                    "self_execution_time": 22154275228,
+                    "average_self_time": 3202.375230916804,
+                    "cumulative_execution_time": 22154275228,
+                    "min_execution_time": 1828,
+                    "max_execution_time": 45167,
+                    "call_count": 6918076
+                },
+                "public boolean org.jctools.queues.MpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22910888534,
+                    "self_execution_time": 22910888534,
+                    "average_self_time": 2414.6361253917967,
+                    "cumulative_execution_time": 22910888534,
+                    "min_execution_time": 1808,
+                    "max_execution_time": 47637,
+                    "call_count": 9488340
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22652341335,
+                    "self_execution_time": 22652341335,
+                    "average_self_time": 2391.030050082944,
+                    "cumulative_execution_time": 22652341335,
+                    "min_execution_time": 1858,
+                    "max_execution_time": 21712,
+                    "call_count": 9473884
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22776180331,
+                    "self_execution_time": 22776180331,
+                    "average_self_time": 2328.9461429333364,
+                    "cumulative_execution_time": 22776180331,
+                    "min_execution_time": 1829,
+                    "max_execution_time": 22179,
+                    "call_count": 9779608
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 327780177,
+                    "self_execution_time": 327780177,
+                    "average_self_time": 5402.138852264487,
+                    "cumulative_execution_time": 327780177,
+                    "min_execution_time": 2050,
+                    "max_execution_time": 129616,
+                    "call_count": 60676
+                }
+            }
+        },
+        "f9d58737ebc7e9e82199796dfaf24d41b2d3daef": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22323750167,
+                    "self_execution_time": 22323750167,
+                    "average_self_time": 3044.740367238751,
+                    "cumulative_execution_time": 22323750167,
+                    "min_execution_time": 1843,
+                    "max_execution_time": 37652,
+                    "call_count": 7331906
+                },
+                "public boolean org.jctools.queues.MpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22885948188,
+                    "self_execution_time": 22885948188,
+                    "average_self_time": 2300.6039715313937,
+                    "cumulative_execution_time": 22885948188,
+                    "min_execution_time": 1812,
+                    "max_execution_time": 44420,
+                    "call_count": 9947800
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22506514483,
+                    "self_execution_time": 22506514483,
+                    "average_self_time": 2406.7686637670467,
+                    "cumulative_execution_time": 22506514483,
+                    "min_execution_time": 1852,
+                    "max_execution_time": 27442,
+                    "call_count": 9351341
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22786068871,
+                    "self_execution_time": 22786068871,
+                    "average_self_time": 2389.809502888403,
+                    "cumulative_execution_time": 22786068871,
+                    "min_execution_time": 1854,
+                    "max_execution_time": 65210,
+                    "call_count": 9534680
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 359300793,
+                    "self_execution_time": 359300793,
+                    "average_self_time": 5920.946442990624,
+                    "cumulative_execution_time": 359300793,
+                    "min_execution_time": 2558,
+                    "max_execution_time": 196817,
+                    "call_count": 60683
+                }
+            }
+        }
+    },
+    "03df0a555ac7a7429c1a8f41294b079d0b4ac7c7": {
+        "03df0a555ac7a7429c1a8f41294b079d0b4ac7c7": {
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 89587088,
+                    "self_execution_time": 89587088,
+                    "average_self_time": 58439.0658838878,
+                    "cumulative_execution_time": 89587088,
+                    "min_execution_time": 18009,
+                    "max_execution_time": 490886,
+                    "call_count": 1533
+                },
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 7393609617,
+                    "self_execution_time": 7393609617,
+                    "average_self_time": 2870.9044513794,
+                    "cumulative_execution_time": 7393609617,
+                    "min_execution_time": 1803,
+                    "max_execution_time": 52730,
+                    "call_count": 2575359
+                }
+            }
+        },
+        "4374f149cf7aa96c83435a3922cc1637e1a06476": {
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 90909040,
+                    "self_execution_time": 90909040,
+                    "average_self_time": 59301.39595564253,
+                    "cumulative_execution_time": 90909040,
+                    "min_execution_time": 19756,
+                    "max_execution_time": 405742,
+                    "call_count": 1533
+                },
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 7404574527,
+                    "self_execution_time": 7404574527,
+                    "average_self_time": 2740.73981167204,
+                    "cumulative_execution_time": 7404574527,
+                    "min_execution_time": 1811,
+                    "max_execution_time": 42010,
+                    "call_count": 2701670
+                }
+            }
+        }
+    },
+    "9def52951541af24751964bb0cb4f611f50bdca4": {
+        "9def52951541af24751964bb0cb4f611f50bdca4": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementConstructor(org.objectweb.asm.ClassVisitor)": {
+                    "total_execution_time": 238958138,
+                    "self_execution_time": 238958138,
+                    "average_self_time": 39826356.333333336,
+                    "cumulative_execution_time": 238958138,
+                    "min_execution_time": 21377294,
+                    "max_execution_time": 56524779,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxyInstance(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 2846377,
+                    "self_execution_time": 2846377,
+                    "average_self_time": 474396.1666666667,
+                    "cumulative_execution_time": 2846377,
+                    "min_execution_time": 344092,
+                    "max_execution_time": 665627,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxy(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 1895342,
+                    "self_execution_time": 1895342,
+                    "average_self_time": 315890.3333333333,
+                    "cumulative_execution_time": 1895342,
+                    "min_execution_time": 241163,
+                    "max_execution_time": 393411,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 10155551,
+                    "self_execution_time": 10155551,
+                    "average_self_time": 216075.55319148937,
+                    "cumulative_execution_time": 10155551,
+                    "min_execution_time": 103589,
+                    "max_execution_time": 687125,
+                    "call_count": 47
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(org.objectweb.asm.MethodVisitor,int,int)": {
+                    "total_execution_time": 11301382,
+                    "self_execution_time": 11301382,
+                    "average_self_time": 240454.93617021278,
+                    "cumulative_execution_time": 11301382,
+                    "min_execution_time": 115422,
+                    "max_execution_time": 874291,
+                    "call_count": 47
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int)": {
+                    "total_execution_time": 225041347,
+                    "self_execution_time": 145981063,
+                    "average_self_time": 3173501.3695652173,
+                    "cumulative_execution_time": 225041347,
+                    "min_execution_time": 556527,
+                    "max_execution_time": 22349668,
+                    "call_count": 47
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 3165887,
+                    "self_execution_time": 3165887,
+                    "average_self_time": 186228.64705882352,
+                    "cumulative_execution_time": 3165887,
+                    "min_execution_time": 116564,
+                    "max_execution_time": 341040,
+                    "call_count": 17
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.putReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int,int)": {
+                    "total_execution_time": 15779299,
+                    "self_execution_time": 15779299,
+                    "average_self_time": 384860.9512195122,
+                    "cumulative_execution_time": 15779299,
+                    "min_execution_time": 124779,
+                    "max_execution_time": 2254046,
+                    "call_count": 41
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.readAcquire(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 25841695,
+                    "self_execution_time": 25841695,
+                    "average_self_time": 4306949.166666667,
+                    "cumulative_execution_time": 25841695,
+                    "min_execution_time": 210964,
+                    "max_execution_time": 15413672,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.readRelease(org.objectweb.asm.MethodVisitor,int)": {
+                    "total_execution_time": 7694484,
+                    "self_execution_time": 7694484,
+                    "average_self_time": 163712.4255319149,
+                    "cumulative_execution_time": 7694484,
+                    "min_execution_time": 87031,
+                    "max_execution_time": 361631,
+                    "call_count": 47
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 3395906,
+                    "self_execution_time": 3395906,
+                    "average_self_time": 188661.44444444444,
+                    "cumulative_execution_time": 3395906,
+                    "min_execution_time": 102828,
+                    "max_execution_time": 384958,
+                    "call_count": 18
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.getReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int)": {
+                    "total_execution_time": 7427544,
+                    "self_execution_time": 7427544,
+                    "average_self_time": 181159.60975609755,
+                    "cumulative_execution_time": 7427544,
+                    "min_execution_time": 95202,
+                    "max_execution_time": 318958,
+                    "call_count": 41
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProcess(org.objectweb.asm.ClassVisitor,java.util.List,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 87310546,
+                    "self_execution_time": 39859866,
+                    "average_self_time": 6643311.0,
+                    "cumulative_execution_time": 87310546,
+                    "min_execution_time": 8176686,
+                    "max_execution_time": 22626156,
+                    "call_count": 6
+                }
+            }
+        },
+        "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementConstructor(org.objectweb.asm.ClassVisitor)": {
+                    "total_execution_time": 238649913,
+                    "self_execution_time": 238649913,
+                    "average_self_time": 39774985.5,
+                    "cumulative_execution_time": 238649913,
+                    "min_execution_time": 21068456,
+                    "max_execution_time": 58307287,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxyInstance(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 3281433,
+                    "self_execution_time": 3281433,
+                    "average_self_time": 546905.5,
+                    "cumulative_execution_time": 3281433,
+                    "min_execution_time": 334303,
+                    "max_execution_time": 1024143,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxy(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 2630663,
+                    "self_execution_time": 2630663,
+                    "average_self_time": 438443.8333333333,
+                    "cumulative_execution_time": 2630663,
+                    "min_execution_time": 248245,
+                    "max_execution_time": 1039478,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 20380198,
+                    "self_execution_time": 20380198,
+                    "average_self_time": 443047.7826086957,
+                    "cumulative_execution_time": 20380198,
+                    "min_execution_time": 111814,
+                    "max_execution_time": 3901198,
+                    "call_count": 46
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 7785158,
+                    "self_execution_time": 7785158,
+                    "average_self_time": 457950.4705882353,
+                    "cumulative_execution_time": 7785158,
+                    "min_execution_time": 112858,
+                    "max_execution_time": 1753978,
+                    "call_count": 17
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.putReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int,int)": {
+                    "total_execution_time": 13051525,
+                    "self_execution_time": 13051525,
+                    "average_self_time": 326288.125,
+                    "cumulative_execution_time": 13051525,
+                    "min_execution_time": 116248,
+                    "max_execution_time": 1157082,
+                    "call_count": 40
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(org.objectweb.asm.MethodVisitor,int,int)": {
+                    "total_execution_time": 12672475,
+                    "self_execution_time": 12672475,
+                    "average_self_time": 275488.5869565217,
+                    "cumulative_execution_time": 12672475,
+                    "min_execution_time": 118039,
+                    "max_execution_time": 1057238,
+                    "call_count": 46
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int)": {
+                    "total_execution_time": 245663611,
+                    "self_execution_time": 135594380,
+                    "average_self_time": 2947703.913043478,
+                    "cumulative_execution_time": 245663611,
+                    "min_execution_time": 596860,
+                    "max_execution_time": 28471083,
+                    "call_count": 47
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.readAcquire(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 3332745,
+                    "self_execution_time": 3332745,
+                    "average_self_time": 555457.5,
+                    "cumulative_execution_time": 3332745,
+                    "min_execution_time": 198425,
+                    "max_execution_time": 1295848,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)": {
+                    "total_execution_time": 3706048,
+                    "self_execution_time": 3706048,
+                    "average_self_time": 205891.55555555556,
+                    "cumulative_execution_time": 3706048,
+                    "min_execution_time": 100994,
+                    "max_execution_time": 553267,
+                    "call_count": 18
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.getReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int)": {
+                    "total_execution_time": 10512349,
+                    "self_execution_time": 10512349,
+                    "average_self_time": 256398.75609756098,
+                    "cumulative_execution_time": 10512349,
+                    "min_execution_time": 97185,
+                    "max_execution_time": 756300,
+                    "call_count": 41
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.readRelease(org.objectweb.asm.MethodVisitor,int)": {
+                    "total_execution_time": 12377482,
+                    "self_execution_time": 12377482,
+                    "average_self_time": 269075.6956521739,
+                    "cumulative_execution_time": 12377482,
+                    "min_execution_time": 96842,
+                    "max_execution_time": 1758875,
+                    "call_count": 46
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProcess(org.objectweb.asm.ClassVisitor,java.util.List,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 145856500,
+                    "self_execution_time": 109508517,
+                    "average_self_time": 18251419.5,
+                    "cumulative_execution_time": 145856500,
+                    "min_execution_time": 18238780,
+                    "max_execution_time": 35569225,
+                    "call_count": 6
+                }
+            }
+        }
+    },
+    "dd8c925a8ffc867457912386f674dbb5d74c116b": {
+        "dd8c925a8ffc867457912386f674dbb5d74c116b": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 46819723326,
+                    "self_execution_time": 46819723326,
+                    "average_self_time": 6094.454888791812,
+                    "cumulative_execution_time": 46819723326,
+                    "min_execution_time": 1791,
+                    "max_execution_time": 321980,
+                    "call_count": 7682348
+                },
+                "public java.lang.Object org.jctools.queues.SpmcArrayQueue.poll()": {
+                    "total_execution_time": 11349933850,
+                    "self_execution_time": 7459205843,
+                    "average_self_time": 11925.398916687584,
+                    "cumulative_execution_time": 11349933850,
+                    "min_execution_time": 2450,
+                    "max_execution_time": 1248123,
+                    "call_count": 625412
+                },
+                "protected final boolean org.jctools.queues.SpmcArrayQueueConsumerField.casHead(long,long)": {
+                    "total_execution_time": 5563031667,
+                    "self_execution_time": 5460279994,
+                    "average_self_time": 5698.095716837948,
+                    "cumulative_execution_time": 5563031667,
+                    "min_execution_time": 1878,
+                    "max_execution_time": 905471,
+                    "call_count": 958336
+                },
+                "protected final void org.jctools.queues.SpmcArrayQueueProducerField.soTail(long)": {
+                    "total_execution_time": 5005729067,
+                    "self_execution_time": 4905116393,
+                    "average_self_time": 5139.067292420134,
+                    "cumulative_execution_time": 5005729067,
+                    "min_execution_time": 1787,
+                    "max_execution_time": 575141,
+                    "call_count": 954538
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 9684282979,
+                    "self_execution_time": 6307546765,
+                    "average_self_time": 10256.67392718344,
+                    "cumulative_execution_time": 9684282979,
+                    "min_execution_time": 5392,
+                    "max_execution_time": 1127943,
+                    "call_count": 614883
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 40426873175,
+                    "self_execution_time": 40426873175,
+                    "average_self_time": 6085.37207183733,
+                    "cumulative_execution_time": 40426873175,
+                    "min_execution_time": 1817,
+                    "max_execution_time": 344723,
+                    "call_count": 6643287
+                }
+            }
+        },
+        "6f47ab721f9698bddfbd595e67aa5d46cbe9fd8d": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 35258892334,
+                    "self_execution_time": 35258892334,
+                    "average_self_time": 6779.158668443736,
+                    "cumulative_execution_time": 35258892334,
+                    "min_execution_time": 1843,
+                    "max_execution_time": 491749,
+                    "call_count": 5201072
+                },
+                "public java.lang.Object org.jctools.queues.SpmcArrayQueue.poll()": {
+                    "total_execution_time": 10071265645,
+                    "self_execution_time": 9796480677,
+                    "average_self_time": 4333.544784695853,
+                    "cumulative_execution_time": 10071265645,
+                    "min_execution_time": 1852,
+                    "max_execution_time": 553588,
+                    "call_count": 2260823
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 9820549624,
+                    "self_execution_time": 9483790814,
+                    "average_self_time": 4205.247014492548,
+                    "cumulative_execution_time": 9820549624,
+                    "min_execution_time": 1823,
+                    "max_execution_time": 694251,
+                    "call_count": 2255480
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 36468750333,
+                    "self_execution_time": 36468750333,
+                    "average_self_time": 6651.860192149952,
+                    "cumulative_execution_time": 36468750333,
+                    "min_execution_time": 1843,
+                    "max_execution_time": 343823,
+                    "call_count": 5482489
+                }
+            }
+        }
+    },
+    "4a8a432f4d27f3235c54b44b2ee58572612199ee": {
+        "4a8a432f4d27f3235c54b44b2ee58572612199ee": {
+            "org.jctools.jmh.collections.SetOps.contains": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 186818987,
+                    "self_execution_time": 170528859,
+                    "average_self_time": 112190.03881578948,
+                    "cumulative_execution_time": 186818987,
+                    "min_execution_time": 18207,
+                    "max_execution_time": 4047005,
+                    "call_count": 1518
+                },
+                "private boolean org.jctools.sets.OpenHashSet.addSlowPath(java.lang.Object[],int,java.lang.Object,int)": {
+                    "total_execution_time": 20067165,
+                    "self_execution_time": 20067165,
+                    "average_self_time": 54678.923705722074,
+                    "cumulative_execution_time": 20067165,
+                    "min_execution_time": 18066,
+                    "max_execution_time": 772059,
+                    "call_count": 367
+                },
+                "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 8255598747,
+                    "self_execution_time": 6176018773,
+                    "average_self_time": 11977.594002300095,
+                    "cumulative_execution_time": 8255598747,
+                    "min_execution_time": 2280,
+                    "max_execution_time": 750531,
+                    "call_count": 515588
+                },
+                "private boolean org.jctools.sets.OpenHashSet.containsSlowPath(java.lang.Object[],int,int,java.lang.Object)": {
+                    "total_execution_time": 2080356096,
+                    "self_execution_time": 2080356096,
+                    "average_self_time": 7544.793518390913,
+                    "cumulative_execution_time": 2080356096,
+                    "min_execution_time": 1825,
+                    "max_execution_time": 540844,
+                    "call_count": 275734
+                }
+            },
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 6267852157,
+                    "self_execution_time": 6267852157,
+                    "average_self_time": 9255.363020201916,
+                    "cumulative_execution_time": 6267852157,
+                    "min_execution_time": 1855,
+                    "max_execution_time": 598059,
+                    "call_count": 677213
+                }
+            }
+        },
+        "9183995d3d1619753b61bf676046b97bb20998aa": {
+            "org.jctools.jmh.collections.SetOps.contains": {
+                "public boolean org.jctools.sets.OpenHashSet.add(java.lang.Object)": {
+                    "total_execution_time": 253583008,
+                    "self_execution_time": 226948457,
+                    "average_self_time": 149308.19539473683,
+                    "cumulative_execution_time": 253583008,
+                    "min_execution_time": 27978,
+                    "max_execution_time": 5634063,
+                    "call_count": 1519
+                },
+                "private boolean org.jctools.sets.OpenHashSet.addSlowPath(java.lang.Object[],int,java.lang.Object,int)": {
+                    "total_execution_time": 27809523,
+                    "self_execution_time": 27809523,
+                    "average_self_time": 70403.85569620253,
+                    "cumulative_execution_time": 27809523,
+                    "min_execution_time": 28728,
+                    "max_execution_time": 858184,
+                    "call_count": 395
+                },
+                "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 7124794099,
+                    "self_execution_time": 6089829805,
+                    "average_self_time": 9606.15221838912,
+                    "cumulative_execution_time": 7124794099,
+                    "min_execution_time": 1864,
+                    "max_execution_time": 729617,
+                    "call_count": 633931
+                },
+                "private boolean org.jctools.sets.OpenHashSet.containsSlowPath(java.lang.Object[],int,int,java.lang.Object)": {
+                    "total_execution_time": 1034883378,
+                    "self_execution_time": 1034883378,
+                    "average_self_time": 7217.01159733603,
+                    "cumulative_execution_time": 1034883378,
+                    "min_execution_time": 1863,
+                    "max_execution_time": 537185,
+                    "call_count": 143395
+                }
+            },
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 6168202625,
+                    "self_execution_time": 6168202625,
+                    "average_self_time": 8997.280519806349,
+                    "cumulative_execution_time": 6168202625,
+                    "min_execution_time": 1895,
+                    "max_execution_time": 580464,
+                    "call_count": 685563
+                }
+            }
+        }
+    },
+    "2ac1a663b3a378225ea1269e25b6383751954c4c": {
+        "2ac1a663b3a378225ea1269e25b6383751954c4c": {
+            "org.jctools.jmh.counters.CountersBenchmark.rw": {
+                "private static long org.jctools.counters.FixedSizeStripedLongCounter.getProbeOffset()": {
+                    "total_execution_time": 80713479,
+                    "self_execution_time": 80713479,
+                    "average_self_time": 13452246.5,
+                    "cumulative_execution_time": 80713479,
+                    "min_execution_time": 6382598,
+                    "max_execution_time": 18112875,
+                    "call_count": 6
+                }
+            },
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.unalignedPrimitiveArgsBaseline": {
+                "public static long org.jctools.util.UnsafeDirectByteBuffer.getAddress(java.nio.ByteBuffer)": {
+                    "total_execution_time": 85298229,
+                    "self_execution_time": 85298229,
+                    "average_self_time": 969298.0568181818,
+                    "cumulative_execution_time": 85298229,
+                    "min_execution_time": 83383,
+                    "max_execution_time": 13797597,
+                    "call_count": 88
+                }
+            },
+            "org.jctools.jmh.collections.ConcurrentSetThroughput.rw": {
+                "public int org.jctools.sets.SingleWriterHashSet.size()": {
+                    "total_execution_time": 80310258,
+                    "self_execution_time": 80310258,
+                    "average_self_time": 152391.38140417458,
+                    "cumulative_execution_time": 80310258,
+                    "min_execution_time": 43135,
+                    "max_execution_time": 1515484,
+                    "call_count": 527
+                },
+                "private void org.jctools.sets.SingleWriterHashSet.soBuffer(java.lang.Object[])": {
+                    "total_execution_time": 12064377,
+                    "self_execution_time": 12064377,
+                    "average_self_time": 294253.0975609756,
+                    "cumulative_execution_time": 12064377,
+                    "min_execution_time": 115863,
+                    "max_execution_time": 1253004,
+                    "call_count": 41
+                },
+                "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 10564115822,
+                    "self_execution_time": 8589383667,
+                    "average_self_time": 3885.6635719365295,
+                    "cumulative_execution_time": 10564115822,
+                    "min_execution_time": -595431,
+                    "max_execution_time": 629432,
+                    "call_count": 2210792
+                },
+                "private void org.jctools.sets.SingleWriterHashSet.compactAndRemove(java.lang.Object[],long,int)": {
+                    "total_execution_time": 178000543,
+                    "self_execution_time": 168217952,
+                    "average_self_time": 4801.836949075131,
+                    "cumulative_execution_time": 178000543,
+                    "min_execution_time": 2001,
+                    "max_execution_time": 211599,
+                    "call_count": 35032
+                }
+            },
+            "org.jctools.jmh.latency.spsc.RingBurstRoundTripWithGroups.ring": {
+                "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.tailLazySet(long)": {
+                    "total_execution_time": 646427418,
+                    "self_execution_time": 635695322,
+                    "average_self_time": 4043.8119235124236,
+                    "cumulative_execution_time": 646427418,
+                    "min_execution_time": -91015,
+                    "max_execution_time": 244544,
+                    "call_count": 157232
+                },
+                "public boolean org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 171069975,
+                    "self_execution_time": 100513136,
+                    "average_self_time": 11204.228737041578,
+                    "cumulative_execution_time": 171069975,
+                    "min_execution_time": -85071,
+                    "max_execution_time": 1388572,
+                    "call_count": 8967
+                },
+                "public java.lang.Object org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.poll()": {
+                    "total_execution_time": 6327931091,
+                    "self_execution_time": 5240330358,
+                    "average_self_time": 4165.226965123988,
+                    "cumulative_execution_time": 6327931091,
+                    "min_execution_time": -884572,
+                    "max_execution_time": 951190,
+                    "call_count": 1258141
+                },
+                "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.headLazySet(long)": {
+                    "total_execution_time": 725427037,
+                    "self_execution_time": 687049467,
+                    "average_self_time": 3993.9860075223373,
+                    "cumulative_execution_time": 725427037,
+                    "min_execution_time": 887,
+                    "max_execution_time": 232638,
+                    "call_count": 172041
+                }
+            }
+        },
+        "9915e40cd21d45934a84f1ab88781edcdf4246a8": {
+            "org.jctools.jmh.counters.CountersBenchmark.rw": {
+                "private static long org.jctools.counters.FixedSizeStripedLongCounter.getProbeOffset()": {
+                    "total_execution_time": 79704249,
+                    "self_execution_time": 79704249,
+                    "average_self_time": 13284041.5,
+                    "cumulative_execution_time": 79704249,
+                    "min_execution_time": 6084144,
+                    "max_execution_time": 20641884,
+                    "call_count": 6
+                }
+            },
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.unalignedPrimitiveArgsBaseline": {
+                "public static long org.jctools.util.UnsafeDirectByteBuffer.getAddress(java.nio.ByteBuffer)": {
+                    "total_execution_time": 59098697,
+                    "self_execution_time": 59098697,
+                    "average_self_time": 679295.367816092,
+                    "cumulative_execution_time": 59098697,
+                    "min_execution_time": 86505,
+                    "max_execution_time": 9031500,
+                    "call_count": 87
+                }
+            },
+            "org.jctools.jmh.collections.ConcurrentSetThroughput.rw": {
+                "public int org.jctools.sets.SingleWriterHashSet.size()": {
+                    "total_execution_time": 93913857,
+                    "self_execution_time": 93913857,
+                    "average_self_time": 181651.56092843326,
+                    "cumulative_execution_time": 93913857,
+                    "min_execution_time": 47782,
+                    "max_execution_time": 4353094,
+                    "call_count": 517
+                },
+                "private void org.jctools.sets.SingleWriterHashSet.soBuffer(java.lang.Object[])": {
+                    "total_execution_time": 14613627,
+                    "self_execution_time": 14613627,
+                    "average_self_time": 356429.9268292683,
+                    "cumulative_execution_time": 14613627,
+                    "min_execution_time": 139356,
+                    "max_execution_time": 1361695,
+                    "call_count": 41
+                },
+                "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 10484222128,
+                    "self_execution_time": 8503957348,
+                    "average_self_time": 3718.7247071664524,
+                    "cumulative_execution_time": 10484222128,
+                    "min_execution_time": -790694,
+                    "max_execution_time": 828259,
+                    "call_count": 2287077
+                },
+                "private void org.jctools.sets.SingleWriterHashSet.compactAndRemove(java.lang.Object[],long,int)": {
+                    "total_execution_time": 173716389,
+                    "self_execution_time": 166380145,
+                    "average_self_time": 4532.530919690531,
+                    "cumulative_execution_time": 173716389,
+                    "min_execution_time": 2239,
+                    "max_execution_time": 207304,
+                    "call_count": 36710
+                }
+            },
+            "org.jctools.jmh.latency.spsc.RingBurstRoundTripWithGroups.ring": {
+                "public java.lang.Object org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.poll()": {
+                    "total_execution_time": 6343298350,
+                    "self_execution_time": 5182019699,
+                    "average_self_time": 4210.415741629982,
+                    "cumulative_execution_time": 6343298350,
+                    "min_execution_time": -986317,
+                    "max_execution_time": 997341,
+                    "call_count": 1230788
+                },
+                "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.tailLazySet(long)": {
+                    "total_execution_time": 656680728,
+                    "self_execution_time": 645052893,
+                    "average_self_time": 4147.716647376543,
+                    "cumulative_execution_time": 656680728,
+                    "min_execution_time": -57830,
+                    "max_execution_time": 246889,
+                    "call_count": 155557
+                },
+                "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.headLazySet(long)": {
+                    "total_execution_time": 779529808,
+                    "self_execution_time": 733260389,
+                    "average_self_time": 4083.0371296363323,
+                    "cumulative_execution_time": 779529808,
+                    "min_execution_time": 1995,
+                    "max_execution_time": 301529,
+                    "call_count": 179612
+                },
+                "public boolean org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 182049406,
+                    "self_execution_time": 115125878,
+                    "average_self_time": 12352.562017167382,
+                    "cumulative_execution_time": 182049406,
+                    "min_execution_time": -85770,
+                    "max_execution_time": 1329741,
+                    "call_count": 9320
+                }
+            }
+        }
+    },
+    "cf81c96b3fcfaa3f3e6efc5083b31d1684579219": {
+        "cf81c96b3fcfaa3f3e6efc5083b31d1684579219": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.nor": {
+                "public boolean org.jctools.queues.MpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22291801346,
+                    "self_execution_time": 22291801346,
+                    "average_self_time": 11932.873693057118,
+                    "cumulative_execution_time": 22291801346,
+                    "min_execution_time": 1822,
+                    "max_execution_time": 331283,
+                    "call_count": 1868100
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.relaxedPoll()": {
+                    "total_execution_time": 1009269622,
+                    "self_execution_time": 1009269622,
+                    "average_self_time": 16649.394117355943,
+                    "cumulative_execution_time": 1009269622,
+                    "min_execution_time": 1906,
+                    "max_execution_time": 507776,
+                    "call_count": 60619
+                }
+            },
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 10825825777,
+                    "self_execution_time": 9685676318,
+                    "average_self_time": 3844.3659731679213,
+                    "cumulative_execution_time": 10825825777,
+                    "min_execution_time": 1803,
+                    "max_execution_time": 432421,
+                    "call_count": 2519717
+                },
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 12542733153,
+                    "self_execution_time": 12205857550,
+                    "average_self_time": 3856.037141090716,
+                    "cumulative_execution_time": 12542733153,
+                    "min_execution_time": 1879,
+                    "max_execution_time": 276721,
+                    "call_count": 3165657
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 8996545,
+                    "self_execution_time": 8996545,
+                    "average_self_time": 3118.3864818024263,
+                    "cumulative_execution_time": 8996545,
+                    "min_execution_time": 2629,
+                    "max_execution_time": 51683,
+                    "call_count": 2885
+                }
+            }
+        },
+        "e9c3f8ba1efb04abf724c52057fde034bfdff6ab": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.nor": {
+                "public boolean org.jctools.queues.MpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 22425798457,
+                    "self_execution_time": 22425798457,
+                    "average_self_time": 10416.123100025128,
+                    "cumulative_execution_time": 22425798457,
+                    "min_execution_time": 1845,
+                    "max_execution_time": 499868,
+                    "call_count": 2152989
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.relaxedPoll()": {
+                    "total_execution_time": 722271633,
+                    "self_execution_time": 722271633,
+                    "average_self_time": 11911.008311482708,
+                    "cumulative_execution_time": 722271633,
+                    "min_execution_time": 1995,
+                    "max_execution_time": 576694,
+                    "call_count": 60639
+                }
+            },
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 11148201982,
+                    "self_execution_time": 10636315277,
+                    "average_self_time": 3795.0082908982445,
+                    "cumulative_execution_time": 11148201982,
+                    "min_execution_time": 1852,
+                    "max_execution_time": 594265,
+                    "call_count": 2803062
+                },
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 11473747911,
+                    "self_execution_time": 11141716949,
+                    "average_self_time": 3751.337748163761,
+                    "cumulative_execution_time": 11473747911,
+                    "min_execution_time": 1907,
+                    "max_execution_time": 263802,
+                    "call_count": 2970340
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 1845544091,
+                    "self_execution_time": 1845544091,
+                    "average_self_time": 6843.586135162695,
+                    "cumulative_execution_time": 1845544091,
+                    "min_execution_time": 2269,
+                    "max_execution_time": 121447,
+                    "call_count": 269675
+                }
+            }
+        }
+    },
+    "79087f20a538448f1c6382e36b9ebf717a213616": {
+        "79087f20a538448f1c6382e36b9ebf717a213616": {
+            "org.jctools.jmh.baseline.SingleThreadedOffer.offerLoop": {}
+        },
+        "3f1775de6dd286a325721b5f284690ab888f7548": {
+            "org.jctools.jmh.baseline.SingleThreadedOffer.offerLoop": {}
+        }
+    },
+    "6f88bf5c20ab527d304544cc48fde0b280449b59": {
+        "6f88bf5c20ab527d304544cc48fde0b280449b59": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.pr": {
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 40430465907,
+                    "self_execution_time": 40430465907,
+                    "average_self_time": 8264.177952089578,
+                    "cumulative_execution_time": 40430465907,
+                    "min_execution_time": 1835,
+                    "max_execution_time": 428679,
+                    "call_count": 4892255
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.relaxedPoll()": {
+                    "total_execution_time": 875352104,
+                    "self_execution_time": 875352104,
+                    "average_self_time": 14439.035761414621,
+                    "cumulative_execution_time": 875352104,
+                    "min_execution_time": 2359,
+                    "max_execution_time": 806407,
+                    "call_count": 60624
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 902339919,
+                    "self_execution_time": 902339919,
+                    "average_self_time": 14877.822242374279,
+                    "cumulative_execution_time": 902339919,
+                    "min_execution_time": 2468,
+                    "max_execution_time": 2674757,
+                    "call_count": 60650
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 6557435002,
+                    "self_execution_time": 6557435002,
+                    "average_self_time": 7689.020453055764,
+                    "cumulative_execution_time": 6557435002,
+                    "min_execution_time": 2226,
+                    "max_execution_time": 572281,
+                    "call_count": 852831
+                }
+            },
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 4600765608,
+                    "self_execution_time": 4600765608,
+                    "average_self_time": 50763.14776237973,
+                    "cumulative_execution_time": 4600765608,
+                    "min_execution_time": 2361,
+                    "max_execution_time": 3411474,
+                    "call_count": 90632
+                }
+            }
+        },
+        "78965db4efd244c428cea9825527f4ab8101ab00": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.pr": {
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 45891444852,
+                    "self_execution_time": 45891444852,
+                    "average_self_time": 9673.561791118773,
+                    "cumulative_execution_time": 45891444852,
+                    "min_execution_time": 1862,
+                    "max_execution_time": 466595,
+                    "call_count": 4744007
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.relaxedPoll()": {
+                    "total_execution_time": 935817047,
+                    "self_execution_time": 935817047,
+                    "average_self_time": 15431.575730092509,
+                    "cumulative_execution_time": 935817047,
+                    "min_execution_time": 2553,
+                    "max_execution_time": 674698,
+                    "call_count": 60643
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 889694787,
+                    "self_execution_time": 889694787,
+                    "average_self_time": 14671.021997592467,
+                    "cumulative_execution_time": 889694787,
+                    "min_execution_time": 2537,
+                    "max_execution_time": 1538412,
+                    "call_count": 60643
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 6651297228,
+                    "self_execution_time": 6651297228,
+                    "average_self_time": 8326.330016386526,
+                    "cumulative_execution_time": 6651297228,
+                    "min_execution_time": 1911,
+                    "max_execution_time": 464728,
+                    "call_count": 798827
+                }
+            },
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 4654221943,
+                    "self_execution_time": 4654221943,
+                    "average_self_time": 56176.48694025347,
+                    "cumulative_execution_time": 4654221943,
+                    "min_execution_time": 2363,
+                    "max_execution_time": 3365245,
+                    "call_count": 82850
+                }
+            }
+        }
+    },
+    "982b7675edb74c5b61ace5c1161d39363e68e950": {
+        "982b7675edb74c5b61ace5c1161d39363e68e950": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 16951760134,
+                    "self_execution_time": 16951760134,
+                    "average_self_time": 5401.489806901654,
+                    "cumulative_execution_time": 16951760134,
+                    "min_execution_time": 1805,
+                    "max_execution_time": 532213,
+                    "call_count": 3138349
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 35949607547,
+                    "self_execution_time": 35949607547,
+                    "average_self_time": 6487.1842961508655,
+                    "cumulative_execution_time": 35949607547,
+                    "min_execution_time": 1799,
+                    "max_execution_time": 436572,
+                    "call_count": 5541635
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 17848044391,
+                    "self_execution_time": 17848044391,
+                    "average_self_time": 6438.68380722669,
+                    "cumulative_execution_time": 17848044391,
+                    "min_execution_time": 1814,
+                    "max_execution_time": 613746,
+                    "call_count": 2772002
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 9681154412,
+                    "self_execution_time": 9287840237,
+                    "average_self_time": 6242.96091159014,
+                    "cumulative_execution_time": 9681154412,
+                    "min_execution_time": 1918,
+                    "max_execution_time": 1194733,
+                    "call_count": 1487950
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 10485215130,
+                    "self_execution_time": 10188414181,
+                    "average_self_time": 6820.3395444455455,
+                    "cumulative_execution_time": 10485215130,
+                    "min_execution_time": 1868,
+                    "max_execution_time": 931487,
+                    "call_count": 1493990
+                }
+            }
+        },
+        "88e1e25f9519b250258c7e5ada30935975ab2d10": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 17489580511,
+                    "self_execution_time": 17489580511,
+                    "average_self_time": 5534.461953221441,
+                    "cumulative_execution_time": 17489580511,
+                    "min_execution_time": 1812,
+                    "max_execution_time": 425560,
+                    "call_count": 3160123
+                },
+                "public java.lang.Object org.jctools.queues.MpscArrayQueue.poll()": {
+                    "total_execution_time": 32678735624,
+                    "self_execution_time": 32678735624,
+                    "average_self_time": 6571.367881538668,
+                    "cumulative_execution_time": 32678735624,
+                    "min_execution_time": 1853,
+                    "max_execution_time": 479042,
+                    "call_count": 4972897
+                },
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 19387642089,
+                    "self_execution_time": 19387642089,
+                    "average_self_time": 7571.58225441111,
+                    "cumulative_execution_time": 19387642089,
+                    "min_execution_time": 1792,
+                    "max_execution_time": 451624,
+                    "call_count": 2560580
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 9546400344,
+                    "self_execution_time": 9274366904,
+                    "average_self_time": 4189.117535013702,
+                    "cumulative_execution_time": 9546400344,
+                    "min_execution_time": 1810,
+                    "max_execution_time": 665521,
+                    "call_count": 2214295
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 10148218361,
+                    "self_execution_time": 9872348465,
+                    "average_self_time": 4417.124552072758,
+                    "cumulative_execution_time": 10148218361,
+                    "min_execution_time": 2217,
+                    "max_execution_time": 774855,
+                    "call_count": 2235234
+                }
+            }
+        }
+    },
+    "cdc668ace1bfbef027016a3cf1fe5f28c125c99a": {
+        "cdc668ace1bfbef027016a3cf1fe5f28c125c99a": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 18175264007,
+                    "self_execution_time": 18175264007,
+                    "average_self_time": 8534.209831454738,
+                    "cumulative_execution_time": 18175264007,
+                    "min_execution_time": 1906,
+                    "max_execution_time": 552068,
+                    "call_count": 2129695
+                },
+                "public java.lang.Object org.jctools.queues.SpmcArrayQueue.poll()": {
+                    "total_execution_time": 25846074431,
+                    "self_execution_time": 25846074431,
+                    "average_self_time": 8255.537777776359,
+                    "cumulative_execution_time": 25846074431,
+                    "min_execution_time": 1935,
+                    "max_execution_time": 409329,
+                    "call_count": 3130756
+                }
+            }
+        },
+        "fe0b71f449748cb50ce7363451c0e0a1e0fa2da5": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.SpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 18339167602,
+                    "self_execution_time": 18339167602,
+                    "average_self_time": 9434.844452790196,
+                    "cumulative_execution_time": 18339167602,
+                    "min_execution_time": 2027,
+                    "max_execution_time": 547740,
+                    "call_count": 1943770
+                },
+                "public java.lang.Object org.jctools.queues.SpmcArrayQueue.poll()": {
+                    "total_execution_time": 20790241323,
+                    "self_execution_time": 20790241323,
+                    "average_self_time": 8091.694422789435,
+                    "cumulative_execution_time": 20790241323,
+                    "min_execution_time": 1774,
+                    "max_execution_time": 388397,
+                    "call_count": 2569331
+                }
+            }
+        }
+    },
+    "4fdccbd7b18aeabaf783247d214c971a5262dd4a": {
+        "4fdccbd7b18aeabaf783247d214c971a5262dd4a": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy": {}
+        },
+        "acf6b4a303a048b9382a77d97d273bad1dc473a2": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy": {
+                "private java.lang.Class[] org.jctools.channels.mapping.Mapper.getTypes(java.lang.Object[])": {
+                    "total_execution_time": 16216533,
+                    "self_execution_time": 16216533,
+                    "average_self_time": 2702755.5,
+                    "cumulative_execution_time": 16216533,
+                    "min_execution_time": 446086,
+                    "max_execution_time": 10849223,
+                    "call_count": 6
+                },
+                "private org.jctools.channels.spsc.SpscChannelProducer org.jctools.channels.spsc.SpscChannel.newProducer(java.lang.Class,java.lang.Object[])": {
+                    "total_execution_time": 1405890662,
+                    "self_execution_time": 1403593297,
+                    "average_self_time": 467864432.3333333,
+                    "cumulative_execution_time": 1405890662,
+                    "min_execution_time": 443832711,
+                    "max_execution_time": 508445120,
+                    "call_count": 3
+                },
+                "private org.jctools.channels.spsc.SpscChannelConsumer org.jctools.channels.spsc.SpscChannel.newConsumer(java.lang.Object[])": {
+                    "total_execution_time": 130410042,
+                    "self_execution_time": 116490874,
+                    "average_self_time": 38830291.333333336,
+                    "cumulative_execution_time": 130410042,
+                    "min_execution_time": 29666862,
+                    "max_execution_time": 53739730,
+                    "call_count": 3
+                },
+                "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long)": {
+                    "total_execution_time": 30801014180,
+                    "self_execution_time": 30801014180,
+                    "average_self_time": 7871.324986596188,
+                    "cumulative_execution_time": 30801014180,
+                    "min_execution_time": 1821,
+                    "max_execution_time": 453293,
+                    "call_count": 3913066
+                }
+            }
+        }
+    },
+    "13d8ba9a5196b1a8dd867dc992a83edc05d868fb": {
+        "13d8ba9a5196b1a8dd867dc992a83edc05d868fb": {
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "private void org.jctools.sets.OpenHashSet.compactAndRemove(java.lang.Object[],int,int)": {
+                    "total_execution_time": 1654695,
+                    "self_execution_time": 1654695,
+                    "average_self_time": 551565.0,
+                    "cumulative_execution_time": 1654695,
+                    "min_execution_time": 325868,
+                    "max_execution_time": 909922,
+                    "call_count": 3
+                },
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 5776466983,
+                    "self_execution_time": 5776466983,
+                    "average_self_time": 9875.771239483478,
+                    "cumulative_execution_time": 5776466983,
+                    "min_execution_time": 1851,
+                    "max_execution_time": 683973,
+                    "call_count": 584913
+                }
+            }
+        },
+        "cb02f12736dc7ecb9219087613f69bb0c817e857": {
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "private void org.jctools.sets.OpenHashSet.compactAndRemove(java.lang.Object[],int,int)": {
+                    "total_execution_time": 2741204,
+                    "self_execution_time": 2741204,
+                    "average_self_time": 913734.6666666666,
+                    "cumulative_execution_time": 2741204,
+                    "min_execution_time": 364867,
+                    "max_execution_time": 2005452,
+                    "call_count": 3
+                },
+                "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)": {
+                    "total_execution_time": 5451498211,
+                    "self_execution_time": 5451498211,
+                    "average_self_time": 6537.532766822925,
+                    "cumulative_execution_time": 5451498211,
+                    "min_execution_time": 1802,
+                    "max_execution_time": 582007,
+                    "call_count": 833877
+                }
+            }
+        }
+    },
+    "988030970703e56f29924855a367bd0a603a002e": {
+        "988030970703e56f29924855a367bd0a603a002e": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNone.tpt": {
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 20218892455,
+                    "self_execution_time": 20218892455,
+                    "average_self_time": 9749.30683308581,
+                    "cumulative_execution_time": 20218892455,
+                    "min_execution_time": 2008,
+                    "max_execution_time": 501302,
+                    "call_count": 2073880
+                }
+            }
+        },
+        "c1ed7f4042fa93104f5fe6b89ba9cdae0508fa0c": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNone.tpt": {
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 19699358681,
+                    "self_execution_time": 19699358681,
+                    "average_self_time": 9352.900054125143,
+                    "cumulative_execution_time": 19699358681,
+                    "min_execution_time": 1883,
+                    "max_execution_time": 787290,
+                    "call_count": 2106230
+                }
+            }
+        }
+    },
+    "d60366d5cdef9091f7dfacb6713fb7fc2b153516": {
+        "d60366d5cdef9091f7dfacb6713fb7fc2b153516": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 10115807668,
+                    "self_execution_time": 9759812204,
+                    "average_self_time": 5172.098642721933,
+                    "cumulative_execution_time": 10115807668,
+                    "min_execution_time": 2265,
+                    "max_execution_time": 742196,
+                    "call_count": 1887234
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 10010822242,
+                    "self_execution_time": 9706230233,
+                    "average_self_time": 5041.760134575338,
+                    "cumulative_execution_time": 10010822242,
+                    "min_execution_time": 2004,
+                    "max_execution_time": 702655,
+                    "call_count": 1925392
+                }
+            },
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 9940247286,
+                    "self_execution_time": 9646081911,
+                    "average_self_time": 4149.305735336247,
+                    "cumulative_execution_time": 9940247286,
+                    "min_execution_time": 1854,
+                    "max_execution_time": 805896,
+                    "call_count": 2324988
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 3125712258,
+                    "self_execution_time": 3125712258,
+                    "average_self_time": 10204.707976794069,
+                    "cumulative_execution_time": 3125712258,
+                    "min_execution_time": 2262,
+                    "max_execution_time": 510375,
+                    "call_count": 306301
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 625199767,
+                    "self_execution_time": 625199767,
+                    "average_self_time": 10306.963088133469,
+                    "cumulative_execution_time": 625199767,
+                    "min_execution_time": 2381,
+                    "max_execution_time": 499920,
+                    "call_count": 60658
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.relaxedPoll()": {
+                    "total_execution_time": 9558586455,
+                    "self_execution_time": 9260570085,
+                    "average_self_time": 4191.8281967738485,
+                    "cumulative_execution_time": 9558586455,
+                    "min_execution_time": 1960,
+                    "max_execution_time": 624572,
+                    "call_count": 2209506
+                }
+            }
+        },
+        "51b9c52b239fb6fe67cf1b18badc7fcad405b120": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 10335667448,
+                    "self_execution_time": 10037828475,
+                    "average_self_time": 4860.286632530777,
+                    "cumulative_execution_time": 10335667448,
+                    "min_execution_time": 1959,
+                    "max_execution_time": 808518,
+                    "call_count": 2065530
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 10016213899,
+                    "self_execution_time": 9771021109,
+                    "average_self_time": 4790.881071574265,
+                    "cumulative_execution_time": 10016213899,
+                    "min_execution_time": 2195,
+                    "max_execution_time": 723105,
+                    "call_count": 2039759
+                }
+            },
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 10101105657,
+                    "self_execution_time": 9787640676,
+                    "average_self_time": 4225.883526609407,
+                    "cumulative_execution_time": 10101105657,
+                    "min_execution_time": 1842,
+                    "max_execution_time": 737050,
+                    "call_count": 2316413
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 2752079846,
+                    "self_execution_time": 2752079846,
+                    "average_self_time": 10412.751641133716,
+                    "cumulative_execution_time": 2752079846,
+                    "min_execution_time": 2198,
+                    "max_execution_time": 500822,
+                    "call_count": 264299
+                },
+                "public boolean org.jctools.queues.MpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 694814595,
+                    "self_execution_time": 694814595,
+                    "average_self_time": 11453.680085060087,
+                    "cumulative_execution_time": 694814595,
+                    "min_execution_time": 2456,
+                    "max_execution_time": 651307,
+                    "call_count": 60663
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.relaxedPoll()": {
+                    "total_execution_time": 9972493831,
+                    "self_execution_time": 9651127339,
+                    "average_self_time": 4295.072786971918,
+                    "cumulative_execution_time": 9972493831,
+                    "min_execution_time": 1858,
+                    "max_execution_time": 638416,
+                    "call_count": 2247327
+                }
+            }
+        }
+    },
+    "bfb10f044e17c8035b884fe29ad409daaaf74911": {
+        "bfb10f044e17c8035b884fe29ad409daaaf74911": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.SpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 1234844528,
+                    "self_execution_time": 1234844528,
+                    "average_self_time": 20378.65381632148,
+                    "cumulative_execution_time": 1234844528,
+                    "min_execution_time": 2735,
+                    "max_execution_time": 1122487,
+                    "call_count": 60595
+                }
+            }
+        },
+        "8f5c9aebec9ee1cc2b7c6dbcc4bac22370593a55": {
+            "org.jctools.jmh.throughput.MpqThroughputBackoffNone.cr": {
+                "public boolean org.jctools.queues.SpmcArrayQueue.relaxedOffer(java.lang.Object)": {
+                    "total_execution_time": 1054098580,
+                    "self_execution_time": 1054098580,
+                    "average_self_time": 17392.35698846668,
+                    "cumulative_execution_time": 1054098580,
+                    "min_execution_time": 3448,
+                    "max_execution_time": 1196354,
+                    "call_count": 60607
+                }
+            }
+        }
+    },
+    "d19c984bfb88defb067edf3de4b08f3ee657e94c": {
+        "d19c984bfb88defb067edf3de4b08f3ee657e94c": {
+            "org.jctools.jmh.baseline.SingleThreadedPoll.poll": {
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 9433026366,
+                    "self_execution_time": 9433026366,
+                    "average_self_time": 9929.877727998113,
+                    "cumulative_execution_time": 9433026366,
+                    "min_execution_time": 1955,
+                    "max_execution_time": 777654,
+                    "call_count": 949964
+                }
+            }
+        },
+        "40b09c9f69ffd2cd9d6f8e4d5ce32e9f84fcaedd": {
+            "org.jctools.jmh.baseline.SingleThreadedPoll.poll": {
+                "public boolean org.jctools.queues.SpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 10718068751,
+                    "self_execution_time": 10718068751,
+                    "average_self_time": 12119.494362062766,
+                    "cumulative_execution_time": 10718068751,
+                    "min_execution_time": 2241,
+                    "max_execution_time": 862961,
+                    "call_count": 884366
+                }
+            }
+        }
+    },
+    "6acb2a1011cacc4b8b379069888cc7395aa68a80": {
+        "6acb2a1011cacc4b8b379069888cc7395aa68a80": {
+            "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt": {
+                "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()": {
+                    "total_execution_time": 10292194185,
+                    "self_execution_time": 9911949308,
+                    "average_self_time": 4756.181728145781,
+                    "cumulative_execution_time": 10292194185,
+                    "min_execution_time": 2072,
+                    "max_execution_time": 856089,
+                    "call_count": 2084273
+                },
+                "private org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(org.jctools.queues.intrusive.Node)": {
+                    "total_execution_time": 8934944605,
+                    "self_execution_time": 8626711115,
+                    "average_self_time": 4595.07501137222,
+                    "cumulative_execution_time": 8934944605,
+                    "min_execution_time": -504497,
+                    "max_execution_time": 759059,
+                    "call_count": 1877643
+                },
+                "public void org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.clear()": {
+                    "total_execution_time": 2427609710,
+                    "self_execution_time": 1265207955,
+                    "average_self_time": 97323688.84615384,
+                    "cumulative_execution_time": 2427609710,
+                    "min_execution_time": 74913,
+                    "max_execution_time": 901277580,
+                    "call_count": 13
+                }
+            }
+        },
+        "d46dc3f5ceea5c1243a345fbe869654e74b9f886": {
+            "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt": {
+                "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()": {
+                    "total_execution_time": 10974264951,
+                    "self_execution_time": 10612507043,
+                    "average_self_time": 5024.537739520561,
+                    "cumulative_execution_time": 10974264951,
+                    "min_execution_time": 2015,
+                    "max_execution_time": 864154,
+                    "call_count": 2112370
+                },
+                "private org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(org.jctools.queues.intrusive.Node)": {
+                    "total_execution_time": 8837236691,
+                    "self_execution_time": 8584774196,
+                    "average_self_time": 4273.530146229761,
+                    "cumulative_execution_time": 8837236691,
+                    "min_execution_time": -42133,
+                    "max_execution_time": 974454,
+                    "call_count": 2009049
+                },
+                "public void org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.clear()": {
+                    "total_execution_time": 4532643780,
+                    "self_execution_time": 2213582677,
+                    "average_self_time": 158113048.35714287,
+                    "cumulative_execution_time": 4532643780,
+                    "min_execution_time": 219153,
+                    "max_execution_time": 1114151849,
+                    "call_count": 14
+                }
+            }
+        }
+    },
+    "efcb60756ad75ef70e8e9ae603cf7c65cd46423d": {
+        "efcb60756ad75ef70e8e9ae603cf7c65cd46423d": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 3866976430,
+                    "self_execution_time": 3726923299,
+                    "average_self_time": 5548.584685769753,
+                    "cumulative_execution_time": 3866976430,
+                    "min_execution_time": 2355,
+                    "max_execution_time": 725093,
+                    "call_count": 671769
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 3664893617,
+                    "self_execution_time": 3468894086,
+                    "average_self_time": 5252.008869186315,
+                    "cumulative_execution_time": 3664893617,
+                    "min_execution_time": 2370,
+                    "max_execution_time": 706757,
+                    "call_count": 660574
+                }
+            }
+        },
+        "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 4502393484,
+                    "self_execution_time": 4307340422,
+                    "average_self_time": 7214.733881612006,
+                    "cumulative_execution_time": 4502393484,
+                    "min_execution_time": 2072,
+                    "max_execution_time": 837408,
+                    "call_count": 597096
+                },
+                "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 3751617981,
+                    "self_execution_time": 3677908600,
+                    "average_self_time": 5315.5651071738785,
+                    "cumulative_execution_time": 3751617981,
+                    "min_execution_time": 2273,
+                    "max_execution_time": 751081,
+                    "call_count": 692021
+                }
+            }
+        }
+    },
+    "8f268d5293dc4701f9637ff393bdce110b2c0603": {
+        "8f268d5293dc4701f9637ff393bdce110b2c0603": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 6326716654,
+                    "self_execution_time": 6326716654,
+                    "average_self_time": 9917.603011625137,
+                    "cumulative_execution_time": 6326716654,
+                    "min_execution_time": 2330,
+                    "max_execution_time": 691397,
+                    "call_count": 637928
+                }
+            }
+        },
+        "5dc705baad06d6149a03db70241324d941cf7231": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 6858133221,
+                    "self_execution_time": 6858133221,
+                    "average_self_time": 13508.612057452836,
+                    "cumulative_execution_time": 6858133221,
+                    "min_execution_time": 2324,
+                    "max_execution_time": 712056,
+                    "call_count": 507686
+                }
+            }
+        }
+    },
+    "33c7774322d46a8d62ba755e2afe645617f03b15": {
+        "33c7774322d46a8d62ba755e2afe645617f03b15": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 18298143592,
+                    "self_execution_time": 18298143592,
+                    "average_self_time": 9308.882028219457,
+                    "cumulative_execution_time": 18298143592,
+                    "min_execution_time": 1945,
+                    "max_execution_time": 546990,
+                    "call_count": 1965665
+                }
+            },
+            "org.jctools.jmh.baseline.QueueOfferPoll.offerAndPollLoops": {
+                "public boolean org.jctools.queues.MpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 5274879752,
+                    "self_execution_time": 5274879752,
+                    "average_self_time": 7581.006884142328,
+                    "cumulative_execution_time": 5274879752,
+                    "min_execution_time": 2263,
+                    "max_execution_time": 943979,
+                    "call_count": 695802
+                }
+            }
+        },
+        "79bdab95b2e44b9a746727b1fa5cb0749bebf56f": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)": {
+                    "total_execution_time": 19252590955,
+                    "self_execution_time": 19252590955,
+                    "average_self_time": 9960.402229691663,
+                    "cumulative_execution_time": 19252590955,
+                    "min_execution_time": 1954,
+                    "max_execution_time": 509756,
+                    "call_count": 1932913
+                }
+            },
+            "org.jctools.jmh.baseline.QueueOfferPoll.offerAndPollLoops": {
+                "public boolean org.jctools.queues.MpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 5275689675,
+                    "self_execution_time": 5275689675,
+                    "average_self_time": 6788.998081313201,
+                    "cumulative_execution_time": 5275689675,
+                    "min_execution_time": 1828,
+                    "max_execution_time": 548118,
+                    "call_count": 777094
+                }
+            }
+        }
+    },
+    "44c436250b18754ed16d30712f9ccdf7ca71d881": {
+        "44c436250b18754ed16d30712f9ccdf7ca71d881": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "protected final void org.jctools.queues.ConcurrentCircularArrayQueue.soElement(long,java.lang.Object)": {
+                    "total_execution_time": 17531912308,
+                    "self_execution_time": 17531912308,
+                    "average_self_time": 6278.492691528648,
+                    "cumulative_execution_time": 17531912308,
+                    "min_execution_time": 1788,
+                    "max_execution_time": 482344,
+                    "call_count": 2792376
+                },
+                "protected final void org.jctools.queues.ConcurrentCircularArrayQueue.spElement(long,java.lang.Object)": {
+                    "total_execution_time": 28811146317,
+                    "self_execution_time": 27383058099,
+                    "average_self_time": 5491.580570118028,
+                    "cumulative_execution_time": 28811146317,
+                    "min_execution_time": -745113,
+                    "max_execution_time": 759716,
+                    "call_count": 4986809
+                },
+                "protected final java.lang.Object org.jctools.queues.ConcurrentCircularArrayQueue.lpElement(long)": {
+                    "total_execution_time": 18070652279,
+                    "self_execution_time": 17935764386,
+                    "average_self_time": 7592.494264492855,
+                    "cumulative_execution_time": 18070652279,
+                    "min_execution_time": 1791,
+                    "max_execution_time": 641002,
+                    "call_count": 2362437
+                }
+            }
+        },
+        "1cb30f81e751f02009879568127cb2dd000f1fba": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "protected final void org.jctools.queues.ConcurrentCircularArrayQueue.soElement(long,java.lang.Object)": {
+                    "total_execution_time": 18326193762,
+                    "self_execution_time": 18326193762,
+                    "average_self_time": 6256.362643293804,
+                    "cumulative_execution_time": 18326193762,
+                    "min_execution_time": 1801,
+                    "max_execution_time": 633486,
+                    "call_count": 2929209
+                },
+                "protected final void org.jctools.queues.ConcurrentCircularArrayQueue.spElement(long,java.lang.Object)": {
+                    "total_execution_time": 28793677648,
+                    "self_execution_time": 27217904041,
+                    "average_self_time": 5207.016668327862,
+                    "cumulative_execution_time": 28793677648,
+                    "min_execution_time": -727024,
+                    "max_execution_time": 752160,
+                    "call_count": 5227598
+                },
+                "protected final java.lang.Object org.jctools.queues.ConcurrentCircularArrayQueue.lpElement(long)": {
+                    "total_execution_time": 17043175404,
+                    "self_execution_time": 16914109167,
+                    "average_self_time": 6892.653208950693,
+                    "cumulative_execution_time": 17043175404,
+                    "min_execution_time": 1837,
+                    "max_execution_time": 597666,
+                    "call_count": 2454087
+                }
+            }
+        }
+    },
+    "d8d9a4c07fcccce1c8be846d67237851d6bfa777": {
+        "d8d9a4c07fcccce1c8be846d67237851d6bfa777": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy": {
+                "private org.jctools.channels.spsc.SpscChannelProducer org.jctools.channels.spsc.SpscChannel.newProducer(java.lang.Class,java.lang.Object[])": {
+                    "total_execution_time": 5079204061,
+                    "self_execution_time": 5079204061,
+                    "average_self_time": 1693068020.3333333,
+                    "cumulative_execution_time": 5079204061,
+                    "min_execution_time": 1609984391,
+                    "max_execution_time": 1791478895,
+                    "call_count": 3
+                },
+                "private org.jctools.channels.spsc.SpscChannelConsumer org.jctools.channels.spsc.SpscChannel.newConsumer(java.lang.Object[])": {
+                    "total_execution_time": 498293952,
+                    "self_execution_time": 498293952,
+                    "average_self_time": 166097984.0,
+                    "cumulative_execution_time": 498293952,
+                    "min_execution_time": 130972279,
+                    "max_execution_time": 228653982,
+                    "call_count": 3
+                }
+            }
+        },
+        "4fdccbd7b18aeabaf783247d214c971a5262dd4a": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy": {}
+        }
+    },
+    "cc829df78ccf73055f945725d4980f6f2a615b80": {
+        "cc829df78ccf73055f945725d4980f6f2a615b80": {
+            "org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone.tpt": {}
+        },
+        "10bdea2b2a18c7cc2d407cdeac7b9e9e5bd4f3b5": {
+            "org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone.tpt": {}
+        }
+    },
+    "5279f373a120d3d504d4ea5fad8e1547132b5e96": {
+        "5279f373a120d3d504d4ea5fad8e1547132b5e96": {
+            "org.jctools.channels.mpsc.MpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int,java.lang.String,java.lang.Class)": {
+                    "total_execution_time": 146482299,
+                    "self_execution_time": 146482299,
+                    "average_self_time": 3116644.659574468,
+                    "cumulative_execution_time": 146482299,
+                    "min_execution_time": 207762,
+                    "max_execution_time": 24147730,
+                    "call_count": 47
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethods(org.objectweb.asm.ClassWriter,java.util.List,java.lang.String,java.lang.Class)": {
+                    "total_execution_time": 407781199,
+                    "self_execution_time": 190258496,
+                    "average_self_time": 31709749.333333332,
+                    "cumulative_execution_time": 407781199,
+                    "min_execution_time": 34127761,
+                    "max_execution_time": 99136953,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProcess(org.objectweb.asm.ClassVisitor,java.lang.Class,java.util.List,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 176327441,
+                    "self_execution_time": 176327441,
+                    "average_self_time": 29387906.833333332,
+                    "cumulative_execution_time": 176327441,
+                    "min_execution_time": 2129870,
+                    "max_execution_time": 153250569,
+                    "call_count": 6
+                }
+            }
+        },
+        "72ad973654f6e0f0029e430bcf0572dd71d94588": {
+            "org.jctools.channels.mpsc.MpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int,java.lang.String,java.lang.Class)": {
+                    "total_execution_time": 192554489,
+                    "self_execution_time": 192554489,
+                    "average_self_time": 4185967.152173913,
+                    "cumulative_execution_time": 192554489,
+                    "min_execution_time": 240568,
+                    "max_execution_time": 44146353,
+                    "call_count": 46
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethods(org.objectweb.asm.ClassWriter,java.util.List,java.lang.String,java.lang.Class)": {
+                    "total_execution_time": 487280524,
+                    "self_execution_time": 171378959,
+                    "average_self_time": 28563159.833333332,
+                    "cumulative_execution_time": 487280524,
+                    "min_execution_time": 40688750,
+                    "max_execution_time": 142309770,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProcess(org.objectweb.asm.ClassVisitor,java.lang.Class,java.util.List,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 31193822,
+                    "self_execution_time": 31193822,
+                    "average_self_time": 5198970.333333333,
+                    "cumulative_execution_time": 31193822,
+                    "min_execution_time": 2196590,
+                    "max_execution_time": 9676025,
+                    "call_count": 6
+                }
+            }
+        }
+    },
+    "9315ceb5d27c7323a7adaf02602c24d90c523ffc": {
+        "9315ceb5d27c7323a7adaf02602c24d90c523ffc": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public java.lang.Object org.jctools.queues.SpscArrayQueue.poll()": {
+                    "total_execution_time": 11747198309,
+                    "self_execution_time": 11212217320,
+                    "average_self_time": 5273.950014158297,
+                    "cumulative_execution_time": 11747198309,
+                    "min_execution_time": 2255,
+                    "max_execution_time": 812514,
+                    "call_count": 2126184
+                },
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 10594115958,
+                    "self_execution_time": 10038091210,
+                    "average_self_time": 4784.814577011553,
+                    "cumulative_execution_time": 10594115958,
+                    "min_execution_time": 1843,
+                    "max_execution_time": 792045,
+                    "call_count": 2098207
+                }
+            }
+        },
+        "7783fe20c754315121ddef2c23105a0b5db88373": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public java.lang.Object org.jctools.queues.SpscArrayQueue.poll()": {
+                    "total_execution_time": 10250246824,
+                    "self_execution_time": 9876733590,
+                    "average_self_time": 4899.25117362974,
+                    "cumulative_execution_time": 10250246824,
+                    "min_execution_time": 1908,
+                    "max_execution_time": 725626,
+                    "call_count": 2016206
+                },
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 10553288301,
+                    "self_execution_time": 9922364083,
+                    "average_self_time": 4904.745586409974,
+                    "cumulative_execution_time": 10553288301,
+                    "min_execution_time": 2140,
+                    "max_execution_time": 856607,
+                    "call_count": 2023290
+                }
+            }
+        }
+    },
+    "c048acc8169650fc624c2e9c94ffcce822c11c22": {
+        "c048acc8169650fc624c2e9c94ffcce822c11c22": {
+            "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt": {
+                "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()": {
+                    "total_execution_time": 11155171996,
+                    "self_execution_time": 10466218757,
+                    "average_self_time": 5467.226971890286,
+                    "cumulative_execution_time": 11155171996,
+                    "min_execution_time": 1947,
+                    "max_execution_time": 904120,
+                    "call_count": 1914622
+                },
+                "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(org.jctools.queues.intrusive.Node)": {
+                    "total_execution_time": 10361983655,
+                    "self_execution_time": 9668327566,
+                    "average_self_time": 5423.725451433553,
+                    "cumulative_execution_time": 10361983655,
+                    "min_execution_time": -91789,
+                    "max_execution_time": 723284,
+                    "call_count": 1782811
+                }
+            }
+        },
+        "840a757322db3412574757e677aec9c9fb637d8e": {
+            "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt": {
+                "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()": {
+                    "total_execution_time": 10410698692,
+                    "self_execution_time": 10007368937,
+                    "average_self_time": 7169.824753073948,
+                    "cumulative_execution_time": 10410698692,
+                    "min_execution_time": 1977,
+                    "max_execution_time": 1321633,
+                    "call_count": 1396018
+                },
+                "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(org.jctools.queues.intrusive.Node)": {
+                    "total_execution_time": 9044937719,
+                    "self_execution_time": 8650202640,
+                    "average_self_time": 6605.890819783302,
+                    "cumulative_execution_time": 9044937719,
+                    "min_execution_time": -253134,
+                    "max_execution_time": 1293637,
+                    "call_count": 1309676
+                }
+            }
+        }
+    },
+    "b0f1295ffae344c9dc1aee54df6351a051e47739": {
+        "b0f1295ffae344c9dc1aee54df6351a051e47739": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxyInstance(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 176498959,
+                    "self_execution_time": 176498959,
+                    "average_self_time": 29416493.166666668,
+                    "cumulative_execution_time": 176498959,
+                    "min_execution_time": 9013114,
+                    "max_execution_time": 57242123,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxy(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 4012247,
+                    "self_execution_time": 4012247,
+                    "average_self_time": 668707.8333333334,
+                    "cumulative_execution_time": 4012247,
+                    "min_execution_time": 289085,
+                    "max_execution_time": 1425163,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProcess(org.objectweb.asm.ClassVisitor,java.util.List,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 46563719,
+                    "self_execution_time": 46563719,
+                    "average_self_time": 7760619.833333333,
+                    "cumulative_execution_time": 46563719,
+                    "min_execution_time": 2194559,
+                    "max_execution_time": 17983150,
+                    "call_count": 6
+                }
+            }
+        },
+        "9def52951541af24751964bb0cb4f611f50bdca4": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxyInstance(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 151229207,
+                    "self_execution_time": 151229207,
+                    "average_self_time": 25204867.833333332,
+                    "cumulative_execution_time": 151229207,
+                    "min_execution_time": 6902407,
+                    "max_execution_time": 34170832,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProxy(org.objectweb.asm.ClassVisitor,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 13845888,
+                    "self_execution_time": 13845888,
+                    "average_self_time": 2307648.0,
+                    "cumulative_execution_time": 13845888,
+                    "min_execution_time": 221368,
+                    "max_execution_time": 12359224,
+                    "call_count": 6
+                },
+                "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementProcess(org.objectweb.asm.ClassVisitor,java.util.List,java.lang.Class,java.lang.String)": {
+                    "total_execution_time": 50682847,
+                    "self_execution_time": 50682847,
+                    "average_self_time": 8447141.166666666,
+                    "cumulative_execution_time": 50682847,
+                    "min_execution_time": 1890718,
+                    "max_execution_time": 20819352,
+                    "call_count": 6
+                }
+            }
+        }
+    },
+    "9a44566e30a4b1a81a7dde714bcf9c3fff0abb48": {
+        "9a44566e30a4b1a81a7dde714bcf9c3fff0abb48": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy": {
+                "public static int org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.getRequiredBufferSize(int,int)": {
+                    "total_execution_time": 74760197,
+                    "self_execution_time": 74760197,
+                    "average_self_time": 24920065.666666668,
+                    "cumulative_execution_time": 74760197,
+                    "min_execution_time": 21828353,
+                    "max_execution_time": 27322075,
+                    "call_count": 3
+                },
+                "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long)": {
+                    "total_execution_time": 17485832517,
+                    "self_execution_time": 16504199322,
+                    "average_self_time": 4857.826785128236,
+                    "cumulative_execution_time": 17485832517,
+                    "min_execution_time": 1856,
+                    "max_execution_time": 636524,
+                    "call_count": 3397900
+                },
+                "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long)": {
+                    "total_execution_time": 16422384427,
+                    "self_execution_time": 15551827873,
+                    "average_self_time": 4669.070241583227,
+                    "cumulative_execution_time": 16422384427,
+                    "min_execution_time": 1983,
+                    "max_execution_time": 631796,
+                    "call_count": 3331306
+                }
+            }
+        },
+        "edf62ba9c02d4f071fbb9159594afad961e7fa1f": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy": {
+                "public static int org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.getRequiredBufferSize(int,int)": {
+                    "total_execution_time": 70686055,
+                    "self_execution_time": 70686055,
+                    "average_self_time": 23562018.333333332,
+                    "cumulative_execution_time": 70686055,
+                    "min_execution_time": 8465858,
+                    "max_execution_time": 33296773,
+                    "call_count": 3
+                },
+                "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long)": {
+                    "total_execution_time": 17517052037,
+                    "self_execution_time": 16554841092,
+                    "average_self_time": 6077.680176953788,
+                    "cumulative_execution_time": 17517052037,
+                    "min_execution_time": 1823,
+                    "max_execution_time": 774564,
+                    "call_count": 2724281
+                },
+                "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long)": {
+                    "total_execution_time": 16450899212,
+                    "self_execution_time": 15563339324,
+                    "average_self_time": 5839.9701174760385,
+                    "cumulative_execution_time": 16450899212,
+                    "min_execution_time": 1875,
+                    "max_execution_time": 752565,
+                    "call_count": 2665409
+                }
+            }
+        }
+    },
+    "fbd6bfab1a036d57f5db4a7659f23764c2d7c08a": {
+        "fbd6bfab1a036d57f5db4a7659f23764c2d7c08a": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.backoffOneNano": {}
+        },
+        "0f39a2d4a1f8beeb474844ae9d9e1533c51dea81": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.backoffOneNano": {}
+        }
+    },
+    "27f593cbc6840db1151ef506e42ace6cffa9bfce": {
+        "27f593cbc6840db1151ef506e42ace6cffa9bfce": {
+            "org.jctools.jmh.baseline.QueueOfferPoll.offerAndPollLoops": {
+                "private boolean org.jctools.queues.SpscArrayQueue.offerSlowPath(java.lang.Object[],long,long)": {
+                    "total_execution_time": 3882167,
+                    "self_execution_time": 3882167,
+                    "average_self_time": 26409.299319727892,
+                    "cumulative_execution_time": 3882167,
+                    "min_execution_time": 7614,
+                    "max_execution_time": 355545,
+                    "call_count": 147
+                },
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 5316026187,
+                    "self_execution_time": 5312837142,
+                    "average_self_time": 8892.43248373102,
+                    "cumulative_execution_time": 5316026187,
+                    "min_execution_time": 2276,
+                    "max_execution_time": 573157,
+                    "call_count": 597456
+                }
+            }
+        },
+        "bf55e2cbe5c846a9f5e1978c8faed36ba2e7dbef": {
+            "org.jctools.jmh.baseline.QueueOfferPoll.offerAndPollLoops": {
+                "private boolean org.jctools.queues.SpscArrayQueue.offerSlowPath(java.lang.Object[],long,long)": {
+                    "total_execution_time": 2993444,
+                    "self_execution_time": 2993444,
+                    "average_self_time": 29062.563106796115,
+                    "cumulative_execution_time": 2993444,
+                    "min_execution_time": 7633,
+                    "max_execution_time": 409223,
+                    "call_count": 103
+                },
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 5493935514,
+                    "self_execution_time": 5491004142,
+                    "average_self_time": 12902.280494567465,
+                    "cumulative_execution_time": 5493935514,
+                    "min_execution_time": 2279,
+                    "max_execution_time": 1090351,
+                    "call_count": 425584
+                }
+            }
+        }
+    },
+    "56b5e58b07266bea077ab5aa2c6e6268696b4784": {
+        "56b5e58b07266bea077ab5aa2c6e6268696b4784": {
+            "org.jctools.jmh.baseline.QueueOfferPoll.offerAndPollLoops": {
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 2396475308,
+                    "self_execution_time": 2396475308,
+                    "average_self_time": 7128.505714166731,
+                    "cumulative_execution_time": 2396475308,
+                    "min_execution_time": 2361,
+                    "max_execution_time": 792148,
+                    "call_count": 336182
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 2384389834,
+                    "self_execution_time": 2384389834,
+                    "average_self_time": 7092.113496905144,
+                    "cumulative_execution_time": 2384389834,
+                    "min_execution_time": 2304,
+                    "max_execution_time": 963782,
+                    "call_count": 336203
+                }
+            }
+        },
+        "27cf933a265ff42065a6164fe46e2fec45359944": {
+            "org.jctools.jmh.baseline.QueueOfferPoll.offerAndPollLoops": {
+                "public boolean org.jctools.queues.MpmcArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 2311545358,
+                    "self_execution_time": 2311545358,
+                    "average_self_time": 7338.285824036978,
+                    "cumulative_execution_time": 2311545358,
+                    "min_execution_time": 2268,
+                    "max_execution_time": 836223,
+                    "call_count": 314998
+                },
+                "public java.lang.Object org.jctools.queues.MpmcArrayQueue.poll()": {
+                    "total_execution_time": 2268234777,
+                    "self_execution_time": 2268234777,
+                    "average_self_time": 7200.608169368203,
+                    "cumulative_execution_time": 2268234777,
+                    "min_execution_time": 2255,
+                    "max_execution_time": 845055,
+                    "call_count": 315006
+                }
+            }
+        }
+    },
+    "bbe02aa58fcba15198de1ff5f5a3add656372b9a": {
+        "bbe02aa58fcba15198de1ff5f5a3add656372b9a": {
+            "org.jctools.jmh.collections.ConcurrentSetThroughput.rw": {
+                "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 6627322051,
+                    "self_execution_time": 5852053159,
+                    "average_self_time": 5242.483401491568,
+                    "cumulative_execution_time": 6627322051,
+                    "min_execution_time": -1857464,
+                    "max_execution_time": 1931153,
+                    "call_count": 1116412
+                },
+                "private void org.jctools.sets.SingleWriterHashSet.compactAndRemove(java.lang.Object[],long,int)": {
+                    "total_execution_time": 149791079,
+                    "self_execution_time": 144182723,
+                    "average_self_time": 5997.367954743979,
+                    "cumulative_execution_time": 149791079,
+                    "min_execution_time": 2613,
+                    "max_execution_time": 739443,
+                    "call_count": 24045
+                }
+            }
+        },
+        "4c26d4e29b6b8c9f3d0c7bbcba59c1066df5f730": {
+            "org.jctools.jmh.collections.ConcurrentSetThroughput.rw": {
+                "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)": {
+                    "total_execution_time": 6583181863,
+                    "self_execution_time": 5880981699,
+                    "average_self_time": 5764.413724659927,
+                    "cumulative_execution_time": 6583181863,
+                    "min_execution_time": -1749093,
+                    "max_execution_time": 1796802,
+                    "call_count": 1020337
+                },
+                "private void org.jctools.sets.SingleWriterHashSet.compactAndRemove(java.lang.Object[],long,int)": {
+                    "total_execution_time": 142782697,
+                    "self_execution_time": 137710441,
+                    "average_self_time": 6246.221299950106,
+                    "cumulative_execution_time": 142782697,
+                    "min_execution_time": 2444,
+                    "max_execution_time": 520079,
+                    "call_count": 22047
+                }
+            }
+        }
+    },
+    "ec0f7b287bcc0609fd4201584fa495e92ccc6dc6": {
+        "ec0f7b287bcc0609fd4201584fa495e92ccc6dc6": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.instantiate(java.lang.Class,int,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)": {
+                    "total_execution_time": 585752639,
+                    "self_execution_time": 585752639,
+                    "average_self_time": 20198366.862068966,
+                    "cumulative_execution_time": 585752639,
+                    "min_execution_time": 3230916,
+                    "max_execution_time": 103625121,
+                    "call_count": 29
+                },
+                "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)": {
+                    "total_execution_time": 2248802098,
+                    "self_execution_time": 1180986120,
+                    "average_self_time": 40723659.31034483,
+                    "cumulative_execution_time": 2248802098,
+                    "min_execution_time": 3862341,
+                    "max_execution_time": 392774060,
+                    "call_count": 30
+                }
+            }
+        },
+        "94f93eda72f6e409e081fc365702b6fdacbb8deb": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "private static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.instantiate(java.lang.Class,int,int,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)": {
+                    "total_execution_time": 361898283,
+                    "self_execution_time": 361898283,
+                    "average_self_time": 12479251.137931034,
+                    "cumulative_execution_time": 361898283,
+                    "min_execution_time": 888594,
+                    "max_execution_time": 92902741,
+                    "call_count": 29
+                },
+                "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)": {
+                    "total_execution_time": 1394093122,
+                    "self_execution_time": 1032194839,
+                    "average_self_time": 35592925.48275862,
+                    "cumulative_execution_time": 1394093122,
+                    "min_execution_time": 1712077,
+                    "max_execution_time": 320529924,
+                    "call_count": 29
+                }
+            }
+        }
+    },
+    "0f39a2d4a1f8beeb474844ae9d9e1533c51dea81": {
+        "0f39a2d4a1f8beeb474844ae9d9e1533c51dea81": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffYield.tpt": {}
+        },
+        "2bba51d6ab575bbe90b31fb66437fc7793f6d7c5": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffYield.tpt": {}
+        }
+    },
+    "3c94b8ccb78e040b9c2a33a04f7dee01286d1658": {
+        "3c94b8ccb78e040b9c2a33a04f7dee01286d1658": {
+            "org.jctools.jmh.counters.CountersBenchmark.rw": {
+                "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long,long)": {
+                    "total_execution_time": 4677799211,
+                    "self_execution_time": 4677799211,
+                    "average_self_time": 9632.216412947013,
+                    "cumulative_execution_time": 4677799211,
+                    "min_execution_time": 2179,
+                    "max_execution_time": 965680,
+                    "call_count": 485641
+                }
+            }
+        },
+        "14ce5a50b7e08816f24bc69c75288587332871e6": {
+            "org.jctools.jmh.counters.CountersBenchmark.rw": {
+                "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long,long)": {
+                    "total_execution_time": 4680264331,
+                    "self_execution_time": 4680264331,
+                    "average_self_time": 10772.179726429707,
+                    "cumulative_execution_time": 4680264331,
+                    "min_execution_time": 2206,
+                    "max_execution_time": 1020052,
+                    "call_count": 434477
+                }
+            }
+        }
+    },
+    "534d30d8681c96c5fa9c30de3b4d27776d561d95": {
+        "534d30d8681c96c5fa9c30de3b4d27776d561d95": {
+            "org.jctools.jmh.baseline.SingleThreadedPoll.poll": {
+                "protected static long org.jctools.queues.ConcurrentCircularArrayQueue.calcElementOffset(long,long)": {
+                    "total_execution_time": 38950064187,
+                    "self_execution_time": 38950064187,
+                    "average_self_time": 7339.767982119261,
+                    "cumulative_execution_time": 38950064187,
+                    "min_execution_time": 1801,
+                    "max_execution_time": 707334,
+                    "call_count": 5306716
+                }
+            }
+        },
+        "f719c22cf5f9a1f1e4654bd329aa2dc661cdbd95": {
+            "org.jctools.jmh.baseline.SingleThreadedPoll.poll": {
+                "protected static long org.jctools.queues.ConcurrentCircularArrayQueue.calcElementOffset(long,long)": {
+                    "total_execution_time": 38596469894,
+                    "self_execution_time": 38596469894,
+                    "average_self_time": 7651.157362028194,
+                    "cumulative_execution_time": 38596469894,
+                    "min_execution_time": 1814,
+                    "max_execution_time": 736708,
+                    "call_count": 5044527
+                }
+            }
+        }
+    },
+    "268cc9c0ec61c4a49bcb57849963fb7f75eb0914": {
+        "268cc9c0ec61c4a49bcb57849963fb7f75eb0914": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()": {
+                    "total_execution_time": 690911957,
+                    "self_execution_time": 690911957,
+                    "average_self_time": 13547293.274509804,
+                    "cumulative_execution_time": 690911957,
+                    "min_execution_time": 396310,
+                    "max_execution_time": 69755631,
+                    "call_count": 51
+                }
+            }
+        },
+        "4c7c9142f0a4fa93e0a6db6cb846509707d6aa52": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()": {
+                    "total_execution_time": 770120486,
+                    "self_execution_time": 770120486,
+                    "average_self_time": 16741749.695652174,
+                    "cumulative_execution_time": 770120486,
+                    "min_execution_time": 379138,
+                    "max_execution_time": 58217357,
+                    "call_count": 46
+                }
+            }
+        }
+    },
+    "57a7a0bdba1d913dbbb189ab72017b66d80d8cfb": {
+        "57a7a0bdba1d913dbbb189ab72017b66d80d8cfb": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 11511614900,
+                    "self_execution_time": 11511614900,
+                    "average_self_time": 43473.194283944744,
+                    "cumulative_execution_time": 11511614900,
+                    "min_execution_time": 2269,
+                    "max_execution_time": 4227930,
+                    "call_count": 264798
+                }
+            }
+        },
+        "1ec9a26f3530cce515c8a8d3eaa32ef68b830de6": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {
+                "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)": {
+                    "total_execution_time": 12426466016,
+                    "self_execution_time": 12426466016,
+                    "average_self_time": 27099.95162057129,
+                    "cumulative_execution_time": 12426466016,
+                    "min_execution_time": 2199,
+                    "max_execution_time": 2239329,
+                    "call_count": 458542
+                }
+            }
+        }
+    },
+    "9183995d3d1619753b61bf676046b97bb20998aa": {
+        "9183995d3d1619753b61bf676046b97bb20998aa": {
+            "org.jctools.jmh.collections.SetOps.remove": {
+                "private void org.jctools.sets.OpenHashSet.compactAndRemove(java.lang.Object[],int,int)": {
+                    "total_execution_time": 37293414,
+                    "self_execution_time": 37293414,
+                    "average_self_time": 18646707.0,
+                    "cumulative_execution_time": 37293414,
+                    "min_execution_time": 17871287,
+                    "max_execution_time": 19422127,
+                    "call_count": 2
+                }
+            }
+        },
+        "4db7bd71c4a70093eeafc4545668a7d227d940d0": {
+            "org.jctools.jmh.collections.SetOps.remove": {}
+        }
+    },
+    "7158447331c16f466c0fd5929bd9f1a4b41f4394": {
+        "7158447331c16f466c0fd5929bd9f1a4b41f4394": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.backoffOneNano": {}
+        },
+        "93fd1e8efd10708093fbe4d92391949114350167": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.backoffOneNano": {}
+        }
+    },
+    "5d60bdb2f886c1b99179d809184c4290c6c6c48e": {
+        "5d60bdb2f886c1b99179d809184c4290c6c6c48e": {
+            "org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone.tpt": {}
+        },
+        "82d2dfdb1703f40731a749ffabca11bcb108e855": {
+            "org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone.tpt": {}
+        }
+    },
+    "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0": {
+        "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)": {
+                    "total_execution_time": 1999159110,
+                    "self_execution_time": 1999159110,
+                    "average_self_time": 66638637.0,
+                    "cumulative_execution_time": 1999159110,
+                    "min_execution_time": 1017271,
+                    "max_execution_time": 391391509,
+                    "call_count": 30
+                }
+            }
+        },
+        "f9028a366b72cb7f8cd26054f5bb14061cd6b49d": {
+            "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline": {
+                "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)": {
+                    "total_execution_time": 1412455315,
+                    "self_execution_time": 1412455315,
+                    "average_self_time": 48705355.68965517,
+                    "cumulative_execution_time": 1412455315,
+                    "min_execution_time": 1086608,
+                    "max_execution_time": 340894254,
+                    "call_count": 29
+                }
+            }
+        }
+    },
+    "8541ae5106e6239f36e871c383b0afa5837dbdd3": {
+        "8541ae5106e6239f36e871c383b0afa5837dbdd3": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()": {
+                    "total_execution_time": 800567893,
+                    "self_execution_time": 800567893,
+                    "average_self_time": 16338120.265306123,
+                    "cumulative_execution_time": 800567893,
+                    "min_execution_time": 388763,
+                    "max_execution_time": 56661656,
+                    "call_count": 49
+                }
+            }
+        },
+        "9aaf7ee79773864a7a64c0bfd2a780ce70a23d34": {
+            "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt": {
+                "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()": {
+                    "total_execution_time": 892941160,
+                    "self_execution_time": 892941160,
+                    "average_self_time": 18998748.085106384,
+                    "cumulative_execution_time": 892941160,
+                    "min_execution_time": 433671,
+                    "max_execution_time": 81261979,
+                    "call_count": 47
+                }
+            }
+        }
+    },
+    "78f5df48580bd858dde9cd9bb6a47a4186d27e72": {
+        "78f5df48580bd858dde9cd9bb6a47a4186d27e72": {
+            "org.jctools.jmh.baseline.SingleThreadedOffer.offerLoop": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 8615073876,
+                    "self_execution_time": 8615073876,
+                    "average_self_time": 11439.481975833223,
+                    "cumulative_execution_time": 8615073876,
+                    "min_execution_time": 2213,
+                    "max_execution_time": 700151,
+                    "call_count": 753100
+                }
+            }
+        },
+        "9876084db8e4b64718c45defc10e124643304533": {
+            "org.jctools.jmh.baseline.SingleThreadedOffer.offerLoop": {
+                "public boolean org.jctools.queues.SpscArrayQueue.offer(java.lang.Object)": {
+                    "total_execution_time": 7948642621,
+                    "self_execution_time": 7948642621,
+                    "average_self_time": 10112.352307091433,
+                    "cumulative_execution_time": 7948642621,
+                    "min_execution_time": 2291,
+                    "max_execution_time": 750016,
+                    "call_count": 786033
+                }
+            }
+        }
+    },
+    "f92da3d6919dae506b1e4737c587c6ed03e2eb61": {
+        "f92da3d6919dae506b1e4737c587c6ed03e2eb61": {
+            "org.jctools.channels.mpsc.MpscProxyChannelBenchmark.oneReferenceArgBaseline": {
+                "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int,java.lang.Class,org.jctools.channels.WaitStrategy,java.lang.Class)": {
+                    "total_execution_time": 3276887260,
+                    "self_execution_time": 3276887260,
+                    "average_self_time": 109229575.33333333,
+                    "cumulative_execution_time": 3276887260,
+                    "min_execution_time": 2731515,
+                    "max_execution_time": 635666473,
+                    "call_count": 30
+                }
+            }
+        },
+        "b4eae437b65fee59eddc266a0b7f7c85e19b25bf": {
+            "org.jctools.channels.mpsc.MpscProxyChannelBenchmark.oneReferenceArgBaseline": {
+                "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int,java.lang.Class,org.jctools.channels.WaitStrategy,java.lang.Class)": {
+                    "total_execution_time": 2596430665,
+                    "self_execution_time": 2596430665,
+                    "average_self_time": 86547688.83333333,
+                    "cumulative_execution_time": 2596430665,
+                    "min_execution_time": 3812412,
+                    "max_execution_time": 443602428,
+                    "call_count": 30
+                }
+            }
+        }
+    },
+    "00e2b147fef8fbcd2dd69004f98cb4c707301e1f": {
+        "00e2b147fef8fbcd2dd69004f98cb4c707301e1f": {
+            "org.jctools.jmh.throughput.spsc.ConcurrentQueueThroughputBusy.tpt": {
+                "public static int org.jctools.util.Pow2.roundToPowerOfTwo(int)": {
+                    "total_execution_time": 78119133,
+                    "self_execution_time": 78119133,
+                    "average_self_time": 26039711.0,
+                    "cumulative_execution_time": 78119133,
+                    "min_execution_time": 11717404,
+                    "max_execution_time": 35293430,
+                    "call_count": 3
+                }
+            }
+        },
+        "f74fa5ce35580e1b3e8e09b0d0a34c4242fcd706": {
+            "org.jctools.jmh.throughput.spsc.ConcurrentQueueThroughputBusy.tpt": {
+                "public static int org.jctools.util.Pow2.roundToPowerOfTwo(int)": {
+                    "total_execution_time": 106908429,
+                    "self_execution_time": 106908429,
+                    "average_self_time": 35636143.0,
+                    "cumulative_execution_time": 106908429,
+                    "min_execution_time": 31477287,
+                    "max_execution_time": 41949861,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "26ff40387fdba01ddd57bc5e12aa0395ca69d5e4": {
+        "26ff40387fdba01ddd57bc5e12aa0395ca69d5e4": {
+            "org.jctools.jmh.throughput.spsc.ConcurrentQueueThroughputBusy.tpt": {
+                "public static int org.jctools.util.Pow2.roundToPowerOfTwo(int)": {
+                    "total_execution_time": 85863283,
+                    "self_execution_time": 85863283,
+                    "average_self_time": 28621094.333333332,
+                    "cumulative_execution_time": 85863283,
+                    "min_execution_time": 24063828,
+                    "max_execution_time": 36029452,
+                    "call_count": 3
+                }
+            }
+        },
+        "c6460d9f8af2ecc4270d0bd8b922980a422835be": {
+            "org.jctools.jmh.throughput.spsc.ConcurrentQueueThroughputBusy.tpt": {
+                "public static int org.jctools.util.Pow2.roundToPowerOfTwo(int)": {
+                    "total_execution_time": 70154573,
+                    "self_execution_time": 70154573,
+                    "average_self_time": 23384857.666666668,
+                    "cumulative_execution_time": 70154573,
+                    "min_execution_time": 8724235,
+                    "max_execution_time": 43418826,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "e54b31e1a5a2dbb83edd13ef53111cc5a26ab6ea": {
+        "e54b31e1a5a2dbb83edd13ef53111cc5a26ab6ea": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {}
+        },
+        "1810fb5421a3e5ebaca51d3e6ad246ac1e34febb": {
+            "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal": {}
+        }
+    },
+    "901418b9134d78cdeba8e4cf864a4b7384a7e183": {
+        "901418b9134d78cdeba8e4cf864a4b7384a7e183": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.backoffOneNano": {}
+        },
+        "fbd6bfab1a036d57f5db4a7659f23764c2d7c08a": {
+            "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.backoffOneNano": {}
+        }
+    }
+}

@@ -1,0 +1,252 @@
+{
+    "b5d7bc3d88a45450fab12b79bcb342e84b7bbb08": {
+        "b5d7bc3d88a45450fab12b79bcb342e84b7bbb08": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "static java.util.Map io.protostuff.runtime.RuntimeSchema.findInstanceFields(java.lang.Class)": {
+                    "total_execution_time": 21564034,
+                    "self_execution_time": 21564034,
+                    "average_self_time": 1797002.8333333333,
+                    "cumulative_execution_time": 21564034,
+                    "min_execution_time": 160883,
+                    "max_execution_time": 5725098,
+                    "call_count": 12
+                },
+                "public static io.protostuff.runtime.RuntimeEnv$Instantiator io.protostuff.runtime.RuntimeEnv.newInstantiator(java.lang.Class)": {
+                    "total_execution_time": 4856751,
+                    "self_execution_time": 4856751,
+                    "average_self_time": 404729.25,
+                    "cumulative_execution_time": 4856751,
+                    "min_execution_time": 119066,
+                    "max_execution_time": 1345468,
+                    "call_count": 12
+                },
+                "private io.protostuff.runtime.FieldMap io.protostuff.runtime.RuntimeSchema.createFieldMap(java.util.Collection)": {
+                    "total_execution_time": 44480337,
+                    "self_execution_time": 44480337,
+                    "average_self_time": 3706694.75,
+                    "cumulative_execution_time": 44480337,
+                    "min_execution_time": 112855,
+                    "max_execution_time": 10699469,
+                    "call_count": 12
+                },
+                "public static io.protostuff.runtime.RuntimeSchema io.protostuff.runtime.RuntimeSchema.createFrom(java.lang.Class,java.util.Set,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 947925681,
+                    "self_execution_time": 877024559,
+                    "average_self_time": 73085379.91666667,
+                    "cumulative_execution_time": 947925681,
+                    "min_execution_time": 996048,
+                    "max_execution_time": 347265072,
+                    "call_count": 12
+                }
+            }
+        },
+        "80ec898039457a63e179350868c6e13524ed08c4": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "static java.util.Map io.protostuff.runtime.RuntimeSchema.findInstanceFields(java.lang.Class)": {
+                    "total_execution_time": 19430993,
+                    "self_execution_time": 19430993,
+                    "average_self_time": 1619249.4166666667,
+                    "cumulative_execution_time": 19430993,
+                    "min_execution_time": 173025,
+                    "max_execution_time": 4470566,
+                    "call_count": 12
+                },
+                "public static io.protostuff.runtime.RuntimeEnv$Instantiator io.protostuff.runtime.RuntimeEnv.newInstantiator(java.lang.Class)": {
+                    "total_execution_time": 2870781,
+                    "self_execution_time": 2870781,
+                    "average_self_time": 260980.0909090909,
+                    "cumulative_execution_time": 2870781,
+                    "min_execution_time": 118438,
+                    "max_execution_time": 756390,
+                    "call_count": 11
+                },
+                "private io.protostuff.runtime.FieldMap io.protostuff.runtime.RuntimeSchema.createFieldMap(java.util.Collection)": {
+                    "total_execution_time": 40821223,
+                    "self_execution_time": 40821223,
+                    "average_self_time": 3401768.5833333335,
+                    "cumulative_execution_time": 40821223,
+                    "min_execution_time": 111126,
+                    "max_execution_time": 8684908,
+                    "call_count": 12
+                },
+                "public static io.protostuff.runtime.RuntimeSchema io.protostuff.runtime.RuntimeSchema.createFrom(java.lang.Class,java.util.Set,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 902529988,
+                    "self_execution_time": 835262825,
+                    "average_self_time": 69605235.41666667,
+                    "cumulative_execution_time": 902529988,
+                    "min_execution_time": 979549,
+                    "max_execution_time": 326103639,
+                    "call_count": 12
+                }
+            }
+        }
+    },
+    "b87ab5758c5acbe740d9a7acb52f70f45ac789d3": {
+        "b87ab5758c5acbe740d9a7acb52f70f45ac789d3": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.runtime_serialize_10_int_fields": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 7580714,
+                    "self_execution_time": 7580714,
+                    "average_self_time": 120328.79365079365,
+                    "cumulative_execution_time": 7580714,
+                    "min_execution_time": 72319,
+                    "max_execution_time": 305750,
+                    "call_count": 63
+                }
+            }
+        },
+        "c54c83c0483b6a00ecd5e456ee25ee067eee15f3": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.runtime_serialize_10_int_fields": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 9492642,
+                    "self_execution_time": 9492642,
+                    "average_self_time": 150676.85714285713,
+                    "cumulative_execution_time": 9492642,
+                    "min_execution_time": 74292,
+                    "max_execution_time": 349261,
+                    "call_count": 63
+                }
+            }
+        }
+    },
+    "bc64f75cdc82426fe15cc238f46585ef42e7be53": {
+        "bc64f75cdc82426fe15cc238f46585ef42e7be53": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.runtime_serialize_10_int_fields": {
+                "private static java.lang.reflect.Constructor io.protostuff.runtime.RuntimeEnv.getConstructor(java.lang.Class)": {
+                    "total_execution_time": 19746582,
+                    "self_execution_time": 19746582,
+                    "average_self_time": 1645548.5,
+                    "cumulative_execution_time": 19746582,
+                    "min_execution_time": 239954,
+                    "max_execution_time": 6919110,
+                    "call_count": 12
+                }
+            }
+        },
+        "22ce4cab133856737bada441d04b830d5ed68db5": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.runtime_serialize_10_int_fields": {
+                "private static java.lang.reflect.Constructor io.protostuff.runtime.RuntimeEnv.getConstructor(java.lang.Class)": {
+                    "total_execution_time": 20616866,
+                    "self_execution_time": 20616866,
+                    "average_self_time": 1718072.1666666667,
+                    "cumulative_execution_time": 20616866,
+                    "min_execution_time": 245094,
+                    "max_execution_time": 6919925,
+                    "call_count": 12
+                }
+            }
+        }
+    },
+    "3a26b9899dfb9c6d3784db0fd72431c4664fcdc9": {
+        "3a26b9899dfb9c6d3784db0fd72431c4664fcdc9": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 9756258,
+                    "self_execution_time": 9756258,
+                    "average_self_time": 154861.2380952381,
+                    "cumulative_execution_time": 9756258,
+                    "min_execution_time": 89464,
+                    "max_execution_time": 345982,
+                    "call_count": 63
+                }
+            }
+        },
+        "ef35de7ba5fe2b36a43fab322a3c337a0b203910": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 9065242,
+                    "self_execution_time": 9065242,
+                    "average_self_time": 143892.73015873015,
+                    "cumulative_execution_time": 9065242,
+                    "min_execution_time": 74000,
+                    "max_execution_time": 321630,
+                    "call_count": 63
+                }
+            }
+        }
+    },
+    "8b09091191bf5b997a22d01309e293c51a76e784": {
+        "8b09091191bf5b997a22d01309e293c51a76e784": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 8878049,
+                    "self_execution_time": 8878049,
+                    "average_self_time": 140921.4126984127,
+                    "cumulative_execution_time": 8878049,
+                    "min_execution_time": 73673,
+                    "max_execution_time": 393651,
+                    "call_count": 63
+                }
+            }
+        },
+        "62fcef1859620485781e160df4c541d7eea02598": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 8336479,
+                    "self_execution_time": 8336479,
+                    "average_self_time": 132325.0634920635,
+                    "cumulative_execution_time": 8336479,
+                    "min_execution_time": 74300,
+                    "max_execution_time": 659550,
+                    "call_count": 63
+                }
+            }
+        }
+    },
+    "14c6585227d724138eaab59583de5fe8b6298071": {
+        "14c6585227d724138eaab59583de5fe8b6298071": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeSchema io.protostuff.runtime.RuntimeSchema.createFrom(java.lang.Class,java.util.Set,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 1041872189,
+                    "self_execution_time": 1041872189,
+                    "average_self_time": 86822682.41666667,
+                    "cumulative_execution_time": 1041872189,
+                    "min_execution_time": 398337,
+                    "max_execution_time": 356653961,
+                    "call_count": 12
+                }
+            }
+        },
+        "5bbf90998bf1251ea708770c46a19cd47f446c28": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeSchema io.protostuff.runtime.RuntimeSchema.createFrom(java.lang.Class,java.util.Set,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 998174323,
+                    "self_execution_time": 998174323,
+                    "average_self_time": 83181193.58333333,
+                    "cumulative_execution_time": 998174323,
+                    "min_execution_time": 427342,
+                    "max_execution_time": 340416944,
+                    "call_count": 12
+                }
+            }
+        }
+    },
+    "72e7c529f20b9e81a670591536cf9fc1846e9bab": {
+        "72e7c529f20b9e81a670591536cf9fc1846e9bab": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 10696095,
+                    "self_execution_time": 10696095,
+                    "average_self_time": 169779.2857142857,
+                    "cumulative_execution_time": 10696095,
+                    "min_execution_time": 108678,
+                    "max_execution_time": 514319,
+                    "call_count": 63
+                }
+            }
+        },
+        "fd1d171595c832c272fab4e2042520b350a54e69": {
+            "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field": {
+                "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)": {
+                    "total_execution_time": 9851337,
+                    "self_execution_time": 9851337,
+                    "average_self_time": 156370.42857142858,
+                    "cumulative_execution_time": 9851337,
+                    "min_execution_time": 90563,
+                    "max_execution_time": 696471,
+                    "call_count": 63
+                }
+            }
+        }
+    }
+}

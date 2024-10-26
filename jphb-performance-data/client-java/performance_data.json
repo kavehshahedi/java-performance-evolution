@@ -1,0 +1,599 @@
+{
+    "b76e1e95d1c8ce3141584e2a2d260519c3a6eb19": {
+        "b76e1e95d1c8ce3141584e2a2d260519c3a6eb19": {
+            "io.prometheus.benchmark.CounterBenchmark.codahaleCounterIncBenchmark": {
+                "protected io.prometheus.client.Counter$Child io.prometheus.client.Counter.newChild()": {
+                    "total_execution_time": 82774533,
+                    "self_execution_time": 82774533,
+                    "average_self_time": 13795755.5,
+                    "cumulative_execution_time": 82774533,
+                    "min_execution_time": 160217,
+                    "max_execution_time": 32203579,
+                    "call_count": 6
+                }
+            },
+            "io.prometheus.benchmark.SummaryBenchmark.prometheusSimpleSummaryBenchmark": {
+                "protected io.prometheus.client.Histogram$Child io.prometheus.client.Histogram.newChild()": {
+                    "total_execution_time": 47279310,
+                    "self_execution_time": 47279310,
+                    "average_self_time": 7879885.0,
+                    "cumulative_execution_time": 47279310,
+                    "min_execution_time": 263458,
+                    "max_execution_time": 18527480,
+                    "call_count": 6
+                }
+            }
+        },
+        "8fcc7bc03dfbabd0c15776640d5fe52942aa9309": {
+            "io.prometheus.benchmark.CounterBenchmark.codahaleCounterIncBenchmark": {
+                "protected io.prometheus.client.Counter$Child io.prometheus.client.Counter.newChild()": {
+                    "total_execution_time": 72573920,
+                    "self_execution_time": 72573920,
+                    "average_self_time": 12095653.333333334,
+                    "cumulative_execution_time": 72573920,
+                    "min_execution_time": 192091,
+                    "max_execution_time": 28744918,
+                    "call_count": 6
+                }
+            },
+            "io.prometheus.benchmark.SummaryBenchmark.prometheusSimpleSummaryBenchmark": {
+                "protected io.prometheus.client.Histogram$Child io.prometheus.client.Histogram.newChild()": {
+                    "total_execution_time": 32740224,
+                    "self_execution_time": 32740224,
+                    "average_self_time": 5456704.0,
+                    "cumulative_execution_time": 32740224,
+                    "min_execution_time": 139140,
+                    "max_execution_time": 13278606,
+                    "call_count": 6
+                }
+            }
+        }
+    },
+    "7b31d68d23816baed5afea6dc7b04a660f08bebc": {
+        "7b31d68d23816baed5afea6dc7b04a660f08bebc": {
+            "io.prometheus.benchmark.SummaryBenchmark.prometheusSimpleSummaryBenchmark": {
+                "protected io.prometheus.client.Summary$Child io.prometheus.client.Summary.newChild()": {
+                    "total_execution_time": 95224269,
+                    "self_execution_time": 95224269,
+                    "average_self_time": 15870711.5,
+                    "cumulative_execution_time": 95224269,
+                    "min_execution_time": 145179,
+                    "max_execution_time": 32444347,
+                    "call_count": 6
+                }
+            }
+        },
+        "ff3c8d7ef6c0879d6f643c938ed70488d8be8093": {
+            "io.prometheus.benchmark.SummaryBenchmark.prometheusSimpleSummaryBenchmark": {
+                "protected io.prometheus.client.Summary$Child io.prometheus.client.Summary.newChild()": {
+                    "total_execution_time": 124908021,
+                    "self_execution_time": 124908021,
+                    "average_self_time": 20818003.5,
+                    "cumulative_execution_time": 124908021,
+                    "min_execution_time": 290785,
+                    "max_execution_time": 47940541,
+                    "call_count": 6
+                }
+            }
+        }
+    },
+    "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c": {
+        "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "public void io.prometheus.client.CKMSQuantiles.insert(double)": {
+                    "total_execution_time": 8722310715,
+                    "self_execution_time": 8476930377,
+                    "average_self_time": 2826.482924428555,
+                    "cumulative_execution_time": 8722310715,
+                    "min_execution_time": 1769,
+                    "max_execution_time": 73282,
+                    "call_count": 2998783
+                },
+                "void io.prometheus.client.CKMSQuantiles.compress()": {
+                    "total_execution_time": 296588797,
+                    "self_execution_time": 296588797,
+                    "average_self_time": 12679.611688256167,
+                    "cumulative_execution_time": 296588797,
+                    "min_execution_time": 6855,
+                    "max_execution_time": 223005,
+                    "call_count": 23391
+                },
+                "public double io.prometheus.client.CKMSQuantiles.get(double)": {
+                    "total_execution_time": 82767928341,
+                    "self_execution_time": 82767928341,
+                    "average_self_time": 2706.4216731107513,
+                    "cumulative_execution_time": 82767928341,
+                    "min_execution_time": 2330,
+                    "max_execution_time": 17053,
+                    "call_count": 30582052
+                }
+            }
+        },
+        "787eef37843e3ea0972d064eb567d0639a8aba5f": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "public void io.prometheus.client.CKMSQuantiles.insert(double)": {
+                    "total_execution_time": 8379730326,
+                    "self_execution_time": 8279697229,
+                    "average_self_time": 2760.542282685199,
+                    "cumulative_execution_time": 8379730326,
+                    "min_execution_time": 1790,
+                    "max_execution_time": 83116,
+                    "call_count": 2999128
+                },
+                "private void io.prometheus.client.CKMSQuantiles.compress()": {
+                    "total_execution_time": 135498384,
+                    "self_execution_time": 135498384,
+                    "average_self_time": 23385.98274076631,
+                    "cumulative_execution_time": 135498384,
+                    "min_execution_time": 12242,
+                    "max_execution_time": 167685,
+                    "call_count": 5794
+                },
+                "public double io.prometheus.client.CKMSQuantiles.get(double)": {
+                    "total_execution_time": 78520038254,
+                    "self_execution_time": 78520038254,
+                    "average_self_time": 2424.6807882123267,
+                    "cumulative_execution_time": 78520038254,
+                    "min_execution_time": 2086,
+                    "max_execution_time": 18371,
+                    "call_count": 32383660
+                }
+            }
+        }
+    },
+    "37503bcc71edff0382b106a252308f341ba57a99": {
+        "37503bcc71edff0382b106a252308f341ba57a99": {
+            "io.prometheus.benchmark.GaugeBenchmark.prometheusSimpleGaugeDecBenchmark": {
+                "public void io.prometheus.client.DoubleAdder.add(double)": {
+                    "total_execution_time": 7847811483,
+                    "self_execution_time": 7847811483,
+                    "average_self_time": 2485.900532764595,
+                    "cumulative_execution_time": 7847811483,
+                    "min_execution_time": 1853,
+                    "max_execution_time": 32803,
+                    "call_count": 3156929
+                }
+            }
+        },
+        "b90fef7b6c7d5461bf1511bb86215328c30c40f0": {
+            "io.prometheus.benchmark.GaugeBenchmark.prometheusSimpleGaugeDecBenchmark": {
+                "public void io.prometheus.client.DoubleAdder.add(double)": {
+                    "total_execution_time": 7771669686,
+                    "self_execution_time": 7771669686,
+                    "average_self_time": 2512.94184031988,
+                    "cumulative_execution_time": 7771669686,
+                    "min_execution_time": 1849,
+                    "max_execution_time": 28922,
+                    "call_count": 3092658
+                }
+            }
+        }
+    },
+    "fe42313813b96dc92cf61f94fcfb79a8157b88a4": {
+        "fe42313813b96dc92cf61f94fcfb79a8157b88a4": {
+            "io.prometheus.benchmark.GaugeBenchmark.prometheusSimpleGaugeDecBenchmark": {
+                "final boolean io.prometheus.client.Striped64.casBase(long,long)": {
+                    "total_execution_time": 7824505334,
+                    "self_execution_time": 7824505334,
+                    "average_self_time": 2498.377256145359,
+                    "cumulative_execution_time": 7824505334,
+                    "min_execution_time": 1832,
+                    "max_execution_time": 36410,
+                    "call_count": 3131835
+                }
+            }
+        },
+        "ac5136b864d5d90a7ce5e1da0c235da2dcfc18e2": {
+            "io.prometheus.benchmark.GaugeBenchmark.prometheusSimpleGaugeDecBenchmark": {
+                "final boolean io.prometheus.client.Striped64.casBase(long,long)": {
+                    "total_execution_time": 7841792356,
+                    "self_execution_time": 7841792356,
+                    "average_self_time": 2572.0981805252704,
+                    "cumulative_execution_time": 7841792356,
+                    "min_execution_time": 1814,
+                    "max_execution_time": 26879,
+                    "call_count": 3048792
+                }
+            }
+        }
+    },
+    "f9a117126157019af5248be6588dd442e3c6dd6a": {
+        "f9a117126157019af5248be6588dd442e3c6dd6a": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "int io.prometheus.client.CKMSQuantiles.f(int)": {
+                    "total_execution_time": 85487220444,
+                    "self_execution_time": 85487220444,
+                    "average_self_time": 2394.5336764760214,
+                    "cumulative_execution_time": 85487220444,
+                    "min_execution_time": 1820,
+                    "max_execution_time": 45842,
+                    "call_count": 35700989
+                },
+                "public double io.prometheus.client.CKMSQuantiles.get(double)": {
+                    "total_execution_time": 135886975287,
+                    "self_execution_time": 69991161743,
+                    "average_self_time": 48923.31472358332,
+                    "cumulative_execution_time": 135886975287,
+                    "min_execution_time": 84886,
+                    "max_execution_time": 271265,
+                    "call_count": 1424929
+                }
+            }
+        },
+        "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "int io.prometheus.client.CKMSQuantiles.f(int)": {
+                    "total_execution_time": 84797758843,
+                    "self_execution_time": 84797758843,
+                    "average_self_time": 2399.892444704012,
+                    "cumulative_execution_time": 84797758843,
+                    "min_execution_time": 1795,
+                    "max_execution_time": 45720,
+                    "call_count": 35333983
+                },
+                "public double io.prometheus.client.CKMSQuantiles.get(double)": {
+                    "total_execution_time": 135613074462,
+                    "self_execution_time": 69525226787,
+                    "average_self_time": 49163.13465457575,
+                    "cumulative_execution_time": 135613074462,
+                    "min_execution_time": 83869,
+                    "max_execution_time": 299526,
+                    "call_count": 1410998
+                }
+            }
+        }
+    },
+    "c82ab1fa65b859c7844e7d9e378aa8b3a954be47": {
+        "c82ab1fa65b859c7844e7d9e378aa8b3a954be47": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "private java.lang.String io.prometheus.metrics.core.metrics.MetricWithFixedMetadata.makeName(java.lang.String,io.prometheus.metrics.model.snapshots.Unit)": {
+                    "total_execution_time": 17869629,
+                    "self_execution_time": 17869629,
+                    "average_self_time": 5956543.0,
+                    "cumulative_execution_time": 17869629,
+                    "min_execution_time": 5054760,
+                    "max_execution_time": 7416096,
+                    "call_count": 3
+                },
+                "private void io.prometheus.metrics.model.snapshots.MetricMetadata.validate()": {
+                    "total_execution_time": 652605,
+                    "self_execution_time": 652605,
+                    "average_self_time": 217535.0,
+                    "cumulative_execution_time": 652605,
+                    "min_execution_time": 136538,
+                    "max_execution_time": 265371,
+                    "call_count": 3
+                }
+            }
+        },
+        "2ae979d459b7cd3d9856fc8220eafefeab816fb6": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "private java.lang.String io.prometheus.metrics.core.metrics.MetricWithFixedMetadata.makeName(java.lang.String,io.prometheus.metrics.model.snapshots.Unit)": {
+                    "total_execution_time": 16153572,
+                    "self_execution_time": 16153572,
+                    "average_self_time": 5384524.0,
+                    "cumulative_execution_time": 16153572,
+                    "min_execution_time": 4554291,
+                    "max_execution_time": 6589473,
+                    "call_count": 3
+                },
+                "private void io.prometheus.metrics.model.snapshots.MetricMetadata.validate()": {
+                    "total_execution_time": 571701,
+                    "self_execution_time": 571701,
+                    "average_self_time": 190567.0,
+                    "cumulative_execution_time": 571701,
+                    "min_execution_time": 128272,
+                    "max_execution_time": 233857,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "608592e2bf2fe124c476e804153b3c04317a0919": {
+        "608592e2bf2fe124c476e804153b3c04317a0919": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "public static io.prometheus.metrics.config.PrometheusProperties io.prometheus.metrics.config.PrometheusPropertiesLoader.load(java.util.Map) throws io.prometheus.metrics.config.PrometheusPropertiesException": {
+                    "total_execution_time": 290940608,
+                    "self_execution_time": 290940608,
+                    "average_self_time": 96980202.66666667,
+                    "cumulative_execution_time": 290940608,
+                    "min_execution_time": 74148335,
+                    "max_execution_time": 129146971,
+                    "call_count": 3
+                }
+            }
+        },
+        "6b97066ae90248dd9a907213a703db7f73c2dcac": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "public static io.prometheus.metrics.config.PrometheusProperties io.prometheus.metrics.config.PrometheusPropertiesLoader.load(java.util.Map) throws io.prometheus.metrics.config.PrometheusPropertiesException": {
+                    "total_execution_time": 185278068,
+                    "self_execution_time": 185278068,
+                    "average_self_time": 61759356.0,
+                    "cumulative_execution_time": 185278068,
+                    "min_execution_time": 52909371,
+                    "max_execution_time": 78595308,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "ca6145fdf8ad01093f09d1168fd683a1c6c64e59": {
+        "ca6145fdf8ad01093f09d1168fd683a1c6c64e59": {
+            "io.prometheus.client.benchmark.CounterBenchmark.prometheusSimpleCounterChildIncBenchmark": {
+                "public static boolean io.prometheus.client.exemplars.tracer.otel.OpenTelemetrySpanContextSupplier.isAvailable()": {
+                    "total_execution_time": 23027179,
+                    "self_execution_time": 23027179,
+                    "average_self_time": 7675726.333333333,
+                    "cumulative_execution_time": 23027179,
+                    "min_execution_time": 4985669,
+                    "max_execution_time": 12376645,
+                    "call_count": 3
+                },
+                "public static boolean io.prometheus.client.exemplars.tracer.otel_agent.OpenTelemetryAgentSpanContextSupplier.isAvailable()": {
+                    "total_execution_time": 1924577,
+                    "self_execution_time": 1924577,
+                    "average_self_time": 641525.6666666666,
+                    "cumulative_execution_time": 1924577,
+                    "min_execution_time": 372299,
+                    "max_execution_time": 1060300,
+                    "call_count": 3
+                }
+            }
+        },
+        "4edf91118760f06e7b9ba12937b18850de343972": {
+            "io.prometheus.client.benchmark.CounterBenchmark.prometheusSimpleCounterChildIncBenchmark": {
+                "public static boolean io.prometheus.client.exemplars.tracer.otel.OpenTelemetrySpanContextSupplier.isAvailable()": {
+                    "total_execution_time": 21191352,
+                    "self_execution_time": 21191352,
+                    "average_self_time": 7063784.0,
+                    "cumulative_execution_time": 21191352,
+                    "min_execution_time": 5598465,
+                    "max_execution_time": 8612544,
+                    "call_count": 3
+                },
+                "public static boolean io.prometheus.client.exemplars.tracer.otel_agent.OpenTelemetryAgentSpanContextSupplier.isAvailable()": {
+                    "total_execution_time": 1411544,
+                    "self_execution_time": 1411544,
+                    "average_self_time": 470514.6666666667,
+                    "cumulative_execution_time": 1411544,
+                    "min_execution_time": 389625,
+                    "max_execution_time": 548902,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "4b6e78fbff8e794cb141e02c46a4d1d36113db4b": {
+        "4b6e78fbff8e794cb141e02c46a4d1d36113db4b": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "public static io.prometheus.metrics.config.PrometheusProperties io.prometheus.metrics.config.PrometheusPropertiesLoader.load(java.util.Map) throws io.prometheus.metrics.config.PrometheusPropertiesException": {
+                    "total_execution_time": 187901018,
+                    "self_execution_time": 187901018,
+                    "average_self_time": 62633672.666666664,
+                    "cumulative_execution_time": 187901018,
+                    "min_execution_time": 48886805,
+                    "max_execution_time": 73214582,
+                    "call_count": 3
+                },
+                "public static io.prometheus.metrics.config.PrometheusProperties io.prometheus.metrics.config.PrometheusPropertiesLoader.load() throws io.prometheus.metrics.config.PrometheusPropertiesException": {
+                    "total_execution_time": 205811620,
+                    "self_execution_time": 17910602,
+                    "average_self_time": 5970200.666666667,
+                    "cumulative_execution_time": 205811620,
+                    "min_execution_time": 54458022,
+                    "max_execution_time": 79893495,
+                    "call_count": 3
+                }
+            }
+        },
+        "eb9a77f1dccdd025aeecc63c0b3a3e5f2398e18f": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "public static io.prometheus.metrics.config.PrometheusProperties io.prometheus.metrics.config.PrometheusPropertiesLoader.load() throws io.prometheus.metrics.config.PrometheusPropertiesException": {
+                    "total_execution_time": 182993954,
+                    "self_execution_time": 182993954,
+                    "average_self_time": 60997984.666666664,
+                    "cumulative_execution_time": 182993954,
+                    "min_execution_time": 52116050,
+                    "max_execution_time": 78133236,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "8076e9cf2bc4c9809ae855441c70cd813b0d816f": {
+        "8076e9cf2bc4c9809ae855441c70cd813b0d816f": {
+            "io.prometheus.metrics.benchmarks.CounterBenchmark.prometheusInc": {
+                "static io.prometheus.metrics.config.ExporterFilterProperties io.prometheus.metrics.config.ExporterFilterProperties.load(java.lang.String,java.util.Map) throws io.prometheus.metrics.config.PrometheusPropertiesException": {
+                    "total_execution_time": 17119930,
+                    "self_execution_time": 17119930,
+                    "average_self_time": 5706643.333333333,
+                    "cumulative_execution_time": 17119930,
+                    "min_execution_time": 5147790,
+                    "max_execution_time": 6326464,
+                    "call_count": 3
+                }
+            }
+        },
+        "c57e49cab206777e09b48e350455225148039433": {
+            "io.prometheus.metrics.benchmarks.CounterBenchmark.prometheusInc": {
+                "static io.prometheus.metrics.config.ExporterFilterProperties io.prometheus.metrics.config.ExporterFilterProperties.load(java.lang.String,java.util.Map) throws io.prometheus.metrics.config.PrometheusPropertiesException": {
+                    "total_execution_time": 17026912,
+                    "self_execution_time": 17026912,
+                    "average_self_time": 5675637.333333333,
+                    "cumulative_execution_time": 17026912,
+                    "min_execution_time": 4945219,
+                    "max_execution_time": 6970637,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "966360b2735fb975a7110699efd4cb62284dfc0b": {
+        "966360b2735fb975a7110699efd4cb62284dfc0b": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()": {
+                    "total_execution_time": 300689025,
+                    "self_execution_time": 300689025,
+                    "average_self_time": 181795.05743651753,
+                    "cumulative_execution_time": 300689025,
+                    "min_execution_time": 54581,
+                    "max_execution_time": 516643,
+                    "call_count": 1654
+                }
+            }
+        },
+        "4b6e78fbff8e794cb141e02c46a4d1d36113db4b": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()": {
+                    "total_execution_time": 304015045,
+                    "self_execution_time": 304015045,
+                    "average_self_time": 183805.9522370012,
+                    "cumulative_execution_time": 304015045,
+                    "min_execution_time": 65807,
+                    "max_execution_time": 711342,
+                    "call_count": 1654
+                }
+            }
+        }
+    },
+    "756b5ebcda6d9b5b5c9f66ac565cd459153ff3b4": {
+        "756b5ebcda6d9b5b5c9f66ac565cd459153ff3b4": {
+            "io.prometheus.client.benchmark.ExemplarsBenchmark.testCounterWithExemplars": {
+                "private io.prometheus.client.exemplars.Exemplar io.prometheus.client.exemplars.DefaultExemplarSampler.doSample(double,io.prometheus.client.exemplars.Exemplar)": {
+                    "total_execution_time": 71550734899,
+                    "self_execution_time": 71550734899,
+                    "average_self_time": 2533.7214283880476,
+                    "cumulative_execution_time": 71550734899,
+                    "min_execution_time": 1828,
+                    "max_execution_time": 24521,
+                    "call_count": 28239385
+                }
+            }
+        },
+        "84262002f3e2edbf09754e3eb80e28597dc1179a": {
+            "io.prometheus.client.benchmark.ExemplarsBenchmark.testCounterWithExemplars": {
+                "private io.prometheus.client.exemplars.Exemplar io.prometheus.client.exemplars.DefaultExemplarSampler.doSample(double,io.prometheus.client.exemplars.Exemplar)": {
+                    "total_execution_time": 73434644580,
+                    "self_execution_time": 73434644580,
+                    "average_self_time": 2197.9850268710097,
+                    "cumulative_execution_time": 73434644580,
+                    "min_execution_time": 1837,
+                    "max_execution_time": 33508,
+                    "call_count": 33409984
+                }
+            }
+        }
+    },
+    "3568b2477c60dcde4d9380b666ad60a33d0f4208": {
+        "3568b2477c60dcde4d9380b666ad60a33d0f4208": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "int io.prometheus.client.CKMSQuantiles.f(int)": {
+                    "total_execution_time": 88661703116,
+                    "self_execution_time": 88661703116,
+                    "average_self_time": 2277.6009599546564,
+                    "cumulative_execution_time": 88661703116,
+                    "min_execution_time": 1809,
+                    "max_execution_time": 48819,
+                    "call_count": 38927672
+                }
+            }
+        },
+        "a3954b03512376050f3609ae9fa462fda7fb427a": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "int io.prometheus.client.CKMSQuantiles.f(int)": {
+                    "total_execution_time": 85603149951,
+                    "self_execution_time": 85603149951,
+                    "average_self_time": 2261.940989214506,
+                    "cumulative_execution_time": 85603149951,
+                    "min_execution_time": 1866,
+                    "max_execution_time": 29112,
+                    "call_count": 37844997
+                }
+            }
+        }
+    },
+    "fc447f8861a48040ad4b956cf3e5af86f99985e4": {
+        "fc447f8861a48040ad4b956cf3e5af86f99985e4": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()": {
+                    "total_execution_time": 311049298,
+                    "self_execution_time": 311049298,
+                    "average_self_time": 188058.82587666262,
+                    "cumulative_execution_time": 311049298,
+                    "min_execution_time": 49298,
+                    "max_execution_time": 509508,
+                    "call_count": 1654
+                }
+            }
+        },
+        "7f0265184adb86182fb7be029acbf5c2efd1c742": {
+            "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic": {
+                "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()": {
+                    "total_execution_time": 312191042,
+                    "self_execution_time": 312191042,
+                    "average_self_time": 188749.11850060459,
+                    "cumulative_execution_time": 312191042,
+                    "min_execution_time": 52070,
+                    "max_execution_time": 924784,
+                    "call_count": 1654
+                }
+            }
+        }
+    },
+    "95872fc77cd55f88de9ee377e07fbc4aa2410ff7": {
+        "95872fc77cd55f88de9ee377e07fbc4aa2410ff7": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "public double io.prometheus.client.CKMSQuantiles.get(double)": {
+                    "total_execution_time": 235638017552,
+                    "self_execution_time": 235638017552,
+                    "average_self_time": 2637.782210895171,
+                    "cumulative_execution_time": 235638017552,
+                    "min_execution_time": 1911,
+                    "max_execution_time": 28768,
+                    "call_count": 89331870
+                }
+            }
+        },
+        "c16d4ae26630686f56b4b8d898e94bba7f8e8229": {
+            "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark": {
+                "public double io.prometheus.client.CKMSQuantiles.get(double)": {
+                    "total_execution_time": 266817844644,
+                    "self_execution_time": 266817844644,
+                    "average_self_time": 3516.5213144599793,
+                    "cumulative_execution_time": 266817844644,
+                    "min_execution_time": 2496,
+                    "max_execution_time": 29362,
+                    "call_count": 75875509
+                }
+            }
+        }
+    },
+    "6b10e1f9273bfbadc815af3f6b8509fef7437101": {
+        "6b10e1f9273bfbadc815af3f6b8509fef7437101": {
+            "io.prometheus.benchmark.CounterBenchmark.codahaleCounterIncBenchmark": {
+                "public java.lang.Object io.prometheus.client.SimpleCollector.labels(java.lang.String[])": {
+                    "total_execution_time": 78532425,
+                    "self_execution_time": 78532425,
+                    "average_self_time": 13088737.5,
+                    "cumulative_execution_time": 78532425,
+                    "min_execution_time": 143061,
+                    "max_execution_time": 26767683,
+                    "call_count": 6
+                }
+            }
+        },
+        "5f7292054d03d7eef268fd785695e21a5835e55d": {
+            "io.prometheus.benchmark.CounterBenchmark.codahaleCounterIncBenchmark": {
+                "public java.lang.Object io.prometheus.client.SimpleCollector.labels(java.lang.String[])": {
+                    "total_execution_time": 94601713,
+                    "self_execution_time": 94601713,
+                    "average_self_time": 15766952.166666666,
+                    "cumulative_execution_time": 94601713,
+                    "min_execution_time": 142342,
+                    "max_execution_time": 38656678,
+                    "call_count": 6
+                }
+            }
+        }
+    }
+}

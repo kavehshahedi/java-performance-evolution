@@ -1,0 +1,132 @@
+{
+    "8175ff51b212c85300748a8459114f241b84404b": {
+        "8175ff51b212c85300748a8459114f241b84404b": {
+            "net.openhft.chronicle.core.benchmark.Main.round6up": {
+                "public static double net.openhft.chronicle.core.Maths.round6up(double)": {
+                    "total_execution_time": 74203021046,
+                    "self_execution_time": 74203021046,
+                    "average_self_time": 2312.7907501736313,
+                    "cumulative_execution_time": 74203021046,
+                    "min_execution_time": 1829,
+                    "max_execution_time": 25640,
+                    "call_count": 32083759
+                }
+            }
+        },
+        "90a1c0bd596d04b3bdd9e8f97ca0eb63ab212832": {
+            "net.openhft.chronicle.core.benchmark.Main.round6up": {
+                "public static double net.openhft.chronicle.core.Maths.round6up(double)": {
+                    "total_execution_time": 74022134031,
+                    "self_execution_time": 74022134031,
+                    "average_self_time": 2303.7777327223052,
+                    "cumulative_execution_time": 74022134031,
+                    "min_execution_time": 1820,
+                    "max_execution_time": 22436,
+                    "call_count": 32130762
+                }
+            }
+        }
+    },
+    "91272de397485ff768cba4e019e0ab4a39467726": {
+        "91272de397485ff768cba4e019e0ab4a39467726": {
+            "net.openhft.chronicle.core.benchmark.Main.is7bitAddr": {
+                "static boolean net.openhft.chronicle.core.Bootstrap.isArm0()": {
+                    "total_execution_time": 17178096,
+                    "self_execution_time": 17178096,
+                    "average_self_time": 5726032.0,
+                    "cumulative_execution_time": 17178096,
+                    "min_execution_time": 4563980,
+                    "max_execution_time": 6967328,
+                    "call_count": 3
+                }
+            }
+        },
+        "992c9d545cd7b1fbf96e488bb0ce662a15923eb1": {
+            "net.openhft.chronicle.core.benchmark.Main.is7bitAddr": {
+                "static boolean net.openhft.chronicle.core.Bootstrap.isArm0()": {
+                    "total_execution_time": 14800493,
+                    "self_execution_time": 14800493,
+                    "average_self_time": 4933497.666666667,
+                    "cumulative_execution_time": 14800493,
+                    "min_execution_time": 4748088,
+                    "max_execution_time": 5216261,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "c88fd196f6ab93d8f051dd557edd58ef53bc1b1b": {
+        "c88fd196f6ab93d8f051dd557edd58ef53bc1b1b": {
+            "net.openhft.chronicle.core.benchmark.TimeProviders.unique": {
+                "static void net.openhft.chronicle.core.ChronicleInit.postInit()": {
+                    "total_execution_time": 15191383,
+                    "self_execution_time": 15191383,
+                    "average_self_time": 5063794.333333333,
+                    "cumulative_execution_time": 15191383,
+                    "min_execution_time": 4498384,
+                    "max_execution_time": 6146075,
+                    "call_count": 3
+                }
+            }
+        },
+        "ca326a5fb204d510e26ea60ea412238d28eefe7f": {
+            "net.openhft.chronicle.core.benchmark.TimeProviders.unique": {
+                "static void net.openhft.chronicle.core.ChronicleInit.postInit()": {
+                    "total_execution_time": 13997762,
+                    "self_execution_time": 13997762,
+                    "average_self_time": 4665920.666666667,
+                    "cumulative_execution_time": 13997762,
+                    "min_execution_time": 4320748,
+                    "max_execution_time": 5315358,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "d562eb307d8c95b8cfe3c2dc3ee81827582ab5b7": {
+        "d562eb307d8c95b8cfe3c2dc3ee81827582ab5b7": {
+            "net.openhft.chronicle.core.benchmark.Main.roundN6": {
+                "public static long net.openhft.chronicle.core.Maths.tens(int)": {
+                    "total_execution_time": 36959771973,
+                    "self_execution_time": 36959771973,
+                    "average_self_time": 2304.31411118671,
+                    "cumulative_execution_time": 36959771973,
+                    "min_execution_time": 1792,
+                    "max_execution_time": 23858,
+                    "call_count": 16039381
+                },
+                "public static long net.openhft.chronicle.core.Maths.roundingFactor(int)": {
+                    "total_execution_time": 111304796883,
+                    "self_execution_time": 74290593320,
+                    "average_self_time": 4632.005896298764,
+                    "cumulative_execution_time": 111304796883,
+                    "min_execution_time": 5470,
+                    "max_execution_time": 42444,
+                    "call_count": 16038161
+                }
+            }
+        },
+        "030e8157ff7ba3b2dbb8c95999dd1c94b7c7f5d5": {
+            "net.openhft.chronicle.core.benchmark.Main.roundN6": {
+                "public static long net.openhft.chronicle.core.Maths.tens(int)": {
+                    "total_execution_time": 36771164649,
+                    "self_execution_time": 36771164649,
+                    "average_self_time": 2256.8572437851544,
+                    "cumulative_execution_time": 36771164649,
+                    "min_execution_time": 1814,
+                    "max_execution_time": 22388,
+                    "call_count": 16293084
+                },
+                "public static long net.openhft.chronicle.core.Maths.roundingFactor(int)": {
+                    "total_execution_time": 111059546223,
+                    "self_execution_time": 74261393914,
+                    "average_self_time": 4557.584944737097,
+                    "cumulative_execution_time": 111059546223,
+                    "min_execution_time": 5516,
+                    "max_execution_time": 46762,
+                    "call_count": 16292517
+                }
+            }
+        }
+    }
+}

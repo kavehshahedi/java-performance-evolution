@@ -1,0 +1,1322 @@
+{
+    "cb59fd8e61c05e25cad83c7b727c941a8273d4d1": {
+        "cb59fd8e61c05e25cad83c7b727c941a8273d4d1": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double)": {
+                    "total_execution_time": 36090497,
+                    "self_execution_time": 36090497,
+                    "average_self_time": 388069.8602150538,
+                    "cumulative_execution_time": 36090497,
+                    "min_execution_time": 51710,
+                    "max_execution_time": 27416187,
+                    "call_count": 93
+                },
+                "private void org.HdrHistogram.DoubleHistogram.setTrackableValueRange(double,double)": {
+                    "total_execution_time": 65663488,
+                    "self_execution_time": 29572991,
+                    "average_self_time": 317989.1505376344,
+                    "cumulative_execution_time": 65663488,
+                    "min_execution_time": 169919,
+                    "max_execution_time": 27696637,
+                    "call_count": 93
+                },
+                "private void org.HdrHistogram.DoubleHistogram.shiftCoveredRangeToTheRight(int)": {
+                    "total_execution_time": 62254079,
+                    "self_execution_time": 14441167,
+                    "average_self_time": 185143.16666666666,
+                    "cumulative_execution_time": 62254079,
+                    "min_execution_time": 296590,
+                    "max_execution_time": 27887538,
+                    "call_count": 78
+                },
+                "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(double) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 7560626046,
+                    "self_execution_time": 7498371967,
+                    "average_self_time": 1769.345675901117,
+                    "cumulative_execution_time": 7560626046,
+                    "min_execution_time": 1150,
+                    "max_execution_time": 41950356,
+                    "call_count": 4237935
+                }
+            }
+        },
+        "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double)": {
+                    "total_execution_time": 13793410,
+                    "self_execution_time": 13793410,
+                    "average_self_time": 148316.2365591398,
+                    "cumulative_execution_time": 13793410,
+                    "min_execution_time": 50410,
+                    "max_execution_time": 2551860,
+                    "call_count": 93
+                },
+                "private void org.HdrHistogram.DoubleHistogram.setTrackableValueRange(double,double)": {
+                    "total_execution_time": 72866046,
+                    "self_execution_time": 59072636,
+                    "average_self_time": 635189.6344086021,
+                    "cumulative_execution_time": 72866046,
+                    "min_execution_time": 156420,
+                    "max_execution_time": 34897807,
+                    "call_count": 93
+                },
+                "private void org.HdrHistogram.DoubleHistogram.shiftCoveredRangeToTheRight(int)": {
+                    "total_execution_time": 38455019,
+                    "self_execution_time": 13677378,
+                    "average_self_time": 175351.0,
+                    "cumulative_execution_time": 38455019,
+                    "min_execution_time": 261270,
+                    "max_execution_time": 2901140,
+                    "call_count": 78
+                },
+                "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(double) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 7532202324,
+                    "self_execution_time": 7493747305,
+                    "average_self_time": 1831.972420478006,
+                    "cumulative_execution_time": 7532202324,
+                    "min_execution_time": 1210,
+                    "max_execution_time": 16609998,
+                    "call_count": 4090535
+                }
+            }
+        }
+    },
+    "fe288b16baaabca43d0503a7a558696b1013cea6": {
+        "fe288b16baaabca43d0503a7a558696b1013cea6": {
+            "bench.HdrHistogramRecordingBench.rawConcurrentRecordingSpeed": {
+                "void org.HdrHistogram.ConcurrentHistogram.incrementCountAtIndex(int)": {
+                    "total_execution_time": 7553326238,
+                    "self_execution_time": 7553326238,
+                    "average_self_time": 1831.1462359121408,
+                    "cumulative_execution_time": 7553326238,
+                    "min_execution_time": 1180,
+                    "max_execution_time": 37804857,
+                    "call_count": 4124917
+                }
+            },
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": {
+                    "total_execution_time": 6809778870,
+                    "self_execution_time": 5088317405,
+                    "average_self_time": 25975.64631319938,
+                    "cumulative_execution_time": 6809778870,
+                    "min_execution_time": 3090,
+                    "max_execution_time": 6250909,
+                    "call_count": 195888
+                }
+            }
+        },
+        "52ef7ff855fffccd5b090eb954b9ffca17178a92": {
+            "bench.HdrHistogramRecordingBench.rawConcurrentRecordingSpeed": {
+                "void org.HdrHistogram.ConcurrentHistogram.incrementCountAtIndex(int)": {
+                    "total_execution_time": 7532821605,
+                    "self_execution_time": 7532821605,
+                    "average_self_time": 1826.6030816079046,
+                    "cumulative_execution_time": 7532821605,
+                    "min_execution_time": 1220,
+                    "max_execution_time": 31623937,
+                    "call_count": 4123951
+                }
+            },
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": {
+                    "total_execution_time": 6920849310,
+                    "self_execution_time": 5192771152,
+                    "average_self_time": 26508.878297802825,
+                    "cumulative_execution_time": 6920849310,
+                    "min_execution_time": 3150,
+                    "max_execution_time": 6337330,
+                    "call_count": 195888
+                }
+            }
+        }
+    },
+    "ad76bb512b510a37f6a55fdea32f8f3dd3355771": {
+        "ad76bb512b510a37f6a55fdea32f8f3dd3355771": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 968897028,
+                    "self_execution_time": 968897028,
+                    "average_self_time": 166821.11363636365,
+                    "cumulative_execution_time": 968897028,
+                    "min_execution_time": 57210,
+                    "max_execution_time": 6282759,
+                    "call_count": 5808
+                }
+            }
+        },
+        "5071aec2809d7d2f0564c1e81ce73c6d9e470731": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 944900019,
+                    "self_execution_time": 944900019,
+                    "average_self_time": 162689.3972107438,
+                    "cumulative_execution_time": 944900019,
+                    "min_execution_time": 55810,
+                    "max_execution_time": 6204230,
+                    "call_count": 5808
+                }
+            }
+        }
+    },
+    "c2f33887b56530fd4cfa10a541697288bb1af794": {
+        "c2f33887b56530fd4cfa10a541697288bb1af794": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 2667594608,
+                    "self_execution_time": 2667594608,
+                    "average_self_time": 299393.3342312009,
+                    "cumulative_execution_time": 2667594608,
+                    "min_execution_time": 4500,
+                    "max_execution_time": 75592354,
+                    "call_count": 8910
+                },
+                "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(long)": {
+                    "total_execution_time": 142521996,
+                    "self_execution_time": 142521996,
+                    "average_self_time": 24538.911157024795,
+                    "cumulative_execution_time": 142521996,
+                    "min_execution_time": 4849,
+                    "max_execution_time": 371040,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(long)": {
+                    "total_execution_time": 108963243,
+                    "self_execution_time": 108963243,
+                    "average_self_time": 18760.888946280993,
+                    "cumulative_execution_time": 108963243,
+                    "min_execution_time": 3770,
+                    "max_execution_time": 299210,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 74815446110,
+                    "self_execution_time": 74815446110,
+                    "average_self_time": 2204.23118265409,
+                    "cumulative_execution_time": 74815446110,
+                    "min_execution_time": 1240,
+                    "max_execution_time": 14463929,
+                    "call_count": 33941742
+                },
+                "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(long)": {
+                    "total_execution_time": 162990780,
+                    "self_execution_time": 162990780,
+                    "average_self_time": 13643.962832747364,
+                    "cumulative_execution_time": 162990780,
+                    "min_execution_time": 1529,
+                    "max_execution_time": 4707580,
+                    "call_count": 11946
+                },
+                "public void org.HdrHistogram.AbstractHistogram.add(org.HdrHistogram.AbstractHistogram) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 3878512955,
+                    "self_execution_time": 2342157378,
+                    "average_self_time": 403264.01136363635,
+                    "cumulative_execution_time": 3878512955,
+                    "min_execution_time": 12000,
+                    "max_execution_time": 61202404,
+                    "call_count": 5808
+                }
+            }
+        },
+        "fc382620affc0fedb79d726b6f0c4e4f9bced784": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 2600401413,
+                    "self_execution_time": 2600401413,
+                    "average_self_time": 291852.01043771044,
+                    "cumulative_execution_time": 2600401413,
+                    "min_execution_time": 4480,
+                    "max_execution_time": 74664274,
+                    "call_count": 8910
+                },
+                "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(long)": {
+                    "total_execution_time": 140902794,
+                    "self_execution_time": 140902794,
+                    "average_self_time": 24260.122933884297,
+                    "cumulative_execution_time": 140902794,
+                    "min_execution_time": 4930,
+                    "max_execution_time": 444220,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(long)": {
+                    "total_execution_time": 108282601,
+                    "self_execution_time": 108282601,
+                    "average_self_time": 18643.698519283746,
+                    "cumulative_execution_time": 108282601,
+                    "min_execution_time": 3700,
+                    "max_execution_time": 420339,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 73451529779,
+                    "self_execution_time": 73451529779,
+                    "average_self_time": 2164.047142276905,
+                    "cumulative_execution_time": 73451529779,
+                    "min_execution_time": 1249,
+                    "max_execution_time": 17766198,
+                    "call_count": 33941742
+                },
+                "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(long)": {
+                    "total_execution_time": 152469070,
+                    "self_execution_time": 152469070,
+                    "average_self_time": 12763.190189184665,
+                    "cumulative_execution_time": 152469070,
+                    "min_execution_time": 1530,
+                    "max_execution_time": 396550,
+                    "call_count": 11946
+                },
+                "public void org.HdrHistogram.AbstractHistogram.add(org.HdrHistogram.AbstractHistogram) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 3835342006,
+                    "self_execution_time": 2324515143,
+                    "average_self_time": 400226.43646694213,
+                    "cumulative_execution_time": 3835342006,
+                    "min_execution_time": 10740,
+                    "max_execution_time": 72198704,
+                    "call_count": 5808
+                }
+            }
+        }
+    },
+    "3e30f0891536f7cbda44b1be3146158f72317800": {
+        "3e30f0891536f7cbda44b1be3146158f72317800": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "public void org.HdrHistogram.DoubleHistogram.setStartTimeStamp(long)": {
+                    "total_execution_time": 69680356,
+                    "self_execution_time": 69680356,
+                    "average_self_time": 11613392.666666666,
+                    "cumulative_execution_time": 69680356,
+                    "min_execution_time": 210010,
+                    "max_execution_time": 32485698,
+                    "call_count": 6
+                }
+            },
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 6578345269,
+                    "self_execution_time": 6578345269,
+                    "average_self_time": 1119908.9664623765,
+                    "cumulative_execution_time": 6578345269,
+                    "min_execution_time": 94850,
+                    "max_execution_time": 80424984,
+                    "call_count": 5874
+                }
+            }
+        },
+        "14d58c3d3e8c08892ee8654117857f04baa8f19a": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "public void org.HdrHistogram.DoubleHistogram.setStartTimeStamp(long)": {
+                    "total_execution_time": 12700758,
+                    "self_execution_time": 12700758,
+                    "average_self_time": 2116793.0,
+                    "cumulative_execution_time": 12700758,
+                    "min_execution_time": 223690,
+                    "max_execution_time": 4237790,
+                    "call_count": 6
+                }
+            },
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 6557168315,
+                    "self_execution_time": 6557168315,
+                    "average_self_time": 1116303.7648961525,
+                    "cumulative_execution_time": 6557168315,
+                    "min_execution_time": 94010,
+                    "max_execution_time": 79813423,
+                    "call_count": 5874
+                }
+            }
+        }
+    },
+    "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+        "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+            "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE": {
+                "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(int)": {
+                    "total_execution_time": 12855685057,
+                    "self_execution_time": 12855685057,
+                    "average_self_time": 7427.725842832959,
+                    "cumulative_execution_time": 12855685057,
+                    "min_execution_time": 1540,
+                    "max_execution_time": 7172140,
+                    "call_count": 1730770
+                },
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 20743743734,
+                    "self_execution_time": 20743743734,
+                    "average_self_time": 11985.268830636076,
+                    "cumulative_execution_time": 20743743734,
+                    "min_execution_time": 2100,
+                    "max_execution_time": 5716259,
+                    "call_count": 1730770
+                },
+                "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(int)": {
+                    "total_execution_time": 7902366076,
+                    "self_execution_time": 7902366076,
+                    "average_self_time": 2282.8612141300887,
+                    "cumulative_execution_time": 7902366076,
+                    "min_execution_time": 1290,
+                    "max_execution_time": 6522489,
+                    "call_count": 3461606
+                },
+                "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": {
+                    "total_execution_time": 11101541652,
+                    "self_execution_time": 11101541652,
+                    "average_self_time": 2141.0674250007232,
+                    "cumulative_execution_time": 11101541652,
+                    "min_execution_time": 1270,
+                    "max_execution_time": 9423150,
+                    "call_count": 5185050
+                },
+                "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)": {
+                    "total_execution_time": 36387884028,
+                    "self_execution_time": 36387884028,
+                    "average_self_time": 21024.101427688256,
+                    "cumulative_execution_time": 36387884028,
+                    "min_execution_time": 4010,
+                    "max_execution_time": 8845699,
+                    "call_count": 1730770
+                }
+            }
+        },
+        "ddadad81471562f2c9851ccc4d0d4f4747cca9d3": {
+            "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE": {
+                "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(int)": {
+                    "total_execution_time": 12789067972,
+                    "self_execution_time": 12789067972,
+                    "average_self_time": 7467.767997668999,
+                    "cumulative_execution_time": 12789067972,
+                    "min_execution_time": 1550,
+                    "max_execution_time": 7648059,
+                    "call_count": 1712569
+                },
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 20934885759,
+                    "self_execution_time": 20934885759,
+                    "average_self_time": 12224.258268717931,
+                    "cumulative_execution_time": 20934885759,
+                    "min_execution_time": 2150,
+                    "max_execution_time": 9459859,
+                    "call_count": 1712569
+                },
+                "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(int)": {
+                    "total_execution_time": 7933946343,
+                    "self_execution_time": 7933946343,
+                    "average_self_time": 2316.342717981177,
+                    "cumulative_execution_time": 7933946343,
+                    "min_execution_time": 1309,
+                    "max_execution_time": 12398909,
+                    "call_count": 3425204
+                },
+                "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": {
+                    "total_execution_time": 10990129007,
+                    "self_execution_time": 10990129007,
+                    "average_self_time": 2142.138688305327,
+                    "cumulative_execution_time": 10990129007,
+                    "min_execution_time": 1290,
+                    "max_execution_time": 8613609,
+                    "call_count": 5130447
+                },
+                "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)": {
+                    "total_execution_time": 36791947244,
+                    "self_execution_time": 36791947244,
+                    "average_self_time": 21483.483143744867,
+                    "cumulative_execution_time": 36791947244,
+                    "min_execution_time": 4030,
+                    "max_execution_time": 9350030,
+                    "call_count": 1712569
+                }
+            }
+        }
+    },
+    "32e62f68d9e277850807f2b538bcab5971f11a55": {
+        "32e62f68d9e277850807f2b538bcab5971f11a55": {
+            "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE": {
+                "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(int)": {
+                    "total_execution_time": 12805047827,
+                    "self_execution_time": 12805047827,
+                    "average_self_time": 7710.493473954225,
+                    "cumulative_execution_time": 12805047827,
+                    "min_execution_time": 1540,
+                    "max_execution_time": 11393459,
+                    "call_count": 1660730
+                },
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 21848405644,
+                    "self_execution_time": 21848405644,
+                    "average_self_time": 13155.90471900911,
+                    "cumulative_execution_time": 21848405644,
+                    "min_execution_time": 2040,
+                    "max_execution_time": 11334110,
+                    "call_count": 1660730
+                },
+                "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(int)": {
+                    "total_execution_time": 8000073616,
+                    "self_execution_time": 8000073616,
+                    "average_self_time": 2408.5536635871586,
+                    "cumulative_execution_time": 8000073616,
+                    "min_execution_time": 1280,
+                    "max_execution_time": 9745569,
+                    "call_count": 3321526
+                },
+                "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": {
+                    "total_execution_time": 11027099831,
+                    "self_execution_time": 11027099831,
+                    "average_self_time": 2216.533666001331,
+                    "cumulative_execution_time": 11027099831,
+                    "min_execution_time": 1250,
+                    "max_execution_time": 10771139,
+                    "call_count": 4974930
+                },
+                "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)": {
+                    "total_execution_time": 36384885038,
+                    "self_execution_time": 36384885038,
+                    "average_self_time": 21908.97077670663,
+                    "cumulative_execution_time": 36384885038,
+                    "min_execution_time": 3960,
+                    "max_execution_time": 6817579,
+                    "call_count": 1660730
+                }
+            }
+        },
+        "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+            "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE": {
+                "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(int)": {
+                    "total_execution_time": 12888592894,
+                    "self_execution_time": 12888592894,
+                    "average_self_time": 7788.460033405204,
+                    "cumulative_execution_time": 12888592894,
+                    "min_execution_time": 1520,
+                    "max_execution_time": 9664739,
+                    "call_count": 1654832
+                },
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 21118629414,
+                    "self_execution_time": 21118629414,
+                    "average_self_time": 12761.796613795237,
+                    "cumulative_execution_time": 21118629414,
+                    "min_execution_time": 2051,
+                    "max_execution_time": 7738939,
+                    "call_count": 1654832
+                },
+                "int org.HdrHistogram.AbstractHistogram.getNeededPayloadByteBufferCapacity(int)": {
+                    "total_execution_time": 8125760316,
+                    "self_execution_time": 8125760316,
+                    "average_self_time": 2455.1127481697904,
+                    "cumulative_execution_time": 8125760316,
+                    "min_execution_time": 1310,
+                    "max_execution_time": 12413548,
+                    "call_count": 3309730
+                },
+                "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": {
+                    "total_execution_time": 11146552474,
+                    "self_execution_time": 11146552474,
+                    "average_self_time": 2248.5418233063747,
+                    "cumulative_execution_time": 11146552474,
+                    "min_execution_time": 1270,
+                    "max_execution_time": 10295549,
+                    "call_count": 4957236
+                },
+                "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)": {
+                    "total_execution_time": 35800180876,
+                    "self_execution_time": 35800180876,
+                    "average_self_time": 21633.725282083014,
+                    "cumulative_execution_time": 35800180876,
+                    "min_execution_time": 4040,
+                    "max_execution_time": 8573530,
+                    "call_count": 1654832
+                }
+            }
+        }
+    },
+    "f4b5004799da6a8203554cea610f1b294caee37a": {
+        "f4b5004799da6a8203554cea610f1b294caee37a": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 2577904828,
+                    "self_execution_time": 2577904828,
+                    "average_self_time": 289327.1411896745,
+                    "cumulative_execution_time": 2577904828,
+                    "min_execution_time": 4560,
+                    "max_execution_time": 47691756,
+                    "call_count": 8910
+                },
+                "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(long)": {
+                    "total_execution_time": 149394471,
+                    "self_execution_time": 149394471,
+                    "average_self_time": 25722.18853305785,
+                    "cumulative_execution_time": 149394471,
+                    "min_execution_time": 5050,
+                    "max_execution_time": 477810,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(long)": {
+                    "total_execution_time": 112494470,
+                    "self_execution_time": 112494470,
+                    "average_self_time": 19368.882575757576,
+                    "cumulative_execution_time": 112494470,
+                    "min_execution_time": 3850,
+                    "max_execution_time": 480110,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 75120023087,
+                    "self_execution_time": 75120023087,
+                    "average_self_time": 2213.2047049028893,
+                    "cumulative_execution_time": 75120023087,
+                    "min_execution_time": 1220,
+                    "max_execution_time": 21993989,
+                    "call_count": 33941742
+                },
+                "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(long)": {
+                    "total_execution_time": 163334341,
+                    "self_execution_time": 163334341,
+                    "average_self_time": 13672.722333835594,
+                    "cumulative_execution_time": 163334341,
+                    "min_execution_time": 1571,
+                    "max_execution_time": 374920,
+                    "call_count": 11946
+                }
+            }
+        },
+        "c2f33887b56530fd4cfa10a541697288bb1af794": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 2713380181,
+                    "self_execution_time": 2713380181,
+                    "average_self_time": 304532.0068462402,
+                    "cumulative_execution_time": 2713380181,
+                    "min_execution_time": 4400,
+                    "max_execution_time": 65456994,
+                    "call_count": 8910
+                },
+                "final void org.HdrHistogram.AbstractHistogram.resetMaxValue(long)": {
+                    "total_execution_time": 154208390,
+                    "self_execution_time": 154208390,
+                    "average_self_time": 26551.031336088156,
+                    "cumulative_execution_time": 154208390,
+                    "min_execution_time": 5080,
+                    "max_execution_time": 449690,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.resetMinNonZeroValue(long)": {
+                    "total_execution_time": 118521314,
+                    "self_execution_time": 118521314,
+                    "average_self_time": 20406.562327823693,
+                    "cumulative_execution_time": 118521314,
+                    "min_execution_time": 3900,
+                    "max_execution_time": 550430,
+                    "call_count": 5808
+                },
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 76729621785,
+                    "self_execution_time": 76729621785,
+                    "average_self_time": 2260.6270999585113,
+                    "cumulative_execution_time": 76729621785,
+                    "min_execution_time": 1230,
+                    "max_execution_time": 14165848,
+                    "call_count": 33941742
+                },
+                "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(long)": {
+                    "total_execution_time": 167341476,
+                    "self_execution_time": 167341476,
+                    "average_self_time": 14008.159718734305,
+                    "cumulative_execution_time": 167341476,
+                    "min_execution_time": 1530,
+                    "max_execution_time": 367300,
+                    "call_count": 11946
+                }
+            }
+        }
+    },
+    "2410f249276a271dc8fe555806d3204b2e2ea370": {
+        "2410f249276a271dc8fe555806d3204b2e2ea370": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(long)": {
+                    "total_execution_time": 77008798017,
+                    "self_execution_time": 77008798017,
+                    "average_self_time": 5335.16181581509,
+                    "cumulative_execution_time": 77008798017,
+                    "min_execution_time": 1260,
+                    "max_execution_time": 63310574,
+                    "call_count": 14434201
+                },
+                "private void org.HdrHistogram.AbstractHistogram.recordCountAtValue(long,long) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 107106206848,
+                    "self_execution_time": 106900028667,
+                    "average_self_time": 2084.8585301388553,
+                    "cumulative_execution_time": 107106206848,
+                    "min_execution_time": 1240,
+                    "max_execution_time": 23281208,
+                    "call_count": 51274476
+                },
+                "private void org.HdrHistogram.AbstractHistogram.recordSingleValue(long) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 4421045178,
+                    "self_execution_time": 4409512990,
+                    "average_self_time": 1901.5307892267463,
+                    "cumulative_execution_time": 4421045178,
+                    "min_execution_time": 1240,
+                    "max_execution_time": 4710530,
+                    "call_count": 2318928
+                }
+            }
+        },
+        "e3088c0c4b9141ff2cdcf0168af453ef761aa661": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(long)": {
+                    "total_execution_time": 76202632090,
+                    "self_execution_time": 76202632090,
+                    "average_self_time": 5241.187549486932,
+                    "cumulative_execution_time": 76202632090,
+                    "min_execution_time": 1220,
+                    "max_execution_time": 69393044,
+                    "call_count": 14539192
+                },
+                "private void org.HdrHistogram.AbstractHistogram.recordCountAtValue(long,long) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 104987481283,
+                    "self_execution_time": 104779791779,
+                    "average_self_time": 2043.5078025760808,
+                    "cumulative_execution_time": 104987481283,
+                    "min_execution_time": 1250,
+                    "max_execution_time": 9529589,
+                    "call_count": 51274476
+                },
+                "private void org.HdrHistogram.AbstractHistogram.recordSingleValue(long) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 4559986602,
+                    "self_execution_time": 4547629419,
+                    "average_self_time": 1961.0912538034815,
+                    "cumulative_execution_time": 4559986602,
+                    "min_execution_time": 1260,
+                    "max_execution_time": 4200060,
+                    "call_count": 2318928
+                }
+            }
+        }
+    },
+    "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+        "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "void org.HdrHistogram.AbstractHistogramIterator.resetIterator(org.HdrHistogram.AbstractHistogram)": {
+                    "total_execution_time": 1467151561,
+                    "self_execution_time": 1467151561,
+                    "average_self_time": 81426.99306249306,
+                    "cumulative_execution_time": 1467151561,
+                    "min_execution_time": 2980,
+                    "max_execution_time": 5629569,
+                    "call_count": 18018
+                },
+                "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()": {
+                    "total_execution_time": 3327790272,
+                    "self_execution_time": 2516078725,
+                    "average_self_time": 12818.56251655764,
+                    "cumulative_execution_time": 3327790272,
+                    "min_execution_time": 2209,
+                    "max_execution_time": 1225100,
+                    "call_count": 196284
+                },
+                "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": {
+                    "total_execution_time": 3651626700,
+                    "self_execution_time": 2610141900,
+                    "average_self_time": 13324.66460426366,
+                    "cumulative_execution_time": 3651626700,
+                    "min_execution_time": 2620,
+                    "max_execution_time": 3277149,
+                    "call_count": 195888
+                }
+            }
+        },
+        "6c19efc72a90ba8ec6d8242b82d9e645794c6886": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "void org.HdrHistogram.AbstractHistogramIterator.resetIterator(org.HdrHistogram.AbstractHistogram)": {
+                    "total_execution_time": 1463678050,
+                    "self_execution_time": 1463678050,
+                    "average_self_time": 81234.21300921301,
+                    "cumulative_execution_time": 1463678050,
+                    "min_execution_time": 2800,
+                    "max_execution_time": 5981709,
+                    "call_count": 18018
+                },
+                "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()": {
+                    "total_execution_time": 3210234628,
+                    "self_execution_time": 2422251538,
+                    "average_self_time": 12340.545016404802,
+                    "cumulative_execution_time": 3210234628,
+                    "min_execution_time": 2200,
+                    "max_execution_time": 1162009,
+                    "call_count": 196284
+                },
+                "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": {
+                    "total_execution_time": 3541577440,
+                    "self_execution_time": 2533660473,
+                    "average_self_time": 12934.230136608674,
+                    "cumulative_execution_time": 3541577440,
+                    "min_execution_time": 2540,
+                    "max_execution_time": 3783180,
+                    "call_count": 195888
+                }
+            }
+        }
+    },
+    "c410c5c2699b69ce0eb026ff954fefc4045ec363": {
+        "c410c5c2699b69ce0eb026ff954fefc4045ec363": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 4017284054,
+                    "self_execution_time": 4017284054,
+                    "average_self_time": 683909.4405856316,
+                    "cumulative_execution_time": 4017284054,
+                    "min_execution_time": 95321,
+                    "max_execution_time": 82691481,
+                    "call_count": 5874
+                }
+            }
+        },
+        "296902df060cbdc1d689f63f8dec3e5fe4bf7ee0": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 3641581079,
+                    "self_execution_time": 3641581079,
+                    "average_self_time": 619949.1111678584,
+                    "cumulative_execution_time": 3641581079,
+                    "min_execution_time": 94600,
+                    "max_execution_time": 77290834,
+                    "call_count": 5874
+                }
+            }
+        }
+    },
+    "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": {
+        "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": {
+            "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE": {
+                "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(int)": {
+                    "total_execution_time": 15973880559,
+                    "self_execution_time": 15973880559,
+                    "average_self_time": 8063.413694983221,
+                    "cumulative_execution_time": 15973880559,
+                    "min_execution_time": 1560,
+                    "max_execution_time": 19423259,
+                    "call_count": 1981032
+                },
+                "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()": {
+                    "total_execution_time": 7327430157,
+                    "self_execution_time": 7327430157,
+                    "average_self_time": 3698.794445016537,
+                    "cumulative_execution_time": 7327430157,
+                    "min_execution_time": 1410,
+                    "max_execution_time": 17767650,
+                    "call_count": 1981032
+                },
+                "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()": {
+                    "total_execution_time": 11398531672,
+                    "self_execution_time": 11398531672,
+                    "average_self_time": 5762.282153632121,
+                    "cumulative_execution_time": 11398531672,
+                    "min_execution_time": 1380,
+                    "max_execution_time": 11132710,
+                    "call_count": 1978128
+                }
+            }
+        },
+        "6c85d5e2f4b789f9a86823d00c02845d17c60e3a": {
+            "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE": {
+                "private static int org.HdrHistogram.AbstractHistogram.getWordSizeInBytesFromCookie(int)": {
+                    "total_execution_time": 854432183,
+                    "self_execution_time": 854432183,
+                    "average_self_time": 145460.02434456928,
+                    "cumulative_execution_time": 854432183,
+                    "min_execution_time": 37880,
+                    "max_execution_time": 6241070,
+                    "call_count": 5874
+                },
+                "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()": {
+                    "total_execution_time": 354348802,
+                    "self_execution_time": 354348802,
+                    "average_self_time": 60324.95778004767,
+                    "cumulative_execution_time": 354348802,
+                    "min_execution_time": 17260,
+                    "max_execution_time": 529380,
+                    "call_count": 5874
+                },
+                "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()": {
+                    "total_execution_time": 131320246,
+                    "self_execution_time": 131320246,
+                    "average_self_time": 44215.571043771044,
+                    "cumulative_execution_time": 131320246,
+                    "min_execution_time": 15150,
+                    "max_execution_time": 240230,
+                    "call_count": 2970
+                }
+            }
+        }
+    },
+    "753fe5c16ddb089b42a6ff920c06e50ead032945": {
+        "753fe5c16ddb089b42a6ff920c06e50ead032945": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(double) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 7576849852,
+                    "self_execution_time": 7576849852,
+                    "average_self_time": 1893.344364608827,
+                    "cumulative_execution_time": 7576849852,
+                    "min_execution_time": 1220,
+                    "max_execution_time": 34963207,
+                    "call_count": 4001834
+                }
+            }
+        },
+        "47e26f9cda921ee493254b77ea0ce185a99e0018": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(double) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 7531933921,
+                    "self_execution_time": 7531933921,
+                    "average_self_time": 1975.1426486654034,
+                    "cumulative_execution_time": 7531933921,
+                    "min_execution_time": 1200,
+                    "max_execution_time": 42038426,
+                    "call_count": 3813362
+                }
+            }
+        }
+    },
+    "bb8ecbb4c4da80b5c8f54b4414f2fa86f7953574": {
+        "bb8ecbb4c4da80b5c8f54b4414f2fa86f7953574": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {}
+        },
+        "7ee9151fe3e3c85e3d650b55dcb87e945967be92": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {}
+        }
+    },
+    "dda4dbf358aa2cdc81c5629875f956ce87c81723": {
+        "dda4dbf358aa2cdc81c5629875f956ce87c81723": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(double) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 7588080516,
+                    "self_execution_time": 7588080516,
+                    "average_self_time": 1817.7485683705045,
+                    "cumulative_execution_time": 7588080516,
+                    "min_execution_time": 1180,
+                    "max_execution_time": 38162106,
+                    "call_count": 4174439
+                }
+            }
+        },
+        "377de7da9b08c4f6cf159b3157f4a0e0492b9c39": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "private void org.HdrHistogram.DoubleHistogram.recordSingleValue(double) throws java.lang.ArrayIndexOutOfBoundsException": {
+                    "total_execution_time": 7545055607,
+                    "self_execution_time": 7545055607,
+                    "average_self_time": 1928.5532166854791,
+                    "cumulative_execution_time": 7545055607,
+                    "min_execution_time": 1170,
+                    "max_execution_time": 34244617,
+                    "call_count": 3912288
+                }
+            }
+        }
+    },
+    "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": {
+        "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": {
+            "bench.HdrHistogramRecordingBench.singleWriterRecorderRecordingSpeed": {
+                "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long)": {
+                    "total_execution_time": 7488320794,
+                    "self_execution_time": 7488320794,
+                    "average_self_time": 1829.3859883049392,
+                    "cumulative_execution_time": 7488320794,
+                    "min_execution_time": 1180,
+                    "max_execution_time": 5332320,
+                    "call_count": 4093352
+                }
+            }
+        },
+        "77579557702b198a1fa97c16164b3486e0ff0d20": {
+            "bench.HdrHistogramRecordingBench.singleWriterRecorderRecordingSpeed": {
+                "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long)": {
+                    "total_execution_time": 7483908623,
+                    "self_execution_time": 7483908623,
+                    "average_self_time": 1941.9692397554293,
+                    "cumulative_execution_time": 7483908623,
+                    "min_execution_time": 1189,
+                    "max_execution_time": 10322130,
+                    "call_count": 3853773
+                }
+            }
+        }
+    },
+    "e0e83cb99a4030c046f778604625e347a1bc37c8": {
+        "e0e83cb99a4030c046f778604625e347a1bc37c8": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(long)": {
+                    "total_execution_time": 6855681,
+                    "self_execution_time": 6855681,
+                    "average_self_time": 87893.34615384616,
+                    "cumulative_execution_time": 6855681,
+                    "min_execution_time": 55890,
+                    "max_execution_time": 229990,
+                    "call_count": 78
+                },
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 92889203,
+                    "self_execution_time": 86033522,
+                    "average_self_time": 2205987.7435897435,
+                    "cumulative_execution_time": 92889203,
+                    "min_execution_time": 314900,
+                    "max_execution_time": 26170108,
+                    "call_count": 39
+                }
+            }
+        },
+        "b24c8b0cc00952c5c47aceeabbacf6567aeee9ee": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(long)": {
+                    "total_execution_time": 39310247,
+                    "self_execution_time": 39310247,
+                    "average_self_time": 503977.5256410256,
+                    "cumulative_execution_time": 39310247,
+                    "min_execution_time": 51869,
+                    "max_execution_time": 30380658,
+                    "call_count": 78
+                },
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 167149918,
+                    "self_execution_time": 127839671,
+                    "average_self_time": 3277940.282051282,
+                    "cumulative_execution_time": 167149918,
+                    "min_execution_time": 294510,
+                    "max_execution_time": 32526967,
+                    "call_count": 39
+                }
+            }
+        }
+    },
+    "49edbc5708832c8c574a363efff79b5b5d977038": {
+        "49edbc5708832c8c574a363efff79b5b5d977038": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "int org.HdrHistogram.AbstractHistogram.getLengthForNumberOfBuckets(int)": {
+                    "total_execution_time": 4653335,
+                    "self_execution_time": 4653335,
+                    "average_self_time": 119316.28205128205,
+                    "cumulative_execution_time": 4653335,
+                    "min_execution_time": 70290,
+                    "max_execution_time": 286479,
+                    "call_count": 39
+                },
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 94094391,
+                    "self_execution_time": 89441056,
+                    "average_self_time": 2293360.4102564105,
+                    "cumulative_execution_time": 94094391,
+                    "min_execution_time": 240330,
+                    "max_execution_time": 28298477,
+                    "call_count": 39
+                }
+            }
+        },
+        "86cf659fb91344c0fd180c9d1bb15e8222d55780": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "int org.HdrHistogram.AbstractHistogram.getLengthForNumberOfBuckets(int)": {
+                    "total_execution_time": 4466560,
+                    "self_execution_time": 4466560,
+                    "average_self_time": 114527.17948717948,
+                    "cumulative_execution_time": 4466560,
+                    "min_execution_time": 61330,
+                    "max_execution_time": 331020,
+                    "call_count": 39
+                },
+                "private void org.HdrHistogram.AbstractHistogram.init(long,long,int,double,int)": {
+                    "total_execution_time": 95246751,
+                    "self_execution_time": 90780191,
+                    "average_self_time": 2327697.205128205,
+                    "cumulative_execution_time": 95246751,
+                    "min_execution_time": 207350,
+                    "max_execution_time": 27889707,
+                    "call_count": 39
+                }
+            }
+        }
+    },
+    "8d181efcd113b38dd2a84509c75d9c419d452c2b": {
+        "8d181efcd113b38dd2a84509c75d9c419d452c2b": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(long)": {
+                    "total_execution_time": 43731417,
+                    "self_execution_time": 43731417,
+                    "average_self_time": 14577139.0,
+                    "cumulative_execution_time": 43731417,
+                    "min_execution_time": 3816160,
+                    "max_execution_time": 34555947,
+                    "call_count": 3
+                }
+            }
+        },
+        "70f89f80699877bf1953baa19c2482d56c63ca03": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogram.updateMinNonZeroValue(long)": {
+                    "total_execution_time": 11654148,
+                    "self_execution_time": 11654148,
+                    "average_self_time": 3884716.0,
+                    "cumulative_execution_time": 11654148,
+                    "min_execution_time": 3739919,
+                    "max_execution_time": 4136809,
+                    "call_count": 3
+                }
+            }
+        }
+    },
+    "4708c3a25fc335e7076f4118ab8fbb43f183debe": {
+        "4708c3a25fc335e7076f4118ab8fbb43f183debe": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 968312412,
+                    "self_execution_time": 968312412,
+                    "average_self_time": 166720.45661157026,
+                    "cumulative_execution_time": 968312412,
+                    "min_execution_time": 59720,
+                    "max_execution_time": 11105249,
+                    "call_count": 5808
+                }
+            }
+        },
+        "2413b056441604ee2a41dbb546fd91f9ee50d9be": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)": {
+                    "total_execution_time": 926700859,
+                    "self_execution_time": 926700859,
+                    "average_self_time": 159555.93302341597,
+                    "cumulative_execution_time": 926700859,
+                    "min_execution_time": 60320,
+                    "max_execution_time": 6268720,
+                    "call_count": 5808
+                }
+            }
+        }
+    },
+    "9993cd3f27875c9331cf9a571be013c4af27d681": {
+        "9993cd3f27875c9331cf9a571be013c4af27d681": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private void org.HdrHistogram.AbstractHistogram.handleRecordException(long,long,java.lang.Exception)": {
+                    "total_execution_time": 2257846604,
+                    "self_execution_time": 2257846604,
+                    "average_self_time": 63910.965919384056,
+                    "cumulative_execution_time": 2257846604,
+                    "min_execution_time": 6180,
+                    "max_execution_time": 6321140,
+                    "call_count": 35328
+                }
+            }
+        },
+        "5c072c079b2a1c1b0ddec7e776bb363984818a85": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private void org.HdrHistogram.AbstractHistogram.handleRecordException(long,long,java.lang.Exception)": {
+                    "total_execution_time": 2319621161,
+                    "self_execution_time": 2319621161,
+                    "average_self_time": 65659.56637794385,
+                    "cumulative_execution_time": 2319621161,
+                    "min_execution_time": 6280,
+                    "max_execution_time": 6144449,
+                    "call_count": 35328
+                }
+            }
+        }
+    },
+    "167386b8e63fd7098cd57f9a257e13bceb30a543": {
+        "167386b8e63fd7098cd57f9a257e13bceb30a543": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 42957477,
+                    "self_execution_time": 42957477,
+                    "average_self_time": 7159579.5,
+                    "cumulative_execution_time": 42957477,
+                    "min_execution_time": 144030,
+                    "max_execution_time": 34776227,
+                    "call_count": 6
+                }
+            }
+        },
+        "f4b5004799da6a8203554cea610f1b294caee37a": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 14109661,
+                    "self_execution_time": 14109661,
+                    "average_self_time": 2351610.1666666665,
+                    "cumulative_execution_time": 14109661,
+                    "min_execution_time": 144451,
+                    "max_execution_time": 5063679,
+                    "call_count": 6
+                }
+            }
+        }
+    },
+    "70f89f80699877bf1953baa19c2482d56c63ca03": {
+        "70f89f80699877bf1953baa19c2482d56c63ca03": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 45564936,
+                    "self_execution_time": 45564936,
+                    "average_self_time": 7594156.0,
+                    "cumulative_execution_time": 45564936,
+                    "min_execution_time": 239750,
+                    "max_execution_time": 34933707,
+                    "call_count": 6
+                }
+            }
+        },
+        "8e463bf8407ce63fdcdc08ec17c4893ce36c46dd": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "void org.HdrHistogram.AbstractHistogram.updatedMaxValue(long)": {
+                    "total_execution_time": 14027419,
+                    "self_execution_time": 14027419,
+                    "average_self_time": 2337903.1666666665,
+                    "cumulative_execution_time": 14027419,
+                    "min_execution_time": 144530,
+                    "max_execution_time": 5220690,
+                    "call_count": 6
+                }
+            }
+        }
+    },
+    "4399d30dd73d7a38e37890812a7c63f2fa0588f2": {
+        "4399d30dd73d7a38e37890812a7c63f2fa0588f2": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 6039521203,
+                    "self_execution_time": 6039521203,
+                    "average_self_time": 1028178.6181477698,
+                    "cumulative_execution_time": 6039521203,
+                    "min_execution_time": 95290,
+                    "max_execution_time": 82904283,
+                    "call_count": 5874
+                }
+            }
+        },
+        "ed88d66017a32f1ed1b1634e13dbac67618316fb": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 6416150731,
+                    "self_execution_time": 6416150731,
+                    "average_self_time": 1092296.6855635003,
+                    "cumulative_execution_time": 6416150731,
+                    "min_execution_time": 93421,
+                    "max_execution_time": 80769263,
+                    "call_count": 5874
+                }
+            }
+        }
+    },
+    "c458630d7060f04668da2b5cf1c5603b37d7bfea": {
+        "c458630d7060f04668da2b5cf1c5603b37d7bfea": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(long)": {
+                    "total_execution_time": 78063377026,
+                    "self_execution_time": 78063377026,
+                    "average_self_time": 5310.491251299929,
+                    "cumulative_execution_time": 78063377026,
+                    "min_execution_time": 1300,
+                    "max_execution_time": 45414907,
+                    "call_count": 14699841
+                }
+            }
+        },
+        "55010cfe93133354a6d08dc8cdce25b69d4cf542": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "public long org.HdrHistogram.AbstractHistogram.sizeOfEquivalentValueRange(long)": {
+                    "total_execution_time": 79368542849,
+                    "self_execution_time": 79368542849,
+                    "average_self_time": 5593.464501250713,
+                    "cumulative_execution_time": 79368542849,
+                    "min_execution_time": 1330,
+                    "max_execution_time": 33176948,
+                    "call_count": 14189514
+                }
+            }
+        }
+    },
+    "f8be039d5ec8fc10ed383b557df8643701db009b": {
+        "f8be039d5ec8fc10ed383b557df8643701db009b": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(long)": {
+                    "total_execution_time": 21594347,
+                    "self_execution_time": 21594347,
+                    "average_self_time": 276850.60256410256,
+                    "cumulative_execution_time": 21594347,
+                    "min_execution_time": 61860,
+                    "max_execution_time": 4225129,
+                    "call_count": 78
+                }
+            }
+        },
+        "86cf659fb91344c0fd180c9d1bb15e8222d55780": {
+            "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed": {
+                "int org.HdrHistogram.AbstractHistogram.getBucketsNeededToCoverValue(long)": {
+                    "total_execution_time": 24391079,
+                    "self_execution_time": 24391079,
+                    "average_self_time": 312706.141025641,
+                    "cumulative_execution_time": 24391079,
+                    "min_execution_time": 60300,
+                    "max_execution_time": 4913209,
+                    "call_count": 78
+                }
+            }
+        }
+    },
+    "795e99337fbedc794220f0f3b32c55ee3899beb0": {
+        "795e99337fbedc794220f0f3b32c55ee3899beb0": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 3807629117,
+                    "self_execution_time": 3807629117,
+                    "average_self_time": 648217.4186244467,
+                    "cumulative_execution_time": 3807629117,
+                    "min_execution_time": 95421,
+                    "max_execution_time": 76005873,
+                    "call_count": 5874
+                }
+            }
+        },
+        "463fcbddf40a9963273076cca86557b664b8ac59": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "private org.HdrHistogram.EncodableHistogram org.HdrHistogram.HistogramLogReader.nextIntervalHistogram(double,double,boolean)": {
+                    "total_execution_time": 4181164051,
+                    "self_execution_time": 4181164051,
+                    "average_self_time": 711808.6569628873,
+                    "cumulative_execution_time": 4181164051,
+                    "min_execution_time": 96640,
+                    "max_execution_time": 82064403,
+                    "call_count": 5874
+                }
+            }
+        }
+    },
+    "72b2636dbd4df8499f6ad921e136fc4f426f8c20": {
+        "72b2636dbd4df8499f6ad921e136fc4f426f8c20": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "static org.HdrHistogram.AbstractHistogram org.HdrHistogram.AbstractHistogram.decodeFromCompressedByteBuffer(java.nio.ByteBuffer,java.lang.Class,long) throws java.util.zip.DataFormatException": {
+                    "total_execution_time": 1351996190,
+                    "self_execution_time": 1351996190,
+                    "average_self_time": 232781.71315426996,
+                    "cumulative_execution_time": 1351996190,
+                    "min_execution_time": 90580,
+                    "max_execution_time": 7345889,
+                    "call_count": 5808
+                }
+            }
+        },
+        "9464c8fcaf977c5bcfcb5f3d4b6c7cb492aaf049": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {
+                "static org.HdrHistogram.AbstractHistogram org.HdrHistogram.AbstractHistogram.decodeFromCompressedByteBuffer(java.nio.ByteBuffer,java.lang.Class,long) throws java.util.zip.DataFormatException": {
+                    "total_execution_time": 1368220609,
+                    "self_execution_time": 1368220609,
+                    "average_self_time": 235575.17372589532,
+                    "cumulative_execution_time": 1368220609,
+                    "min_execution_time": 87220,
+                    "max_execution_time": 6930329,
+                    "call_count": 5808
+                }
+            }
+        }
+    },
+    "18b6ae4cfa31634db050f2fd29bbcba5e1f8fb3f": {
+        "18b6ae4cfa31634db050f2fd29bbcba5e1f8fb3f": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {}
+        },
+        "32c24af481c84b0e2615f16723a701443fdcf8c5": {
+            "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer": {}
+        }
+    }
+}
