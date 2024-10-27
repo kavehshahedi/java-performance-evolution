@@ -200,6 +200,7 @@ class CodePairGenerator:
                 previous_method_name = item['previous_method']
                 current_commit_hash = commit_hash
                 previous_commit_hash = item['previous_commit']
+                commit_message = item['commit_message']
 
                 # Generate unique hash for this pair
                 hash_ = self.generate_unique_hash(
@@ -229,3 +230,17 @@ class CodePairGenerator:
                         output_path = Path(self.output_dir, f'{hash_}_v{version}.java')
                         with open(output_path, 'w') as f:
                             f.write(implementation)
+
+                    # Write metadata to a file
+                    metadata = {
+                        'hash': hash_,
+                        'commit_message': commit_message,
+                        'current_commit': current_commit_hash,
+                        'previous_commit': previous_commit_hash,
+                        'current_file': current_file_name,
+                        'previous_file': previous_file_name,
+                        'current_method': current_method_name,
+                        'previous_method': previous_method_name
+                    }
+                    with open(Path(self.output_dir, f'{hash_}_metadata.json'), 'w') as f:
+                        json.dump(metadata, f, indent=4)

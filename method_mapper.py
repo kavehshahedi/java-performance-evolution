@@ -268,6 +268,7 @@ class MethodMapper:
                         return {}
 
                     return {
+                        'commit_message': cc_commit['commit_message'],
                         'benchmark': pd_benchmark_name,
                         'method_name_pd': pd_method_name,
                         'method_name_cc': cc_method_name,
