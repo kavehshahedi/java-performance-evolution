@@ -5,8 +5,8 @@ from typing import Dict, List, Tuple, Any, Optional
 
 from similarity_service import SimilarityService
 
-MINIMUM_CALL_COUNT = 50
-MIN_PERFORMANCE_DIFF = 0.1
+MINIMUM_CALL_COUNT = 15
+MIN_PERFORMANCE_DIFF = 0.05
 
 
 class MethodMapper:
@@ -224,6 +224,7 @@ class MethodMapper:
                             if pd_commit_hash not in method_mappings:
                                 method_mappings[pd_commit_hash] = []
                             method_mappings[pd_commit_hash].append(found_mapping)
+                break
 
         # Remove commits with no method mappings
         method_mappings = {commit: mappings for commit, mappings in method_mappings.items() if mappings}
