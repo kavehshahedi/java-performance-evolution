@@ -4,7 +4,15 @@ import json
 from collections import deque, defaultdict
 from scipy import stats
 import numpy as np
-from typing import Dict, cast
+from typing import Any, Dict, cast
+
+PROJECT_NAME_MAPPING = {
+    'chronicle-core': 'Chronicle-Core',
+    'client-java': 'client_java',
+    'hdrhistogram': 'HdrHistogram',
+    'jctools': 'JCTools',
+    'simpleflatmapper': 'SimpleFlatMapper'
+}
 
 class PerformanceDiffSignificance:
     """Analyze performance changes between two versions of a program
@@ -153,96 +161,133 @@ class PerformanceDiffSignificance:
         else:
             return "large"
 
-    def calculate_significance(self, other_analysis: 'PerformanceDiffSignificance') -> Dict[str, Dict]:
+    def calculate_significance(self, other_analysis: 'PerformanceDiffSignificance', current_method: str, other_method: str) -> Dict[str, Any]:
         """
         Calculate statistical significance of changes between two versions using
         Mann-Whitney U test (p-value) and Cliff's Delta (effect size)
 
         :param other_analysis: Another instance of PerformanceDiffSignificance for the other version
         :type other_analysis: PerformanceDiffSignificance
+        :param method: Method name to analyze
+        :type method: str
         :return: A dictionary of method changes with statistical significance
-        :rtype: Dict[str, Dict]
-        """
-        results = {}
+        :rtype: Dict[str, Any]
+        """    
+        # Check if the method exists in both versions
+        if current_method not in self.execution_times or other_method not in other_analysis.execution_times:
+            return {}
+
+        before_times = np.array(self.execution_times[current_method])
+        after_times = np.array(other_analysis.execution_times[other_method])
         
-        # Analyze methods present in both versions
-        common_methods = set(self.execution_times.keys()) & set(other_analysis.execution_times.keys())
+        # Remove outliers using a more conservative method
+        before_times = self._remove_outliers(before_times)
+        after_times = self._remove_outliers(after_times)
         
-        for method in common_methods:
-            before_times = np.array(self.execution_times[method])
-            after_times = np.array(other_analysis.execution_times[method])
+        if len(before_times) < 2 or len(after_times) < 2:
+            return {}
             
-            # Remove outliers using a more conservative method
-            before_times = self._remove_outliers(before_times)
-            after_times = self._remove_outliers(after_times)
+        # Calculate basic statistics
+        before_median = np.median(before_times)
+        after_median = np.median(after_times)
+        
+        if before_median == 0:
+            return {}
             
-            if len(before_times) < 2 or len(after_times) < 2:
-                continue
-                
-            # Calculate basic statistics
-            before_median = np.median(before_times)
-            after_median = np.median(after_times)
-            
-            if before_median == 0:
-                continue
-                
-            # Calculate relative change
-            median_change = (after_median - before_median) / before_median
-            
-            # Perform Mann-Whitney U test
-            statistic, p_value = stats.mannwhitneyu(
-                before_times,
-                after_times,
-                alternative='two-sided'
-            )
-            
-            # Calculate Cliff's Delta effect size
-            effect_size = self.calculate_cliffs_delta(before_times, after_times)
-            effect_size_interpretation = self.interpret_cliffs_delta(effect_size)
-            
-            # Determine change type based on both p-value and effect size
-            is_statistically_significant = p_value < 0.05
-            has_meaningful_effect = abs(effect_size) >= 0.147  # at least small effect
-            
-            if is_statistically_significant and has_meaningful_effect:
-                if median_change > 0:
-                    change_type = "regression"
-                else:
-                    change_type = "improvement"
+        # Calculate relative change
+        median_change = (after_median - before_median) / before_median
+        
+        # Perform Mann-Whitney U test
+        statistic, p_value = stats.mannwhitneyu(
+            before_times,
+            after_times,
+            alternative='two-sided'
+        )
+        
+        # Calculate Cliff's Delta effect size
+        effect_size = self.calculate_cliffs_delta(before_times, after_times)
+        effect_size_interpretation = self.interpret_cliffs_delta(effect_size)
+        
+        # Determine change type based on both p-value and effect size
+        is_statistically_significant = p_value < 0.05
+        has_meaningful_effect = abs(effect_size) >= 0.147  # at least small effect
+        
+        if is_statistically_significant and has_meaningful_effect:
+            if median_change > 0:
+                change_type = "regression"
             else:
-                change_type = "unchanged"
-                
-            results[method] = {
-                "change_type": change_type,
-                "median_change_percentage": median_change * 100,
-                "p_value": p_value,
-                "effect_size": effect_size,
-                "effect_size_interpretation": effect_size_interpretation,
-                "statistically_significant": int(is_statistically_significant),
-                "sample_size": {
-                    "before": len(before_times),
-                    "after": len(after_times)
-                }
+                change_type = "improvement"
+        else:
+            change_type = "unchanged"
+            
+        return {
+            "change_type": change_type,
+            "median_change_percentage": median_change * 100,
+            "p_value": p_value,
+            "effect_size": effect_size,
+            "effect_size_interpretation": effect_size_interpretation,
+            "statistically_significant": int(is_statistically_significant),
+            "sample_size": {
+                "before": len(before_times),
+                "after": len(after_times)
             }
-        
-        return results
-
-    @staticmethod
-    def analyze_performance_changes(before_path: str, after_path: str) -> Dict[str, Dict]:
-        """Analyze performance changes between two versions of a program
-
-        :param before_path: Path to the trace file of the previous version
-        :type before_path: str
-        :param after_path: Path to the trace file of the current version
-        :type after_path: str
-        :return: A dictionary of method changes with statistical significance
-        :rtype: Dict[str, Dict]
-        """
-        before_analysis = PerformanceDiffSignificance(before_path)
-        before_analysis.analyze()
-        
-        after_analysis = PerformanceDiffSignificance(after_path)
-        after_analysis.analyze()
-        
-        return before_analysis.calculate_significance(after_analysis)
+        }
     
+if __name__ == "__main__":
+    with open('projects.json', 'r') as f:
+        projects = json.load(f)
+
+    trace_directory = os.path.join(os.getcwd(), '..', 'final-data')
+
+    for project in projects:
+        project_name = project['name']
+        
+        # Check if directory exists
+        if not os.path.exists(os.path.join('jphb_data', PROJECT_NAME_MAPPING.get(project_name, project_name), 'commits')):
+            # Extract traces from JPHB data
+            if not os.path.exists(os.path.join(trace_directory, project_name + '.zip')):
+                print(f"Trace file for {project_name} not found")
+                continue
+
+            zip_file = os.path.join(os.getcwd(), trace_directory, project_name + '.zip')
+            os.system(f'unzip {zip_file}')
+
+        method_mappings_path = os.path.join('results', project_name, 'method_mappings.json')
+        with open(method_mappings_path, 'r') as f:
+            method_mappings = json.load(f)
+
+        for commit_hash, commit_data in method_mappings.items():
+            before_bench_history: Dict[str, PerformanceDiffSignificance] = {}
+            after_bench_history: Dict[str, PerformanceDiffSignificance] = {}
+            for cd in commit_data:
+                if 'significance' in cd:
+                    continue
+                
+                benchmark_name = cd['benchmark']
+                previous_commit_hash = cd['previous_commit']
+                current_method = cd['method_name_pd']
+                previous_method = cd['previous_method_pd']
+
+                if benchmark_name in before_bench_history and benchmark_name in after_bench_history:
+                    before_analysis = before_bench_history[benchmark_name]
+                    after_analysis = after_bench_history[benchmark_name]
+                else:
+                    trace_path_before = os.path.join('jphb_data', PROJECT_NAME_MAPPING.get(project_name, project_name), 'commits', commit_hash, 'execution', previous_commit_hash, 'ust', benchmark_name + '.log')
+                    trace_path_after = os.path.join('jphb_data', PROJECT_NAME_MAPPING.get(project_name, project_name), 'commits', commit_hash, 'execution', commit_hash, 'ust', benchmark_name + '.log')
+
+                    before_analysis = PerformanceDiffSignificance(trace_path_before)
+                    before_analysis.analyze()
+                    before_bench_history[benchmark_name] = before_analysis
+
+                    after_analysis = PerformanceDiffSignificance(trace_path_after)
+                    after_analysis.analyze()
+                    after_bench_history[benchmark_name] = after_analysis
+
+                results = before_analysis.calculate_significance(after_analysis, previous_method, current_method)
+                cd['significance'] = results
+
+            with open(method_mappings_path, 'w') as f:
+                json.dump(method_mappings, f, indent=4)
+
+        # Clean up extracted traces
+        os.system(f'rm -rf jphb_data/{PROJECT_NAME_MAPPING.get(project_name, project_name)}')
