@@ -265,8 +265,8 @@ class MethodMapper:
                         return {}
 
                     performance_diff = self.calculate_combined_performance(current_pd['average_self_time'], prev_pd['average_self_time'], current_pd['min_execution_time'], prev_pd['min_execution_time'])
-                    if abs(performance_diff) < MIN_PERFORMANCE_DIFF:
-                        return {}
+                    # if abs(performance_diff) < MIN_PERFORMANCE_DIFF:
+                    #     return {}
 
                     return {
                         'commit_message': cc_commit['commit_message'],
@@ -274,7 +274,8 @@ class MethodMapper:
                         'method_name_pd': pd_method_name,
                         'method_name_cc': cc_method_name,
                         'file': cc_file_name,
-                        'previous_method': previous_method,
+                        'previous_method_cc': previous_method,
+                        'previous_method_pd': pd_method_name_prev,
                         'previous_file': previous_file,
                         'previous_commit': cc_commit['previous_commit'],
                         'performance_diff': performance_diff
