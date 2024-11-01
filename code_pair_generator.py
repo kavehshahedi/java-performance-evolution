@@ -229,6 +229,12 @@ class CodePairGenerator:
 
                 # Save method pairs if both versions were successfully extracted
                 if len(method_pairs) == 2:
+                    # If method paris are exactly the same, skip
+                    p1 = str(method_pairs[0]).strip().lower().replace(' ', '').replace('\n', '')
+                    p2 = str(method_pairs[1]).strip().lower().replace(' ', '').replace('\n', '')
+                    if p1 == p2:
+                        continue
+
                     self.history.add(hash_)
                     for version, implementation in enumerate(method_pairs, 1):
                         output_path = Path(self.output_dir, f'{hash_}_v{version}.java')
@@ -249,3 +255,17 @@ class CodePairGenerator:
                     }
                     with open(Path(self.output_dir, f'{hash_}_metadata.json'), 'w') as f:
                         json.dump(metadata, f, indent=4)
+
+if __name__ == "__main__":
+    """Example usage of the CodePairGenerator class."""
+    with open('projects.json', 'r') as file:
+        projects = json.load(file)
+
+    for project in projects:
+        project_name = project['name']
+        project_git_url = project['git_url']
+        generator = CodePairGenerator(
+            project_name=project_name,
+            git_url=project_git_url
+        )
+        generator.generate_code_pairs()
