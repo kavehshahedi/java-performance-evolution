@@ -197,10 +197,14 @@ class CodePairGenerator:
                 current_file_name = item['file']
                 previous_file_name = item['previous_file']
                 current_method_name = item['method_name_cc']
-                previous_method_name = item['previous_method']
+                previous_method_name = item['previous_method_cc']
                 current_commit_hash = commit_hash
                 previous_commit_hash = item['previous_commit']
                 commit_message = item['commit_message']
+                significance = item['significance']
+
+                if not significance:
+                    continue
 
                 # Generate unique hash for this pair
                 hash_ = self.generate_unique_hash(
@@ -240,7 +244,8 @@ class CodePairGenerator:
                         'current_file': current_file_name,
                         'previous_file': previous_file_name,
                         'current_method': current_method_name,
-                        'previous_method': previous_method_name
+                        'previous_method': previous_method_name,
+                        'significance': significance
                     }
                     with open(Path(self.output_dir, f'{hash_}_metadata.json'), 'w') as f:
                         json.dump(metadata, f, indent=4)
