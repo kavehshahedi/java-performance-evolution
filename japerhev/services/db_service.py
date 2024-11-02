@@ -3,9 +3,9 @@ from pymongo import MongoClient
 import os
 import dotenv
 
-from .code_pair import CodePair
+from japerhev.models.code_pair import CodePair
 
-dotenv.load_dotenv()
+dotenv.load_dotenv(override=True)
 
 
 class DBService:
@@ -15,12 +15,13 @@ class DBService:
 
     def __init__(self, db_name: str = os.getenv('DB_NAME', 'cctb'),
                     db_url: str = os.getenv('DB_URL', 'localhost:27017'),
-                    use_cloud_db: bool = False) -> None:
+                    use_cloud_db: bool = True) -> None:
         if use_cloud_db:
             db_url = os.getenv('CLOUD_DB_URL', db_url)
  
         self.client = MongoClient(db_url)
         self.db = self.client[db_name]
+
 
     def get_code_pairs(self, project_name: Optional[str] = None) -> List[CodePair]:
         """Get all code pairs from the database.
@@ -32,7 +33,7 @@ class DBService:
         """
         code_pairs = []
         query = {} if project_name is None else {'project_name': project_name}
-        cursor = self.db.code_pairs.find(query)
+        cursor = self.db['codepairs'].find(query, {'_id': 0, '__v': 0})
 
         for pair in cursor:
             code_pairs.append(CodePair(**pair))

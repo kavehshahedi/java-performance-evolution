@@ -4,7 +4,7 @@ import random
 import requests
 from typing import List
 
-from .code_pair import CodePair
+from japerhev.models.code_pair import CodePair
 
 
 class CodePairInserter:

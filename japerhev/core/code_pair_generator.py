@@ -4,6 +4,7 @@ from git import Repo
 import subprocess
 import hashlib
 import os
+import sys
 from pathlib import Path
 
 class CodePairGenerator:
@@ -173,7 +174,7 @@ class CodePairGenerator:
         process = subprocess.run([
             'java',
             '-jar',
-            'jpb.jar',
+            os.path.join(sys.path[0], 'japerhev', 'resources', 'jpb.jar'),
             '-get-method',
             f'{self.repo.working_dir}/{file_name}',
             self.simplify_java_signature(method_name)

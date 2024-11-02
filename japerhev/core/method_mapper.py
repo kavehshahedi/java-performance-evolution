@@ -3,7 +3,7 @@ import os
 import re
 from typing import Dict, List, Tuple, Any, Optional
 
-from similarity_service import SimilarityService
+from japerhev.services.similarity_service import SimilarityService
 
 MINIMUM_CALL_COUNT = 15
 MIN_PERFORMANCE_DIFF = 0.05
