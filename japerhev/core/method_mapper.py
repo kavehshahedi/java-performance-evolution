@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import re
 from typing import Dict, List, Tuple, Any, Optional
 
@@ -356,8 +357,8 @@ def main():
     for project in projects:
         project_name = project['name']
         print(f"Processing project: {project_name}")
-        candidate_commits_path = os.path.join('jphb-performance-data', project_name, 'candidate_commits.json')
-        performance_data_path = os.path.join('jphb-performance-data', project_name, 'performance_data.json')
+        candidate_commits_path = os.path.join(sys.path[0], 'jphb-performance-data', project_name, 'candidate_commits.json')
+        performance_data_path = os.path.join(sys.path[0], 'jphb-performance-data', project_name, 'performance_data.json')
         mapper = MethodMapper(candidate_commits_path, performance_data_path)
         mapper.run(os.path.join('results', project_name, 'method_mappings.json'))
 
