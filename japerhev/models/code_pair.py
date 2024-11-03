@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Optional
 
 @dataclass
 class CodePair:
@@ -23,3 +24,4 @@ class CodePair:
     commitHash: str
     commitMessage: str
     performanceChange: str
+    _id: Optional[str] = None

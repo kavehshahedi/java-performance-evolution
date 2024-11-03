@@ -33,7 +33,7 @@ class DBService:
         """
         code_pairs = []
         query = {} if project_name is None else {'project_name': project_name}
-        cursor = self.db['codepairs'].find(query, {'_id': 0, '__v': 0})
+        cursor = self.db['codepairs'].find(query, {'__v': 0})
 
         for pair in cursor:
             code_pairs.append(CodePair(**pair))
