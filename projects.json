@@ -3,90 +3,150 @@
         "name": "hdrhistogram",
         "git_url": "https://github.com/HdrHistogram/HdrHistogram",
         "domain": "monitoring",
-        "KLOC": 8.89
+        "KLOC": 8.89,
+        "method_changes": 158,
+        "benchmarks": 317,
+        "candidate_commits": 73,
+        "perf": 29
     },
     {
         "name": "jctools",
         "git_url": "https://github.com/JCTools/JCTools",
         "domain": "system programming",
-        "KLOC": 31.48
+        "KLOC": 31.48,
+        "method_changes": 339,
+        "benchmarks": 1042,
+        "candidate_commits": 339,
+        "perf": 55
     },
     {
         "name": "simpleflatmapper",
         "git_url": "https://github.com/arnaudroger/SimpleFlatMapper",
         "domain": "data processing",
-        "KLOC": 51.79
+        "KLOC": 51.79,
+        "method_changes": 911,
+        "benchmarks": 1969,
+        "candidate_commits": 485,
+        "perf": 81
     },
     {
         "name": "objenesis",
         "git_url": "https://github.com/easymock/objenesis",
         "domain": "testing",
-        "KLOC": 2.69
+        "KLOC": 2.69,
+        "method_changes": 107,
+        "benchmarks": 784,
+        "candidate_commits": 72,
+        "perf": 15
     },
     {
         "name": "apm-agent-java",
         "git_url": "https://github.com/elastic/apm-agent-java",
         "domain": "monitoring",
-        "KLOC": 80.22
+        "KLOC": 80.22,
+        "method_changes": 891,
+        "benchmarks": 2984,
+        "candidate_commits": 889,
+        "perf": 168
     },
     {
         "name": "jetty",
         "git_url": "https://github.com/eclipse/jetty.project",
         "domain": "web server",
-        "KLOC": 339.06
+        "KLOC": 339.06,
+        "method_changes": 2472,
+        "benchmarks": 12720,
+        "candidate_commits": 2472,
+        "perf": 108
     },
     {
         "name": "netty",
         "git_url": "https://github.com/netty/netty",
         "domain": "networking",
-        "KLOC": 216.98
+        "KLOC": 216.98,
+        "method_changes": 4241,
+        "benchmarks": 7669,
+        "candidate_commits": 4240,
+        "perf": 87
     },
     {
         "name": "zipkin",
         "git_url": "https://github.com/openzipkin/zipkin",
         "domain": "monitoring",
-        "KLOC": 23.51
+        "KLOC": 23.51,
+        "method_changes": 656,
+        "benchmarks": 2726,
+        "candidate_commits": 615,
+        "perf": 90
     },
     {
         "name": "client-java",
         "git_url": "https://github.com/prometheus/client_java",
         "domain": "monitoring",
-        "KLOC": 27.38
+        "KLOC": 27.38,
+        "method_changes": 155,
+        "benchmarks": 667,
+        "candidate_commits": 154,
+        "perf": 17
     },
     {
         "name": "chronicle-core",
         "git_url": "https://github.com/OpenHFT/Chronicle-Core",
         "domain": "system programming",
-        "KLOC": 13.25
+        "KLOC": 13.25,
+        "method_changes": 780,
+        "benchmarks": 3170,
+        "candidate_commits": 585,
+        "perf": 4
     },
     {
         "name": "fastjson2",
         "git_url": "https://github.com/alibaba/fastjson2",
         "domain": "data processing",
-        "KLOC": 178.5
+        "KLOC": 178.5,
+        "method_changes": 1726,
+        "benchmarks": 3725,
+        "candidate_commits": 1726,
+        "perf": 315
     },
     {
         "name": "jdbi",
         "git_url": "https://github.com/jdbi/jdbi",
         "domain": "data processing",
-        "KLOC": 28.49
+        "KLOC": 28.49,
+        "method_changes": 1266,
+        "benchmarks": 1919,
+        "candidate_commits": 313,
+        "perf": 144
     },
     {
         "name": "feign",
         "git_url": "https://github.com/OpenFeign/feign",
         "domain": "web server",
-        "KLOC": 17.42
+        "KLOC": 17.42,
+        "method_changes": 351,
+        "benchmarks": 1384,
+        "candidate_commits": 229,
+        "perf": 65
     },
     {
         "name": "protostuff",
         "git_url": "https://github.com/protostuff/protostuff",
         "domain": "data processing",
-        "KLOC": 42.29
+        "KLOC": 42.29,
+        "method_changes": 448,
+        "benchmarks": 1354,
+        "candidate_commits": 448,
+        "perf": 7
     },
     {
         "name": "jersey",
         "git_url": "https://github.com/eclipse-ee4j/jersey",
         "domain": "web server",
-        "KLOC": 158.91
+        "KLOC": 158.91,
+        "method_changes": 310,
+        "benchmarks": 781,
+        "candidate_commits": 310,
+        "perf": 84
     }
 ]
