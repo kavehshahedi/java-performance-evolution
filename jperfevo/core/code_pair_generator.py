@@ -174,7 +174,7 @@ class CodePairGenerator:
         process = subprocess.run([
             'java',
             '-jar',
-            os.path.join(sys.path[0], 'japerhev', 'resources', 'jpb.jar'),
+            os.path.join(sys.path[0], 'jperfevo', 'resources', 'jpb.jar'),
             '-get-method',
             f'{self.repo.working_dir}/{file_name}',
             self.simplify_java_signature(method_name)
@@ -256,17 +256,3 @@ class CodePairGenerator:
                     }
                     with open(Path(self.output_dir, f'{hash_}_metadata.json'), 'w') as f:
                         json.dump(metadata, f, indent=4)
-
-if __name__ == "__main__":
-    """Example usage of the CodePairGenerator class."""
-    with open('projects.json', 'r') as file:
-        projects = json.load(file)
-
-    for project in projects:
-        project_name = project['name']
-        project_git_url = project['git_url']
-        generator = CodePairGenerator(
-            project_name=project_name,
-            git_url=project_git_url
-        )
-        generator.generate_code_pairs()

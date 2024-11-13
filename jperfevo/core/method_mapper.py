@@ -4,7 +4,7 @@ import sys
 import re
 from typing import Dict, List, Tuple, Any, Optional
 
-from japerhev.services.similarity_service import SimilarityService
+from jperfevo.services.similarity_service import SimilarityService
 
 MINIMUM_CALL_COUNT = 15
 MIN_PERFORMANCE_DIFF = 0.05
@@ -349,19 +349,3 @@ class MethodMapper:
         """
         method_mappings = self.create_method_mappings()
         self._save_json(method_mappings, output_file)
-
-def main():
-    with open('projects.json', 'r') as file:
-        projects = json.load(file)
-
-    for project in projects:
-        project_name = project['name']
-        print(f"Processing project: {project_name}")
-        candidate_commits_path = os.path.join(sys.path[0], 'jphb-performance-data', project_name, 'candidate_commits.json')
-        performance_data_path = os.path.join(sys.path[0], 'jphb-performance-data', project_name, 'performance_data.json')
-        mapper = MethodMapper(candidate_commits_path, performance_data_path)
-        mapper.run(os.path.join('results', project_name, 'method_mappings.json'))
-
-
-if __name__ == "__main__":
-    main()

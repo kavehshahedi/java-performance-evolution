@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import os
 import dotenv
 
-from japerhev.models.code_pair import CodePair
+from jperfevo.models.code_pair import CodePair
 
 dotenv.load_dotenv(override=True)
 
