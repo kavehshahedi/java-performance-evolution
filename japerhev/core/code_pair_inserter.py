@@ -65,6 +65,7 @@ class CodePairInserter:
                     version1=v1_content,
                     version2=v2_content,
                     commitHash=commit_hash,
+                    methodName=metadata.get('current_method', ''),
                     commitMessage=metadata.get('commit_message', ''),
                     performanceChange=metadata.get('significance', {}).get('change_type', '')
                 ))

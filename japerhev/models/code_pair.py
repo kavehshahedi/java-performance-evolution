@@ -24,4 +24,5 @@ class CodePair:
     commitHash: str
     commitMessage: str
     performanceChange: str
+    methodName: Optional[str] = None
     _id: Optional[str] = None
