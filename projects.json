@@ -1,62 +1,92 @@
 [
     {
         "name": "hdrhistogram",
-        "git_url": "https://github.com/HdrHistogram/HdrHistogram"
+        "git_url": "https://github.com/HdrHistogram/HdrHistogram",
+        "domain": "monitoring",
+        "KLOC": 8.89
     },
     {
         "name": "jctools",
-        "git_url": "https://github.com/JCTools/JCTools"
+        "git_url": "https://github.com/JCTools/JCTools",
+        "domain": "system programming",
+        "KLOC": 31.48
     },
     {
         "name": "simpleflatmapper",
-        "git_url": "https://github.com/arnaudroger/SimpleFlatMapper"
+        "git_url": "https://github.com/arnaudroger/SimpleFlatMapper",
+        "domain": "data processing",
+        "KLOC": 51.79
     },
     {
         "name": "objenesis",
-        "git_url": "https://github.com/easymock/objenesis"
+        "git_url": "https://github.com/easymock/objenesis",
+        "domain": "testing",
+        "KLOC": 2.69
     },
     {
         "name": "apm-agent-java",
-        "git_url": "https://github.com/elastic/apm-agent-java"
+        "git_url": "https://github.com/elastic/apm-agent-java",
+        "domain": "monitoring",
+        "KLOC": 80.22
     },
     {
         "name": "jetty",
-        "git_url": "https://github.com/eclipse/jetty.project"
+        "git_url": "https://github.com/eclipse/jetty.project",
+        "domain": "web server",
+        "KLOC": 339.06
     },
     {
         "name": "netty",
-        "git_url": "https://github.com/netty/netty"
+        "git_url": "https://github.com/netty/netty",
+        "domain": "networking",
+        "KLOC": 216.98
     },
     {
         "name": "zipkin",
-        "git_url": "https://github.com/openzipkin/zipkin"
+        "git_url": "https://github.com/openzipkin/zipkin",
+        "domain": "monitoring",
+        "KLOC": 23.51
     },
     {
         "name": "client-java",
-        "git_url": "https://github.com/prometheus/client_java"
+        "git_url": "https://github.com/prometheus/client_java",
+        "domain": "monitoring",
+        "KLOC": 27.38
     },
     {
         "name": "chronicle-core",
-        "git_url": "https://github.com/OpenHFT/Chronicle-Core"
+        "git_url": "https://github.com/OpenHFT/Chronicle-Core",
+        "domain": "system programming",
+        "KLOC": 13.25
     },
     {
         "name": "fastjson2",
-        "git_url": "https://github.com/alibaba/fastjson2"
+        "git_url": "https://github.com/alibaba/fastjson2",
+        "domain": "data processing",
+        "KLOC": 178.5
     },
     {
         "name": "jdbi",
-        "git_url": "https://github.com/jdbi/jdbi"
+        "git_url": "https://github.com/jdbi/jdbi",
+        "domain": "data processing",
+        "KLOC": 28.49
     },
     {
         "name": "feign",
-        "git_url": "https://github.com/OpenFeign/feign"
+        "git_url": "https://github.com/OpenFeign/feign",
+        "domain": "web server",
+        "KLOC": 17.42
     },
     {
         "name": "protostuff",
-        "git_url": "https://github.com/protostuff/protostuff"
+        "git_url": "https://github.com/protostuff/protostuff",
+        "domain": "data processing",
+        "KLOC": 42.29
     },
     {
         "name": "jersey",
-        "git_url": "https://github.com/eclipse-ee4j/jersey"
+        "git_url": "https://github.com/eclipse-ee4j/jersey",
+        "domain": "web server",
+        "KLOC": 158.91
     }
 ]
