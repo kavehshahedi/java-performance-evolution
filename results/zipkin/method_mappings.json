@@ -1,0 +1,2408 @@
+{
+    "ad8097a6fc9471799983b44ad8d2744c8506af74": [
+        {
+            "commit_message": "Uses RetroLambda to get rid of IDE setup and cruft (#1425)\n\nThis uses RetroLambda which allows you to use Java 8 source level even\r\nif your bytecode level is Java 6. This makes coding more fun and also\r\nobviates IDE setup needed to manage different source levels between main\r\nand test code trees.\r\n\r\nThis also moves modules who don't use Java 8 types back to language\r\nlevel 7.\r\n\r\nThe same has been in use by zipkin-reporter-java for some time.\r\n\r\nSee https://github.com/orfjackal/retrolambda",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readRpcSpan_thrift_zipkin",
+            "method_name_pd": "static java.util.List zipkin.internal.ThriftCodec.readList(zipkin.internal.ThriftCodec$ThriftReader,java.nio.ByteBuffer)",
+            "method_name_cc": "static <T> List<T> zipkin.internal.ThriftCodec.readList(ThriftReader<T> reader, ByteBuffer bytes)",
+            "file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_method_cc": "static <T> List<T> zipkin.internal.ThriftCodec.readList(ThriftReader<T> reader, ByteBuffer bytes)",
+            "previous_method_pd": "static java.util.List zipkin.internal.ThriftCodec.readList(zipkin.internal.ThriftCodec$ThriftReader,java.nio.ByteBuffer)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_commit": "827a14bda8f13fda3ce87f7ed1b39fce1e479ba8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.911854103343465,
+                "p_value": 0.0,
+                "effect_size": 0.06768205869008202,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1791184,
+                    "after": 1826007
+                }
+            }
+        }
+    ],
+    "0ccb2d696a7aa54230473231f713941b07e26881": [
+        {
+            "commit_message": "Addresses most errorprone feedback so we have less compile warnings (#2750)\n\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readTenClientSpans_JSON_V2",
+            "method_name_pd": "static void zipkin2.internal.ThriftCodec.writeLengthPrefixed(zipkin2.internal.WriteBuffer,java.lang.String)",
+            "method_name_cc": "static void zipkin2.internal.ThriftCodec.writeLengthPrefixed(WriteBuffer buffer, String utf8)",
+            "file": "zipkin/src/main/java/zipkin2/internal/ThriftCodec.java",
+            "previous_method_cc": "static void zipkin2.internal.ThriftCodec.writeLengthPrefixed(WriteBuffer buffer, String utf8)",
+            "previous_method_pd": "static void zipkin2.internal.ThriftCodec.writeLengthPrefixed(zipkin2.internal.WriteBuffer,java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/ThriftCodec.java",
+            "previous_commit": "7190a6d576e2a26ea3c6041e1f728d56bc3ce43f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.0867104369481548,
+                "p_value": 0.8620279583455629,
+                "effect_size": 0.019943019943019943,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 54,
+                    "after": 52
+                }
+            }
+        },
+        {
+            "commit_message": "Addresses most errorprone feedback so we have less compile warnings (#2750)\n\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readTenClientSpans_JSON_V2",
+            "method_name_pd": "public java.util.List zipkin2.codec.SpanBytesDecoder$3.decodeList(byte[])",
+            "method_name_cc": "public List<DependencyLink> decodeList(byte[] links)",
+            "file": "zipkin/src/main/java/zipkin2/codec/DependencyLinkBytesDecoder.java",
+            "previous_method_cc": "public List<DependencyLink> decodeList(byte[] links)",
+            "previous_method_pd": "public java.util.List zipkin2.codec.SpanBytesDecoder$3.decodeList(byte[])",
+            "previous_file": "zipkin/src/main/java/zipkin2/codec/DependencyLinkBytesDecoder.java",
+            "previous_commit": "7190a6d576e2a26ea3c6041e1f728d56bc3ce43f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 0.08613264427217916,
+                "p_value": 0.0,
+                "effect_size": 0.20433686264224515,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 277963,
+                    "after": 235316
+                }
+            }
+        },
+        {
+            "commit_message": "Addresses most errorprone feedback so we have less compile warnings (#2750)\n\n",
+            "benchmark": "zipkin2.server.internal.throttle.ThrottledCallBenchmarks.execute_overCapacity",
+            "method_name_pd": "static boolean zipkin2.server.internal.throttle.ThrottledCall.await(java.util.concurrent.CountDownLatch)",
+            "method_name_cc": "static boolean zipkin2.server.internal.throttle.ThrottledCall.await(CountDownLatch latch)",
+            "file": "zipkin-server/src/main/java/zipkin2/server/internal/throttle/ThrottledCall.java",
+            "previous_method_cc": "static boolean zipkin2.server.internal.throttle.ThrottledCall.await(CountDownLatch latch)",
+            "previous_method_pd": "static boolean zipkin2.server.internal.throttle.ThrottledCall.await(java.util.concurrent.CountDownLatch)",
+            "previous_file": "zipkin-server/src/main/java/zipkin2/server/internal/throttle/ThrottledCall.java",
+            "previous_commit": "7190a6d576e2a26ea3c6041e1f728d56bc3ce43f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 5.139664804469274,
+                "p_value": 5.632180369324597e-07,
+                "effect_size": 0.0036000155171928222,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1264578,
+                    "after": 1311803
+                }
+            }
+        },
+        {
+            "commit_message": "Addresses most errorprone feedback so we have less compile warnings (#2750)\n\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_THRIFT",
+            "method_name_pd": "static int zipkin2.internal.ThriftCodec.readListLength(zipkin2.internal.ReadBuffer)",
+            "method_name_cc": "static int zipkin2.internal.ThriftCodec.readListLength(ReadBuffer buffer)",
+            "file": "zipkin/src/main/java/zipkin2/internal/ThriftCodec.java",
+            "previous_method_cc": "static int zipkin2.internal.ThriftCodec.readListLength(ReadBuffer buffer)",
+            "previous_method_pd": "static int zipkin2.internal.ThriftCodec.readListLength(zipkin2.internal.ReadBuffer)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/ThriftCodec.java",
+            "previous_commit": "7190a6d576e2a26ea3c6041e1f728d56bc3ce43f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -7.92712949286066,
+                "p_value": 0.0,
+                "effect_size": 0.24774394278410547,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1999235,
+                    "after": 2052754
+                }
+            }
+        }
+    ],
+    "36d6e560c7ff3880661e5b158e86ecbe72d67eb0": [
+        {
+            "commit_message": "Adds Codec.sizeInBytes and changes json to write fixed-length arrays (#1260)\n\nThis adds `Codec.sizeInBytes(Span)`, which is used to pre-allocate a\r\nbuffer to write the span into.\r\n\r\nThis changes the json encoder to use this approach, which drops its\r\nencoding overhead by an order of magnitude.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeShort(int)",
+            "method_name_cc": "Buffer zipkin.internal.Buffer.writeShort(int v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "Buffer zipkin.internal.Buffer.writeShort(int v)",
+            "previous_method_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeShort(int)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "2297f9d1e03329bdb67e7cb65890254eea7192b6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 14.653328655976644,
+                "p_value": 4.7388340994119795e-07,
+                "effect_size": -0.14147989591202886,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 836,
+                    "after": 855
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Codec.sizeInBytes and changes json to write fixed-length arrays (#1260)\n\nThis adds `Codec.sizeInBytes(Span)`, which is used to pre-allocate a\r\nbuffer to write the span into.\r\n\r\nThis changes the json encoder to use this approach, which drops its\r\nencoding overhead by an order of magnitude.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeLong(long)",
+            "method_name_cc": "Buffer zipkin.internal.Buffer.writeLong(long v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "Buffer zipkin.internal.Buffer.writeLong(long v)",
+            "previous_method_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeLong(long)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "2297f9d1e03329bdb67e7cb65890254eea7192b6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 38.63750476993834,
+                "p_value": 0.0007022822016972589,
+                "effect_size": -0.2833713478874769,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 93,
+                    "after": 99
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Codec.sizeInBytes and changes json to write fixed-length arrays (#1260)\n\nThis adds `Codec.sizeInBytes(Span)`, which is used to pre-allocate a\r\nbuffer to write the span into.\r\n\r\nThis changes the json encoder to use this approach, which drops its\r\nencoding overhead by an order of magnitude.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeInt(int)",
+            "method_name_cc": "Buffer zipkin.internal.Buffer.writeInt(int v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "Buffer zipkin.internal.Buffer.writeInt(int v)",
+            "previous_method_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeInt(int)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "2297f9d1e03329bdb67e7cb65890254eea7192b6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 7.966567437600183,
+                "p_value": 0.0010970682542188418,
+                "effect_size": -0.12314896906044694,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 465,
+                    "after": 473
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Codec.sizeInBytes and changes json to write fixed-length arrays (#1260)\n\nThis adds `Codec.sizeInBytes(Span)`, which is used to pre-allocate a\r\nbuffer to write the span into.\r\n\r\nThis changes the json encoder to use this approach, which drops its\r\nencoding overhead by an order of magnitude.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeAscii(java.lang.String)",
+            "method_name_cc": "Buffer zipkin.internal.Buffer.writeAscii(String v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "Buffer zipkin.internal.Buffer.writeAscii(String v)",
+            "previous_method_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeAscii(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "2297f9d1e03329bdb67e7cb65890254eea7192b6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -96.36163175303197,
+                "p_value": 3.708036955777063e-133,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 201,
+                    "after": 2065965
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Codec.sizeInBytes and changes json to write fixed-length arrays (#1260)\n\nThis adds `Codec.sizeInBytes(Span)`, which is used to pre-allocate a\r\nbuffer to write the span into.\r\n\r\nThis changes the json encoder to use this approach, which drops its\r\nencoding overhead by an order of magnitude.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "static void zipkin.internal.ThriftCodec.writeListBegin(zipkin.internal.Buffer,int)",
+            "method_name_cc": "static void zipkin.internal.ThriftCodec.writeListBegin(Buffer buffer, int size)",
+            "file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_method_cc": "static void zipkin.internal.ThriftCodec.writeListBegin(Buffer buffer, int size)",
+            "previous_method_pd": "static void zipkin.internal.ThriftCodec.writeListBegin(zipkin.internal.Buffer,int)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_commit": "2297f9d1e03329bdb67e7cb65890254eea7192b6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 25.801064607034757,
+                "p_value": 0.36978382965204715,
+                "effect_size": -0.15810276679841898,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 23,
+                    "after": 22
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Codec.sizeInBytes and changes json to write fixed-length arrays (#1260)\n\nThis adds `Codec.sizeInBytes(Span)`, which is used to pre-allocate a\r\nbuffer to write the span into.\r\n\r\nThis changes the json encoder to use this approach, which drops its\r\nencoding overhead by an order of magnitude.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "byte[] zipkin.internal.Buffer.toByteArray()",
+            "method_name_cc": "byte[] zipkin.internal.Buffer.toByteArray()",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "byte[] zipkin.internal.Buffer.toByteArray()",
+            "previous_method_pd": "byte[] zipkin.internal.Buffer.toByteArray()",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "2297f9d1e03329bdb67e7cb65890254eea7192b6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -72.77310924369748,
+                "p_value": 0.0,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 328883,
+                    "after": 54303
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Codec.sizeInBytes and changes json to write fixed-length arrays (#1260)\n\nThis adds `Codec.sizeInBytes(Span)`, which is used to pre-allocate a\r\nbuffer to write the span into.\r\n\r\nThis changes the json encoder to use this approach, which drops its\r\nencoding overhead by an order of magnitude.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "public byte[] zipkin.internal.JsonCodec.writeSpan(zipkin.Span)",
+            "method_name_cc": "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)",
+            "file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_method_cc": "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)",
+            "previous_method_pd": "public byte[] zipkin.internal.JsonCodec.writeSpan(zipkin.Span)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_commit": "2297f9d1e03329bdb67e7cb65890254eea7192b6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 758.5106382978723,
+                "p_value": 0.0,
+                "effect_size": -1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 376087,
+                    "after": 49486
+                }
+            }
+        }
+    ],
+    "95ace09d004c92c225ffcf70782ea42a5825760a": [
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.SpanBenchmarks.padLeft_31Chars",
+            "method_name_pd": "static java.lang.String zipkin2.Span.padLeft(java.lang.String,int)",
+            "method_name_cc": "static String zipkin2.Span.padLeft(String id, int desiredLength)",
+            "file": "zipkin/src/main/java/zipkin2/Span.java",
+            "previous_method_cc": "static String zipkin2.Span.padLeft(String id, int desiredLength)",
+            "previous_method_pd": "static java.lang.String zipkin2.Span.padLeft(java.lang.String,int)",
+            "previous_file": "zipkin/src/main/java/zipkin2/Span.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 5.288461538461538,
+                "p_value": 0.0,
+                "effect_size": -0.020705866073508907,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 5767197,
+                    "after": 5657181
+                }
+            }
+        },
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.codec.ProtoCodecBenchmarks.bytebuffer_zipkinDecoder",
+            "method_name_pd": "final java.lang.String zipkin2.internal.ReadBuffer.readBytesAsHex(int)",
+            "method_name_cc": "final String zipkin2.internal.ReadBuffer.readBytesAsHex(int length)",
+            "file": "zipkin/src/main/java/zipkin2/internal/ReadBuffer.java",
+            "previous_method_cc": "final String zipkin2.internal.ReadBuffer.readBytesAsHex(int length)",
+            "previous_method_pd": "final java.lang.String zipkin2.internal.ReadBuffer.readBytesAsHex(int)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/ReadBuffer.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.6968987712112347,
+                "p_value": 0.0,
+                "effect_size": 0.05051528557560971,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3047430,
+                    "after": 3075783
+                }
+            }
+        },
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.codec.ProtoCodecBenchmarks.bytebuffer_zipkinDecoder",
+            "method_name_pd": "static java.util.List zipkin2.codec.SpanBytesDecoder.doDecodeList(zipkin2.codec.SpanBytesDecoder,java.nio.ByteBuffer)",
+            "method_name_cc": "static List<Span> doDecodeList(SpanBytesDecoder decoder, ByteBuffer spans)",
+            "file": "zipkin/src/main/java/zipkin2/codec/SpanBytesDecoder.java",
+            "previous_method_cc": "static List<Span> doDecodeList(SpanBytesDecoder decoder, ByteBuffer spans)",
+            "previous_method_pd": "static java.util.List zipkin2.codec.SpanBytesDecoder.doDecodeList(zipkin2.codec.SpanBytesDecoder,java.nio.ByteBuffer)",
+            "previous_file": "zipkin/src/main/java/zipkin2/codec/SpanBytesDecoder.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -0.7035519702516422,
+                "p_value": 2.1884732016515287e-08,
+                "effect_size": 0.1625490619279439,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 777,
+                    "after": 805
+                }
+            }
+        },
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_THRIFT",
+            "method_name_pd": "static java.lang.String zipkin2.Endpoint.writeIpV6(byte[])",
+            "method_name_cc": "static String zipkin2.Endpoint.writeIpV6(byte[] ipv6)",
+            "file": "zipkin/src/main/java/zipkin2/Endpoint.java",
+            "previous_method_cc": "static String zipkin2.Endpoint.writeIpV6(byte[] ipv6)",
+            "previous_method_pd": "static java.lang.String zipkin2.Endpoint.writeIpV6(byte[])",
+            "previous_file": "zipkin/src/main/java/zipkin2/Endpoint.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.6060606060606061,
+                "p_value": 5.654745912536825e-222,
+                "effect_size": -0.031494515257106566,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 668865,
+                    "after": 691042
+                }
+            }
+        },
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_THRIFT",
+            "method_name_pd": "static java.util.List zipkin2.v1.V1Span.sortedList(java.util.List)",
+            "method_name_cc": "static <T extends Comparable<T>> List<T> zipkin2.v1.V1Span.sortedList(List<T> input)",
+            "file": "zipkin/src/main/java/zipkin2/v1/V1Span.java",
+            "previous_method_cc": "static <T extends Comparable<T>> List<T> zipkin2.v1.V1Span.sortedList(List<T> input)",
+            "previous_method_pd": "static java.util.List zipkin2.v1.V1Span.sortedList(java.util.List)",
+            "previous_file": "zipkin/src/main/java/zipkin2/v1/V1Span.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.6024096385542169,
+                "p_value": 2.6130653389506866e-12,
+                "effect_size": -0.012031566723913355,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 222174,
+                    "after": 228833
+                }
+            }
+        },
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_THRIFT",
+            "method_name_pd": "final java.lang.String zipkin2.internal.ReadBuffer.readUtf8(int)",
+            "method_name_cc": "final String zipkin2.internal.ReadBuffer.readUtf8(int length)",
+            "file": "zipkin/src/main/java/zipkin2/internal/ReadBuffer.java",
+            "previous_method_cc": "final String zipkin2.internal.ReadBuffer.readUtf8(int length)",
+            "previous_method_pd": "final java.lang.String zipkin2.internal.ReadBuffer.readUtf8(int)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/ReadBuffer.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.2195121951219512,
+                "p_value": 0.0,
+                "effect_size": -0.02213749684179928,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2012181,
+                    "after": 2080343
+                }
+            }
+        },
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_THRIFT",
+            "method_name_pd": "static java.lang.String zipkin2.Span.toLowerHex(long)",
+            "method_name_cc": "static String zipkin2.Span.toLowerHex(long v)",
+            "file": "zipkin/src/main/java/zipkin2/Span.java",
+            "previous_method_cc": "static String zipkin2.Span.toLowerHex(long v)",
+            "previous_method_pd": "static java.lang.String zipkin2.Span.toLowerHex(long)",
+            "previous_file": "zipkin/src/main/java/zipkin2/Span.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.5457853244390539,
+                "p_value": 0.07150438164723538,
+                "effect_size": 0.003088180021151161,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 223035,
+                    "after": 231186
+                }
+            }
+        },
+        {
+            "commit_message": "Allows use of JDK 15+ (#3216)\n\nThis allows builds to work with JDK 15+ even if that JDK cannot compile\r\nJava 1.6 anymore. Specifically, this removes Retrolambda, which formerly\r\nrewrote our main tree to 1.6 bytecode. We had to do this as Retrolambda\r\nno longer works in JDK 15.\r\n\r\nIn order to publish a JRE compatible 1.6 jar to Maven Central, we use\r\nJDK during the release process (Travis). To ensure normal usage and\r\nDocker can use JDK 15, we change our GitHub actions to use JDK 15.\r\n\r\nThis also adds a RATIONALE.md which covers the major aspects around\r\nsource, largely duplicated from Brave (though not exactly the same as\r\ncontext slightly differs here.)",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_THRIFT",
+            "method_name_pd": "public static zipkin2.Span zipkin2.internal.ThriftCodec.readOne(zipkin2.internal.ReadBuffer)",
+            "method_name_cc": "public static Span zipkin2.internal.ThriftCodec.readOne(ReadBuffer buffer)",
+            "file": "zipkin/src/main/java/zipkin2/internal/ThriftCodec.java",
+            "previous_method_cc": "public static Span zipkin2.internal.ThriftCodec.readOne(ReadBuffer buffer)",
+            "previous_method_pd": "public static zipkin2.Span zipkin2.internal.ThriftCodec.readOne(zipkin2.internal.ReadBuffer)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/ThriftCodec.java",
+            "previous_commit": "22874711351e61976bda06d3f11dc1115008495c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.0880515817046141,
+                "p_value": 2.3413186386026665e-28,
+                "effect_size": 0.027766561970032452,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 105210,
+                    "after": 105730
+                }
+            }
+        }
+    ],
+    "8a33b2a6d3ce87cf3a43785b991bc6456965735b": [
+        {
+            "commit_message": "Changes v2 IDs and IPs to validated Strings (#1721)\n\n",
+            "benchmark": "zipkin.benchmarks.Span2ConverterBenchmarks.fromSpan_splitShared",
+            "method_name_pd": "static zipkin.internal.v2.Span$Builder zipkin.internal.V2SpanConverter.newBuilder(zipkin.Span)",
+            "method_name_cc": "static Span.Builder zipkin.internal.V2SpanConverter.newBuilder(zipkin.Span source)",
+            "file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_method_cc": "static Span.Builder zipkin.internal.V2SpanConverter.newBuilder(zipkin.Span source)",
+            "previous_method_pd": "static zipkin.internal.v2.Span$Builder zipkin.internal.V2SpanConverter.newBuilder(zipkin.Span)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_commit": "bbbc721fead729abf20fb8171d4277121865494d",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 42.465753424657535,
+                "p_value": 0.0,
+                "effect_size": -0.6945972207922543,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3683923,
+                    "after": 1605435
+                }
+            }
+        },
+        {
+            "commit_message": "Changes v2 IDs and IPs to validated Strings (#1721)\n\n",
+            "benchmark": "zipkin.benchmarks.Span2ConverterBenchmarks.toSpan",
+            "method_name_pd": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(zipkin.internal.v2.Span)",
+            "method_name_cc": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)",
+            "file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_method_cc": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)",
+            "previous_method_pd": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(zipkin.internal.v2.Span)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_commit": "bbbc721fead729abf20fb8171d4277121865494d",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 40.25157232704403,
+                "p_value": 0.0,
+                "effect_size": -0.9864026339708153,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3940618,
+                    "after": 3097935
+                }
+            }
+        }
+    ],
+    "2fe5142e08b4d74bd38da4ff5837e969777755da": [
+        {
+            "commit_message": "Decouples v2 types from v1 types, in preparation of a new package (#1726)\n\nThis moves all the code needed for v2 types into zipkin.internal.v2\r\nwithout any references to code outside the package. To reduce\r\nduplication, \"v1\" code can reference v2 types (as they need to in order\r\nto covert for example). Once this is in, we can consider refactoring out\r\na v2 module.",
+            "benchmark": "zipkin.benchmarks.Span2ConverterBenchmarks.toSpan",
+            "method_name_pd": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(zipkin.internal.v2.Span)",
+            "method_name_cc": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)",
+            "file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_method_cc": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)",
+            "previous_method_pd": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(zipkin.internal.v2.Span)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_commit": "d1ff1c04f561a4d318eedbe8c43de562653f17a8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 255.4054054054054,
+                "p_value": 0.0,
+                "effect_size": -1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3121995,
+                    "after": 1251167
+                }
+            }
+        }
+    ],
+    "120d1a73f2abfb62fd9a41a72cf30ee7e3a5b388": [
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_java",
+            "method_name_pd": "void zipkin2.internal.Buffer.writeVarint(int)",
+            "method_name_cc": "void zipkin2.internal.Buffer.writeVarint(int v)",
+            "file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "void zipkin2.internal.Buffer.writeVarint(int v)",
+            "previous_method_pd": "void zipkin2.internal.Buffer.writeVarint(int)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -14.809894350604164,
+                "p_value": 8.473015595444285e-08,
+                "effect_size": 0.3140530823728455,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 196,
+                    "after": 193
+                }
+            }
+        },
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_java",
+            "method_name_pd": "void zipkin2.internal.Buffer.writeLongLe(long)",
+            "method_name_cc": "void zipkin2.internal.Buffer.writeLongLe(long v)",
+            "file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "void zipkin2.internal.Buffer.writeLongLe(long v)",
+            "previous_method_pd": "void zipkin2.internal.Buffer.writeLongLe(long)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -20.870362381363243,
+                "p_value": 0.06220034373168631,
+                "effect_size": 0.34285714285714286,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 20,
+                    "after": 21
+                }
+            }
+        },
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_java",
+            "method_name_pd": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(zipkin2.Endpoint,zipkin2.internal.Buffer,boolean)",
+            "method_name_cc": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(Endpoint value, Buffer b, boolean writeEmptyServiceName)",
+            "file": "zipkin/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_method_cc": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(Endpoint value, Buffer b, boolean writeEmptyServiceName)",
+            "previous_method_pd": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(zipkin2.Endpoint,zipkin2.internal.Buffer,boolean)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -32.95079622389625,
+                "p_value": 1.3773575868294507e-09,
+                "effect_size": 0.6529761904761905,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 60,
+                    "after": 56
+                }
+            }
+        },
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_java",
+            "method_name_pd": "public void zipkin2.internal.V2SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "method_name_cc": "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)",
+            "file": "zipkin/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_method_cc": "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)",
+            "previous_method_pd": "public void zipkin2.internal.V2SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -30.73145203494223,
+                "p_value": 4.3859320866442494e-05,
+                "effect_size": 0.6206896551724138,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 29,
+                    "after": 30
+                }
+            }
+        },
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_java",
+            "method_name_pd": "int zipkin2.internal.Buffer.readVarint32()",
+            "method_name_cc": "int zipkin2.internal.Buffer.readVarint32()",
+            "file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "int zipkin2.internal.Buffer.readVarint32()",
+            "previous_method_pd": "int zipkin2.internal.Buffer.readVarint32()",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 205.0314465408805,
+                "p_value": 0.0,
+                "effect_size": -1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2021905,
+                    "after": 1090465
+                }
+            }
+        },
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_java",
+            "method_name_pd": "long zipkin2.internal.Buffer.readLongLe()",
+            "method_name_cc": "long zipkin2.internal.Buffer.readLongLe()",
+            "file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "long zipkin2.internal.Buffer.readLongLe()",
+            "previous_method_pd": "long zipkin2.internal.Buffer.readLongLe()",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.25,
+                "p_value": 2.303118752659151e-70,
+                "effect_size": -0.048080159078577156,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 121286,
+                    "after": 72412
+                }
+            }
+        },
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readClientSpan_java",
+            "method_name_pd": "long zipkin2.internal.Buffer.readVarint64()",
+            "method_name_cc": "long zipkin2.internal.Buffer.readVarint64()",
+            "file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "long zipkin2.internal.Buffer.readVarint64()",
+            "previous_method_pd": "long zipkin2.internal.Buffer.readVarint64()",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 619.375,
+                "p_value": 0.0,
+                "effect_size": -1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 40212,
+                    "after": 19775
+                }
+            }
+        },
+        {
+            "commit_message": "Extracts byte array specific code to ByteArrayBuffer\n\nThis starts transitioning the internals of our codec library so that\nother buffers can be used directly.\n\nThe first step is to separate out certain things that have to be done\nfrom how to do it with byte arrays. A few frequently used functions\nare directly implemented with byte array and hopefully can be trivially\nreimplemented with other types of buffers.\n\nSee #2435\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.writeClientSpan_json_legacy",
+            "method_name_pd": "public void zipkin2.internal.V1SpanWriter.write(zipkin2.v1.V1Span,zipkin2.internal.Buffer)",
+            "method_name_cc": "public void zipkin2.internal.V1SpanWriter.write(V1Span value, Buffer b)",
+            "file": "zipkin/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public void zipkin2.internal.V1SpanWriter.write(V1Span value, Buffer b)",
+            "previous_method_pd": "public void zipkin2.internal.V1SpanWriter.write(zipkin2.v1.V1Span,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "6655b5de6e6efc95d494d327c4842a03681351cd",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.9529481834425254,
+                "p_value": 4.816450923158492e-08,
+                "effect_size": 0.0067304635866950475,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 446190,
+                    "after": 430892
+                }
+            }
+        }
+    ],
+    "7e6cfdda11fd6990aadcff542141efa080eae340": [
+        {
+            "commit_message": "Makes zipkin2 model objects final with serialization impl (#1880)\n\nKryo doesn't work with auto-value. This makes a default implementation\r\nof serialization of top-level types use our json codec (which is\r\nmore efficient than java's default).",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeRpcSpan_thrift_libthrift",
+            "method_name_pd": "public static zipkin2.Endpoint$Builder zipkin2.Endpoint.newBuilder()",
+            "method_name_cc": "public static Builder zipkin2.DependencyLink.newBuilder()",
+            "file": "zipkin2/src/main/java/zipkin2/DependencyLink.java",
+            "previous_method_cc": "public static Builder zipkin2.DependencyLink.newBuilder()",
+            "previous_method_pd": "public static zipkin2.Endpoint$Builder zipkin2.Endpoint.newBuilder()",
+            "previous_file": "zipkin2/src/main/java/zipkin2/DependencyLink.java",
+            "previous_commit": "3331eebe83faf0b06c03899addf29c4ff9fac21b",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -55.865790327815645,
+                "p_value": 2.4159600073515333e-103,
+                "effect_size": 0.8868288815865182,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 397,
+                    "after": 394
+                }
+            }
+        }
+    ],
+    "9b1f5295b2bd9715f4c3ded4fd18fdd710b563c9": [
+        {
+            "commit_message": "Removes auto-value dependency and maven metadata from core jar (#2062)\n\nThis removes the auto-value dependency from the zipkin2 core jar as\r\nwe only use it in a couple places now. This prevents a version problem\r\nwhere new versions require a hard dependency. It also reduces the\r\nnumber of classes and the size (orders of tens of kilobytes\r\nuncompressed).\r\n\r\nBy default, the maven plugin includes a copy of the pom file, which can\r\nbe a kilobyte or more of text. This excludes it in favor of normal\r\ndownload location.\r\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readChineseSpan_proto3_zipkin2",
+            "method_name_pd": "long zipkin2.internal.Buffer.readVarint64()",
+            "method_name_cc": "long zipkin2.internal.Buffer.readVarint64()",
+            "file": "zipkin2/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "long zipkin2.internal.Buffer.readVarint64()",
+            "previous_method_pd": "long zipkin2.internal.Buffer.readVarint64()",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "9db318e3e04bd20102acd1bdb80e92f0857543c5",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.6578947368421052,
+                "p_value": 0.0,
+                "effect_size": 0.07200789351610554,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2690559,
+                    "after": 2761312
+                }
+            }
+        }
+    ],
+    "feb151f2f9e5a1a10020c8c7eb5c6129112663da": [
+        {
+            "commit_message": "Makes SpanBytesDecoder work on ByteBuffer (#2589)\n\n* Makes SpanBytesDecoder work on ByteBuffer\r\n\r\nInternally, this also covers InputStream.\r\n\r\nThis was easier (though not easy) due to splitting how we handle\r\nencoding from decoding.\r\n\r\nIncidentally, the jar size of zipkin is smaller still vs the last\r\nrelease.\r\n\r\nFixes #2435\r\n\r\n* whoops forgot the important parts\r\n\r\n* de-optimizes for thrift in order to increase clarity\r\n\r\n* bug\r\n\r\n* Adds json comparison benchmarks\r\n\r\n* just review feedback\r\n\r\n* mah endian\r\n\r\n* less code\r\n\r\n* bench\r\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readTenClientSpans_JSON_V2",
+            "method_name_pd": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(java.lang.CharSequence)",
+            "method_name_cc": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)",
+            "file": "zipkin/src/main/java/zipkin2/internal/JsonEscaper.java",
+            "previous_method_cc": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)",
+            "previous_method_pd": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(java.lang.CharSequence)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/JsonEscaper.java",
+            "previous_commit": "1f152a418178ef4da75b0f99cbef5674d18114ae",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -13.563160543532964,
+                "p_value": 1.4210397254239424e-19,
+                "effect_size": 0.41215049718854585,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 323,
+                    "after": 321
+                }
+            }
+        },
+        {
+            "commit_message": "Makes SpanBytesDecoder work on ByteBuffer (#2589)\n\n* Makes SpanBytesDecoder work on ByteBuffer\r\n\r\nInternally, this also covers InputStream.\r\n\r\nThis was easier (though not easy) due to splitting how we handle\r\nencoding from decoding.\r\n\r\nIncidentally, the jar size of zipkin is smaller still vs the last\r\nrelease.\r\n\r\nFixes #2435\r\n\r\n* whoops forgot the important parts\r\n\r\n* de-optimizes for thrift in order to increase clarity\r\n\r\n* bug\r\n\r\n* Adds json comparison benchmarks\r\n\r\n* just review feedback\r\n\r\n* mah endian\r\n\r\n* less code\r\n\r\n* bench\r\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readTenClientSpans_JSON_V2",
+            "method_name_pd": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int)",
+            "method_name_cc": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)",
+            "file": "zipkin/src/main/java/zipkin2/internal/Proto3Fields.java",
+            "previous_method_cc": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)",
+            "previous_method_pd": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Proto3Fields.java",
+            "previous_commit": "1f152a418178ef4da75b0f99cbef5674d18114ae",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -15.944949902107567,
+                "p_value": 3.6197297418656817e-06,
+                "effect_size": 0.2851181304571135,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 177,
+                    "after": 176
+                }
+            }
+        },
+        {
+            "commit_message": "Makes SpanBytesDecoder work on ByteBuffer (#2589)\n\n* Makes SpanBytesDecoder work on ByteBuffer\r\n\r\nInternally, this also covers InputStream.\r\n\r\nThis was easier (though not easy) due to splitting how we handle\r\nencoding from decoding.\r\n\r\nIncidentally, the jar size of zipkin is smaller still vs the last\r\nrelease.\r\n\r\nFixes #2435\r\n\r\n* whoops forgot the important parts\r\n\r\n* de-optimizes for thrift in order to increase clarity\r\n\r\n* bug\r\n\r\n* Adds json comparison benchmarks\r\n\r\n* just review feedback\r\n\r\n* mah endian\r\n\r\n* less code\r\n\r\n* bench\r\n",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.readTenClientSpans_JSON_V2",
+            "method_name_pd": "public boolean zipkin2.codec.SpanBytesDecoder$3.decodeList(byte[],java.util.Collection)",
+            "method_name_cc": "public boolean decodeList(byte[] links, Collection<DependencyLink> out)",
+            "file": "zipkin/src/main/java/zipkin2/codec/DependencyLinkBytesDecoder.java",
+            "previous_method_cc": "public boolean decodeList(byte[] links, Collection<DependencyLink> out)",
+            "previous_method_pd": "public boolean zipkin2.codec.SpanBytesDecoder$3.decodeList(byte[],java.util.Collection)",
+            "previous_file": "zipkin/src/main/java/zipkin2/codec/DependencyLinkBytesDecoder.java",
+            "previous_commit": "1f152a418178ef4da75b0f99cbef5674d18114ae",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.1148105625717566,
+                "p_value": 1.0625198219217032e-29,
+                "effect_size": 0.0181206277778859,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 242006,
+                    "after": 281108
+                }
+            }
+        }
+    ],
+    "fc8cc19a78d01c472b4b79412f378a43f179b772": [
+        {
+            "commit_message": "Migrates Elasticsearch storage from okhttp to armeria (#2653)\n\n",
+            "benchmark": "zipkin2.elasticsearch.internal.BulkRequestBenchmarks.buildAndWriteRequest_singleSpan",
+            "method_name_pd": "static void zipkin2.elasticsearch.internal.BulkCallBuilder.write(okio.BufferedSink,zipkin2.elasticsearch.internal.BulkCallBuilder$IndexEntry,boolean)",
+            "method_name_cc": "static void zipkin2.elasticsearch.internal.BulkCallBuilder.write(BufferedSink sink, IndexEntry entry, boolean shouldAddType)",
+            "file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_method_cc": "static void zipkin2.elasticsearch.internal.BulkCallBuilder.write(BufferedSink sink, IndexEntry entry, boolean shouldAddType)",
+            "previous_method_pd": "static void zipkin2.elasticsearch.internal.BulkCallBuilder.write(okio.BufferedSink,zipkin2.elasticsearch.internal.BulkCallBuilder$IndexEntry,boolean)",
+            "previous_file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_commit": "66897b2947691611576246ed4d3de6add9782e65",
+            "performance_diff": -0.0,
+            "significance": {}
+        },
+        {
+            "commit_message": "Migrates Elasticsearch storage from okhttp to armeria (#2653)\n\n",
+            "benchmark": "zipkin2.elasticsearch.internal.BulkRequestBenchmarks.buildAndWriteRequest_singleSpan",
+            "method_name_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "method_name_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_method_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_method_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_commit": "66897b2947691611576246ed4d3de6add9782e65",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 333.33333333333337,
+                "p_value": 0.0,
+                "effect_size": -0.7163562393608653,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 953180,
+                    "after": 487543
+                }
+            }
+        }
+    ],
+    "09a441f4b4e8734058e8d023367f826b845e9dea": [
+        {
+            "commit_message": "Folds Buffer tree into UnsafeBuffer to improve performance (#2586)\n\nRecent optimizations required peeking at the underlying byte array. This\r\nchange formalizes the buffer as one that is specialized for being array\r\nbacked (and writes are unsafe eg not bounds checked).\r\n\r\nThe results are now almost the same as google's proto library, despite\r\nthis library being smaller and including proto, json and thrift codecs\r\nand a functional Zipkin storage engine:\r\n\r\nComparison\r\n```\r\nProtoCodecBenchmarks.bytes_protobufDecoder:bytes_protobufDecoder\u00b7p0.99       sample            1953.710                us/op\r\nProtoCodecBenchmarks.bytes_protobufDecoder:\u00b7gc.alloc.rate.norm               sample     15  2023206.265 \u00b1     32.203    B/op\r\nProtoCodecBenchmarks.bytes_wireDecoder:bytes_wireDecoder\u00b7p0.99               sample            2351.104                us/op\r\nProtoCodecBenchmarks.bytes_wireDecoder:\u00b7gc.alloc.rate.norm                   sample     15  2435408.568 \u00b1     53.612    B/op\r\n```\r\n\r\nBefore\r\n```\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:bytes_zipkinDecoder\u00b7p0.99           sample            2162.688                us/op\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:\u00b7gc.alloc.rate.norm                 sample     15  2095172.026 \u00b1     45.379    B/op\r\n```\r\n\r\nAfter\r\n```\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:bytes_zipkinDecoder\u00b7p0.99           sample            1996.800                us/op\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:\u00b7gc.alloc.rate.norm                 sample     15  2095168.617 \u00b1     36.985    B/op\r\n```\r\n\r\nFYI: While this is array backed, it doesn't imply allocating a new array\r\nper span. Those looking to read large amounts of data can use this by\r\nslicing a buffer and filling for each length-prefixed byte string.",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.writeClientSpan_json_v1",
+            "method_name_pd": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int)",
+            "method_name_cc": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)",
+            "file": "zipkin/src/main/java/zipkin2/internal/Proto3Fields.java",
+            "previous_method_cc": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)",
+            "previous_method_pd": "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Proto3Fields.java",
+            "previous_commit": "560f7056fb379759c10d3837b17865f52910a6f9",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -5.845337949700829,
+                "p_value": 0.2398956214591672,
+                "effect_size": 0.05988593155893536,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 252,
+                    "after": 263
+                }
+            }
+        },
+        {
+            "commit_message": "Folds Buffer tree into UnsafeBuffer to improve performance (#2586)\n\nRecent optimizations required peeking at the underlying byte array. This\r\nchange formalizes the buffer as one that is specialized for being array\r\nbacked (and writes are unsafe eg not bounds checked).\r\n\r\nThe results are now almost the same as google's proto library, despite\r\nthis library being smaller and including proto, json and thrift codecs\r\nand a functional Zipkin storage engine:\r\n\r\nComparison\r\n```\r\nProtoCodecBenchmarks.bytes_protobufDecoder:bytes_protobufDecoder\u00b7p0.99       sample            1953.710                us/op\r\nProtoCodecBenchmarks.bytes_protobufDecoder:\u00b7gc.alloc.rate.norm               sample     15  2023206.265 \u00b1     32.203    B/op\r\nProtoCodecBenchmarks.bytes_wireDecoder:bytes_wireDecoder\u00b7p0.99               sample            2351.104                us/op\r\nProtoCodecBenchmarks.bytes_wireDecoder:\u00b7gc.alloc.rate.norm                   sample     15  2435408.568 \u00b1     53.612    B/op\r\n```\r\n\r\nBefore\r\n```\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:bytes_zipkinDecoder\u00b7p0.99           sample            2162.688                us/op\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:\u00b7gc.alloc.rate.norm                 sample     15  2095172.026 \u00b1     45.379    B/op\r\n```\r\n\r\nAfter\r\n```\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:bytes_zipkinDecoder\u00b7p0.99           sample            1996.800                us/op\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:\u00b7gc.alloc.rate.norm                 sample     15  2095168.617 \u00b1     36.985    B/op\r\n```\r\n\r\nFYI: While this is array backed, it doesn't imply allocating a new array\r\nper span. Those looking to read large amounts of data can use this by\r\nslicing a buffer and filling for each length-prefixed byte string.",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.writeClientSpan_json_v1",
+            "method_name_pd": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(java.lang.CharSequence)",
+            "method_name_cc": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)",
+            "file": "zipkin/src/main/java/zipkin2/internal/JsonEscaper.java",
+            "previous_method_cc": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)",
+            "previous_method_pd": "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(java.lang.CharSequence)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/JsonEscaper.java",
+            "previous_commit": "560f7056fb379759c10d3837b17865f52910a6f9",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.045369794903667,
+                "p_value": 0.0,
+                "effect_size": 0.12370588018300151,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2472485,
+                    "after": 2497661
+                }
+            }
+        },
+        {
+            "commit_message": "Folds Buffer tree into UnsafeBuffer to improve performance (#2586)\n\nRecent optimizations required peeking at the underlying byte array. This\r\nchange formalizes the buffer as one that is specialized for being array\r\nbacked (and writes are unsafe eg not bounds checked).\r\n\r\nThe results are now almost the same as google's proto library, despite\r\nthis library being smaller and including proto, json and thrift codecs\r\nand a functional Zipkin storage engine:\r\n\r\nComparison\r\n```\r\nProtoCodecBenchmarks.bytes_protobufDecoder:bytes_protobufDecoder\u00b7p0.99       sample            1953.710                us/op\r\nProtoCodecBenchmarks.bytes_protobufDecoder:\u00b7gc.alloc.rate.norm               sample     15  2023206.265 \u00b1     32.203    B/op\r\nProtoCodecBenchmarks.bytes_wireDecoder:bytes_wireDecoder\u00b7p0.99               sample            2351.104                us/op\r\nProtoCodecBenchmarks.bytes_wireDecoder:\u00b7gc.alloc.rate.norm                   sample     15  2435408.568 \u00b1     53.612    B/op\r\n```\r\n\r\nBefore\r\n```\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:bytes_zipkinDecoder\u00b7p0.99           sample            2162.688                us/op\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:\u00b7gc.alloc.rate.norm                 sample     15  2095172.026 \u00b1     45.379    B/op\r\n```\r\n\r\nAfter\r\n```\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:bytes_zipkinDecoder\u00b7p0.99           sample            1996.800                us/op\r\nProtoCodecBenchmarks.bytes_zipkinDecoder:\u00b7gc.alloc.rate.norm                 sample     15  2095168.617 \u00b1     36.985    B/op\r\n```\r\n\r\nFYI: While this is array backed, it doesn't imply allocating a new array\r\nper span. Those looking to read large amounts of data can use this by\r\nslicing a buffer and filling for each length-prefixed byte string.",
+            "benchmark": "zipkin2.codec.ProtoCodecBenchmarks.bytebuffer_zipkinDecoder",
+            "method_name_pd": "public static boolean zipkin2.internal.Proto3Codec.readList(byte[],java.util.Collection)",
+            "method_name_cc": "public static boolean zipkin2.internal.Proto3Codec.readList(byte[] bytes, Collection<Span> out)",
+            "file": "zipkin/src/main/java/zipkin2/internal/Proto3Codec.java",
+            "previous_method_cc": "public static boolean zipkin2.internal.Proto3Codec.readList(byte[] bytes, Collection<Span> out)",
+            "previous_method_pd": "public static boolean zipkin2.internal.Proto3Codec.readList(byte[],java.util.Collection)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Proto3Codec.java",
+            "previous_commit": "560f7056fb379759c10d3837b17865f52910a6f9",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -1.5003207391306355,
+                "p_value": 1.2513934569137021e-113,
+                "effect_size": 0.1962881805422236,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 9072,
+                    "after": 8698
+                }
+            }
+        }
+    ],
+    "2755987aa31699bf02d9e6e0366453092ba4a944": [
+        {
+            "commit_message": "Adds Endpoint.ipv6 field with supporting changes to MySQL and UI\n\nThis adds `Endpoint.ipv6` as a fixed-width byte array (16 bytes). This\nformalizes `Endpoint.ipv4 == 0` implying there's no ipv4 address.\n\nIn thrift, this remains a byte array (String) at field 4.\nIn json, this is normal string formatting.\n * normal java utilities are used for codec (Inet6Address)\n\nIn the UI, the ipv6 address is preferred and bracketed when present.\nEx. [2001:db8:0:0:0:0:0:c002]:8080\n\nIn MySQL, this is mapped to a `BINARY(16)` field named\n`zipkin_annotations.endpoint_ipv6`. When this column is missing a\nwarning like below is printed:\n\n```\nJul 11, 2016 4:08:53 PM zipkin.storage.mysql.HasIpv6 compute\nWARNING: zipkin_annotations.ipv6 doesn't exist, so Endpoint.ipv6 is not supported. Execute: alter table zipkin_annotations add `endpoint_ipv6` BINARY(16)\n```\n",
+            "benchmark": "zipkin.benchmarks.SpanBenchmarks.buildLocalSpan",
+            "method_name_pd": "public int zipkin.Endpoint.hashCode()",
+            "method_name_cc": "public int zipkin.Endpoint.hashCode()",
+            "file": "zipkin/src/main/java/zipkin/Endpoint.java",
+            "previous_method_cc": "public int zipkin.Endpoint.hashCode()",
+            "previous_method_pd": "public int zipkin.Endpoint.hashCode()",
+            "previous_file": "zipkin/src/main/java/zipkin/Endpoint.java",
+            "previous_commit": "d3c4308368c483fb6e0f0b799517881720d2e7e8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 8.695652173913043,
+                "p_value": 0.0,
+                "effect_size": -0.32887327421532203,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1811068,
+                    "after": 809169
+                }
+            }
+        }
+    ],
+    "3373bcd2934342755790770b674b41b286675558": [
+        {
+            "commit_message": "Adds Endpoint.portAsInt to avoid allocations\n\nThis adds and uses Endpoint.portAsInt accessors to prevent routine\nobject allocation.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeChineseSpan_json_zipkin2",
+            "method_name_pd": "public zipkin2.Endpoint zipkin.Endpoint.toV2()",
+            "method_name_cc": "public zipkin2.Endpoint zipkin.Endpoint.toV2()",
+            "file": "zipkin/src/main/java/zipkin/Endpoint.java",
+            "previous_method_cc": "public zipkin2.Endpoint zipkin.Endpoint.toV2()",
+            "previous_method_pd": "public zipkin2.Endpoint zipkin.Endpoint.toV2()",
+            "previous_file": "zipkin/src/main/java/zipkin/Endpoint.java",
+            "previous_commit": "cc34b20d583962441beec84a459334dbdc5a481c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.08502196400736857,
+                "p_value": 0.23972859086994602,
+                "effect_size": 0.04928523936170213,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 384,
+                    "after": 376
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Endpoint.portAsInt to avoid allocations\n\nThis adds and uses Endpoint.portAsInt accessors to prevent routine\nobject allocation.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeChineseSpan_json_zipkin2",
+            "method_name_pd": "static int zipkin2.internal.V2SpanWriter.endpointSizeInBytes(zipkin2.Endpoint)",
+            "method_name_cc": "static int zipkin2.internal.V2SpanWriter.endpointSizeInBytes(Endpoint value)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_method_cc": "static int zipkin2.internal.V2SpanWriter.endpointSizeInBytes(Endpoint value)",
+            "previous_method_pd": "static int zipkin2.internal.V2SpanWriter.endpointSizeInBytes(zipkin2.Endpoint)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_commit": "cc34b20d583962441beec84a459334dbdc5a481c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.425531914893617,
+                "p_value": 0.0,
+                "effect_size": -0.048355677076932294,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 951512,
+                    "after": 923528
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Endpoint.portAsInt to avoid allocations\n\nThis adds and uses Endpoint.portAsInt accessors to prevent routine\nobject allocation.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeChineseSpan_json_zipkin2",
+            "method_name_pd": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(zipkin2.Endpoint,zipkin2.internal.Buffer)",
+            "method_name_cc": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(Endpoint value, Buffer b)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_method_cc": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(Endpoint value, Buffer b)",
+            "previous_method_pd": "static void zipkin2.internal.V2SpanWriter.writeEndpoint(zipkin2.Endpoint,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_commit": "cc34b20d583962441beec84a459334dbdc5a481c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.39370078740157477,
+                "p_value": 0.0,
+                "effect_size": -0.04594141179284739,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 953511,
+                    "after": 926954
+                }
+            }
+        },
+        {
+            "commit_message": "Adds Endpoint.portAsInt to avoid allocations\n\nThis adds and uses Endpoint.portAsInt accessors to prevent routine\nobject allocation.\n",
+            "benchmark": "zipkin.benchmarks.Span2ConverterBenchmarks.fromSpan_splitShared",
+            "method_name_pd": "public static zipkin.Endpoint zipkin.internal.V2SpanConverter.toEndpoint(zipkin2.Endpoint)",
+            "method_name_cc": "public static zipkin.Endpoint zipkin.internal.V2SpanConverter.toEndpoint(Endpoint input)",
+            "file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_method_cc": "public static zipkin.Endpoint zipkin.internal.V2SpanConverter.toEndpoint(Endpoint input)",
+            "previous_method_pd": "public static zipkin.Endpoint zipkin.internal.V2SpanConverter.toEndpoint(zipkin2.Endpoint)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_commit": "cc34b20d583962441beec84a459334dbdc5a481c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -5.0359712230215825,
+                "p_value": 0.0,
+                "effect_size": 0.12988669804716707,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1912294,
+                    "after": 1357435
+                }
+            }
+        }
+    ],
+    "72e593bcce4486ebcdde7982ac7478a811753991": [
+        {
+            "commit_message": "Adds Span.merge and cleans up errorprone warnings (#2252)\n\nThis adds Span.merge which should only be used in cases where\r\ninstrumentation send late data. This should not be used for merging\r\nclient and server spans, as v2 format is explicitly single-host.",
+            "benchmark": "zipkin2.codec.CodecBenchmarks.writeClientSpan_json_legacy",
+            "method_name_pd": "void zipkin2.internal.Buffer.writeLongLe(long)",
+            "method_name_cc": "void zipkin2.internal.Buffer.writeLongLe(long v)",
+            "file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "void zipkin2.internal.Buffer.writeLongLe(long v)",
+            "previous_method_pd": "void zipkin2.internal.Buffer.writeLongLe(long)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "7c26a8131b0fe97d1712d94b2789b017230aa48c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.899034892353378,
+                "p_value": 0.5398170365829753,
+                "effect_size": 0.11911357340720222,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 19,
+                    "after": 19
+                }
+            }
+        }
+    ],
+    "862e3f3d6979cd66fa75f83e4def1e3bbcf1f3b0": [
+        {
+            "commit_message": "Makes it an error to store during assembly of a call (#2580)\n\nBefore this, there was some extra code in the throttle package handling\r\na bug in our in memory storage. This fixes that and removes the extra\r\ncode.\r\n\r\nSee #2502\r\n",
+            "benchmark": "zipkin2.elasticsearch.internal.BulkRequestBenchmarks.buildAndWriteRequest_singleSpan",
+            "method_name_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "method_name_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_method_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_method_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_commit": "2539a77fee84d925f6f52d80c3fb850620db1cc9",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1198.73417721519,
+                "p_value": 0.0,
+                "effect_size": -0.9970959294515985,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 474523,
+                    "after": 4910
+                }
+            }
+        }
+    ],
+    "b0f22b5bd0f29dd1539cb797129fb1d61dd7b3de": [
+        {
+            "commit_message": "Adds traceIdHigh (default 0) to zipkin.Span and implements codec\n\nIn json, it is simply a longer traceId field to accommodate the extra\n16 hex characters.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeRpcV6Span_json_zipkin",
+            "method_name_pd": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(java.lang.String)",
+            "method_name_cc": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(String lowerHex)",
+            "file": "zipkin/src/main/java/zipkin/internal/Util.java",
+            "previous_method_cc": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(String lowerHex)",
+            "previous_method_pd": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Util.java",
+            "previous_commit": "51ebe793da57b0355f47217af1724053c4a9e03e",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -10.002814522938362,
+                "p_value": 0.34275921371760387,
+                "effect_size": 0.14516129032258066,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 28,
+                    "after": 31
+                }
+            }
+        }
+    ],
+    "78ca75121d30ce631a9e8016e57c1793fd831c63": [
+        {
+            "commit_message": "Performs cleanups in Elasticsearch code, seeking better test coverage (#2693)\n\n",
+            "benchmark": "zipkin2.elasticsearch.internal.BulkRequestBenchmarks.buildAndWriteRequest_tenSpans",
+            "method_name_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "method_name_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_method_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_method_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_commit": "f061c8b960e61030edcb356e29d91797f2750075",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 4.467516123957842,
+                "p_value": 0.0,
+                "effect_size": -0.09829951297378342,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 118348,
+                    "after": 105198
+                }
+            }
+        }
+    ],
+    "c93e153a407a2df7eaeecff68c6e45eaafbfb683": [
+        {
+            "commit_message": "Set custom name for elasticsearch requests for nicer traces. (#2709)\n\n",
+            "benchmark": "zipkin2.elasticsearch.internal.BulkRequestBenchmarks.buildAndWriteRequest_tenSpans",
+            "method_name_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "method_name_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_method_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_method_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_commit": "fd9054c0a283203ef0d0108aaf0693ca35bee025",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.4364471669218988,
+                "p_value": 7.840569660797749e-87,
+                "effect_size": 0.046713927497377676,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 116367,
+                    "after": 122132
+                }
+            }
+        }
+    ],
+    "dd7d03a0ebc0231bbae0b9f25dbabff77204ffc8": [
+        {
+            "commit_message": "Improves thrift encoding performance by special-casing ascii (#1258)\n\nIn many cases, annotation values are ascii strings. This special-cases\r\nfor this, improving thrift encoding performance dramatically.\r\n\r\nThis finally gets encoding overhead of a client span under 1 microsecond\r\n  (on \"my laptop\")\r\n\r\nBefore:\r\n```\r\nBenchmark                                         Mode  Cnt  Score   Error  Units\r\nCodecBenchmarks.writeClientSpan_thrift_zipkin     avgt   15  1.029 \u00b1 0.041  us/op\r\nCodecBenchmarks.writeLocalSpan_thrift_zipkin      avgt   15  0.741 \u00b1 0.108  us/op\r\nCodecBenchmarks.writeRpcSpan_thrift_zipkin        avgt   15  2.956 \u00b1 0.128  us/op\r\nCodecBenchmarks.writeRpcV6Span_thrift_zipkin      avgt   15  3.490 \u00b1 0.104  us/op\r\n```\r\n\r\nAfter:\r\n```\r\nBenchmark                                         Mode  Cnt  Score   Error  Units\r\nCodecBenchmarks.writeClientSpan_thrift_zipkin     avgt   15  0.779 \u00b1 0.024  us/op\r\nCodecBenchmarks.writeLocalSpan_thrift_zipkin      avgt   15  0.497 \u00b1 0.026  us/op\r\nCodecBenchmarks.writeRpcSpan_thrift_zipkin        avgt   15  2.018 \u00b1 0.093  us/op\r\nCodecBenchmarks.writeRpcV6Span_thrift_zipkin      avgt   15  2.407 \u00b1 0.048  us/op\r\n```",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readLocalSpan_thrift_libthrift",
+            "method_name_pd": "public void zipkin.internal.Buffer.write(int)",
+            "method_name_cc": "public void zipkin.internal.Buffer.write(int v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "public void zipkin.internal.Buffer.write(int v)",
+            "previous_method_pd": "public void zipkin.internal.Buffer.write(int)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "d352031eb658e10979d323333f3792229dbce083",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 69.60266740761323,
+                "p_value": 4.023770756970508e-77,
+                "effect_size": -0.2955268600176836,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2678,
+                    "after": 2599
+                }
+            }
+        },
+        {
+            "commit_message": "Improves thrift encoding performance by special-casing ascii (#1258)\n\nIn many cases, annotation values are ascii strings. This special-cases\r\nfor this, improving thrift encoding performance dramatically.\r\n\r\nThis finally gets encoding overhead of a client span under 1 microsecond\r\n  (on \"my laptop\")\r\n\r\nBefore:\r\n```\r\nBenchmark                                         Mode  Cnt  Score   Error  Units\r\nCodecBenchmarks.writeClientSpan_thrift_zipkin     avgt   15  1.029 \u00b1 0.041  us/op\r\nCodecBenchmarks.writeLocalSpan_thrift_zipkin      avgt   15  0.741 \u00b1 0.108  us/op\r\nCodecBenchmarks.writeRpcSpan_thrift_zipkin        avgt   15  2.956 \u00b1 0.128  us/op\r\nCodecBenchmarks.writeRpcV6Span_thrift_zipkin      avgt   15  3.490 \u00b1 0.104  us/op\r\n```\r\n\r\nAfter:\r\n```\r\nBenchmark                                         Mode  Cnt  Score   Error  Units\r\nCodecBenchmarks.writeClientSpan_thrift_zipkin     avgt   15  0.779 \u00b1 0.024  us/op\r\nCodecBenchmarks.writeLocalSpan_thrift_zipkin      avgt   15  0.497 \u00b1 0.026  us/op\r\nCodecBenchmarks.writeRpcSpan_thrift_zipkin        avgt   15  2.018 \u00b1 0.093  us/op\r\nCodecBenchmarks.writeRpcV6Span_thrift_zipkin      avgt   15  2.407 \u00b1 0.048  us/op\r\n```",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readLocalSpan_thrift_libthrift",
+            "method_name_pd": "public void zipkin.internal.Buffer.write(byte[])",
+            "method_name_cc": "public void zipkin.internal.Buffer.write(byte[] v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "public void zipkin.internal.Buffer.write(byte[] v)",
+            "previous_method_pd": "public void zipkin.internal.Buffer.write(byte[])",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "d352031eb658e10979d323333f3792229dbce083",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 52.927783209945524,
+                "p_value": 0.006363965347474272,
+                "effect_size": -0.1886167361524717,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 292,
+                    "after": 92
+                }
+            }
+        }
+    ],
+    "8a6ae58ff09c7b227b8cdf403b0950e5b137edf2": [
+        {
+            "commit_message": "Adds V1 conversion library\n\nThis allows us to port old storage to zipkin2 packaged code while still\nbeing able to read v1 structs.\n\nNote: this intentionally ignores unsupported Binary Annotation types\nsuch as I64. In doing so, the code is less difficult to maintain.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readTenClientSpans_json_zipkin2",
+            "method_name_pd": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(zipkin2.Span)",
+            "method_name_cc": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(Span value)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_method_cc": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(Span value)",
+            "previous_method_pd": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(zipkin2.Span)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_commit": "2099c9d489deb0c56197d7524c64e9b4ceaa3f24",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 290.6162912878615,
+                "p_value": 0.00038595260401167803,
+                "effect_size": -0.5698005698005698,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 26,
+                    "after": 27
+                }
+            }
+        },
+        {
+            "commit_message": "Adds V1 conversion library\n\nThis allows us to port old storage to zipkin2 packaged code while still\nbeing able to read v1 structs.\n\nNote: this intentionally ignores unsupported Binary Annotation types\nsuch as I64. In doing so, the code is less difficult to maintain.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readTenClientSpans_json_zipkin2",
+            "method_name_pd": "public void zipkin2.internal.V2SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "method_name_cc": "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_method_cc": "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)",
+            "previous_method_pd": "public void zipkin2.internal.V2SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V2SpanWriter.java",
+            "previous_commit": "2099c9d489deb0c56197d7524c64e9b4ceaa3f24",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 32.945414688792,
+                "p_value": 2.5529693136817323e-05,
+                "effect_size": -0.711304347826087,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 25,
+                    "after": 23
+                }
+            }
+        },
+        {
+            "commit_message": "Adds V1 conversion library\n\nThis allows us to port old storage to zipkin2 packaged code while still\nbeing able to read v1 structs.\n\nNote: this intentionally ignores unsupported Binary Annotation types\nsuch as I64. In doing so, the code is less difficult to maintain.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readTenClientSpans_json_zipkin2",
+            "method_name_pd": "public java.util.List zipkin2.codec.SpanBytesDecoder$3.decodeList(byte[])",
+            "method_name_cc": "public List<DependencyLink> decodeList(byte[] links)",
+            "file": "zipkin2/src/main/java/zipkin2/codec/DependencyLinkBytesDecoder.java",
+            "previous_method_cc": "public List<DependencyLink> decodeList(byte[] links)",
+            "previous_method_pd": "public java.util.List zipkin2.codec.SpanBytesDecoder$3.decodeList(byte[])",
+            "previous_file": "zipkin2/src/main/java/zipkin2/codec/DependencyLinkBytesDecoder.java",
+            "previous_commit": "2099c9d489deb0c56197d7524c64e9b4ceaa3f24",
+            "performance_diff": -0.0,
+            "significance": {}
+        }
+    ],
+    "d985e932aa8b700b82c39859adbc4b3ef2c0ca1b": [
+        {
+            "commit_message": "Migrate from moshi/okio to jackson (#2688)\n\n",
+            "benchmark": "zipkin2.elasticsearch.internal.BulkRequestBenchmarks.buildAndWriteRequest_tenSpans",
+            "method_name_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "method_name_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_method_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_method_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_commit": "4310a1ad9289eaa8dd9bfbabe3704eb881caacbe",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -14.88367747360553,
+                "p_value": 0.0,
+                "effect_size": 0.30671794762005583,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 66901,
+                    "after": 64912
+                }
+            }
+        }
+    ],
+    "79d55eac1c6cb4c237cfa852d7b0e5571dd38e18": [
+        {
+            "commit_message": "Adds Encoding.THRIFT constant and fixes v1 glitches\n\nThis is preparation work for a backported v1 thrift codec.\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeRpcSpan_json_zipkin",
+            "method_name_pd": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(zipkin2.Span)",
+            "method_name_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "previous_method_pd": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(zipkin2.Span)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "8576bd57b9e2f0493185c61b1058c35ddf1c247f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 38.05797304884896,
+                "p_value": 0.9760670531717747,
+                "effect_size": 0.006666666666666667,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 25,
+                    "after": 24
+                }
+            }
+        }
+    ],
+    "8f99f3cf44cbcdc678b9ae845d501ba2fc2422a4": [
+        {
+            "commit_message": "Migrates zipkin-junit to zipkin2 packages dropping http read apis\n\nThe read apis for zipkin's query interface are not required in a unit\ntest, as you can just access the rule to query for dependencies or\ntraces you sent. Restricting this functionality dramatically reduces\nthe maintenance surface area.\n\nSee #2047\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public int zipkin2.internal.V1JsonSpanWriter.sizeInBytes(zipkin2.Span)",
+            "method_name_cc": "public int zipkin2.internal.V1JsonSpanWriter.sizeInBytes(Span value)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1JsonSpanWriter.java",
+            "previous_method_cc": "public int zipkin2.internal.V1JsonSpanWriter.sizeInBytes(Span value)",
+            "previous_method_pd": "public int zipkin2.internal.V1JsonSpanWriter.sizeInBytes(zipkin2.Span)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1JsonSpanWriter.java",
+            "previous_commit": "14325ea1b1d1b3c0c3947dfd50098625226fba34",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.3333333333333335,
+                "p_value": 0.0,
+                "effect_size": 0.056877737713341585,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 307612,
+                    "after": 303659
+                }
+            }
+        },
+        {
+            "commit_message": "Migrates zipkin-junit to zipkin2 packages dropping http read apis\n\nThe read apis for zipkin's query interface are not required in a unit\ntest, as you can just access the rule to query for dependencies or\ntraces you sent. Restricting this functionality dramatically reduces\nthe maintenance surface area.\n\nSee #2047\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public void zipkin2.internal.V1JsonSpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "method_name_cc": "public void zipkin2.internal.V1JsonSpanWriter.write(Span value, Buffer b)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1JsonSpanWriter.java",
+            "previous_method_cc": "public void zipkin2.internal.V1JsonSpanWriter.write(Span value, Buffer b)",
+            "previous_method_pd": "public void zipkin2.internal.V1JsonSpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1JsonSpanWriter.java",
+            "previous_commit": "14325ea1b1d1b3c0c3947dfd50098625226fba34",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.092050209205021,
+                "p_value": 0.001052515052824648,
+                "effect_size": 0.004836719037968338,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 308039,
+                    "after": 303687
+                }
+            }
+        }
+    ],
+    "eee7db16c3ba859f218e3d1f6d1345654bd4f794": [
+        {
+            "commit_message": "Doubles performance of CountingTraceIdSampler while increasing precision\n\nThis doubles the performance and increases the precision of the counting\ntrace ID sampler by using a bitset. After this, both the boundary and\ncounting sampler support a precision of 0.0001, or 0.01% sample rate.\n",
+            "benchmark": "zipkin.benchmarks.SamplerBenchmarks.traceIdSampler_counting",
+            "method_name_pd": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long)",
+            "method_name_cc": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long traceIdIgnored)",
+            "file": "zipkin/src/main/java/zipkin/CountingTraceIdSampler.java",
+            "previous_method_cc": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long traceIdIgnored)",
+            "previous_method_pd": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long)",
+            "previous_file": "zipkin/src/main/java/zipkin/CountingTraceIdSampler.java",
+            "previous_commit": "b2c3627a2c2d59d2789683dd15f1985356a20ea6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.2123893805309733,
+                "p_value": 0.0,
+                "effect_size": -0.07864507788178397,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1492442,
+                    "after": 1515235
+                }
+            }
+        }
+    ],
+    "3b8d56ac1b817729517e32c7a3d311b7ceaa2fb7": [
+        {
+            "commit_message": "Fixes regression writing I64 binary annotations (#1269)\n\nBefore, we special-cased writing numbers, except we had no tests to\r\ncover I64 binary annotations. Eventhough these are niche, they should\r\nwork!",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "static int zipkin.internal.Buffer.asciiSizeInBytes(long)",
+            "method_name_cc": "static int zipkin.internal.Buffer.asciiSizeInBytes(long v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "static int zipkin.internal.Buffer.asciiSizeInBytes(long v)",
+            "previous_method_pd": "static int zipkin.internal.Buffer.asciiSizeInBytes(long)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "f674d3205f60733b7d1564e4a8b3d929a8a146f6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.0,
+                "p_value": 1.6074040652038664e-07,
+                "effect_size": -0.00824576097625867,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 270957,
+                    "after": 267412
+                }
+            }
+        },
+        {
+            "commit_message": "Fixes regression writing I64 binary annotations (#1269)\n\nBefore, we special-cased writing numbers, except we had no tests to\r\ncover I64 binary annotations. Eventhough these are niche, they should\r\nwork!",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin",
+            "method_name_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeAscii(long)",
+            "method_name_cc": "Buffer zipkin.internal.Buffer.writeAscii(long v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "Buffer zipkin.internal.Buffer.writeAscii(long v)",
+            "previous_method_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeAscii(long)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "f674d3205f60733b7d1564e4a8b3d929a8a146f6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.7142857142857143,
+                "p_value": 1.1437557802444342e-104,
+                "effect_size": -0.045349134863507966,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 153187,
+                    "after": 152864
+                }
+            }
+        }
+    ],
+    "d3a83b8883e336b9566b73e03d9cfdceceaa4530": [
+        {
+            "commit_message": "Accepts json span names (previously broke ElasticSearch) (#1616)\n\nWhile not good practice, if we break on json span names, users can't\r\neasily troubleshoot. This works around the problem by escaping json.\r\n\r\nFixes #1613",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeRpcV6Span_json_zipkin",
+            "method_name_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeJsonEscaped(java.lang.String)",
+            "method_name_cc": "Buffer zipkin.internal.Buffer.writeJsonEscaped(String v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "Buffer zipkin.internal.Buffer.writeJsonEscaped(String v)",
+            "previous_method_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeJsonEscaped(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "4973ea34cd0f7dc944f658e8d79bf037c1ac23e6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.09045680687471733,
+                "p_value": 0.0,
+                "effect_size": -0.04409092713470093,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 713507,
+                    "after": 741983
+                }
+            }
+        }
+    ],
+    "56e2eaeec05fe3abb71fa574739ad7b18b514fbf": [
+        {
+            "commit_message": "Adds direct transcoding of UTF-8 strings via code most similar to Netty\n\nBefore, we kicked out to `String.getBytes(UTF_8)` when encoding found\ncharacters outside the normal ASCII range. This redundantly allocates\narrays and is generally less efficient than directly encoding.\n\nThis directly encodes UTF-8 using code most similar to Netty\n\nhttps://github.com/netty/netty/blob/4.1/buffer/src/main/java/io/netty/buffer/ByteBufUtil.java#L518\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeChineseSpan_json_zipkin2",
+            "method_name_pd": "public zipkin2.internal.Buffer zipkin2.internal.Buffer.writeAscii(java.lang.String)",
+            "method_name_cc": "public Buffer zipkin2.internal.Buffer.writeAscii(String v)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "public Buffer zipkin2.internal.Buffer.writeAscii(String v)",
+            "previous_method_pd": "public zipkin2.internal.Buffer zipkin2.internal.Buffer.writeAscii(java.lang.String)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "c147c1fe01281eab6b3615be60980b4ad6044096",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.242152466367713,
+                "p_value": 1.1501264859674174e-08,
+                "effect_size": -0.005646455981291393,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 789088,
+                    "after": 598906
+                }
+            }
+        },
+        {
+            "commit_message": "Adds direct transcoding of UTF-8 strings via code most similar to Netty\n\nBefore, we kicked out to `String.getBytes(UTF_8)` when encoding found\ncharacters outside the normal ASCII range. This redundantly allocates\narrays and is generally less efficient than directly encoding.\n\nThis directly encodes UTF-8 using code most similar to Netty\n\nhttps://github.com/netty/netty/blob/4.1/buffer/src/main/java/io/netty/buffer/ByteBufUtil.java#L518\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeChineseSpan_json_zipkin2",
+            "method_name_pd": "static int zipkin2.internal.Buffer.utf8SizeInBytes(java.lang.String)",
+            "method_name_cc": "static int zipkin2.internal.Buffer.utf8SizeInBytes(String string)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_method_cc": "static int zipkin2.internal.Buffer.utf8SizeInBytes(String string)",
+            "previous_method_pd": "static int zipkin2.internal.Buffer.utf8SizeInBytes(java.lang.String)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/Buffer.java",
+            "previous_commit": "c147c1fe01281eab6b3615be60980b4ad6044096",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.2272727272727275,
+                "p_value": 1.9702625868545843e-28,
+                "effect_size": 0.026917697945145105,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 116294,
+                    "after": 108999
+                }
+            }
+        }
+    ],
+    "8b3e5ba40aee7a84c197f8e09c64fdf8eb6e85fe": [
+        {
+            "commit_message": "Makes the counting sampler accurate to 100 decisions and more fair\n\nPreviously, the counting sampler biased the first trace ids. For\nexample, if you had a sample rate of 50%, 5K traces would be sampled,\nthen 5K would not be. This would result in a poor experience for low\ntraffic sites. This randomizes the decisions, so that they are more\nfair, and restores the granularity to 100 decisions.\n",
+            "benchmark": "zipkin.benchmarks.SamplerBenchmarks.traceIdSampler_counting",
+            "method_name_pd": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long)",
+            "method_name_cc": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long traceIdIgnored)",
+            "file": "zipkin/src/main/java/zipkin/CountingTraceIdSampler.java",
+            "previous_method_cc": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long traceIdIgnored)",
+            "previous_method_pd": "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long)",
+            "previous_file": "zipkin/src/main/java/zipkin/CountingTraceIdSampler.java",
+            "previous_commit": "276df1351d3c15db963479a190c771f1f33ca1f3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.631578947368421,
+                "p_value": 0.0,
+                "effect_size": -0.04515356862969654,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1403440,
+                    "after": 1524157
+                }
+            }
+        }
+    ],
+    "bb338c8af88d13e8a971e333028b3748b83f7100": [
+        {
+            "commit_message": "Fixes encoding bug where core annotations not written in JSON_V1\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeTenClientSpans_json_zipkin2_legacy",
+            "method_name_pd": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(zipkin2.Span)",
+            "method_name_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "previous_method_pd": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(zipkin2.Span)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "f47ac65bad7ea2442b47b368b166d63f527ed3ef",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -9.35075541037158,
+                "p_value": 0.0,
+                "effect_size": 0.20608747474540107,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 323152,
+                    "after": 330680
+                }
+            }
+        },
+        {
+            "commit_message": "Fixes encoding bug where core annotations not written in JSON_V1\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeTenClientSpans_json_zipkin2_legacy",
+            "method_name_pd": "public void zipkin2.internal.V1SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "method_name_cc": "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)",
+            "previous_method_pd": "public void zipkin2.internal.V1SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "f47ac65bad7ea2442b47b368b166d63f527ed3ef",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -6.791569086651054,
+                "p_value": 0.0,
+                "effect_size": 0.20336159799549175,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 328189,
+                    "after": 340513
+                }
+            }
+        }
+    ],
+    "0487c3191c1b56f9aad42541c6537d7fa09f62ff": [
+        {
+            "commit_message": "Makes throttling parameters obvious by controlling exceptions (#2742)\n\n",
+            "benchmark": "zipkin2.server.internal.throttle.ThrottledCallBenchmarks.execute",
+            "method_name_pd": "protected void zipkin2.server.internal.throttle.ThrottledCall.doEnqueue(zipkin2.Callback)",
+            "method_name_cc": "protected void zipkin2.server.internal.throttle.ThrottledCall.doEnqueue(Callback<Void> callback)",
+            "file": "zipkin-server/src/main/java/zipkin2/server/internal/throttle/ThrottledCall.java",
+            "previous_method_cc": "protected void zipkin2.server.internal.throttle.ThrottledCall.doEnqueue(Callback<Void> callback)",
+            "previous_method_pd": "protected void zipkin2.server.internal.throttle.ThrottledCall.doEnqueue(zipkin2.Callback)",
+            "previous_file": "zipkin-server/src/main/java/zipkin2/server/internal/throttle/ThrottledCall.java",
+            "previous_commit": "0d077cad8c8bcbdfe7e94e26951704404b96870a",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 57.88088764143497,
+                "p_value": 0.0,
+                "effect_size": -0.29296903713933276,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 333595,
+                    "after": 328371
+                }
+            }
+        }
+    ],
+    "a17f26022cdc953f01ff53b5e220dbe55109a62b": [
+        {
+            "commit_message": "Moves zipkin-core language level to JRE 6 (#1245)\n\nThis is an api compatible change to allow code sharing between zipkin\r\nserver and instrumentation, and without having to publish 2 jar files.\r\n\r\nWe accidentally broke the ability to make agent-based instrumentation by\r\ncompiling our model classes against Java 7 bytecode. Particularly, this\r\ncauses a regression in Brave.\r\n\r\nTo move back to Java 6 bytecode, we had to do a few things:\r\n* replace moshi internal dependency with gson, which is java 6 compliant\r\n* remove okio dependency and copy its Base64 class\r\n  * incidentally a class it also copied!\r\n* do variable-size buffer writes w/ OutputBuffer instead of okio\r\n* fix a few nags about diamond ops etc.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeLocalSpan_json_zipkin",
+            "method_name_pd": "static void zipkin.internal.ThriftCodec.writeListBegin(zipkin.internal.Buffer,int)",
+            "method_name_cc": "static void zipkin.internal.ThriftCodec.writeListBegin(Buffer buffer, int size)",
+            "file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_method_cc": "static void zipkin.internal.ThriftCodec.writeListBegin(Buffer buffer, int size)",
+            "previous_method_pd": "static void zipkin.internal.ThriftCodec.writeListBegin(zipkin.internal.Buffer,int)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_commit": "331e4e54b0462c39e1a95a2ad690938f67a58cb5",
+            "performance_diff": -0.0,
+            "significance": {}
+        },
+        {
+            "commit_message": "Moves zipkin-core language level to JRE 6 (#1245)\n\nThis is an api compatible change to allow code sharing between zipkin\r\nserver and instrumentation, and without having to publish 2 jar files.\r\n\r\nWe accidentally broke the ability to make agent-based instrumentation by\r\ncompiling our model classes against Java 7 bytecode. Particularly, this\r\ncauses a regression in Brave.\r\n\r\nTo move back to Java 6 bytecode, we had to do a few things:\r\n* replace moshi internal dependency with gson, which is java 6 compliant\r\n* remove okio dependency and copy its Base64 class\r\n  * incidentally a class it also copied!\r\n* do variable-size buffer writes w/ OutputBuffer instead of okio\r\n* fix a few nags about diamond ops etc.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeLocalSpan_json_zipkin",
+            "method_name_pd": "public int zipkin.Annotation.compareTo(zipkin.Annotation)",
+            "method_name_cc": "public int zipkin.Annotation.compareTo(Annotation that)",
+            "file": "zipkin/src/main/java/zipkin/Annotation.java",
+            "previous_method_cc": "public int zipkin.Annotation.compareTo(Annotation that)",
+            "previous_method_pd": "public int zipkin.Annotation.compareTo(zipkin.Annotation)",
+            "previous_file": "zipkin/src/main/java/zipkin/Annotation.java",
+            "previous_commit": "331e4e54b0462c39e1a95a2ad690938f67a58cb5",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -45.91169421991145,
+                "p_value": 0.038223428515998394,
+                "effect_size": 0.22287390029325513,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 62,
+                    "after": 55
+                }
+            }
+        },
+        {
+            "commit_message": "Moves zipkin-core language level to JRE 6 (#1245)\n\nThis is an api compatible change to allow code sharing between zipkin\r\nserver and instrumentation, and without having to publish 2 jar files.\r\n\r\nWe accidentally broke the ability to make agent-based instrumentation by\r\ncompiling our model classes against Java 7 bytecode. Particularly, this\r\ncauses a regression in Brave.\r\n\r\nTo move back to Java 6 bytecode, we had to do a few things:\r\n* replace moshi internal dependency with gson, which is java 6 compliant\r\n* remove okio dependency and copy its Base64 class\r\n  * incidentally a class it also copied!\r\n* do variable-size buffer writes w/ OutputBuffer instead of okio\r\n* fix a few nags about diamond ops etc.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeLocalSpan_json_zipkin",
+            "method_name_pd": "public byte[] zipkin.internal.JsonCodec.writeSpan(zipkin.Span)",
+            "method_name_cc": "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)",
+            "file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_method_cc": "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)",
+            "previous_method_pd": "public byte[] zipkin.internal.JsonCodec.writeSpan(zipkin.Span)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_commit": "331e4e54b0462c39e1a95a2ad690938f67a58cb5",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 44.27558257345491,
+                "p_value": 0.0,
+                "effect_size": -0.8890303242159331,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 166177,
+                    "after": 116220
+                }
+            }
+        },
+        {
+            "commit_message": "Moves zipkin-core language level to JRE 6 (#1245)\n\nThis is an api compatible change to allow code sharing between zipkin\r\nserver and instrumentation, and without having to publish 2 jar files.\r\n\r\nWe accidentally broke the ability to make agent-based instrumentation by\r\ncompiling our model classes against Java 7 bytecode. Particularly, this\r\ncauses a regression in Brave.\r\n\r\nTo move back to Java 6 bytecode, we had to do a few things:\r\n* replace moshi internal dependency with gson, which is java 6 compliant\r\n* remove okio dependency and copy its Base64 class\r\n  * incidentally a class it also copied!\r\n* do variable-size buffer writes w/ OutputBuffer instead of okio\r\n* fix a few nags about diamond ops etc.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readRpcV6Span_thrift_zipkin",
+            "method_name_pd": "static java.util.List zipkin.internal.ThriftCodec.readList(zipkin.internal.ThriftCodec$ThriftReader,java.nio.ByteBuffer)",
+            "method_name_cc": "static <T> List<T> zipkin.internal.ThriftCodec.readList(ThriftReader<T> reader, ByteBuffer bytes)",
+            "file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_method_cc": "static <T> List<T> zipkin.internal.ThriftCodec.readList(ThriftReader<T> reader, ByteBuffer bytes)",
+            "previous_method_pd": "static java.util.List zipkin.internal.ThriftCodec.readList(zipkin.internal.ThriftCodec$ThriftReader,java.nio.ByteBuffer)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/ThriftCodec.java",
+            "previous_commit": "331e4e54b0462c39e1a95a2ad690938f67a58cb5",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 7.901907356948229,
+                "p_value": 5.082007411061363e-73,
+                "effect_size": 0.02520306267865159,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 343734,
+                    "after": 342000
+                }
+            }
+        }
+    ],
+    "e7f0b58cf86db62e311f5635a4608777bc36933e": [
+        {
+            "commit_message": "Refactors codec to reduce redundant list creation (#1650)\n\nThis includes cleanups and performance improvements when reading spans.\r\nNotably, this stops recreating lists by re-using Span.Builder\r\n\r\nTo test this, we use the same client-span json from zipkin-reporter.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeRpcV6Span_json_zipkin",
+            "method_name_pd": "public int zipkin.internal.ThriftCodec$2.sizeInBytes(zipkin.Annotation)",
+            "method_name_cc": "public int zipkin.internal.JsonCodec.sizeInBytes(Annotation value)",
+            "file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_method_cc": "public int zipkin.internal.JsonCodec.sizeInBytes(Annotation value)",
+            "previous_method_pd": "public int zipkin.internal.ThriftCodec$2.sizeInBytes(zipkin.Annotation)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_commit": "45600824c20f766ca6f99595df16b297ba043aa0",
+            "performance_diff": -0.0,
+            "significance": {}
+        },
+        {
+            "commit_message": "Refactors codec to reduce redundant list creation (#1650)\n\nThis includes cleanups and performance improvements when reading spans.\r\nNotably, this stops recreating lists by re-using Span.Builder\r\n\r\nTo test this, we use the same client-span json from zipkin-reporter.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeRpcV6Span_json_zipkin",
+            "method_name_pd": "public int zipkin.internal.JsonCodec$2.sizeInBytes(zipkin.Annotation)",
+            "method_name_cc": "public int zipkin.internal.JsonCodec.sizeInBytes(Annotation value)",
+            "file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_method_cc": "public int zipkin.internal.JsonCodec.sizeInBytes(Annotation value)",
+            "previous_method_pd": "public int zipkin.internal.ThriftCodec$2.sizeInBytes(zipkin.Annotation)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_commit": "45600824c20f766ca6f99595df16b297ba043aa0",
+            "performance_diff": 0.9723403433050872,
+            "significance": {}
+        }
+    ],
+    "5b6efdc70a83fca6e9b09bf8df5a3a861caebf9e": [
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public java.lang.Boolean zipkin2.Span.debug()",
+            "method_name_cc": "public Boolean zipkin2.Span.debug()",
+            "file": "zipkin2/src/main/java/zipkin2/Span.java",
+            "previous_method_cc": "public Boolean zipkin2.Span.debug()",
+            "previous_method_pd": "public java.lang.Boolean zipkin2.Span.debug()",
+            "previous_file": "zipkin2/src/main/java/zipkin2/Span.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 6.730769230769231,
+                "p_value": 0.0,
+                "effect_size": -0.15723936357008864,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 252721,
+                    "after": 201413
+                }
+            }
+        },
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public java.lang.Boolean zipkin2.Span.shared()",
+            "method_name_cc": "public Boolean zipkin2.Span.shared()",
+            "file": "zipkin2/src/main/java/zipkin2/Span.java",
+            "previous_method_cc": "public Boolean zipkin2.Span.shared()",
+            "previous_method_pd": "public java.lang.Boolean zipkin2.Span.shared()",
+            "previous_file": "zipkin2/src/main/java/zipkin2/Span.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 6.0606060606060606,
+                "p_value": 0.0,
+                "effect_size": -0.14504328038300557,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 253735,
+                    "after": 202668
+                }
+            }
+        },
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(zipkin2.Span)",
+            "method_name_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "previous_method_pd": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(zipkin2.Span)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -56.13715263077679,
+                "p_value": 0.05704088200796153,
+                "effect_size": 0.30315500685871055,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 27,
+                    "after": 27
+                }
+            }
+        },
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public void zipkin2.internal.V2SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "method_name_cc": "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)",
+            "previous_method_pd": "public void zipkin2.internal.V2SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.0062845109191305,
+                "p_value": 1.0,
+                "effect_size": 0.001040582726326743,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 31,
+                    "after": 31
+                }
+            }
+        },
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "static zipkin2.internal.V1SpanWriter$Parsed zipkin2.internal.V1SpanWriter.parse(zipkin2.Span)",
+            "method_name_cc": "static Parsed zipkin2.internal.V1SpanWriter.parse(Span in)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "static Parsed zipkin2.internal.V1SpanWriter.parse(Span in)",
+            "previous_method_pd": "static zipkin2.internal.V1SpanWriter$Parsed zipkin2.internal.V1SpanWriter.parse(zipkin2.Span)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 5.0761421319796955,
+                "p_value": 0.0,
+                "effect_size": -0.09297695705175327,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 253450,
+                    "after": 202565
+                }
+            }
+        },
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(zipkin2.Span)",
+            "method_name_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)",
+            "previous_method_pd": "public int zipkin2.internal.V2SpanWriter.sizeInBytes(zipkin2.Span)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": 0.9866664931006001,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -98.70281620971703,
+                "p_value": 2.2821104174300437e-19,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 27,
+                    "after": 103299
+                }
+            }
+        },
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "public void zipkin2.internal.V1SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "method_name_cc": "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_method_cc": "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)",
+            "previous_method_pd": "public void zipkin2.internal.V2SpanWriter.write(zipkin2.Span,zipkin2.internal.Buffer)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/V1SpanWriter.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": 0.9668499684789784,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -97.06999187490672,
+                "p_value": 5.306440392276724e-22,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 31,
+                    "after": 102500
+                }
+            }
+        },
+        {
+            "commit_message": "Optimizes reference count of Span and squashes an errorprone warning (#1890)\n\nBased on https://www.youtube.com/watch?time_continue=2118&v=YLTD1GBEfwo\r\nwe were a bit noisy for no good reason. Thanks @raphw for noticing\r\n\r\nThis adds and uses asLong accessors to prevent routine Long allocation\r\n\r\nThis also squashes an error-prone warning, which while wasn't a bug\r\nwasn't worth explaining in a surpression why it wasn't.",
+            "benchmark": "zipkin.benchmarks.Span2ConverterBenchmarks.toSpan",
+            "method_name_pd": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(zipkin2.Span)",
+            "method_name_cc": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)",
+            "file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_method_cc": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)",
+            "previous_method_pd": "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(zipkin2.Span)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/V2SpanConverter.java",
+            "previous_commit": "006d8f6c65adec8ac799e63e41d8cc6e3f2e4aac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -6.122448979591836,
+                "p_value": 0.16119298851915553,
+                "effect_size": 0.00155811513286925,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 536385,
+                    "after": 541674
+                }
+            }
+        }
+    ],
+    "8aeea3aef9d9f5ea7dea58e7df66a025070de47f": [
+        {
+            "commit_message": "Adds v2 StorageComponent and allows the server to use it directly (#1729)\n\nThis adds a type for the v2 StorageComponent so that future storage\r\nimplementations can be made without a compile dependency on the v1 jar.\r\n\r\nThis is internal until everything is verified.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeClientSpan_json_zipkin2_legacy",
+            "method_name_pd": "private static boolean zipkin.internal.v2.Endpoint.isValidIpV4Word(java.lang.CharSequence,int,int)",
+            "method_name_cc": "private static boolean zipkin.internal.v2.Endpoint.isValidIpV4Word(CharSequence word, int from, int toExclusive)",
+            "file": "zipkin/src/main/java/zipkin/internal/v2/Endpoint.java",
+            "previous_method_cc": "private static boolean zipkin.internal.v2.Endpoint.isValidIpV4Word(CharSequence word, int from, int toExclusive)",
+            "previous_method_pd": "private static boolean zipkin.internal.v2.Endpoint.isValidIpV4Word(java.lang.CharSequence,int,int)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/v2/Endpoint.java",
+            "previous_commit": "f895b832db6f9658f05edc084d6afa55dfaf34ac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -23.652382859431317,
+                "p_value": 6.406478404624571e-09,
+                "effect_size": 0.11670147900430596,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1646,
+                    "after": 1655
+                }
+            }
+        }
+    ],
+    "3ad789741688699a55a4a9404c851c8976ef6383": [
+        {
+            "commit_message": "Bumps versions, notably kafka and spring-boot\n\nAlso addresses error-prone warnings\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readTenClientSpans_json_zipkin2",
+            "method_name_pd": "public static java.util.List zipkin2.internal.JsonCodec.readList(zipkin2.internal.JsonCodec$JsonReaderAdapter,byte[])",
+            "method_name_cc": "public static <T> List<T> readList(JsonReaderAdapter<T> adapter, byte[] bytes)",
+            "file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_method_cc": "public static <T> List<T> readList(JsonReaderAdapter<T> adapter, byte[] bytes)",
+            "previous_method_pd": "public static java.util.List zipkin2.internal.JsonCodec.readList(zipkin2.internal.JsonCodec$JsonReaderAdapter,byte[])",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_commit": "cac1ace2c6e1d4e998a290bb6ae7a07da7025063",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 10.535236521032653,
+                "p_value": 5.861659106041712e-114,
+                "effect_size": -0.06788853231079221,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 73804,
+                    "after": 75126
+                }
+            }
+        }
+    ],
+    "dc9de8ba44ef6dd65efa5e298e175bae06e12cbf": [
+        {
+            "commit_message": "Starts preparing v2 Codec package (#1696)\n\nAll current Zipkin codec operations include the following:\r\n* encoding spans one-by-one as reported by instrumentation\r\n* encoding a list of encoded spans ready to send into a bytes message\r\n* decoding a list of spans off a transport message\r\n\r\nZipkin v1 includes legacy encoding, which is a bit different. For\r\nexample, old variants of Kafka accepted single-element messages instead\r\nof a list. We don't need to carry-forward this anymore. Moreover,\r\ninterfaces of reporter vs collector were split across jars in Zipkin v1\r\ndue to the former being defined late.\r\n\r\nThis introduces the following key interfaces and cleans up some code\r\naround codec.\r\n\r\n* `byte[] Encoder.encode(S span)`\r\n* `M MessageEncoder.encode(List<byte[]> encodedSpans)`\r\n* `List<S> Decoder.decodeList(byte[] message)`\r\n\r\nAll of these are temporarily placed in an internal package until other\r\ncode around it stabilizes.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.writeLocalSpan_thrift_zipkin",
+            "method_name_pd": "public static int zipkin.internal.Buffer.jsonEscapedSizeInBytes(java.lang.String)",
+            "method_name_cc": "public static int zipkin.internal.Buffer.jsonEscapedSizeInBytes(String v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "static int zipkin.internal.Buffer.jsonEscapedSizeInBytes(String v)",
+            "previous_method_pd": "static int zipkin.internal.Buffer.jsonEscapedSizeInBytes(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "88e0ef19ded7a5054e58196c5d1c2ebce8a63fea",
+            "performance_diff": 0.2681855172770964,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -10.781187979359531,
+                "p_value": 4.951905734146959e-05,
+                "effect_size": 0.12823025381164915,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 645,
+                    "after": 693
+                }
+            }
+        }
+    ],
+    "8ed14443fd0ce5a4982c125f3b6719972f88cad8": [
+        {
+            "commit_message": "Inlines actuate metrics buffer code to dodge conflicts on Spring Boot 2 (#1975)\n\nSpring Boot 2 removes the buffers package we used. This inlines the\r\nessential work going on.",
+            "benchmark": "zipkin.benchmarks.MetricsBenchmarks.incrementBytes_longSpans_Actuate",
+            "method_name_pd": "public void zipkin.server.internal.ActuateCollectorMetrics.incrementBytes(int)",
+            "method_name_cc": "public void zipkin.server.internal.ActuateCollectorMetrics.incrementBytes(int quantity)",
+            "file": "zipkin-server/src/main/java/zipkin/server/internal/ActuateCollectorMetrics.java",
+            "previous_method_cc": "public void zipkin.server.internal.ActuateCollectorMetrics.incrementBytes(int quantity)",
+            "previous_method_pd": "public void zipkin.server.internal.ActuateCollectorMetrics.incrementBytes(int)",
+            "previous_file": "zipkin-server/src/main/java/zipkin/server/internal/ActuateCollectorMetrics.java",
+            "previous_commit": "9dd10cdc41c424648e93b2a1a1f849beabe4d838",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 9.90566037735849,
+                "p_value": 0.0,
+                "effect_size": -0.2387452263046121,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 566905,
+                    "after": 583961
+                }
+            }
+        }
+    ],
+    "f259817bd1d676d425c0d29ff826ca13d4653519": [
+        {
+            "commit_message": "Bounds the amount of data dumped to the WARN category (#1764)\n\nBefore, when there were problems, the entire input json and any trace\r\nIDs ended up in the server logs. This by itself can take out the server.\r\n\r\nThis takes a conservative step forward, leaving warning level, but\r\nsignificantly reducing the output.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readTenClientSpans_json_zipkin2",
+            "method_name_pd": "public static boolean zipkin2.internal.JsonCodec.readList(zipkin2.internal.JsonCodec$JsonReaderAdapter,byte[],java.util.Collection)",
+            "method_name_cc": "public static <T> boolean zipkin2.internal.JsonCodec.readList(JsonReaderAdapter<T> adapter, byte[] bytes, Collection<T> out)",
+            "file": "zipkin2/src/main/java/zipkin2/internal/JsonCodec.java",
+            "previous_method_cc": "public static <T> boolean zipkin2.internal.JsonCodec.readList(JsonReaderAdapter<T> adapter, byte[] bytes, Collection<T> out)",
+            "previous_method_pd": "public static boolean zipkin2.internal.JsonCodec.readList(zipkin2.internal.JsonCodec$JsonReaderAdapter,byte[],java.util.Collection)",
+            "previous_file": "zipkin2/src/main/java/zipkin2/internal/JsonCodec.java",
+            "previous_commit": "b956bfbb81bea76d9b5735a47c7569d726313402",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -5.840857787810384,
+                "p_value": 1.1972024713402855e-60,
+                "effect_size": 0.052608124420393865,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 63351,
+                    "after": 66764
+                }
+            }
+        },
+        {
+            "commit_message": "Bounds the amount of data dumped to the WARN category (#1764)\n\nBefore, when there were problems, the entire input json and any trace\r\nIDs ended up in the server logs. This by itself can take out the server.\r\n\r\nThis takes a conservative step forward, leaving warning level, but\r\nsignificantly reducing the output.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readTenClientSpans_json_zipkin2",
+            "method_name_pd": "public static java.util.List zipkin2.internal.JsonCodec.readList(zipkin2.internal.JsonCodec$JsonReaderAdapter,byte[])",
+            "method_name_cc": "public static <T> List<T> readList(JsonReaderAdapter<T> adapter, byte[] bytes)",
+            "file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_method_cc": "public static <T> List<T> readList(JsonReaderAdapter<T> adapter, byte[] bytes)",
+            "previous_method_pd": "public static java.util.List zipkin2.internal.JsonCodec.readList(zipkin2.internal.JsonCodec$JsonReaderAdapter,byte[])",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/JsonCodec.java",
+            "previous_commit": "b956bfbb81bea76d9b5735a47c7569d726313402",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -18.212680501099744,
+                "p_value": 1.248276338885269e-71,
+                "effect_size": 0.05668813865860204,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 64961,
+                    "after": 68004
+                }
+            }
+        }
+    ],
+    "942c1b8c9e7e9fd6d2a72abcebf35b6a17726732": [
+        {
+            "commit_message": "Adds support for Messaging Spans (#1677)\n\n",
+            "benchmark": "zipkin.benchmarks.Span2ConverterBenchmarks.toSpan",
+            "method_name_pd": "public static zipkin.Span zipkin.internal.Span2Converter.toSpan(zipkin.internal.Span2)",
+            "method_name_cc": "public static Span zipkin.internal.Span2Converter.toSpan(Span2 in)",
+            "file": "zipkin/src/main/java/zipkin/internal/Span2Converter.java",
+            "previous_method_cc": "public static Span zipkin.internal.Span2Converter.toSpan(Span2 in)",
+            "previous_method_pd": "public static zipkin.Span zipkin.internal.Span2Converter.toSpan(zipkin.internal.Span2)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Span2Converter.java",
+            "previous_commit": "5f2e29c72119fbf1623b3cb1d934e6f17892dc94",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.4760147601476015,
+                "p_value": 2.1952701217515245e-05,
+                "effect_size": -0.004731698962331437,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 464230,
+                    "after": 634851
+                }
+            }
+        }
+    ],
+    "8423afc56c0bdc4bfca15ec43b5add974c383405": [
+        {
+            "commit_message": "Define an interface for supplying a request to give call sites more c\u2026 (#2761)\n\n* Define an interface for supplying a request to give call sites more control over how the request is created (e.g., using pooled buffers or streaming).\r\n\r\n* Don't serialize if request aborted.\r\n\r\n* Refactor\r\n\r\n* Test\r\n\r\n* Fix\r\n\r\n* Better test\r\n\r\n* javadoc drifted\r\n",
+            "benchmark": "zipkin2.elasticsearch.internal.BulkRequestBenchmarks.buildAndWriteRequest_tenSpans",
+            "method_name_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "method_name_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_method_cc": "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_method_pd": "public zipkin2.elasticsearch.internal.client.HttpCall zipkin2.elasticsearch.internal.BulkCallBuilder.build()",
+            "previous_file": "zipkin-storage/elasticsearch/src/main/java/zipkin2/elasticsearch/internal/BulkCallBuilder.java",
+            "previous_commit": "c6578423fef1853916df6006ebe3685c3113ec07",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -84.58639373305326,
+                "p_value": 0.0,
+                "effect_size": 0.9385761336629457,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 51188,
+                    "after": 46291
+                }
+            }
+        }
+    ],
+    "4dc7ea565da5d6d338eed1ff3acae5a1a7b3468b": [
+        {
+            "commit_message": "Teaches Sampler to test spans and adds ZooKeeper support\n\nIn practice, there are two purposes for sampler: instrumentation and\nstorage. This change allows a sampler to be used for both purposes.\n\nIt also makes the sampler extensible, so that the rate can be dynamic.\nWith this feature, it is possible to implement adaptive sampling via\nZooKeeper.\n",
+            "benchmark": "zipkin.benchmarks.SamplerBenchmarks.traceIdSampler",
+            "method_name_pd": "public boolean zipkin.Sampler.isSampled(long)",
+            "method_name_cc": "public boolean zipkin.Sampler.isSampled(long traceId)",
+            "file": "zipkin/src/main/java/zipkin/Sampler.java",
+            "previous_method_cc": "public boolean zipkin.Sampler.isSampled(long traceId)",
+            "previous_method_pd": "public boolean zipkin.Sampler.isSampled(long)",
+            "previous_file": "zipkin/src/main/java/zipkin/Sampler.java",
+            "previous_commit": "08b699a2fcdb7ed5830d1421b47dd47c79b0ac44",
+            "performance_diff": -0.0,
+            "significance": {}
+        }
+    ],
+    "a485efed550f838070b8ce6eef1230dfed9b27da": [
+        {
+            "commit_message": "Infers type from core annotations (#1680)\n\n",
+            "benchmark": "zipkin.benchmarks.Span2ConverterBenchmarks.toSpan",
+            "method_name_pd": "public static zipkin.Span zipkin.internal.Span2Converter.toSpan(zipkin.internal.Span2)",
+            "method_name_cc": "public static Span zipkin.internal.Span2Converter.toSpan(Span2 in)",
+            "file": "zipkin/src/main/java/zipkin/internal/Span2Converter.java",
+            "previous_method_cc": "public static Span zipkin.internal.Span2Converter.toSpan(Span2 in)",
+            "previous_method_pd": "public static zipkin.Span zipkin.internal.Span2Converter.toSpan(zipkin.internal.Span2)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Span2Converter.java",
+            "previous_commit": "afb2872e53c6cdf3ce01c4a0baf06f2a30eabad1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 15.354330708661418,
+                "p_value": 0.0,
+                "effect_size": -0.37573403440591313,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 552760,
+                    "after": 489324
+                }
+            }
+        }
+    ],
+    "ab2ab63028af3585d606dd7f244eec5e08aebb49": [
+        {
+            "commit_message": "Fixes byte count when partial surrogates exist (#1561)\n\nA UTF-8 codepoint of a partial surrogate is represented by a ?. This\r\nfixes our byte counter accordingly.\r\n\r\nThanks to okio for the hint! https://github.com/square/okio/pull/297",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readClientSpan_json_zipkin",
+            "method_name_pd": "static int zipkin.internal.Buffer.utf8SizeInBytes(java.lang.String)",
+            "method_name_cc": "static int zipkin.internal.Buffer.utf8SizeInBytes(String string)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "static int zipkin.internal.Buffer.utf8SizeInBytes(String string)",
+            "previous_method_pd": "static int zipkin.internal.Buffer.utf8SizeInBytes(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "05025b4033c31823bfe0d1239778c41e67a64c44",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 17.23668869024485,
+                "p_value": 2.568918754245652e-05,
+                "effect_size": -0.25655274613318513,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 177,
+                    "after": 183
+                }
+            }
+        }
+    ],
+    "806db7bbbac08f7fa9e63ebcf7bf02f08f805c0d": [
+        {
+            "commit_message": "Small fix for ArrayIndexOutOfBoundsException in Buffer class (#1451)\n\n",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readRpcSpan_thrift_zipkin",
+            "method_name_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeAscii(java.lang.String)",
+            "method_name_cc": "Buffer zipkin.internal.Buffer.writeAscii(String v)",
+            "file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_method_cc": "Buffer zipkin.internal.Buffer.writeAscii(String v)",
+            "previous_method_pd": "zipkin.internal.Buffer zipkin.internal.Buffer.writeAscii(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Buffer.java",
+            "previous_commit": "80e99c482e06da7fa0fdc8cbf1055d07bb690853",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.104527452046284,
+                "p_value": 0.17177005857406813,
+                "effect_size": 0.08402234636871508,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 179,
+                    "after": 175
+                }
+            }
+        }
+    ],
+    "90342b4b5fa36ec844de4dd68ebe6ab74c5e142d": [
+        {
+            "commit_message": "Tolerate 128bit ids in json and http api by throwing out high bits (#1296)\n\nThis bridges support for 128bit trace ids by not failing on their\r\nreceipt. Basically, this throws out any hex characters to the left\r\nof the 16 needed for the 64bit trace id.",
+            "benchmark": "zipkin.benchmarks.CodecBenchmarks.readRpcSpan_thrift_zipkin",
+            "method_name_pd": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(java.lang.String)",
+            "method_name_cc": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(String lowerHex)",
+            "file": "zipkin/src/main/java/zipkin/internal/Util.java",
+            "previous_method_cc": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(String lowerHex)",
+            "previous_method_pd": "public static long zipkin.internal.Util.lowerHexToUnsignedLong(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin/internal/Util.java",
+            "previous_commit": "f223b87c1989c4fd2121c3d9894deeb91258da37",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 21.544428772919606,
+                "p_value": 0.09489354683695694,
+                "effect_size": -0.25925925925925924,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 27,
+                    "after": 30
+                }
+            }
+        }
+    ],
+    "ef0b0a5e0540b12a744d05279bd1591adff02838": [
+        {
+            "commit_message": "Makes lastColonIndex more intuitive\n",
+            "benchmark": "zipkin2.EndpointBenchmarks.parseIpv6_literal",
+            "method_name_pd": "static zipkin2.Endpoint$IpFamily zipkin2.Endpoint.detectFamily(java.lang.String)",
+            "method_name_cc": "static IpFamily zipkin2.Endpoint.detectFamily(String ipString)",
+            "file": "zipkin/src/main/java/zipkin2/Endpoint.java",
+            "previous_method_cc": "static IpFamily zipkin2.Endpoint.detectFamily(String ipString)",
+            "previous_method_pd": "static zipkin2.Endpoint$IpFamily zipkin2.Endpoint.detectFamily(java.lang.String)",
+            "previous_file": "zipkin/src/main/java/zipkin2/Endpoint.java",
+            "previous_commit": "bad871fcd405a1de9a4434a671c458a5c23870e9",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.9011406844106464,
+                "p_value": 0.0,
+                "effect_size": 0.05608746256395589,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 469372,
+                    "after": 558866
+                }
+            }
+        }
+    ],
+    "74afc316587aef9cb318296654340fb3461b1391": [
+        {
+            "commit_message": "Fix ReadBuffer when wrapping an array at an offset. (#2671)\n\n",
+            "benchmark": "zipkin2.codec.JsonCodecBenchmarks.bytebuffer_zipkinDecoder",
+            "method_name_pd": "public static zipkin2.internal.ReadBuffer zipkin2.internal.ReadBuffer.wrapUnsafe(java.nio.ByteBuffer)",
+            "method_name_cc": "public static ReadBuffer zipkin2.internal.ReadBuffer.wrapUnsafe(ByteBuffer buffer)",
+            "file": "zipkin/src/main/java/zipkin2/internal/ReadBuffer.java",
+            "previous_method_cc": "public static ReadBuffer zipkin2.internal.ReadBuffer.wrapUnsafe(ByteBuffer buffer)",
+            "previous_method_pd": "public static zipkin2.internal.ReadBuffer zipkin2.internal.ReadBuffer.wrapUnsafe(java.nio.ByteBuffer)",
+            "previous_file": "zipkin/src/main/java/zipkin2/internal/ReadBuffer.java",
+            "previous_commit": "73c2a84561bbe246e5d9e3306395f2d33331faf3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 3.461438362106359,
+                "p_value": 0.08273595895386733,
+                "effect_size": -0.0467823759947666,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 939,
+                    "after": 897
+                }
+            }
+        }
+    ]
+}

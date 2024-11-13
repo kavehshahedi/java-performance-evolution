@@ -1,0 +1,213 @@
+{
+    "33247074a0becce08c1f48eec61e8da0c7bbe4c0": {
+        "void io.netty.buffer.PoolChunk<T>.free(long handle, int normCapacity, ByteBuffer nioBuffer)": 2.0,
+        "private long io.netty.buffer.PoolChunk<T>.allocateRun(int runSize)": 2.0,
+        "private void io.netty.buffer.PooledByteBuf<T>.init0(PoolChunk<T> chunk, ByteBuffer nioBuffer, long handle, int offset, int length, int maxLength, PoolThreadCache cache)": 2.0,
+        "protected final void io.netty.buffer.PooledByteBuf<T>.deallocate()": 2.0,
+        "void io.netty.buffer.PoolChunk<T>.initBuf(PooledByteBuf<T> buf, ByteBuffer nioBuffer, long handle, int reqCapacity, PoolThreadCache threadCache)": 6.4
+    },
+    "948d4a9ec58aef092c84eb76e672fd06e81cc13c": {
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.flush()": 29.9,
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.read()": 29.9
+    },
+    "caca5e5a1e19a26a3cff3560b79e7ade18398540": {
+        "void io.netty.buffer.PoolChunk<T>.free(long handle, int normCapacity, ByteBuffer nioBuffer)": 14.5,
+        "boolean io.netty.buffer.PoolChunk<T>.allocate(PooledByteBuf<T> buf, int reqCapacity, int sizeIdx, PoolThreadCache cache)": 4.2,
+        "void io.netty.buffer.PoolChunk<T>.initBufWithSubpage(PooledByteBuf<T> buf, ByteBuffer nioBuffer, long handle, int reqCapacity, PoolThreadCache threadCache)": 4.2
+    },
+    "c41d46111dc37aaf9c8ee7aec162d87221df1d70": {
+        "private long io.netty.buffer.PoolChunk<T>.collapseNext(long handle)": 10.1,
+        "private int io.netty.buffer.PoolChunk<T>.runFirstBestFit(int pageIdx)": 4.2,
+        "private long io.netty.buffer.PoolChunk<T>.allocateRun(int runSize)": 14.5,
+        "private long io.netty.buffer.PoolChunk<T>.collapsePast(long handle)": 10.1
+    },
+    "737519314153f9146eaf532cd4e945a621cf3fa5": {
+        "public void io.netty.util.concurrent.PromiseCombiner.finish(Promise<Void> aggregatePromise)": 6.4
+    },
+    "fedf3ccecb80ddccd05da2d02e76d669fe2c219c": {
+        "int io.netty.buffer.AbstractReferenceCountedByteBuf.internalRefCnt()": 4.2,
+        "public int io.netty.buffer.AbstractReferenceCountedByteBuf.refCnt()": 4.2,
+        "private boolean io.netty.buffer.AbstractReferenceCountedByteBuf.release0(int decrement)": 38.7
+    },
+    "f191f89a827d4a4151faffb38d215385e91fa3d3": {
+        "public String io.netty.handler.codec.http.multipart.MixedAttribute.getValue()": 4.2
+    },
+    "9557c88da2aaa49b3c3fd7525462dc0694681c19": {
+        "private State io.netty.handler.codec.http.HttpObjectDecoder.readHeaders(ByteBuf buffer)": 91.7
+    },
+    "6e0d22335d3419d91ae60cb40811a0faa25bed50": {
+        "private int io.netty.buffer.CompositeByteBuf.addComponent0(boolean increaseWriterIndex, int cIndex, ByteBuf buffer)": 11.1
+    },
+    "23c19b2b764d49437c49653121c8185130814033": {
+        "public static byte io.netty.util.internal.PlatformDependent.getByte(byte[] data, int index)": 4.2,
+        "private static Throwable io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0()": 17.7,
+        "public static short io.netty.util.internal.PlatformDependent.getShort(byte[] data, int index)": 4.2,
+        "public static int io.netty.util.internal.PlatformDependent.getInt(byte[] data, int index)": 4.2,
+        "public static long io.netty.util.internal.PlatformDependent.getLong(byte[] data, int index)": 4.2
+    },
+    "b409f8e7fa70da80d9801737e051c860aa979f13": {
+        "void io.netty.channel.epoll.EpollEventLoop.remove(AbstractEpollChannel ch)": 17.4,
+        "void io.netty.channel.epoll.EpollEventLoop.modify(AbstractEpollChannel ch)": 2.0
+    },
+    "9563d2bd61cabc4558246a6b6986d8769e32829e": {
+        "private long io.netty.buffer.PoolChunk<T>.allocateSubpage(int sizeIdx)": 2.0,
+        "void io.netty.buffer.PoolChunk<T>.free(long handle, int normCapacity, ByteBuffer nioBuffer)": 10.8
+    },
+    "128403b492d8490d9fc770b7a2dad669433b2790": {
+        "final void io.netty.buffer.AbstractByteBuf.ensureWritable0(int minWritableBytes)": 19.9
+    },
+    "7fce06a0d1f76865b1494fde99697c31a8a1f92f": {
+        "private AbstractChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.findContextOutbound(int mask)": 6.4,
+        "private AbstractChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.findContextInbound(int mask)": 6.4
+    },
+    "3a41a97b0e00145ec20c699b8ec472cb42965756": {
+        "protected void io.netty.handler.codec.http.HttpObjectDecoder.decode(ChannelHandlerContext ctx, ByteBuf buffer, List<Object> out)": 8.9
+    },
+    "8f7ef1cabb5442584e56a9e79bcb9696bc572a94": {
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.flush()": 4.2,
+        "private void io.netty.channel.AbstractChannelHandlerContext.write(Object msg, boolean flush, ChannelPromise promise)": 4.2,
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.read()": 4.2,
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.fireChannelReadComplete()": 4.2
+    },
+    "ab8b8ae81b24439ff94085f3f4bd060c172c1712": {
+        "public SslContext io.netty.handler.ssl.SslContextBuilder.build()": 8.6
+    },
+    "8280252d0e80e5e844215234732a7cda4862e260": {
+        "private int io.netty.channel.epoll.EpollEventLoop.epollWait()": 4.2,
+        "static int io.netty.channel.epoll.Native.epollWait(FileDescriptor epollFd, EpollEventArray events, boolean immediatePoll)": 15.5,
+        "private boolean io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventArray events, int ready)": 2.0
+    },
+    "6b6475fb565551c36f372fe37683d98df6674161": {
+        "public void io.netty.handler.codec.ByteToMessageDecoder.channelRead(ChannelHandlerContext ctx, Object msg)": 4.2,
+        "public void io.netty.handler.codec.ByteToMessageDecoder.channelReadComplete(ChannelHandlerContext ctx)": 19.9
+    },
+    "9993e07356ea39edf14008789d3377d2bb62ea92": {
+        "public static HttpMethod io.netty.handler.codec.http.HttpMethod.valueOf(String name)": 18.0,
+        "protected void io.netty.handler.codec.http.HttpObjectDecoder.decode(ChannelHandlerContext ctx, ByteBuf buffer, List<Object> out)": 32.4,
+        "private State io.netty.handler.codec.http.HttpObjectDecoder.readHeaders(ByteBuf buffer)": 98.1,
+        "public static HttpVersion io.netty.handler.codec.http.HttpVersion.valueOf(String text)": 18.3
+    },
+    "005a6a4e7b3632d6719640eac621690d3268fd1f": {
+        "static long io.netty.channel.epoll.Native.epollWait(FileDescriptor epollFd, EpollEventArray events, FileDescriptor timerFd, int timeoutSec, int timeoutNs, long millisThreshold)": 4.2
+    },
+    "f6ea528e0e6fe7d77970a0af18f09820b630fe14": {
+        "public int io.netty.buffer.SizeClasses.size2SizeIdx(int size)": 11.1
+    },
+    "42926695861c012ee6153e6bc8c4846bd4b923e9": {
+        "protected final int io.netty.channel.epoll.AbstractEpollChannel.doReadBytes(ByteBuf byteBuf)": 8.6,
+        "protected final int io.netty.channel.epoll.AbstractEpollChannel.doWriteBytes(ChannelOutboundBuffer in, ByteBuf buf)": 8.6
+    },
+    "a60825c3b425892af9be3e9284677aa8a58faa6b": {
+        "protected final void io.netty.buffer.AbstractByteBuf.adjustMarkers(int decrement)": 24.8
+    },
+    "d5fabe78a7b4b7d4124177c0f3dd103b1028c18e": {
+        "public static boolean io.netty.buffer.ByteBufUtil.equals(ByteBuf a, int aStartIndex, ByteBuf b, int bStartIndex, int length)": 19.9
+    },
+    "fe4a59011addc5a556ec882b5795db241f6c77c9": {
+        "private boolean io.netty.util.concurrent.DefaultPromise<V>.setValue0(Object objResult)": 11.1
+    },
+    "ab8c4f22c6bc11b7082fddfc6890fd02f30d5524": {
+        "private void io.netty.handler.codec.http2.HpackEncoder.encodeHeader(ByteBuf out, CharSequence name, CharSequence value, boolean sensitive, long headerSize)": 8.6,
+        "static int io.netty.handler.codec.http2.HpackStaticTable.getIndexInsensitive(CharSequence name, CharSequence value)": 48.8,
+        "private int io.netty.handler.codec.http2.HpackEncoder.getNameIndex(CharSequence name)": 4.2,
+        "private void io.netty.handler.codec.http2.HpackEncoder.encodeLiteral(ByteBuf out, CharSequence name, CharSequence value, IndexType indexType, int nameIndex)": 4.2,
+        "private int io.netty.handler.codec.http2.HpackEncoder.getIndex(CharSequence name)": 8.6,
+        "static int io.netty.handler.codec.http2.HpackStaticTable.getIndex(CharSequence name)": 4.2
+    },
+    "afb475dabd5ca9eaa94ccf07f0ecd8431db008ba": {
+        "private boolean io.netty.buffer.AdaptivePoolingAllocator.offerToQueue(Chunk buffer)": 8.9,
+        "private boolean io.netty.buffer.AdaptivePoolingAllocator.tryExpandMagazines(int currentLength)": 30.9
+    },
+    "9ed41db1d731720c3c1019d3db379beaf7603409": {
+        "public final boolean io.netty.channel.epoll.EpollRecvByteAllocatorHandle.continueReading()": 4.2,
+        "public final ByteBuf io.netty.channel.epoll.EpollRecvByteAllocatorHandle.allocate(ByteBufAllocator alloc)": 4.2
+    },
+    "19b4adf79c2d82d14e645be0e5f3eca30067bf1b": {
+        "public void io.netty.util.concurrent.PromiseTask<V>.run()": 21.4
+    },
+    "2af769f6dc76e3aad88a52c345689d739a9130a2": {
+        "public static int io.netty.buffer.ByteBufUtil.writeUtf8(ByteBuf buf, CharSequence seq)": 6.4
+    },
+    "9ec938c78faf75230d24c0a30c037a66f8ccee90": {
+        "public void io.netty.channel.ChannelOutboundBuffer.progress(long amount)": 27.1
+    },
+    "343879818495a6179e397f32034d6122980232ef": {
+        "private AdaptiveByteBuf io.netty.buffer.AdaptivePoolingAllocator.allocate(int size, int maxCapacity, Thread currentThread, AdaptiveByteBuf buf)": 29.0
+    },
+    "f17bfd0f64189d91302fbdd15103788bf9eabaa2": {
+        "public final int io.netty.channel.unix.FileDescriptor.writeAddress(long address, int pos, int limit)": 4.2,
+        "public final int io.netty.channel.unix.FileDescriptor.readAddress(long address, int pos, int limit)": 4.2
+    },
+    "384eaf773cc668979192b8a9537fa5b2b91ce952": {
+        "private static SSLContext io.netty.handler.ssl.JdkSslClientContext.newSSLContext(Provider sslContextProvider, X509Certificate[] trustCertCollection, TrustManagerFactory trustManagerFactory, X509Certificate[] keyCertChain, PrivateKey key, String keyPassword, KeyManagerFactory keyManagerFactory, long sessionCacheSize, long sessionTimeout, String keyStore)": 4.2
+    },
+    "ee7027288ec5f3d688be3cee45a521a5786ccf71": {
+        "private static ByteBuf io.netty.handler.codec.ByteToMessageDecoder.expandCumulation(ByteBufAllocator alloc, ByteBuf oldCumulation, ByteBuf in)": 8.6
+    },
+    "2dc686ded17d8123118921ac6d36aea30cdce267": {
+        "public ByteBuf io.netty.buffer.AbstractByteBufAllocator.ioBuffer(int initialCapacity)": 4.2
+    },
+    "b82258b72fdf4c733d9c4a641c6b8725b036485f": {
+        "private void io.netty.util.ResourceLeakDetector<T>.reportLeak()": 4.2
+    },
+    "570c5d75bd172fbb2f6f68685326d4acb3978482": {
+        "private static boolean io.netty.handler.codec.http2.HpackDecoder.isConnectionHeader(CharSequence name)": 5.7
+    },
+    "c3416d8ad2260f3c9bc98a9061d25bba92020f93": {
+        "private void io.netty.channel.DefaultChannelConfig.setRecvByteBufAllocator(RecvByteBufAllocator allocator, ChannelMetadata metadata)": 13.6
+    },
+    "ef1f637b0f9979d98dbb0f3e5281d7272012c76d": {
+        "public void io.netty.channel.embedded.EmbeddedChannel.runPendingTasks()": 8.6
+    },
+    "4e439264df0523fb6efce5f8f6c7c7fa74addd07": {
+        "public void io.netty.handler.codec.MessageToMessageEncoder<I>.write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise)": 13.0
+    },
+    "e21caf11d94d96657d140914ff65a62cf24e81ee": {
+        "private void io.netty.buffer.PooledByteBuf<T>.init0(PoolChunk<T> chunk, ByteBuffer nioBuffer, long handle, int offset, int length, int maxLength, PoolThreadCache cache)": 2.0
+    },
+    "feb804dca8579c93ff3224564aafcf5938bb2c52": {
+        "protected final long io.netty.util.concurrent.AbstractScheduledEventExecutor.nextScheduledTaskNano()": 8.6,
+        "protected final Runnable io.netty.util.concurrent.AbstractScheduledEventExecutor.pollScheduledTask(long nanoTime)": 8.6,
+        "static long io.netty.util.concurrent.ScheduledFutureTask<V>.deadlineToDelayNanos(long deadlineNanos)": 4.2
+    },
+    "f5185ed73b347ba684eef2348622030b5cbe99cf": {
+        "private static boolean io.netty.channel.AbstractChannelHandlerContext.safeExecute(EventExecutor executor, Runnable runnable, ChannelPromise promise, Object msg, boolean lazy)": 8.6
+    },
+    "c8c45cfa4c9632578a772ebcad1edfae431b1011": {
+        "public int io.netty.buffer.AbstractByteBufAllocator.calculateNewCapacity(int minNewCapacity, int maxCapacity)": 13.3
+    },
+    "4db38b4e0c734b9cdaf0591dd0c5b3f4d4f11ea4": {
+        "void io.netty.buffer.PoolArena<T>.reallocate(PooledByteBuf<T> buf, int newCapacity, boolean freeOldMemory)": 65.9,
+        "public ByteBuf io.netty.buffer.UnpooledDirectByteBuf.capacity(int newCapacity)": 98.3
+    },
+    "2b7de5a50bb3feb1a351dcd1ce1da9474ae256ae": {
+        "private boolean io.netty.buffer.AdaptivePoolingAllocator.tryExpandMagazines(int currentLength)": 4.2
+    },
+    "707c95e80d60cd83336b5355474676dab7b26e3a": {
+        "private CharSequence io.netty.handler.codec.http2.HpackDecoder.readStringLiteral(ByteBuf in, int length, boolean huffmanEncoded)": 4.2
+    },
+    "c0674cff29ae017e9fd144b6728ac0521874e883": {
+        "private static int io.netty.handler.codec.http.multipart.HttpPostMultipartRequestDecoder.findDelimiter(ByteBuf undecodedChunk, String delimiter, int offset)": 4.2
+    },
+    "86603872776e3ff5a60dea3c104358e486eed588": {
+        "private void io.netty.util.ResourceLeakDetector<T>.reportLeak()": 4.2
+    },
+    "deea51e6093db224878b33eaefc3321f2a0d4a07": {
+        "private void io.netty.handler.codec.http2.HpackEncoder.encodeStringLiteral(ByteBuf out, CharSequence string)": 10.1
+    },
+    "d0bcf44445f8692bae6d5a0868f6d3fbe39daf8d": {
+        "boolean io.netty.buffer.PoolSubpage<T>.free(PoolSubpage<T> head, int bitmapIdx)": 11.1
+    },
+    "9f242d27e05651a909571f232dd1f5afb1aed20c": {
+        "private Component io.netty.buffer.CompositeByteBuf.findIt(int offset)": 8.9
+    },
+    "1039f69e53792ff58f3f61f5ab6f7b89ef1fecf0": {
+        "private void io.netty.buffer.CompositeByteBuf.consolidateIfNeeded()": 26.6
+    },
+    "768a8250353d5ab3664f5382b57d0c19a256d68d": {
+        "public Throwable io.netty.util.concurrent.DefaultPromise<V>.cause()": 24.6
+    },
+    "b4e3c12b8e8e984ba65330dd6dc34a4b3d07a25a": {
+        "protected Http2ConnectionHandler io.netty.handler.codec.http2.Http2ConnectionHandlerBuilder.build(Http2ConnectionDecoder decoder, Http2ConnectionEncoder encoder, Http2Settings initialSettings)": 4.2
+    }
+}

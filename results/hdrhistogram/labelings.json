@@ -1,0 +1,75 @@
+{
+    "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": {
+        "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ad76bb512b510a37f6a55fdea32f8f3dd3355771": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": {
+        "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+        "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "32e62f68d9e277850807f2b538bcab5971f11a55": {
+        "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+        "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4708c3a25fc335e7076f4118ab8fbb43f183debe": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    }
+}

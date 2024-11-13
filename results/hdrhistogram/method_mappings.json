@@ -1,0 +1,380 @@
+{
+    "cb59fd8e61c05e25cad83c7b727c941a8273d4d1": [
+        {
+            "commit_message": "Fixes concurrency race with auto-ranging in ConcurrentDoubleHistogram:\n\n- Moves integerToDouble (i2d) conversion tracking purely to int histograms\n- Adds new double-converting value recording methods (package local) to allow WRP use of i2d ratios in concurrent cases\n- Adds new i2d ratio parameters in shift methods (package local) to allow DoubleHistogram to indicate ratio shift with values shift\n- Adds i2d ratio tracking to active an inactive portions of ConcurrentHistogram\n- Applies i2d ratio to inactive part as part of WRP flip\n- Uses active i2d ratio in recording in ConcurrentHistogram\n",
+            "benchmark": "bench.HdrHistogramRecordingBench.rawDoubleRecordingSpeed",
+            "method_name_pd": "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double)",
+            "method_name_cc": "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double integerToDoubleValueConversionRatio)",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double integerToDoubleValueConversionRatio)",
+            "previous_method_pd": "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double)",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "5b6c642badd85b962cd7be09081e4738a9cf2c48",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.7317242175770873,
+                "p_value": 0.9602273466674713,
+                "effect_size": 0.004568106312292359,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 84,
+                    "after": 86
+                }
+            }
+        }
+    ],
+    "fe288b16baaabca43d0503a7a558696b1013cea6": [
+        {
+            "commit_message": "Introduce packed histogram variants (#162)\n\n* Add PackedLongArray and ConcurrentPackedLongArray\r\n\r\n* Add packed histogram variants\r\n\r\n* Updated recorder variants to support packed option\r\n\r\n* - Update tests to use JUnit5\r\n   - Make most tests parametrized to cover various histogram variants\r\n   - Add packed histogram tests\r\n\r\n* Make Base64Helper package private\r\n\r\n\r\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer",
+            "method_name_pd": "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "method_name_cc": "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java",
+            "previous_method_cc": "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "previous_method_pd": "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java",
+            "previous_commit": "52ef7ff855fffccd5b090eb954b9ffca17178a92",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.0124610591900312,
+                "p_value": 3.549919912564465e-19,
+                "effect_size": 0.017459229909020612,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 175478,
+                    "after": 174912
+                }
+            }
+        }
+    ],
+    "ad76bb512b510a37f6a55fdea32f8f3dd3355771": [
+        {
+            "commit_message": "Correct spelling\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "5071aec2809d7d2f0564c1e81ce73c6d9e470731",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.5140927090612626,
+                "p_value": 0.0023040197341105354,
+                "effect_size": 0.03393568037325425,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 5399,
+                    "after": 5358
+                }
+            }
+        }
+    ],
+    "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": [
+        {
+            "commit_message": "Changes required byte count per word for TZLE with LEB128 + ZigZag to 9 bytes (from 16).\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "ddadad81471562f2c9851ccc4d0d4f4747cca9d3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.2535211267605635,
+                "p_value": 0.0,
+                "effect_size": 0.043124006724381735,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1422712,
+                    "after": 1436034
+                }
+            }
+        },
+        {
+            "commit_message": "Changes required byte count per word for TZLE with LEB128 + ZigZag to 9 bytes (from 16).\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "ddadad81471562f2c9851ccc4d0d4f4747cca9d3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.5714285714285714,
+                "p_value": 0.0,
+                "effect_size": -0.025232728612129378,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 4492749,
+                    "after": 4557079
+                }
+            }
+        },
+        {
+            "commit_message": "Changes required byte count per word for TZLE with LEB128 + ZigZag to 9 bytes (from 16).\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)",
+            "method_name_cc": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)",
+            "previous_method_pd": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "ddadad81471562f2c9851ccc4d0d4f4747cca9d3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.012367491166078,
+                "p_value": 0.0,
+                "effect_size": 0.04603374469531185,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1427156,
+                    "after": 1445228
+                }
+            }
+        }
+    ],
+    "32e62f68d9e277850807f2b538bcab5971f11a55": [
+        {
+            "commit_message": "Places V2maxWordSizeInBytes in constant field (instead of literal 9). Some cleanup.\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "c24ac346a6e66dfcec1e81a9d16e568648bc65c0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.6749311294765841,
+                "p_value": 6.425784503718525e-44,
+                "effect_size": -0.009720245105370659,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1375537,
+                    "after": 1350827
+                }
+            }
+        },
+        {
+            "commit_message": "Places V2maxWordSizeInBytes in constant field (instead of literal 9). Some cleanup.\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "c24ac346a6e66dfcec1e81a9d16e568648bc65c0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.5714285714285714,
+                "p_value": 0.0,
+                "effect_size": 0.029630118906503744,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 4273517,
+                    "after": 4306326
+                }
+            }
+        },
+        {
+            "commit_message": "Places V2maxWordSizeInBytes in constant field (instead of literal 9). Some cleanup.\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)",
+            "method_name_cc": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)",
+            "previous_method_pd": "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(java.nio.ByteBuffer,int)",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "c24ac346a6e66dfcec1e81a9d16e568648bc65c0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.6079136690647484,
+                "p_value": 1.2937801854084386e-177,
+                "effect_size": -0.01980721621878248,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1387345,
+                    "after": 1357139
+                }
+            }
+        }
+    ],
+    "5b6c642badd85b962cd7be09081e4738a9cf2c48": [
+        {
+            "commit_message": "Cleans up iterator and adds additional concurrent modification detection at next()\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer",
+            "method_name_pd": "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()",
+            "method_name_cc": "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java",
+            "previous_method_cc": "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()",
+            "previous_method_pd": "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java",
+            "previous_commit": "6c19efc72a90ba8ec6d8242b82d9e645794c6886",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 3.0693069306930694,
+                "p_value": 2.307723463690823e-250,
+                "effect_size": -0.06459806821343804,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 181576,
+                    "after": 183367
+                }
+            }
+        },
+        {
+            "commit_message": "Cleans up iterator and adds additional concurrent modification detection at next()\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer",
+            "method_name_pd": "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "method_name_cc": "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java",
+            "previous_method_cc": "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "previous_method_pd": "public org.HdrHistogram.HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogramIterator.java",
+            "previous_commit": "6c19efc72a90ba8ec6d8242b82d9e645794c6886",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.8183716075156577,
+                "p_value": 1.5979952416182024e-234,
+                "effect_size": -0.06307357043607098,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 178652,
+                    "after": 179713
+                }
+            }
+        }
+    ],
+    "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": [
+        {
+            "commit_message": "Adjusts V2 encoding to use ZigZag+LEB128 (no other word sizes or non-TZLE), disabling TZLE causes V1 encoding (for now)\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "6c85d5e2f4b789f9a86823d00c02845d17c60e3a",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -95.98876855194544,
+                "p_value": 0.0,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 5556,
+                    "after": 1746405
+                }
+            }
+        },
+        {
+            "commit_message": "Adjusts V2 encoding to use ZigZag+LEB128 (no other word sizes or non-TZLE), disabling TZLE causes V1 encoding (for now)\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.roundtripCompressedNoTZLE",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "6c85d5e2f4b789f9a86823d00c02845d17c60e3a",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -85.72837071727878,
+                "p_value": 0.0,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2892,
+                    "after": 1867871
+                }
+            }
+        }
+    ],
+    "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": [
+        {
+            "commit_message": "Refactoring suggested by Cliff Click. Revamped JavaDoc.\n",
+            "benchmark": "bench.HdrHistogramRecordingBench.singleWriterRecorderRecordingSpeed",
+            "method_name_pd": "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long)",
+            "method_name_cc": "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)",
+            "file": "src/main/java/org/HdrHistogram/WriterReaderPhaser.java",
+            "previous_method_cc": "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)",
+            "previous_method_pd": "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long)",
+            "previous_file": "src/main/java/org/HdrHistogram/WriterReaderPhaser.java",
+            "previous_commit": "77579557702b198a1fa97c16164b3486e0ff0d20",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -4.819277108433735,
+                "p_value": 0.0,
+                "effect_size": 0.20085606762984579,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3582587,
+                    "after": 3799748
+                }
+            }
+        }
+    ],
+    "4708c3a25fc335e7076f4118ab8fbb43f183debe": [
+        {
+            "commit_message": "Fixed missing spaces in multi-line messages (and a missing parenthesis as well).\n",
+            "benchmark": "bench.HdrHistogramEncodingBench.encodeIntoCompressedByteBuffer",
+            "method_name_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "method_name_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_method_cc": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)",
+            "previous_method_pd": "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(java.nio.ByteBuffer,int,int)",
+            "previous_file": "src/main/java/org/HdrHistogram/AbstractHistogram.java",
+            "previous_commit": "2413b056441604ee2a41dbb546fd91f9ee50d9be",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.2681110358835475,
+                "p_value": 7.273837419072099e-05,
+                "effect_size": -0.04423694569055603,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 5408,
+                    "after": 5317
+                }
+            }
+        }
+    ]
+}

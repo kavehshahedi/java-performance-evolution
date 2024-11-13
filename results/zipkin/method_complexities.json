@@ -1,0 +1,185 @@
+{
+    "9b1f5295b2bd9715f4c3ded4fd18fdd710b563c9": {
+        "long zipkin2.internal.Buffer.readVarint64()": 4.2
+    },
+    "09a441f4b4e8734058e8d023367f826b845e9dea": {
+        "public static boolean zipkin2.internal.Proto3Codec.readList(byte[] bytes, Collection<Span> out)": 5.7,
+        "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)": 4.2,
+        "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)": 4.2
+    },
+    "120d1a73f2abfb62fd9a41a72cf30ee7e3a5b388": {
+        "long zipkin2.internal.Buffer.readLongLe()": 6.4,
+        "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)": 72.4,
+        "long zipkin2.internal.Buffer.readVarint64()": 32.4,
+        "static void zipkin2.internal.V2SpanWriter.writeEndpoint(Endpoint value, Buffer b, boolean writeEmptyServiceName)": 26.2,
+        "int zipkin2.internal.Buffer.readVarint32()": 54.1,
+        "public void zipkin2.internal.V1SpanWriter.write(V1Span value, Buffer b)": 43.8,
+        "void zipkin2.internal.Buffer.writeLongLe(long v)": 35.0,
+        "void zipkin2.internal.Buffer.writeVarint(int v)": 8.6
+    },
+    "5b6efdc70a83fca6e9b09bf8df5a3a861caebf9e": {
+        "static Parsed zipkin2.internal.V1SpanWriter.parse(Span in)": 13.0,
+        "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)": 26.2,
+        "public Boolean zipkin2.Span.debug()": 4.2,
+        "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)": 26.2,
+        "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)": 14.5,
+        "public Boolean zipkin2.Span.shared()": 4.2
+    },
+    "8b3e5ba40aee7a84c197f8e09c64fdf8eb6e85fe": {
+        "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long traceIdIgnored)": 18.9
+    },
+    "8a33b2a6d3ce87cf3a43785b991bc6456965735b": {
+        "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)": 179.1,
+        "static Span.Builder zipkin.internal.V2SpanConverter.newBuilder(zipkin.Span source)": 4.2
+    },
+    "2fe5142e08b4d74bd38da4ff5837e969777755da": {
+        "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)": 8.6
+    },
+    "ef0b0a5e0540b12a744d05279bd1591adff02838": {
+        "static IpFamily zipkin2.Endpoint.detectFamily(String ipString)": 18.9
+    },
+    "8f99f3cf44cbcdc678b9ae845d501ba2fc2422a4": {
+        "public int zipkin2.internal.V1JsonSpanWriter.sizeInBytes(Span value)": 148.4,
+        "public void zipkin2.internal.V1JsonSpanWriter.write(Span value, Buffer b)": 149.8
+    },
+    "95ace09d004c92c225ffcf70782ea42a5825760a": {
+        "static String zipkin2.Endpoint.writeIpV6(byte[] ipv6)": 4.2,
+        "final String zipkin2.internal.ReadBuffer.readBytesAsHex(int length)": 4.2,
+        "static List<Span> doDecodeList(SpanBytesDecoder decoder, ByteBuffer spans)": 4.2,
+        "static String zipkin2.Span.toLowerHex(long v)": 4.2,
+        "static String zipkin2.Span.padLeft(String id, int desiredLength)": 4.2,
+        "public static Span zipkin2.internal.ThriftCodec.readOne(ReadBuffer buffer)": 4.2,
+        "static <T extends Comparable<T>> List<T> zipkin2.v1.V1Span.sortedList(List<T> input)": 4.2,
+        "final String zipkin2.internal.ReadBuffer.readUtf8(int length)": 8.6
+    },
+    "0ccb2d696a7aa54230473231f713941b07e26881": {
+        "public List<DependencyLink> decodeList(byte[] links)": 8.9,
+        "static int zipkin2.internal.ThriftCodec.readListLength(ReadBuffer buffer)": 5.7,
+        "static void zipkin2.internal.ThriftCodec.writeLengthPrefixed(WriteBuffer buffer, String utf8)": 3.5,
+        "static boolean zipkin2.server.internal.throttle.ThrottledCall.await(CountDownLatch latch)": 56.9
+    },
+    "dd7d03a0ebc0231bbae0b9f25dbabff77204ffc8": {
+        "public void zipkin.internal.Buffer.write(byte[] v)": 13.0,
+        "public void zipkin.internal.Buffer.write(int v)": 8.6
+    },
+    "78ca75121d30ce631a9e8016e57c1793fd831c63": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": 4.2
+    },
+    "a485efed550f838070b8ce6eef1230dfed9b27da": {
+        "public static Span zipkin.internal.Span2Converter.toSpan(Span2 in)": 173.6
+    },
+    "36d6e560c7ff3880661e5b158e86ecbe72d67eb0": {
+        "static void zipkin.internal.ThriftCodec.writeListBegin(Buffer buffer, int size)": 4.2,
+        "Buffer zipkin.internal.Buffer.writeLong(long v)": 2.0,
+        "Buffer zipkin.internal.Buffer.writeShort(int v)": 10.8,
+        "Buffer zipkin.internal.Buffer.writeInt(int v)": 2.0,
+        "byte[] zipkin.internal.Buffer.toByteArray()": 11.1,
+        "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)": 16.0,
+        "Buffer zipkin.internal.Buffer.writeAscii(String v)": 2.0
+    },
+    "56e2eaeec05fe3abb71fa574739ad7b18b514fbf": {
+        "public Buffer zipkin2.internal.Buffer.writeAscii(String v)": 7.9,
+        "static int zipkin2.internal.Buffer.utf8SizeInBytes(String string)": 33.4
+    },
+    "a17f26022cdc953f01ff53b5e220dbe55109a62b": {
+        "public int zipkin.Annotation.compareTo(Annotation that)": 4.2,
+        "static <T> List<T> zipkin.internal.ThriftCodec.readList(ThriftReader<T> reader, ByteBuffer bytes)": 4.2,
+        "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)": 18.9
+    },
+    "f259817bd1d676d425c0d29ff826ca13d4653519": {
+        "public static <T> List<T> readList(JsonReaderAdapter<T> adapter, byte[] bytes)": 4.2,
+        "public static <T> boolean zipkin2.internal.JsonCodec.readList(JsonReaderAdapter<T> adapter, byte[] bytes, Collection<T> out)": 4.2
+    },
+    "b0f22b5bd0f29dd1539cb797129fb1d61dd7b3de": {
+        "public static long zipkin.internal.Util.lowerHexToUnsignedLong(String lowerHex)": 52.0
+    },
+    "fc8cc19a78d01c472b4b79412f378a43f179b772": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": 37.6
+    },
+    "3373bcd2934342755790770b674b41b286675558": {
+        "static int zipkin2.internal.V2SpanWriter.endpointSizeInBytes(Endpoint value)": 10.8,
+        "public static zipkin.Endpoint zipkin.internal.V2SpanConverter.toEndpoint(Endpoint input)": 4.2,
+        "public zipkin2.Endpoint zipkin.Endpoint.toV2()": 4.2,
+        "static void zipkin2.internal.V2SpanWriter.writeEndpoint(Endpoint value, Buffer b)": 10.8
+    },
+    "806db7bbbac08f7fa9e63ebcf7bf02f08f805c0d": {
+        "Buffer zipkin.internal.Buffer.writeAscii(String v)": 5.7
+    },
+    "8ed14443fd0ce5a4982c125f3b6719972f88cad8": {
+        "public void zipkin.server.internal.ActuateCollectorMetrics.incrementBytes(int quantity)": 8.6
+    },
+    "bb338c8af88d13e8a971e333028b3748b83f7100": {
+        "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)": 4.2,
+        "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)": 13.3
+    },
+    "dc9de8ba44ef6dd65efa5e298e175bae06e12cbf": {
+        "public static int zipkin.internal.Buffer.jsonEscapedSizeInBytes(String v)": 8.6
+    },
+    "d3a83b8883e336b9566b73e03d9cfdceceaa4530": {
+        "Buffer zipkin.internal.Buffer.writeJsonEscaped(String v)": 116.8
+    },
+    "3b8d56ac1b817729517e32c7a3d311b7ceaa2fb7": {
+        "static int zipkin.internal.Buffer.asciiSizeInBytes(long v)": 26.8,
+        "Buffer zipkin.internal.Buffer.writeAscii(long v)": 29.3
+    },
+    "eee7db16c3ba859f218e3d1f6d1345654bd4f794": {
+        "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long traceIdIgnored)": 35.6
+    },
+    "feb151f2f9e5a1a10020c8c7eb5c6129112663da": {
+        "public boolean decodeList(byte[] links, Collection<DependencyLink> out)": 4.2,
+        "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)": 4.2,
+        "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)": 4.2
+    },
+    "8a6ae58ff09c7b227b8cdf403b0950e5b137edf2": {
+        "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)": 15.2,
+        "public int zipkin2.internal.V2SpanWriter.sizeInBytes(Span value)": 15.2
+    },
+    "ab2ab63028af3585d606dd7f244eec5e08aebb49": {
+        "static int zipkin.internal.Buffer.utf8SizeInBytes(String string)": 33.4
+    },
+    "ad8097a6fc9471799983b44ad8d2744c8506af74": {
+        "static <T> List<T> zipkin.internal.ThriftCodec.readList(ThriftReader<T> reader, ByteBuffer bytes)": 4.2
+    },
+    "c93e153a407a2df7eaeecff68c6e45eaafbfb683": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": 4.2
+    },
+    "74afc316587aef9cb318296654340fb3461b1391": {
+        "public static ReadBuffer zipkin2.internal.ReadBuffer.wrapUnsafe(ByteBuffer buffer)": 7.9
+    },
+    "2755987aa31699bf02d9e6e0366453092ba4a944": {
+        "public int zipkin.Endpoint.hashCode()": 4.2
+    },
+    "90342b4b5fa36ec844de4dd68ebe6ab74c5e142d": {
+        "public static long zipkin.internal.Util.lowerHexToUnsignedLong(String lowerHex)": 26.2
+    },
+    "79d55eac1c6cb4c237cfa852d7b0e5571dd38e18": {
+        "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)": 88.3
+    },
+    "d985e932aa8b700b82c39859adbc4b3ef2c0ca1b": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": 31.4
+    },
+    "862e3f3d6979cd66fa75f83e4def1e3bbcf1f3b0": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": 4.2
+    },
+    "3ad789741688699a55a4a9404c851c8976ef6383": {
+        "public static <T> List<T> readList(JsonReaderAdapter<T> adapter, byte[] bytes)": 4.2
+    },
+    "942c1b8c9e7e9fd6d2a72abcebf35b6a17726732": {
+        "public static Span zipkin.internal.Span2Converter.toSpan(Span2 in)": 125.9
+    },
+    "72e593bcce4486ebcdde7982ac7478a811753991": {
+        "void zipkin2.internal.Buffer.writeLongLe(long v)": 13.0
+    },
+    "0487c3191c1b56f9aad42541c6537d7fa09f62ff": {
+        "protected void zipkin2.server.internal.throttle.ThrottledCall.doEnqueue(Callback<Void> callback)": 4.2
+    },
+    "8423afc56c0bdc4bfca15ec43b5add974c383405": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": 33.9
+    },
+    "8aeea3aef9d9f5ea7dea58e7df66a025070de47f": {
+        "private static boolean zipkin.internal.v2.Endpoint.isValidIpV4Word(CharSequence word, int from, int toExclusive)": 4.2
+    },
+    "7e6cfdda11fd6990aadcff542141efa080eae340": {
+        "public static Builder zipkin2.DependencyLink.newBuilder()": 4.2
+    }
+}

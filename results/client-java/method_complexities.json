@@ -1,0 +1,31 @@
+{
+    "3568b2477c60dcde4d9380b666ad60a33d0f4208": {
+        "int io.prometheus.client.CKMSQuantiles.f(int r)": 8.6
+    },
+    "fe42313813b96dc92cf61f94fcfb79a8157b88a4": {
+        "final boolean io.prometheus.client.Striped64.casBase(long cmp, long val)": 4.2
+    },
+    "fc447f8861a48040ad4b956cf3e5af86f99985e4": {
+        "private Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()": 4.2
+    },
+    "f9a117126157019af5248be6588dd442e3c6dd6a": {
+        "public double io.prometheus.client.CKMSQuantiles.get(double q)": 18.0,
+        "int io.prometheus.client.CKMSQuantiles.f(int r)": 8.9
+    },
+    "37503bcc71edff0382b106a252308f341ba57a99": {
+        "public void io.prometheus.client.DoubleAdder.add(double x)": 12.3
+    },
+    "95872fc77cd55f88de9ee377e07fbc4aa2410ff7": {
+        "public double io.prometheus.client.CKMSQuantiles.get(double q)": 6.4
+    },
+    "966360b2735fb975a7110699efd4cb62284dfc0b": {
+        "private Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()": 4.2
+    },
+    "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c": {
+        "public double io.prometheus.client.CKMSQuantiles.get(double q)": 73.8,
+        "public void io.prometheus.client.CKMSQuantiles.insert(double value)": 32.8
+    },
+    "756b5ebcda6d9b5b5c9f66ac565cd459153ff3b4": {
+        "private Exemplar io.prometheus.client.exemplars.DefaultExemplarSampler.doSample(double value, Exemplar previous)": 4.2
+    }
+}

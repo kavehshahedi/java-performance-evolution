@@ -1,0 +1,9 @@
+{
+    "d562eb307d8c95b8cfe3c2dc3ee81827582ab5b7": {
+        "public static long net.openhft.chronicle.core.Maths.tens(int decimalPlaces)": 27.1,
+        "public static long net.openhft.chronicle.core.Maths.roundingFactor(int digits)": 4.2
+    },
+    "8175ff51b212c85300748a8459114f241b84404b": {
+        "public static double net.openhft.chronicle.core.Maths.round6up(double d)": 7.9
+    }
+}

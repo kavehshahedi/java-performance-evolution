@@ -1,0 +1,35 @@
+{
+    "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": {
+        "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()": 21.4,
+        "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()": 21.4
+    },
+    "cb59fd8e61c05e25cad83c7b727c941a8273d4d1": {
+        "void org.HdrHistogram.AbstractHistogramBase.setIntegerToDoubleValueConversionRatio(double integerToDoubleValueConversionRatio)": 2.0
+    },
+    "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": 8.6,
+        "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": 8.6,
+        "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)": 8.6
+    },
+    "32e62f68d9e277850807f2b538bcab5971f11a55": {
+        "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": 8.6,
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": 13.0,
+        "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)": 13.0
+    },
+    "fe288b16baaabca43d0503a7a558696b1013cea6": {
+        "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": 4.2
+    },
+    "4708c3a25fc335e7076f4118ab8fbb43f183debe": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": 4.2
+    },
+    "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+        "public boolean org.HdrHistogram.AbstractHistogramIterator.hasNext()": 4.2,
+        "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": 13.3
+    },
+    "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": {
+        "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)": 18.0
+    },
+    "ad76bb512b510a37f6a55fdea32f8f3dd3355771": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": 10.1
+    }
+}

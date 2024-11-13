@@ -8,6 +8,6 @@
 .idea/
 
 /venv/
+**code-pairs/
 
 /projects/
-/results/

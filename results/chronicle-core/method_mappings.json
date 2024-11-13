@@ -1,0 +1,78 @@
+{
+    "8175ff51b212c85300748a8459114f241b84404b": [
+        {
+            "commit_message": "Remove most minor warnings, Fix #289 (#290)\n\n* Remove most minor warnings, Fix #289\r\n\r\n* Fix NaN issue and add tests for NaN rounding",
+            "benchmark": "net.openhft.chronicle.core.benchmark.Main.round6up",
+            "method_name_pd": "public static double net.openhft.chronicle.core.Maths.round6up(double)",
+            "method_name_cc": "public static double net.openhft.chronicle.core.Maths.round6up(double d)",
+            "file": "src/main/java/net/openhft/chronicle/core/Maths.java",
+            "previous_method_cc": "public static double net.openhft.chronicle.core.Maths.round6up(double d)",
+            "previous_method_pd": "public static double net.openhft.chronicle.core.Maths.round6up(double)",
+            "previous_file": "src/main/java/net/openhft/chronicle/core/Maths.java",
+            "previous_commit": "90a1c0bd596d04b3bdd9e8f97ca0eb63ab212832",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.5068493150684932,
+                "p_value": 0.0,
+                "effect_size": -0.17152716888278188,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 30497618,
+                    "after": 30716828
+                }
+            }
+        }
+    ],
+    "d562eb307d8c95b8cfe3c2dc3ee81827582ab5b7": [
+        {
+            "commit_message": "Restructure jvm add javadoc (#531)\n\n* Improve checking of tests\r\n\r\n* Restructure JVM and added javadoc\r\n\r\n* Restructure JVM and added javadoc\r\n\r\n* Remove printStackTrace() that's not needed\r\n\r\n* Address issues picked up by sonar",
+            "benchmark": "net.openhft.chronicle.core.benchmark.Main.roundN6",
+            "method_name_pd": "public static long net.openhft.chronicle.core.Maths.tens(int)",
+            "method_name_cc": "public static long net.openhft.chronicle.core.Maths.tens(int decimalPlaces)",
+            "file": "src/main/java/net/openhft/chronicle/core/Maths.java",
+            "previous_method_cc": "public static long net.openhft.chronicle.core.Maths.tens(int decimalPlaces)",
+            "previous_method_pd": "public static long net.openhft.chronicle.core.Maths.tens(int)",
+            "previous_file": "src/main/java/net/openhft/chronicle/core/Maths.java",
+            "previous_commit": "030e8157ff7ba3b2dbb8c95999dd1c94b7c7f5d5",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.8920166128287956,
+                "p_value": 0.0,
+                "effect_size": -0.2240532530658289,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 15648255,
+                    "after": 15459984
+                }
+            }
+        },
+        {
+            "commit_message": "Restructure jvm add javadoc (#531)\n\n* Improve checking of tests\r\n\r\n* Restructure JVM and added javadoc\r\n\r\n* Restructure JVM and added javadoc\r\n\r\n* Remove printStackTrace() that's not needed\r\n\r\n* Address issues picked up by sonar",
+            "benchmark": "net.openhft.chronicle.core.benchmark.Main.roundN6",
+            "method_name_pd": "public static long net.openhft.chronicle.core.Maths.roundingFactor(int)",
+            "method_name_cc": "public static long net.openhft.chronicle.core.Maths.roundingFactor(int digits)",
+            "file": "src/main/java/net/openhft/chronicle/core/Maths.java",
+            "previous_method_cc": "public static long net.openhft.chronicle.core.Maths.roundingFactor(int digits)",
+            "previous_method_pd": "public static long net.openhft.chronicle.core.Maths.roundingFactor(int)",
+            "previous_file": "src/main/java/net/openhft/chronicle/core/Maths.java",
+            "previous_commit": "030e8157ff7ba3b2dbb8c95999dd1c94b7c7f5d5",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.3765677577240747,
+                "p_value": 0.0,
+                "effect_size": -0.24164235412174648,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 15338743,
+                    "after": 15165869
+                }
+            }
+        }
+    ]
+}

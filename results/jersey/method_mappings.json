@@ -1,0 +1,936 @@
+{
+    "82a85a1bffeaf5f78607cf5c0c0d4d4e6ba0457e": [
+        {
+            "commit_message": "Allow for using HeaderDelegateProvider service  (#4276)\n\n* Allow for using HeaderDelegateProvider service if CommonProperties#METAINF_SERVICES_LOOKUP_DISABLE is not true\r\n\r\nSigned-off-by: Jan Supol <jan.supol@oracle.com>\r\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public javax.ws.rs.core.Response$ResponseBuilder org.glassfish.jersey.internal.AbstractRuntimeDelegate.createResponseBuilder()",
+            "method_name_cc": "public ResponseBuilder org.glassfish.jersey.internal.AbstractRuntimeDelegate.createResponseBuilder()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/AbstractRuntimeDelegate.java",
+            "previous_method_cc": "public ResponseBuilder org.glassfish.jersey.internal.AbstractRuntimeDelegate.createResponseBuilder()",
+            "previous_method_pd": "public javax.ws.rs.core.Response$ResponseBuilder org.glassfish.jersey.internal.AbstractRuntimeDelegate.createResponseBuilder()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/AbstractRuntimeDelegate.java",
+            "previous_commit": "a7ea89bdbf09bd4439537c954c23a5b847818464",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.4585798816568047,
+                "p_value": 0.0,
+                "effect_size": 0.04770631883298692,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2651668,
+                    "after": 2647561
+                }
+            }
+        }
+    ],
+    "e3c394199345fa0670bd0e1a0f8beb0448f2fac0": [
+        {
+            "commit_message": "Deprecate duplicated methods and fields in MBR/MBW\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "public static java.nio.charset.Charset org.glassfish.jersey.message.internal.ReaderWriter.getCharset(javax.ws.rs.core.MediaType)",
+            "method_name_cc": "public static Charset org.glassfish.jersey.message.internal.ReaderWriter.getCharset(MediaType m)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/ReaderWriter.java",
+            "previous_method_cc": "public static Charset org.glassfish.jersey.message.internal.ReaderWriter.getCharset(MediaType m)",
+            "previous_method_pd": "public static java.nio.charset.Charset org.glassfish.jersey.message.internal.ReaderWriter.getCharset(javax.ws.rs.core.MediaType)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/ReaderWriter.java",
+            "previous_commit": "cacccd9abbcf17234da80e335bdcdebc866322e0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -1.8518518518518516,
+                "p_value": 0.0,
+                "effect_size": 0.19059347919336095,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 391986,
+                    "after": 346578
+                }
+            }
+        }
+    ],
+    "c30060f99fba9848b01574f1440d0b5d4265692c": [
+        {
+            "commit_message": "Add caching and improve performance\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public static java.util.List org.glassfish.jersey.message.internal.HttpHeaderReader.readMediaTypes(java.util.List,java.lang.String) throws java.text.ParseException",
+            "method_name_cc": "public static List<MediaType> org.glassfish.jersey.message.internal.HttpHeaderReader.readMediaTypes(List<MediaType> l, String header)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/HttpHeaderReader.java",
+            "previous_method_cc": "public static List<MediaType> org.glassfish.jersey.message.internal.HttpHeaderReader.readMediaTypes(List<MediaType> l, String header)",
+            "previous_method_pd": "public static java.util.List org.glassfish.jersey.message.internal.HttpHeaderReader.readMediaTypes(java.util.List,java.lang.String) throws java.text.ParseException",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/HttpHeaderReader.java",
+            "previous_commit": "8a484d26217c2f30e484f9f4b91436051d3ee94b",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 8.3204858677879,
+                "p_value": 1.3010857092515227e-07,
+                "effect_size": -0.17827431305058047,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 610,
+                    "after": 562
+                }
+            }
+        },
+        {
+            "commit_message": "Add caching and improve performance\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "method_name_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_method_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_method_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_commit": "8a484d26217c2f30e484f9f4b91436051d3ee94b",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -66.26506024096386,
+                "p_value": 0.0,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3544379,
+                    "after": 3955091
+                }
+            }
+        },
+        {
+            "commit_message": "Add caching and improve performance\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "void org.glassfish.jersey.message.internal.OutboundMessageContext.setConfiguration(javax.ws.rs.core.Configuration)",
+            "method_name_cc": "void org.glassfish.jersey.message.internal.OutboundMessageContext.setConfiguration(Configuration configuration)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/OutboundMessageContext.java",
+            "previous_method_cc": "void org.glassfish.jersey.message.internal.OutboundMessageContext.setConfiguration(Configuration configuration)",
+            "previous_method_pd": "void org.glassfish.jersey.message.internal.OutboundMessageContext.setConfiguration(javax.ws.rs.core.Configuration)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/OutboundMessageContext.java",
+            "previous_commit": "8a484d26217c2f30e484f9f4b91436051d3ee94b",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.0,
+                "p_value": 7.928254470318847e-305,
+                "effect_size": 0.02767050797746983,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1175530,
+                    "after": 1251434
+                }
+            }
+        },
+        {
+            "commit_message": "Add caching and improve performance\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.OutboundMessageContext.getMediaType()",
+            "method_name_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_method_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_method_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_commit": "8a484d26217c2f30e484f9f4b91436051d3ee94b",
+            "performance_diff": -1.2937773028960549,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 8.23293172690763,
+                "p_value": 0.0,
+                "effect_size": -0.431318371796874,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3544379,
+                    "after": 2607670
+                }
+            }
+        }
+    ],
+    "81d03fcbe8fb3629e82f00925b6264829e2fb238": [
+        {
+            "commit_message": "Using Java7+ NIO API for improved performance (#5350)\n\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "public static void org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(java.lang.String,java.io.OutputStream,javax.ws.rs.core.MediaType) throws java.io.IOException",
+            "method_name_cc": "public static void org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(String s, OutputStream out, MediaType type)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/ReaderWriter.java",
+            "previous_method_cc": "public static void org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(String s, OutputStream out, MediaType type)",
+            "previous_method_pd": "public static void org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(java.lang.String,java.io.OutputStream,javax.ws.rs.core.MediaType) throws java.io.IOException",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/ReaderWriter.java",
+            "previous_commit": "8cee8f4ac8d95ba1feae623b8adfa33f766569c0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 10.06825938566553,
+                "p_value": 0.0,
+                "effect_size": -0.0762614386513977,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 466066,
+                    "after": 470552
+                }
+            }
+        }
+    ],
+    "cb031c7cff8152c665db287e2d8e21181928149b": [
+        {
+            "commit_message": "RFC 6570 implementation\nReworked UriTemplateParser & UriTemplate to be better extendable and processed just once\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "private void org.glassfish.jersey.uri.internal.UriTemplateParser.processLiteralCharacters()",
+            "method_name_cc": "private void org.glassfish.jersey.uri.internal.UriTemplateParser.processLiteralCharacters()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/uri/internal/UriTemplateParser.java",
+            "previous_method_cc": "private void org.glassfish.jersey.uri.internal.UriTemplateParser.processLiteralCharacters()",
+            "previous_method_pd": "private void org.glassfish.jersey.uri.internal.UriTemplateParser.processLiteralCharacters()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/uri/internal/UriTemplateParser.java",
+            "previous_commit": "3035f37f1092e5f8ce41d4d5a746f24cfd41b887",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 13.687401751628117,
+                "p_value": 2.8425087511926963e-16,
+                "effect_size": -0.24593718729057074,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 741,
+                    "after": 735
+                }
+            }
+        },
+        {
+            "commit_message": "RFC 6570 implementation\nReworked UriTemplateParser & UriTemplate to be better extendable and processed just once\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public final java.util.List org.glassfish.jersey.uri.UriTemplate.getTemplateVariables()",
+            "method_name_cc": "public final List<String> org.glassfish.jersey.uri.UriTemplate.getTemplateVariables()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/uri/UriTemplate.java",
+            "previous_method_cc": "public final List<String> org.glassfish.jersey.uri.UriTemplate.getTemplateVariables()",
+            "previous_method_pd": "public final java.util.List org.glassfish.jersey.uri.UriTemplate.getTemplateVariables()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/uri/UriTemplate.java",
+            "previous_commit": "3035f37f1092e5f8ce41d4d5a746f24cfd41b887",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 6.160164271047227,
+                "p_value": 0.0,
+                "effect_size": -0.12942049493180752,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3371391,
+                    "after": 3091530
+                }
+            }
+        }
+    ],
+    "7bf9e5da763490129975eb2237214b924983ca71": [
+        {
+            "commit_message": "Allow for having CDI on pure Jersey Client without Jersey Server (#4695)\n\n* Allow for having CDI on pure Jersey Client without Jersey Server jars dependencies\r\n\r\nSigned-off-by: jansupol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "private boolean org.glassfish.jersey.server.ResourceModelConfigurator.bindWithComponentProvider(java.lang.Class,org.glassfish.jersey.model.ContractProvider,java.lang.Iterable)",
+            "method_name_cc": "private boolean org.glassfish.jersey.server.ResourceModelConfigurator.bindWithComponentProvider( Class<?> component, ContractProvider providerModel, Iterable<ComponentProvider> componentProviders)",
+            "file": "core-server/src/main/java/org/glassfish/jersey/server/ResourceModelConfigurator.java",
+            "previous_method_cc": "private boolean org.glassfish.jersey.server.ResourceModelConfigurator.bindWithComponentProvider( Class<?> component, ContractProvider providerModel, Iterable<ComponentProvider> componentProviders)",
+            "previous_method_pd": "private boolean org.glassfish.jersey.server.ResourceModelConfigurator.bindWithComponentProvider(java.lang.Class,org.glassfish.jersey.model.ContractProvider,java.lang.Iterable)",
+            "previous_file": "core-server/src/main/java/org/glassfish/jersey/server/ResourceModelConfigurator.java",
+            "previous_commit": "0056615d967888e863300302dbf438b62a3e25c8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 3.820966892247842,
+                "p_value": 0.17678813600072574,
+                "effect_size": -0.10275297619047619,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 112,
+                    "after": 120
+                }
+            }
+        }
+    ],
+    "0f65e5d6428098dfa724c0ef3510a8aea77f74fc": [
+        {
+            "commit_message": "SSE Flow.Subscriber injectable as event sink\n\n  * Java Flow api used only by JerseyEventSink in java 11+\n  * Reactive streams tck tests for JerseyEventSink\n  * Cancel on close propagation\n  * Remove tests contradicting reactive streams spec https://github.com/reactive-streams/reactive-streams-jvm#2.13\n\nSigned-off-by: Daniel Kec <daniel.kec@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "private static void org.glassfish.jersey.server.model.IntrospectionModeller.introspectAsyncFeatures(org.glassfish.jersey.server.model.AnnotatedMethod,org.glassfish.jersey.server.model.ResourceMethod$Builder)",
+            "method_name_cc": "private static void org.glassfish.jersey.server.model.IntrospectionModeller.introspectAsyncFeatures(AnnotatedMethod am, ResourceMethod.Builder resourceMethodBuilder)",
+            "file": "core-server/src/main/java/org/glassfish/jersey/server/model/IntrospectionModeller.java",
+            "previous_method_cc": "private static void org.glassfish.jersey.server.model.IntrospectionModeller.introspectAsyncFeatures(AnnotatedMethod am, ResourceMethod.Builder resourceMethodBuilder)",
+            "previous_method_pd": "private static void org.glassfish.jersey.server.model.IntrospectionModeller.introspectAsyncFeatures(org.glassfish.jersey.server.model.AnnotatedMethod,org.glassfish.jersey.server.model.ResourceMethod$Builder)",
+            "previous_file": "core-server/src/main/java/org/glassfish/jersey/server/model/IntrospectionModeller.java",
+            "previous_commit": "56a5634fd4d8ef5857de612684e8761667269d51",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 763.9208820069488,
+                "p_value": 0.007165916304971633,
+                "effect_size": -0.3449074074074074,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 36,
+                    "after": 48
+                }
+            }
+        },
+        {
+            "commit_message": "SSE Flow.Subscriber injectable as event sink\n\n  * Java Flow api used only by JerseyEventSink in java 11+\n  * Reactive streams tck tests for JerseyEventSink\n  * Cancel on close propagation\n  * Remove tests contradicting reactive streams spec https://github.com/reactive-streams/reactive-streams-jvm#2.13\n\nSigned-off-by: Daniel Kec <daniel.kec@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "private void org.glassfish.jersey.server.model.ResourceMethodValidator.checkMethod(org.glassfish.jersey.server.model.ResourceMethod)",
+            "method_name_cc": "private void org.glassfish.jersey.server.model.ResourceMethodValidator.checkMethod(ResourceMethod method)",
+            "file": "core-server/src/main/java/org/glassfish/jersey/server/model/ResourceMethodValidator.java",
+            "previous_method_cc": "private void org.glassfish.jersey.server.model.ResourceMethodValidator.checkMethod(ResourceMethod method)",
+            "previous_method_pd": "private void org.glassfish.jersey.server.model.ResourceMethodValidator.checkMethod(org.glassfish.jersey.server.model.ResourceMethod)",
+            "previous_file": "core-server/src/main/java/org/glassfish/jersey/server/model/ResourceMethodValidator.java",
+            "previous_commit": "56a5634fd4d8ef5857de612684e8761667269d51",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.616030548853468,
+                "p_value": 0.20897206434866888,
+                "effect_size": 0.08986013986013985,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 132,
+                    "after": 130
+                }
+            }
+        }
+    ],
+    "839fb27fc45ca77cc03829f306e8fd50669454e7": [
+        {
+            "commit_message": "Allow for specifying Feature processing order\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "private void org.glassfish.jersey.model.internal.CommonConfig.configureFeatures(org.glassfish.jersey.internal.inject.InjectionManager,java.util.Set,java.util.List,org.glassfish.jersey.model.internal.ManagedObjectsFinalizer)",
+            "method_name_cc": "private void org.glassfish.jersey.model.internal.CommonConfig.configureFeatures(InjectionManager injectionManager, Set<FeatureRegistration> processed, List<FeatureRegistration> unprocessed, ManagedObjectsFinalizer managedObjectsFinalizer)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/model/internal/CommonConfig.java",
+            "previous_method_cc": "private void org.glassfish.jersey.model.internal.CommonConfig.configureFeatures(InjectionManager injectionManager, Set<FeatureRegistration> processed, List<FeatureRegistration> unprocessed, ManagedObjectsFinalizer managedObjectsFinalizer)",
+            "previous_method_pd": "private void org.glassfish.jersey.model.internal.CommonConfig.configureFeatures(org.glassfish.jersey.internal.inject.InjectionManager,java.util.Set,java.util.List,org.glassfish.jersey.model.internal.ManagedObjectsFinalizer)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/model/internal/CommonConfig.java",
+            "previous_commit": "e3cc62371d00c938a432083c4cf2c3d8013beb78",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 28.991158196590728,
+                "p_value": 0.2483424898920782,
+                "effect_size": -0.15895061728395063,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 36,
+                    "after": 36
+                }
+            }
+        }
+    ],
+    "11d6c112a5391aed95ecc58d41058ac2f13e23bc": [
+        {
+            "commit_message": "Offer the Client (partial) response in ProcessingException. (#4460)\n\nOffer the user (partial) response in ProcessingException.\r\nIn the HttpUrlConnector, when there is a response,\r\nthrow ResponseProcessingException instead of a simple\r\nProcessingException.\r\n\r\nSigned-off-by: Jan Supol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "public javax.ws.rs.core.Response org.glassfish.jersey.client.JerseyInvocation.invoke() throws javax.ws.rs.ProcessingException,javax.ws.rs.WebApplicationException",
+            "method_name_cc": "public Response org.glassfish.jersey.client.JerseyInvocation.invoke()",
+            "file": "core-client/src/main/java/org/glassfish/jersey/client/JerseyInvocation.java",
+            "previous_method_cc": "public Response org.glassfish.jersey.client.JerseyInvocation.invoke()",
+            "previous_method_pd": "public javax.ws.rs.core.Response org.glassfish.jersey.client.JerseyInvocation.invoke() throws javax.ws.rs.ProcessingException,javax.ws.rs.WebApplicationException",
+            "previous_file": "core-client/src/main/java/org/glassfish/jersey/client/JerseyInvocation.java",
+            "previous_commit": "1c68a582ca0a0653eb54cc8e152c9ca0a83d709b",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 3.32286432160804,
+                "p_value": 0.0,
+                "effect_size": -0.2810074720372574,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 324932,
+                    "after": 208772
+                }
+            }
+        }
+    ],
+    "2299c0bd7e32420b08857a2aba16dd77dd13f7a1": [
+        {
+            "commit_message": "Allow for passing in additional property files to configure additional configs\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public java.util.Map org.glassfish.jersey.internal.config.SystemPropertiesConfigurationModel.getProperties()",
+            "method_name_cc": "public Map<String, Object> org.glassfish.jersey.internal.config.SystemPropertiesConfigurationModel.getProperties()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/config/SystemPropertiesConfigurationModel.java",
+            "previous_method_cc": "public Map<String, Object> org.glassfish.jersey.internal.config.SystemPropertiesConfigurationModel.getProperties()",
+            "previous_method_pd": "public java.util.Map org.glassfish.jersey.internal.config.SystemPropertiesConfigurationModel.getProperties()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/config/SystemPropertiesConfigurationModel.java",
+            "previous_commit": "9dbc693eaff403e4a1b285cac77361fd96b9b694",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -4.208897922793942,
+                "p_value": 0.30740948674816493,
+                "effect_size": 0.1736111111111111,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 24,
+                    "after": 24
+                }
+            }
+        },
+        {
+            "commit_message": "Allow for passing in additional property files to configure additional configs\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public static boolean org.glassfish.jersey.internal.config.ExternalPropertiesConfigurationFactory.configure(javax.ws.rs.core.Configurable)",
+            "method_name_cc": "public static boolean org.glassfish.jersey.internal.config.ExternalPropertiesConfigurationFactory.configure(Configurable config)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/config/ExternalPropertiesConfigurationFactory.java",
+            "previous_method_cc": "public static boolean org.glassfish.jersey.internal.config.ExternalPropertiesConfigurationFactory.configure(Configurable config)",
+            "previous_method_pd": "public static boolean org.glassfish.jersey.internal.config.ExternalPropertiesConfigurationFactory.configure(javax.ws.rs.core.Configurable)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/config/ExternalPropertiesConfigurationFactory.java",
+            "previous_commit": "9dbc693eaff403e4a1b285cac77361fd96b9b694",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -6.2331431819070655,
+                "p_value": 0.1460335202810438,
+                "effect_size": 0.2465277777777778,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 24,
+                    "after": 24
+                }
+            }
+        }
+    ],
+    "2eacfcc4eb498ea93ca9fd9912aa8a67b800ac20": [
+        {
+            "commit_message": "Guard list of headers for modifications\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "public int org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.size()",
+            "method_name_cc": "public int org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.size()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_method_cc": "public int org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.size()",
+            "previous_method_pd": "public int org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.size()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_commit": "dc74036d2c3609de0b71646cab79faf15250d5ba",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.48543689320388345,
+                "p_value": 0.0,
+                "effect_size": 0.08138813818044636,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 312935,
+                    "after": 322914
+                }
+            }
+        },
+        {
+            "commit_message": "Guard list of headers for modifications\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "public java.util.Set org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.entrySet()",
+            "method_name_cc": "public Set<Entry<String, List<V>>> org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.entrySet()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_method_cc": "public Set<Entry<String, List<V>>> org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.entrySet()",
+            "previous_method_pd": "public java.util.Set org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.entrySet()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_commit": "dc74036d2c3609de0b71646cab79faf15250d5ba",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.2195121951219512,
+                "p_value": 0.0,
+                "effect_size": 0.07827616017303335,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 522828,
+                    "after": 552522
+                }
+            }
+        },
+        {
+            "commit_message": "Guard list of headers for modifications\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "public java.util.List org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.get(java.lang.Object)",
+            "method_name_cc": "public List<V> org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.get(Object key)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_method_cc": "public List<V> org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.get(Object key)",
+            "previous_method_pd": "public java.util.List org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.get(java.lang.Object)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_commit": "dc74036d2c3609de0b71646cab79faf15250d5ba",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 3.1413612565445024,
+                "p_value": 6.858374360571308e-243,
+                "effect_size": -0.04994184464455694,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 289136,
+                    "after": 303238
+                }
+            }
+        }
+    ],
+    "351a578bcb561cead07eea1c6c1c9c02668fd697": [
+        {
+            "commit_message": "Allow to use HeaderDelegateProvider to parse the response MediaType\n\nSigned-off-by: Jan Supol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "method_name_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_method_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_method_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_commit": "5b611fceef7637f671c6f8d9db06c929275f723d",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.9765625,
+                "p_value": 0.0,
+                "effect_size": -0.041273934863498486,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 5525839,
+                    "after": 4685345
+                }
+            }
+        },
+        {
+            "commit_message": "Allow to use HeaderDelegateProvider to parse the response MediaType\n\nSigned-off-by: Jan Supol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.OutboundMessageContext.getMediaType()",
+            "method_name_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_method_cc": "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_method_pd": "public javax.ws.rs.core.MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_commit": "5b611fceef7637f671c6f8d9db06c929275f723d",
+            "performance_diff": 0.2478304414175826,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -45.1171875,
+                "p_value": 0.0,
+                "effect_size": 0.9940743959184318,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 5525839,
+                    "after": 2532174
+                }
+            }
+        }
+    ],
+    "4964825028b346adfd21bd5d3ddd7fe49cf5c222": [
+        {
+            "commit_message": "Get media type fix (#5282)\n\n* Fixed caching of content_type\r\n\r\nSigned-off-by: jansupol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.HeadersServerBenchmark.testPostPlainText",
+            "method_name_pd": "private void org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.observe(java.lang.String)",
+            "method_name_cc": "private void org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.observe(String key)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_method_cc": "private void org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.observe(String key)",
+            "previous_method_pd": "private void org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.observe(java.lang.String)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_commit": "6bd50c8130393aaf7806ced1f99020b10be62582",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.992821893225662,
+                "p_value": 0.0,
+                "effect_size": 0.038284955127852204,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 6603098,
+                    "after": 7309345
+                }
+            }
+        },
+        {
+            "commit_message": "Get media type fix (#5282)\n\n* Fixed caching of content_type\r\n\r\nSigned-off-by: jansupol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.HeadersServerBenchmark.testPostPlainText",
+            "method_name_pd": "public boolean org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.isObservedAndReset(java.lang.String)",
+            "method_name_cc": "public boolean org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.isObservedAndReset(String key)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_method_cc": "public boolean org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.isObservedAndReset(String key)",
+            "previous_method_pd": "public boolean org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap.isObservedAndReset(java.lang.String)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/util/collection/GuardianStringKeyMultivaluedMap.java",
+            "previous_commit": "6bd50c8130393aaf7806ced1f99020b10be62582",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.4354066985645932,
+                "p_value": 0.0,
+                "effect_size": 0.013563681856202667,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 16468684,
+                    "after": 15107750
+                }
+            }
+        },
+        {
+            "commit_message": "Get media type fix (#5282)\n\n* Fixed caching of content_type\r\n\r\nSigned-off-by: jansupol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.HeadersServerBenchmark.testPostPlainText",
+            "method_name_pd": "private static byte[] org.glassfish.jersey.message.internal.ReaderWriter.readAllBytes(java.io.InputStream) throws java.io.IOException",
+            "method_name_cc": "private static byte[] org.glassfish.jersey.message.internal.ReaderWriter.readAllBytes(InputStream inputStream)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/ReaderWriter.java",
+            "previous_method_cc": "private static byte[] org.glassfish.jersey.message.internal.ReaderWriter.readAllBytes(InputStream inputStream)",
+            "previous_method_pd": "private static byte[] org.glassfish.jersey.message.internal.ReaderWriter.readAllBytes(java.io.InputStream) throws java.io.IOException",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/ReaderWriter.java",
+            "previous_commit": "6bd50c8130393aaf7806ced1f99020b10be62582",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.4965034965034967,
+                "p_value": 0.0,
+                "effect_size": 0.04819107498773144,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1190774,
+                    "after": 1311957
+                }
+            }
+        }
+    ],
+    "6510bb901d121b93e2b72789160beae23d2cca12": [
+        {
+            "commit_message": "new InvocationBuilderListener SPI (#4313)\n\n* new InvocationBuilderListener SPI\r\n\r\nSigned-off-by: Jan Supol <jan.supol@oracle.com>\r\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.asyncIgnore",
+            "method_name_pd": "public org.glassfish.jersey.client.JerseyInvocation$Builder org.glassfish.jersey.client.JerseyWebTarget.request()",
+            "method_name_cc": "public JerseyInvocation.Builder org.glassfish.jersey.client.JerseyWebTarget.request()",
+            "file": "core-client/src/main/java/org/glassfish/jersey/client/JerseyWebTarget.java",
+            "previous_method_cc": "public JerseyInvocation.Builder org.glassfish.jersey.client.JerseyWebTarget.request()",
+            "previous_method_pd": "public org.glassfish.jersey.client.JerseyInvocation$Builder org.glassfish.jersey.client.JerseyWebTarget.request()",
+            "previous_file": "core-client/src/main/java/org/glassfish/jersey/client/JerseyWebTarget.java",
+            "previous_commit": "cfa1734cfc1f8bf285f539517ac66829928c231c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 18.062200956937797,
+                "p_value": 0.0,
+                "effect_size": -0.3210739113968865,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 554136,
+                    "after": 463264
+                }
+            }
+        }
+    ],
+    "01b88feb1d160e5f9877c323b3917f7d0878c1d8": [
+        {
+            "commit_message": "Release MessageBodyWorkers when Response gets closed. (#5039)\n\nSigned-off-by: jansupol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public org.glassfish.jersey.message.MessageBodyWorkers org.glassfish.jersey.message.internal.InboundMessageContext.getWorkers()",
+            "method_name_cc": "public MessageBodyWorkers org.glassfish.jersey.message.internal.InboundMessageContext.getWorkers()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_method_cc": "public MessageBodyWorkers org.glassfish.jersey.message.internal.InboundMessageContext.getWorkers()",
+            "previous_method_pd": "public org.glassfish.jersey.message.MessageBodyWorkers org.glassfish.jersey.message.internal.InboundMessageContext.getWorkers()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_commit": "1b93b50750f2147808d4e78c140f0eb16256d9fa",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 4.013377926421405,
+                "p_value": 0.0,
+                "effect_size": -0.18829058838227336,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2212094,
+                    "after": 1877251
+                }
+            }
+        },
+        {
+            "commit_message": "Release MessageBodyWorkers when Response gets closed. (#5039)\n\nSigned-off-by: jansupol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public void org.glassfish.jersey.server.ContainerResponse.close()",
+            "method_name_cc": "public void org.glassfish.jersey.message.internal.InboundMessageContext.close()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_method_cc": "public void org.glassfish.jersey.message.internal.InboundMessageContext.close()",
+            "previous_method_pd": "public void org.glassfish.jersey.server.ContainerResponse.close()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/InboundMessageContext.java",
+            "previous_commit": "1b93b50750f2147808d4e78c140f0eb16256d9fa",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 8.413461538461538,
+                "p_value": 0.0,
+                "effect_size": -0.05635554932498802,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 4639603,
+                    "after": 4092396
+                }
+            }
+        }
+    ],
+    "100db1369e72cb6d6c712567a9a9231da77b0249": [
+        {
+            "commit_message": "Uptake Jakarta Dependencies: istack commons, GF, Copyright plugin & mimepull (#4002)\n\nSigned-off-by: Jan Supol <jan.supol@oracle.com>\r\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.get",
+            "method_name_pd": "public java.lang.Object[] org.glassfish.jersey.internal.l10n.LocalizableMessage.getArguments()",
+            "method_name_cc": "public Object[] org.glassfish.jersey.internal.l10n.LocalizableMessage.getArguments()",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/l10n/LocalizableMessage.java",
+            "previous_method_cc": "public Object[] org.glassfish.jersey.internal.l10n.LocalizableMessage.getArguments()",
+            "previous_method_pd": "public java.lang.Object[] org.glassfish.jersey.internal.l10n.LocalizableMessage.getArguments()",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/l10n/LocalizableMessage.java",
+            "previous_commit": "7aebbcfc67a99c06cc170736b9ebe203ab922b80",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.7236842105263158,
+                "p_value": 0.0,
+                "effect_size": -0.06038740106711906,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 856663,
+                    "after": 843794
+                }
+            }
+        },
+        {
+            "commit_message": "Uptake Jakarta Dependencies: istack commons, GF, Copyright plugin & mimepull (#4002)\n\nSigned-off-by: Jan Supol <jan.supol@oracle.com>\r\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.get",
+            "method_name_pd": "public java.lang.String org.glassfish.jersey.internal.l10n.Localizer.localize(org.glassfish.jersey.internal.l10n.Localizable)",
+            "method_name_cc": "public String org.glassfish.jersey.internal.l10n.Localizer.localize(Localizable l)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/l10n/Localizer.java",
+            "previous_method_cc": "public String org.glassfish.jersey.internal.l10n.Localizer.localize(Localizable l)",
+            "previous_method_pd": "public java.lang.String org.glassfish.jersey.internal.l10n.Localizer.localize(org.glassfish.jersey.internal.l10n.Localizable)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/l10n/Localizer.java",
+            "previous_commit": "7aebbcfc67a99c06cc170736b9ebe203ab922b80",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.0743479153830355,
+                "p_value": 0.0,
+                "effect_size": -0.1274054344160436,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 790466,
+                    "after": 796814
+                }
+            }
+        }
+    ],
+    "81c2d32da43ad266e5a3992e4e95fcc76fcc921f": [
+        {
+            "commit_message": "Adopt Jackson 2.10.1 (#4339)\n\n* Updated Jackson to 2.10.1\r\n\r\nSigned-off-by: Jan Supol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "protected void org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonEndpointConfig.addAnnotation(java.lang.Class,java.lang.annotation.Annotation,boolean)",
+            "method_name_cc": "protected void org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonEndpointConfig.addAnnotation(Class<? extends Annotation> type, Annotation annotation, boolean forWriting)",
+            "file": "media/json-jackson/src/main/java/org/glassfish/jersey/jackson/internal/jackson/jaxrs/json/JsonEndpointConfig.java",
+            "previous_method_cc": "protected void org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonEndpointConfig.addAnnotation(Class<? extends Annotation> type, Annotation annotation, boolean forWriting)",
+            "previous_method_pd": "protected void org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonEndpointConfig.addAnnotation(java.lang.Class,java.lang.annotation.Annotation,boolean)",
+            "previous_file": "media/json-jackson/src/main/java/org/glassfish/jersey/jackson/internal/jackson/jaxrs/json/JsonEndpointConfig.java",
+            "previous_commit": "3f8c07c6e5978f2ef002cb13cc96a636a3947821",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 16.189493127614494,
+                "p_value": 0.5201446121616038,
+                "effect_size": 0.09777777777777778,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 30,
+                    "after": 30
+                }
+            }
+        },
+        {
+            "commit_message": "Adopt Jackson 2.10.1 (#4339)\n\n* Updated Jackson to 2.10.1\r\n\r\nSigned-off-by: Jan Supol <jan.supol@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "private final boolean org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.AnnotationBundleKey._equals(java.lang.annotation.Annotation[])",
+            "method_name_cc": "private final boolean org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.AnnotationBundleKey._equals(Annotation[] otherAnn)",
+            "file": "media/json-jackson/src/main/java/org/glassfish/jersey/jackson/internal/jackson/jaxrs/cfg/AnnotationBundleKey.java",
+            "previous_method_cc": "private final boolean org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.AnnotationBundleKey._equals(Annotation[] otherAnn)",
+            "previous_method_pd": "private final boolean org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.AnnotationBundleKey._equals(java.lang.annotation.Annotation[])",
+            "previous_file": "media/json-jackson/src/main/java/org/glassfish/jersey/jackson/internal/jackson/jaxrs/cfg/AnnotationBundleKey.java",
+            "previous_commit": "3f8c07c6e5978f2ef002cb13cc96a636a3947821",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.0989505247376314,
+                "p_value": 0.0,
+                "effect_size": -0.14213007873077843,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2395573,
+                    "after": 2627690
+                }
+            }
+        }
+    ],
+    "1633a258bc133c6147a51cde10a443d73cfdca65": [
+        {
+            "commit_message": "faster RuntimeType.toLowerCase in PropertiesHelper\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.asyncEntityIgnore",
+            "method_name_pd": "public static java.lang.String org.glassfish.jersey.internal.util.PropertiesHelper.getPropertyNameForRuntime(java.lang.String,javax.ws.rs.RuntimeType)",
+            "method_name_cc": "public static String org.glassfish.jersey.internal.util.PropertiesHelper.getPropertyNameForRuntime(String key, RuntimeType runtimeType)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/internal/util/PropertiesHelper.java",
+            "previous_method_cc": "public static String org.glassfish.jersey.internal.util.PropertiesHelper.getPropertyNameForRuntime(String key, RuntimeType runtimeType)",
+            "previous_method_pd": "public static java.lang.String org.glassfish.jersey.internal.util.PropertiesHelper.getPropertyNameForRuntime(java.lang.String,javax.ws.rs.RuntimeType)",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/internal/util/PropertiesHelper.java",
+            "previous_commit": "3a364bcd9bab1850faefbff683e0dd7876e81aaa",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -7.603686635944701,
+                "p_value": 0.0,
+                "effect_size": 0.08458835179556755,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 776014,
+                    "after": 807910
+                }
+            }
+        }
+    ],
+    "5b352d86ae3504d92d6a723dfba0e7c0ef67ffa0": [
+        {
+            "commit_message": "Blocked thread if WebApplicationException is reused. #4097 (#5035)\n\n* Blocked thread if WebApplicationException is reused. #4097\r\n\r\nSigned-off-by: Jorge Bescos Gascon <jorge.bescos.gascon@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "public final javax.ws.rs.core.Response org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(java.lang.Object,org.glassfish.jersey.server.ContainerRequest) throws javax.ws.rs.ProcessingException",
+            "method_name_cc": "public final Response org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(Object resource, ContainerRequest request)",
+            "file": "core-server/src/main/java/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java",
+            "previous_method_cc": "public final Response org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(Object resource, ContainerRequest request)",
+            "previous_method_pd": "public final javax.ws.rs.core.Response org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(java.lang.Object,org.glassfish.jersey.server.ContainerRequest) throws javax.ws.rs.ProcessingException",
+            "previous_file": "core-server/src/main/java/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java",
+            "previous_commit": "cd44d035c23d7003dc94a6cc4873efaf35a1bc7d",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.7316023526036436,
+                "p_value": 0.0,
+                "effect_size": 0.05377691269903804,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2463726,
+                    "after": 2532937
+                }
+            }
+        }
+    ],
+    "22aa92e8531d78c71c2a0693ce5d0174fb41bd2f": [
+        {
+            "commit_message": "prevent synchronized blocking the virtual threads in JDK21\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean) throws java.io.IOException",
+            "method_name_cc": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean endOfStream)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/CommittingOutputStream.java",
+            "previous_method_cc": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean endOfStream)",
+            "previous_method_pd": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean) throws java.io.IOException",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/CommittingOutputStream.java",
+            "previous_commit": "26b131b2c6a95ca3ae324028d1b69d44dd96bc4f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.384083044982699,
+                "p_value": 1.1531425535160683e-134,
+                "effect_size": -0.028760493212328545,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 491884,
+                    "after": 491286
+                }
+            }
+        }
+    ],
+    "3a364bcd9bab1850faefbff683e0dd7876e81aaa": [
+        {
+            "commit_message": "Store InvocationBuilderListenerStage into Runtime not to look up builder listeners each request\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.asyncEntityIgnore",
+            "method_name_pd": "private static org.glassfish.jersey.client.JerseyInvocation$Builder org.glassfish.jersey.client.JerseyWebTarget.onBuilder(org.glassfish.jersey.client.JerseyInvocation$Builder)",
+            "method_name_cc": "private static JerseyInvocation.Builder org.glassfish.jersey.client.JerseyWebTarget.onBuilder(JerseyInvocation.Builder builder)",
+            "file": "core-client/src/main/java/org/glassfish/jersey/client/JerseyWebTarget.java",
+            "previous_method_cc": "private static JerseyInvocation.Builder org.glassfish.jersey.client.JerseyWebTarget.onBuilder(JerseyInvocation.Builder builder)",
+            "previous_method_pd": "private static org.glassfish.jersey.client.JerseyInvocation$Builder org.glassfish.jersey.client.JerseyWebTarget.onBuilder(org.glassfish.jersey.client.JerseyInvocation$Builder)",
+            "previous_file": "core-client/src/main/java/org/glassfish/jersey/client/JerseyWebTarget.java",
+            "previous_commit": "8c731ee874fbdaa9298850b202189983dcd76f21",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -22.5615763546798,
+                "p_value": 0.0,
+                "effect_size": 0.5080051527462943,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 352291,
+                    "after": 376701
+                }
+            }
+        }
+    ],
+    "d62f2b3f54a2dd1689d06d6c9b09d7b91d9f8464": [
+        {
+            "commit_message": "Multirelease include JDK21 to support Thread.isVirtual()\n\nSigned-off-by: jansupol <jan.supol@oracle.com>\n",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.ClientBenchmark.post",
+            "method_name_pd": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean) throws java.io.IOException",
+            "method_name_cc": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean endOfStream)",
+            "file": "core-common/src/main/java/org/glassfish/jersey/message/internal/CommittingOutputStream.java",
+            "previous_method_cc": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean endOfStream)",
+            "previous_method_pd": "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean) throws java.io.IOException",
+            "previous_file": "core-common/src/main/java/org/glassfish/jersey/message/internal/CommittingOutputStream.java",
+            "previous_commit": "8126cdca659510b40dfc09a33dff12c411ae59f1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 26.623376623376622,
+                "p_value": 0.0,
+                "effect_size": -0.09958229592045628,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 495624,
+                    "after": 470730
+                }
+            }
+        }
+    ],
+    "5dec4484a61db8186cfe45582996db04c7badfdb": [
+        {
+            "commit_message": "SPI Config API for Jersey (#4116)\n\nConfig SPI API for Jersey\r\n\r\nSigned-off-by: Maxim Nesen <maxim.nesen@oracle.com>",
+            "benchmark": "org.glassfish.jersey.tests.performance.benchmark.JacksonBenchmark.measureResource",
+            "method_name_pd": "final void org.glassfish.jersey.server.ResourceConfig.lock()",
+            "method_name_cc": "final void org.glassfish.jersey.server.ResourceConfig.lock()",
+            "file": "core-server/src/main/java/org/glassfish/jersey/server/ResourceConfig.java",
+            "previous_method_cc": "final void org.glassfish.jersey.server.ResourceConfig.lock()",
+            "previous_method_pd": "final void org.glassfish.jersey.server.ResourceConfig.lock()",
+            "previous_file": "core-server/src/main/java/org/glassfish/jersey/server/ResourceConfig.java",
+            "previous_commit": "c9260df8c31285795e71217c3074bf6ff74288a4",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 368.5894296226087,
+                "p_value": 0.00757959203158261,
+                "effect_size": -0.4513888888888889,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 24,
+                    "after": 24
+                }
+            }
+        }
+    ]
+}

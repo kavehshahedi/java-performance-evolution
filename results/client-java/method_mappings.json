@@ -1,0 +1,284 @@
+{
+    "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c": [
+        {
+            "commit_message": "CKMS Quantiles: Add tests, refactor, fix tests\n\nSigned-off-by: Fabian St\u00e4ber <fabian@fstab.de>\n",
+            "benchmark": "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark",
+            "method_name_pd": "public void io.prometheus.client.CKMSQuantiles.insert(double)",
+            "method_name_cc": "public void io.prometheus.client.CKMSQuantiles.insert(double value)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_method_cc": "public void io.prometheus.client.CKMSQuantiles.insert(double value)",
+            "previous_method_pd": "public void io.prometheus.client.CKMSQuantiles.insert(double)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_commit": "787eef37843e3ea0972d064eb567d0639a8aba5f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.14691478942213515,
+                "p_value": 0.0,
+                "effect_size": 0.02963228969609062,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2506718,
+                    "after": 2520540
+                }
+            }
+        },
+        {
+            "commit_message": "CKMS Quantiles: Add tests, refactor, fix tests\n\nSigned-off-by: Fabian St\u00e4ber <fabian@fstab.de>\n",
+            "benchmark": "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark",
+            "method_name_pd": "public double io.prometheus.client.CKMSQuantiles.get(double)",
+            "method_name_cc": "public double io.prometheus.client.CKMSQuantiles.get(double q)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_method_cc": "public double io.prometheus.client.CKMSQuantiles.get(double q)",
+            "previous_method_pd": "public double io.prometheus.client.CKMSQuantiles.get(double)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_commit": "787eef37843e3ea0972d064eb567d0639a8aba5f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 12.48396750748183,
+                "p_value": 0.0,
+                "effect_size": -0.9542117192899997,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 31114774,
+                    "after": 29502208
+                }
+            }
+        }
+    ],
+    "37503bcc71edff0382b106a252308f341ba57a99": [
+        {
+            "commit_message": "Update Striped64 & DoubleAdded to avoid ClassLoader leak\n",
+            "benchmark": "io.prometheus.benchmark.GaugeBenchmark.prometheusSimpleGaugeDecBenchmark",
+            "method_name_pd": "public void io.prometheus.client.DoubleAdder.add(double)",
+            "method_name_cc": "public void io.prometheus.client.DoubleAdder.add(double x)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/DoubleAdder.java",
+            "previous_method_cc": "public void io.prometheus.client.DoubleAdder.add(double x)",
+            "previous_method_pd": "public void io.prometheus.client.DoubleAdder.add(double)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/DoubleAdder.java",
+            "previous_commit": "b90fef7b6c7d5461bf1511bb86215328c30c40f0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.9519276534983341,
+                "p_value": 0.0,
+                "effect_size": 0.13612199383464063,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2733865,
+                    "after": 2768015
+                }
+            }
+        }
+    ],
+    "fe42313813b96dc92cf61f94fcfb79a8157b88a4": [
+        {
+            "commit_message": "Remove dependency on sun.misc.Unsafe (#547)\n\nThis replaces `sun.misc.Unsafe` with\r\n`java.util.concurrent.atomic.AtomicLongFieldUpdater` and\r\n`AtomicIntegerFieldUpdater`. This is to enable compatibility with Jigsaw\r\nmodules where `sun.misc.Unsafe` is no longer available.\r\n\r\nCloses #468\r\n\r\nSigned-off-by: Andre Masella <andre@masella.name>",
+            "benchmark": "io.prometheus.benchmark.GaugeBenchmark.prometheusSimpleGaugeDecBenchmark",
+            "method_name_pd": "final boolean io.prometheus.client.Striped64.casBase(long,long)",
+            "method_name_cc": "final boolean io.prometheus.client.Striped64.casBase(long cmp, long val)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/Striped64.java",
+            "previous_method_cc": "final boolean io.prometheus.client.Striped64.casBase(long cmp, long val)",
+            "previous_method_pd": "final boolean io.prometheus.client.Striped64.casBase(long,long)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/Striped64.java",
+            "previous_commit": "ac5136b864d5d90a7ce5e1da0c235da2dcfc18e2",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.7281553398058253,
+                "p_value": 0.0,
+                "effect_size": -0.0821783231411731,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2622626,
+                    "after": 2736865
+                }
+            }
+        }
+    ],
+    "f9a117126157019af5248be6588dd442e3c6dd6a": [
+        {
+            "commit_message": "Summaries: Allow 0.0 and 1.0 quantiles and update documentation\n\nSigned-off-by: Fabian St\u00e4ber <fabian@fstab.de>\n",
+            "benchmark": "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark",
+            "method_name_pd": "int io.prometheus.client.CKMSQuantiles.f(int)",
+            "method_name_cc": "int io.prometheus.client.CKMSQuantiles.f(int r)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_method_cc": "int io.prometheus.client.CKMSQuantiles.f(int r)",
+            "previous_method_pd": "int io.prometheus.client.CKMSQuantiles.f(int)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_commit": "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.185770750988142,
+                "p_value": 0.0,
+                "effect_size": -0.1519835669450296,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 32503926,
+                    "after": 33250695
+                }
+            }
+        },
+        {
+            "commit_message": "Summaries: Allow 0.0 and 1.0 quantiles and update documentation\n\nSigned-off-by: Fabian St\u00e4ber <fabian@fstab.de>\n",
+            "benchmark": "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark",
+            "method_name_pd": "public double io.prometheus.client.CKMSQuantiles.get(double)",
+            "method_name_cc": "public double io.prometheus.client.CKMSQuantiles.get(double q)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_method_cc": "public double io.prometheus.client.CKMSQuantiles.get(double q)",
+            "previous_method_pd": "public double io.prometheus.client.CKMSQuantiles.get(double)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_commit": "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.280149442338333,
+                "p_value": 0.0,
+                "effect_size": -0.419734393533182,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1176277,
+                    "after": 1213868
+                }
+            }
+        }
+    ],
+    "966360b2735fb975a7110699efd4cb62284dfc0b": [
+        {
+            "commit_message": "Remove import for SpanContextSupplier\n\nSigned-off-by: Fabian St\u00e4ber <fabian@fstab.de>\n",
+            "benchmark": "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic",
+            "method_name_pd": "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "method_name_cc": "private Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "file": "prometheus-metrics-core/src/main/java/io/prometheus/metrics/core/exemplars/ExemplarSampler.java",
+            "previous_method_cc": "private Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "previous_method_pd": "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "previous_file": "prometheus-metrics-core/src/main/java/io/prometheus/metrics/core/exemplars/ExemplarSampler.java",
+            "previous_commit": "4b6e78fbff8e794cb141e02c46a4d1d36113db4b",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.2348916107680883,
+                "p_value": 0.1566316734060359,
+                "effect_size": 0.028664673210131185,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 1630,
+                    "after": 1627
+                }
+            }
+        }
+    ],
+    "756b5ebcda6d9b5b5c9f66ac565cd459153ff3b4": [
+        {
+            "commit_message": "Adding TraceSampling to Examplar Sampler -  Signed-off-by: Fabrice Scellos <fabrice.scellos@soprasteria.com>\n\nSigned-off-by: Fabrice Scellos <fabrice.scellos@soprasteria.com>\n",
+            "benchmark": "io.prometheus.client.benchmark.ExemplarsBenchmark.testCounterWithExemplars",
+            "method_name_pd": "private io.prometheus.client.exemplars.Exemplar io.prometheus.client.exemplars.DefaultExemplarSampler.doSample(double,io.prometheus.client.exemplars.Exemplar)",
+            "method_name_cc": "private Exemplar io.prometheus.client.exemplars.DefaultExemplarSampler.doSample(double value, Exemplar previous)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/exemplars/DefaultExemplarSampler.java",
+            "previous_method_cc": "private Exemplar io.prometheus.client.exemplars.DefaultExemplarSampler.doSample(double value, Exemplar previous)",
+            "previous_method_pd": "private io.prometheus.client.exemplars.Exemplar io.prometheus.client.exemplars.DefaultExemplarSampler.doSample(double,io.prometheus.client.exemplars.Exemplar)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/exemplars/DefaultExemplarSampler.java",
+            "previous_commit": "84262002f3e2edbf09754e3eb80e28597dc1179a",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.2888781896966779,
+                "p_value": 0.0,
+                "effect_size": 0.03844238665639389,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 31706314,
+                    "after": 25665760
+                }
+            }
+        }
+    ],
+    "3568b2477c60dcde4d9380b666ad60a33d0f4208": [
+        {
+            "commit_message": "Remove call to Math.floor in f()\n\nSince we can be sure that the result is always positive, rounding down is faster than using Math.floor while getting the same result.\n\n```\nBenchmark                               Mode  Cnt   Score   Error  Units\nCKMSQuantileBenchmark.ckmsQuantileF  avgt    4  37,188 \u00b1 6,681  ns/op\nCKMSQuantileBenchmark.ckmsQuantileF  avgt    4  20,500 \u00b1 1,054  ns/op <= Without floor()\n```\n\nSigned-off-by: Jens <jenskat@gmail.com>\n",
+            "benchmark": "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark",
+            "method_name_pd": "int io.prometheus.client.CKMSQuantiles.f(int)",
+            "method_name_cc": "int io.prometheus.client.CKMSQuantiles.f(int r)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_method_cc": "int io.prometheus.client.CKMSQuantiles.f(int r)",
+            "previous_method_pd": "int io.prometheus.client.CKMSQuantiles.f(int)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_commit": "a3954b03512376050f3609ae9fa462fda7fb427a",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -2.783109404990403,
+                "p_value": 0.0,
+                "effect_size": 0.3587888101850333,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 35797929,
+                    "after": 36444493
+                }
+            }
+        }
+    ],
+    "fc447f8861a48040ad4b956cf3e5af86f99985e4": [
+        {
+            "commit_message": "Add optional SpanContext parameter to ExemplarSampler (#929)\n\nSigned-off-by: Fabian St\u00e4ber <fabian@fstab.de>",
+            "benchmark": "io.prometheus.metrics.benchmarks.HistogramBenchmark.prometheusClassic",
+            "method_name_pd": "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "method_name_cc": "private Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "file": "prometheus-metrics-core/src/main/java/io/prometheus/metrics/core/exemplars/ExemplarSampler.java",
+            "previous_method_cc": "private Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "previous_method_pd": "private io.prometheus.metrics.model.snapshots.Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()",
+            "previous_file": "prometheus-metrics-core/src/main/java/io/prometheus/metrics/core/exemplars/ExemplarSampler.java",
+            "previous_commit": "7f0265184adb86182fb7be029acbf5c2efd1c742",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.05490294441425247,
+                "p_value": 0.5401872955644358,
+                "effect_size": -0.012399414970208633,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 1626,
+                    "after": 1629
+                }
+            }
+        }
+    ],
+    "95872fc77cd55f88de9ee377e07fbc4aa2410ff7": [
+        {
+            "commit_message": "Extract upperbound calculation\n\nThe upperbound is constant for a given quantile.\nBy calculating this once we save O(iterator size * quantiles size) calculations of this constant.\n\nSigned-off-by: Jens <jenskat@gmail.com>\n",
+            "benchmark": "io.prometheus.client.CKMSQuantileBenchmark.ckmsQuantileGetBenchmark",
+            "method_name_pd": "public double io.prometheus.client.CKMSQuantiles.get(double)",
+            "method_name_cc": "public double io.prometheus.client.CKMSQuantiles.get(double q)",
+            "file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_method_cc": "public double io.prometheus.client.CKMSQuantiles.get(double q)",
+            "previous_method_pd": "public double io.prometheus.client.CKMSQuantiles.get(double)",
+            "previous_file": "simpleclient/src/main/java/io/prometheus/client/CKMSQuantiles.java",
+            "previous_commit": "c16d4ae26630686f56b4b8d898e94bba7f8e8229",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -25.231910946196663,
+                "p_value": 0.0,
+                "effect_size": 0.9939436217681035,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 73131242,
+                    "after": 85067778
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,1739 @@
+{
+    "fcff9cda52c5e8206c704725fa5cf4440ac9bc5d": [
+        {
+            "commit_message": "consolidate AsmUtils\n",
+            "benchmark": "org.simpleflatmapper.reflect.GetterIntBenchmark.testMethodHandlerField",
+            "method_name_pd": "public static java.lang.Class org.simpleflatmapper.util.TypeHelper.toClass(java.lang.reflect.Type)",
+            "method_name_cc": "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)",
+            "file": "sfm-util/src/main/java/org/simpleflatmapper/util/TypeHelper.java",
+            "previous_method_cc": "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)",
+            "previous_method_pd": "public static java.lang.Class org.simpleflatmapper.util.TypeHelper.toClass(java.lang.reflect.Type)",
+            "previous_file": "sfm-util/src/main/java/org/simpleflatmapper/util/TypeHelper.java",
+            "previous_commit": "1f4b1d18aee2f9ec3fa89c1af676b6fe1759ad2b",
+            "performance_diff": -0.0,
+            "significance": {}
+        }
+    ],
+    "45b89c0dc83c4c3535997f408e0bf66061371b2d": [
+        {
+            "commit_message": "more aggressive inlining of getter/setter\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public static void org.simpleflatmapper.reflect.asm.AsmUtils.invoke(org.simpleflatmapper.ow2asm.MethodVisitor,java.lang.reflect.Type,java.lang.reflect.Method)",
+            "method_name_cc": "public static void org.simpleflatmapper.reflect.asm.AsmUtils.invoke(MethodVisitor mv, Type target, Method method)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/AsmUtils.java",
+            "previous_method_cc": "public static void org.simpleflatmapper.reflect.asm.AsmUtils.invoke(MethodVisitor mv, Type target, Method method)",
+            "previous_method_pd": "public static void org.simpleflatmapper.reflect.asm.AsmUtils.invoke(org.simpleflatmapper.ow2asm.MethodVisitor,java.lang.reflect.Type,java.lang.reflect.Method)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/AsmUtils.java",
+            "previous_commit": "2d3d9098f3d71a354c5bcf2521fecfa993b160ac",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 41.59878203925004,
+                "p_value": 0.2357684427087915,
+                "effect_size": -0.2013888888888889,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 24,
+                    "after": 24
+                }
+            }
+        }
+    ],
+    "b66d0cf74b9089ec0a1085798a216390475d5d61": [
+        {
+            "commit_message": "#504 implement specialised consumer\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseTrim",
+            "method_name_pd": "protected final org.simpleflatmapper.csv.parser.AbstractCharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer)",
+            "method_name_cc": "protected final AbstractCharConsumer charConsumer(CharBuffer charBuffer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "protected final AbstractCharConsumer charConsumer(CharBuffer charBuffer)",
+            "previous_method_pd": "protected final org.simpleflatmapper.csv.parser.AbstractCharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "a8aeba957db4a4216f3c7c8e993ea13ae97ecb23",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.5055852355512385,
+                "p_value": 0.0,
+                "effect_size": -0.17263828117436356,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2221608,
+                    "after": 2078533
+                }
+            }
+        }
+    ],
+    "223ed1b2a7424b4fce1d14e7b85875987bcf04ae": [
+        {
+            "commit_message": " #572 move filter outside the property finder instance\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithKeys",
+            "method_name_pd": "public void org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.lookForProperties(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$FoundProperty,org.simpleflatmapper.reflect.meta.PropertyMatchingScore,boolean,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderTransformer,org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.util.Predicate)",
+            "method_name_cc": "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer, Predicate<PropertyMeta<?, ?>> propertyFilter)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/AbstractIndexPropertyFinder.java",
+            "previous_method_cc": "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer)",
+            "previous_method_pd": "public void org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.lookForProperties(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$FoundProperty,org.simpleflatmapper.reflect.meta.PropertyMatchingScore,boolean,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderTransformer,org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/AbstractIndexPropertyFinder.java",
+            "previous_commit": "dadd77818073d9828c062938a82fc4813f59ae5d",
+            "performance_diff": -0.10079660801162049,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.29179604204855786,
+                "p_value": 1.0064808881668676e-94,
+                "effect_size": -0.01007725438482491,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3084866,
+                    "after": 2561616
+                }
+            }
+        },
+        {
+            "commit_message": " #572 move filter outside the property finder instance\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithKeys",
+            "method_name_pd": "public final org.simpleflatmapper.reflect.meta.PropertyMeta org.simpleflatmapper.reflect.meta.PropertyFinder.findProperty(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderProbe,org.simpleflatmapper.util.Predicate)",
+            "method_name_cc": "public final <E> PropertyMeta<T, E> org.simpleflatmapper.reflect.meta.PropertyFinder<T>.findProperty(PropertyNameMatcher propertyNameMatcher, Object[] properties, TypeAffinityScorer typeAffinity, PropertyFinderProbe propertyFinderProbe, Predicate<PropertyMeta<?, ?>> propertyFilter)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyFinder.java",
+            "previous_method_cc": "public final <E> PropertyMeta<T, E> org.simpleflatmapper.reflect.meta.PropertyFinder<T>.findProperty(PropertyNameMatcher propertyNameMatcher, Object[] properties, TypeAffinityScorer typeAffinity, PropertyFinderProbe propertyFinderProbe)",
+            "previous_method_pd": "public final org.simpleflatmapper.reflect.meta.PropertyMeta org.simpleflatmapper.reflect.meta.PropertyFinder.findProperty(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderProbe)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyFinder.java",
+            "previous_commit": "dadd77818073d9828c062938a82fc4813f59ae5d",
+            "performance_diff": -0.13156078867123533,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 15.086124806906914,
+                "p_value": 0.8493924191764576,
+                "effect_size": -0.0004545636423462482,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 128349,
+                    "after": 106392
+                }
+            }
+        },
+        {
+            "commit_message": " #572 move filter outside the property finder instance\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithKeys",
+            "method_name_pd": "public void org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder.lookForProperties(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$FoundProperty,org.simpleflatmapper.reflect.meta.PropertyMatchingScore,boolean,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderTransformer,org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.util.Predicate)",
+            "method_name_cc": "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer, Predicate<PropertyMeta<?, ?>> propertyFilter)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/AbstractIndexPropertyFinder.java",
+            "previous_method_cc": "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer)",
+            "previous_method_pd": "public void org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.lookForProperties(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$FoundProperty,org.simpleflatmapper.reflect.meta.PropertyMatchingScore,boolean,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderTransformer,org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/AbstractIndexPropertyFinder.java",
+            "previous_commit": "dadd77818073d9828c062938a82fc4813f59ae5d",
+            "performance_diff": -11.56436895170476,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 2247.5141221802405,
+                "p_value": 0.0,
+                "effect_size": -1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3084866,
+                    "after": 50984
+                }
+            }
+        },
+        {
+            "commit_message": " #572 move filter outside the property finder instance\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithKeys",
+            "method_name_pd": "public org.simpleflatmapper.reflect.meta.PropertyFinder org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.getOrCreateSubPropertyFinder(org.simpleflatmapper.reflect.meta.SubPropertyMeta)",
+            "method_name_cc": "public PropertyFinder<?> org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder<T>.getOrCreateSubPropertyFinder(SubPropertyMeta<?, ?, ?> subPropertyMeta)",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorPropertyFinder.java",
+            "previous_method_cc": "public PropertyFinder<?> org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder<T>.getOrCreateSubPropertyFinder(SubPropertyMeta<?, ?, ?> subPropertyMeta)",
+            "previous_method_pd": "public org.simpleflatmapper.reflect.meta.PropertyFinder org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.getOrCreateSubPropertyFinder(org.simpleflatmapper.reflect.meta.SubPropertyMeta)",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorPropertyFinder.java",
+            "previous_commit": "dadd77818073d9828c062938a82fc4813f59ae5d",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.801068090787717,
+                "p_value": 8.999814220986433e-270,
+                "effect_size": 0.03240105337046625,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 860765,
+                    "after": 716421
+                }
+            }
+        }
+    ],
+    "3b8283c9af486788c993eccb822fdfb02f37bb91": [
+        {
+            "commit_message": " #669 implement a way to specify properties for target type included addAliasForType\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public org.simpleflatmapper.map.mapper.AbstractColumnDefinitionProvider org.simpleflatmapper.csv.impl.CsvColumnDefinitionProviderImpl.copy()",
+            "method_name_cc": "public AbstractColumnDefinitionProvider<CsvColumnKey> org.simpleflatmapper.csv.impl.CsvColumnDefinitionProviderImpl.copy()",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/impl/CsvColumnDefinitionProviderImpl.java",
+            "previous_method_cc": "public AbstractColumnDefinitionProvider<CsvColumnKey> org.simpleflatmapper.csv.impl.CsvColumnDefinitionProviderImpl.copy()",
+            "previous_method_pd": "public org.simpleflatmapper.map.mapper.AbstractColumnDefinitionProvider org.simpleflatmapper.csv.impl.CsvColumnDefinitionProviderImpl.copy()",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/impl/CsvColumnDefinitionProviderImpl.java",
+            "previous_commit": "b30e6cba2f0a38d83a91342aacde4d62035dc0a3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -39.73312853988673,
+                "p_value": 0.0,
+                "effect_size": 0.7138820855580927,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2581,
+                    "after": 4686
+                }
+            }
+        }
+    ],
+    "34f7275e3ea42c74f313bc106933f9f05b4ee209": [
+        {
+            "commit_message": "remake some test part of the build\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public static org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean)",
+            "method_name_cc": "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)",
+            "previous_method_pd": "public static org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "b1579a0fd14ff921294a3c053704ee17f6d591eb",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -12.80128548473487,
+                "p_value": 0.0003076812913005859,
+                "effect_size": 0.02490455296664975,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 14122,
+                    "after": 13877
+                }
+            }
+        },
+        {
+            "commit_message": "remake some test part of the build\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.partialMatch(int,int)",
+            "method_name_cc": "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.partialMatch(int score, int pScore)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.partialMatch(int score, int pScore)",
+            "previous_method_pd": "public org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.partialMatch(int,int)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "b1579a0fd14ff921294a3c053704ee17f6d591eb",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.0672853828306266,
+                "p_value": 0.27840138890151345,
+                "effect_size": -0.0043014790141263975,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 42816,
+                    "after": 41859
+                }
+            }
+        }
+    ],
+    "678d17d1deee12a08de8c46663b732ad6136827c": [
+        {
+            "commit_message": "#712 allow custom separator chars\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "private int org.simpleflatmapper.reflect.meta.DefaultPropertyNameMatcher.lastNonIgnorableChar(java.lang.String)",
+            "method_name_cc": "private int org.simpleflatmapper.reflect.meta.DefaultPropertyNameMatcher.lastNonIgnorableChar(String column)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/DefaultPropertyNameMatcher.java",
+            "previous_method_cc": "private int org.simpleflatmapper.reflect.meta.DefaultPropertyNameMatcher.lastNonIgnorableChar(String column)",
+            "previous_method_pd": "private int org.simpleflatmapper.reflect.meta.DefaultPropertyNameMatcher.lastNonIgnorableChar(java.lang.String)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/DefaultPropertyNameMatcher.java",
+            "previous_commit": "44a78cea35d7f234bd05cb1037167f714fd2e404",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 94.20542153693111,
+                "p_value": 7.597601333864817e-05,
+                "effect_size": -0.7086956521739131,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 20,
+                    "after": 23
+                }
+            }
+        }
+    ],
+    "bf528f4936c328f2faf621d32003eda5d54b7122": [
+        {
+            "commit_message": "remove specialized consumer\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parsePipeQuote",
+            "method_name_pd": "private org.simpleflatmapper.csv.parser.CsvCharConsumer org.simpleflatmapper.csv.CsvParser$DSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "method_name_cc": "private CsvCharConsumer charConsumer(CharBuffer charBuffer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "private CsvCharConsumer charConsumer(CharBuffer charBuffer)",
+            "previous_method_pd": "private org.simpleflatmapper.csv.parser.CsvCharConsumer org.simpleflatmapper.csv.CsvParser$DSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "986dbc0cb77ac5e6867cb181a13ba3dd340244f9",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -2.0038167938931295,
+                "p_value": 0.0,
+                "effect_size": 0.24525803616378314,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 371670,
+                    "after": 806523
+                }
+            }
+        },
+        {
+            "commit_message": "remove specialized consumer\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parsePipeQuote",
+            "method_name_pd": "public void org.simpleflatmapper.csv.CsvReader.skipRows(int) throws java.io.IOException",
+            "method_name_cc": "public void org.simpleflatmapper.csv.CsvReader.skipRows(int n)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvReader.java",
+            "previous_method_cc": "public void org.simpleflatmapper.csv.CsvReader.skipRows(int n)",
+            "previous_method_pd": "public void org.simpleflatmapper.csv.CsvReader.skipRows(int) throws java.io.IOException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvReader.java",
+            "previous_commit": "986dbc0cb77ac5e6867cb181a13ba3dd340244f9",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -1.5957446808510638,
+                "p_value": 0.0,
+                "effect_size": 0.22224566849588834,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 370510,
+                    "after": 811035
+                }
+            }
+        }
+    ],
+    "ec6da2693c82cfcb006c228a2fd98f533a8deb8e": [
+        {
+            "commit_message": "specialized parser with cell consumer\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "public org.simpleflatmapper.lightningcsv.parser.AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(org.simpleflatmapper.lightningcsv.parser.TextFormat,org.simpleflatmapper.lightningcsv.parser.CharBuffer,org.simpleflatmapper.lightningcsv.parser.CellPreProcessor,boolean)",
+            "method_name_cc": "public AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(TextFormat textFormat, CharBuffer charBuffer, CellPreProcessor cellTransformer, boolean specialisedCharConsumer)",
+            "file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/impl/AsmCharConsumerFactory.java",
+            "previous_method_cc": "public AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(TextFormat textFormat, CharBuffer charBuffer, CellPreProcessor cellTransformer, boolean specialisedCharConsumer)",
+            "previous_method_pd": "public org.simpleflatmapper.lightningcsv.parser.AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(org.simpleflatmapper.lightningcsv.parser.TextFormat,org.simpleflatmapper.lightningcsv.parser.CharBuffer,org.simpleflatmapper.lightningcsv.parser.CellPreProcessor,boolean)",
+            "previous_file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/impl/AsmCharConsumerFactory.java",
+            "previous_commit": "b0cf6deb3f37c91216e8e26279e8845bc45e792c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.5751789976133652,
+                "p_value": 0.0,
+                "effect_size": -0.26520947537661904,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 29022053,
+                    "after": 27918829
+                }
+            }
+        }
+    ],
+    "7d4720e003869abf570176bcfa44f94e192f8cb2": [
+        {
+            "commit_message": "optimised csv mapper\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public void org.simpleflatmapper.csv.CsvRow.reset()",
+            "method_name_cc": "public void org.simpleflatmapper.csv.CsvRow.reset()",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_method_cc": "public void org.simpleflatmapper.csv.CsvRow.reset()",
+            "previous_method_pd": "public void org.simpleflatmapper.csv.CsvRow.reset()",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_commit": "cac2765c2cb332498a08057d0023783f45c2a313",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.4211274277593557,
+                "p_value": 0.0,
+                "effect_size": 0.0909214415923445,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 4020090,
+                    "after": 5364874
+                }
+            }
+        },
+        {
+            "commit_message": "optimised csv mapper\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public int org.simpleflatmapper.csv.CsvRow.getInt(int)",
+            "method_name_cc": "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_method_cc": "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)",
+            "previous_method_pd": "public int org.simpleflatmapper.csv.CsvRow.getInt(int)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_commit": "cac2765c2cb332498a08057d0023783f45c2a313",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -66.4864005089868,
+                "p_value": 0.0,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 11865318,
+                    "after": 16020132
+                }
+            }
+        },
+        {
+            "commit_message": "optimised csv mapper\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public java.lang.String org.simpleflatmapper.csv.CsvRow.getString(int)",
+            "method_name_cc": "public String org.simpleflatmapper.csv.CsvRow.getString(int i)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_method_cc": "public String org.simpleflatmapper.csv.CsvRow.getString(int i)",
+            "previous_method_pd": "public java.lang.String org.simpleflatmapper.csv.CsvRow.getString(int)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_commit": "cac2765c2cb332498a08057d0023783f45c2a313",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.9551098376313276,
+                "p_value": 0.0,
+                "effect_size": 0.07217844002914339,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 24044912,
+                    "after": 16042335
+                }
+            }
+        }
+    ],
+    "a8aeba957db4a4216f3c7c8e993ea13ae97ecb23": [
+        {
+            "commit_message": "specialised char consumer\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseTrim",
+            "method_name_pd": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[],int,int,org.simpleflatmapper.csv.parser.CellConsumer,int)",
+            "method_name_cc": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/UnescapeCellPreProcessor.java",
+            "previous_method_cc": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)",
+            "previous_method_pd": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[],int,int,org.simpleflatmapper.csv.parser.CellConsumer,int)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/UnescapeCellPreProcessor.java",
+            "previous_commit": "b9ce829610bd30becb6140714da4ae7ddc7ee8c2",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.6724303554274735,
+                "p_value": 0.0,
+                "effect_size": -0.0788779812634638,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1657117,
+                    "after": 2612978
+                }
+            }
+        }
+    ],
+    "4d222c86c0b794c97f2627afccbb29ad53e22d41": [
+        {
+            "commit_message": " #379 rely on state to check if unescape needed (#381)\n\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parsePipeQuote",
+            "method_name_pd": "protected org.simpleflatmapper.csv.parser.CellPreProcessor org.simpleflatmapper.csv.CsvParser$AbstractDSL.getCellTransformer(org.simpleflatmapper.csv.parser.TextFormat,org.simpleflatmapper.csv.CsvParser$AbstractDSL$StringPostProcessing)",
+            "method_name_cc": "protected CellPreProcessor org.simpleflatmapper.csv.DSLYamlComment.getCellTransformer(TextFormat textFormat, StringPostProcessing stringPostProcessing)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "protected CellPreProcessor org.simpleflatmapper.csv.DSLYamlComment.getCellTransformer(TextFormat textFormat, StringPostProcessing stringPostProcessing)",
+            "previous_method_pd": "protected org.simpleflatmapper.csv.parser.CellPreProcessor org.simpleflatmapper.csv.CsvParser$AbstractDSL.getCellTransformer(org.simpleflatmapper.csv.parser.TextFormat,org.simpleflatmapper.csv.CsvParser$AbstractDSL$StringPostProcessing)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "c39fa59dc17f68c22f0f49d02808c34e6a1334b3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.8161305808929429,
+                "p_value": 0.0,
+                "effect_size": -0.07442320430033397,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 765208,
+                    "after": 732642
+                }
+            }
+        },
+        {
+            "commit_message": " #379 rely on state to check if unescape needed (#381)\n\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parsePipeQuote",
+            "method_name_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "method_name_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_method_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "previous_method_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_commit": "c39fa59dc17f68c22f0f49d02808c34e6a1334b3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.3768252472915685,
+                "p_value": 0.0,
+                "effect_size": -0.03832430322566955,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 764447,
+                    "after": 735252
+                }
+            }
+        }
+    ],
+    "44c4a25d2add7e3a225ed7167532c1818a2ba3d2": [
+        {
+            "commit_message": " #363 Remove csv specific (#367)\n\n* refactor loop\r\n\r\n* revise\r\n\r\n* fix perf\r\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "protected final org.simpleflatmapper.csv.parser.CharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "method_name_cc": "protected final CharConsumer charConsumer(CharBuffer charBuffer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "protected final CharConsumer charConsumer(CharBuffer charBuffer)",
+            "previous_method_pd": "protected final org.simpleflatmapper.csv.parser.CharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "b4db72eb832949ebe354596e60542352f77c4fb8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.88953488372093,
+                "p_value": 0.0,
+                "effect_size": -0.18966683618921368,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 599193,
+                    "after": 817168
+                }
+            }
+        },
+        {
+            "commit_message": " #363 Remove csv specific (#367)\n\n* refactor loop\r\n\r\n* revise\r\n\r\n* fix perf\r\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "public final boolean org.simpleflatmapper.csv.parser.CharConsumer.refillBuffer() throws java.io.IOException",
+            "method_name_cc": "public final boolean org.simpleflatmapper.csv.parser.CharConsumer.refillBuffer()",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_method_cc": "public final boolean org.simpleflatmapper.csv.parser.CharConsumer.refillBuffer()",
+            "previous_method_pd": "public final boolean org.simpleflatmapper.csv.parser.CharConsumer.refillBuffer() throws java.io.IOException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_commit": "b4db72eb832949ebe354596e60542352f77c4fb8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.1583011583011582,
+                "p_value": 0.0,
+                "effect_size": -0.12872464661001848,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 596935,
+                    "after": 814003
+                }
+            }
+        },
+        {
+            "commit_message": " #363 Remove csv specific (#367)\n\n* refactor loop\r\n\r\n* revise\r\n\r\n* fix perf\r\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "method_name_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_method_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "previous_method_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_commit": "b4db72eb832949ebe354596e60542352f77c4fb8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.398264223722276,
+                "p_value": 0.0,
+                "effect_size": -0.1450355479642171,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 601232,
+                    "after": 821084
+                }
+            }
+        }
+    ],
+    "6ef7785ddd157a014f79af09ab8baa750a8e0049": [
+        {
+            "commit_message": "PR #678 better scoring to solve test issue, also speculative index don't stop eagerly\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(java.lang.String)",
+            "method_name_cc": "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(String property)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(String property)",
+            "previous_method_pd": "public org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(java.lang.String)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "64ca69e4e62347366968b71e3fec1b2f248d2211",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 205.18867924528303,
+                "p_value": 0.0,
+                "effect_size": -1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 35495,
+                    "after": 12941
+                }
+            }
+        }
+    ],
+    "a859c90db4d0fc1ed9a9ec2129c2252209c49c19": [
+        {
+            "commit_message": "#606 try using the method declaring class\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "private static void org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder.invokeBiFunction(java.lang.String,org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder$InjectionPoint,java.lang.String,java.lang.Class,java.lang.Class,org.simpleflatmapper.ow2asm.MethodVisitor,org.simpleflatmapper.util.Consumer,boolean) throws java.lang.NoSuchMethodException",
+            "method_name_cc": "private static <S1, S2> void org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder.invokeBiFunction(String targetType, InjectionPoint injectionPoint, String classType, Class<?> s1, Class<?> s2, MethodVisitor mv, Consumer<MethodVisitor> consumer, boolean ignoreNullValues)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/BiInstantiatorBuilder.java",
+            "previous_method_cc": "private static <S1, S2> void org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder.invokeBiFunction(String targetType, InjectionPoint injectionPoint, String classType, Class<?> s1, Class<?> s2, MethodVisitor mv, Consumer<MethodVisitor> consumer, boolean ignoreNullValues)",
+            "previous_method_pd": "private static void org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder.invokeBiFunction(java.lang.String,org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder$InjectionPoint,java.lang.String,java.lang.Class,java.lang.Class,org.simpleflatmapper.ow2asm.MethodVisitor,org.simpleflatmapper.util.Consumer,boolean) throws java.lang.NoSuchMethodException",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/BiInstantiatorBuilder.java",
+            "previous_commit": "e371b838d23716e2fcf10a5a991ee966f7aa7393",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 17.72651950050305,
+                "p_value": 0.11300913889451222,
+                "effect_size": -0.28798185941043086,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 21,
+                    "after": 21
+                }
+            }
+        }
+    ],
+    "1ad193b6cefee45a6a42ba05a6165d27e63c4aa1": [
+        {
+            "commit_message": "keep track of the need to unescape or not\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parsePipeQuote",
+            "method_name_pd": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[],int,int,org.simpleflatmapper.csv.parser.CellConsumer,int)",
+            "method_name_cc": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/UnescapeCellPreProcessor.java",
+            "previous_method_cc": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)",
+            "previous_method_pd": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[],int,int,org.simpleflatmapper.csv.parser.CellConsumer,int)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/UnescapeCellPreProcessor.java",
+            "previous_commit": "148be01ffe91fecf48ae8c3c204e80b9445f13ae",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.19129603060736491,
+                "p_value": 0.0,
+                "effect_size": 0.03165325513701229,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2229795,
+                    "after": 2256873
+                }
+            }
+        }
+    ],
+    "0e437f4397bbb103b89c2609765a503077974109": [
+        {
+            "commit_message": "does not create new string on empty string, specialised path for buffer resize\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int) throws java.io.IOException",
+            "method_name_cc": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)",
+            "file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/parser/ReaderCharBuffer.java",
+            "previous_method_cc": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)",
+            "previous_method_pd": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int) throws java.io.IOException",
+            "previous_file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/parser/ReaderCharBuffer.java",
+            "previous_commit": "95a2d98086129de6e967a85595854ecca12f6ccf",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.24427125741537745,
+                "p_value": 0.0,
+                "effect_size": 0.03146977945541433,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2714103,
+                    "after": 2184861
+                }
+            }
+        }
+    ],
+    "b94104b54b303c70b139aab0667286c0b0b73537": [
+        {
+            "commit_message": " #604 implement unordered join\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithKeys",
+            "method_name_pd": "public java.lang.Object org.simpleflatmapper.map.context.impl.BreakDetector.getValue()",
+            "method_name_cc": "public Object org.simpleflatmapper.map.context.impl.BreakDetector<S>.getValue()",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/context/impl/BreakDetector.java",
+            "previous_method_cc": "public Object org.simpleflatmapper.map.context.impl.BreakDetector<S>.getValue()",
+            "previous_method_pd": "public java.lang.Object org.simpleflatmapper.map.context.impl.BreakDetector.getValue()",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/context/impl/BreakDetector.java",
+            "previous_commit": "102e39ebe7b248b905384987068922c4abe789eb",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 6.375838926174497,
+                "p_value": 0.0,
+                "effect_size": -0.35252979949823227,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 12308368,
+                    "after": 11658200
+                }
+            }
+        },
+        {
+            "commit_message": " #604 implement unordered join\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithKeys",
+            "method_name_pd": "public void org.simpleflatmapper.map.context.impl.BreakDetector.setValue(java.lang.Object)",
+            "method_name_cc": "public void org.simpleflatmapper.map.context.impl.BreakDetector<S>.setValue(Object value)",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/context/impl/BreakDetector.java",
+            "previous_method_cc": "public void org.simpleflatmapper.map.context.impl.BreakDetector<S>.setValue(Object value)",
+            "previous_method_pd": "public void org.simpleflatmapper.map.context.impl.BreakDetector.setValue(java.lang.Object)",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/context/impl/BreakDetector.java",
+            "previous_commit": "102e39ebe7b248b905384987068922c4abe789eb",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 6.271268838113758,
+                "p_value": 0.0,
+                "effect_size": -0.40035905463963306,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 12326689,
+                    "after": 11698239
+                }
+            }
+        }
+    ],
+    "775dfbc8cedbd250c02078d8a8038e5cb7b404f1": [
+        {
+            "commit_message": " #403 use target class loader to instantiate class\n",
+            "benchmark": "org.simpleflatmapper.reflect.GetterIntBenchmark.testAsm",
+            "method_name_pd": "public static java.lang.Class org.simpleflatmapper.util.TypeHelper.toClass(java.lang.reflect.Type)",
+            "method_name_cc": "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)",
+            "file": "sfm-util/src/main/java/org/simpleflatmapper/util/TypeHelper.java",
+            "previous_method_cc": "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)",
+            "previous_method_pd": "public static java.lang.Class org.simpleflatmapper.util.TypeHelper.toClass(java.lang.reflect.Type)",
+            "previous_file": "sfm-util/src/main/java/org/simpleflatmapper/util/TypeHelper.java",
+            "previous_commit": "08c8c2dc9128ec987f7170cc44913a5b041842de",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 20.297775123964794,
+                "p_value": 0.004542183303722062,
+                "effect_size": -0.45584045584045585,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 26,
+                    "after": 27
+                }
+            }
+        }
+    ],
+    "90b68a388057d89ffbe5469f3c9717fb715f9bfb": [
+        {
+            "commit_message": "optimise standard parser path\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parsePipeQuote",
+            "method_name_pd": "public org.simpleflatmapper.lightningcsv.parser.AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(org.simpleflatmapper.lightningcsv.parser.TextFormat,org.simpleflatmapper.lightningcsv.parser.CharBuffer,org.simpleflatmapper.lightningcsv.parser.CellPreProcessor,boolean)",
+            "method_name_cc": "public AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(TextFormat textFormat, CharBuffer charBuffer, CellPreProcessor cellTransformer, boolean specialisedCharConsumer)",
+            "file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/impl/AsmCharConsumerFactory.java",
+            "previous_method_cc": "public AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(TextFormat textFormat, CharBuffer charBuffer, CellPreProcessor cellTransformer, boolean specialisedCharConsumer)",
+            "previous_method_pd": "public org.simpleflatmapper.lightningcsv.parser.AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(org.simpleflatmapper.lightningcsv.parser.TextFormat,org.simpleflatmapper.lightningcsv.parser.CharBuffer,org.simpleflatmapper.lightningcsv.parser.CellPreProcessor,boolean)",
+            "previous_file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/impl/AsmCharConsumerFactory.java",
+            "previous_commit": "2b8d9fd01e61712049267d7693dd670d1b93edaa",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.08496176720475786,
+                "p_value": 0.0,
+                "effect_size": -0.005767363554626858,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 43943988,
+                    "after": 44475669
+                }
+            }
+        }
+    ],
+    "25d1ed5f7ea750a1d3715ff2f4e483df2778f9d2": [
+        {
+            "commit_message": "some codacy clean up\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithKeys",
+            "method_name_pd": "private static org.simpleflatmapper.map.context.KeyDefinition org.simpleflatmapper.map.context.impl.BreakDetector.emptyToNull(org.simpleflatmapper.map.context.KeyDefinition)",
+            "method_name_cc": "private static <S> KeyDefinition<S, ?> org.simpleflatmapper.map.context.impl.BreakDetector<S>.emptyToNull(KeyDefinition<S, ?> definition)",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/context/impl/BreakDetector.java",
+            "previous_method_cc": "private static <S> KeyDefinition<S, ?> org.simpleflatmapper.map.context.impl.BreakDetector<S>.emptyToNull(KeyDefinition<S, ?> definition)",
+            "previous_method_pd": "private static org.simpleflatmapper.map.context.KeyDefinition org.simpleflatmapper.map.context.impl.BreakDetector.emptyToNull(org.simpleflatmapper.map.context.KeyDefinition)",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/context/impl/BreakDetector.java",
+            "previous_commit": "455cbbfa100146b1b17a51d17134e1d4bb79d792",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 26.386066763425255,
+                "p_value": 8.068745355754237e-06,
+                "effect_size": -0.07636659794218498,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2413,
+                    "after": 2157
+                }
+            }
+        }
+    ],
+    "0f5edc92108b6256e332f4ad7c2f39fc1d53b18f": [
+        {
+            "commit_message": "optimise for most common case number\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[],int,int) throws java.lang.NumberFormatException",
+            "method_name_cc": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[] s, int beginIndex, int endIndex)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_method_cc": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[] s, int beginIndex, int endIndex)",
+            "previous_method_pd": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[],int,int) throws java.lang.NumberFormatException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_commit": "9fee07cae2f55566df51a3a773fb356b86363a75",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.3672795851013673,
+                "p_value": 0.0,
+                "effect_size": 0.11796257649143231,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 29565462,
+                    "after": 29249045
+                }
+            }
+        }
+    ],
+    "3b561d28c2bb15b76d2a82d27ebd108ac408b523": [
+        {
+            "commit_message": " #574 when no instatiator found look in the enclosing class\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public java.util.List org.simpleflatmapper.reflect.DefaultReflectionService.extractInstantiator(java.lang.reflect.Type,java.lang.reflect.Member) throws java.io.IOException",
+            "method_name_cc": "public List<InstantiatorDefinition> org.simpleflatmapper.reflect.DefaultReflectionService.extractInstantiator(Type target, Member extraInstantiator)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_method_cc": "public List<InstantiatorDefinition> org.simpleflatmapper.reflect.DefaultReflectionService.extractInstantiator(Type target, Member extraInstantiator)",
+            "previous_method_pd": "public java.util.List org.simpleflatmapper.reflect.DefaultReflectionService.extractInstantiator(java.lang.reflect.Type,java.lang.reflect.Member) throws java.io.IOException",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_commit": "4cf83f8cc1992efd728ba21120a601fb2c5f0906",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -4.515263137270269,
+                "p_value": 4.690012470906847e-30,
+                "effect_size": 0.09308430464383118,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 9278,
+                    "after": 10802
+                }
+            }
+        }
+    ],
+    "e0a12498c241f5e212ff22dc98a57c11ed1c3d84": [
+        {
+            "commit_message": "fix #599 ignore trailing empty headers\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public org.simpleflatmapper.csv.CsvColumnKey[] org.simpleflatmapper.csv.CsvRowSet.getKeys() throws java.io.IOException",
+            "method_name_cc": "public CsvColumnKey[] org.simpleflatmapper.csv.CsvRowSet.getKeys()",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRowSet.java",
+            "previous_method_cc": "public CsvColumnKey[] org.simpleflatmapper.csv.CsvRowSet.getKeys()",
+            "previous_method_pd": "public org.simpleflatmapper.csv.CsvColumnKey[] org.simpleflatmapper.csv.CsvRowSet.getKeys() throws java.io.IOException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRowSet.java",
+            "previous_commit": "bc35b7e43b0f739e8fffb8b109600c44a3b5ee92",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -6.825279299735097,
+                "p_value": 0.00029540517183549055,
+                "effect_size": 0.05937868368562885,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2212,
+                    "after": 2815
+                }
+            }
+        }
+    ],
+    "61e3f299a6ca2e1f779b7a0c83ae7d4a8790aa41": [
+        {
+            "commit_message": "add short cut for regular digit\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[],int,int) throws java.lang.NumberFormatException",
+            "method_name_cc": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[] chars, int from, int len)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_method_cc": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[] chars, int from, int len)",
+            "previous_method_pd": "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[],int,int) throws java.lang.NumberFormatException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_commit": "7d4720e003869abf570176bcfa44f94e192f8cb2",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 3.007518796992481,
+                "p_value": 0.0,
+                "effect_size": -0.27797297134743304,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 30369842,
+                    "after": 24731750
+                }
+            }
+        }
+    ],
+    "8f6e1fe45273747e755fda6ac82894eaa997c35a": [
+        {
+            "commit_message": " easier way to add getter for jdbc, revert reader change\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int) throws java.io.IOException",
+            "method_name_cc": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)",
+            "file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/parser/ReaderCharBuffer.java",
+            "previous_method_cc": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)",
+            "previous_method_pd": "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int) throws java.io.IOException",
+            "previous_file": "lightningcsv/src/main/java/org/simpleflatmapper/lightningcsv/parser/ReaderCharBuffer.java",
+            "previous_commit": "c43b5af3149a64f3b96be7643327f25cb4cfcc8a",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 7.739063436349627,
+                "p_value": 0.0,
+                "effect_size": -0.2532909015423056,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2242013,
+                    "after": 2491934
+                }
+            }
+        }
+    ],
+    "edc1a84529c1904a64f592f5b799b8d8daf30b10": [
+        {
+            "commit_message": " fix #662 rewrite sig reification\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public static java.lang.reflect.Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(java.lang.String,java.util.List,java.lang.reflect.Type) throws java.lang.ClassNotFoundException",
+            "method_name_cc": "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/AsmUtils.java",
+            "previous_method_cc": "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)",
+            "previous_method_pd": "public static java.lang.reflect.Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(java.lang.String,java.util.List,java.lang.reflect.Type) throws java.lang.ClassNotFoundException",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/AsmUtils.java",
+            "previous_commit": "e2c2bf0d7f5dc08bcd719fdcd8b1858e098aa06c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 317.03346397346996,
+                "p_value": 0.0,
+                "effect_size": -0.970235075911972,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 54784,
+                    "after": 54258
+                }
+            }
+        }
+    ],
+    "110aa5597778e83cbc495a1dcd9733b4e9951480": [
+        {
+            "commit_message": "  #609 very dirty impl for now, annotation only avail in byte code\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "private org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(java.lang.reflect.Type)",
+            "method_name_cc": "private <T> ClassMeta<T> org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(Type target)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_method_cc": "private <T> ClassMeta<T> org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(Type target)",
+            "previous_method_pd": "private org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(java.lang.reflect.Type)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_commit": "f8b4957ed26385ab0297a7dabb1f912e227ec4f8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.741720033694361,
+                "p_value": 2.410351150720303e-14,
+                "effect_size": -0.05889571014548043,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 11176,
+                    "after": 11183
+                }
+            }
+        }
+    ],
+    "c847105c7d867d36fea813f4fdb21055d337a69e": [
+        {
+            "commit_message": " #579 more general subbuilder optimization\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.map.impl.DiscriminatorReflectionService.getClassMeta(java.lang.reflect.Type)",
+            "method_name_cc": "public <T> ClassMeta<T> org.simpleflatmapper.map.impl.DiscriminatorReflectionService.getClassMeta(Type target)",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorReflectionService.java",
+            "previous_method_cc": "public <T> ClassMeta<T> org.simpleflatmapper.map.impl.DiscriminatorReflectionService.getClassMeta(Type target)",
+            "previous_method_pd": "public org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.map.impl.DiscriminatorReflectionService.getClassMeta(java.lang.reflect.Type)",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorReflectionService.java",
+            "previous_commit": "cb67abfbd2aeaf52bebd85b77529a7ab8709b45d",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 4.997336174746937,
+                "p_value": 0.7680454996579388,
+                "effect_size": 0.0018530574664593832,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 16908,
+                    "after": 16869
+                }
+            }
+        }
+    ],
+    "2188942526d6c20498c7d712797405b5e25de378": [
+        {
+            "commit_message": "fix java7\n",
+            "benchmark": "org.simpleflatmapper.reflect.GetterIntBenchmark.testMethodHandlerField",
+            "method_name_pd": "public static java.lang.Class org.simpleflatmapper.util.TypeHelper.toClass(java.lang.reflect.Type)",
+            "method_name_cc": "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)",
+            "file": "sfm-util/src/main/java/org/simpleflatmapper/util/TypeHelper.java",
+            "previous_method_cc": "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)",
+            "previous_method_pd": "public static java.lang.Class org.simpleflatmapper.util.TypeHelper.toClass(java.lang.reflect.Type)",
+            "previous_file": "sfm-util/src/main/java/org/simpleflatmapper/util/TypeHelper.java",
+            "previous_commit": "d4d51bc2a7cf474791298952ed994fd46cc9fb3c",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 9.65240187850097,
+                "p_value": 0.36654968369905594,
+                "effect_size": -0.15064102564102563,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 26,
+                    "after": 24
+                }
+            }
+        }
+    ],
+    "d16172d3af3931dc7bb93cfcdf533998c1f81913": [
+        {
+            "commit_message": "#609 use asm to get annotation\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "private org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(java.lang.reflect.Type)",
+            "method_name_cc": "private <T> ClassMeta<T> org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(Type target)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_method_cc": "private <T> ClassMeta<T> org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(Type target)",
+            "previous_method_pd": "private org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(java.lang.reflect.Type)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_commit": "110aa5597778e83cbc495a1dcd9733b4e9951480",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.522382228175932,
+                "p_value": 1.4890684391154076e-05,
+                "effect_size": 0.033817931137434774,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 10733,
+                    "after": 11137
+                }
+            }
+        }
+    ],
+    "f60f4691427c3e5b9516d9bafeff743a1aa98311": [
+        {
+            "commit_message": " #689 more consistent heuristic better handle selfscore full name\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public boolean org.simpleflatmapper.reflect.DefaultReflectionService.selfScoreFullName()",
+            "method_name_cc": "public boolean org.simpleflatmapper.reflect.DefaultReflectionService.selfScoreFullName()",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_method_cc": "public boolean org.simpleflatmapper.reflect.DefaultReflectionService.selfScoreFullName()",
+            "previous_method_pd": "public boolean org.simpleflatmapper.reflect.DefaultReflectionService.selfScoreFullName()",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/DefaultReflectionService.java",
+            "previous_commit": "49a9e3d2925357c8108381166ec85bba3776c003",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.6435986159169549,
+                "p_value": 0.0,
+                "effect_size": -0.0886884788103706,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2447144,
+                    "after": 2407323
+                }
+            }
+        },
+        {
+            "commit_message": " #689 more consistent heuristic better handle selfscore full name\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public static org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean)",
+            "method_name_cc": "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)",
+            "previous_method_pd": "public static org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "49a9e3d2925357c8108381166ec85bba3776c003",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.8460236886632826,
+                "p_value": 6.899627175195904e-118,
+                "effect_size": -0.05129773300048339,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 136399,
+                    "after": 133600
+                }
+            }
+        },
+        {
+            "commit_message": " #689 more consistent heuristic better handle selfscore full name\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public void org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.lookForProperties(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$FoundProperty,org.simpleflatmapper.reflect.meta.PropertyMatchingScore,boolean,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderTransformer,org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFilter)",
+            "method_name_cc": "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer, PropertyFilter propertyFilter)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/AbstractIndexPropertyFinder.java",
+            "previous_method_cc": "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer, PropertyFilter propertyFilter)",
+            "previous_method_pd": "public void org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.lookForProperties(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$FoundProperty,org.simpleflatmapper.reflect.meta.PropertyMatchingScore,boolean,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderTransformer,org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFilter)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/AbstractIndexPropertyFinder.java",
+            "previous_commit": "49a9e3d2925357c8108381166ec85bba3776c003",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.4409781184804231,
+                "p_value": 0.0,
+                "effect_size": -0.06975245498772609,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3522217,
+                    "after": 3481152
+                }
+            }
+        },
+        {
+            "commit_message": " #689 more consistent heuristic better handle selfscore full name\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public final org.simpleflatmapper.reflect.meta.PropertyMeta org.simpleflatmapper.reflect.meta.PropertyFinder.findProperty(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderProbe,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFilter)",
+            "method_name_cc": "public final <E> PropertyMeta<T, E> org.simpleflatmapper.reflect.meta.PropertyFinder<T>.findProperty(PropertyNameMatcher propertyNameMatcher, Object[] properties, TypeAffinityScorer typeAffinity, PropertyFinderProbe propertyFinderProbe, PropertyFilter propertyFilter)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyFinder.java",
+            "previous_method_cc": "public final <E> PropertyMeta<T, E> org.simpleflatmapper.reflect.meta.PropertyFinder<T>.findProperty(PropertyNameMatcher propertyNameMatcher, Object[] properties, TypeAffinityScorer typeAffinity, PropertyFinderProbe propertyFinderProbe, PropertyFilter propertyFilter)",
+            "previous_method_pd": "public final org.simpleflatmapper.reflect.meta.PropertyMeta org.simpleflatmapper.reflect.meta.PropertyFinder.findProperty(org.simpleflatmapper.reflect.meta.PropertyNameMatcher,java.lang.Object[],org.simpleflatmapper.reflect.meta.PropertyFinder$TypeAffinityScorer,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFinderProbe,org.simpleflatmapper.reflect.meta.PropertyFinder$PropertyFilter)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyFinder.java",
+            "previous_commit": "49a9e3d2925357c8108381166ec85bba3776c003",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 4.496588122042235,
+                "p_value": 3.712226006551162e-260,
+                "effect_size": -0.074133161627519,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 144864,
+                    "after": 143174
+                }
+            }
+        },
+        {
+            "commit_message": " #689 more consistent heuristic better handle selfscore full name\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public org.simpleflatmapper.reflect.meta.PropertyFinder org.simpleflatmapper.map.impl.DiscriminatorClassMeta.newPropertyFinder()",
+            "method_name_cc": "public PropertyFinder<T> org.simpleflatmapper.map.impl.DiscriminatorClassMeta<T>.newPropertyFinder()",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorClassMeta.java",
+            "previous_method_cc": "public PropertyFinder<T> org.simpleflatmapper.map.impl.DiscriminatorClassMeta<T>.newPropertyFinder()",
+            "previous_method_pd": "public org.simpleflatmapper.reflect.meta.PropertyFinder org.simpleflatmapper.map.impl.DiscriminatorClassMeta.newPropertyFinder()",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorClassMeta.java",
+            "previous_commit": "49a9e3d2925357c8108381166ec85bba3776c003",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 0.8071920428462127,
+                "p_value": 2.0423443514420386e-256,
+                "effect_size": -0.19518843419060783,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 20686,
+                    "after": 20265
+                }
+            }
+        },
+        {
+            "commit_message": " #689 more consistent heuristic better handle selfscore full name\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "method_name_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "previous_method_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "49a9e3d2925357c8108381166ec85bba3776c003",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.3376623376623376,
+                "p_value": 0.0,
+                "effect_size": -0.12847640688087103,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1332004,
+                    "after": 1309113
+                }
+            }
+        }
+    ],
+    "9cc6457461a748daa9463727a296b66eea7d7cbc": [
+        {
+            "commit_message": " #353 does consider non leading quote has escaping (#354)\n\n* refactor parser\r\n\r\n* reduce stack space\r\n\r\n* update travis\r\n\r\n* update travis\r\n\r\n* update travis\r\n\r\n* refactor\r\n\r\n* refactor\r\n\r\n* fix test\r\n\r\n* more changes\r\n\r\n* move cellStart back to buffer\r\n\r\n* implement trim quote\r\n\r\n* fix diamond\r\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "protected final org.simpleflatmapper.csv.parser.CharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "method_name_cc": "protected final CharConsumer charConsumer(CharBuffer charBuffer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "protected final CharConsumer charConsumer(CharBuffer charBuffer)",
+            "previous_method_pd": "protected final org.simpleflatmapper.csv.parser.CharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "d89f13d78e6c36178cf42f0195237791c789a174",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 2.129767211490837,
+                "p_value": 0.0,
+                "effect_size": -0.46056325983544166,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 192887,
+                    "after": 185695
+                }
+            }
+        },
+        {
+            "commit_message": " #353 does consider non leading quote has escaping (#354)\n\n* refactor parser\r\n\r\n* reduce stack space\r\n\r\n* update travis\r\n\r\n* update travis\r\n\r\n* update travis\r\n\r\n* refactor\r\n\r\n* refactor\r\n\r\n* fix test\r\n\r\n* more changes\r\n\r\n* move cellStart back to buffer\r\n\r\n* implement trim quote\r\n\r\n* fix diamond\r\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "method_name_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_method_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "previous_method_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_commit": "d89f13d78e6c36178cf42f0195237791c789a174",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 2.186421173762946,
+                "p_value": 0.0,
+                "effect_size": -0.46651037984278626,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 193800,
+                    "after": 185723
+                }
+            }
+        }
+    ],
+    "a094ff893a37c7e3a22c30cff33bb2914e235b0a": [
+        {
+            "commit_message": " first pass at #479\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "method_name_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "previous_method_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "b2f69702bdb9a9e5df934102505f7121ded21441",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 6.95364238410596,
+                "p_value": 0.0,
+                "effect_size": -0.4115603736688703,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1677838,
+                    "after": 1964550
+                }
+            }
+        },
+        {
+            "commit_message": " first pass at #479\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public org.simpleflatmapper.reflect.BiInstantiator org.simpleflatmapper.reflect.InstantiatorFactory.getBiInstantiator(org.simpleflatmapper.reflect.InstantiatorDefinition,java.lang.Class,java.lang.Class,java.util.Map,boolean,boolean)",
+            "method_name_cc": "public <S1, S2, T> BiInstantiator<S1, S2, T> org.simpleflatmapper.reflect.InstantiatorFactory.getBiInstantiator(InstantiatorDefinition instantiatorDefinition, Class<?> s1, Class<?> s2, Map<Parameter, BiFunction<? super S1, ? super S2, ?>> injections, boolean useAsmIfEnabled, boolean builderIgnoresNullValues)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/InstantiatorFactory.java",
+            "previous_method_cc": "public <S1, S2, T> BiInstantiator<S1, S2, T> org.simpleflatmapper.reflect.InstantiatorFactory.getBiInstantiator(InstantiatorDefinition instantiatorDefinition, Class<?> s1, Class<?> s2, Map<Parameter, BiFunction<? super S1, ? super S2, ?>> injections, boolean useAsmIfEnabled, boolean builderIgnoresNullValues)",
+            "previous_method_pd": "public org.simpleflatmapper.reflect.BiInstantiator org.simpleflatmapper.reflect.InstantiatorFactory.getBiInstantiator(org.simpleflatmapper.reflect.InstantiatorDefinition,java.lang.Class,java.lang.Class,java.util.Map,boolean,boolean)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/InstantiatorFactory.java",
+            "previous_commit": "b2f69702bdb9a9e5df934102505f7121ded21441",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.7659574468085104,
+                "p_value": 0.0,
+                "effect_size": 0.08131601656733023,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1114711,
+                    "after": 1390852
+                }
+            }
+        }
+    ],
+    "b64fc34917bad69e44e965a4b79112bb9d7885ff": [
+        {
+            "commit_message": "add non mapped property meta\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public static org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean)",
+            "method_name_cc": "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)",
+            "previous_method_pd": "public static org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "9d5567a35942b7fc7fb764b41ff0ecf223e213f1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 7.892561983471075,
+                "p_value": 1.5025694514475936e-149,
+                "effect_size": -0.0550406209378637,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 162441,
+                    "after": 138101
+                }
+            }
+        },
+        {
+            "commit_message": "add non mapped property meta\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(java.lang.String)",
+            "method_name_cc": "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(String property)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(String property)",
+            "previous_method_pd": "public org.simpleflatmapper.reflect.meta.PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(java.lang.String)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "9d5567a35942b7fc7fb764b41ff0ecf223e213f1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.1951219512195122,
+                "p_value": 0.0,
+                "effect_size": -0.03292427486226714,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 3806809,
+                    "after": 3221741
+                }
+            }
+        },
+        {
+            "commit_message": "add non mapped property meta\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "private boolean org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.disallowSelfReference(java.lang.Object[])",
+            "method_name_cc": "private boolean org.simpleflatmapper.reflect.meta.ObjectPropertyFinder<T>.disallowSelfReference(Object[] properties)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/ObjectPropertyFinder.java",
+            "previous_method_cc": "private boolean org.simpleflatmapper.reflect.meta.ObjectPropertyFinder<T>.disallowSelfReference(Object[] properties)",
+            "previous_method_pd": "private boolean org.simpleflatmapper.reflect.meta.ObjectPropertyFinder.disallowSelfReference(java.lang.Object[])",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/ObjectPropertyFinder.java",
+            "previous_commit": "9d5567a35942b7fc7fb764b41ff0ecf223e213f1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.786308973172988,
+                "p_value": 2.4096454366713586e-307,
+                "effect_size": -0.08347169956314102,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 146891,
+                    "after": 123813
+                }
+            }
+        },
+        {
+            "commit_message": "add non mapped property meta\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "method_name_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "previous_method_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "9d5567a35942b7fc7fb764b41ff0ecf223e213f1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.3894839337877313,
+                "p_value": 0.0,
+                "effect_size": 0.055465426788537296,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1457730,
+                    "after": 1235646
+                }
+            }
+        }
+    ],
+    "85faa6c792c80ce8a490cb5851934fcc3e04b029": [
+        {
+            "commit_message": " #356 remove cellutil, refactor CellTransformer hierarchy\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "protected final org.simpleflatmapper.csv.parser.CharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "method_name_cc": "protected final CharConsumer charConsumer(CharBuffer charBuffer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "protected final CharConsumer charConsumer(CharBuffer charBuffer)",
+            "previous_method_pd": "protected final org.simpleflatmapper.csv.parser.CharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer) throws java.io.IOException",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "0b313b5b35e8df1b79f7cdf32e9103d852751734",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.0679611650485437,
+                "p_value": 0.0,
+                "effect_size": -0.14730990846474545,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2260827,
+                    "after": 2282847
+                }
+            }
+        }
+    ],
+    "4f6f6dcde20752e3aae98396559743bc05ca747b": [
+        {
+            "commit_message": "move char to unescape processor\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parsePipeQuote",
+            "method_name_pd": "protected org.simpleflatmapper.csv.parser.CellPreProcessor org.simpleflatmapper.csv.CsvParser$AbstractDSL.getUnescapeCellTransformer(org.simpleflatmapper.csv.parser.TextFormat)",
+            "method_name_cc": "protected CellPreProcessor getUnescapeCellTransformer(TextFormat textFormat)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "protected CellPreProcessor getUnescapeCellTransformer(TextFormat textFormat)",
+            "previous_method_pd": "protected org.simpleflatmapper.csv.parser.CellPreProcessor org.simpleflatmapper.csv.CsvParser$AbstractDSL.getUnescapeCellTransformer(org.simpleflatmapper.csv.parser.TextFormat)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "a71312190565b569177bf092bd51bfe29d8e82aa",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.6238003838771593,
+                "p_value": 0.0,
+                "effect_size": 0.11886795557240659,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2246343,
+                    "after": 2266792
+                }
+            }
+        }
+    ],
+    "70ea034333aa47e5e54753f764ae4d493f13e03d": [
+        {
+            "commit_message": " #370 optimise escape path  #369 (#371)\n\n* try difference escape path\r\n\r\n* opt\r\n\r\n* next\r\n\r\n* better unescape, fix versions\r\n\r\n* updates\r\n\r\n* updates\r\n\r\n* travis\r\n\r\n*  link\r\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "method_name_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_method_cc": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)",
+            "previous_method_pd": "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(org.simpleflatmapper.csv.parser.CellConsumer)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/CharConsumer.java",
+            "previous_commit": "67228004fe96be0d974fa76efe234dc6609cde09",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.5632633121641426,
+                "p_value": 0.0,
+                "effect_size": -0.19353035860169404,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 725844,
+                    "after": 1207199
+                }
+            }
+        }
+    ],
+    "4829d56226146977e23dde18fd8440edb30d5c5f": [
+        {
+            "commit_message": " #679 fix multiple hierarchy on some root type, pass discriminatorId about\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "private org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.map.impl.DiscriminatorReflectionService.newClassMeta(java.lang.reflect.Type)",
+            "method_name_cc": "private <T> ClassMeta<T> org.simpleflatmapper.map.impl.DiscriminatorReflectionService.newClassMeta(Type target)",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorReflectionService.java",
+            "previous_method_cc": "private <T> ClassMeta<T> org.simpleflatmapper.map.impl.DiscriminatorReflectionService.newClassMeta(Type target)",
+            "previous_method_pd": "private org.simpleflatmapper.reflect.meta.ClassMeta org.simpleflatmapper.map.impl.DiscriminatorReflectionService.newClassMeta(java.lang.reflect.Type)",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorReflectionService.java",
+            "previous_commit": "88020e3b9b40beba44d41684e9c5be89d95bbcf6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.45341850751602597,
+                "p_value": 0.24715574509569394,
+                "effect_size": -0.014978056126691544,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 3689,
+                    "after": 4322
+                }
+            }
+        },
+        {
+            "commit_message": " #679 fix multiple hierarchy on some root type, pass discriminatorId about\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public void org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder.manualMatch(org.simpleflatmapper.reflect.meta.PropertyMeta)",
+            "method_name_cc": "public void org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder<T>.manualMatch(PropertyMeta<?, ?> prop)",
+            "file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorPropertyFinder.java",
+            "previous_method_cc": "public void org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder<T>.manualMatch(PropertyMeta<?, ?> prop)",
+            "previous_method_pd": "public void org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder.manualMatch(org.simpleflatmapper.reflect.meta.PropertyMeta)",
+            "previous_file": "sfm-map/src/main/java/org/simpleflatmapper/map/impl/DiscriminatorPropertyFinder.java",
+            "previous_commit": "88020e3b9b40beba44d41684e9c5be89d95bbcf6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 10.125038121378468,
+                "p_value": 0.0,
+                "effect_size": -0.431144061391465,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 91761,
+                    "after": 119581
+                }
+            }
+        }
+    ],
+    "e8f193ab649604163023e8fcdb636d00c7fdfa4f": [
+        {
+            "commit_message": "some lgtm and codacy clean up\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "private static boolean org.simpleflatmapper.reflect.getter.GetterHelper.isToString(java.lang.reflect.Method)",
+            "method_name_cc": "private static boolean org.simpleflatmapper.reflect.getter.GetterHelper.isToString(Method method)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/getter/GetterHelper.java",
+            "previous_method_cc": "private static boolean org.simpleflatmapper.reflect.getter.GetterHelper.isToString(Method method)",
+            "previous_method_pd": "private static boolean org.simpleflatmapper.reflect.getter.GetterHelper.isToString(java.lang.reflect.Method)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/getter/GetterHelper.java",
+            "previous_commit": "c847105c7d867d36fea813f4fdb21055d337a69e",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.9387257201839168,
+                "p_value": 0.31132422256293757,
+                "effect_size": 0.05010741138560688,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 280,
+                    "after": 266
+                }
+            }
+        },
+        {
+            "commit_message": "some lgtm and codacy clean up\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public void org.simpleflatmapper.csv.CsvRow.addValue(int,int)",
+            "method_name_cc": "public void org.simpleflatmapper.csv.CsvRow.addValue(int offset, int length)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_method_cc": "public void org.simpleflatmapper.csv.CsvRow.addValue(int offset, int length)",
+            "previous_method_pd": "public void org.simpleflatmapper.csv.CsvRow.addValue(int,int)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_commit": "c847105c7d867d36fea813f4fdb21055d337a69e",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 2.8211586901763224,
+                "p_value": 0.0,
+                "effect_size": -0.30925384535355877,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 33549620,
+                    "after": 32196358
+                }
+            }
+        }
+    ],
+    "39562d41022b7e41c992dec3b2d1b9fd9bcc0974": [
+        {
+            "commit_message": "use better scoring strategy ignoring separator char\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testWithDiscriminatorWithPartialKeys",
+            "method_name_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "method_name_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_method_cc": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)",
+            "previous_method_pd": "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(org.simpleflatmapper.reflect.meta.PropertyMatchingScore)",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/meta/PropertyMatchingScore.java",
+            "previous_commit": "0e453501034a97bf6c7dca4429a3a32796bc13fb",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.3260363297624593,
+                "p_value": 0.0,
+                "effect_size": -0.035079127392875394,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1753564,
+                    "after": 1785474
+                }
+            }
+        }
+    ],
+    "b22864d744d2660adbddebcb557a48ac273db923": [
+        {
+            "commit_message": "clean up\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseQuote",
+            "method_name_pd": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[],int,int,org.simpleflatmapper.csv.parser.CellConsumer,int)",
+            "method_name_cc": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/UnescapeCellPreProcessor.java",
+            "previous_method_cc": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)",
+            "previous_method_pd": "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[],int,int,org.simpleflatmapper.csv.parser.CellConsumer,int)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/parser/UnescapeCellPreProcessor.java",
+            "previous_commit": "144fb4216c7692a24937d97d1cbf461556c77f02",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -1.818767101239337,
+                "p_value": 0.0,
+                "effect_size": 0.35158212520915255,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1214294,
+                    "after": 1179578
+                }
+            }
+        }
+    ],
+    "46f9e7e1f6fc464aa39b74927f4f338800ee25c0": [
+        {
+            "commit_message": "optimised parseInt and parseLong to work directly on char[]\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public int org.simpleflatmapper.csv.CsvRow.getInt(int)",
+            "method_name_cc": "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_method_cc": "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)",
+            "previous_method_pd": "public int org.simpleflatmapper.csv.CsvRow.getInt(int)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvRow.java",
+            "previous_commit": "61e3f299a6ca2e1f779b7a0c83ae7d4a8790aa41",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 2.6202953787517864,
+                "p_value": 0.0,
+                "effect_size": -0.26351924442087743,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 31279982,
+                    "after": 30164526
+                }
+            }
+        }
+    ],
+    "667fb81a7737c5d285019b6240d97eabb37005d6": [
+        {
+            "commit_message": "converter service on building chain ignore ISE\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "private java.util.List org.simpleflatmapper.converter.ConverterService.findConverterFactories(java.lang.reflect.Type,java.lang.reflect.Type,java.lang.Object[],java.util.Set)",
+            "method_name_cc": "private List<ScoredConverterFactory> org.simpleflatmapper.converter.ConverterService.findConverterFactories(Type inType, Type outType, Object[] params, Set<Type> loopDetector)",
+            "file": "sfm-converter/src/main/java/org/simpleflatmapper/converter/ConverterService.java",
+            "previous_method_cc": "private List<ScoredConverterFactory> org.simpleflatmapper.converter.ConverterService.findConverterFactories(Type inType, Type outType, Object[] params, Set<Type> loopDetector)",
+            "previous_method_pd": "private java.util.List org.simpleflatmapper.converter.ConverterService.findConverterFactories(java.lang.reflect.Type,java.lang.reflect.Type,java.lang.Object[],java.util.Set)",
+            "previous_file": "sfm-converter/src/main/java/org/simpleflatmapper/converter/ConverterService.java",
+            "previous_commit": "12921bd91f3894dd2767e9692d41b877624b3c65",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.305933566022197,
+                "p_value": 0.00042761565718082555,
+                "effect_size": 0.055933300364953954,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2607,
+                    "after": 2683
+                }
+            }
+        }
+    ],
+    "23109fae129db2cbdb0f8315d7fa9449a8ecd238": [
+        {
+            "commit_message": "remove sout, fix java7\n",
+            "benchmark": "org.simpleflatmapper.csv.DiscriminatorBenchmark.testNoDiscriminator",
+            "method_name_pd": "public static java.lang.reflect.Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(java.lang.String,java.util.List,java.lang.reflect.Type) throws java.lang.ClassNotFoundException",
+            "method_name_cc": "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)",
+            "file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/AsmUtils.java",
+            "previous_method_cc": "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)",
+            "previous_method_pd": "public static java.lang.reflect.Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(java.lang.String,java.util.List,java.lang.reflect.Type) throws java.lang.ClassNotFoundException",
+            "previous_file": "sfm-reflect/src/main/java/org/simpleflatmapper/reflect/asm/AsmUtils.java",
+            "previous_commit": "edc1a84529c1904a64f592f5b799b8d8daf30b10",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -71.53968386719076,
+                "p_value": 0.0,
+                "effect_size": 0.9672279696163726,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 60929,
+                    "after": 56722
+                }
+            }
+        }
+    ],
+    "07b98a2ba4d6d928d35082032a18e1d23d72b973": [
+        {
+            "commit_message": " #508 csv parser work without asm\n",
+            "benchmark": "org.simpleflatmapper.csv.CsvParserBenchmark.parseTrim",
+            "method_name_pd": "protected final org.simpleflatmapper.csv.parser.AbstractCharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer)",
+            "method_name_cc": "protected final AbstractCharConsumer charConsumer(CharBuffer charBuffer)",
+            "file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_method_cc": "protected final AbstractCharConsumer charConsumer(CharBuffer charBuffer)",
+            "previous_method_pd": "protected final org.simpleflatmapper.csv.parser.AbstractCharConsumer org.simpleflatmapper.csv.CsvParser$AbstractDSL.charConsumer(org.simpleflatmapper.csv.parser.CharBuffer)",
+            "previous_file": "sfm-csv/src/main/java/org/simpleflatmapper/csv/CsvParser.java",
+            "previous_commit": "eabb3d10fe5a8f5e84b9ea1653db743506e1254e",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.23992322456813817,
+                "p_value": 0.0,
+                "effect_size": 0.027992456272742047,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2067668,
+                    "after": 2166954
+                }
+            }
+        }
+    ]
+}

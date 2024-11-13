@@ -1,0 +1,2960 @@
+{
+    "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": {
+        "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ad76bb512b510a37f6a55fdea32f8f3dd3355771": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": {
+        "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+        "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "32e62f68d9e277850807f2b538bcab5971f11a55": {
+        "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+        "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4708c3a25fc335e7076f4118ab8fbb43f183debe": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1": {
+        "final long org.jctools.queues.MpscArrayQueueConsumerIndexField<E>.lpConsumerIndex()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.BaseSpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public final long org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields<E>.lvConsumerIndex()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.BaseLinkedQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public final long org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields<E>.lvProducerIndex()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "c048acc8169650fc624c2e9c94ffcce822c11c22": {
+        "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(Node node)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "2ac1a663b3a378225ea1269e25b6383751954c4c": {
+        "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.headLazySet(long v)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.tailLazySet(long v)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "13d8ba9a5196b1a8dd867dc992a83edc05d868fb": {
+        "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4a8a432f4d27f3235c54b44b2ee58572612199ee": {
+        "public boolean org.jctools.sets.OpenHashSet<E>.contains(Object needle)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public boolean org.jctools.sets.OpenHashSet<E>.remove(Object val)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5279f373a120d3d504d4ea5fad8e1547132b5e96": {
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type, String generatedName, Class<? extends ProxyChannelRingBuffer> backendType)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d60366d5cdef9091f7dfacb6713fb7fc2b153516": {
+        "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9def52951541af24751964bb0cb4f611f50bdca4": {
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(MethodVisitor methodVisitor)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(MethodVisitor methodVisitor, int wOffset, int type)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(MethodVisitor methodVisitor)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(MethodVisitor methodVisitor)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "f92da3d6919dae506b1e4737c587c6ed03e2eb61": {
+        "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy, Class<? extends ProxyChannelRingBuffer> backendType)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "78965db4efd244c428cea9825527f4ab8101ab00": {
+        "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "33c7774322d46a8d62ba755e2afe645617f03b15": {
+        "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8f268d5293dc4701f9637ff393bdce110b2c0603": {
+        "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "3c94b8ccb78e040b9c2a33a04f7dee01286d1658": {
+        "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long offset, long delta)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "efcb60756ad75ef70e8e9ae603cf7c65cd46423d": {
+        "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9a44566e30a4b1a81a7dde714bcf9c3fff0abb48": {
+        "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long offset)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long offset)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6f88bf5c20ab527d304544cc48fde0b280449b59": {
+        "public int org.jctools.queues.MpscUnboundedXaddArrayQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ec0f7b287bcc0609fd4201584fa495e92ccc6dc6": {
+        "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0": {
+        "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6acb2a1011cacc4b8b379069888cc7395aa68a80": {
+        "private Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(Node node)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "534d30d8681c96c5fa9c30de3b4d27776d561d95": {
+        "protected static long org.jctools.queues.ConcurrentCircularArrayQueue<E>.calcElementOffset(long index, long mask)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "f60f4691427c3e5b9516d9bafeff743a1aa98311": {
+        "public PropertyFinder<T> org.simpleflatmapper.map.impl.DiscriminatorClassMeta<T>.newPropertyFinder()": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "a859c90db4d0fc1ed9a9ec2129c2252209c49c19": {
+        "private static <S1, S2> void org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder.invokeBiFunction(String targetType, InjectionPoint injectionPoint, String classType, Class<?> s1, Class<?> s2, MethodVisitor mv, Consumer<MethodVisitor> consumer, boolean ignoreNullValues)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "b66d0cf74b9089ec0a1085798a216390475d5d61": {
+        "protected final AbstractCharConsumer charConsumer(CharBuffer charBuffer)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "46f9e7e1f6fc464aa39b74927f4f338800ee25c0": {
+        "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "e8f193ab649604163023e8fcdb636d00c7fdfa4f": {
+        "public void org.simpleflatmapper.csv.CsvRow.addValue(int offset, int length)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "7d4720e003869abf570176bcfa44f94e192f8cb2": {
+        "public String org.simpleflatmapper.csv.CsvRow.getString(int i)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "70ea034333aa47e5e54753f764ae4d493f13e03d": {
+        "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "25d1ed5f7ea750a1d3715ff2f4e483df2778f9d2": {
+        "private static <S> KeyDefinition<S, ?> org.simpleflatmapper.map.context.impl.BreakDetector<S>.emptyToNull(KeyDefinition<S, ?> definition)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "85faa6c792c80ce8a490cb5851934fcc3e04b029": {
+        "protected final CharConsumer charConsumer(CharBuffer charBuffer)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "edc1a84529c1904a64f592f5b799b8d8daf30b10": {
+        "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "223ed1b2a7424b4fce1d14e7b85875987bcf04ae": {
+        "public final <E> PropertyMeta<T, E> org.simpleflatmapper.reflect.meta.PropertyFinder<T>.findProperty(PropertyNameMatcher propertyNameMatcher, Object[] properties, TypeAffinityScorer typeAffinity, PropertyFinderProbe propertyFinderProbe, Predicate<PropertyMeta<?, ?>> propertyFilter)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "bf528f4936c328f2faf621d32003eda5d54b7122": {
+        "private CsvCharConsumer charConsumer(CharBuffer charBuffer)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void org.simpleflatmapper.csv.CsvReader.skipRows(int n)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "678d17d1deee12a08de8c46663b732ad6136827c": {
+        "private int org.simpleflatmapper.reflect.meta.DefaultPropertyNameMatcher.lastNonIgnorableChar(String column)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "a094ff893a37c7e3a22c30cff33bb2914e235b0a": {
+        "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "9cc6457461a748daa9463727a296b66eea7d7cbc": {
+        "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "protected final CharConsumer charConsumer(CharBuffer charBuffer)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "34f7275e3ea42c74f313bc106933f9f05b4ee209": {
+        "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.partialMatch(int score, int pScore)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ec6da2693c82cfcb006c228a2fd98f533a8deb8e": {
+        "public AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(TextFormat textFormat, CharBuffer charBuffer, CellPreProcessor cellTransformer, boolean specialisedCharConsumer)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6ef7785ddd157a014f79af09ab8baa750a8e0049": {
+        "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(String property)": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "45b89c0dc83c4c3535997f408e0bf66061371b2d": {
+        "public static void org.simpleflatmapper.reflect.asm.AsmUtils.invoke(MethodVisitor mv, Type target, Method method)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d16172d3af3931dc7bb93cfcdf533998c1f81913": {
+        "private <T> ClassMeta<T> org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(Type target)": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "61e3f299a6ca2e1f779b7a0c83ae7d4a8790aa41": {
+        "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[] chars, int from, int len)": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "44c4a25d2add7e3a225ed7167532c1818a2ba3d2": {
+        "protected final CharConsumer charConsumer(CharBuffer charBuffer)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "0e437f4397bbb103b89c2609765a503077974109": {
+        "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "4f6f6dcde20752e3aae98396559743bc05ca747b": {
+        "protected CellPreProcessor getUnescapeCellTransformer(TextFormat textFormat)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4829d56226146977e23dde18fd8440edb30d5c5f": {
+        "public void org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder<T>.manualMatch(PropertyMeta<?, ?> prop)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private <T> ClassMeta<T> org.simpleflatmapper.map.impl.DiscriminatorReflectionService.newClassMeta(Type target)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8f6e1fe45273747e755fda6ac82894eaa997c35a": {
+        "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "b22864d744d2660adbddebcb557a48ac273db923": {
+        "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "3b561d28c2bb15b76d2a82d27ebd108ac408b523": {
+        "public List<InstantiatorDefinition> org.simpleflatmapper.reflect.DefaultReflectionService.extractInstantiator(Type target, Member extraInstantiator)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "b64fc34917bad69e44e965a4b79112bb9d7885ff": {
+        "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "775dfbc8cedbd250c02078d8a8038e5cb7b404f1": {
+        "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "b94104b54b303c70b139aab0667286c0b0b73537": {
+        "public void org.simpleflatmapper.map.context.impl.BreakDetector<S>.setValue(Object value)": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        },
+        "public Object org.simpleflatmapper.map.context.impl.BreakDetector<S>.getValue()": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "3b8283c9af486788c993eccb822fdfb02f37bb91": {
+        "public AbstractColumnDefinitionProvider<CsvColumnKey> org.simpleflatmapper.csv.impl.CsvColumnDefinitionProviderImpl.copy()": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "23109fae129db2cbdb0f8315d7fa9449a8ecd238": {
+        "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4d222c86c0b794c97f2627afccbb29ad53e22d41": {
+        "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "2597f94790d1a4b3891b9b2f3ef0c237071f521e": {
+        "private static Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(Class<?> reflectionFactoryClass)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "107892d9b8809a5623278e387dec352d0504bc39": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "dcceccbad32b5e43eaaccf40f6d105877cf94bd7": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d8e5d780280fe8b1046e6f36793e25fe0744b3b4": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "1b19484ed5a32f3561273ac7ae8eb14ec4a2924b": {
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private void co.elastic.apm.agent.impl.transaction.TraceContext.onMutation()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d35aeac22221768252bb8d0947caa50e0b4ced40": {
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public Transaction co.elastic.apm.impl.transaction.Transaction.start(ElasticApmTracer tracer, long startTimestampNanos, boolean sampled)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "349007704a068ab7ca69b4763b7d49bda9410d7c": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.activate(TraceContextHolder<?> holder)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.transaction.Span.doEnd(long epochMicros)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(Span span)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(TraceContextHolder<?> holder)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(Transaction transaction)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.writeEvent(ReportingEvent event)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endTransaction(Transaction transaction)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.transaction.Span.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "25eb0dd6c72ea07d7491894d90ef506dda3b98a9": {
+        "public void co.elastic.apm.impl.ElasticApmTracer.recycle(Transaction transaction)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.impl.ElasticApmTracer.endTransaction(Transaction transaction)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "d3837306ede300d13928053571e9b2b54eca1cb5": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "50bb1f1632da89c5d4f029e7d7b48a8d4d45c5ef": {
+        "public void co.elastic.apm.agent.metrics.MetricSet.resetState()": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(Transaction transaction)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.onEvent(ReportingEvent event, long sequence, boolean endOfBatch)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "private void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.dispatchEvent(ReportingEvent event, long sequence, boolean endOfBatch)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public ReportingEventType co.elastic.apm.agent.report.ReportingEvent.getType()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "private void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.handleIntakeEvent(ReportingEvent event, long sequence, boolean endOfBatch)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5f2af8f264142c1e5c16698d547499b78529f656": {
+        "public Transaction co.elastic.apm.impl.transaction.Transaction.withResult(String result)": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.impl.transaction.Transaction.end()": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "6da304319315cfe4041a8ec5b50cc6f976965eab": {
+        "public DynamicType.Builder<?> co.elastic.apm.agent.bci.ElasticApmAgent.transform(DynamicType.Builder<?> builder, TypeDescription typeDescription, ClassLoader classLoader, JavaModule module, ProtectionDomain protectionDomain)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "fab4f04c4a19e53849858e3591689f5145067869": {
+        "public void co.elastic.apm.agent.impl.context.Destination.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public boolean co.elastic.apm.agent.impl.context.Destination.hasContent()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "b2ac746be4d90fe9a7191c9d46f2fb0c364b3799": {
+        "private Span co.elastic.apm.agent.impl.transaction.Span.start(long epochMicros, boolean dropped)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "01a5c8cebbf5b06f91e1ebbc614bab6c9d710f11": {
+        "public void co.elastic.apm.agent.impl.transaction.Transaction.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d27c984f2c916fedd2f89c63c7b53befa3a5714b": {
+        "private void co.elastic.apm.agent.servlet.ServletTransactionHelper.fillRequest(Request request, String protocol, String method, boolean secure, String scheme, String serverName, int serverPort, String requestURI, String queryString, String remoteAddr)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "0b0082d92686c5ba4fedbc4a251bcefbdbf6b8f8": {
+        "public static <HttpServletRequest, HttpServletResponse, ServletContext, ServletContextEvent, FilterConfig, ServletConfig> Object co.elastic.apm.agent.servlet.ServletApiAdvice.onServletEnter( ServletApiAdapter<HttpServletRequest, HttpServletResponse, ServletContext, ServletContextEvent, FilterConfig, ServletConfig> adapter, Object servletRequest)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "a837d43aa3fa189c19ae5dadaa4e0e28ae52d97a": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeSpanType(Span span)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "83167b5d3f319e719539e902e755f0046e9120e7": {
+        "public void co.elastic.apm.report.serialize.JacksonPayloadSerializer.serializePayload(BufferedSink sink, Payload payload)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "3cb729ca42e8c3407be34337a4642634f5b6cbfa": {
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(TraceContextHolder<?> holder)": {
+            "categories": [
+                "Refactoring & Code Cleanup",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "69656a0a6185c659a0235f96c43bf7b30979a28e": {
+        "public Span co.elastic.apm.impl.ElasticApmTracer.startSpan()": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private void co.elastic.apm.servlet.ApmFilter.fillTransaction(Transaction transaction, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.impl.transaction.Span.end()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "379519e288c037b158ed1850a7d10f19502d06f8": {
+        "protected HttpURLConnection co.elastic.apm.agent.report.AbstractIntakeApiHandler.startRequest(String endpoint)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "4f732e9eadb0469472d5ee6a40a7a4c157b57b52": {
+        "private void co.elastic.apm.agent.impl.transaction.Transaction.trackMetrics()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "0f29fac55461cd1b0386046f03edb08c007832ba": {
+        "public void co.elastic.apm.agent.impl.transaction.TraceState.copyFrom(TraceState other)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.transaction.TraceState.set(double rate, String headerValue)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "36ff1f18db1c89ec9c2bb185035fa162ce6de9f9": {
+        "public static <K, V> WeakConcurrentMap<K, V> co.elastic.apm.agent.sdk.weakmap.WeakMapSupplier.createMap()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.agent.impl.context.Url.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public Url co.elastic.apm.agent.impl.context.Url.withPort(int port)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "cc4d8a16a7aa85099bcb8b14da0cffb3e37b9d63": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endTransaction(Transaction transaction)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "0eac0af814b8686772c6d4e2212f4231524fa8ce": {
+        "public ElasticContext<?> co.elastic.apm.agent.impl.ElasticApmTracer.currentContext()": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.activate(ElasticContext<?> context)": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "public Transaction co.elastic.apm.agent.impl.ElasticApmTracer.currentTransaction()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(ElasticContext<?> context)": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "20be1b23d4d0b7eea18b3c032f8b79bf64a68047": {
+        "void co.elastic.apm.impl.ElasticApmTracer.recycle(Transaction transaction)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.impl.Span.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "67515c23566ce4885914321e4271adcfa64c7f96": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeSpanContext(SpanContext context, TraceContext traceContext)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.agent.impl.context.AbstractContext.resetState()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "e306c60534394cc25dedfc0caf5fbff028eea74a": {
+        "public void co.elastic.apm.agent.impl.transaction.SpanImpl.resetState()": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "f98c48dfe9e647cf11efa5fe7dda531a28967dcf": {
+        "private void co.elastic.apm.agent.impl.ElasticApmTracer.reportSpan(Span span)": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "protected void co.elastic.apm.agent.impl.transaction.Span.afterEnd()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "516f8fb1f8a21e85f38c0333d033011a025f8ed3": {
+        "public boolean co.elastic.apm.agent.impl.context.Message.hasContent()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "7d7f828160f3d63e215321d92182d92e85ddd050": {
+        "public void co.elastic.apm.impl.Transaction.recycle()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.impl.Transaction.resetState()": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "006b2fbbf328dfe6ae9680d12d16efc96b2c0b1b": {
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "707982892b4f5511abdcea0c0f7214942ad09204": {
+        "public Transaction co.elastic.apm.impl.transaction.Transaction.start(ElasticApmTracer tracer, long startTimestampNanos, Sampler sampler)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.jdbc.ApmJdbcEventListener.onAfterAnyExecute(StatementInformation statementInformation, long timeElapsedNanos, SQLException e)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.impl.ElasticApmTracer.endSpan(Span span, boolean releaseActiveSpan)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void co.elastic.apm.impl.ElasticApmTracer.endTransaction(Transaction transaction, boolean releaseActiveTransaction)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "public Span co.elastic.apm.impl.ElasticApmTracer.startSpan()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "664e4ff4ef9e61b090bad2e3c8e05cb36452b9cd": {
+        "public void co.elastic.apm.agent.impl.transaction.Faas.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public boolean co.elastic.apm.agent.impl.transaction.Faas.hasContent()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "475b8838387f5f885446e2506bb58e94d62a4f03": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeStackTraceElement(StackTraceElement stacktrace)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "83c698172889d68b49e25da02e9f4693ae8e367e": {
+        "public Transaction co.elastic.apm.agent.impl.ElasticApmTracer.currentTransaction()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8e44cb51b862572d08ff6c0e44e5fbb5529fd159": {
+        "public void co.elastic.apm.agent.jdbc.signature.Scanner.setQuery(String sql)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "3e4005dff3c41326dd180bc181dd6821c3c3ff51": {
+        "public void co.elastic.apm.agent.impl.transaction.Transaction.resetState()": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "public boolean co.elastic.apm.agent.configuration.ServerlessConfiguration.runsOnAwsLambda()": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "e1935ebc4da40cbc4ee4d3b51a671a78b48b3a77": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "protected void co.elastic.apm.agent.impl.transaction.Span.afterEnd()": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private void co.elastic.apm.agent.impl.transaction.Transaction.onTransactionStart(boolean startedAsChild, long epochMicros, Sampler sampler)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "00d0da029c941b1d99e151558499069bf58194e5": {
+        "public void co.elastic.apm.agent.impl.transaction.Span.decrementReferences()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ffd15c75971676cbf1c4987ae969acc986ca31c2": {
+        "public Object co.elastic.apm.impl.context.Request.getBody()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "8aaaf6a87be4dd5c172004f309e0f8ddd1f8474a": {
+        "private HttpURLConnection co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.startRequest()": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "a4f6c1ce8951f53b5b6306ab43b9de4f13cf5ca8": {
+        "public void co.elastic.apm.agent.slf4j.Slf4JMdcActivationListener.beforeActivate(TraceContextHolder<?> context)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.asChildOf(TraceContext parent)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9448f60455b00ebdf682e24bd5e9759b3e05e734": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.writeLongStringValue(String value)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "6ea644050e2e4dece55bc382eaf43543aa8df504": {
+        "public void co.elastic.apm.impl.error.ErrorCapture.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "86184c5440887feb03d69dda41e30dfc4ce78e34": {
+        "public AbstractSpan<?> co.elastic.apm.agent.impl.ElasticApmTracer.getActive()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "boolean co.elastic.apm.agent.impl.ActiveStack.activate(ElasticContext<?> context, List<ActivationListener> activationListeners)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "cb870b072523f83c56669ba8f4cabc3b48f79c44": {
+        "public ElementMatcher.Junction<ClassLoader> co.elastic.apm.agent.servlet.AbstractServletInstrumentation.getClassLoaderMatcher()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public Collection<String> co.elastic.apm.agent.servlet.AsyncInstrumentation.getInstrumentationGroupNames()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "27fbdd1335444fee178531002d8f028f65e15d46": {
+        "public void co.elastic.apm.impl.context.Url.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c852d0a2c1992332bba2a28b013c6042e3bdab7b": {
+        "public void co.elastic.apm.agent.collections.WeakMapCleaner.run()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "076a95b384924e11f5a071ab8654672747b75c66": {
+        "protected void co.elastic.apm.agent.impl.transaction.Transaction.afterEnd()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "a8096b32ec575fb1389b8e1061f9fb77a9fd7d7d": {
+        "public void co.elastic.apm.impl.Transaction.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "0a3bafa72c7050d1ca2c5da7999c6ddcd24f7a5a": {
+        "public void co.elastic.apm.report.ApmServerReporter.report(Transaction transaction)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "3365a0e47948355de849535f70120a23115ecacf": {
+        "public void co.elastic.apm.agent.impl.transaction.Span.beforeEnd(long epochMicros)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeSpanContext(SpanContext context, TraceContext traceContext)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public boolean co.elastic.apm.agent.impl.context.Destination.hasContent()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "8237da90b6692ec179d6ce07d6a602e1cc4e8172": {
+        "public void co.elastic.apm.impl.ElasticApmTracer.releaseActiveTransaction()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4ab2b6f358eb040df407d830831d9d03a07eef67": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(TraceContextHolder<?> holder)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "189c941c2abad8a40ff9bae91441f9318892053d": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeStackTraceElement(StackTraceElement stacktrace)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "043cc50449d53854a9debc427740b420883bec20": {
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "491da9dd92f172b907589465e6c833ec08adeba7": {
+        "public boolean co.elastic.apm.agent.impl.context.Message.hasContent()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "30f5f3d1ca7deaadd8e156bea032b4da03e2e2c5": {
+        "public void co.elastic.apm.agent.impl.transaction.Id.writeAsHex(JsonWriter jw)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5a9bfac1e2698b06bb985b0358270022690788eb": {
+        "private void co.elastic.apm.report.serialize.DslJsonSerializer.serializeSpanContext(SpanContext context)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "408489e89964222557fa907be57df1efab8ccfbd": {
+        "public void co.elastic.apm.agent.slf4j.Slf4JMdcActivationListener.afterDeactivate(TraceContextHolder<?> deactivatedContext)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "7803818b6d671e7cedd7d88a1590f88b3b3fc96c": {
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "796c694d3f9270b5e163d762f39ab7ba50b2df90": {
+        "public void co.elastic.apm.agent.profiler.ProfilingActivationListener.beforeActivate(AbstractSpan<?> context)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "044b06835157ed6a80071adad3d2dd23cbefe108": {
+        "protected void co.elastic.apm.agent.impl.transaction.Transaction.afterEnd()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "965c6567186b91c179314570270ebff62a46f130": {
+        "public boolean co.elastic.apm.agent.logging.Log4j2LoggerBridge.isTraceEnabled()": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "f615e69241c9106b5a93b83d65974d8a7e5f0d85": {
+        "private static List<String> co.elastic.apm.agent.bci.IndyBootstrap.getClassNamesFromBundledPlugin(String adviceClassName, ClassLoader adviceClassLoader)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "81494bdfc7e98bc53d12abd98184f6784ab01524": {
+        "public void co.elastic.apm.impl.context.Url.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "246bbd27c7697b639e8830fa25f7f9007f4e1de9": {
+        "public void co.elastic.apm.impl.transaction.Span.resetState()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "e80063112045ed95263a3c00e0a18d671e04d833": {
+        "private boolean org.eclipse.jetty.util.ConcurrentPool<P>.terminate(Entry<P> entry)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public Entry<P> org.eclipse.jetty.util.ConcurrentPool<P>.reserve()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Concurrency/Parallelism"
+            ],
+            "functionality_changed": true
+        },
+        "protected void org.eclipse.jetty.util.compression.CompressionPool<T>.doStart()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private boolean org.eclipse.jetty.util.ConcurrentPool<P>.release(Entry<P> entry)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "aa09b8b7bda7ec28544cac509da6d8b084c8edd7": {
+        "private ByteBufferPool.Bucket org.eclipse.jetty.io.ArrayByteBufferPool.bucketFor(int capacity, boolean direct)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "7e88b8234cd30552fe4f7cd6d6eaeef4d7459517": {
+        "private void org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(boolean wasPending)": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private boolean org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(Runnable task, SubStrategy subStrategy)": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "b7a7a53a18bd60c132d0a3e050bfa1125b924d42": {
+        "public boolean org.eclipse.jetty.util.component.AbstractLifeCycle.isRunning()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "public static void invokeNonBlocking(Runnable task)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public static void org.eclipse.jetty.util.log.Log.initialized()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6f0623f48d7524fe615f9025b51d8353922c6db5": {
+        "private void org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.execute(Runnable task)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Concurrency/Parallelism"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "089e51f0bc02b63490e1038e0ec23d1d43adf9a8": {
+        "public final void org.eclipse.jetty.util.component.AbstractLifeCycle.start()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "protected void org.eclipse.jetty.server.AcceptRateLimit.doStop()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private boolean org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(boolean nonBlocking)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "51fc906d378a04aeeb5a4a881069b2a466ed4e08": {
+        "private void org.eclipse.jetty.util.thread.ReservedThreadExecutor.startReservedThread()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public boolean org.eclipse.jetty.util.thread.ReservedThreadExecutor.tryExecute(Runnable task)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        },
+        "public static String org.eclipse.jetty.http.DateGenerator.formatDate(long date)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "551710e9bbb1a917dea38c4bcfde3ab08455a1e6": {
+        "void org.eclipse.jetty.server.internal.HttpConnection.releaseRequestBuffer()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "1726c8778c0c1a2040d5aafeb265c59ad927e599": {
+        "public Runnable org.eclipse.jetty.util.thread.SerializedInvoker.offer(Runnable task)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "692c01750057ca2cd1a54aaf6b07700364c1a62b": {
+        "public void org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produce()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "aa21612006985bf3acf5ad7a0a6703830b4218c0": {
+        "public void org.eclipse.jetty.util.thread.AutoLock.close()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "474136de57eb8b6dfc851e85e81ad944430ecf46": {
+        "public Entry<P> org.eclipse.jetty.util.ConcurrentPool<P>.reserve()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6201d3b1072b05d9e683377f5741f467a44089fa": {
+        "public boolean org.eclipse.jetty.util.thread.ReservedThreadExecutor.tryExecute(Runnable task)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "57604d09558443dd80346f7bc63980481c2dea3c": {
+        "private Runnable org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produceTask()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "private void org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(boolean wasPending)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "af6ecfebfe077fed014125989a87864bd83b02dd": {
+        "protected void org.eclipse.jetty.util.compression.CompressionPool<T>.doStart()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Concurrency/Parallelism"
+            ],
+            "functionality_changed": false
+        },
+        "public void org.eclipse.jetty.util.compression.CompressionPool<T>.doStop()": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9a14de058da715f2d08c2bff58b548a39045ea85": {
+        "public static String org.eclipse.jetty.util.HostPort.normalizeHost(String host)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "95059356c988db708ef167bc0b1ddf443d837be3": {
+        "public HttpFields org.eclipse.jetty.http.MutableHttpFields.asImmutable()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "80f912a121855749dc42c7866b03ed75f75cc9aa": {
+        "private void org.eclipse.jetty.http.HttpParser.quickStart(ByteBuffer buffer)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "77ad0189ba10e7080646cc4fcf2b04b15d6004bc": {
+        "protected void org.eclipse.jetty.util.thread.QueuedThreadPool.startThread()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private void org.eclipse.jetty.util.thread.QueuedThreadPool.joinThreads(long stopByNanos)": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "de13ceff3619777dc1213a4dddc40d79ceedb3dd": {
+        "public Entry org.eclipse.jetty.util.Pool<T>.reserve()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "0ac34ff2b8a73d6d2f99bd8751ffac34791d78f3": {
+        "public boolean org.eclipse.jetty.client.HttpClient.isDefaultPort(String scheme, int port)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public boolean is(String s)": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "8d69fc41a7f8c26fcd90fc0f7300f81eaede06be": {
+        "public final void org.eclipse.jetty.util.component.AbstractLifeCycle.start()": {
+            "categories": [
+                "Concurrency/Parallelism"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5a24f900644f62b5746bbd05cfef7418df7bfbf0": {
+        "public void org.eclipse.jetty.util.compression.CompressionPool<T>.doStop()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "fc9cbda52f6173df73ffe28db8e4cbef0e711932": {
+        "public static boolean org.eclipse.jetty.util.StringUtil.isNotBlank(String str)": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "public static boolean org.eclipse.jetty.util.StringUtil.isBlank(String str)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c19921e60f5a28d100d22620c177ba4582182987": {
+        "public void org.eclipse.jetty.io.ArrayByteBufferPool.release(ByteBuffer buffer)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public ByteBuffer org.eclipse.jetty.io.ArrayByteBufferPool.acquire(int size, boolean direct)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "377d0d131eb45d6a443175c13f1b65eb8efcd952": {
+        "protected int org.eclipse.jetty.io.ArrayByteBufferPool.bucketFor(int capacity)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "b2203115e2ea2e488f982cf281e4e32c11db335f": {
+        "private SubStrategy org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.selectSubStrategy(Runnable task, boolean nonBlocking)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c55363d43f6a2e0c9e20c16c7a7e3f427df877df": {
+        "public String org.eclipse.jetty.util.DateCache.format(Date inDate)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d02406c1640ba47647775946f59893f9a2453116": {
+        "public Entry<P> org.eclipse.jetty.util.ConcurrentPool<P>.acquire()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "750584bc853d9ba300f8d3fb2433158f0968ebbf": {
+        "private long org.eclipse.jetty.io.ArrayByteBufferPool.getMemory(boolean direct)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        },
+        "private void org.eclipse.jetty.io.ArrayByteBufferPool.reserve(RetainedBucket bucket, RetainableByteBuffer buffer)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "d744d097dec29ee0285c1ec17acf11f6484b38cc": {
+        "public boolean org.eclipse.jetty.util.component.ContainerLifeCycle.addBean(Object o, Managed managed)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "278ec1be69ab5380d53dd93e6b4579b5be49900c": {
+        "protected void org.eclipse.jetty.util.thread.QueuedThreadPool.startThread()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "7275bf15a9094c85df484aa88fce44a3a1bb3de5": {
+        "public static void org.eclipse.jetty.util.IO.close(Closeable closeable)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c25e1aa7ff0df0ca26662dab19ed3fe78de4adb8": {
+        "private boolean org.eclipse.jetty.http.HttpParser.quickStartRequestLine(ByteBuffer buffer)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "e2690cc420ccc47a8c42be2a7e46634cb4449970": {
+        "public int org.eclipse.jetty.util.Pool<T>.getMaxMultiplex()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "51120b1f0bda1a61e60079a8ab4d73d50700aa51": {
+        "private static int org.eclipse.jetty.util.AbstractTrie<V>.requiredCapacity(List<String> keys, int offset, int length, int index)": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "4e439264df0523fb6efce5f8f6c7c7fa74addd07": {
+        "public void io.netty.handler.codec.MessageToMessageEncoder<I>.write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise)": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8f7ef1cabb5442584e56a9e79bcb9696bc572a94": {
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.read()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.flush()": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private void io.netty.channel.AbstractChannelHandlerContext.write(Object msg, boolean flush, ChannelPromise promise)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.fireChannelReadComplete()": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "8280252d0e80e5e844215234732a7cda4862e260": {
+        "static int io.netty.channel.epoll.Native.epollWait(FileDescriptor epollFd, EpollEventArray events, boolean immediatePoll)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "private boolean io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventArray events, int ready)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private int io.netty.channel.epoll.EpollEventLoop.epollWait()": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "f17bfd0f64189d91302fbdd15103788bf9eabaa2": {
+        "public final int io.netty.channel.unix.FileDescriptor.readAddress(long address, int pos, int limit)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "ab8c4f22c6bc11b7082fddfc6890fd02f30d5524": {
+        "static int io.netty.handler.codec.http2.HpackStaticTable.getIndexInsensitive(CharSequence name, CharSequence value)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private void io.netty.handler.codec.http2.HpackEncoder.encodeLiteral(ByteBuf out, CharSequence name, CharSequence value, IndexType indexType, int nameIndex)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "948d4a9ec58aef092c84eb76e672fd06e81cc13c": {
+        "public ChannelHandlerContext io.netty.channel.AbstractChannelHandlerContext.flush()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9563d2bd61cabc4558246a6b6986d8769e32829e": {
+        "private long io.netty.buffer.PoolChunk<T>.allocateSubpage(int sizeIdx)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "2af769f6dc76e3aad88a52c345689d739a9130a2": {
+        "public static int io.netty.buffer.ByteBufUtil.writeUtf8(ByteBuf buf, CharSequence seq)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "005a6a4e7b3632d6719640eac621690d3268fd1f": {
+        "static long io.netty.channel.epoll.Native.epollWait(FileDescriptor epollFd, EpollEventArray events, FileDescriptor timerFd, int timeoutSec, int timeoutNs, long millisThreshold)": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "deea51e6093db224878b33eaefc3321f2a0d4a07": {
+        "private void io.netty.handler.codec.http2.HpackEncoder.encodeStringLiteral(ByteBuf out, CharSequence string)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "c0674cff29ae017e9fd144b6728ac0521874e883": {
+        "private static int io.netty.handler.codec.http.multipart.HttpPostMultipartRequestDecoder.findDelimiter(ByteBuf undecodedChunk, String delimiter, int offset)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "e21caf11d94d96657d140914ff65a62cf24e81ee": {
+        "private void io.netty.buffer.PooledByteBuf<T>.init0(PoolChunk<T> chunk, ByteBuffer nioBuffer, long handle, int offset, int length, int maxLength, PoolThreadCache cache)": {
+            "categories": [
+                "Refactoring & Code Cleanup",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9ec938c78faf75230d24c0a30c037a66f8ccee90": {
+        "public void io.netty.channel.ChannelOutboundBuffer.progress(long amount)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "c41d46111dc37aaf9c8ee7aec162d87221df1d70": {
+        "private long io.netty.buffer.PoolChunk<T>.allocateRun(int runSize)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "private long io.netty.buffer.PoolChunk<T>.collapsePast(long handle)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "private int io.netty.buffer.PoolChunk<T>.runFirstBestFit(int pageIdx)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "b409f8e7fa70da80d9801737e051c860aa979f13": {
+        "void io.netty.channel.epoll.EpollEventLoop.modify(AbstractEpollChannel ch)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "fe4a59011addc5a556ec882b5795db241f6c77c9": {
+        "private boolean io.netty.util.concurrent.DefaultPromise<V>.setValue0(Object objResult)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ef1f637b0f9979d98dbb0f3e5281d7272012c76d": {
+        "public void io.netty.channel.embedded.EmbeddedChannel.runPendingTasks()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "128403b492d8490d9fc770b7a2dad669433b2790": {
+        "final void io.netty.buffer.AbstractByteBuf.ensureWritable0(int minWritableBytes)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "afb475dabd5ca9eaa94ccf07f0ecd8431db008ba": {
+        "private boolean io.netty.buffer.AdaptivePoolingAllocator.offerToQueue(Chunk buffer)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private boolean io.netty.buffer.AdaptivePoolingAllocator.tryExpandMagazines(int currentLength)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "9993e07356ea39edf14008789d3377d2bb62ea92": {
+        "public static HttpMethod io.netty.handler.codec.http.HttpMethod.valueOf(String name)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9ed41db1d731720c3c1019d3db379beaf7603409": {
+        "public final boolean io.netty.channel.epoll.EpollRecvByteAllocatorHandle.continueReading()": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "23c19b2b764d49437c49653121c8185130814033": {
+        "public static int io.netty.util.internal.PlatformDependent.getInt(byte[] data, int index)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "public static long io.netty.util.internal.PlatformDependent.getLong(byte[] data, int index)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "b82258b72fdf4c733d9c4a641c6b8725b036485f": {
+        "private void io.netty.util.ResourceLeakDetector<T>.reportLeak()": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "42926695861c012ee6153e6bc8c4846bd4b923e9": {
+        "protected final int io.netty.channel.epoll.AbstractEpollChannel.doReadBytes(ByteBuf byteBuf)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "protected final int io.netty.channel.epoll.AbstractEpollChannel.doWriteBytes(ChannelOutboundBuffer in, ByteBuf buf)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ee7027288ec5f3d688be3cee45a521a5786ccf71": {
+        "private static ByteBuf io.netty.handler.codec.ByteToMessageDecoder.expandCumulation(ByteBufAllocator alloc, ByteBuf oldCumulation, ByteBuf in)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "737519314153f9146eaf532cd4e945a621cf3fa5": {
+        "public void io.netty.util.concurrent.PromiseCombiner.finish(Promise<Void> aggregatePromise)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "feb804dca8579c93ff3224564aafcf5938bb2c52": {
+        "static long io.netty.util.concurrent.ScheduledFutureTask<V>.deadlineToDelayNanos(long deadlineNanos)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "caca5e5a1e19a26a3cff3560b79e7ade18398540": {
+        "void io.netty.buffer.PoolChunk<T>.initBufWithSubpage(PooledByteBuf<T> buf, ByteBuffer nioBuffer, long handle, int reqCapacity, PoolThreadCache threadCache)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "void io.netty.buffer.PoolChunk<T>.free(long handle, int normCapacity, ByteBuffer nioBuffer)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "boolean io.netty.buffer.PoolChunk<T>.allocate(PooledByteBuf<T> buf, int reqCapacity, int sizeIdx, PoolThreadCache cache)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "768a8250353d5ab3664f5382b57d0c19a256d68d": {
+        "public Throwable io.netty.util.concurrent.DefaultPromise<V>.cause()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c8c45cfa4c9632578a772ebcad1edfae431b1011": {
+        "public int io.netty.buffer.AbstractByteBufAllocator.calculateNewCapacity(int minNewCapacity, int maxCapacity)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ab8b8ae81b24439ff94085f3f4bd060c172c1712": {
+        "public SslContext io.netty.handler.ssl.SslContextBuilder.build()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "1039f69e53792ff58f3f61f5ab6f7b89ef1fecf0": {
+        "private void io.netty.buffer.CompositeByteBuf.consolidateIfNeeded()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6e0d22335d3419d91ae60cb40811a0faa25bed50": {
+        "private int io.netty.buffer.CompositeByteBuf.addComponent0(boolean increaseWriterIndex, int cIndex, ByteBuf buffer)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "2b7de5a50bb3feb1a351dcd1ce1da9474ae256ae": {
+        "private boolean io.netty.buffer.AdaptivePoolingAllocator.tryExpandMagazines(int currentLength)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "f6ea528e0e6fe7d77970a0af18f09820b630fe14": {
+        "public int io.netty.buffer.SizeClasses.size2SizeIdx(int size)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "f5185ed73b347ba684eef2348622030b5cbe99cf": {
+        "private static boolean io.netty.channel.AbstractChannelHandlerContext.safeExecute(EventExecutor executor, Runnable runnable, ChannelPromise promise, Object msg, boolean lazy)": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "dd7d03a0ebc0231bbae0b9f25dbabff77204ffc8": {
+        "public void zipkin.internal.Buffer.write(byte[] v)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "public void zipkin.internal.Buffer.write(int v)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "3373bcd2934342755790770b674b41b286675558": {
+        "static int zipkin2.internal.V2SpanWriter.endpointSizeInBytes(Endpoint value)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public zipkin2.Endpoint zipkin.Endpoint.toV2()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public static zipkin.Endpoint zipkin.internal.V2SpanConverter.toEndpoint(Endpoint input)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5b6efdc70a83fca6e9b09bf8df5a3a861caebf9e": {
+        "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public Boolean zipkin2.Span.shared()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public Boolean zipkin2.Span.debug()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "120d1a73f2abfb62fd9a41a72cf30ee7e3a5b388": {
+        "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "void zipkin2.internal.Buffer.writeLongLe(long v)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "void zipkin2.internal.Buffer.writeVarint(int v)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "int zipkin2.internal.Buffer.readVarint32()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "long zipkin2.internal.Buffer.readLongLe()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "long zipkin2.internal.Buffer.readVarint64()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "static void zipkin2.internal.V2SpanWriter.writeEndpoint(Endpoint value, Buffer b, boolean writeEmptyServiceName)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "09a441f4b4e8734058e8d023367f826b845e9dea": {
+        "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "public static boolean zipkin2.internal.Proto3Codec.readList(byte[] bytes, Collection<Span> out)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ab2ab63028af3585d606dd7f244eec5e08aebb49": {
+        "static int zipkin.internal.Buffer.utf8SizeInBytes(String string)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "2755987aa31699bf02d9e6e0366453092ba4a944": {
+        "public int zipkin.Endpoint.hashCode()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "36d6e560c7ff3880661e5b158e86ecbe72d67eb0": {
+        "Buffer zipkin.internal.Buffer.writeInt(int v)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        },
+        "static void zipkin.internal.ThriftCodec.writeListBegin(Buffer buffer, int size)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "Buffer zipkin.internal.Buffer.writeAscii(String v)": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "byte[] zipkin.internal.Buffer.toByteArray()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "Buffer zipkin.internal.Buffer.writeLong(long v)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        },
+        "Buffer zipkin.internal.Buffer.writeShort(int v)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "f259817bd1d676d425c0d29ff826ca13d4653519": {
+        "public static <T> boolean zipkin2.internal.JsonCodec.readList(JsonReaderAdapter<T> adapter, byte[] bytes, Collection<T> out)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "95ace09d004c92c225ffcf70782ea42a5825760a": {
+        "final String zipkin2.internal.ReadBuffer.readBytesAsHex(int length)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "static List<Span> doDecodeList(SpanBytesDecoder decoder, ByteBuffer spans)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "static String zipkin2.Endpoint.writeIpV6(byte[] ipv6)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "final String zipkin2.internal.ReadBuffer.readUtf8(int length)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public static Span zipkin2.internal.ThriftCodec.readOne(ReadBuffer buffer)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        },
+        "static String zipkin2.Span.padLeft(String id, int desiredLength)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "0ccb2d696a7aa54230473231f713941b07e26881": {
+        "public List<DependencyLink> decodeList(byte[] links)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        },
+        "static int zipkin2.internal.ThriftCodec.readListLength(ReadBuffer buffer)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        },
+        "static boolean zipkin2.server.internal.throttle.ThrottledCall.await(CountDownLatch latch)": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "0487c3191c1b56f9aad42541c6537d7fa09f62ff": {
+        "protected void zipkin2.server.internal.throttle.ThrottledCall.doEnqueue(Callback<Void> callback)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8a33b2a6d3ce87cf3a43785b991bc6456965735b": {
+        "static Span.Builder zipkin.internal.V2SpanConverter.newBuilder(zipkin.Span source)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "bb338c8af88d13e8a971e333028b3748b83f7100": {
+        "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "public void zipkin2.internal.V1SpanWriter.write(Span value, Buffer b)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "56e2eaeec05fe3abb71fa574739ad7b18b514fbf": {
+        "public Buffer zipkin2.internal.Buffer.writeAscii(String v)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "feb151f2f9e5a1a10020c8c7eb5c6129112663da": {
+        "public static int zipkin2.internal.JsonEscaper.jsonEscapedSizeInBytes(CharSequence v)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "static int zipkin2.internal.Proto3Fields.sizeOfLengthDelimitedField(int sizeInBytes)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public boolean decodeList(byte[] links, Collection<DependencyLink> out)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "7e6cfdda11fd6990aadcff542141efa080eae340": {
+        "public static Builder zipkin2.DependencyLink.newBuilder()": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "a485efed550f838070b8ce6eef1230dfed9b27da": {
+        "public static Span zipkin.internal.Span2Converter.toSpan(Span2 in)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8a6ae58ff09c7b227b8cdf403b0950e5b137edf2": {
+        "public int zipkin2.internal.V2SpanWriter.sizeInBytes(Span value)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public void zipkin2.internal.V2SpanWriter.write(Span value, Buffer b)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "79d55eac1c6cb4c237cfa852d7b0e5571dd38e18": {
+        "public int zipkin2.internal.V1SpanWriter.sizeInBytes(Span value)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "a17f26022cdc953f01ff53b5e220dbe55109a62b": {
+        "public int zipkin.Annotation.compareTo(Annotation that)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public byte[] zipkin.internal.JsonCodec.writeSpan(Span value)": {
+            "categories": [
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d985e932aa8b700b82c39859adbc4b3ef2c0ca1b": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8ed14443fd0ce5a4982c125f3b6719972f88cad8": {
+        "public void zipkin.server.internal.ActuateCollectorMetrics.incrementBytes(int quantity)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "dc9de8ba44ef6dd65efa5e298e175bae06e12cbf": {
+        "public static int zipkin.internal.Buffer.jsonEscapedSizeInBytes(String v)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "fc8cc19a78d01c472b4b79412f378a43f179b772": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8423afc56c0bdc4bfca15ec43b5add974c383405": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "2fe5142e08b4d74bd38da4ff5837e969777755da": {
+        "public static zipkin.Span zipkin.internal.V2SpanConverter.toSpan(Span in)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d3a83b8883e336b9566b73e03d9cfdceceaa4530": {
+        "Buffer zipkin.internal.Buffer.writeJsonEscaped(String v)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "862e3f3d6979cd66fa75f83e4def1e3bbcf1f3b0": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "74afc316587aef9cb318296654340fb3461b1391": {
+        "public static ReadBuffer zipkin2.internal.ReadBuffer.wrapUnsafe(ByteBuffer buffer)": {
+            "categories": [
+                "API/Library Call Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "eee7db16c3ba859f218e3d1f6d1345654bd4f794": {
+        "public synchronized boolean zipkin.CountingTraceIdSampler.isSampled(long traceIdIgnored)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "806db7bbbac08f7fa9e63ebcf7bf02f08f805c0d": {
+        "Buffer zipkin.internal.Buffer.writeAscii(String v)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c93e153a407a2df7eaeecff68c6e45eaafbfb683": {
+        "public HttpCall<Void> zipkin2.elasticsearch.internal.BulkCallBuilder.build()": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "37503bcc71edff0382b106a252308f341ba57a99": {
+        "public void io.prometheus.client.DoubleAdder.add(double x)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "966360b2735fb975a7110699efd4cb62284dfc0b": {
+        "private Labels io.prometheus.metrics.core.exemplars.ExemplarSampler.doSampleExemplar()": {
+            "categories": [
+                "API/Library Call Changes",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "95872fc77cd55f88de9ee377e07fbc4aa2410ff7": {
+        "public double io.prometheus.client.CKMSQuantiles.get(double q)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "fd9da3e7f756dc9c119108ebf6dbe88cda9a740c": {
+        "public double io.prometheus.client.CKMSQuantiles.get(double q)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "f9a117126157019af5248be6588dd442e3c6dd6a": {
+        "public double io.prometheus.client.CKMSQuantiles.get(double q)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "int io.prometheus.client.CKMSQuantiles.f(int r)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "fe42313813b96dc92cf61f94fcfb79a8157b88a4": {
+        "final boolean io.prometheus.client.Striped64.casBase(long cmp, long val)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "3568b2477c60dcde4d9380b666ad60a33d0f4208": {
+        "int io.prometheus.client.CKMSQuantiles.f(int r)": {
+            "categories": [
+                "Algorithmic Change",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    }
+}

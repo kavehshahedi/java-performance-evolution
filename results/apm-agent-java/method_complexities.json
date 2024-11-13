@@ -1,0 +1,341 @@
+{
+    "349007704a068ab7ca69b4763b7d49bda9410d7c": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endTransaction(Transaction transaction)": 4.2,
+        "public void co.elastic.apm.agent.impl.transaction.Span.doEnd(long epochMicros)": 8.9,
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(Transaction transaction)": 4.2,
+        "private void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.writeEvent(ReportingEvent event)": 8.6,
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.activate(TraceContextHolder<?> holder)": 4.2,
+        "public void co.elastic.apm.agent.impl.transaction.Span.resetState()": 4.2,
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(TraceContextHolder<?> holder)": 4.2,
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(Span span)": 4.2,
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": 4.2
+    },
+    "246bbd27c7697b639e8830fa25f7f9007f4e1de9": {
+        "public void co.elastic.apm.impl.transaction.Span.resetState()": 8.6
+    },
+    "5f2af8f264142c1e5c16698d547499b78529f656": {
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": 4.2,
+        "public void co.elastic.apm.impl.transaction.Transaction.end()": 8.9,
+        "public Transaction co.elastic.apm.impl.transaction.Transaction.withResult(String result)": 8.9
+    },
+    "707982892b4f5511abdcea0c0f7214942ad09204": {
+        "public void co.elastic.apm.jdbc.ApmJdbcEventListener.onAfterAnyExecute(StatementInformation statementInformation, long timeElapsedNanos, SQLException e)": 8.9,
+        "public Transaction co.elastic.apm.impl.transaction.Transaction.start(ElasticApmTracer tracer, long startTimestampNanos, Sampler sampler)": 2.0,
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startManualTransaction(Sampler sampler, long nanoTime)": 4.2,
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": 2.0,
+        "public void co.elastic.apm.jdbc.ApmJdbcEventListener.onBeforeAnyExecute(StatementInformation statementInformation)": 8.6,
+        "public void co.elastic.apm.impl.ElasticApmTracer.endSpan(Span span, boolean releaseActiveSpan)": 4.2,
+        "public Span co.elastic.apm.impl.ElasticApmTracer.startSpan()": 11.1,
+        "public void co.elastic.apm.impl.ElasticApmTracer.endTransaction(Transaction transaction, boolean releaseActiveTransaction)": 11.1
+    },
+    "36ff1f18db1c89ec9c2bb185035fa162ce6de9f9": {
+        "public void co.elastic.apm.agent.impl.context.Url.resetState()": 4.2,
+        "public Url co.elastic.apm.agent.impl.context.Url.withPort(int port)": 8.6,
+        "public static <K, V> WeakConcurrentMap<K, V> co.elastic.apm.agent.sdk.weakmap.WeakMapSupplier.createMap()": 4.2,
+        "public static void co.elastic.apm.agent.bci.ElasticApmAgent.validateAdvice(Class<?> adviceClass)": 31.2,
+        "public boolean co.elastic.apm.agent.impl.context.Url.hasContent()": 4.2
+    },
+    "8237da90b6692ec179d6ce07d6a602e1cc4e8172": {
+        "public void co.elastic.apm.impl.ElasticApmTracer.releaseActiveSpan()": 4.2,
+        "public void co.elastic.apm.impl.ElasticApmTracer.releaseActiveTransaction()": 4.2
+    },
+    "b2ac746be4d90fe9a7191c9d46f2fb0c364b3799": {
+        "private void co.elastic.apm.agent.impl.transaction.Transaction.onTransactionStart(boolean startedAsChild, long epochMicros, Sampler sampler)": 4.2,
+        "private Span co.elastic.apm.agent.impl.transaction.Span.start(long epochMicros, boolean dropped)": 4.2
+    },
+    "30f5f3d1ca7deaadd8e156bea032b4da03e2e2c5": {
+        "public void co.elastic.apm.agent.impl.transaction.Id.writeAsHex(JsonWriter jw)": 4.2
+    },
+    "043cc50449d53854a9debc427740b420883bec20": {
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": 4.2
+    },
+    "044b06835157ed6a80071adad3d2dd23cbefe108": {
+        "protected void co.elastic.apm.agent.impl.transaction.Transaction.afterEnd()": 11.1
+    },
+    "27fbdd1335444fee178531002d8f028f65e15d46": {
+        "public void co.elastic.apm.impl.context.Url.resetState()": 6.4
+    },
+    "50bb1f1632da89c5d4f029e7d7b48a8d4d45c5ef": {
+        "private void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.handleIntakeEvent(ReportingEvent event, long sequence, boolean endOfBatch)": 13.3,
+        "public void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.onEvent(ReportingEvent event, long sequence, boolean endOfBatch)": 11.1,
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(JsonWriter jsonWriter)": 4.2,
+        "public void co.elastic.apm.agent.metrics.MetricSet.resetState()": 2.0,
+        "private void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.dispatchEvent(ReportingEvent event, long sequence, boolean endOfBatch)": 13.3,
+        "private void co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.writeEvent(ReportingEvent event)": 6.4,
+        "private static boolean co.elastic.apm.agent.report.serialize.MetricRegistrySerializer.serialize(MetricSet metricSet, long epochMicros, String serviceName, String serviceVersion, StringBuilder replaceBuilder, JsonWriter jw)": 2.0,
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(Span span)": 4.2,
+        "public void co.elastic.apm.agent.report.ApmServerReporter.report(Transaction transaction)": 4.2,
+        "public ReportingEventType co.elastic.apm.agent.report.ReportingEvent.getType()": 11.1
+    },
+    "25eb0dd6c72ea07d7491894d90ef506dda3b98a9": {
+        "public void co.elastic.apm.impl.ElasticApmTracer.recycle(Transaction transaction)": 13.3,
+        "public void co.elastic.apm.impl.ElasticApmTracer.endTransaction(Transaction transaction)": 13.6,
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": 21.7
+    },
+    "0a3bafa72c7050d1ca2c5da7999c6ddcd24f7a5a": {
+        "public void co.elastic.apm.report.ReportingEventHandler.onEvent(ReportingEvent event, long sequence, boolean endOfBatch)": 4.2,
+        "public void co.elastic.apm.report.ApmServerReporter.report(Transaction transaction)": 8.9
+    },
+    "475b8838387f5f885446e2506bb58e94d62a4f03": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeStackTraceElement(StackTraceElement stacktrace)": 4.2
+    },
+    "7803818b6d671e7cedd7d88a1590f88b3b3fc96c": {
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": 8.6,
+        "public void co.elastic.apm.impl.Span.resetState()": 2.0,
+        "public void co.elastic.apm.impl.Span.end()": 2.0
+    },
+    "a4f6c1ce8951f53b5b6306ab43b9de4f13cf5ca8": {
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.asChildOf(TraceContext parent)": 2.0,
+        "public void co.elastic.apm.agent.slf4j.Slf4JMdcActivationListener.beforeActivate(TraceContextHolder<?> context)": 10.1,
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.resetState()": 2.0
+    },
+    "d3837306ede300d13928053571e9b2b54eca1cb5": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": 4.2
+    },
+    "664e4ff4ef9e61b090bad2e3c8e05cb36452b9cd": {
+        "public void co.elastic.apm.agent.impl.transaction.Faas.resetState()": 6.4,
+        "public boolean co.elastic.apm.agent.impl.transaction.Faas.hasContent()": 4.2
+    },
+    "15b547a9f64f82e46a88684e9de111f72660d45a": {
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.resetState()": 2.0
+    },
+    "0eac0af814b8686772c6d4e2212f4231524fa8ce": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.activate(ElasticContext<?> context)": 26.8,
+        "public Transaction co.elastic.apm.agent.impl.ElasticApmTracer.currentTransaction()": 6.4,
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(ElasticContext<?> context)": 53.8,
+        "public ElasticContext<?> co.elastic.apm.agent.impl.ElasticApmTracer.currentContext()": 15.5
+    },
+    "5a9bfac1e2698b06bb985b0358270022690788eb": {
+        "private void co.elastic.apm.report.serialize.DslJsonSerializer.serializeSpanContext(SpanContext context)": 8.6
+    },
+    "6ea644050e2e4dece55bc382eaf43543aa8df504": {
+        "public void co.elastic.apm.impl.error.ErrorCapture.resetState()": 4.2,
+        "public Transaction co.elastic.apm.impl.transaction.Transaction.start(ElasticApmTracer tracer, long startTimestampNanos, Sampler sampler)": 4.2
+    },
+    "4f6fa704e8a7af913fe533806123e7b382c43225": {
+        "public void co.elastic.apm.report.ApmServerReporter.report(Transaction transaction)": 28.3
+    },
+    "e306c60534394cc25dedfc0caf5fbff028eea74a": {
+        "public void co.elastic.apm.agent.impl.transaction.SpanImpl.resetState()": 2.0,
+        "public void co.elastic.apm.agent.impl.transaction.SpanImpl.beforeEnd(long epochMicros)": 8.9
+    },
+    "86184c5440887feb03d69dda41e30dfc4ce78e34": {
+        "public ElasticContext<?> co.elastic.apm.agent.impl.ActiveStack.currentContext()": 13.3,
+        "boolean co.elastic.apm.agent.impl.ActiveStack.activate(ElasticContext<?> context, List<ActivationListener> activationListeners)": 4.2,
+        "public static <HttpServletRequest, HttpServletResponse, ServletContext, ServletContextEvent, FilterConfig, ServletConfig> Object co.elastic.apm.agent.servlet.ServletApiAdvice.onServletEnter( ServletApiAdapter<HttpServletRequest, HttpServletResponse, ServletContext, ServletContextEvent, FilterConfig, ServletConfig> adapter, Object servletRequest)": 15.2,
+        "public AbstractSpan<?> co.elastic.apm.agent.impl.ElasticApmTracer.getActive()": 10.8,
+        "boolean co.elastic.apm.agent.impl.ActiveStack.deactivate(ElasticContext<?> context, List<ActivationListener> activationListeners, boolean assertionsEnabled)": 24.6
+    },
+    "8aaaf6a87be4dd5c172004f309e0f8ddd1f8474a": {
+        "public void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeMetaDataNdJson(MetaData metaData)": 19.6,
+        "private HttpURLConnection co.elastic.apm.agent.report.IntakeV2ReportingEventHandler.startRequest()": 44.0
+    },
+    "259ebf52dac8ea5136e54b6aecb246b3ffe8fe2c": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.waitForMetadata()": 7.9
+    },
+    "d838bb49dcb27dfed1bee5de127bcc026768d3dd": {
+        "void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeLabels(AbstractContext context)": 4.2
+    },
+    "1b19484ed5a32f3561273ac7ae8eb14ec4a2924b": {
+        "private void co.elastic.apm.agent.impl.transaction.TraceContext.onMutation()": 4.2,
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.resetState()": 4.2,
+        "public static ChildContextCreator<String> co.elastic.apm.agent.impl.transaction.TraceContext.fromTraceparentHeader()": 4.2
+    },
+    "ffd15c75971676cbf1c4987ae969acc986ca31c2": {
+        "public Object co.elastic.apm.impl.context.Request.getBody()": 8.9
+    },
+    "8e44cb51b862572d08ff6c0e44e5fbb5529fd159": {
+        "public Token co.elastic.apm.agent.jdbc.signature.Scanner.scan()": 4.2,
+        "public void co.elastic.apm.agent.jdbc.signature.Scanner.setQuery(String sql)": 2.0,
+        "public void co.elastic.apm.agent.jdbc.signature.SignatureParser.querySignature(String query, StringBuilder signature, boolean preparedStatement)": 41.1
+    },
+    "516f8fb1f8a21e85f38c0333d033011a025f8ed3": {
+        "public void co.elastic.apm.agent.impl.context.Message.resetState()": 2.0,
+        "public boolean co.elastic.apm.agent.impl.context.Message.hasContent()": 4.2
+    },
+    "f9da8c2ad7df10a4e051533921bd3906fab8c998": {
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": 6.4
+    },
+    "f615e69241c9106b5a93b83d65974d8a7e5f0d85": {
+        "private static List<String> co.elastic.apm.agent.bci.IndyBootstrap.getClassNamesFromBundledPlugin(String adviceClassName, ClassLoader adviceClassLoader)": 17.7,
+        "private static void co.elastic.apm.agent.bci.ElasticApmAgent.validateAdviceReturnAndParameterTypes(MethodDescription.InDefinedShape advice, String adviceClass)": 4.2
+    },
+    "0f29fac55461cd1b0386046f03edb08c007832ba": {
+        "public void co.elastic.apm.agent.impl.transaction.TraceState.set(double rate, String headerValue)": 2.0,
+        "public void co.elastic.apm.agent.impl.transaction.TraceState.copyFrom(TraceState other)": 2.0
+    },
+    "d35aeac22221768252bb8d0947caa50e0b4ced40": {
+        "public Transaction co.elastic.apm.impl.transaction.Transaction.start(ElasticApmTracer tracer, long startTimestampNanos, boolean sampled)": 7.9,
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": 4.2
+    },
+    "e1935ebc4da40cbc4ee4d3b51a671a78b48b3a77": {
+        "private void co.elastic.apm.agent.impl.transaction.Transaction.onTransactionStart(boolean startedAsChild, long epochMicros, Sampler sampler)": 6.4,
+        "public void co.elastic.apm.agent.impl.transaction.Span.resetState()": 2.0,
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": 55.1,
+        "protected void co.elastic.apm.agent.impl.transaction.Span.afterEnd()": 107.1
+    },
+    "3e4005dff3c41326dd180bc181dd6821c3c3ff51": {
+        "public boolean co.elastic.apm.agent.configuration.ServerlessConfiguration.runsOnAwsLambda()": 7.9,
+        "public void co.elastic.apm.agent.impl.transaction.Transaction.resetState()": 2.0
+    },
+    "006b2fbbf328dfe6ae9680d12d16efc96b2c0b1b": {
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": 4.2
+    },
+    "3cb729ca42e8c3407be34337a4642634f5b6cbfa": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endSpan(Span span)": 4.2,
+        "public void co.elastic.apm.agent.impl.transaction.TraceContext.resetState()": 2.0,
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(TraceContextHolder<?> holder)": 8.9
+    },
+    "f98c48dfe9e647cf11efa5fe7dda531a28967dcf": {
+        "protected void co.elastic.apm.agent.impl.transaction.Span.afterEnd()": 18.0,
+        "private void co.elastic.apm.agent.impl.ElasticApmTracer.reportSpan(Span span)": 19.5
+    },
+    "67515c23566ce4885914321e4271adcfa64c7f96": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeSpanContext(SpanContext context, TraceContext traceContext)": 2.0,
+        "public void co.elastic.apm.agent.impl.context.AbstractContext.resetState()": 2.0
+    },
+    "3365a0e47948355de849535f70120a23115ecacf": {
+        "public boolean co.elastic.apm.agent.impl.context.Destination.hasContent()": 4.2,
+        "public void co.elastic.apm.agent.impl.transaction.Span.beforeEnd(long epochMicros)": 74.9,
+        "public void co.elastic.apm.agent.impl.context.Destination.resetState()": 2.0,
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeSpanContext(SpanContext context, TraceContext traceContext)": 8.6
+    },
+    "9448f60455b00ebdf682e24bd5e9759b3e05e734": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.writeLongStringValue(String value)": 22.4,
+        "void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeLabels(AbstractContext context)": 4.2
+    },
+    "0b0082d92686c5ba4fedbc4a251bcefbdbf6b8f8": {
+        "public static <HttpServletRequest, HttpServletResponse, ServletContext, ServletContextEvent, FilterConfig, ServletConfig> Object co.elastic.apm.agent.servlet.ServletApiAdvice.onServletEnter( ServletApiAdapter<HttpServletRequest, HttpServletResponse, ServletContext, ServletContextEvent, FilterConfig, ServletConfig> adapter, Object servletRequest)": 4.2,
+        "public void co.elastic.apm.agent.profiler.ProfilingActivationListener.afterDeactivate(AbstractSpanImpl<?> deactivatedContext)": 8.6,
+        "public void co.elastic.apm.agent.profiler.ProfilingActivationListener.beforeActivate(AbstractSpanImpl<?> context)": 8.6
+    },
+    "20be1b23d4d0b7eea18b3c032f8b79bf64a68047": {
+        "void co.elastic.apm.impl.ElasticApmTracer.recycle(Transaction transaction)": 8.9,
+        "public void co.elastic.apm.impl.Span.resetState()": 8.9
+    },
+    "189c941c2abad8a40ff9bae91441f9318892053d": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeStackTraceElement(StackTraceElement stacktrace)": 2.0
+    },
+    "fab4f04c4a19e53849858e3591689f5145067869": {
+        "public boolean co.elastic.apm.agent.impl.context.Destination.hasContent()": 4.2,
+        "public void co.elastic.apm.agent.impl.context.Destination.resetState()": 2.0
+    },
+    "a837d43aa3fa189c19ae5dadaa4e0e28ae52d97a": {
+        "private void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeSpanType(Span span)": 13.0
+    },
+    "c852d0a2c1992332bba2a28b013c6042e3bdab7b": {
+        "public void co.elastic.apm.agent.collections.WeakMapCleaner.run()": 4.2
+    },
+    "796c694d3f9270b5e163d762f39ab7ba50b2df90": {
+        "public void co.elastic.apm.agent.profiler.ProfilingActivationListener.beforeActivate(AbstractSpan<?> context)": 4.2,
+        "public void co.elastic.apm.agent.profiler.ProfilingActivationListener.afterDeactivate(AbstractSpan<?> deactivatedContext)": 4.2
+    },
+    "1f1857b02849bedb248c813848ed59bcdca40d3c": {
+        "public void co.elastic.apm.agent.impl.transaction.Transaction.resetState()": 2.0
+    },
+    "69656a0a6185c659a0235f96c43bf7b30979a28e": {
+        "private void co.elastic.apm.servlet.ApmFilter.fillTransaction(Transaction transaction, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)": 4.2,
+        "public Transaction co.elastic.apm.impl.ElasticApmTracer.startTransaction()": 24.6,
+        "public Span co.elastic.apm.impl.ElasticApmTracer.startSpan()": 24.6,
+        "public void co.elastic.apm.impl.transaction.Span.end()": 4.2
+    },
+    "81494bdfc7e98bc53d12abd98184f6784ab01524": {
+        "public void co.elastic.apm.impl.context.Url.resetState()": 4.2
+    },
+    "cc4d8a16a7aa85099bcb8b14da0cffb3e37b9d63": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.endTransaction(Transaction transaction)": 6.4
+    },
+    "770334bb483deee968cab554836ef7d30a23886d": {
+        "public void co.elastic.apm.agent.impl.transaction.Transaction.resetState()": 2.0
+    },
+    "45857cea69a82ac97d5f1bee266f58fbedddb43e": {
+        "public void co.elastic.apm.agent.slf4j.Slf4JMdcActivationListener.afterDeactivate()": 13.0,
+        "public void co.elastic.apm.agent.slf4j.Slf4JMdcActivationListener.beforeActivate(TraceContextHolder<?> context)": 8.6
+    },
+    "cf3d0fcf83f180d5466ac4b32fa117b0e826f763": {
+        "public void co.elastic.apm.agent.impl.context.HttpImpl.resetState()": 2.0
+    },
+    "00d0da029c941b1d99e151558499069bf58194e5": {
+        "public void co.elastic.apm.agent.impl.transaction.Span.decrementReferences()": 12.6
+    },
+    "965c6567186b91c179314570270ebff62a46f130": {
+        "public boolean co.elastic.apm.agent.logging.Log4j2LoggerBridge.isInfoEnabled()": 4.2,
+        "public boolean co.elastic.apm.agent.logging.Log4j2LoggerBridge.isDebugEnabled()": 4.2,
+        "public boolean co.elastic.apm.agent.logging.Log4j2LoggerBridge.isTraceEnabled()": 4.2
+    },
+    "a8096b32ec575fb1389b8e1061f9fb77a9fd7d7d": {
+        "public Transaction co.elastic.apm.impl.Transaction.start(ElasticApmTracer tracer, long startTimestampNanos)": 6.4,
+        "public void co.elastic.apm.impl.Transaction.resetState()": 12.6
+    },
+    "3a2163e17f50f57a6f59041a451488f36cdeb844": {
+        "public Transaction co.elastic.apm.agent.impl.ElasticApmTracer.currentTransaction()": 4.2,
+        "boolean co.elastic.apm.agent.impl.ActiveStack.activate(ElasticContext<?> context, List<ActivationListener> activationListeners)": 4.2
+    },
+    "e060ca730692db0af81d29c025a3535867c7681c": {
+        "public synchronized void co.elastic.apm.agent.report.serialize.DslJsonSerializer.blockUntilReady()": 32.8
+    },
+    "6da304319315cfe4041a8ec5b50cc6f976965eab": {
+        "public DynamicType.Builder<?> co.elastic.apm.agent.bci.ElasticApmAgent.transform(DynamicType.Builder<?> builder, TypeDescription typeDescription, ClassLoader classLoader, JavaModule module, ProtectionDomain protectionDomain)": 13.3
+    },
+    "491da9dd92f172b907589465e6c833ec08adeba7": {
+        "public boolean co.elastic.apm.agent.impl.context.Message.hasContent()": 4.2,
+        "public void co.elastic.apm.agent.impl.context.Message.resetState()": 4.2
+    },
+    "fbb5d684ee8567f405aaf2305ad04c4a02cfdf06": {
+        "public void co.elastic.apm.agent.impl.context.BodyCaptureImpl.resetState()": 2.0
+    },
+    "408489e89964222557fa907be57df1efab8ccfbd": {
+        "public void co.elastic.apm.agent.slf4j.Slf4JMdcActivationListener.afterDeactivate(TraceContextHolder<?> deactivatedContext)": 4.2,
+        "public void co.elastic.apm.agent.slf4j.Slf4JMdcActivationListener.beforeActivate(TraceContextHolder<?> context)": 4.2
+    },
+    "01a5c8cebbf5b06f91e1ebbc614bab6c9d710f11": {
+        "public void co.elastic.apm.agent.impl.transaction.Transaction.resetState()": 4.2
+    },
+    "f47ca26bad8a3550bd7cd131ac9048a28e808b22": {
+        "public void co.elastic.apm.agent.report.serialize.DslJsonSerializer.serializeMetaDataNdJson(MetaData metaData)": 2.0
+    },
+    "6580ae662e43e64baa84f2e7592181d31ffa8351": {
+        "public ElasticContext<?> co.elastic.apm.agent.impl.ActiveStack.currentContext()": 4.2
+    },
+    "7d7f828160f3d63e215321d92182d92e85ddd050": {
+        "public void co.elastic.apm.impl.Transaction.recycle()": 11.1,
+        "public void co.elastic.apm.impl.Transaction.resetState()": 2.0
+    },
+    "4ab2b6f358eb040df407d830831d9d03a07eef67": {
+        "public void co.elastic.apm.agent.impl.ElasticApmTracer.deactivate(TraceContextHolder<?> holder)": 8.9
+    },
+    "076a95b384924e11f5a071ab8654672747b75c66": {
+        "protected void co.elastic.apm.agent.impl.transaction.Transaction.afterEnd()": 11.1
+    },
+    "cb870b072523f83c56669ba8f4cabc3b48f79c44": {
+        "public Collection<String> co.elastic.apm.agent.servlet.AsyncInstrumentation.getInstrumentationGroupNames()": 4.2,
+        "public ElementMatcher.Junction<ClassLoader> co.elastic.apm.agent.servlet.AbstractServletInstrumentation.getClassLoaderMatcher()": 4.2
+    },
+    "57d0dbd903fb22b2f288c8faf468e5d9e027f4d8": {
+        "public void co.elastic.apm.agent.collections.WeakMapCleaner.run()": 4.2
+    },
+    "4976576c591e3699dfc271ca7a1ede9d463060aa": {
+        "protected void co.elastic.apm.agent.impl.transaction.Span.afterEnd()": 11.1
+    },
+    "d38fd8f8c022c5d7074870911d3c758eaf7af8a6": {
+        "public void co.elastic.apm.impl.transaction.Transaction.resetState()": 2.0
+    },
+    "83167b5d3f319e719539e902e755f0046e9120e7": {
+        "public void co.elastic.apm.report.serialize.JacksonPayloadSerializer.serializePayload(BufferedSink sink, Payload payload)": 8.9
+    },
+    "86ff506c6a98471d7ffe108faa2bbbde4e611570": {
+        "public void co.elastic.apm.impl.transaction.Dropped.resetState()": 4.2
+    },
+    "d27c984f2c916fedd2f89c63c7b53befa3a5714b": {
+        "private void co.elastic.apm.agent.servlet.ServletTransactionHelper.fillRequest(Request request, String protocol, String method, boolean secure, String scheme, String serverName, int serverPort, String requestURI, String queryString, String remoteAddr)": 4.2
+    },
+    "4f732e9eadb0469472d5ee6a40a7a4c157b57b52": {
+        "private void co.elastic.apm.agent.impl.transaction.Transaction.trackMetrics()": 21.1
+    },
+    "83c698172889d68b49e25da02e9f4693ae8e367e": {
+        "public Transaction co.elastic.apm.agent.impl.ElasticApmTracer.currentTransaction()": 17.7
+    },
+    "379519e288c037b158ed1850a7d10f19502d06f8": {
+        "protected HttpURLConnection co.elastic.apm.agent.report.AbstractIntakeApiHandler.startRequest(String endpoint)": 101.3
+    }
+}

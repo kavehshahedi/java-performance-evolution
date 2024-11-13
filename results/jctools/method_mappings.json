@@ -1,0 +1,1330 @@
+{
+    "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1": [
+        {
+            "commit_message": "Fix up visibility and fix #209\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.SpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "method_name_cc": "public int org.jctools.queues.BaseLinkedQueue<E>.drain(Consumer<E> c, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseLinkedQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.BaseLinkedQueue<E>.drain(Consumer<E> c, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.SpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseLinkedQueue.java",
+            "previous_commit": "84dbbbaa3bb95d04efe23921a6898d5feb1d3c17",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -6.515362792710487,
+                "p_value": 1.1836494184415067e-128,
+                "effect_size": 0.0940228068256234,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 30754,
+                    "after": 76756
+                }
+            }
+        },
+        {
+            "commit_message": "Fix up visibility and fix #209\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.BaseSpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseSpscLinkedArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.BaseSpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseSpscLinkedArrayQueue.java",
+            "previous_commit": "84dbbbaa3bb95d04efe23921a6898d5feb1d3c17",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 45.61937760792964,
+                "p_value": 7.52169974470901e-176,
+                "effect_size": -0.5249890594065588,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2099,
+                    "after": 1793
+                }
+            }
+        },
+        {
+            "commit_message": "Fix up visibility and fix #209\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lpConsumerIndex()",
+            "method_name_cc": "final long org.jctools.queues.MpscArrayQueueConsumerIndexField<E>.lpConsumerIndex()",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_method_cc": "protected final long org.jctools.queues.MpscArrayQueueConsumerIndexField<E>.lpConsumerIndex()",
+            "previous_method_pd": "protected final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lpConsumerIndex()",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_commit": "84dbbbaa3bb95d04efe23921a6898d5feb1d3c17",
+            "performance_diff": -0.05264814262604145,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.024390243902439,
+                "p_value": 0.0,
+                "effect_size": -0.13041365886911546,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1867003,
+                    "after": 886243
+                }
+            }
+        },
+        {
+            "commit_message": "Fix up visibility and fix #209\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lvConsumerIndex()",
+            "method_name_cc": "public final long org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields<E>.lvConsumerIndex()",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_method_cc": "public final long org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields<E>.lvConsumerIndex()",
+            "previous_method_pd": "public final long org.jctools.queues.MpscArrayQueueConsumerIndexField.lvConsumerIndex()",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_commit": "84dbbbaa3bb95d04efe23921a6898d5feb1d3c17",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.660883932259397,
+                "p_value": 6.228073878236172e-23,
+                "effect_size": 0.022853987831787454,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 128868,
+                    "after": 119638
+                }
+            }
+        },
+        {
+            "commit_message": "Fix up visibility and fix #209\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public final long org.jctools.queues.SpmcArrayQueueProducerIndexField.lvProducerIndex()",
+            "method_name_cc": "public final long org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields<E>.lvProducerIndex()",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_method_cc": "public final long org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields<E>.lvProducerIndex()",
+            "previous_method_pd": "public final long org.jctools.queues.SpmcArrayQueueProducerIndexField.lvProducerIndex()",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_commit": "84dbbbaa3bb95d04efe23921a6898d5feb1d3c17",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -14.412630149388864,
+                "p_value": 0.0,
+                "effect_size": 0.2292903521584694,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 26272,
+                    "after": 22440
+                }
+            }
+        },
+        {
+            "commit_message": "Fix up visibility and fix #209\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.BaseSpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseSpscLinkedArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.BaseSpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseSpscLinkedArrayQueue.java",
+            "previous_commit": "84dbbbaa3bb95d04efe23921a6898d5feb1d3c17",
+            "performance_diff": 0.7728748706284324,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -96.0840664328768,
+                "p_value": 0.0,
+                "effect_size": 0.6116831592443897,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2099,
+                    "after": 181184
+                }
+            }
+        }
+    ],
+    "78965db4efd244c428cea9825527f4ab8101ab00": [
+        {
+            "commit_message": "Standardize on arg checking for `fill` methods + tests\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_commit": "d751cda56d66b23b89ff29d9eeb7e2b710bb29d3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -19.38073819233824,
+                "p_value": 0.0,
+                "effect_size": 0.5422033609445855,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 16381,
+                    "after": 19305
+                }
+            }
+        },
+        {
+            "commit_message": "Standardize on arg checking for `fill` methods + tests\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_commit": "d751cda56d66b23b89ff29d9eeb7e2b710bb29d3",
+            "performance_diff": 0.9850364653313425,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -99.70054746453003,
+                "p_value": 0.0,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 16381,
+                    "after": 1518134
+                }
+            }
+        },
+        {
+            "commit_message": "Standardize on arg checking for `fill` methods + tests\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.SpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_commit": "d751cda56d66b23b89ff29d9eeb7e2b710bb29d3",
+            "performance_diff": 0.31119506532952057,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -89.10928302859958,
+                "p_value": 0.0,
+                "effect_size": 0.40481790125247263,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 16381,
+                    "after": 28602
+                }
+            }
+        },
+        {
+            "commit_message": "Standardize on arg checking for `fill` methods + tests\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.SpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/BaseMpscLinkedArrayQueue.java",
+            "previous_commit": "d751cda56d66b23b89ff29d9eeb7e2b710bb29d3",
+            "performance_diff": 0.9726179741430916,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -99.11385094863216,
+                "p_value": 0.0,
+                "effect_size": 1.0,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 16381,
+                    "after": 1059326
+                }
+            }
+        }
+    ],
+    "4db7bd71c4a70093eeafc4545668a7d227d940d0": [
+        {
+            "commit_message": "Fix remove in all impls.\n\nAlso stop using Unsafe for plain implementations.",
+            "benchmark": "org.jctools.jmh.collections.SetOps.contains",
+            "method_name_pd": "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.contains(Object needle)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.contains(Object needle)",
+            "previous_method_pd": "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_commit": "615c6583174a1a9a8928b6ed0efa8f2e1a1b6798",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.6403940886699507,
+                "p_value": 0.0,
+                "effect_size": -0.08917587561768373,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2205162,
+                    "after": 2114326
+                }
+            }
+        },
+        {
+            "commit_message": "Fix remove in all impls.\n\nAlso stop using Unsafe for plain implementations.",
+            "benchmark": "org.jctools.jmh.collections.SetOps.remove",
+            "method_name_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)",
+            "previous_method_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_commit": "615c6583174a1a9a8928b6ed0efa8f2e1a1b6798",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.8880118401578688,
+                "p_value": 0.0,
+                "effect_size": -0.14212323771413635,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2282233,
+                    "after": 1296161
+                }
+            }
+        }
+    ],
+    "03df0a555ac7a7429c1a8f41294b079d0b4ac7c7": [
+        {
+            "commit_message": "Standardize set implementations.\n\nAlso split out containsSlowPath",
+            "benchmark": "org.jctools.jmh.collections.SetOps.remove",
+            "method_name_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)",
+            "previous_method_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_commit": "4374f149cf7aa96c83435a3922cc1637e1a06476",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.1948368241597662,
+                "p_value": 3.761893025793499e-43,
+                "effect_size": -0.00754176766616036,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2258453,
+                    "after": 2188714
+                }
+            }
+        }
+    ],
+    "9def52951541af24751964bb0cb4f611f50bdca4": [
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(org.objectweb.asm.MethodVisitor)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(MethodVisitor methodVisitor)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(MethodVisitor methodVisitor)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(org.objectweb.asm.MethodVisitor)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.5557979902816437,
+                "p_value": 0.4706733051928613,
+                "effect_size": 0.09090909090909091,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 42,
+                    "after": 44
+                }
+            }
+        },
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(org.objectweb.asm.MethodVisitor,int,int)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(MethodVisitor methodVisitor, int wOffset, int type)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(MethodVisitor methodVisitor, int wOffset, int type)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(org.objectweb.asm.MethodVisitor,int,int)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -0.28977959951619403,
+                "p_value": 0.8089959958058502,
+                "effect_size": 0.031007751937984496,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 43,
+                    "after": 42
+                }
+            }
+        },
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -44.82174512936603,
+                "p_value": 0.4423021793837333,
+                "effect_size": 0.09619450317124736,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 44,
+                    "after": 43
+                }
+            }
+        },
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(MethodVisitor methodVisitor)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(MethodVisitor methodVisitor)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -12.92116438518659,
+                "p_value": 0.16548950244348504,
+                "effect_size": 0.2867647058823529,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 17,
+                    "after": 16
+                }
+            }
+        },
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.putReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int,int)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.putReference(MethodVisitor methodVisitor, Class<?> parameterType, int localIndexOfArrayReferenceBaseIndex, int arrayReferenceBaseIndexDelta, int varOffset)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.putReference(MethodVisitor methodVisitor, Class<?> parameterType, int localIndexOfArrayReferenceBaseIndex, int arrayReferenceBaseIndexDelta, int varOffset)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.putReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int,int)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -13.454697422202289,
+                "p_value": 0.1622985013257089,
+                "effect_size": 0.19365079365079366,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 36,
+                    "after": 35
+                }
+            }
+        },
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.readRelease(org.objectweb.asm.MethodVisitor,int)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.readRelease(MethodVisitor methodVisitor, int wOffset)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.readRelease(MethodVisitor methodVisitor, int wOffset)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.readRelease(org.objectweb.asm.MethodVisitor,int)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 4.480205749977037,
+                "p_value": 0.9900020257581433,
+                "effect_size": -0.002070393374741201,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 42,
+                    "after": 46
+                }
+            }
+        },
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(MethodVisitor methodVisitor)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(MethodVisitor methodVisitor)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(org.objectweb.asm.MethodVisitor)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 25.62599356922435,
+                "p_value": 0.11273129869145201,
+                "effect_size": -0.3333333333333333,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 15,
+                    "after": 17
+                }
+            }
+        },
+        {
+            "commit_message": "Refactoring, added LocalsHelper class to make it easier (hopefully) for\nthe reader to follow local variable accesses within the code generator.\n\nI've renamed some variable names to be consistent with DemoProxyResult.\ne.g. wOffset was used in implementProcess and getUnsafe but\nusage in DemoProxyResult calls that rOffset.\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.getReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.getReference(MethodVisitor methodVisitor, Class<?> parameterType, int localIndexOfArrayReferenceBaseIndex, int arrayReferenceBaseIndexDelta)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.getReference(MethodVisitor methodVisitor, Class<?> parameterType, int localIndexOfArrayReferenceBaseIndex, int arrayReferenceBaseIndexDelta)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.getReference(org.objectweb.asm.MethodVisitor,java.lang.Class,int,int)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 6.204885541894205,
+                "p_value": 0.6524979859079886,
+                "effect_size": -0.05998681608437706,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 37,
+                    "after": 41
+                }
+            }
+        }
+    ],
+    "dd8c925a8ffc867457912386f674dbb5d74c116b": [
+        {
+            "commit_message": "fix poll() to spec and size()",
+            "benchmark": "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt",
+            "method_name_pd": "protected final boolean org.jctools.queues.SpmcArrayQueueConsumerField.casHead(long,long)",
+            "method_name_cc": "protected final boolean org.jctools.queues.SpmcArrayQueueConsumerField<E>.casHead(long expect, long newValue)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/SpmcArrayQueue.java",
+            "previous_method_cc": "protected final boolean org.jctools.queues.SpmcArrayQueueHeadField<E>.casHead(long expect, long newValue)",
+            "previous_method_pd": "protected final boolean org.jctools.queues.SpmcArrayQueueConsumerField.casHead(long,long)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/SpmcArrayQueue.java",
+            "previous_commit": "6f47ab721f9698bddfbd595e67aa5d46cbe9fd8d",
+            "performance_diff": -0.0,
+            "significance": {}
+        },
+        {
+            "commit_message": "fix poll() to spec and size()",
+            "benchmark": "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt",
+            "method_name_pd": "protected final void org.jctools.queues.SpmcArrayQueueProducerField.soTail(long)",
+            "method_name_cc": "protected final void org.jctools.queues.SpmcArrayQueueProducerField<E>.soTail(long v)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/SpmcArrayQueue.java",
+            "previous_method_cc": "protected final void org.jctools.queues.SpmcArrayQueueTailField<E>.soTail(long v)",
+            "previous_method_pd": "protected final void org.jctools.queues.SpmcArrayQueueProducerField.soTail(long)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/SpmcArrayQueue.java",
+            "previous_commit": "6f47ab721f9698bddfbd595e67aa5d46cbe9fd8d",
+            "performance_diff": -0.0,
+            "significance": {}
+        }
+    ],
+    "4a8a432f4d27f3235c54b44b2ee58572612199ee": [
+        {
+            "commit_message": "Change compare order to improve inlined choice of eq",
+            "benchmark": "org.jctools.jmh.collections.SetOps.contains",
+            "method_name_pd": "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.OpenHashSet<E>.contains(Object needle)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/OpenHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.OpenHashSet<E>.contains(Object needle)",
+            "previous_method_pd": "public boolean org.jctools.sets.OpenHashSet.contains(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/OpenHashSet.java",
+            "previous_commit": "9183995d3d1619753b61bf676046b97bb20998aa",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 146.3804713804714,
+                "p_value": 0.0,
+                "effect_size": -0.31836797957709845,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 520487,
+                    "after": 467652
+                }
+            }
+        },
+        {
+            "commit_message": "Change compare order to improve inlined choice of eq",
+            "benchmark": "org.jctools.jmh.collections.SetOps.remove",
+            "method_name_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.OpenHashSet<E>.remove(Object val)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/OpenHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.OpenHashSet<E>.remove(Object val)",
+            "previous_method_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/OpenHashSet.java",
+            "previous_commit": "9183995d3d1619753b61bf676046b97bb20998aa",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -8.603707995365006,
+                "p_value": 0.0,
+                "effect_size": 0.20229722559757657,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 546230,
+                    "after": 517500
+                }
+            }
+        }
+    ],
+    "2ac1a663b3a378225ea1269e25b6383751954c4c": [
+        {
+            "commit_message": "Refactor fieldOffset calc to a new method and cleanup user code\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.unalignedPrimitiveArgsBaseline",
+            "method_name_pd": "public static long org.jctools.util.UnsafeDirectByteBuffer.getAddress(java.nio.ByteBuffer)",
+            "method_name_cc": "public static long org.jctools.util.UnsafeDirectByteBuffer.getAddress(ByteBuffer buffy)",
+            "file": "jctools-channels/src/main/java/org/jctools/util/UnsafeDirectByteBuffer.java",
+            "previous_method_cc": "public static long org.jctools.util.UnsafeDirectByteBuffer.getAddress(ByteBuffer buffy)",
+            "previous_method_pd": "public static long org.jctools.util.UnsafeDirectByteBuffer.getAddress(java.nio.ByteBuffer)",
+            "previous_file": "jctools-channels/src/main/java/org/jctools/util/UnsafeDirectByteBuffer.java",
+            "previous_commit": "9915e40cd21d45934a84f1ab88781edcdf4246a8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 17.08431641863433,
+                "p_value": 0.4735454594473829,
+                "effect_size": -0.06752077562326869,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 76,
+                    "after": 76
+                }
+            }
+        },
+        {
+            "commit_message": "Refactor fieldOffset calc to a new method and cleanup user code\n",
+            "benchmark": "org.jctools.jmh.collections.ConcurrentSetThroughput.rw",
+            "method_name_pd": "public int org.jctools.sets.SingleWriterHashSet.size()",
+            "method_name_cc": "public int org.jctools.sets.SingleWriterHashSet<E>.size()",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/SingleWriterHashSet.java",
+            "previous_method_cc": "public int org.jctools.sets.SingleWriterHashSet<E>.size()",
+            "previous_method_pd": "public int org.jctools.sets.SingleWriterHashSet.size()",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/SingleWriterHashSet.java",
+            "previous_commit": "9915e40cd21d45934a84f1ab88781edcdf4246a8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -5.076050954498753,
+                "p_value": 0.03426498000164327,
+                "effect_size": 0.07720648078671447,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 491,
+                    "after": 513
+                }
+            }
+        },
+        {
+            "commit_message": "Refactor fieldOffset calc to a new method and cleanup user code\n",
+            "benchmark": "org.jctools.jmh.collections.ConcurrentSetThroughput.rw",
+            "method_name_pd": "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.SingleWriterHashSet<E>.contains(Object needle)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/SingleWriterHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.SingleWriterHashSet<E>.contains(Object needle)",
+            "previous_method_pd": "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/SingleWriterHashSet.java",
+            "previous_commit": "9915e40cd21d45934a84f1ab88781edcdf4246a8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.4382632293080055,
+                "p_value": 0.0,
+                "effect_size": 0.023642781200202318,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2122183,
+                    "after": 2002210
+                }
+            }
+        },
+        {
+            "commit_message": "Refactor fieldOffset calc to a new method and cleanup user code\n",
+            "benchmark": "org.jctools.jmh.latency.spsc.RingBurstRoundTripWithGroups.ring",
+            "method_name_pd": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.tailLazySet(long)",
+            "method_name_cc": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.tailLazySet(long v)",
+            "file": "jctools-experimental/src/main/java/org/jctools/queues/InlinedCountersSpscConcurrentArrayQueue.java",
+            "previous_method_cc": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.tailLazySet(long v)",
+            "previous_method_pd": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.tailLazySet(long)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/queues/InlinedCountersSpscConcurrentArrayQueue.java",
+            "previous_commit": "9915e40cd21d45934a84f1ab88781edcdf4246a8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -2.4266365688487586,
+                "p_value": 0.0,
+                "effect_size": 0.18549261195653322,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 139056,
+                    "after": 139704
+                }
+            }
+        },
+        {
+            "commit_message": "Refactor fieldOffset calc to a new method and cleanup user code\n",
+            "benchmark": "org.jctools.jmh.latency.spsc.RingBurstRoundTripWithGroups.ring",
+            "method_name_pd": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.headLazySet(long)",
+            "method_name_cc": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.headLazySet(long v)",
+            "file": "jctools-experimental/src/main/java/org/jctools/queues/InlinedCountersSpscConcurrentArrayQueue.java",
+            "previous_method_cc": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.headLazySet(long v)",
+            "previous_method_pd": "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue.headLazySet(long)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/queues/InlinedCountersSpscConcurrentArrayQueue.java",
+            "previous_commit": "9915e40cd21d45934a84f1ab88781edcdf4246a8",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -2.2388059701492535,
+                "p_value": 0.0,
+                "effect_size": 0.17485433293013924,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 160956,
+                    "after": 154546
+                }
+            }
+        }
+    ],
+    "cf81c96b3fcfaa3f3e6efc5083b31d1684579219": [
+        {
+            "commit_message": "Use ordered store for producer limit. Use p/cIndex everywhere.",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_commit": "e9c3f8ba1efb04abf724c52057fde034bfdff6ab",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.2305909617612976,
+                "p_value": 0.0,
+                "effect_size": 0.09304215002201983,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2763076,
+                    "after": 2901299
+                }
+            }
+        }
+    ],
+    "6f88bf5c20ab527d304544cc48fde0b280449b59": [
+        {
+            "commit_message": "Standardize on `soElement` for nulling. Fix #252\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "method_name_cc": "public int org.jctools.queues.MpscUnboundedXaddArrayQueue<E>.drain(Consumer<E> c, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpscUnboundedXaddArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpscUnboundedXaddArrayQueue<E>.drain(Consumer<E> c, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpscArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpscUnboundedXaddArrayQueue.java",
+            "previous_commit": "78965db4efd244c428cea9825527f4ab8101ab00",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 160.08553924401804,
+                "p_value": 3.258422481867171e-230,
+                "effect_size": -0.09169507801691452,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 79598,
+                    "after": 87162
+                }
+            }
+        }
+    ],
+    "13d8ba9a5196b1a8dd867dc992a83edc05d868fb": [
+        {
+            "commit_message": "Switch to System.identityHashCode in IOHS, cleanup dead param.",
+            "benchmark": "org.jctools.jmh.collections.SetOps.remove",
+            "method_name_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)",
+            "previous_method_pd": "public boolean org.jctools.sets.OpenHashSet.remove(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/IdentityOpenHashSet.java",
+            "previous_commit": "cb02f12736dc7ecb9219087613f69bb0c817e857",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 1.3211978860833822,
+                "p_value": 0.0,
+                "effect_size": -0.1797856862121127,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 671115,
+                    "after": 581620
+                }
+            }
+        }
+    ],
+    "d60366d5cdef9091f7dfacb6713fb7fc2b153516": [
+        {
+            "commit_message": "MPMC drain fill need soElement, switching to ordered element store\neverywhere",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "method_name_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_commit": "51b9c52b239fb6fe67cf1b18badc7fcad405b120",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 2.293458431065937,
+                "p_value": 0.0,
+                "effect_size": -0.14733358024760845,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1846460,
+                    "after": 1680821
+                }
+            }
+        },
+        {
+            "commit_message": "MPMC drain fill need soElement, switching to ordered element store\neverywhere",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_commit": "51b9c52b239fb6fe67cf1b18badc7fcad405b120",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.3913939706261274,
+                "p_value": 0.0,
+                "effect_size": -0.06329648368526582,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1830994,
+                    "after": 1663721
+                }
+            }
+        }
+    ],
+    "6acb2a1011cacc4b8b379069888cc7395aa68a80": [
+        {
+            "commit_message": "refactoring the intrusive queue some more...\n",
+            "benchmark": "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt",
+            "method_name_pd": "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "method_name_cc": "public Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "file": "jctools-core/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_method_cc": "public Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "previous_method_pd": "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_commit": "d46dc3f5ceea5c1243a345fbe869654e74b9f886",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.11396011396011395,
+                "p_value": 1.1047042737848984e-38,
+                "effect_size": 0.007860684574607183,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1826891,
+                    "after": 1824229
+                }
+            }
+        },
+        {
+            "commit_message": "refactoring the intrusive queue some more...\n",
+            "benchmark": "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt",
+            "method_name_pd": "private org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(org.jctools.queues.intrusive.Node)",
+            "method_name_cc": "private Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(Node node)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_method_cc": "private Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(Node node)",
+            "previous_method_pd": "private org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(org.jctools.queues.intrusive.Node)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_commit": "d46dc3f5ceea5c1243a345fbe869654e74b9f886",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 2.3872679045092835,
+                "p_value": 0.0,
+                "effect_size": -0.1128049609623998,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1779154,
+                    "after": 1635974
+                }
+            }
+        }
+    ],
+    "efcb60756ad75ef70e8e9ae603cf7c65cd46423d": [
+        {
+            "commit_message": "Implement batching methods on MpmcArrayQueue\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpmcArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_commit": "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -7.867543447627995,
+                "p_value": 0.0,
+                "effect_size": 0.23294005628730557,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 499692,
+                    "after": 603012
+                }
+            }
+        },
+        {
+            "commit_message": "Implement batching methods on MpmcArrayQueue\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "method_name_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpmcArrayQueue.drain(org.jctools.queues.MessagePassingQueue$Consumer,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpmcArrayQueue.java",
+            "previous_commit": "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 6.155451225873762,
+                "p_value": 0.0,
+                "effect_size": -0.23013163893603278,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 597410,
+                    "after": 603457
+                }
+            }
+        }
+    ],
+    "8f268d5293dc4701f9637ff393bdce110b2c0603": [
+        {
+            "commit_message": "Refactor MpscBlocking::offerBelow + bug fix + tests\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_commit": "5dc705baad06d6149a03db70241324d941cf7231",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -38.40364081918432,
+                "p_value": 0.0,
+                "effect_size": 0.36769781053540923,
+                "effect_size_interpretation": "medium",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 504837,
+                    "after": 497616
+                }
+            }
+        }
+    ],
+    "33c7774322d46a8d62ba755e2afe645617f03b15": [
+        {
+            "commit_message": "Refactored away consumerIndexCache and replaced it with producerLimit.\n\nThis pattern is more akin to the producerLookAhead in the SpscArrayQueue.\nIt affords us some opportunity to remove some calculations from the hot\npaths when batch processing elements.\n\nSadly the offerIfBelowThreshold is a counter intuitive method. Refactoring\nit is difficult without changing the semantics. I'd suggest the semantics\nof this method given the javdoc & test cases are rather confusing and\nperhaps the semantics need reviewing. For backwards compatibility I've\npreserved the existing semantics.\n\nRemoved redundant imports that are pulled in through inheritence.\n",
+            "benchmark": "org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone.normal",
+            "method_name_pd": "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "method_name_cc": "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_method_cc": "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)",
+            "previous_method_pd": "public int org.jctools.queues.MpscArrayQueue.fill(org.jctools.queues.MessagePassingQueue$Supplier,int)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/MpscArrayQueue.java",
+            "previous_commit": "79bdab95b2e44b9a746727b1fa5cb0749bebf56f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -4.8176374523679915,
+                "p_value": 0.0,
+                "effect_size": 0.31998389561837276,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1928732,
+                    "after": 1612840
+                }
+            }
+        }
+    ],
+    "5279f373a120d3d504d4ea5fad8e1547132b5e96": [
+        {
+            "commit_message": "Fixed bug whereby with multiproducers (or in the future, MC) you could\nread a reference before it was written. This is due to writeAcquire()\nadvancing the producerIndex (or readAcquire advancing the\nconsumerIndex in the MC) case.\n\nWhen the producerReferenceArrayIndex() (or consumerReferenceArrayIndex)\nmethod is called it reads the current producerIndex. Clearly sometimes\nthis will have changed between writeAcquire and\nproducerReferenceArrayIndex calls. Thus P0 who won the writeAcquire,\ncould end up skipping over it's ref array slot and competing on the\nsame slot as P1.\n\nThe result is nulls in some slots and incorrect values in others.\n",
+            "benchmark": "org.jctools.channels.mpsc.MpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int,java.lang.String,java.lang.Class)",
+            "method_name_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type, String generatedName, Class<? extends ProxyChannelRingBuffer> backendType)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type, String generatedName, Class<? extends ProxyChannelRingBuffer> backendType)",
+            "previous_method_pd": "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(java.lang.reflect.Method,org.objectweb.asm.ClassVisitor,int,java.lang.String,java.lang.Class)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "72ad973654f6e0f0029e430bcf0572dd71d94588",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -31.154590360661228,
+                "p_value": 0.019584097600817446,
+                "effect_size": 0.3078947368421053,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 40,
+                    "after": 38
+                }
+            }
+        }
+    ],
+    "c048acc8169650fc624c2e9c94ffcce822c11c22": [
+        {
+            "commit_message": "Fixing up size, prevent nepotism through dequed elements.\n",
+            "benchmark": "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt",
+            "method_name_pd": "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "method_name_cc": "public Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "file": "jctools-experimental/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_method_cc": "public Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "previous_method_pd": "public org.jctools.queues.intrusive.Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.poll()",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_commit": "840a757322db3412574757e677aec9c9fb637d8e",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -2.251353662011969,
+                "p_value": 0.0,
+                "effect_size": 0.0871340523560806,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1098954,
+                    "after": 1643578
+                }
+            }
+        },
+        {
+            "commit_message": "Fixing up size, prevent nepotism through dequed elements.\n",
+            "benchmark": "org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone.tpt",
+            "method_name_pd": "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(org.jctools.queues.intrusive.Node)",
+            "method_name_cc": "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(Node node)",
+            "file": "jctools-experimental/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_method_cc": "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(Node node)",
+            "previous_method_pd": "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(org.jctools.queues.intrusive.Node)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/queues/intrusive/MpscIntrusiveLinkedQueue.java",
+            "previous_commit": "840a757322db3412574757e677aec9c9fb637d8e",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.439677512237259,
+                "p_value": 0.0,
+                "effect_size": 0.07727243558434944,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 1051959,
+                    "after": 1522489
+                }
+            }
+        }
+    ],
+    "9a44566e30a4b1a81a7dde714bcf9c3fff0abb48": [
+        {
+            "commit_message": "reafctoring around indicator usage, in prep for using 4 byte indicators",
+            "benchmark": "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy",
+            "method_name_pd": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long)",
+            "method_name_cc": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long offset)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/spsc/SpscOffHeapFixedSizeRingBuffer.java",
+            "previous_method_cc": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long offset)",
+            "previous_method_pd": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/spsc/SpscOffHeapFixedSizeRingBuffer.java",
+            "previous_commit": "edf62ba9c02d4f071fbb9159594afad961e7fa1f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 1.2522361359570662,
+                "p_value": 0.0,
+                "effect_size": -0.06619317595123428,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2349221,
+                    "after": 3082714
+                }
+            }
+        },
+        {
+            "commit_message": "reafctoring around indicator usage, in prep for using 4 byte indicators",
+            "benchmark": "org.jctools.jmh.throughput.channels.SpscChannelThroughputTest.busy",
+            "method_name_pd": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long)",
+            "method_name_cc": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long offset)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/spsc/SpscOffHeapFixedSizeRingBuffer.java",
+            "previous_method_cc": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long offset)",
+            "previous_method_pd": "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/spsc/SpscOffHeapFixedSizeRingBuffer.java",
+            "previous_commit": "edf62ba9c02d4f071fbb9159594afad961e7fa1f",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 0.7153502235469449,
+                "p_value": 0.0,
+                "effect_size": -0.027173989270898195,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 2304967,
+                    "after": 3044710
+                }
+            }
+        }
+    ],
+    "bbe02aa58fcba15198de1ff5f5a3add656372b9a": [
+        {
+            "commit_message": "Introduce modCount to SingleWriterHashSet and make contains lock-free to avoid races during removals\n",
+            "benchmark": "org.jctools.jmh.collections.ConcurrentSetThroughput.rw",
+            "method_name_pd": "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)",
+            "method_name_cc": "public boolean org.jctools.sets.SingleWriterHashSet<E>.contains(Object needle)",
+            "file": "jctools-experimental/src/main/java/org/jctools/sets/SingleWriterHashSet.java",
+            "previous_method_cc": "public boolean org.jctools.sets.SingleWriterHashSet<E>.contains(Object needle)",
+            "previous_method_pd": "public boolean org.jctools.sets.SingleWriterHashSet.contains(java.lang.Object)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/sets/SingleWriterHashSet.java",
+            "previous_commit": "4c26d4e29b6b8c9f3d0c7bbcba59c1066df5f730",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.627720790592945,
+                "p_value": 0.0,
+                "effect_size": 0.12034695325212767,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 906736,
+                    "after": 971093
+                }
+            }
+        }
+    ],
+    "ec0f7b287bcc0609fd4201584fa495e92ccc6dc6": [
+        {
+            "commit_message": "Calculate the size required for primitive args\n\narrayMessageSize (renamed to referenceMessageSize) this and the primitive\nmessage size is set it directly within the generated ctor\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)",
+            "method_name_cc": "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)",
+            "previous_method_pd": "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "94f93eda72f6e409e081fc365702b6fdacbb8deb",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 178.09143083810625,
+                "p_value": 7.633420168017616e-05,
+                "effect_size": -0.6428571428571429,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 24,
+                    "after": 28
+                }
+            }
+        }
+    ],
+    "3c94b8ccb78e040b9c2a33a04f7dee01286d1658": [
+        {
+            "commit_message": "Don't reload cells field in FixedSizeStripedLongCounterV6\n",
+            "benchmark": "org.jctools.jmh.counters.CountersBenchmark.rw",
+            "method_name_pd": "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long,long)",
+            "method_name_cc": "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long offset, long delta)",
+            "file": "jctools-experimental/src/main/java/org/jctools/counters/FixedSizeStripedLongCounterV6.java",
+            "previous_method_cc": "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long offset, long delta)",
+            "previous_method_pd": "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long,long)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/counters/FixedSizeStripedLongCounterV6.java",
+            "previous_commit": "14ce5a50b7e08816f24bc69c75288587332871e6",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -3.1552018192154634,
+                "p_value": 0.0,
+                "effect_size": 0.22428611965251438,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 340028,
+                    "after": 384071
+                }
+            }
+        }
+    ],
+    "534d30d8681c96c5fa9c30de3b4d27776d561d95": [
+        {
+            "commit_message": "Remove SparsePadded offset calc.\n",
+            "benchmark": "org.jctools.jmh.baseline.SingleThreadedPoll.poll",
+            "method_name_pd": "protected static long org.jctools.queues.ConcurrentCircularArrayQueue.calcElementOffset(long,long)",
+            "method_name_cc": "protected static long org.jctools.queues.ConcurrentCircularArrayQueue<E>.calcElementOffset(long index, long mask)",
+            "file": "jctools-core/src/main/java/org/jctools/queues/ConcurrentCircularArrayQueue.java",
+            "previous_method_cc": "protected static long org.jctools.queues.ConcurrentCircularArrayQueue<E>.calcElementOffset(long index, long mask)",
+            "previous_method_pd": "protected static long org.jctools.queues.ConcurrentCircularArrayQueue.calcElementOffset(long,long)",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/ConcurrentCircularArrayQueue.java",
+            "previous_commit": "f719c22cf5f9a1f1e4654bd329aa2dc661cdbd95",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -1.5896820635872826,
+                "p_value": 2.120206565459952e-119,
+                "effect_size": 0.009339370317528503,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 4014710,
+                    "after": 4242619
+                }
+            }
+        }
+    ],
+    "268cc9c0ec61c4a49bcb57849963fb7f75eb0914": [
+        {
+            "commit_message": "Remove isEmpty check in clear(), queues obey poll contract for a while now\n",
+            "benchmark": "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt",
+            "method_name_pd": "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()",
+            "method_name_cc": "public void org.jctools.queues.ConcurrentCircularArrayQueue<E>.clear()",
+            "file": "jctools-core/src/main/java/org/jctools/queues/ConcurrentCircularArrayQueue.java",
+            "previous_method_cc": "public void org.jctools.queues.ConcurrentCircularArrayQueue<E>.clear()",
+            "previous_method_pd": "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/ConcurrentCircularArrayQueue.java",
+            "previous_commit": "4c7c9142f0a4fa93e0a6db6cb846509707d6aa52",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -24.153343894580154,
+                "p_value": 0.13908442421994313,
+                "effect_size": 0.17853839037927843,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 46,
+                    "after": 47
+                }
+            }
+        }
+    ],
+    "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0": [
+        {
+            "commit_message": "Refactoring the createSpscProxy method to pull out small routines\n",
+            "benchmark": "org.jctools.channels.spsc.SpscProxyChannelBenchmark.onePrimitiveArgBaseline",
+            "method_name_pd": "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)",
+            "method_name_cc": "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)",
+            "file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)",
+            "previous_method_pd": "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int,java.lang.Class,org.jctools.channels.spsc.SpscOffHeapFixedSizeWithReferenceSupportRingBuffer$WaitStrategy)",
+            "previous_file": "jctools-experimental/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "f9028a366b72cb7f8cd26054f5bb14061cd6b49d",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 50.021808152466086,
+                "p_value": 0.08088156715196766,
+                "effect_size": -0.28703703703703703,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 24,
+                    "after": 27
+                }
+            }
+        }
+    ],
+    "8541ae5106e6239f36e871c383b0afa5837dbdd3": [
+        {
+            "commit_message": "Formatting and javadoc\n",
+            "benchmark": "org.jctools.jmh.throughput.QueueThroughputBackoffNano.tpt",
+            "method_name_pd": "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()",
+            "method_name_cc": "public void org.jctools.queues.ConcurrentCircularArrayQueue<E>.clear()",
+            "file": "jctools-core/src/main/java/org/jctools/queues/ConcurrentCircularArrayQueue.java",
+            "previous_method_cc": "public void org.jctools.queues.ConcurrentCircularArrayQueue<E>.clear()",
+            "previous_method_pd": "public void org.jctools.queues.ConcurrentCircularArrayQueue.clear()",
+            "previous_file": "jctools-core/src/main/java/org/jctools/queues/ConcurrentCircularArrayQueue.java",
+            "previous_commit": "9aaf7ee79773864a7a64c0bfd2a780ce70a23d34",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -3.1606938031753904,
+                "p_value": 0.3938395502634843,
+                "effect_size": 0.10204081632653061,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 46,
+                    "after": 49
+                }
+            }
+        }
+    ],
+    "f92da3d6919dae506b1e4737c587c6ed03e2eb61": [
+        {
+            "commit_message": "Fix build on JDK 9 and later\n",
+            "benchmark": "org.jctools.channels.mpsc.MpscProxyChannelBenchmark.oneReferenceArgBaseline",
+            "method_name_pd": "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int,java.lang.Class,org.jctools.channels.WaitStrategy,java.lang.Class)",
+            "method_name_cc": "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy, Class<? extends ProxyChannelRingBuffer> backendType)",
+            "file": "jctools-channels/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_method_cc": "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy, Class<? extends ProxyChannelRingBuffer> backendType)",
+            "previous_method_pd": "public static org.jctools.channels.proxy.ProxyChannel org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int,java.lang.Class,org.jctools.channels.WaitStrategy,java.lang.Class)",
+            "previous_file": "jctools-channels/src/main/java/org/jctools/channels/proxy/ProxyChannelFactory.java",
+            "previous_commit": "b4eae437b65fee59eddc266a0b7f7c85e19b25bf",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": -10.594733426582575,
+                "p_value": 0.5567604652232558,
+                "effect_size": 0.10069444444444445,
+                "effect_size_interpretation": "negligible",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 24,
+                    "after": 24
+                }
+            }
+        }
+    ]
+}

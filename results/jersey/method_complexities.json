@@ -1,0 +1,81 @@
+{
+    "839fb27fc45ca77cc03829f306e8fd50669454e7": {
+        "private void org.glassfish.jersey.model.internal.CommonConfig.configureFeatures(InjectionManager injectionManager, Set<FeatureRegistration> processed, List<FeatureRegistration> unprocessed, ManagedObjectsFinalizer managedObjectsFinalizer)": 4.2
+    },
+    "100db1369e72cb6d6c712567a9a9231da77b0249": {
+        "public String org.glassfish.jersey.internal.l10n.Localizer.localize(Localizable l)": 52.6,
+        "public Object[] org.glassfish.jersey.internal.l10n.LocalizableMessage.getArguments()": 4.2
+    },
+    "0f65e5d6428098dfa724c0ef3510a8aea77f74fc": {
+        "private static void org.glassfish.jersey.server.model.IntrospectionModeller.introspectAsyncFeatures(AnnotatedMethod am, ResourceMethod.Builder resourceMethodBuilder)": 4.2,
+        "private void org.glassfish.jersey.server.model.ResourceMethodValidator.checkMethod(ResourceMethod method)": 4.2
+    },
+    "22aa92e8531d78c71c2a0693ce5d0174fb41bd2f": {
+        "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean endOfStream)": 18.0
+    },
+    "c30060f99fba9848b01574f1440d0b5d4265692c": {
+        "void org.glassfish.jersey.message.internal.OutboundMessageContext.setConfiguration(Configuration configuration)": 2.0,
+        "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()": 33.1,
+        "public static List<MediaType> org.glassfish.jersey.message.internal.HttpHeaderReader.readMediaTypes(List<MediaType> l, String header)": 4.2
+    },
+    "2eacfcc4eb498ea93ca9fd9912aa8a67b800ac20": {
+        "public List<V> org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.get(Object key)": 29.3,
+        "public Set<Entry<String, List<V>>> org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.entrySet()": 2.0
+    },
+    "5dec4484a61db8186cfe45582996db04c7badfdb": {
+        "final void org.glassfish.jersey.server.ResourceConfig.lock()": 2.0
+    },
+    "81c2d32da43ad266e5a3992e4e95fcc76fcc921f": {
+        "protected void org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonEndpointConfig.addAnnotation(Class<? extends Annotation> type, Annotation annotation, boolean forWriting)": 33.3,
+        "private final boolean org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.AnnotationBundleKey._equals(Annotation[] otherAnn)": 64.8
+    },
+    "e3c394199345fa0670bd0e1a0f8beb0448f2fac0": {
+        "public static Charset org.glassfish.jersey.message.internal.ReaderWriter.getCharset(MediaType m)": 8.6
+    },
+    "cb031c7cff8152c665db287e2d8e21181928149b": {
+        "private void org.glassfish.jersey.uri.internal.UriTemplateParser.processLiteralCharacters()": 2.0,
+        "public final List<String> org.glassfish.jersey.uri.UriTemplate.getTemplateVariables()": 4.2
+    },
+    "2299c0bd7e32420b08857a2aba16dd77dd13f7a1": {
+        "public Map<String, Object> org.glassfish.jersey.internal.config.SystemPropertiesConfigurationModel.getProperties()": 44.1,
+        "public static boolean org.glassfish.jersey.internal.config.ExternalPropertiesConfigurationFactory.configure(Configurable config)": 17.7
+    },
+    "6510bb901d121b93e2b72789160beae23d2cca12": {
+        "public JerseyInvocation.Builder org.glassfish.jersey.client.JerseyWebTarget.request()": 6.4
+    },
+    "5b352d86ae3504d92d6a723dfba0e7c0ef67ffa0": {
+        "public final Response org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(Object resource, ContainerRequest request)": 20.2
+    },
+    "d62f2b3f54a2dd1689d06d6c9b09d7b91d9f8464": {
+        "private void org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(boolean endOfStream)": 4.2
+    },
+    "11d6c112a5391aed95ecc58d41058ac2f13e23bc": {
+        "public Response org.glassfish.jersey.client.JerseyInvocation.invoke()": 4.2
+    },
+    "4964825028b346adfd21bd5d3ddd7fe49cf5c222": {
+        "private static byte[] org.glassfish.jersey.message.internal.ReaderWriter.readAllBytes(InputStream inputStream)": 18.0,
+        "public boolean org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.isObservedAndReset(String key)": 11.1,
+        "private void org.glassfish.jersey.internal.util.collection.GuardianStringKeyMultivaluedMap<V>.observe(String key)": 2.0
+    },
+    "3a364bcd9bab1850faefbff683e0dd7876e81aaa": {
+        "private static JerseyInvocation.Builder org.glassfish.jersey.client.JerseyWebTarget.onBuilder(JerseyInvocation.Builder builder)": 4.2
+    },
+    "1633a258bc133c6147a51cde10a443d73cfdca65": {
+        "public static String org.glassfish.jersey.internal.util.PropertiesHelper.getPropertyNameForRuntime(String key, RuntimeType runtimeType)": 8.6
+    },
+    "81d03fcbe8fb3629e82f00925b6264829e2fb238": {
+        "public static void org.glassfish.jersey.message.internal.ReaderWriter.writeToAsString(String s, OutputStream out, MediaType type)": 4.2
+    },
+    "7bf9e5da763490129975eb2237214b924983ca71": {
+        "private boolean org.glassfish.jersey.server.ResourceModelConfigurator.bindWithComponentProvider( Class<?> component, ContractProvider providerModel, Iterable<ComponentProvider> componentProviders)": 6.4
+    },
+    "82a85a1bffeaf5f78607cf5c0c0d4d4e6ba0457e": {
+        "public ResponseBuilder org.glassfish.jersey.internal.AbstractRuntimeDelegate.createResponseBuilder()": 4.2
+    },
+    "351a578bcb561cead07eea1c6c1c9c02668fd697": {
+        "public MediaType org.glassfish.jersey.message.internal.InboundMessageContext.getMediaType()": 4.2
+    },
+    "01b88feb1d160e5f9877c323b3917f7d0878c1d8": {
+        "public MessageBodyWorkers org.glassfish.jersey.message.internal.InboundMessageContext.getWorkers()": 8.9
+    }
+}

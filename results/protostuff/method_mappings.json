@@ -1,0 +1,106 @@
+{
+    "b87ab5758c5acbe740d9a7acb52f70f45ac789d3": [
+        {
+            "commit_message": "pojo-array fix\n",
+            "benchmark": "io.protostuff.benchmarks.RuntimeSchemaBenchmark.runtime_serialize_10_int_fields",
+            "method_name_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "method_name_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "file": "protostuff-runtime-md/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_method_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "previous_method_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "previous_file": "protostuff-runtime-md/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_commit": "c54c83c0483b6a00ecd5e456ee25ee067eee15f3",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "improvement",
+                "median_change_percentage": -22.910835665733707,
+                "p_value": 1.454138391089142e-08,
+                "effect_size": 0.6244314489928525,
+                "effect_size_interpretation": "large",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 57,
+                    "after": 54
+                }
+            }
+        }
+    ],
+    "3a26b9899dfb9c6d3784db0fd72431c4664fcdc9": [
+        {
+            "commit_message": "Revert \"prioritize registered classes after delegates\"\n",
+            "benchmark": "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field",
+            "method_name_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "method_name_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "file": "protostuff-runtime/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_method_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "previous_method_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "previous_file": "protostuff-runtime/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_commit": "ef35de7ba5fe2b36a43fab322a3c337a0b203910",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "unchanged",
+                "median_change_percentage": 5.324420304992689,
+                "p_value": 0.15040636947792652,
+                "effect_size": -0.15319389485585078,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 0,
+                "sample_size": {
+                    "before": 61,
+                    "after": 58
+                }
+            }
+        }
+    ],
+    "8b09091191bf5b997a22d01309e293c51a76e784": [
+        {
+            "commit_message": "prioritize registered classes after delegates\n",
+            "benchmark": "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field",
+            "method_name_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "method_name_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "file": "protostuff-runtime/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_method_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "previous_method_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "previous_file": "protostuff-runtime/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_commit": "62fcef1859620485781e160df4c541d7eea02598",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 10.566583645284933,
+                "p_value": 0.014830298842283278,
+                "effect_size": -0.2698412698412698,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 54,
+                    "after": 56
+                }
+            }
+        }
+    ],
+    "72e7c529f20b9e81a670591536cf9fc1846e9bab": [
+        {
+            "commit_message": "update md as well\n",
+            "benchmark": "io.protostuff.benchmarks.RuntimeSchemaBenchmark.generated_serialize_1_int_field",
+            "method_name_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "method_name_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "file": "protostuff-runtime-md/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_method_cc": "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)",
+            "previous_method_pd": "public static io.protostuff.runtime.RuntimeFieldFactory io.protostuff.runtime.RuntimeFieldFactory.getFieldFactory(java.lang.Class,io.protostuff.runtime.IdStrategy)",
+            "previous_file": "protostuff-runtime-md/src/main/java/io/protostuff/runtime/RuntimeFieldFactory.java",
+            "previous_commit": "fd1d171595c832c272fab4e2042520b350a54e69",
+            "performance_diff": -0.0,
+            "significance": {
+                "change_type": "regression",
+                "median_change_percentage": 14.198614660888248,
+                "p_value": 0.027298971969266207,
+                "effect_size": -0.23809523809523808,
+                "effect_size_interpretation": "small",
+                "statistically_significant": 1,
+                "sample_size": {
+                    "before": 60,
+                    "after": 56
+                }
+            }
+        }
+    ]
+}

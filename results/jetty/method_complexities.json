@@ -1,0 +1,220 @@
+{
+    "fc9cbda52f6173df73ffe28db8e4cbef0e711932": {
+        "public static boolean org.eclipse.jetty.util.StringUtil.isNotBlank(String str)": 34.5,
+        "public static boolean org.eclipse.jetty.util.StringUtil.isBlank(String str)": 34.5
+    },
+    "57604d09558443dd80346f7bc63980481c2dea3c": {
+        "private void org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(boolean wasPending)": 4.2,
+        "protected void org.eclipse.jetty.osgi.boot.BundleContextProvider.doStop()": 4.2,
+        "private void org.eclipse.jetty.util.thread.ReservedThreadExecutor.startReservedThread()": 4.2,
+        "private void org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(Runnable task)": 4.2,
+        "private Runnable org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produceTask()": 4.2,
+        "public final void org.eclipse.jetty.util.component.AbstractLifeCycle.start()": 4.2,
+        "private void org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.execute(Runnable task)": 13.0
+    },
+    "b2203115e2ea2e488f982cf281e4e32c11db335f": {
+        "private SubStrategy org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.selectSubStrategy(Runnable task, boolean nonBlocking)": 30.6
+    },
+    "d241c6694be97614f040ec9d0f8c8b34b0247d23": {
+        "public Entry org.eclipse.jetty.util.compression.CompressionPool<T>.acquire()": 28.4
+    },
+    "750584bc853d9ba300f8d3fb2433158f0968ebbf": {
+        "private long org.eclipse.jetty.io.ArrayByteBufferPool.getMemory(boolean direct)": 14.8,
+        "private void org.eclipse.jetty.io.ArrayByteBufferPool.release(RetainedBucket bucket, Pool.Entry<RetainableByteBuffer> entry)": 48.6,
+        "private void org.eclipse.jetty.io.ArrayByteBufferPool.reserve(RetainedBucket bucket, RetainableByteBuffer buffer)": 37.6
+    },
+    "77ad0189ba10e7080646cc4fcf2b04b15d6004bc": {
+        "private void org.eclipse.jetty.util.thread.ReservedThreadExecutor.startReservedThread()": 4.2,
+        "private void org.eclipse.jetty.util.thread.QueuedThreadPool.joinThreads(long stopByNanos)": 4.2,
+        "protected void org.eclipse.jetty.util.thread.QueuedThreadPool.startThread()": 4.2
+    },
+    "b7a7a53a18bd60c132d0a3e050bfa1125b924d42": {
+        "public static boolean org.eclipse.jetty.util.IO.delete(File file)": 13.0,
+        "public static void invokeNonBlocking(Runnable task)": 12.3,
+        "public boolean org.eclipse.jetty.util.component.AbstractLifeCycle.isRunning()": 4.2,
+        "public static void org.eclipse.jetty.util.log.Log.initialized()": 17.4
+    },
+    "3c019fabd38c73e5052e19f23cb59b4cd3ae8746": {
+        "protected boolean org.eclipse.jetty.client.AbstractConnectionPool.deactivate(Connection connection)": 44.4,
+        "protected Connection org.eclipse.jetty.client.AbstractConnectionPool.activate()": 4.2
+    },
+    "8d69fc41a7f8c26fcd90fc0f7300f81eaede06be": {
+        "private void org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(boolean wasPending)": 4.2,
+        "public final void org.eclipse.jetty.util.component.AbstractLifeCycle.start()": 4.2,
+        "protected void org.eclipse.jetty.server.AcceptRateLimit.doStop()": 4.2,
+        "private boolean org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(boolean nonBlocking)": 17.4,
+        "public final void org.eclipse.jetty.util.component.AbstractLifeCycle.stop()": 4.2
+    },
+    "d2df0fc2e9eff2ba40fb75a594b11aa98470f06c": {
+        "public void org.eclipse.jetty.util.Pool<T>.close()": 10.8,
+        "public Entry org.eclipse.jetty.util.Pool<T>.reserve(int maxReservations)": 10.8
+    },
+    "c55363d43f6a2e0c9e20c16c7a7e3f427df877df": {
+        "public String org.eclipse.jetty.util.DateCache.formatNow(long now)": 27.3,
+        "public String org.eclipse.jetty.util.DateCache.format(Date inDate)": 33.9
+    },
+    "e80063112045ed95263a3c00e0a18d671e04d833": {
+        "private boolean org.eclipse.jetty.util.ConcurrentPool<P>.terminate(Entry<P> entry)": 6.7,
+        "private boolean org.eclipse.jetty.util.ConcurrentPool<P>.release(Entry<P> entry)": 6.7,
+        "public Entry<P> org.eclipse.jetty.util.ConcurrentPool<P>.reserve()": 28.7,
+        "public Entry<P> org.eclipse.jetty.util.ConcurrentPool<P>.acquire()": 63.9,
+        "protected void org.eclipse.jetty.util.compression.CompressionPool<T>.doStart()": 4.2
+    },
+    "2b817f06c64a26003cdbaa25a3769c1c8b9178cf": {
+        "public ByteBuffer org.eclipse.jetty.io.ArrayByteBufferPool.acquire(int size, boolean direct)": 4.2,
+        "public void org.eclipse.jetty.io.ArrayByteBufferPool.release(ByteBuffer buffer)": 4.2,
+        "public Entry org.eclipse.jetty.util.Pool<T>.reserve()": 4.2
+    },
+    "0ac34ff2b8a73d6d2f99bd8751ffac34791d78f3": {
+        "public boolean org.eclipse.jetty.client.HttpClient.isDefaultPort(String scheme, int port)": 17.3,
+        "public static int org.eclipse.jetty.client.HttpClient.normalizePort(String scheme, int port)": 18.3,
+        "public boolean is(String s)": 4.2
+    },
+    "51fc906d378a04aeeb5a4a881069b2a466ed4e08": {
+        "private void org.eclipse.jetty.util.thread.ReservedThreadExecutor.startReservedThread()": 80.3,
+        "private int org.eclipse.jetty.util.ConcurrentPool<P>.startIndex(int size)": 4.2,
+        "public static String org.eclipse.jetty.http.DateGenerator.formatDate(long date)": 4.2,
+        "public boolean org.eclipse.jetty.util.thread.ReservedThreadExecutor.tryExecute(Runnable task)": 42.7
+    },
+    "be3d16bdbbb63cc0df7e4964d8a47e3e376a631d": {
+        "private void org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.execute(Runnable task)": 15.8,
+        "private static int org.eclipse.jetty.util.thread.ReservedThreadExecutor.reservedThreads(Executor executor, int capacity)": 6.7
+    },
+    "e2b00bd4e00fdd1e8f40b109e68a8b8f10eb6616": {
+        "private SubStrategy org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.selectSubStrategy(Runnable task, boolean nonBlocking)": 32.1
+    },
+    "c19921e60f5a28d100d22620c177ba4582182987": {
+        "public void org.eclipse.jetty.io.ArrayByteBufferPool.release(ByteBuffer buffer)": 22.1,
+        "public ByteBuffer org.eclipse.jetty.io.ArrayByteBufferPool.acquire(int size, boolean direct)": 10.8
+    },
+    "80f912a121855749dc42c7866b03ed75f75cc9aa": {
+        "private void org.eclipse.jetty.http.HttpGenerator.generateResponseLine(MetaData.Response response, ByteBuffer header)": 4.2,
+        "private void org.eclipse.jetty.http.HttpParser.quickStart(ByteBuffer buffer)": 82.3
+    },
+    "385d943b0c29445da704763da7d107325b3d99d2": {
+        "private void org.eclipse.jetty.http.HttpGenerator.generateHeaders(ByteBuffer header, ByteBuffer content, boolean last)": 92.0
+    },
+    "377d0d131eb45d6a443175c13f1b65eb8efcd952": {
+        "protected int org.eclipse.jetty.io.ArrayByteBufferPool.bucketFor(int capacity)": 4.2
+    },
+    "5a24f900644f62b5746bbd05cfef7418df7bfbf0": {
+        "public void org.eclipse.jetty.util.compression.CompressionPool<T>.doStop()": 2.0,
+        "protected void org.eclipse.jetty.util.compression.CompressionPool<T>.doStart()": 8.6
+    },
+    "51120b1f0bda1a61e60079a8ab4d73d50700aa51": {
+        "private static int org.eclipse.jetty.util.AbstractTrie<V>.requiredCapacity(List<String> keys, int offset, int length, int index)": 85.9
+    },
+    "9e16d81cf8922c75e3d2d96c66442b896a9c69e1": {
+        "private SubStrategy org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.selectSubStrategy(Runnable task, boolean nonBlocking)": 8.6
+    },
+    "aa21612006985bf3acf5ad7a0a6703830b4218c0": {
+        "public void org.eclipse.jetty.util.thread.AutoLock.close()": 8.9
+    },
+    "d744d097dec29ee0285c1ec17acf11f6484b38cc": {
+        "public boolean org.eclipse.jetty.util.component.ContainerLifeCycle.addBean(Object o, Managed managed)": 6.4,
+        "private boolean org.eclipse.jetty.util.component.ContainerLifeCycle.remove(Bean bean)": 4.2,
+        "public void org.eclipse.jetty.util.thread.strategy.ProduceConsume.produce()": 8.6
+    },
+    "e2690cc420ccc47a8c42be2a7e46634cb4449970": {
+        "public int org.eclipse.jetty.util.Pool<T>.getMaxMultiplex()": 17.4,
+        "public final void org.eclipse.jetty.util.Pool<T>.setMaxMultiplex(int maxMultiplex)": 40.3
+    },
+    "6201d3b1072b05d9e683377f5741f467a44089fa": {
+        "private void org.eclipse.jetty.util.thread.ReservedThreadExecutor.startReservedThread()": 81.8,
+        "public void org.eclipse.jetty.util.thread.ReservedThreadExecutor.doStop()": 49.0,
+        "public boolean org.eclipse.jetty.util.thread.ReservedThreadExecutor.tryExecute(Runnable task)": 37.1,
+        "public void org.eclipse.jetty.util.thread.ReservedThreadExecutor.setIdleTimeout(long idleTime, TimeUnit idleTimeUnit)": 10.8,
+        "public void org.eclipse.jetty.util.thread.ReservedThreadExecutor.doStart()": 4.2
+    },
+    "d02406c1640ba47647775946f59893f9a2453116": {
+        "public Entry<P> org.eclipse.jetty.util.ConcurrentPool<P>.acquire()": 4.2
+    },
+    "8b1c6bcd06237bc0175b085d9a66acd946844334": {
+        "protected boolean parseFields(ByteBuffer buffer)": 63.9
+    },
+    "6188757500f2e27bb03c70b27c2d713e5ae90613": {
+        "private void org.eclipse.jetty.util.IteratingCallback.processing()": 24.0
+    },
+    "9a14de058da715f2d08c2bff58b548a39045ea85": {
+        "public static String org.eclipse.jetty.util.HostPort.normalizeHost(String host)": 4.2
+    },
+    "474136de57eb8b6dfc851e85e81ad944430ecf46": {
+        "public Entry<P> org.eclipse.jetty.util.ConcurrentPool<P>.reserve()": 8.6
+    },
+    "551710e9bbb1a917dea38c4bcfde3ab08455a1e6": {
+        "public void org.eclipse.jetty.server.internal.HttpConnection.onFillable()": 4.2,
+        "void org.eclipse.jetty.server.internal.HttpConnection.releaseRequestBuffer()": 19.9
+    },
+    "95059356c988db708ef167bc0b1ddf443d837be3": {
+        "public HttpFields org.eclipse.jetty.http.MutableHttpFields.asImmutable()": 4.2
+    },
+    "7275bf15a9094c85df484aa88fce44a3a1bb3de5": {
+        "public static void org.eclipse.jetty.util.IO.close(Closeable closeable)": 17.7
+    },
+    "7e88b8234cd30552fe4f7cd6d6eaeef4d7459517": {
+        "private boolean org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(Runnable task, SubStrategy subStrategy)": 32.7,
+        "private void org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(boolean wasPending)": 106.8,
+        "private SubStrategy org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.selectSubStrategy(Runnable task, boolean nonBlocking)": 157.7
+    },
+    "5aaec6e23f6b5e9dcc418c6121203ffb26c60c85": {
+        "private boolean org.eclipse.jetty.util.thread.QueuedThreadPool.addCounts(int deltaThreads, int deltaIdle)": 35.6
+    },
+    "c25e1aa7ff0df0ca26662dab19ed3fe78de4adb8": {
+        "private boolean org.eclipse.jetty.http.HttpParser.quickStartRequestLine(ByteBuffer buffer)": 4.2
+    },
+    "278ec1be69ab5380d53dd93e6b4579b5be49900c": {
+        "protected void org.eclipse.jetty.util.thread.QueuedThreadPool.startThread()": 4.2
+    },
+    "4a6c2744a0d4ff404daee0a521e88ae386356e06": {
+        "protected Queue<HttpExchange> org.eclipse.jetty.client.HttpDestination.newExchangeQueue(HttpClient client)": 13.3
+    },
+    "af6ecfebfe077fed014125989a87864bd83b02dd": {
+        "protected void org.eclipse.jetty.util.compression.CompressionPool<T>.doStart()": 4.2,
+        "public Entry org.eclipse.jetty.util.compression.CompressionPool<T>.acquire()": 5.7,
+        "public void org.eclipse.jetty.util.compression.CompressionPool<T>.doStop()": 19.6
+    },
+    "6f0623f48d7524fe615f9025b51d8353922c6db5": {
+        "private void org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.execute(Runnable task)": 4.2
+    },
+    "b4483d3b2a42e858bf783eb92a602711f26e192c": {
+        "public Entry org.eclipse.jetty.util.Pool<T>.acquire()": 6.7
+    },
+    "089e51f0bc02b63490e1038e0ec23d1d43adf9a8": {
+        "public final void org.eclipse.jetty.util.component.AbstractLifeCycle.start()": 5.7,
+        "protected void org.eclipse.jetty.server.AcceptRateLimit.doStop()": 5.7,
+        "private boolean org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(boolean nonBlocking)": 18.9,
+        "private void org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(boolean wasPending)": 5.7,
+        "public final void org.eclipse.jetty.util.component.AbstractLifeCycle.stop()": 5.7
+    },
+    "de13ceff3619777dc1213a4dddc40d79ceedb3dd": {
+        "public Entry org.eclipse.jetty.util.Pool<T>.reserve()": 35.9
+    },
+    "5dc024298672b227c720961440c2b1787535714f": {
+        "public Entry org.eclipse.jetty.util.compression.CompressionPool<T>.acquire()": 17.4
+    },
+    "0ee0716d3345970c24534c1183f9f986506b3bd0": {
+        "public static String org.eclipse.jetty.util.StringUtil.asciiToLowerCase(String s)": 2.0
+    },
+    "aa09b8b7bda7ec28544cac509da6d8b084c8edd7": {
+        "private ByteBufferPool.Bucket org.eclipse.jetty.io.ArrayByteBufferPool.bucketFor(int capacity, boolean direct)": 14.5,
+        "protected int org.eclipse.jetty.io.ArrayByteBufferPool.bucketFor(int capacity)": 4.2
+    },
+    "6d0bddc07af28fde5513efe445f17281fb116661": {
+        "private void org.eclipse.jetty.util.IteratingCallback.processing()": 15.5
+    },
+    "1726c8778c0c1a2040d5aafeb265c59ad927e599": {
+        "public Runnable org.eclipse.jetty.util.thread.SerializedInvoker.offer(Runnable task)": 4.2
+    },
+    "a089fbf3ea41320a7906c0759f7d72e0db97c20f": {
+        "protected ByteBuffer[] org.eclipse.jetty.io.WriteFlusher.flush(SocketAddress address, ByteBuffer[] buffers)": 8.6
+    },
+    "692c01750057ca2cd1a54aaf6b07700364c1a62b": {
+        "public void org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produce()": 5.7
+    },
+    "83154b4ffe4767ef44981598d6c26e6a5d32e57c": {
+        "private void org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.execute(Runnable task)": 19.9
+    },
+    "ebc5e559f8bc8c8e66fe2123cb76b58386d6c29c": {
+        "public void org.eclipse.jetty.server.internal.HttpConnection.onFillable()": 8.6
+    }
+}

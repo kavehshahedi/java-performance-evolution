@@ -1,0 +1,1035 @@
+{
+    "d9481036e0d8f29c95be447a463254c22c21fc08": {
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReader.readObject()": 15.5,
+        "public List com.alibaba.fastjson2.JSONReader.readArray()": 18.0
+    },
+    "69cd5330f713e78d3c12233474cb97a9ee36d55d": {
+        "void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genGetObject(MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT)": 4.2,
+        "static void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwString(MethodWriterContext mwc, boolean symbol, boolean checkNull, int STR)": 8.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDecimal(BigDecimal value, long features, DecimalFormat format)": 4.2,
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( ObjectWriteContext context, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 8.6,
+        "public ObjectReader com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getObjectReader(ObjectReaderProvider provider, Type type)": 13.3,
+        "public void com.alibaba.fastjson2.JSONWriterUTF16JDK8UF.writeString(String str)": 4.2,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeDecimal(BigDecimal value, long features, DecimalFormat format)": 4.2,
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.createObjectWriter( Class objectClass, long features, ObjectWriterProvider provider )": 15.8,
+        "public static char[] com.alibaba.fastjson2.util.JDKUtils.getCharArray(String str)": 4.2
+    },
+    "bfd444af0efbdb3be0bfb24d90f6a415a431badb": {
+        "public void com.alibaba.fastjson2.JSONReaderUTF8.next()": 2.0,
+        "public final void com.alibaba.fastjson2.writer.FieldWriterEnum.writeEnum(JSONWriter jsonWriter, Enum e)": 226.8,
+        "public final void com.alibaba.fastjson2.JSONReaderASCII.next()": 10.8,
+        "public final boolean com.alibaba.fastjson2.JSONReaderUTF16.isReference()": 71.7,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDecimal(BigDecimal value, long features, DecimalFormat format)": 54.0,
+        "public final void com.alibaba.fastjson2.writer.FieldWriterBoolean.writeBool(JSONWriter jsonWriter, boolean value)": 215.8,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF8.writeNameRaw(byte[] bytes)": 17.4,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeLocalDate(LocalDate date)": 31.7,
+        "public final void com.alibaba.fastjson2.writer.FieldWriterInt32<T>.writeInt32(JSONWriter jsonWriter, int value)": 121.3,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt32(int i)": 24.0,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeOffsetDateTime(OffsetDateTime dateTime)": 85.7,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt64(long i)": 21.8,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt64(long[] values)": 86.8,
+        "public final void com.alibaba.fastjson2.writer.FieldWriterInt64<T>.writeInt64(JSONWriter jsonWriter, long value)": 110.2,
+        "public boolean com.alibaba.fastjson2.JSONReaderUTF8.nextIfNullOrEmptyString()": 151.2,
+        "public long com.alibaba.fastjson2.JSONReaderUTF8.readFieldNameHashCode()": 2.0,
+        "public final int com.alibaba.fastjson2.JSONReaderUTF16.getStringLength()": 2.0,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeUUID(UUID value)": 161.2,
+        "public final long com.alibaba.fastjson2.JSONReaderASCII.readFieldNameHashCode()": 2.0,
+        "public final long com.alibaba.fastjson2.JSONReaderUTF16.readInt64Value()": 10.8,
+        "public final OffsetDateTime com.alibaba.fastjson2.JSONReaderUTF16.readOffsetDateTime()": 2.0,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeNameRaw(char[] chars)": 17.4
+    },
+    "bfd23e08f6d8aee587ca96bd69003ee03014464b": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeMillis(long millis)": 4.2,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeDecimal(BigDecimal value)": 20.2
+    },
+    "ed7c90807b7b21a05d344aef593762f22c18c8f3": {
+        "public static char[] com.alibaba.fastjson2.util.JDKUtils.getCharArray(String str)": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueString( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 15.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValue(MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i)": 8.6
+    },
+    "cec6283a5b4d17ab334e6916da53244d42132622": {
+        "private <T> void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genMethodReadObject( Class<T> objectType, Constructor defaultConstructor, long readerFeatures, String TYPE_OBJECT, Supplier<T> supplier, FieldReader[] fieldReaderArray, ClassWriter cw, String classNameType, ObjectReaderAdapter objectReaderAdapter )": 19.6,
+        "public static String com.alibaba.fastjson2.internal.asm.ASMUtils.desc(Class<?> clazz)": 84.0,
+        "static String com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.fieldObjectReader(int i)": 111.3,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwListJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 3.5,
+        "public ObjectReader com.alibaba.fastjson2.reader.ObjectReaderProvider.getObjectReader(Type objectType, boolean fieldBased)": 4.2,
+        "public String com.alibaba.fastjson2.internal.asm.Type.getDescriptor()": 227.7,
+        "private Object com.alibaba.fastjson2.reader.ObjectReaderImplDate.readDate(JSONReader jsonReader)": 18.0,
+        "public String com.alibaba.fastjson2.internal.asm.Type.getClassName()": 6.4,
+        "public void com.alibaba.fastjson2.internal.asm.MethodWriter.visitLdcInsn(Class value)": 19.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWrite( ObjectWriterProvider provider, Class objectType, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType, long objectFeatures )": 6.4,
+        "protected void com.alibaba.fastjson2.writer.ObjectWriterCreator.handleIgnores(BeanInfo beanInfo, List<FieldWriter> fieldWriters)": 37.2,
+        "static String com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.fieldWriter(int i)": 111.3,
+        "private <T> void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genMethodReadJSONBObject( Class<T> objectType, Constructor defaultConstructor, long readerFeatures, String TYPE_OBJECT, FieldReader[] fieldReaderArray, ClassWriter cw, String classNameType, ObjectReaderAdapter objectReaderAdapter )": 24.0,
+        "public static Class<?> com.alibaba.fastjson2.util.TypeUtils.getMapping(Type type)": 13.3,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWriteArrayMappingJSONB( ObjectWriterProvider provider, Class objectType, long objectFeatures, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType, long features )": 6.4,
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterProvider.getObjectWriter(Type objectType, Class objectClass, boolean fieldBased)": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWriteJSONB( ObjectWriterProvider provider, Class objectType, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType, long objectFeatures )": 6.4,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodInit(List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType, String objectWriterSupper)": 167.3,
+        "public byte[] com.alibaba.fastjson2.internal.asm.ClassWriter.toByteArray()": 39.7,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWriteArrayMapping( ObjectWriterProvider provider, String methodName, Class objectType, long objectFeatures, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType )": 6.4,
+        "private <T> void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genMethodReadJSONBObjectArrayMapping( Class<T> objectType, Constructor defaultConstructor, long readerFeatures, String TYPE_OBJECT, FieldReader[] fieldReaderArray, ClassWriter cw, String classNameType, ObjectReaderAdapter objectReaderAdapter )": 15.2,
+        "public static boolean com.alibaba.fastjson2.util.BeanUtils.isNoneStaticMemberClass(Class objectClass, Class memberClass)": 4.2,
+        "static String com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.fieldReader(int i)": 111.3,
+        "private void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genInitFields( FieldReader[] fieldReaderArray, String classNameType, boolean generatedFields, int THIS, int FIELD_READER_ARRAY, MethodWriter mw, String objectReaderSuper )": 8.6,
+        "void com.alibaba.fastjson2.internal.asm.MethodWriter.visitFrameEnd()": 4.2,
+        "int com.alibaba.fastjson2.internal.asm.MethodWriter.computeMethodInfoSize()": 4.2
+    },
+    "750a830581868611306018778f519a08468b3c41": {
+        "private String com.alibaba.fastjson2.JSONReaderJSONB.readStringUTF8()": 8.9,
+        "private String com.alibaba.fastjson2.JSONReaderJSONB.readStringNonAscii()": 8.9,
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readString()": 8.9,
+        "public Object com.alibaba.fastjson2.JSONReaderJSONB.readAny()": 27.1,
+        "private String com.alibaba.fastjson2.JSONReaderJSONB.readString(Charset charset)": 8.9
+    },
+    "4287c3bad7ee709fcd8c045918a57c9bc0d094a5": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( ObjectWriteContext context, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, boolean arrayMapping, String TYPE_OBJECT )": 9.2
+    },
+    "9f10cb5c9a5219e097f644ed43df57153894afb9": {
+        "public Object com.alibaba.fastjson2.JSONPathTypedMultiNames.extract(JSONReader jsonReader)": 55.6
+    },
+    "69b2c464c8f6cd5e9e9c917176d834b68cebe518": {
+        "public static JSONReader com.alibaba.fastjson2.JSONReader.of(String str)": 8.9
+    },
+    "03a543564a5bfff890102d087a38189edcdbc507": {
+        "public final void com.alibaba.fastjson2.JSONWriter.popPath(Object object)": 8.9
+    },
+    "634391b493f5db08ea7301c858ba8ac0a0e5134d": {
+        "public Number com.alibaba.fastjson2.JSONReader.getNumber()": 4.2,
+        "public double com.alibaba.fastjson2.JSONReaderJSONB.readDoubleValue()": 17.4,
+        "public BigDecimal com.alibaba.fastjson2.JSONReader.getBigDecimal()": 13.0,
+        "public int com.alibaba.fastjson2.JSONReaderJSONB.readInt32Value()": 17.4,
+        "public BigInteger com.alibaba.fastjson2.JSONReaderJSONB.readBigInteger()": 13.0,
+        "public BigDecimal com.alibaba.fastjson2.JSONReaderJSONB.readBigDecimal()": 17.4,
+        "public long com.alibaba.fastjson2.JSONReaderJSONB.readInt64Value()": 17.4
+    },
+    "39652900d258dd93acab6e5b07530cfb6512854b": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValueJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i, boolean table )": 4.2,
+        "public BigInteger com.alibaba.fastjson2.JSONReaderJSONB.readBigInteger()": 378.5,
+        "private long com.alibaba.fastjson2.JSONReaderJSONB.readInt64Value0(byte[] bytes, byte type)": 17.4,
+        "public Instant com.alibaba.fastjson2.JSONReaderJSONB.readInstant()": 11.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueArrayMapping( FieldWriter fieldWriter, MethodWriterContext mwc, int OBJECT, int i )": 4.2,
+        "public List com.alibaba.fastjson2.JSONReaderJSONB.readArray()": 8.6,
+        "private void com.alibaba.fastjson2.JSONReaderUTF16.skipString()": 53.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValue(MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i)": 34.0,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValue( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 102.0,
+        "public BigDecimal com.alibaba.fastjson2.JSONReaderJSONB.readBigDecimal()": 386.8,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeEnum(Enum e)": 18.0,
+        "public Object com.alibaba.fastjson2.JSONPathSingleName.eval(Object root)": 26.1,
+        "public LocalDateTime com.alibaba.fastjson2.JSONReaderJSONB.readLocalDateTime()": 137.1,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 102.0
+    },
+    "b261853449a05f5ea5be3acf542beba7eec0d07c": {
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReader.readObject()": 17.4,
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMap.readObject(JSONReader jsonReader, long features)": 23.3
+    },
+    "d31819e1013e2445309d6f274c20d5053b124394": {
+        "public BigDecimal com.alibaba.fastjson2.JSONReader.getBigDecimal()": 6.4
+    },
+    "59602612f8a7e1f807919a8145f810cfc2aa62ee": {
+        "public String com.alibaba.fastjson2.JSONReaderJSONB.readFieldName()": 106.9,
+        "private BigInteger com.alibaba.fastjson2.JSONReaderJSONB.readBigInteger0(byte type)": 4.2,
+        "private long com.alibaba.fastjson2.JSONReaderJSONB.readInt64Value0(byte[] bytes, byte type)": 4.2,
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readString()": 41.6,
+        "public void com.alibaba.fastjson2.JSONReaderJSONB.close()": 11.1,
+        "private String com.alibaba.fastjson2.JSONReaderJSONB.readStringNonAscii(String str, boolean ascii)": 4.2,
+        "public String com.alibaba.fastjson2.JSONReaderJSONB.getString()": 8.6,
+        "public Object com.alibaba.fastjson2.JSONReaderJSONB.readAny()": 4.2,
+        "public final void com.alibaba.fastjson2.JSONReaderUTF8.close()": 24.6
+    },
+    "49be545fcd5a03e7c199e89e39af44269bc191e7": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt64(long i)": 395.4,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt32(int i)": 275.5
+    },
+    "fe8dece3df1d14f80d77b639285c9a9ce8b9ac31": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( Class<T> objectType, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 20.2
+    },
+    "2bd4b7e30b9c26521cae9eaed8b4c97affcbd1e5": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueObjectJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 4.2,
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( ObjectWriteContext context, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 501.4,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueObject( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 4.2,
+        "private <T> void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genCreateObject( MethodWriter mw, ObjectWriteContext context, String classNameType, String TYPE_OBJECT, int FEATURES, boolean fieldBased, Constructor defaultConstructor, Supplier creator )": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueString( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueArrayMapping( FieldWriter fieldWriter, MethodWriterContext mwc, int OBJECT, int i )": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValue(MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i)": 8.6
+    },
+    "4e1e92cf4b0aefc250917cf06564e4e2e1e1bda0": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapTyped.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 4.2
+    },
+    "1f1c9a45feec03618c78f9e3402b39ea2d283ac5": {
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readFieldName()": 101.0
+    },
+    "0c9cd8e6f22553250b7be324965928d9ed32119b": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValue(MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT)": 4.2,
+        "private void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.gwGetFieldType(String classNameType, MethodWriter mw, int THIS, int i, Type fieldType)": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValue( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 4.2,
+        "public final void com.alibaba.fastjson2.writer.FieldWriter<T>.writeFieldName(JSONWriter jsonWriter)": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueArrayMapping( FieldWriter fieldWriter, MethodWriterContext mwc, int OBJECT, int i )": 4.2,
+        "public int com.alibaba.fastjson2.writer.FieldWriter<T>.compareTo(Object o)": 26.2,
+        "void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genGetObject(MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT)": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueString( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 13.0,
+        "public final JSONWriter.Path com.alibaba.fastjson2.writer.FieldWriter<T>.getPath(JSONWriter.Path parent)": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValueJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i, boolean table )": 8.6,
+        "public Object com.alibaba.fastjson2.writer.FIeldWriterEnumField.getFieldValue(Object object)": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueDate( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 22.7,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueInt32V( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i, boolean jsonb )": 4.2
+    },
+    "ef5d5883fd56e27ad3a90e218285e1a72c5aba24": {
+        "public void com.alibaba.fastjson2.writer.FieldWriterInt64<T>.writeInt64(JSONWriter jsonWriter, long value)": 13.0,
+        "public void com.alibaba.fastjson2.writer.FieldWriterDate<T>.writeDate(JSONWriter jsonWriter, long timeMillis)": 8.6,
+        "public boolean com.alibaba.fastjson2.writer.FIeldWriterEnumField.write(JSONWriter jsonWriter, Object object)": 4.2,
+        "public void com.alibaba.fastjson2.writer.FieldWriterList<T>.writeList(JSONWriter jsonWriter, boolean writeFieldName, List list)": 4.2,
+        "public final void com.alibaba.fastjson2.writer.FieldWriterEnum.writeEnum(JSONWriter jsonWriter, Enum e)": 13.0,
+        "public void com.alibaba.fastjson2.writer.FieldWriterList<T>.writeListStr(JSONWriter jsonWriter, boolean writeFieldName, List<String> list)": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWriteJSONB( ObjectWriterProvider provider, Class objectType, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType, long objectFeatures )": 19.9,
+        "public ObjectWriter com.alibaba.fastjson2.writer.FieldWriterDate<T>.getObjectWriter(JSONWriter jsonWriter, Class valueClass)": 4.2,
+        "public boolean com.alibaba.fastjson2.writer.ObjectWriterAdapter<T>.writeTypeInfo(JSONWriter jsonWriter)": 13.0,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWriteArrayMappingJSONB( ObjectWriterProvider provider, Class objectType, long objectFeatures, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType, long features )": 19.9,
+        "public final void com.alibaba.fastjson2.writer.FieldWriter<T>.writeFieldName(JSONWriter jsonWriter)": 82.3,
+        "public void com.alibaba.fastjson2.writer.FieldWriter<T>.writeString(JSONWriter jsonWriter, String value)": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWriteArrayMapping( ObjectWriterProvider provider, String methodName, Class objectType, long objectFeatures, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType )": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.genMethodWrite( ObjectWriterProvider provider, Class objectType, List<FieldWriter> fieldWriters, ClassWriter cw, String classNameType, long objectFeatures )": 24.3,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueObjectJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 37.5,
+        "public void com.alibaba.fastjson2.writer.FieldWriterInt32<T>.writeInt32(JSONWriter jsonWriter, int value)": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueObject( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 37.5
+    },
+    "e3cd07fd29633c38ab58b198e848ed2fb53ae4d7": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( ObjectWriteContext context, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, boolean arrayMapping, String TYPE_OBJECT )": 4.2
+    },
+    "e81846ee7262583930b9a35123a4742599fe5eaa": {
+        "public final boolean com.alibaba.fastjson2.JSONReaderASCII.nextIfComma()": 4.2,
+        "public final boolean com.alibaba.fastjson2.JSONReaderASCII.nextIfObjectEnd()": 4.2,
+        "public boolean com.alibaba.fastjson2.JSONReaderUTF8.nextIfComma()": 8.6,
+        "public boolean com.alibaba.fastjson2.JSONReaderUTF8.nextIfObjectStart()": 8.6,
+        "public boolean com.alibaba.fastjson2.JSONReaderUTF8.nextIfArrayEnd()": 8.6,
+        "public final void com.alibaba.fastjson2.JSONReaderASCII.next()": 8.6,
+        "public final boolean com.alibaba.fastjson2.JSONReaderASCII.nextIfArrayEnd()": 4.2,
+        "public boolean com.alibaba.fastjson2.JSONReaderUTF8.nextIfObjectEnd()": 8.6,
+        "public void com.alibaba.fastjson2.JSONReaderUTF8.next()": 17.4,
+        "public boolean com.alibaba.fastjson2.JSONReaderUTF8.nextIfArrayStart()": 8.6
+    },
+    "71a918cc866c87b6bbe00f381e1d69ed376a8b69": {
+        "private <T> void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genCreateObject( MethodWriter mw, ObjectWriteContext context, String classNameType, String TYPE_OBJECT, int FEATURES, boolean fieldBased, Constructor defaultConstructor, Supplier creator )": 15.2,
+        "public static JSONWriter com.alibaba.fastjson2.JSONWriter.ofUTF8()": 15.2,
+        "public static JSONWriter com.alibaba.fastjson2.JSONWriter.of(Context writeContext)": 4.2,
+        "public <T> ObjectReader<T> com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.createObjectReader( Class<T> objectClass, Type objectType, boolean fieldBased, ObjectReaderProvider provider )": 43.1,
+        "protected void com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String namingStrategy, String[] orders, BeanInfo beanInfo, FieldInfo fieldInfo, Method method, Map<String, FieldReader> fieldReaders, ObjectReaderProvider provider )": 40.0,
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, String label, Method method, ObjectWriter initObjectWriter )": 97.9
+    },
+    "20a82d06624e3680ab7775fb94fefc40041c3f84": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeBool(boolean value)": 4.2,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeInt32(int val)": 17.4,
+        "public void com.alibaba.fastjson2.JSONWriterUTF8.writeNameRaw(byte[] bytes)": 4.2,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeString(String str)": 13.0,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.write(JSONObject map)": 17.4,
+        "public boolean com.alibaba.fastjson2.JSONWriterJSONB.writeTypeName(byte[] typeName, long hash)": 13.0,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeNameRaw(byte[] name, long nameHash)": 17.4,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeBigInt(BigInteger value, long features)": 4.2,
+        "public void com.alibaba.fastjson2.JSONWriterUTF16.writeNameRaw(char[] chars)": 4.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.write(List array)": 13.0,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeMillis(long millis)": 13.0
+    },
+    "a3e184960bbf168367b53ffd0b68e60f4b337bd5": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueObject( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i, boolean jsonb )": 6.4,
+        "protected final void com.alibaba.fastjson2.reader.ObjectReaderAdapter<T>.readFieldValue(long hashCode, JSONReader jsonReader, long features, Object object)": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwObjectJSONB( FieldWriter fieldWriter, int OBJECT, MethodWriterContext mwc, int i, boolean beanToArray )": 8.6
+    },
+    "049e17555d0fc6bbc3f1c01de19d3b4ec602a5da": {
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, String label, Method method, ObjectWriter initObjectWriter )": 45.6
+    },
+    "b1f2e48ca037b95d60bd0037e196da2247dda20d": {
+        "public void com.alibaba.fastjson2.support.csv.CSVReaderUTF16<T>.readLineObjectAll(boolean readHeader, Consumer<T> consumer)": 4.2
+    },
+    "357735aa7a5f01b2b1e25cf07edeede13d9a4da6": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeInt64(long val)": 15.2,
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReaderJSONB.readObject()": 15.2,
+        "public long com.alibaba.fastjson2.JSONReaderJSONB.readInt64Value()": 19.9,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeInt32(int val)": 4.2,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeMillis(long millis)": 41.6,
+        "public Long com.alibaba.fastjson2.JSONReaderJSONB.readInt64()": 19.9,
+        "public Instant com.alibaba.fastjson2.JSONReaderJSONB.readInstant()": 8.6,
+        "public ZonedDateTime com.alibaba.fastjson2.JSONReaderJSONB.readZonedDateTime()": 8.6,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeDouble(double value)": 19.6,
+        "private long com.alibaba.fastjson2.JSONReaderJSONB.readInt64Value0(byte[] bytes, byte type)": 8.6,
+        "public int com.alibaba.fastjson2.JSONReaderJSONB.readInt32Value()": 13.3,
+        "public List com.alibaba.fastjson2.JSONReaderJSONB.readArray()": 8.6,
+        "public float com.alibaba.fastjson2.JSONReaderJSONB.readFloatValue()": 10.1,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeFloat(float value)": 10.8,
+        "public Object com.alibaba.fastjson2.JSONReaderJSONB.readAny()": 26.2,
+        "public BigInteger com.alibaba.fastjson2.JSONReaderJSONB.readBigInteger()": 17.4,
+        "public BigDecimal com.alibaba.fastjson2.JSONReaderJSONB.readBigDecimal()": 26.2
+    },
+    "27a42c6cc3134e6758bf79752c8ab135f7175599": {
+        "public ObjectReader com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getObjectReader(ObjectReaderProvider provider, Type type)": 8.9,
+        "public void com.alibaba.fastjson2.writer.FieldWriterInt32<T>.writeInt32(JSONWriter jsonWriter, int value)": 6.4,
+        "public <T> FieldReader com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReaderMethod( Class<T> objectClass, Type objectType, String fieldName, int ordinal, long features, String format, Locale locale, Object defaultValue, String schema, Type fieldType, Class fieldClass, Method method, ObjectReader initReader )": 4.2
+    },
+    "348e49a8b847dc4b3d1b97a48840401767f218be": {
+        "public static String com.alibaba.fastjson2.util.BeanUtils.getterName(String methodName, String namingStrategy)": 8.9,
+        "public static Member com.alibaba.fastjson2.util.BeanUtils.getEnumValueField(Class enumClass, ObjectCodecProvider mixinProvider)": 24.0
+    },
+    "2b6093ae8d8a6d6489b3b324ffb127e91296cf81": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeMillis(long millis)": 96.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeUUID(UUID value)": 262.5,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.startObject()": 11.1,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeLocalDate(LocalDate date)": 8.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF8.writeRaw(String str)": 26.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt64(long[] values)": 19.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.endObject()": 8.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF8.writeOffsetDateTime(OffsetDateTime dateTime)": 8.6,
+        "public final void com.alibaba.fastjson2.writer.FieldWriterEnum.writeEnum(JSONWriter jsonWriter, Enum e)": 136.1,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeDouble(double value)": 59.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.startArray()": 11.1,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt64(long i)": 10.8,
+        "public final void com.alibaba.fastjson2.writer.FieldWriter<T>.writeFieldName(JSONWriter jsonWriter)": 15.5,
+        "public final void com.alibaba.fastjson2.writer.FieldWriterBoolean.writeBool(JSONWriter jsonWriter, boolean value)": 112.7,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeSymbol(int symbol)": 17.4,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.startObject()": 11.1,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.endArray()": 8.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDecimal(BigDecimal value, long features, DecimalFormat format)": 14.5,
+        "public final String com.alibaba.fastjson2.JSONWriter.setPath(FieldWriter fieldWriter, Object object)": 55.7
+    },
+    "8e378266b79dd60abb60e2b4b5fcf64dd20ababb": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValueJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 8.6,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.startArray(int size)": 8.6,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeFloat(float value)": 10.8
+    },
+    "4c8a93a38bdd37b324295ec1567fba364c115f11": {
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplBigDecimal.writeJSONB(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 22.4
+    },
+    "bbe40e2a9ad63fec4e2ac5a4d9bacba54c999f9c": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( Class<T> objectType, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 26.8,
+        "public String com.alibaba.fastjson2.JSONReaderJSONB.readString()": 174.8
+    },
+    "97c667e90732880c530fcfb92c0c4c51816d6503": {
+        "public <T, V> FieldReader com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String fieldName, Type fieldType, Class<V> fieldClass, int ordinal, long features, String format, Locale locale, Object defaultValue, JSONSchema schema, Method method, BiConsumer<T, V> function, ObjectReader initReader )": 4.2,
+        "public <T> FieldReader com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReaderMethod( Class<T> objectClass, Type objectType, String fieldName, int ordinal, long features, String format, Locale locale, Object defaultValue, String schema, Type fieldType, Class fieldClass, Method method, ObjectReader initReader )": 4.2,
+        "public <T, V> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectClass, String fieldName, int ordinal, long features, String format, String label, Type fieldType, Class<V> fieldClass, Method method, Function<T, V> function )": 8.6,
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.createObjectWriter( Class objectClass, long features, ObjectWriterProvider provider )": 35.6,
+        "protected void com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String namingStrategy, String[] orders, BeanInfo beanInfo, FieldInfo fieldInfo, Method method, Map<String, FieldReader> fieldReaders, ObjectReaderProvider provider )": 6.4,
+        "public <T> FieldReader<T> com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String fieldName, int ordinal, long features, String format, Locale locale, Object defaultValue, String schema, Type fieldType, Class fieldClass, Field field, ObjectReader initReader )": 39.4
+    },
+    "231c3fdeded223782c0156908883dcc6d9b7f845": {
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, String label, Method method, ObjectWriter initObjectWriter )": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValue( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 4.2,
+        "protected FieldWriter com.alibaba.fastjson2.writer.ObjectWriterCreator.creteFieldWriter( Class objectClass, long writerFeatures, List<ObjectWriterModule> modules, BeanInfo beanInfo, FieldInfo fieldInfo, Field field )": 22.4,
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, String fieldName, int ordinal, long features, String format, String label, Field field, ObjectWriter initObjectWriter )": 8.6
+    },
+    "678c446270694a401153c461983793b0c094f677": {
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.createFieldWriter( ObjectWriterProvider provider, String fieldName, int ordinal, long features, String format, String label, Field field, ObjectWriter initObjectWriter )": 12.6
+    },
+    "e2baa64e33c44ceeec71bbdfb6669e8869aad831": {
+        "public void com.alibaba.fastjson2.JSONWriterUTF16.writeString(String str)": 99.6
+    },
+    "c7fb6862a573b6ecf5072c4089eb713fca3dac52": {
+        "public void com.alibaba.fastjson2.JSONPathSegment.accept(JSONReader jsonReader, JSONPath.Context context)": 161.7
+    },
+    "39a221be1ab44016e702f96497f9a1248400a41f": {
+        "public float com.alibaba.fastjson2.JSONReaderUTF16.readFloatValue()": 4.2,
+        "public double com.alibaba.fastjson2.JSONReaderUTF16.readDoubleValue()": 4.2,
+        "public void com.alibaba.fastjson2.JSONReaderUTF16.readNumber0()": 4.2
+    },
+    "36c7e8865baccab0779baa556925be1f8101b956": {
+        "public void com.alibaba.fastjson2.writer.FieldWriterList<T>.writeList(JSONWriter jsonWriter, boolean writeFieldName, List list)": 19.9
+    },
+    "3b093b413dcce3008029d32dbc97a41434edd66d": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.endArray()": 2.0,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.startArray(int size)": 2.0
+    },
+    "d6f623b900fc10847f381c80cc09f08ad40246d0": {
+        "protected <T> FieldReader[] com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReaders( Class<T> objectClass, Type objectType, BeanInfo beanInfo, boolean fieldBased, ObjectReaderProvider provider )": 24.6,
+        "public Object com.alibaba.fastjson2.adapter.jackson.databind.JsonDeserializer<T>.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 8.6,
+        "protected void com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String namingStrategy, FieldInfo fieldInfo, Field field, Map<String, FieldReader> fieldReaders, ObjectReaderProvider provider )": 26.1,
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.createObjectWriter( Class objectClass, long features, ObjectWriterProvider provider )": 154.2,
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplMap.write(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 13.6,
+        "public static void com.alibaba.fastjson2.util.BeanUtils.getters(Class objectClass, Consumer<Method> methodConsumer)": 2.0,
+        "protected void com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String namingStrategy, String[] orders, FieldInfo fieldInfo, Method method, Map<String, FieldReader> fieldReaders, ObjectReaderProvider provider )": 4.2,
+        "public static void com.alibaba.fastjson2.util.BeanUtils.declaredFields(Class objectClass, Consumer<Field> fieldConsumer)": 24.3,
+        "private static boolean com.alibaba.fastjson2.util.BeanUtils.isJSONField(Annotation[] annotations)": 2.0,
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, String fieldName, int ordinal, long features, String format, String label, Field field, ObjectWriter initObjectWriter )": 21.7,
+        "public void com.alibaba.fastjson2.codec.FieldInfo.init()": 4.2,
+        "public ObjectReader com.alibaba.fastjson2.codec.FieldInfo.getInitReader()": 8.6,
+        "public ObjectWriter com.alibaba.fastjson2.writer.FieldWriterObject<T>.getObjectWriter(JSONWriter jsonWriter, Class valueClass)": 4.2,
+        "public static ObjectReader com.alibaba.fastjson2.reader.ObjectReaderImplList.of(Type type, Class listClass, long features)": 31.5,
+        "public ObjectReader com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getObjectReader(ObjectReaderProvider provider, Type type)": 4.2
+    },
+    "2c39bf007c8ae15e2241388ac71ff7a438443e09": {
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterProvider.getObjectWriter(Type objectType, Class objectClass, boolean fieldBased)": 15.5
+    },
+    "241f64295c9f61bb4d902156853c3f2a830f6632": {
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplList.writeJSONB(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 20.2
+    },
+    "ae6d307e97cf6dcca17c55a6b1a8266fb68dfe82": {
+        "public final Integer com.alibaba.fastjson2.JSONReaderUTF16.readInt32()": 76.5,
+        "public String com.alibaba.fastjson2.JSONReaderUTF8.readFieldName()": 22.1,
+        "public final Long com.alibaba.fastjson2.JSONReaderUTF16.readInt64()": 86.5,
+        "public final void com.alibaba.fastjson2.JSONReaderUTF16.skipValue()": 126.3,
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readString()": 80.8,
+        "public final long com.alibaba.fastjson2.JSONReaderUTF16.readFieldNameHashCode()": 4.2,
+        "public final long com.alibaba.fastjson2.JSONReaderUTF16.readFieldNameHashCodeUnquote()": 153.4,
+        "public final int com.alibaba.fastjson2.JSONReaderUTF16.readInt32Value()": 85.6,
+        "public final String com.alibaba.fastjson2.JSONReaderUTF16.readFieldName()": 4.2,
+        "public final void com.alibaba.fastjson2.JSONReaderUTF16.readNumber0()": 88.1,
+        "static ObjectReader com.alibaba.fastjson2.reader.ObjectReaderCreator.getInitReader( ObjectReaderProvider provider, Type fieldType, Class fieldClass, FieldInfo fieldInfo )": 4.2
+    },
+    "7f232dd655d22160d43b030efc83ae2ac4e052a6": {
+        "final void com.alibaba.fastjson2.JSONWriterUTF16.writeLocalDate0(LocalDate localDate)": 81.8,
+        "final void com.alibaba.fastjson2.JSONWriterUTF16.writeLocalTime0(LocalTime time)": 192.5,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt64(long i)": 331.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDateTime14( int year, int month, int dayOfMonth, int hour, int minute, int second)": 21.8,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDateYYYMMDD8(int year, int month, int dayOfMonth)": 41.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDateTime19( int year, int month, int dayOfMonth, int hour, int minute, int second)": 21.8,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeInt32(int i)": 228.4
+    },
+    "d120ce9e68d3eb1dc7fc4a538a0f4c336f7f04dd": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueObject( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 35.0,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueString( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 32.8,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueList( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 6.4
+    },
+    "aa88b482a025de26ed0a9590f2625812a25daf05": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueArrayMapping( FieldWriter fieldWriter, MethodWriterContext mwc, int OBJECT, int i )": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValueJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i, boolean table )": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueJSONB( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 21.8,
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, String label, Method method, ObjectWriter initObjectWriter )": 18.0,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValue( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 40.6
+    },
+    "1a805cebc5727c1a10efca28bd4a3801db9a9af9": {
+        "public static JSONWriter com.alibaba.fastjson2.JSONWriter.of()": 22.4
+    },
+    "c94a67ced6c313d5ed8a3957330e4b4c2a77c053": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeString(String str)": 40.0
+    },
+    "dc453297fd9d778f793efe7e802c68bb810adc00": {
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readString()": 2.0,
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readValueHashCode()": 2.0,
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReader.readObject()": 2.0,
+        "public List com.alibaba.fastjson2.JSONReader.readArray()": 2.0,
+        "public void com.alibaba.fastjson2.JSONReaderStr.readNumber0()": 2.0,
+        "public final int com.alibaba.fastjson2.JSONReaderUTF8.readInt32Value()": 2.0,
+        "public boolean com.alibaba.fastjson2.JSONReader.nextIfMatch(char ch)": 8.9,
+        "public int com.alibaba.fastjson2.JSONReaderStr.readInt32Value()": 2.0,
+        "public final long com.alibaba.fastjson2.JSONReaderUTF8.readInt64Value()": 2.0
+    },
+    "2c162b91f8c4e27b4e2f4357f1e1e635162848b7": {
+        "public long com.alibaba.fastjson2.JSONReaderUTF16.readFieldNameHashCodeUnquote()": 345.5,
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readFieldNameHashCode()": 8.6,
+        "public static long com.alibaba.fastjson2.util.Fnv.hashCode64(String name)": 4.2,
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readValueHashCode()": 204.7,
+        "public static long com.alibaba.fastjson2.util.Fnv.hashCode64LCase(String name)": 129.9
+    },
+    "0a87ea16b2982968c075884289b6979178967aef": {
+        "public <T> FieldReader com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReaderMethod( Class<T> objectClass , Type objectType , String fieldName , int ordinal , long features , String format , Locale locale , Object defaultValue , Type fieldType , Class fieldClass , Method method )": 8.6,
+        "public <T> FieldReader<T> com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass , Type objectType , String fieldName , int ordinal , long features , String format , Locale locale , Object defaultValue , Type fieldType , Class fieldClass , Field field )": 8.6,
+        "public void com.alibaba.fastjson2.codec.FieldInfo.init()": 2.0,
+        "protected void com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String namingStrategy, String[] orders, FieldInfo fieldInfo, Method method, Map<String, FieldReader> fieldReaders, List<ObjectReaderModule> modules)": 13.0,
+        "protected void com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, FieldInfo fieldInfo, Field field, Map<String, FieldReader> fieldReaders, List<ObjectReaderModule> modules)": 8.6
+    },
+    "834a333afdb02c6dba94d333dee8a19a5ff1391d": {
+        "public final LocalDateTime com.alibaba.fastjson2.JSONReaderJSONB.readLocalDateTime()": 13.3,
+        "public final ZonedDateTime com.alibaba.fastjson2.JSONReaderJSONB.readZonedDateTime()": 48.2
+    },
+    "d84ce8bf58a6c15bec894ba6b4cee633831832b6": {
+        "protected void com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String namingStrategy, FieldInfo fieldInfo, Field field, Map<String, List<FieldReader>> fieldReaders, ObjectReaderProvider provider )": 6.4
+    },
+    "744104b4617d5a9df6755d60cf096b6e4be4007f": {
+        "private int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValueList( FieldReader fieldReader, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, boolean arrayMapping, Class objectClass, Class fieldClass, Type fieldType, long fieldFeatures, Type itemType, String TYPE_FIELD_CLASS, Integer REFERENCE )": 48.2
+    },
+    "b42e4cf114dc069a303d6bbaa84e99b16331b2e2": {
+        "public static void com.alibaba.fastjson2.util.BeanUtils.declaredFields(Class objectClass, Consumer<Field> fieldConsumer)": 8.6,
+        "private void com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getCreator(BeanInfo beanInfo, Class<?> objectClass, Constructor constructor)": 4.2,
+        "public LocalDateTime com.alibaba.fastjson2.JSONReader.readLocalDateTime()": 4.2,
+        "private ObjectReader com.alibaba.fastjson2.reader.ObjectReaderProvider.getObjectReaderInternal(Type objectType, boolean fieldBased)": 8.6,
+        "public static Field com.alibaba.fastjson2.util.BeanUtils.getField(Class objectClass, Method method)": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldName(MethodWriterContext mwc, FieldWriter fieldWriter, int i)": 8.6,
+        "public ObjectReader com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getObjectReader(ObjectReaderProvider provider, Type type)": 4.2,
+        "private void com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getCreator(BeanInfo beanInfo, Class<?> objectClass, Method method)": 13.0,
+        "protected void com.alibaba.fastjson2.internal.asm.MethodCollector.visitLocalVariable(String name, int index)": 4.2,
+        "public static Member com.alibaba.fastjson2.util.BeanUtils.getEnumValueField(Class enumClass, ObjectCodecProvider mixinProvider)": 4.2,
+        "public static boolean com.alibaba.fastjson2.util.BeanUtils.isExtendedMap(Class objectClass)": 4.2,
+        "public static void com.alibaba.fastjson2.util.BeanUtils.getters(Class objectClass, Class mixinSource, Consumer<Method> methodConsumer)": 8.6,
+        "private ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterProvider.getObjectWriterInternal(Type objectType, Class objectClass, boolean fieldBased)": 8.6,
+        "public static void com.alibaba.fastjson2.util.BeanUtils.processJacksonJsonFormat(FieldInfo fieldInfo, Annotation annotation)": 4.2
+    },
+    "43399ba5ae4b411245a92b023fcb99674131a029": {
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterProvider.register(Type type, ObjectWriter objectWriter, boolean fieldBased)": 38.4
+    },
+    "4d045f1ac2913a6826c404bfdbf90c0b63e233d0": {
+        "public final BigDecimal com.alibaba.fastjson2.JSONReaderUTF16.readBigDecimal()": 8.9
+    },
+    "18b07727633da4823a466b5df7426dc662015dfd": {
+        "public String com.alibaba.fastjson2.JSONReaderJSONB.readFieldName()": 13.3,
+        "public Object com.alibaba.fastjson2.JSONReaderJSONB.readAny()": 13.3,
+        "public String com.alibaba.fastjson2.JSONReaderJSONB.readString()": 46.2
+    },
+    "7799c1d5c214195bf76da8094ed3e8b7d5f6e95d": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeBigInt(BigInteger value, long features)": 4.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDecimal(BigDecimal value, long features, DecimalFormat format)": 4.2
+    },
+    "824e2153aec7acaed9fa242222f6e20943dc15d9": {
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readString()": 124.8
+    },
+    "2fe854b6f2195393dacc07d25db18e52b020ae5f": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueString( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 33.4
+    },
+    "1b2ab1cefe73e327db1896dcfa50967e59fa6417": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplList.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 15.8,
+        "public long com.alibaba.fastjson2.JSONReaderUTF8.readFieldNameHashCode()": 8.9,
+        "public void com.alibaba.fastjson2.JSONReaderUTF8.next()": 8.9,
+        "public boolean com.alibaba.fastjson2.JSONReaderUTF8.nextIfMatch(char e)": 8.9,
+        "public final void com.alibaba.fastjson2.JSONReaderASCII.next()": 8.9,
+        "public final long com.alibaba.fastjson2.JSONReaderASCII.readFieldNameHashCode()": 8.9,
+        "public final boolean com.alibaba.fastjson2.JSONReaderASCII.nextIfMatch(char ch)": 8.9
+    },
+    "59c2622b3c864d861f65d387830210a2ec30d9b5": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeBigInt(BigInteger value, long features)": 11.1
+    },
+    "fc95c31ea55c49b4b2d2f2aaef39401bb89a6816": {
+        "public JSONArray com.alibaba.fastjson2.JSONObject.getJSONArray(String key)": 4.2,
+        "public List com.alibaba.fastjson2.JSONReader.readArray()": 4.2,
+        "private <T> void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genCreateObject(MethodWriter mw, String classNameType, String TYPE_OBJECT, int FEATURES, boolean fieldBased)": 7.9,
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( Class<T> objectType, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 13.0,
+        "public JSONObject com.alibaba.fastjson2.JSONObject.getJSONObject(String key)": 4.2
+    },
+    "b60e57924ed8495ae8b0979d1e0fa4988aeb8556": {
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplCalendar.write(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 158.5,
+        "public void com.alibaba.fastjson2.writer.FieldWriterDate<T>.writeDate(JSONWriter jsonWriter, long timeMillis)": 150.9,
+        "public ObjectWriter com.alibaba.fastjson2.writer.FieldWriterObject<T>.getObjectWriter(JSONWriter jsonWriter, Class valueClass)": 13.3
+    },
+    "c09c5107937ad246c4b45f3fa683e2a948848e40": {
+        "public final String com.alibaba.fastjson2.JSONReaderUTF16.readFieldName()": 4.2
+    },
+    "2318fe7f404ef15fea10992fec3e1007c1fca246": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeLocalDate(LocalDate date)": 4.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeOffsetDateTime(OffsetDateTime dateTime)": 6.4
+    },
+    "7c19f1992030b22b1058d173e9490645c32e2317": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeOffsetDateTime(OffsetDateTime dateTime)": 21.8,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeLocalDate(LocalDate date)": 19.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDateTime14( int year, int month, int dayOfMonth, int hour, int minute, int second )": 4.2,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.startArray(int size)": 2.0,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeBool(boolean value)": 8.6,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDateYYYMMDD8(int year, int month, int dayOfMonth)": 4.2
+    },
+    "0aee56020b0b1823d6ee76d9d41b1154c040f591": {
+        "public int com.alibaba.fastjson2.writer.FieldWriter<T>.compareTo(Object o)": 39.4
+    },
+    "83ed727cadc8831df1c85e108b94ddfb862d493f": {
+        "public ValidateResult com.alibaba.fastjson2.schema.ArraySchema.validate(Object value)": 46.6,
+        "public static JSONSchema com.alibaba.fastjson2.schema.JSONSchema.of(JSONObject input, JSONSchema parent)": 107.2
+    },
+    "37c584fbb9c71bc09aff95b92fe7b50314fdaed3": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplList.createInstance(long features)": 17.7
+    },
+    "20a2547cef7140ec7c8eed1824ed2cd37d00da3c": {
+        "public int com.alibaba.fastjson2.reader.FieldReader<T>.compareTo(FieldReader o)": 69.5,
+        "private void com.alibaba.fastjson2.reader.ObjectReaderCreator.putIfAbsent(Map<String, List<FieldReader>> fieldReaders, String fieldName, FieldReader fieldReader, Class objectClass)": 28.3
+    },
+    "22309b6900ea551792d419215ef9bff2ffd01d23": {
+        "public static void com.alibaba.fastjson2.util.BeanUtils.declaredFields(Class objectClass, Consumer<Field> fieldConsumer)": 2.0,
+        "public static Method com.alibaba.fastjson2.util.BeanUtils.getMethod(Class objectClass, Method signature)": 4.2,
+        "public void com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getFieldInfo(FieldInfo fieldInfo, Class objectClass, Method method)": 8.9
+    },
+    "f6801bcbd4c55351d46fa8ce162a8afacdd10def": {
+        "public boolean com.alibaba.fastjson2.JSONWriter.hasFilter()": 4.2,
+        "public boolean com.alibaba.fastjson2.writer.ObjectWriterAdapter<T>.hasFilter(JSONWriter jsonWriter)": 4.2
+    },
+    "ada9479b56806901029519ba5ce9d3c5007eac07": {
+        "public static String com.alibaba.fastjson2.util.TypeUtils.getTypeName(Class type)": 20.2,
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMap.readJSONBObject(JSONReader jsonReader, Type fieldType, Object fieldName1, long features)": 4.2
+    },
+    "9bac2832326d18bfc62d54c804f9b36d975b3001": {
+        "public final float com.alibaba.fastjson2.JSONReaderUTF16.readFloatValue()": 18.0,
+        "public final double com.alibaba.fastjson2.JSONReaderUTF16.readDoubleValue()": 18.0
+    },
+    "c61ab2a9e7a7031b896bb36453b58581c1931c5b": {
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readFieldNameHashCode()": 427.0,
+        "public static long com.alibaba.fastjson2.util.Fnv.hashCode64(String name)": 74.8,
+        "public static long com.alibaba.fastjson2.util.Fnv.hashCode64LCase(String name)": 114.0,
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readValueHashCode()": 352.8,
+        "public long com.alibaba.fastjson2.JSONReaderUTF16.readFieldNameHashCodeUnquote()": 449.3
+    },
+    "205fda0131931c9f5de4757c27e356db5502547d": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeDecimal(BigDecimal value)": 40.0,
+        "public Object com.alibaba.fastjson2.JSONReaderJSONB.readAny()": 24.6,
+        "public long com.alibaba.fastjson2.JSONReaderJSONB.readValueHashCode()": 11.4
+    },
+    "8572567246e267638eb404a7e52759e5566d773f": {
+        "private Object com.alibaba.fastjson2.reader.ObjectReaderImplDate.readDate(JSONReader jsonReader)": 20.2
+    },
+    "6ea5cf8171c129b163f71974ed5736b2958b5523": {
+        "protected BeanInfo com.alibaba.fastjson2.writer.ObjectWriterProvider.createBeanInfo()": 10.1,
+        "public <T> ObjectReader<T> com.alibaba.fastjson2.reader.ObjectReaderCreator.createObjectReader( Class<T> objectClass, Type objectType, boolean fieldBased, ObjectReaderProvider provider )": 4.2
+    },
+    "1600401ae6f07d82df9f9d7b7fe4ec8a664b9f9f": {
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplMap.write(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 40.6
+    },
+    "52450ea20b300cbbbefe75c2528601f411b26918": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueString( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i )": 4.2,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwValue(MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i)": 26.5,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueArrayMapping( FieldWriter fieldWriter, MethodWriterContext mwc, int OBJECT, int i )": 4.2
+    },
+    "e4497d27388214bad4abe994f5dd0720d609e459": {
+        "public int com.alibaba.fastjson2.JSONObject.getIntValue(String key, int defaultValue)": 4.2
+    },
+    "e738baf58a5fcea9efe50a4999097b8729a3b426": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( ObjectWriteContext context, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 28.7,
+        "public Object com.alibaba.fastjson2.JSONPathTypedMultiNames.eval(Object root)": 56.0,
+        "public Object com.alibaba.fastjson2.JSONPathTypedMultiNames.extract(JSONReader jsonReader)": 63.9
+    },
+    "4b9577ec715f2830693762a88ba151ded5162345": {
+        "private static boolean com.alibaba.fastjson2.util.BeanUtils.isJSONField(Annotation[] annotations)": 6.4,
+        "private void com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getCreator(BeanInfo beanInfo, Class<?> objectClass, Constructor constructor)": 11.1
+    },
+    "a99ea88b804006c1f5fe7aa381f59025c2ee1acf": {
+        "public Object com.alibaba.fastjson2.JSONReaderJSONB.readAny()": 8.6,
+        "public int com.alibaba.fastjson2.internal.trove.map.hash.TLongIntHashMap.putIfAbsent(long key, int value)": 3.5,
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeInt32(int val)": 8.6,
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldName(MethodWriterContext mwc, int i)": 4.2
+    },
+    "7d86639d7fc2cec479968cc72d093220e4d47bdc": {
+        "public final long com.alibaba.fastjson2.JSONReaderUTF8.readInt64Value()": 33.1,
+        "public final int com.alibaba.fastjson2.JSONReaderUTF8.readInt32Value()": 33.1,
+        "public final void com.alibaba.fastjson2.JSONReaderUTF8.skipValue()": 12.3,
+        "public final void com.alibaba.fastjson2.JSONReaderUTF8.readNumber0()": 8.6
+    },
+    "038f1126ce77ea19a77615d8b0a1012cc3e873a7": {
+        "public static Annotation[] com.alibaba.fastjson2.util.BeanUtils.getAnnotations(AnnotatedElement element)": 4.2,
+        "public static void com.alibaba.fastjson2.util.BeanUtils.annotationMethods(Class objectClass, Consumer<Method> methodConsumer)": 19.9
+    },
+    "b46cceeb7bd8b2af3bec33d800ec8171bcbcf720": {
+        "static void com.alibaba.fastjson2.JSONFactory.releaseCharArray(int cacheIndex, char[] chars)": 61.4,
+        "static char[] com.alibaba.fastjson2.JSONFactory.allocateCharArray(int cacheIndex)": 70.5
+    },
+    "046d17d79f183fda2a8652ebb468f95a0cd7852c": {
+        "public <T> FieldReader com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReaderMethod( Class<T> objectClass, Type objectType, String fieldName, int ordinal, long features, String format, Locale locale, Object defaultValue, String schema, Type fieldType, Class fieldClass, Method method, ObjectReader initReader )": 8.9
+    },
+    "3f05016e411be0d87a00e40f04d8eaaa45ff44c0": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplLocalDate.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 8.9,
+        "public void com.alibaba.fastjson2.reader.FieldReaderLocalDate.readFieldValue(JSONReader jsonReader, Object object)": 26.8
+    },
+    "1551be035d07468a6d9fbb1bf31456ad3d072275": {
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readFieldNameHashCode()": 4.2
+    },
+    "236469ad08f6bf3cdcb84537d0f280df79f7794a": {
+        "public List<String> com.alibaba.fastjson2.support.csv.CSVReader<T>.readHeader()": 2.0
+    },
+    "ab9500c5b4bc95b8724fd53689184b6fd9e3e5e8": {
+        "public LocalDateTime com.alibaba.fastjson2.JSONReader.readLocalDateTime()": 22.4
+    },
+    "71b7df79c177ff6f70c1d17bfb0283a960caa152": {
+        "public void com.alibaba.fastjson2.JSONWriterUTF16.writeString(String str)": 18.0
+    },
+    "f5a794287371c9a5ce76691c28ebc4336ac5f796": {
+        "public ObjectReader com.alibaba.fastjson2.reader.ObjectReaderBaseModule.getObjectReader(ObjectReaderProvider provider, Type type)": 4.2,
+        "public static boolean com.alibaba.fastjson2.util.BeanUtils.isRecord(Class objectClass)": 4.2,
+        "public static JSONPath com.alibaba.fastjson2.JSONPath.of(String path)": 8.6
+    },
+    "94ac60ed42e969d4c7b1299d35d9aa027cc88adf": {
+        "public int com.alibaba.fastjson2.JSONReaderJSONB.readInt32Value()": 8.9,
+        "public float com.alibaba.fastjson2.JSONReaderJSONB.readFloatValue()": 8.9,
+        "public double com.alibaba.fastjson2.JSONReaderJSONB.readDoubleValue()": 8.9,
+        "public long com.alibaba.fastjson2.JSONReaderJSONB.readInt64Value()": 8.9,
+        "public boolean com.alibaba.fastjson2.JSONReader.readBoolValue()": 8.9
+    },
+    "73b68ff582ba39cefac324fbb56e677f18656063": {
+        "public final long com.alibaba.fastjson2.JSONReaderUTF16.readInt64Value()": 103.1,
+        "public final double com.alibaba.fastjson2.JSONReaderUTF16.readDoubleValue()": 62.3,
+        "public final Integer com.alibaba.fastjson2.JSONReaderUTF16.readInt32()": 184.7,
+        "public final float com.alibaba.fastjson2.JSONReaderUTF16.readFloatValue()": 35.6
+    },
+    "9005ad96e71f30c89cf1e20d4f92849992de55f1": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplDoubleArray.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 8.9
+    },
+    "94a3d539485746b6e2f5f857fe7d88be1c48bb24": {
+        "public final int com.alibaba.fastjson2.JSONReaderUTF16.readInt32Value()": 108.0,
+        "public final boolean com.alibaba.fastjson2.JSONReaderUTF16.nextIfName4Match12(long name1, byte name2)": 8.6,
+        "public final boolean com.alibaba.fastjson2.JSONReaderUTF16.nextIfName4Match16(long name1, int name2, byte name3)": 8.6,
+        "public final boolean com.alibaba.fastjson2.JSONReaderUTF16.nextIfName4Match20(long name1, long name2, byte name3)": 8.6
+    },
+    "f115c40c82f73ea4c08e1ef549e5918ecc37de52": {
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readFieldNameHashCode()": 22.4,
+        "public long com.alibaba.fastjson2.JSONReaderStr.readFieldNameHashCodeUnquote()": 20.2
+    },
+    "05e9a0a33beab425aebd1156d50f37e6c327a474": {
+        "public static JSONWriter com.alibaba.fastjson2.JSONWriter.of()": 4.2
+    },
+    "34a8b5983845d055adaf41181fb5e48ec7da822f": {
+        "public final int com.alibaba.fastjson2.JSONReaderUTF8.readInt32Value()": 44.1,
+        "public Number com.alibaba.fastjson2.JSONReader.getNumber()": 113.8,
+        "public final long com.alibaba.fastjson2.JSONReaderUTF8.readInt64Value()": 44.1,
+        "public int com.alibaba.fastjson2.JSONReaderStr.readInt32Value()": 44.1,
+        "public void com.alibaba.fastjson2.JSONReaderStr.readNumber0()": 44.1
+    },
+    "f8e5fa93de69cfd07b3e40b89b3a41865fa2535c": {
+        "public long com.alibaba.fastjson2.JSONReader.readMillisFromString()": 17.0
+    },
+    "e188f0215667a88fdb278f71635d6f426a6b339b": {
+        "public final Map<String, Object> com.alibaba.fastjson2.JSONReaderJSONB.readObject()": 21.7
+    },
+    "3e2d9873ff9259b52e2209ec553e5c619821d0ce": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeDecimal(BigDecimal value)": 71.4,
+        "public static JSONSchema com.alibaba.fastjson2.schema.JSONSchema.of(JSONObject input, JSONSchema parent)": 38.1
+    },
+    "8dcd6d4db275a034c34d9fe13a50e8f314ebaff0": {
+        "public final int com.alibaba.fastjson2.JSONReaderUTF8.readInt32Value()": 9.2,
+        "public int com.alibaba.fastjson2.JSONReaderStr.readInt32Value()": 9.2,
+        "public void com.alibaba.fastjson2.JSONReaderStr.readNumber0()": 8.9,
+        "public final long com.alibaba.fastjson2.JSONReaderUTF8.readInt64Value()": 9.2
+    },
+    "127031c13d708ef9991e6675075ed91593467f86": {
+        "private Object com.alibaba.fastjson2.reader.ObjectReaderImplDate.readDate(JSONReader jsonReader)": 24.6,
+        "public int com.alibaba.fastjson2.reader.FieldReader<T>.compareTo(FieldReader o)": 35.0,
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.createFieldWriter( ObjectWriterProvider provider, String fieldName, int ordinal, long features, String format, String label, Field field, ObjectWriter initObjectWriter )": 45.0
+    },
+    "a819a55f59292aa8150a4f2240c164cb518c8588": {
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReader.readObject()": 20.2,
+        "public void com.alibaba.fastjson2.JSONReader.read(Map object, long features)": 20.2
+    },
+    "c9f8367df14f20fe055e63fc0f329f1a96df404f": {
+        "private Object com.alibaba.fastjson2.reader.ObjectReaderImplDate.readDate(JSONReader jsonReader)": 4.2
+    },
+    "92182952379483384b4d665ba4af489d5097d37d": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeString(String str)": 8.6,
+        "public String com.alibaba.fastjson2.JSONReaderJSONB.readString()": 13.0
+    },
+    "77628013de1c308769cca5ba4eccc14a4969649f": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeString(String str)": 92.1
+    },
+    "dc890f50d6cfa9d09730857261e71413c85f257c": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( ObjectWriteContext context, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, boolean arrayMapping, String TYPE_OBJECT )": 15.2,
+        "private int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValueList( FieldReader fieldReader, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, boolean arrayMapping, Class objectClass, Class fieldClass, Type fieldType, long fieldFeatures, Type itemType, String TYPE_FIELD_CLASS, ObjectWriteContext context )": 33.1,
+        "protected final void com.alibaba.fastjson2.reader.ObjectReaderAdapter<T>.readFieldValue(long hashCode, JSONReader jsonReader, long features, Object object)": 22.4
+    },
+    "f3a464699e22ebc1523c0247db312564c1de00bc": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDecimal(BigDecimal value, long features, DecimalFormat format)": 11.1,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeOffsetDateTime(OffsetDateTime dateTime)": 48.5,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeDouble(double value)": 11.1
+    },
+    "052ce00da78ae6b43da9498016e30b0c8ab3d135": {
+        "public String com.alibaba.fastjson2.JSONReaderUTF16.readString()": 182.0,
+        "public static JSONReader com.alibaba.fastjson2.JSONReader.of(String str)": 22.4
+    },
+    "df7993c0dbd993fe7486ae7ae65fb20fa90eab4c": {
+        "public long com.alibaba.fastjson2.JSONReader.readMillisFromString()": 16.7
+    },
+    "bb52a519200653e851c584138d230149e35ae64d": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeString(String str)": 58.2,
+        "public int com.alibaba.fastjson2.JSONReaderJSONB.readInt32Value()": 58.2,
+        "public long com.alibaba.fastjson2.JSONReaderJSONB.readFieldNameHashCode()": 4.2,
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readString()": 4.2
+    },
+    "858d5619718913e95b292d41045153af865cb002": {
+        "public <T> FieldReader<T> com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReader( Class objectClass, Type objectType, String fieldName, int ordinal, long features, String format, Locale locale, Object defaultValue, String schema, Type fieldType, Class fieldClass, Field field, ObjectReader initReader )": 4.2
+    },
+    "c894edb0253f595a82a31e813fc8cc6964e9b031": {
+        "public static BigDecimal com.alibaba.fastjson2.util.TypeUtils.toBigDecimal(float f)": 4.2
+    },
+    "8d73538af50f1f973a4870fbab74d26e9507b548": {
+        "public ObjectWriter com.alibaba.fastjson2.writer.FieldWriterObject<T>.getObjectWriter(JSONWriter jsonWriter, Class valueClass)": 63.8
+    },
+    "df460519926eca68592838e84610860b9ec0001f": {
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, Locale locale, String label, Method method, ObjectWriter initObjectWriter )": 13.0
+    },
+    "0f505ba926dd2d1a53da332a315eb0bc7d4bdb8b": {
+        "private <T> void com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genCreateObject( MethodWriter mw, ObjectWriteContext context, String classNameType, String TYPE_OBJECT, int FEATURES, boolean fieldBased, Constructor defaultConstructor, Supplier creator )": 26.5
+    },
+    "87708f5e2db4ae26aae46bbe89b9dab43bf99af4": {
+        "public final Number com.alibaba.fastjson2.JSONReader.getNumber()": 4.2
+    },
+    "3cd69fc4b84dfe1470ae981a158ff3dc7c372d57": {
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterProvider.getObjectWriter(Type objectType, Class objectClass, boolean fieldBased)": 15.5
+    },
+    "a44903acdddad2e61f24f81c601a3ef2247cecce": {
+        "protected boolean com.alibaba.fastjson2.stream.JSONStreamReaderUTF16.seekLine()": 18.0,
+        "public long com.alibaba.fastjson2.JSONReaderUTF8.readFieldNameHashCode()": 35.0
+    },
+    "219275854fc8972461a896b901d8e1f2eee9cd41": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapTyped.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 63.5
+    },
+    "739e37417855c50bc6d6e685a6d54db2211c21bc": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMap.readJSONBObject(JSONReader jsonReader, Type fieldType, Object fieldName1, long features)": 11.1,
+        "public Object com.alibaba.fastjson2.JSONReaderJSONB.readAny()": 8.9,
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReader.readObject()": 13.3,
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapMultiValueType.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 8.9
+    },
+    "a6caf7d28d83767fd5a393f7281dce2bbc17afe6": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( ObjectWriteContext context, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 11.4,
+        "public final int com.alibaba.fastjson2.JSONReaderUTF16.getStringLength()": 31.2
+    },
+    "55850bfeea445db31b9a89a64c46e26faadb15e8": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.write(JSONObject map)": 21.8
+    },
+    "5e7a0d532aa8834aee4ce9094e31acce7510225b": {
+        "public Number com.alibaba.fastjson2.JSONReader.getNumber()": 15.5
+    },
+    "f6be02107543a2040ab1564006c128df78630219": {
+        "public long com.alibaba.fastjson2.JSONReaderJSONB.readFieldNameHashCode()": 8.6
+    },
+    "69a6ca0911e727ba25d599db1e1a7994876e52dd": {
+        "public static String com.alibaba.fastjson2.util.BeanUtils.getterName(String methodName, String namingStrategy)": 24.3
+    },
+    "da3b4ac95db7af0ed8d6b8489650e0fdbfe52fb9": {
+        "public static long com.alibaba.fastjson2.util.Fnv.hashCode64LCase(String name)": 17.7
+    },
+    "d702e9182b7c2ae36da330f03d964e768912acdc": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeName6Raw(long name)": 4.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeName7Raw(long name)": 4.2,
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeName8Raw(long name)": 4.2
+    },
+    "a0be963a48786e5f6a7396b811e1ebea19fae0ab": {
+        "public boolean com.alibaba.fastjson2.JSONReader.readReference(List list, int i)": 33.0
+    },
+    "1932c06b9d14d3c92c78e06e71d7374907c1c811": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapString.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 4.2
+    },
+    "494e4e09b0f95126a7c966fd7d4ec6f09cd49a52": {
+        "public static JSONWriter com.alibaba.fastjson2.JSONWriter.of(Context writeContext)": 50.0
+    },
+    "92579b46b196ba69dcce56b49e5bda080628691d": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeString(String str)": 29.6
+    },
+    "ec1cfb6eec2b010cd5f5f20fca779a8da1aa8eab": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldName(MethodWriterContext mwc, FieldWriter fieldWriter, int i)": 123.6
+    },
+    "9d9f5d0e09b9203dfde8e65d0a2f939a54106d47": {
+        "public void com.alibaba.fastjson2.JSONWriterUTF16.writeString(String str)": 120.8
+    },
+    "5a2b97df3c1202f0b0de20ec87248118c6e24c54": {
+        "public long com.alibaba.fastjson2.JSONReaderUTF16.readFieldNameHashCodeUnquote()": 74.9,
+        "public String com.alibaba.fastjson2.JSONReaderJSONB.readFieldName()": 4.2,
+        "public static long com.alibaba.fastjson2.util.Fnv.hashCode64LCase(String name)": 4.2,
+        "public static long com.alibaba.fastjson2.util.Fnv.hashCode64(String name)": 8.6,
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readFieldNameHashCode()": 134.3,
+        "public long com.alibaba.fastjson2.JSONReaderASCII.readValueHashCode()": 72.7
+    },
+    "1874faf0e610b7a667acb4b8d3c3e0f7556c27a5": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapString.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 4.2
+    },
+    "710a04338484f65c6edc5f3a6ddf5ca82ab88be5": {
+        "protected FieldWriter com.alibaba.fastjson2.writer.ObjectWriterCreator.creteFieldWriter( Class objectClass, long writerFeatures, ObjectWriterProvider provider, BeanInfo beanInfo, FieldInfo fieldInfo, Field field )": 15.5
+    },
+    "a1d04661c0ca31d60e50c1fca688b89a42fb7253": {
+        "public ObjectWriter com.alibaba.fastjson2.writer.ObjectWriterProvider.getObjectWriter(Type objectType, Class objectClass, boolean fieldBased)": 10.8
+    },
+    "05e75cd25cc73992bad81413ace32168d439b9dd": {
+        "public static JSONWriter com.alibaba.fastjson2.JSONWriter.of(Context writeContext)": 18.0
+    },
+    "a037d802f8a57a4fe68de781091abafa66ec3de7": {
+        "public static int com.alibaba.fastjson2.util.IOUtils.writeDecimal(byte[] buf, int off, long unscaledVal, int scale)": 15.5
+    },
+    "ee44fb2d87bc26299dae5a9155f5c168040a3366": {
+        "public final void com.alibaba.fastjson2.JSONReaderUTF16.readNumber0()": 35.6
+    },
+    "0064afd0893d1f730ca8921152292fe17c405f16": {
+        "private <T> int com.alibaba.fastjson2.reader.ObjectReaderCreatorASM.genReadFieldValue( Class<T> objectType, FieldReader fieldReader, boolean fieldBased, String classNameType, MethodWriter mw, int THIS, int JSON_READER, int OBJECT, int FEATURES, int varIndex, Map<Object, Integer> variants, int ITEM_CNT, int J, int i, boolean jsonb, String TYPE_OBJECT )": 2.0,
+        "public void com.alibaba.fastjson2.JSONWriterUTF8.writeString(String str)": 8.9
+    },
+    "1c5511a8eb206a9a8a47b0919af144bdab0ed188": {
+        "public final String com.alibaba.fastjson2.JSONWriter.setPath(FieldWriter fieldWriter, Object object)": 4.2,
+        "public final String com.alibaba.fastjson2.JSONWriter.setPath(int index, Object object)": 4.2,
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplList.writeJSONB(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 2.0
+    },
+    "99801dce36a3a8a81f5460fa643b713c8619e4cf": {
+        "public boolean com.alibaba.fastjson2.schema.DateTimeValidator.isValid(String str)": 4.2
+    },
+    "61f6d9ec5e764254ac483e702a246c577e23dff4": {
+        "public Number com.alibaba.fastjson2.JSONReader.getNumber()": 317.9
+    },
+    "6c2f6563d20992f1c5dd678ac8944da76b95cb1b": {
+        "private List com.alibaba.fastjson2.writer.ObjectWriterImplList.getList(Object object)": 39.0
+    },
+    "f8971feb2e915bc7eb55a8019db7c76527210496": {
+        "public void com.alibaba.fastjson2.JSONWriterUTF16.writeString(String str)": 105.9
+    },
+    "0a404974fb365f599a8ef6a28717fe8e49a61a6c": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplLocalDate.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 4.2
+    },
+    "514ea80622c428dd62d8e1b8ffea8ba1833f82d0": {
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, String label, Method method, ObjectWriter initObjectWriter )": 60.1,
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplList.write(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 83.6
+    },
+    "cf242485b488762f832d85a88e48b30183d1288a": {
+        "public ObjectReader com.alibaba.fastjson2.JSONReaderJSONB.checkAutoType(Class expectClass, long expectClassHash, long features)": 62.8
+    },
+    "3e2c1dc77b83b43d2f217c0cce7bfdaf51e4e96f": {
+        "public void com.alibaba.fastjson2.JSONWriterJSONB.writeString(String str)": 4.2
+    },
+    "760cd5204b452fe989c179e56bca60056ef72c32": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplZonedDateTime.readJSONBObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 15.5,
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplZonedDateTime.writeJSONB(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 22.4
+    },
+    "b8df39343be437b19f5db2159d16780ef2a5891a": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplList.readObject(JSONReader jsonReader, long features)": 21.7
+    },
+    "67d6ff7380b8152ec7129a7a1aed5e28c79ab0ab": {
+        "public static int com.alibaba.fastjson2.util.IOUtils.writeNano(byte[] bytes, int off, int nano)": 17.4,
+        "public static int com.alibaba.fastjson2.util.IOUtils.writeDecimal(byte[] buf, int off, long unscaledVal, int scale)": 4.2
+    },
+    "357a128b307553a8c0e0f79787573060eeb5b8be": {
+        "public final void com.alibaba.fastjson2.writer.FieldWriterEnum.writeEnum(JSONWriter jsonWriter, Enum e)": 127.7
+    },
+    "8af0c4b19d91322962c5a887d91bfdd3b1b40db5": {
+        "public void com.alibaba.fastjson2.writer.FieldWriterList<T>.writeList(JSONWriter jsonWriter, boolean writeFieldName, List list)": 18.0
+    },
+    "c2a2606d0ada7e8d468a643c2c55e4aaecda7bd9": {
+        "public final long com.alibaba.fastjson2.JSONReaderUTF16.readMillis19()": 397.5
+    },
+    "332263103071a3d3412a1b37c78e5585b44bb28b": {
+        "public String com.alibaba.fastjson2.JSONReaderASCII.readFieldName()": 79.0
+    },
+    "3856485e212931fadea0106ede56dd7871151efd": {
+        "public void com.alibaba.fastjson2.JSONReaderStr.readNumber0()": 4.2
+    },
+    "522d6d78dcd09b6b963d9ce20f3ae2b66edb06ac": {
+        "public void com.alibaba.fastjson2.JSONReader.read(Map object, long features)": 18.0
+    },
+    "b8519bfc538b5e6f97d7106a2d6388c403d4c378": {
+        "public String com.alibaba.fastjson2.JSONReaderUTF8.readString()": 4.2
+    },
+    "b00b2b7b43781f91b8506283bea7bb87b40b4089": {
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReader.readObject()": 19.9,
+        "public String com.alibaba.fastjson2.JSONReaderUTF16.readFieldName()": 8.9
+    },
+    "e3d7022b8f7531f6c879ea040eb72cfc6c3055ac": {
+        "public String com.alibaba.fastjson2.JSONReaderUTF16.readFieldName()": 8.9,
+        "public void com.alibaba.fastjson2.JSONReader.read(Map object, long features)": 18.0
+    },
+    "c527d9521f9dec755f099ed2907858720dd7a98b": {
+        "public static JSONSchema com.alibaba.fastjson2.schema.JSONSchema.of(JSONObject input, JSONSchema parent)": 3.5,
+        "public boolean com.alibaba.fastjson2.schema.DateValidator.isValid(String str)": 8.9
+    },
+    "2e2669d58af7d1ae5e639d77bd9ce1f8a5faab20": {
+        "public static int com.alibaba.fastjson2.util.IOUtils.writeDecimal(byte[] buf, int off, long unscaledVal, int scale)": 32.7
+    },
+    "76415d514956055816f6f4636cf11d3077de6842": {
+        "public Map<String, Object> com.alibaba.fastjson2.JSONReader.readObject()": 20.2
+    },
+    "42350acd27f43dadda0ea9f106c371c39048b122": {
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, String label, Method method, ObjectWriter initObjectWriter )": 4.2
+    },
+    "a48420fb1b9ec08677f85bffa34a4336f2d1fdb3": {
+        "public void com.alibaba.fastjson2.writer.ObjectWriterImplCharValueArray.write(JSONWriter jsonWriter, Object object, Object fieldName, Type fieldType, long features)": 4.2
+    },
+    "4f41b125cc2c54d75ebb1447a13176652ce51a00": {
+        "public void com.alibaba.fastjson2.writer.FieldWriterList<T>.writeList(JSONWriter jsonWriter, boolean writeFieldName, List list)": 4.2
+    },
+    "fcbcf1edf6aed36963bb8e8c417f8723eb82e081": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapTyped.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 28.3
+    },
+    "31c859fea83d1b5431b8ae9a552ef618751ab2a3": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplLocalDateTime.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 13.3
+    },
+    "bf6193f31ab5438669ddb4aac58614842c07c069": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.writeBigInt(BigInteger value, long features)": 64.7,
+        "protected static boolean com.alibaba.fastjson2.JSONWriter.isWriteAsString(long value, long features)": 25.1
+    },
+    "cab9445846b4e733123ed41e49b737ce524089dc": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMap.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 31.5
+    },
+    "90fb61a52feb2bba98c4d8d069592862d53e9155": {
+        "private void com.alibaba.fastjson2.writer.ObjectWriterCreatorASM.gwFieldValueObject( MethodWriterContext mwc, FieldWriter fieldWriter, int OBJECT, int i, boolean jsonb )": 31.5
+    },
+    "fa20ff9bc15715199d5764f3985edccad5213567": {
+        "public ObjectWriter com.alibaba.fastjson2.writer.FieldWriterObject<T>.getObjectWriter(JSONWriter jsonWriter, Class valueClass)": 26.8
+    },
+    "67e1e7468465f8ebcbdba5a37ab0f416fb0bf8b8": {
+        "public List com.alibaba.fastjson2.JSONReader.readArray()": 40.0
+    },
+    "fa0f55d075eab93d56b374fe5ba9c789294f59e5": {
+        "public List com.alibaba.fastjson2.JSONReader.readArray()": 4.2
+    },
+    "5c605092df091e501e128f54fa4ca092889c15b7": {
+        "public void com.alibaba.fastjson2.JSONWriterUTF8.writeString(String str)": 4.2
+    },
+    "16787a1baa65c42e5b26fefde7bbcfc7bdbccc64": {
+        "public static String com.alibaba.fastjson2.internal.processor.CodeGenUtils.fieldReader(int i)": 15.2
+    },
+    "2fd5d439f021dd844e9f139fe9ce41c319bc1336": {
+        "public <T> FieldReader com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReaderMethod( Class<T> objectClass, Type objectType, String fieldName, int ordinal, long features, String format, Locale locale, Object defaultValue, String schema, Type fieldType, Class fieldClass, Method method, ObjectReader initReader )": 6.4
+    },
+    "9259319fe6d7938ad897dc8667921a307f2ca0ba": {
+        "public final Number com.alibaba.fastjson2.JSONReader.getNumber()": 4.2
+    },
+    "f2e8736aa93cca9dcf46d629b1c028202a9efcd3": {
+        "public long com.alibaba.fastjson2.JSONReaderJSONB.readFieldNameHashCode()": 135.8
+    },
+    "aeaec4fa83f45ae7013c1a268cfa9c84373f11e8": {
+        "public long com.alibaba.fastjson2.JSONReader.readMillisFromString()": 4.2
+    },
+    "19c7b0a3b65a50a540eaf805a7d3177e88c0ebf2": {
+        "private List com.alibaba.fastjson2.writer.ObjectWriterImplList.getList(Object object)": 33.7
+    },
+    "c8c5c104e31334035e227de165eb063120c229a1": {
+        "public <T> FieldWriter<T> com.alibaba.fastjson2.writer.ObjectWriterCreator.createFieldWriter( ObjectWriterProvider provider, Class<T> objectType, String fieldName, int ordinal, long features, String format, String label, Method method, ObjectWriter initObjectWriter )": 4.2
+    },
+    "2d6973da92aca7e77d1e19ce3321e5ecc08585bf": {
+        "public final void com.alibaba.fastjson2.JSONReaderUTF16.readNumber0()": 4.2
+    },
+    "d81ee9d51dc9b8f1885a103fc1e1aeaf5c3b24d4": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapTyped.createInstance(Map input, long features)": 8.6
+    },
+    "29848f507c5e1dea6ee647b57dca0f9c29f330b4": {
+        "public static long com.alibaba.fastjson2.util.DateUtils.parseMillis(char[] chars, int off, int len, ZoneId zoneId)": 2.0
+    },
+    "39f19a782af72932d90f74b1a03dbd5412af20e8": {
+        "public String com.alibaba.fastjson2.JSONReaderUTF16.readString()": 4.2
+    },
+    "d45a1bb85b3b233009f8ea1b8a3ad3a9401d971c": {
+        "public void com.alibaba.fastjson2.writer.FieldWriterList<T>.writeList(JSONWriter jsonWriter, boolean writeFieldName, List list)": 18.0
+    },
+    "051ef408f34a0fa3486dd958dae7717e8a030bf9": {
+        "public long com.alibaba.fastjson2.JSONReaderUTF16.readFieldNameHashCode()": 4.2
+    },
+    "2721ffa860e5299fa83e7f949140e7d6420d7ae0": {
+        "public <T> FieldReader com.alibaba.fastjson2.reader.ObjectReaderCreator.createFieldReaderMethod( Class<T> objectClass , Type objectType , String fieldName , int ordinal , long features , String format , Locale locale , Object defaultValue , Type fieldType , Class fieldClass , Method method )": 4.2
+    },
+    "d9e923eab74a125af2e49046f269831766ec282c": {
+        "public final float com.alibaba.fastjson2.JSONReaderUTF16.readFloatValue()": 4.2
+    },
+    "466632ce131840b85593dffccf089132b279b544": {
+        "public int com.alibaba.fastjson2.reader.FieldReader<T>.compareTo(FieldReader o)": 49.4
+    },
+    "e3cda143219c73ccccc42bbece3b259b427c56d7": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplMapTyped.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 2.0
+    },
+    "808340a2d01584cca9ec5bfef083e7838d2cffa5": {
+        "private JSONPathSegment com.alibaba.fastjson2.JSONPathParser.parseProperty()": 296.3
+    },
+    "0c56c24e127654ad072df26777442cc22ebfa101": {
+        "public Object com.alibaba.fastjson2.reader.ObjectReaderImplLocalDateTime.readObject(JSONReader jsonReader, Type fieldType, Object fieldName, long features)": 14.8
+    },
+    "c04070e73d316b527cfe61ad2dd05b713fdf95f4": {
+        "public LocalDateTime com.alibaba.fastjson2.JSONReader.readLocalDateTime()": 17.7
+    },
+    "49187086ed42d64866ab127b4418bcd5553f71ad": {
+        "public Object com.alibaba.fastjson2.JSONPathMulti.eval(Object root)": 18.0
+    },
+    "b2f63f4a61d7148977c0f293ddba746f9f8b709b": {
+        "public void com.alibaba.fastjson2.JSONWriterUTF16.writeString(String str)": 102.8
+    },
+    "9a01b92234d923dc80767ccdf33f81b8fd540bb6": {
+        "private JSONPathSegment com.alibaba.fastjson2.JSONPathParser.parseArrayAccess()": 22.4
+    },
+    "ddb1c52d600a92c1c901a9dec8e21bb9fd862577": {
+        "public void com.alibaba.fastjson2.writer.FieldWriterList<T>.writeListValue(JSONWriter jsonWriter, List list)": 4.2
+    },
+    "474cc1917ec397e5fd5485c1c97f2388a6f6a97f": {
+        "public static BigDecimal com.alibaba.fastjson2.util.TypeUtils.parseBigDecimal(char[] bytes, int off, int len)": 22.4
+    },
+    "966964d1c416e21451cd1fed9537a7252cdd8983": {
+        "public void com.alibaba.fastjson2.JSONReader.read(Map object, long features)": 6.4
+    },
+    "c1c6d2937ebd74ccbdcfa042c79ed82b8c8ee58b": {
+        "private void com.alibaba.fastjson2.JSONReaderUTF16.skipString()": 2.0
+    },
+    "70e39efa5f04c3a7bc62fdcd16399be86fdba655": {
+        "public boolean com.alibaba.fastjson2.JSONReader.readBoolValue()": 28.6
+    },
+    "0a946a4a7a61a8d268d383999f16546bf3e56797": {
+        "public static JSONReader com.alibaba.fastjson2.JSONReader.of(String str)": 4.2
+    },
+    "e1270ef3f7d360b1f268cfdf7defb19ca945ca8e": {
+        "public final void com.alibaba.fastjson2.JSONWriterUTF16.write(JSONObject map)": 26.8
+    }
+}

@@ -1,0 +1,156 @@
+{
+    "b64fc34917bad69e44e965a4b79112bb9d7885ff": {
+        "private boolean org.simpleflatmapper.reflect.meta.ObjectPropertyFinder<T>.disallowSelfReference(Object[] properties)": 20.2,
+        "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(String property)": 4.2,
+        "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)": 13.6,
+        "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)": 4.2
+    },
+    "1ad193b6cefee45a6a42ba05a6165d27e63c4aa1": {
+        "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)": 9.2
+    },
+    "0f5edc92108b6256e332f4ad7c2f39fc1d53b18f": {
+        "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[] s, int beginIndex, int endIndex)": 4.2
+    },
+    "4829d56226146977e23dde18fd8440edb30d5c5f": {
+        "private <T> ClassMeta<T> org.simpleflatmapper.map.impl.DiscriminatorReflectionService.newClassMeta(Type target)": 13.0,
+        "public void org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder<T>.manualMatch(PropertyMeta<?, ?> prop)": 17.4
+    },
+    "f60f4691427c3e5b9516d9bafeff743a1aa98311": {
+        "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)": 115.1,
+        "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer, PropertyFilter propertyFilter)": 4.2,
+        "public final <E> PropertyMeta<T, E> org.simpleflatmapper.reflect.meta.PropertyFinder<T>.findProperty(PropertyNameMatcher propertyNameMatcher, Object[] properties, TypeAffinityScorer typeAffinity, PropertyFinderProbe propertyFinderProbe, PropertyFilter propertyFilter)": 4.2,
+        "public PropertyFinder<T> org.simpleflatmapper.map.impl.DiscriminatorClassMeta<T>.newPropertyFinder()": 4.2,
+        "public boolean org.simpleflatmapper.reflect.DefaultReflectionService.selfScoreFullName()": 6.4,
+        "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)": 6.4
+    },
+    "775dfbc8cedbd250c02078d8a8038e5cb7b404f1": {
+        "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)": 4.2
+    },
+    "223ed1b2a7424b4fce1d14e7b85875987bcf04ae": {
+        "public void org.simpleflatmapper.reflect.meta.AbstractIndexPropertyFinder<T>.lookForProperties( PropertyNameMatcher propertyNameMatcher, Object[] properties, FoundProperty<T> matchingProperties, PropertyMatchingScore score, boolean allowSelfReference, PropertyFinderTransformer propertyFinderTransformer, TypeAffinityScorer typeAffinityScorer, Predicate<PropertyMeta<?, ?>> propertyFilter)": 17.4,
+        "public PropertyFinder<?> org.simpleflatmapper.map.impl.DiscriminatorPropertyFinder<T>.getOrCreateSubPropertyFinder(SubPropertyMeta<?, ?, ?> subPropertyMeta)": 4.2,
+        "public final <E> PropertyMeta<T, E> org.simpleflatmapper.reflect.meta.PropertyFinder<T>.findProperty(PropertyNameMatcher propertyNameMatcher, Object[] properties, TypeAffinityScorer typeAffinity, PropertyFinderProbe propertyFinderProbe, Predicate<PropertyMeta<?, ?>> propertyFilter)": 8.6
+    },
+    "45b89c0dc83c4c3535997f408e0bf66061371b2d": {
+        "public static void org.simpleflatmapper.reflect.asm.AsmUtils.invoke(MethodVisitor mv, Type target, Method method)": 18.0
+    },
+    "667fb81a7737c5d285019b6240d97eabb37005d6": {
+        "private List<ScoredConverterFactory> org.simpleflatmapper.converter.ConverterService.findConverterFactories(Type inType, Type outType, Object[] params, Set<Type> loopDetector)": 41.6
+    },
+    "4d222c86c0b794c97f2627afccbb29ad53e22d41": {
+        "protected CellPreProcessor org.simpleflatmapper.csv.DSLYamlComment.getCellTransformer(TextFormat textFormat, StringPostProcessing stringPostProcessing)": 4.2,
+        "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)": 4.2
+    },
+    "b94104b54b303c70b139aab0667286c0b0b73537": {
+        "public Object org.simpleflatmapper.map.context.impl.BreakDetector<S>.getValue()": 18.0,
+        "public void org.simpleflatmapper.map.context.impl.BreakDetector<S>.setValue(Object value)": 18.0
+    },
+    "4f6f6dcde20752e3aae98396559743bc05ca747b": {
+        "protected CellPreProcessor getUnescapeCellTransformer(TextFormat textFormat)": 4.2
+    },
+    "3b8283c9af486788c993eccb822fdfb02f37bb91": {
+        "public AbstractColumnDefinitionProvider<CsvColumnKey> org.simpleflatmapper.csv.impl.CsvColumnDefinitionProviderImpl.copy()": 4.2
+    },
+    "678d17d1deee12a08de8c46663b732ad6136827c": {
+        "private int org.simpleflatmapper.reflect.meta.DefaultPropertyNameMatcher.lastNonIgnorableChar(String column)": 4.2
+    },
+    "bf528f4936c328f2faf621d32003eda5d54b7122": {
+        "private CsvCharConsumer charConsumer(CharBuffer charBuffer)": 22.4,
+        "public void org.simpleflatmapper.csv.CsvReader.skipRows(int n)": 4.2
+    },
+    "44c4a25d2add7e3a225ed7167532c1818a2ba3d2": {
+        "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)": 8.6,
+        "public final boolean org.simpleflatmapper.csv.parser.CharConsumer.refillBuffer()": 4.2,
+        "protected final CharConsumer charConsumer(CharBuffer charBuffer)": 18.0
+    },
+    "9cc6457461a748daa9463727a296b66eea7d7cbc": {
+        "protected final CharConsumer charConsumer(CharBuffer charBuffer)": 26.5,
+        "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)": 10.8
+    },
+    "2188942526d6c20498c7d712797405b5e25de378": {
+        "public static <T> Class<T> org.simpleflatmapper.util.TypeHelper.toClass(Type target)": 13.6
+    },
+    "a8aeba957db4a4216f3c7c8e993ea13ae97ecb23": {
+        "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)": 8.6
+    },
+    "70ea034333aa47e5e54753f764ae4d493f13e03d": {
+        "public final void org.simpleflatmapper.csv.parser.CharConsumer.finish(CellConsumer cellConsumer)": 6.4
+    },
+    "07b98a2ba4d6d928d35082032a18e1d23d72b973": {
+        "protected final AbstractCharConsumer charConsumer(CharBuffer charBuffer)": 4.2
+    },
+    "8f6e1fe45273747e755fda6ac82894eaa997c35a": {
+        "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)": 102.7
+    },
+    "ec6da2693c82cfcb006c228a2fd98f533a8deb8e": {
+        "public AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(TextFormat textFormat, CharBuffer charBuffer, CellPreProcessor cellTransformer, boolean specialisedCharConsumer)": 4.2
+    },
+    "b22864d744d2660adbddebcb557a48ac273db923": {
+        "public final void org.simpleflatmapper.csv.parser.UnescapeCellPreProcessor.newCell(char[] chars, int start, int end, CellConsumer cellConsumer, int state)": 4.2
+    },
+    "b66d0cf74b9089ec0a1085798a216390475d5d61": {
+        "protected final AbstractCharConsumer charConsumer(CharBuffer charBuffer)": 13.3
+    },
+    "d16172d3af3931dc7bb93cfcdf533998c1f81913": {
+        "private <T> ClassMeta<T> org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(Type target)": 17.7
+    },
+    "85faa6c792c80ce8a490cb5851934fcc3e04b029": {
+        "protected final CharConsumer charConsumer(CharBuffer charBuffer)": 4.2
+    },
+    "34f7275e3ea42c74f313bc106933f9f05b4ee209": {
+        "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.partialMatch(int score, int pScore)": 4.2,
+        "public static PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.newInstance(boolean selfScoreFullName)": 4.2
+    },
+    "c847105c7d867d36fea813f4fdb21055d337a69e": {
+        "public <T> ClassMeta<T> org.simpleflatmapper.map.impl.DiscriminatorReflectionService.getClassMeta(Type target)": 46.6
+    },
+    "6ef7785ddd157a014f79af09ab8baa750a8e0049": {
+        "public PropertyMatchingScore org.simpleflatmapper.reflect.meta.PropertyMatchingScore.matches(String property)": 6.4
+    },
+    "61e3f299a6ca2e1f779b7a0c83ae7d4a8790aa41": {
+        "public static int org.simpleflatmapper.csv.CsvRow.parseInt(char[] chars, int from, int len)": 4.2
+    },
+    "7d4720e003869abf570176bcfa44f94e192f8cb2": {
+        "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)": 15.5,
+        "public String org.simpleflatmapper.csv.CsvRow.getString(int i)": 4.2,
+        "public void org.simpleflatmapper.csv.CsvRow.reset()": 8.9
+    },
+    "edc1a84529c1904a64f592f5b799b8d8daf30b10": {
+        "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)": 203.8
+    },
+    "e8f193ab649604163023e8fcdb636d00c7fdfa4f": {
+        "public void org.simpleflatmapper.csv.CsvRow.addValue(int offset, int length)": 4.2,
+        "private static boolean org.simpleflatmapper.reflect.getter.GetterHelper.isToString(Method method)": 4.2
+    },
+    "25d1ed5f7ea750a1d3715ff2f4e483df2778f9d2": {
+        "private static <S> KeyDefinition<S, ?> org.simpleflatmapper.map.context.impl.BreakDetector<S>.emptyToNull(KeyDefinition<S, ?> definition)": 15.5
+    },
+    "3b561d28c2bb15b76d2a82d27ebd108ac408b523": {
+        "public List<InstantiatorDefinition> org.simpleflatmapper.reflect.DefaultReflectionService.extractInstantiator(Type target, Member extraInstantiator)": 34.0
+    },
+    "0e437f4397bbb103b89c2609765a503077974109": {
+        "public final boolean org.simpleflatmapper.lightningcsv.parser.ReaderCharBuffer.shiftAndRead(int shiftFrom)": 105.7
+    },
+    "90b68a388057d89ffbe5469f3c9717fb715f9bfb": {
+        "public AbstractCharConsumer org.simpleflatmapper.lightningcsv.impl.AsmCharConsumerFactory.newCharConsumer(TextFormat textFormat, CharBuffer charBuffer, CellPreProcessor cellTransformer, boolean specialisedCharConsumer)": 52.9
+    },
+    "23109fae129db2cbdb0f8315d7fa9449a8ecd238": {
+        "public static Type org.simpleflatmapper.reflect.asm.AsmUtils.toGenericType(String sig, List<String> genericTypeNames, Type target)": 4.2
+    },
+    "a094ff893a37c7e3a22c30cff33bb2914e235b0a": {
+        "public <S1, S2, T> BiInstantiator<S1, S2, T> org.simpleflatmapper.reflect.InstantiatorFactory.getBiInstantiator(InstantiatorDefinition instantiatorDefinition, Class<?> s1, Class<?> s2, Map<Parameter, BiFunction<? super S1, ? super S2, ?>> injections, boolean useAsmIfEnabled, boolean builderIgnoresNullValues)": 61.7,
+        "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)": 47.7
+    },
+    "39562d41022b7e41c992dec3b2d1b9fd9bcc0974": {
+        "public int org.simpleflatmapper.reflect.meta.PropertyMatchingScore.compareTo(PropertyMatchingScore o)": 17.4
+    },
+    "a859c90db4d0fc1ed9a9ec2129c2252209c49c19": {
+        "private static <S1, S2> void org.simpleflatmapper.reflect.asm.BiInstantiatorBuilder.invokeBiFunction(String targetType, InjectionPoint injectionPoint, String classType, Class<?> s1, Class<?> s2, MethodVisitor mv, Consumer<MethodVisitor> consumer, boolean ignoreNullValues)": 4.2
+    },
+    "46f9e7e1f6fc464aa39b74927f4f338800ee25c0": {
+        "public int org.simpleflatmapper.csv.CsvRow.getInt(int i)": 4.2
+    },
+    "110aa5597778e83cbc495a1dcd9733b4e9951480": {
+        "private <T> ClassMeta<T> org.simpleflatmapper.reflect.DefaultReflectionService.newClassMeta(Type target)": 18.0
+    }
+}

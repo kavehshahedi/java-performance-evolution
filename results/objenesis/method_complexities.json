@@ -1,0 +1,40 @@
+{
+    "d93407c366c17fea94956f7bd2994e0823375816": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 8.9
+    },
+    "44e2239d3dc569bc99cb6fa3f3bef8df351b2bec": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 22.7
+    },
+    "ae4ea6bcdfd00a147da27a4d2be185185ee33aaa": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 4.2
+    },
+    "5bc2568680630d6030741bdc4d9481e3abb4f894": {
+        "public <T> ObjectInstantiator<T> org.objenesis.ObjenesisBase.getInstantiatorOf(Class<T> clazz)": 8.9
+    },
+    "2597f94790d1a4b3891b9b2f3ef0c237071f521e": {
+        "private static Object org.objenesis.instantiator.sun.SunReflectionFactoryHelper.createReflectionFactory(Class<?> reflectionFactoryClass)": 17.4,
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 30.6,
+        "public static <T> Constructor<T> org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(Class<T> type, Constructor<?> constructor)": 13.0
+    },
+    "653b04693744c46aaf90b3de9c95668292d06e5f": {
+        "public static boolean org.objenesis.strategy.PlatformDescription.isGoogleAppEngine()": 4.2
+    },
+    "d8e5d780280fe8b1046e6f36793e25fe0744b3b4": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 8.9
+    },
+    "dec6eb1d3396c9aed4199a4f13e89783bef83834": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 4.2
+    },
+    "107892d9b8809a5623278e387dec352d0504bc39": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 8.9
+    },
+    "b4273d9afc081a3d211c2e3916deecbc0cf37efd": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.SerializingInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 4.2
+    },
+    "dcceccbad32b5e43eaaccf40f6d105877cf94bd7": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 39.4
+    },
+    "75b56e64a483d19c97ba8888f3a4add0f347079f": {
+        "public <T> ObjectInstantiator<T> org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(Class<T> type)": 13.3
+    }
+}

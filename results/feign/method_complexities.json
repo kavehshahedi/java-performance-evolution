@@ -1,0 +1,219 @@
+{
+    "c2fcbededea1aad841a7da91aadc5bacdb86bc6d": {
+        "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request input, feign.Request.Options options)": 4.2
+    },
+    "04a85e6961123d4fdb2ab9e4eabbfe09b4eea0a6": {
+        "void feign.AsyncResponseHandler.handleResponse(CompletableFuture<Object> resultFuture, String configKey, Response response, Type returnType, long elapsedTime)": 4.2,
+        "public Object feign.codec.StringDecoder.decode(Response response, Type type)": 4.2
+    },
+    "819b2df8c54d9266abf4cde9b17ab7890ed95cc6": {
+        "public RequestTemplate feign.RequestTemplate.decodeSlash(boolean decodeSlash)": 8.9,
+        "public CharSequence join(String field, Collection<String> values, Charset charset)": 13.0,
+        "private static String feign.template.UriUtils.encodeChunk(String value, Charset charset, boolean allowReserved)": 48.1,
+        "private RequestTemplate feign.RequestTemplate.appendQuery(String name, Iterable<String> values, CollectionFormat collectionFormat)": 8.6
+    },
+    "2d761cb6a92efc6b4a95e7092c945f47431b76cd": {
+        "public RequestTemplate feign.RequestTemplate.query(String name, Iterable<String> values)": 22.1,
+        "public Map<String, Collection<String>> feign.RequestTemplate.queries()": 60.4,
+        "public Map<String, Collection<String>> feign.RequestTemplate.headers()": 37.8,
+        "public String feign.RequestTemplate.url()": 26.8,
+        "public Request feign.RequestTemplate.request()": 37.8,
+        "Request feign.SynchronousMethodHandler.targetRequest(RequestTemplate template)": 4.2,
+        "public RequestTemplate feign.RequestTemplate.decodeSlash(boolean decodeSlash)": 22.7,
+        "static Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request input)": 8.6,
+        "public RequestTemplate feign.RequestTemplate.headers(Map<String, Collection<String>> headers)": 50.4,
+        "public String feign.RequestTemplate.method()": 17.4
+    },
+    "75e569fb3f87b4f5e3a638dd65e90cc8a5adf8d1": {
+        "public Request feign.RequestTemplate.request()": 4.2,
+        "public static RequestTemplate feign.RequestTemplate.from(RequestTemplate requestTemplate)": 4.2,
+        "public Map<String, Collection<String>> feign.Request.headers()": 17.4,
+        "public Object feign.codec.StringDecoder.decode(Response response, Type type)": 4.2,
+        "public RequestTemplate feign.RequestTemplate.resolve(Map<String, ?> variables)": 11.1,
+        "static Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request input)": 4.2
+    },
+    "470631be507caf2f27a4c693537f9e2f93852dc3": {
+        "private static feign.Response feign.okhttp.OkHttpClient.toFeignResponse(Response response, feign.Request request)": 4.2
+    },
+    "246df3746ac3af05945a170940ff7e78a97ce038": {
+        "public RequestTemplate feign.RequestTemplate.uri(String uri, boolean append)": 4.2,
+        "public RequestTemplate feign.RequestTemplate.target(String target)": 33.6
+    },
+    "b79d6fcf83bc56b6ab0459c0f63688a2b6197b28": {
+        "public Object feign.jackson.JacksonDecoder.decode(Response response, Type type)": 4.2
+    },
+    "028ae86753324e379dcc13580e8f8ad5c45213a2": {
+        "public RequestTemplate feign.RequestTemplate.uri(String uri, boolean append)": 4.2
+    },
+    "6771866f9d4ebea14b3ca16a38c12f5a3f0af128": {
+        "public String feign.RequestTemplate.url()": 8.9,
+        "public static RequestTemplate feign.RequestTemplate.from(RequestTemplate requestTemplate)": 4.2,
+        "public RequestTemplate feign.RequestTemplate.uri(String uri, boolean append)": 13.3,
+        "public RequestTemplate feign.RequestTemplate.target(String target)": 8.9
+    },
+    "b6db37ee3ad7990809425da225c413defa4ce786": {
+        "Object feign.SynchronousMethodHandler.executeAndDecode(RequestTemplate template, Options options)": 137.5
+    },
+    "468c44cfa1f9fcca6d1584009bbbdb4489cfaa3b": {
+        "Options feign.SynchronousMethodHandler.findOptions(Object[] argv)": 8.6
+    },
+    "9ed47d5d25ef2bbb39dcb19306c1308d71247eb6": {
+        "public String feign.RequestTemplate.queryLine()": 49.1
+    },
+    "a9e631ac9beed8a59b52b480f75231695624c2a0": {
+        "protected final void feign.DeclarativeContract.processAnnotationOnClass(MethodMetadata data, Class<?> targetType)": 34.0,
+        "protected final void feign.DeclarativeContract.processAnnotationOnMethod(MethodMetadata data, Annotation annotation, Method method)": 20.2,
+        "protected final boolean feign.DeclarativeContract.processAnnotationsOnParameter(MethodMetadata data, Annotation[] annotations, int paramIndex)": 38.4
+    },
+    "4da6d5cad674e4eeae5b56035ac1f94992499449": {
+        "public byte[] feign.Request.body()": 6.4,
+        "public Request feign.RequestTemplate.request()": 4.2,
+        "public static RequestTemplate feign.RequestTemplate.from(RequestTemplate requestTemplate)": 4.2,
+        "public RequestTemplate feign.RequestTemplate.resolve(Map<String, ?> variables)": 11.1
+    },
+    "262488506ffafbedfa7215fa42efccfd3f3b470c": {
+        "public static RequestTemplate feign.RequestTemplate.from(RequestTemplate requestTemplate)": 4.2,
+        "public Request feign.RequestTemplate.request()": 4.2,
+        "public static Request feign.Request.create(HttpMethod httpMethod, String url, Map<String, Collection<String>> headers, Body body, RequestTemplate requestTemplate)": 8.6,
+        "Object feign.SynchronousMethodHandler.executeAndDecode(RequestTemplate template, Options options)": 2.0
+    },
+    "f8ad8670e3dc73862f52eec475464a301e8c41cc": {
+        "public static HeaderTemplate feign.template.HeaderTemplate.create(String name, Iterable<String> values)": 30.5,
+        "public String feign.template.HeaderTemplate.expand(Map<String, ?> variables)": 51.3,
+        "public RequestTemplate feign.RequestTemplate.resolve(Map<String, ?> variables)": 14.8,
+        "public String feign.template.HeaderTemplate.getName()": 4.2,
+        "public Collection<String> feign.template.HeaderTemplate.getValues()": 4.2
+    },
+    "fb4f304a0e593eb4044792e1e02a736a52ff850d": {
+        "Object feign.SynchronousMethodHandler.executeAndDecode(RequestTemplate template, Options options)": 21.8,
+        "Options feign.SynchronousMethodHandler.findOptions(Object[] argv)": 8.6,
+        "Request feign.SynchronousMethodHandler.targetRequest(RequestTemplate template)": 8.6,
+        "public Object feign.AsynchronousMethodHandler<C>.invoke(Object[] argv)": 8.6
+    },
+    "a7b7c01806324126dd844a9a912e309754bc4dc9": {
+        "private void feign.template.Template.parseTemplate()": 31.3,
+        "public CharSequence join(String field, Collection<String> values, Charset charset)": 17.4,
+        "public static QueryTemplate feign.template.QueryTemplate.create(String name, Iterable<String> values, Charset charset, CollectionFormat collectionFormat)": 28.3,
+        "public String feign.template.QueryTemplate.expand(Map<String, ?> variables)": 51.9,
+        "public List<String> feign.template.QueryTemplate.getValues()": 4.2,
+        "public String feign.template.QueryTemplate.toString()": 4.2,
+        "public RequestTemplate feign.RequestTemplate.resolve(Map<String, ?> variables)": 13.3
+    },
+    "b596abe348ee4a2ce71ba66fc9b3e3b6fb5236f7": {
+        "static Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request input)": 7.9
+    },
+    "85f2f504793283bb66ffde5b80fd2cc6ccfebd88": {
+        "Object feign.SynchronousMethodHandler.executeAndDecode(RequestTemplate template)": 13.0
+    },
+    "9875a16f4ad3117904dde1c5a5ce3d08de7d1009": {
+        "public static Request feign.Request.create(String method, String url, Map<String, Collection<String>> headers, byte[] body, Charset charset)": 13.0,
+        "public Response feign.Default.execute(Request request, Options options)": 4.2,
+        "public String feign.Request.method()": 22.1
+    },
+    "089a59f98076d64b3086b98366ebbf0d2114769b": {
+        "private String feign.template.QueryTemplate.queryString(String name, String values)": 4.2,
+        "public String feign.template.Template.expand(Map<String, ?> variables)": 47.0
+    },
+    "23ee09ef88a02ead7c8c925cdab7b094053b3d9e": {
+        "public Object feign.SynchronousMethodHandler.invoke(Object[] argv)": 6.4
+    },
+    "368818ab9ab741fa335a9dd739c4d2cc5fe04e70": {
+        "Object feign.SynchronousMethodHandler.executeAndDecode(RequestTemplate template, Options options)": 8.9
+    },
+    "ce662052d788bb4c35f89c8f67a75cdaf3c68c83": {
+        "public RequestTemplate feign.RequestTemplate.resolve(Map<String, ?> variables)": 4.2
+    },
+    "96a6bbd2c85223ae5f49b6dd324f0be192f0e3be": {
+        "public RequestTemplate feign.RequestTemplate.target(String target)": 4.2
+    },
+    "7230f7c6eea82eb2b340e5d2e76cba1cf87bcf13": {
+        "public Object feign.stream.StreamDecoder.decode(Response response, Type type)": 30.9
+    },
+    "37d973c00476c88731edd36733bc3d65763285ac": {
+        "public RequestTemplate feign.RequestTemplate.resolve(Map<String, ?> variables)": 4.2
+    },
+    "f16553db43ed062d1de878b38ecff0268ad440ba": {
+        "private String feign.template.Template.encode(String value, boolean query)": 4.2,
+        "public String feign.template.QueryTemplate.expand(Map<String, ?> variables)": 6.4,
+        "public String feign.template.QueryTemplate.toString()": 4.2
+    },
+    "2b141a00ec6d569f0b0abb4408eb4799c31c62b8": {
+        "Object feign.SynchronousMethodHandler.executeAndDecode(RequestTemplate template, Options options)": 34.9
+    },
+    "4ee8cd8f1ec6fd48e5ed604f96dfeb91ea7d4d65": {
+        "private RequestTemplate feign.RequestTemplate.appendHeader(String name, Iterable<String> values)": 13.3
+    },
+    "72f379a03d24826ae64e43a3d3e737c2a94ee717": {
+        "private RequestTemplate feign.RequestTemplate.appendHeader(String name, Iterable<String> values, boolean literal)": 17.4,
+        "public Map<String, Collection<String>> feign.RequestTemplate.headers()": 13.0
+    },
+    "ed2cef04658a28b5ca8c50645032df0d5c7fd7b7": {
+        "public Request feign.RequestTemplate.request()": 4.2,
+        "public Map<String, Collection<String>> feign.RequestTemplate.headers()": 8.6
+    },
+    "d1199f64aec365a24551b00ec1780e56af04870d": {
+        "static Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request input)": 4.2
+    },
+    "b6d8bb1a46d390cd675c05880d3e0aa03ff5880e": {
+        "static Request feign.okhttp.OkHttpClient.toOkHttpRequest(feign.Request input)": 4.2
+    },
+    "318fb0e955b8cfcf64f70d6aeea0ba5795f8a7eb": {
+        "public RequestTemplate feign.RequestTemplate.query(String name, Iterable<String> values)": 4.2
+    },
+    "4b2a48ee6ae7cf25a9ba515ac5a198db076217d3": {
+        "public Object feign.SynchronousMethodHandler.invoke(Object[] argv)": 29.0
+    },
+    "f52158bc24bab0c6c3f858c6b07dd09d4f59dc65": {
+        "Options feign.SynchronousMethodHandler.findOptions(Object[] argv)": 4.2
+    },
+    "fdc7bc2fb85ef6c816f36750ece1a18fa80d4ef3": {
+        "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request input, feign.Request.Options options)": 20.2
+    },
+    "697b1c3162255c3e36f0bb73ebab0980dbe56f30": {
+        "public RequestTemplate feign.RequestTemplate.uri(String uri, boolean append)": 21.8
+    },
+    "a259a729a8107acaf4d188367a72ef04f9434210": {
+        "Object feign.SynchronousMethodHandler.executeAndDecode(RequestTemplate template, Options options)": 10.8
+    },
+    "cb036e48e47c537eb874241fa586ea77272d892f": {
+        "public Map<String, Collection<String>> feign.RequestTemplate.headers()": 4.2
+    },
+    "3d5f5ecce760d3a8fd6a80501b77272695209612": {
+        "public Object feign.ResponseHandler.handleResponse(String configKey, Response response, Type returnType, long elapsedTime)": 32.7
+    },
+    "92b2f511a991031cf1e4a1839e08249a5841f9d7": {
+        "private RequestTemplate feign.RequestTemplate.appendHeader(String name, Iterable<String> values)": 53.5,
+        "public RequestTemplate feign.RequestTemplate.resolve(Map<String, ?> variables)": 4.2
+    },
+    "7ba16df534d82e85eba6dba713fb156328634df4": {
+        "private String feign.template.QueryTemplate.queryString(String name, String values)": 4.2,
+        "public static QueryTemplate feign.template.QueryTemplate.create(String name, Iterable<String> values, Charset charset, CollectionFormat collectionFormat)": 8.6
+    },
+    "bc8b4b1fc53f0fc0911f486a5150fedab6813798": {
+        "public Object feign.InvocationContext.proceed()": 30.9
+    },
+    "5c57213b349c3e76910f595b67b13d0d34f64566": {
+        "public Object feign.gson.GsonDecoder.decode(Response response, Type type)": 6.7
+    },
+    "eed6dbe51c41bf6f0a2fdba69de991172fdf3a84": {
+        "public Charset feign.Response.charset()": 17.4
+    },
+    "d851bf2fc08f3b60be09ad5b2b176ed1146f52ef": {
+        "private static feign.Response feign.okhttp.OkHttpClient.toFeignResponse(Response response, feign.Request request)": 4.2
+    },
+    "29935b2287d455677171277f4e02926b5d9dd5a9": {
+        "public static String feign.template.UriUtils.queryEncode(String query, Charset charset)": 4.2,
+        "public static String feign.template.UriUtils.pathEncode(String path, Charset charset)": 4.2,
+        "private void feign.template.Template.parseFragment(String fragment, boolean query)": 6.4,
+        "public String feign.template.Template.expand(Map<String, ?> variables)": 4.2
+    },
+    "989fbd7c1f4029c6ad5900f0c3e591323cc11ffc": {
+        "private RequestTemplate feign.RequestTemplate.appendHeader(String name, Iterable<String> values)": 11.1
+    },
+    "9e23599df3325c407e752d9fd6fcd302637e9ab9": {
+        "public feign.Response feign.okhttp.OkHttpClient.execute(feign.Request input, feign.Request.Options options)": 4.2
+    },
+    "f73fe7058a3a7da0aa307220e766f1fb2f4b58dd": {
+        "public List<String> feign.template.QueryTemplate.getVariables()": 4.2
+    }
+}

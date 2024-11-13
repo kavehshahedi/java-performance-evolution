@@ -1,0 +1,323 @@
+{
+    "61e5d3ccb2aff1931d0f1eb1559aabace974d2dd": {
+        "private int org.HdrHistogram.AbstractHistogram.getCompressedEncodingCookie()": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        },
+        "private int org.HdrHistogram.AbstractHistogram.getEncodingCookie()": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ad76bb512b510a37f6a55fdea32f8f3dd3355771": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Refactoring & Code Cleanup"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "df80115e09dc81ee72f0d1d6d3f95f2ac6a6744c": {
+        "public void org.HdrHistogram.WriterReaderPhaser.writerCriticalSectionExit(long criticalValueAtEnter)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "c24ac346a6e66dfcec1e81a9d16e568648bc65c0": {
+        "synchronized void org.HdrHistogram.AbstractHistogram.fillBufferFromCountsArray(ByteBuffer buffer, int wordSizeInBytes)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "32e62f68d9e277850807f2b538bcab5971f11a55": {
+        "private int org.HdrHistogram.AbstractHistogram.determineWordSizeInBytes()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5b6c642badd85b962cd7be09081e4738a9cf2c48": {
+        "public HistogramIterationValue org.HdrHistogram.AbstractHistogramIterator.next()": {
+            "categories": [
+                "Exception & Input/Output Handling",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4708c3a25fc335e7076f4118ab8fbb43f183debe": {
+        "private int org.HdrHistogram.AbstractHistogram.fillCountsArrayFromSourceBuffer(ByteBuffer sourceBuffer, int lengthInBytes, int wordSizeInBytes)": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "72c55e5bee5ed05e47c5f997f8d4bc9d736659d1": {
+        "final long org.jctools.queues.MpscArrayQueueConsumerIndexField<E>.lpConsumerIndex()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.BaseSpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public final long org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields<E>.lvConsumerIndex()": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.BaseLinkedQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public final long org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields<E>.lvProducerIndex()": {
+            "categories": [
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "c048acc8169650fc624c2e9c94ffcce822c11c22": {
+        "public boolean org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.offer(Node node)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "2ac1a663b3a378225ea1269e25b6383751954c4c": {
+        "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.headLazySet(long v)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private void org.jctools.queues.InlinedCountersSpscConcurrentArrayQueue<E>.tailLazySet(long v)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "13d8ba9a5196b1a8dd867dc992a83edc05d868fb": {
+        "public boolean org.jctools.sets.IdentityOpenHashSet<E>.remove(Object val)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "4a8a432f4d27f3235c54b44b2ee58572612199ee": {
+        "public boolean org.jctools.sets.OpenHashSet<E>.contains(Object needle)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public boolean org.jctools.sets.OpenHashSet<E>.remove(Object val)": {
+            "categories": [
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "5279f373a120d3d504d4ea5fad8e1547132b5e96": {
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type, String generatedName, Class<? extends ProxyChannelRingBuffer> backendType)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "d60366d5cdef9091f7dfacb6713fb7fc2b153516": {
+        "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9def52951541af24751964bb0cb4f611f50bdca4": {
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.consumerReferenceArrayIndex(MethodVisitor methodVisitor)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeRelease(MethodVisitor methodVisitor, int wOffset, int type)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.writeAcquireWithWaitStrategy(MethodVisitor methodVisitor)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.producerReferenceArrayIndex(MethodVisitor methodVisitor)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        },
+        "private static void org.jctools.channels.proxy.ProxyChannelFactory.implementUserMethod(Method method, ClassVisitor classVisitor, int type)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "f92da3d6919dae506b1e4737c587c6ed03e2eb61": {
+        "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy, Class<? extends ProxyChannelRingBuffer> backendType)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "78965db4efd244c428cea9825527f4ab8101ab00": {
+        "public int org.jctools.queues.BaseMpscLinkedArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Exception & Input/Output Handling"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "33c7774322d46a8d62ba755e2afe645617f03b15": {
+        "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "8f268d5293dc4701f9637ff393bdce110b2c0603": {
+        "public int org.jctools.queues.MpscArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "3c94b8ccb78e040b9c2a33a04f7dee01286d1658": {
+        "protected void org.jctools.counters.FixedSizeStripedLongCounterV6.inc(long offset, long delta)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "efcb60756ad75ef70e8e9ae603cf7c65cd46423d": {
+        "public int org.jctools.queues.MpmcArrayQueue<E>.fill(Supplier<E> s, int limit)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        },
+        "public int org.jctools.queues.MpmcArrayQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "Algorithmic Change",
+                "Control Flow/Loop Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "9a44566e30a4b1a81a7dde714bcf9c3fff0abb48": {
+        "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.writeRelease(long offset)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        },
+        "protected final void org.jctools.channels.spsc.SpscOffHeapFixedSizeRingBuffer.readRelease(long offset)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6f88bf5c20ab527d304544cc48fde0b280449b59": {
+        "public int org.jctools.queues.MpscUnboundedXaddArrayQueue<E>.drain(Consumer<E> c, int limit)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "ec0f7b287bcc0609fd4201584fa495e92ccc6dc6": {
+        "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)": {
+            "categories": [
+                "Algorithmic Change"
+            ],
+            "functionality_changed": true
+        }
+    },
+    "0ef3df124c06efd365de4a1fa20a0bd74b85d9d0": {
+        "public static <E> ProxyChannel<E> org.jctools.channels.proxy.ProxyChannelFactory.createSpscProxy(int capacity, Class<E> iFace, WaitStrategy waitStrategy)": {
+            "categories": [
+                "Data Structure & Variable Changes",
+                "Algorithmic Change",
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "6acb2a1011cacc4b8b379069888cc7395aa68a80": {
+        "private Node org.jctools.queues.intrusive.MpscIntrusiveLinkedQueue.xchgHead(Node node)": {
+            "categories": [
+                "Data Structure & Variable Changes"
+            ],
+            "functionality_changed": false
+        }
+    },
+    "534d30d8681c96c5fa9c30de3b4d27776d561d95": {
+        "protected static long org.jctools.queues.ConcurrentCircularArrayQueue<E>.calcElementOffset(long index, long mask)": {
+            "categories": [
+                "API/Library Call Changes"
+            ],
+            "functionality_changed": true
+        }
+    }
+}

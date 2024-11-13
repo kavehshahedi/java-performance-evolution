@@ -1,0 +1,315 @@
+{
+    "c05f5782d9517eeae37c3cd9bf7f73781566b686": {
+        "static <E extends Enum<E>> Optional<Class<E>> org.jdbi.v3.core.argument.EnumArgumentFactory.ifEnum(Type type)": 22.4
+    },
+    "5a33a0fa036d47920deba8cc0e1aa00312b90036": {
+        "public Connection org.jdbi.v3.core.Handle.getConnection()": 4.2
+    },
+    "2e1d2244c8affd3aab76ec2b9dcbf898845343c0": {
+        "public boolean org.jdbi.v3.sqlobject.GeneratorSqlObjectFactory.accepts(Class<?> extensionType)": 4.2,
+        "private static SqlStatementCustomizerFactory instantiateFactory(Annotation annotation)": 4.2
+    },
+    "c46b9bbd82fab5f7caa0c5cec5a8457a889a1222": {
+        "public static Class<?> org.jdbi.v3.core.generic.GenericTypes.getErasedType(Type type)": 4.2,
+        "public static Optional<Type> org.jdbi.v3.core.generic.GenericTypes.findGenericParameter(Type type, Class<?> parameterizedSupertype, int n)": 7.9
+    },
+    "3c1a53624454bbdb1b466fd56e2bc9f837893cd7": {
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.internal.PojoMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 4.2
+    },
+    "c283af4884c4ac9996e23b4d6c776cd426a66148": {
+        "private Iterator<Object[]> zipArgs(Method method, Object[] args)": 13.0
+    },
+    "cd2e442d0b62e32be40ae814457b82cd81407edc": {
+        "public RowMapper<T> org.jdbi.v3.core.mapper.reflect.ConstructorMapper<T>.specialize(ResultSet rs, StatementContext ctx)": 8.6,
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.ConstructorMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 13.0
+    },
+    "49ae34ffafc78374f1f41fbc62a555683f271f9e": {
+        "public boolean org.jdbi.v3.core.extension.UseAnnotationExtensionHandlerFactory.accepts(Class<?> extensionType, Method method)": 13.3,
+        "private Function<ConfigRegistry, JdbiConfig<?>> org.jdbi.v3.core.config.ConfigRegistry.configFactory(Class<? extends JdbiConfig<?>> configClass)": 4.2,
+        "public <T> Optional<RowMapper<T>> org.jdbi.v3.core.mapper.Mappers.findFor(QualifiedType<T> type)": 2.0,
+        "void org.jdbi.v3.core.statement.ArgumentBinder.bindPositional(Binding binding)": 4.2,
+        "public static RowMapperFactory org.jdbi.v3.core.mapper.reflect.BeanMapper<T>.factory(Class<?> type)": 4.2,
+        "private Iterator<Object[]> zipArgs(Method method, Object[] args)": 4.2,
+        "public ResultIterator<Integer> org.jdbi.v3.core.statement.PreparedBatch.executeAndGetModCount()": 4.2,
+        "public static <T> RowMapper<T> org.jdbi.v3.core.mapper.reflect.BeanMapper<T>.of(Class<T> type)": 4.2
+    },
+    "aad0b605631763fa4262f43a960fc8c92f9ecc4f": {
+        "public final Optional<Argument> org.jdbi.v3.core.argument.AbstractArgumentFactory<T>.build(Type type, Object value, ConfigRegistry config)": 6.4,
+        "public Optional<Function<Object, Argument>> org.jdbi.v3.core.argument.AbstractArgumentFactory<T>.prepare(Type type, ConfigRegistry config)": 4.2
+    },
+    "636df165577a7d79d5345ff41f71d9d748289804": {
+        "public <E extends Enum<E>> EnumStrategy org.jdbi.v3.core.internal.EnumStrategies.findStrategy(QualifiedType<E> type)": 4.2
+    },
+    "7e13a4078e938b8b91ad049b6116a671fe209a9e": {
+        "private ExecutedBatch org.jdbi.v3.core.statement.PreparedBatch.internalBatchExecute()": 12.3
+    },
+    "1952c9bbf6f0e3a077319c5f348147d8f74fe0ca": {
+        "public void org.jdbi.v3.sqlobject.SqlObjectPlugin.customizeJdbi(Jdbi db)": 14.5
+    },
+    "3bc60f46fe9f8907681b56e736678da25f5b6b52": {
+        "private static SqlStatementCustomizerFactory instantiateFactory(Annotation annotation)": 13.0,
+        "private Function<ConfigRegistry, JdbiConfig<?>> org.jdbi.v3.core.config.ConfigRegistry.configFactory(Class<? extends JdbiConfig<?>> configClass)": 60.0,
+        "public Optional<ExtensionHandler> org.jdbi.v3.core.extension.UseAnnotationExtensionHandlerFactory.createExtensionHandler(Class<?> extensionType, Method method)": 4.2,
+        "public ExtensionHandler org.jdbi.v3.core.extension.UseAnnotationExtensionHandlerCustomizer.customize(ExtensionHandler delegate, Class<?> extensionType, Method method)": 4.2,
+        "private static Collection<ConfigCustomizer> org.jdbi.v3.sqlobject.SqlObjectCustomizerFactory.buildConfigCustomizer(Stream<AnnotatedElement> elements, ConfigurerMethod consumer)": 19.6,
+        "private static Collection<ConfigCustomizer> org.jdbi.v3.core.extension.UseAnnotationConfigCustomizerFactory.buildConfigCustomizer(Class<?> extensionType, Method method, Stream<AnnotatedElement> elements, ConfigurerMethod consumer)": 4.2
+    },
+    "3e802fe235a322339c6ad64a987bc818dc916aa3": {
+        "public ExtensionMetadata build()": 4.2
+    },
+    "7e8090d9a5d50bd14acf776f4b3382842668f7a5": {
+        "public void org.jdbi.v3.core.result.internal.ResultSetResultIterator<T>.close()": 13.0,
+        "public ResultIterator<T> org.jdbi.v3.core.result.internal.ResultSetResultIterable<T>.iterator()": 10.1
+    },
+    "23195040b5ab492c97dad48f2c7ba962861e6231": {
+        "public void org.jdbi.v3.core.argument.Arguments.setRegistry(ConfigRegistry registry)": 15.8,
+        "public Arguments org.jdbi.v3.core.argument.Arguments.register(QualifiedArgumentFactory factory)": 14.8
+    },
+    "94d22c6f706ab22ba7b281bc45a3ebd1c79cb485": {
+        "Type getParameterType(Parameter parameter)": 68.6
+    },
+    "88eeb97188f6bde7ea5654051591f9f03c16eb73": {
+        "private Optional<ExtensionFactory> org.jdbi.v3.core.extension.Extensions.findFactoryFor(Class<?> extensionType)": 20.2,
+        "public Extensions org.jdbi.v3.core.extension.Extensions.register(ExtensionFactory factory)": 15.2
+    },
+    "ea2b134b0e51adff268c9c3bffe14509aefd9cb8": {
+        "private static SqlStatementCustomizerFactory instantiateFactory(Annotation annotation)": 14.5
+    },
+    "f4df5c78432d3aa787ccda9f226eb968b8320f3a": {
+        "public Collection<ConfigCustomizer> org.jdbi.v3.core.extension.UseAnnotationConfigCustomizerFactory.forExtensionMethod(Class<?> extensionType, Method method)": 4.2,
+        "public Collection<ConfigCustomizer> org.jdbi.v3.core.extension.UseAnnotationConfigCustomizerFactory.forExtensionType(Class<?> extensionType)": 4.2
+    },
+    "8bfe50b0bbea1b92dfa7c453a1b9c8cffe4ab7c5": {
+        "private Optional<CollectorFactory> org.jdbi.v3.core.collector.JdbiCollectors.findFactoryFor(Type containerType)": 19.9,
+        "void org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.configureReturner(Query q, SqlObjectStatementConfiguration cfg)": 4.2,
+        "public Supplier<InContextInvoker> org.jdbi.v3.sqlobject.internal.SqlObjectInitData.lazyInvoker(Object target, Method method, HandleSupplier handle, ConfigRegistry instanceConfig)": 2.0,
+        "public JdbiCollectors org.jdbi.v3.core.collector.JdbiCollectors.register(CollectorFactory factory)": 2.0,
+        "public SqlStatementParameterCustomizer org.jdbi.v3.sqlobject.customizer.internal.BindBeanFactory.createForParameter(Annotation annotation, Class<?> sqlObjectType, Method method, Parameter param, int index, Type type)": 8.6
+    },
+    "6a1a3d87e984e6ddfc8b861acca39376a9b1a043": {
+        "private ExecutedBatch org.jdbi.v3.core.statement.PreparedBatch.internalBatchExecute()": 4.2
+    },
+    "35b33600afe69dade1c67096bf0bccee58eeb27a": {
+        "private boolean org.jdbi.v3.core.result.ResultSetResultIterator<T>.safeNext()": 4.2
+    },
+    "fcf111b1ed4a9e380095eb84457a9126fbe5a0d7": {
+        "public final Optional<Argument> org.jdbi.v3.core.argument.internal.ObjectPropertyNamedArgumentFinder.find(String name, StatementContext ctx)": 4.2
+    },
+    "2ec145e817273a3795ee0157a46825f2ce46b7f9": {
+        "public Collection<ConfigCustomizer> org.jdbi.v3.core.extension.UseAnnotationConfigCustomizerFactory.forExtensionMethod(Class<?> extensionType, Method method)": 4.2,
+        "private static Collection<ConfigCustomizer> org.jdbi.v3.core.extension.UseAnnotationConfigCustomizerFactory.buildConfigCustomizer(Class<?> extensionType, Method method, Stream<AnnotatedElement> elements, ConfigurerMethod consumer)": 8.6,
+        "public Collection<ConfigCustomizer> org.jdbi.v3.core.extension.UseAnnotationConfigCustomizerFactory.forExtensionType(Class<?> extensionType)": 4.2
+    },
+    "5db5d130637dabdd93cae7fb506722ff670bed7b": {
+        "public Optional<RowMapper<?>> org.jdbi.v3.core.mapper.RowMappers.findFor(Type type)": 2.0,
+        "public <T> Optional<ColumnMapper<T>> org.jdbi.v3.core.mapper.ColumnMappers.findFor(QualifiedType<T> type)": 2.0
+    },
+    "54aa57a1a019a8ec6eaef68f97511865e18202a2": {
+        "void org.jdbi.v3.sqlobject.statement.internal.SqlUpdateHandler.configureReturner(Update u, SqlObjectStatementConfiguration cfg)": 4.2,
+        "public void org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.warm(ConfigRegistry config)": 4.2
+    },
+    "e344a717c7c09fba3f3b59b81d31c4b2c98e9d01": {
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.ConstructorMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 26.5
+    },
+    "2513227afc55f8261a70092fb0582a89e6c6f5c0": {
+        "void org.jdbi.v3.core.statement.ArgumentBinder.bindPositional(Binding binding)": 26.5
+    },
+    "da0c4935b72564c722a0d16179e0a0a1918dbed5": {
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.internal.PojoMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 15.5
+    },
+    "0634052524cf5b229be3852fd90eaf141925f082": {
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.internal.PojoMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 26.5
+    },
+    "37b8329ccc9e5332b01445413af1cd74e9f9da26": {
+        "public Arguments org.jdbi.v3.core.argument.Arguments.register(QualifiedArgumentFactory factory)": 2.0,
+        "public void org.jdbi.v3.core.argument.Arguments.setRegistry(ConfigRegistry registry)": 17.3,
+        "public Optional<Function<Object, Argument>> org.jdbi.v3.core.argument.Arguments.prepareFor(QualifiedType<?> type)": 31.5,
+        "public Optional<Argument> org.jdbi.v3.core.argument.Arguments.findFor(QualifiedType<?> type, Object value)": 31.5
+    },
+    "2e32aca8e753b81d7a315c91c85cd327686f9e5f": {
+        "private static Object org.jdbi.v3.sqlobject.statement.internal.ResultReturner.checkResult(Object result, QualifiedType<?> type)": 4.2,
+        "static ResultReturner org.jdbi.v3.sqlobject.statement.internal.ResultReturner.forMethod(Class<?> extensionType, Method method)": 15.2
+    },
+    "110b71d27f398f8e44e09fff8e228aa59d9cb394": {
+        "public Object invoke(Object target, Object[] args, HandleSupplier h)": 211.3
+    },
+    "f2eb8dc4dccba41ffe546b2afdf0e95e19009488": {
+        "private ExecutedBatch org.jdbi.v3.core.statement.PreparedBatch.internalBatchExecute()": 4.2
+    },
+    "ef3b9eb31557ba34c06ff62c127b2d4ca4ad836d": {
+        "private ExecutedBatch org.jdbi.v3.core.statement.PreparedBatch.internalBatchExecute()": 8.6
+    },
+    "aca3c61ae6408843cbeb810f5a176c0f7802f094": {
+        "public Call org.jdbi.v3.core.Handle.createCall(String sql)": 19.9,
+        "public PreparedBatch org.jdbi.v3.core.Handle.prepareBatch(String sql)": 17.4
+    },
+    "f18eaaf9f16ae9499d98e584738be9327ea3b424": {
+        "public String org.jdbi.v3.core.statement.DefinedAttributeTemplateEngine.render(String template, StatementContext ctx)": 93.3
+    },
+    "2db70ef664628c66e1496de135259a0390dea1f6": {
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.internal.PojoMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 32.1
+    },
+    "efe05cea987dbbc21155f0914ad60de83a33a3d0": {
+        "void org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.configureReturner(Query q, SqlObjectStatementConfiguration cfg)": 16.3
+    },
+    "4eeb8346d00d2e87456444ad84e6c1c535a12baf": {
+        "public Arguments org.jdbi.v3.core.argument.Arguments.register(QualifiedArgumentFactory factory)": 4.2
+    },
+    "3ff1d141adf07ac7a4d0c3baecf6676c0c73be25": {
+        "public ExtensionMetadata build()": 4.2
+    },
+    "55ae3628f95a17f4ad6443e1c46cdd1bb7efc400": {
+        "public int org.jdbi.v3.core.qualifier.QualifiedType<T>.hashCode()": 16.7
+    },
+    "ab0b3710a0a209df8eaab9a69e93f1a9a870bc2a": {
+        "public Optional<RowMapper<?>> org.jdbi.v3.core.mapper.RowMappers.findFor(Type type)": 13.0,
+        "public <T> Optional<ColumnMapper<T>> org.jdbi.v3.core.mapper.ColumnMappers.findFor(QualifiedType<T> type)": 21.8
+    },
+    "a1f5596dfa40202cbe01f93d4e3f43d88551e90a": {
+        "protected Optional<TypedValue> org.jdbi.v3.core.argument.internal.PojoPropertyArguments.getValue(String name, StatementContext ctx)": 4.2,
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.FieldMapper<T>.createSpecializedRowMapper(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 4.2
+    },
+    "7e511593f4c3fc75f98809f8b1ab2db54c45bdf2": {
+        "Type getParameterType(Parameter parameter)": 4.2
+    },
+    "c74cf4b6c69b01e9e72d4c2cf206a27b022f68cf": {
+        "public void org.jdbi.v3.sqlobject.AbstractSqlObjectFactory.buildExtensionMetadata(ExtensionMetadata.Builder builder)": 4.2
+    },
+    "18837218030f0549307e53fa73375fe5b0fd2ff2": {
+        "static ResultReturner org.jdbi.v3.sqlobject.statement.internal.ResultReturner.forMethod(Class<?> extensionType, Method method)": 8.6
+    },
+    "9571fb7441a21cbd1828f3c2a955de941246910f": {
+        "public Handle org.jdbi.v3.core.Handle.commit()": 2.0
+    },
+    "b241bd338fc9ee981dd2dde890fe4e1266155a91": {
+        "public int[] org.jdbi.v3.core.statement.PreparedBatch.execute()": 4.2
+    },
+    "ad92f3f4c1f90ed5dd6027ad50bbaae20e796df2": {
+        "public int[] org.jdbi.v3.core.statement.Batch.execute()": 4.2
+    },
+    "911beea21bbf94d7929f28cfe468a7aa534bd940": {
+        "public Qualifiers org.jdbi.v3.core.qualifier.Qualifiers.createCopy()": 4.2
+    },
+    "73e848b941e198e6a195230343d2aa20404f1b14": {
+        "private static <Opt, Box> ColumnMapper<?> org.jdbi.v3.core.mapper.OptionalMapperFactory.optionalMapper(ColumnGetter<Box> columnGetter, Supplier<Opt> empty, Function<Box, Opt> present)": 13.8
+    },
+    "214adffa372cf96af9abb6c46a09652b5669b859": {
+        "public Object invoke(Object target, Object[] args, HandleSupplier hs)": 2.0
+    },
+    "37f4bcce158acc4472dbefdaf0220068da0018f1": {
+        "private static <T> ColumnMapper<T> org.jdbi.v3.core.mapper.PrimitiveMapperFactory.primitiveMapper(ColumnGetter<T> getter)": 24.6
+    },
+    "3a412462c8eaa96558bd7d585a7fbc6a3302361e": {
+        "public RowMapper<T> org.jdbi.v3.core.mapper.reflect.ConstructorMapper<T>.specialize(ResultSet rs, StatementContext ctx)": 6.4
+    },
+    "3fc3b74c1199ed4b8fbc59dd52eb61a4d7cc4c8c": {
+        "public QualifiedType<T> org.jdbi.v3.core.qualifier.QualifiedType<T>.withAnnotations(Iterable<? extends Annotation> newQualifiers)": 4.2
+    },
+    "611c8ba9c77447bbf1053d5d9859e869b5f24d9b": {
+        "private static <T> ColumnMapper<T> org.jdbi.v3.core.mapper.PrimitiveMapperFactory.primitiveMapper(ColumnGetter<T> getter)": 10.8
+    },
+    "a53d152527e7faa4e91553a0625235024b2da862": {
+        "public static Optional<Type> org.jdbi.v3.core.generic.GenericTypes.findGenericParameter(Type type, Class<?> parameterizedSupertype, int n)": 29.3
+    },
+    "563240d50d60eed0c811e565a694d49ae477cab3": {
+        "public void org.jdbi.v3.sqlobject.AbstractSqlObjectFactory.buildExtensionMetadata(ExtensionMetadata.Builder builder)": 13.0
+    },
+    "b67e223d4f21d3f57a45eedacdf4535adae109b1": {
+        "public static ResultProducer<ResultBearing> org.jdbi.v3.core.result.ResultProducers.returningResults()": 4.2
+    },
+    "d9cb04e81cb1feac3a676b1da829e3f95df8a029": {
+        "Function<Object, Argument> org.jdbi.v3.core.statement.PreparedBatch.buildArgument(QualifiedType<?> type)": 6.4
+    },
+    "4385e2b21e790541f9d36cae07162385620fa217": {
+        "public static boolean org.jdbi.v3.core.internal.IterableLike.isIterable(Object maybeIterable)": 4.2,
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.ConstructorMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 4.2
+    },
+    "d5df6a3753459cc375b9021b0836ef4843b5410b": {
+        "public static boolean org.jdbi.v3.core.internal.IterableLike.isIterable(Object maybeIterable)": 4.2
+    },
+    "722c4ddcb5aad57364d7803061afa0b56d6c5911": {
+        "public int org.jdbi.v3.core.qualifier.QualifiedType<T>.hashCode()": 13.3
+    },
+    "c3c40e8759e9cfee20fe1bb55a4f95e0411eb0f8": {
+        "public Handle org.jdbi.v3.core.Handle.commit()": 4.2,
+        "public Handle org.jdbi.v3.core.Handle.begin()": 4.2,
+        "public boolean org.jdbi.v3.core.Handle.isInTransaction()": 4.2
+    },
+    "9f823afd66bc552998b5cf27b645fc9fcd908e2a": {
+        "public static <T> Consumer<T> org.jdbi.v3.core.internal.exceptions.Unchecked.consumer(CheckedConsumer<T> checkedConsumer)": 4.2
+    },
+    "84143048e2a0366b3c9ef6f2d558815b3627cc6d": {
+        "public Handle org.jdbi.v3.core.Handle.commit()": 4.2
+    },
+    "3d4f00664113bf7f4f2add6cf6be197016c9ffbe": {
+        "public Optional<Function<Object, Argument>> org.jdbi.v3.core.argument.AbstractArgumentFactory<T>.prepare(Type type, ConfigRegistry config)": 4.2,
+        "public final Optional<Argument> org.jdbi.v3.core.argument.AbstractArgumentFactory<T>.build(Type type, Object value, ConfigRegistry config)": 13.3
+    },
+    "cc3847b646d2e71b80624e86428af4cab2c95f68": {
+        "public Optional<RowMapper<?>> org.jdbi.v3.core.mapper.RowMappers.findFor(Type type)": 37.8,
+        "public <T> Optional<ColumnMapper<T>> org.jdbi.v3.core.mapper.ColumnMappers.findFor(QualifiedType<T> type)": 37.8
+    },
+    "7e48900b945d09d540239a57fe0cd6bb9e0e5809": {
+        "public int[] org.jdbi.v3.core.statement.Batch.execute()": 4.2
+    },
+    "c886fc2c4910bc822fa696e802aabc4373c5d306": {
+        "private Function<ConfigRegistry, JdbiConfig<?>> org.jdbi.v3.core.config.ConfigRegistry.configFactory(Class<? extends JdbiConfig<?>> configClass)": 24.0
+    },
+    "78dbaf119bed28ccd3de304893ea3ac10a0b36e3": {
+        "public void org.jdbi.v3.sqlobject.AbstractSqlObjectFactory.buildExtensionMetadata(ExtensionMetadata.Builder builder)": 2.0
+    },
+    "b074c8d411963855c28a0fbbb47ccfa213d08eaa": {
+        "private Function<ConfigRegistry, JdbiConfig<?>> org.jdbi.v3.core.config.ConfigRegistry.configFactory(Class<? extends JdbiConfig<?>> configClass)": 8.6
+    },
+    "a8daa89c784dca865a92ee20d2747cda625be326": {
+        "public Optional<ColumnMapper<?>> org.jdbi.v3.core.mapper.OptionalMapperFactory.build(Type type, ConfigRegistry config)": 15.5
+    },
+    "c1c9a29c822350e6fbe113e36e9dfac383637141": {
+        "private ParsedSql org.jdbi.v3.core.statement.ColonPrefixSqlParser.internalParse(String sql)": 6.4,
+        "public String org.jdbi.v3.core.statement.DefinedAttributeTemplateEngine.render(String template, StatementContext ctx)": 6.4
+    },
+    "e7a819593ff7bdcf71aa8ff8fe2a8ac7f95972c0": {
+        "PreparedBatch org.jdbi.v3.core.statement.PreparedBatch.bindNamedArgumentFinder(NamedArgumentFinderFactory<?> factory, String prefix, Object value, Type type, Supplier<NamedArgumentFinder> backupArgumentFinder)": 8.6
+    },
+    "cbb1910461481b9538bc613de68c129f90781473": {
+        "public static ResultProducer<Integer> org.jdbi.v3.core.result.ResultProducers.returningUpdateCount()": 8.6
+    },
+    "1f00a3599e934f5eb221747ac58a7ffdd6091b4b": {
+        "public static ResultProducer<ResultBearing> org.jdbi.v3.core.result.ResultProducers.returningResults()": 4.2
+    },
+    "332c97f566d31a8a511562d1124628fe87b2cc3e": {
+        "public RowMapper<T> org.jdbi.v3.core.mapper.reflect.ConstructorMapper<T>.specialize(ResultSet rs, StatementContext ctx)": 4.2
+    },
+    "aa2c7fb5f4825ec029818d4d1db17dca3f0a8dcf": {
+        "static ResultReturner org.jdbi.v3.sqlobject.statement.internal.ResultReturner.forMethod(Class<?> extensionType, Method method)": 8.6
+    },
+    "849006140a0b2f853ec97f4ca1b1ba6fc5ea2030": {
+        "private Optional<RowMapper<T>> org.jdbi.v3.core.mapper.reflect.internal.PojoMapper<T>.specialize0(StatementContext ctx, List<String> columnNames, List<ColumnNameMatcher> columnNameMatchers, List<String> unmatchedColumns)": 4.2
+    },
+    "102876d0470d99bb45765a798bb9eaf4bc05674d": {
+        "public void org.jdbi.v3.sqlobject.SqlObjectPlugin.customizeJdbi(Jdbi db)": 16.7,
+        "public boolean org.jdbi.v3.sqlobject.SqlObjectFactory.accepts(Class<?> extensionType)": 35.0
+    },
+    "a4c8a06909e6c884010eaecbe69cf071142c6ec0": {
+        "static <E extends Enum<E>> Optional<Class<E>> org.jdbi.v3.core.argument.EnumArgumentFactory.ifEnum(Type type)": 4.2,
+        "public Optional<ColumnMapper<?>> org.jdbi.v3.core.enums.internal.EnumMapperFactory.build(QualifiedType<?> givenType, ConfigRegistry config)": 4.2
+    },
+    "fd7458fffbf80d054c8654c971019330c9958cbf": {
+        "public Optional<ColumnMapper<?>> org.jdbi.v3.core.enums.internal.EnumMapperFactory.build(QualifiedType<?> givenType, ConfigRegistry config)": 4.2
+    },
+    "be9a4e7ce2e3b01aa6df6400b512727b272053e7": {
+        "Function<Object, Argument> org.jdbi.v3.core.statement.PreparedBatch.buildArgument(QualifiedType<?> type)": 7.9
+    },
+    "7131783d84c1b01dc73096d93d814adc36a964fe": {
+        "public String org.jdbi.v3.sqlobject.locator.AnnotationSqlLocator.locate(Class<?> sqlObjectType, Method method, ConfigRegistry config)": 4.2
+    },
+    "320164473d02fd6905cf73ba8cd35ee91f16adde": {
+        "public Handler org.jdbi.v3.sqlobject.SqlMethodAnnotatedHandlerDecorator.decorateHandler(Handler base, Class<?> sqlObjectType, Method method)": 4.2
+    },
+    "1288ce9ddb493e388cc5fb7a15d6ebb0efd7530a": {
+        "private Object org.jdbi.v3.core.argument.PrimitivesArgumentFactory.checkForNull(ConfigRegistry cfg, Type type, Object value)": 22.4
+    },
+    "49498d0456ef9dbfe5611df4f7ee5a50c6f3a98b": {
+        "private ExecutedBatch org.jdbi.v3.core.statement.PreparedBatch.internalBatchExecute()": 18.2
+    }
+}

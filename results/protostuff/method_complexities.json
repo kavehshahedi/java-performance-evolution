@@ -1,0 +1,14 @@
+{
+    "3a26b9899dfb9c6d3784db0fd72431c4664fcdc9": {
+        "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)": 8.6
+    },
+    "b87ab5758c5acbe740d9a7acb52f70f45ac789d3": {
+        "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)": 11.1
+    },
+    "72e7c529f20b9e81a670591536cf9fc1846e9bab": {
+        "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)": 21.8
+    },
+    "8b09091191bf5b997a22d01309e293c51a76e784": {
+        "public static RuntimeFieldFactory<?> io.protostuff.runtime.RuntimeFieldFactory<V>.getFieldFactory(Class<?> clazz, IdStrategy strategy)": 8.6
+    }
+}
