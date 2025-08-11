@@ -1,257 +1,246 @@
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 import requests
 from datetime import datetime
 import math
 import time
 
+
+class GitHubRateLimitError(Exception):
+    pass
+
+
 class GitHubAuthorExperience:
-    """
-    A class to calculate the experience of a GitHub author based on various metrics.
-
-    We consider the following metrics:
-    - Total contributions
-    - Repository contributions
-    - Code reviews
-    - Account age
-    """
-
-    def __init__(self, token: str) -> None:
-        """
-        Initialize the GitHubAuthorExperience class with a GitHub token.
-
-        :param token: GitHub token for authentication
-        :type token: str
-        """
+    def __init__(self, token: str, rate_handler=None) -> None:
         self.token = token
+        self.rate_handler = rate_handler
         self.headers = {
             "Authorization": f"Bearer {self.token}",
             "Accept": "application/vnd.github+json"
         }
-
         self.weights = {
             "repo_score": 0.3,
             "total_contributions": 0.25,
             "reviews": 0.25,
             "account_age": 0.2
         }
-
         self.project_contributions = {}
 
+    def _make_request(self, url: str, custom_headers: Optional[Dict] = None) -> requests.Response:
+        """Make a request with rate limit handling and token rotation on any error."""
+        headers = custom_headers or self.headers
+        max_retries = 5
+
+        for attempt in range(max_retries):
+            try:
+                response = requests.get(url, headers=headers)
+
+                if response.status_code in [403, 429]:
+                    if self.rate_handler:
+                        self.token = self.rate_handler.rotate_token_on_error()
+                        self.headers["Authorization"] = f"Bearer {self.token}"
+                        headers = custom_headers or self.headers
+                        continue
+                    else:
+                        raise GitHubRateLimitError(f"Rate limit hit: {response.text}")
+
+                response.raise_for_status()
+                return response
+
+            except requests.exceptions.RequestException as e:
+                if self.rate_handler:
+                    self.token = self.rate_handler.rotate_token_on_error()
+                    self.headers["Authorization"] = f"Bearer {self.token}"
+                    headers = custom_headers or self.headers
+                if attempt == max_retries - 1:
+                    raise GitHubRateLimitError(f"Request failed after {max_retries} attempts: {str(e)}")
+                time.sleep(2 ** attempt)
+
+        raise GitHubRateLimitError("Max retries exceeded")
+
     def get_author_experience(self, repo: str, commit_sha: str, defined_author_username: Optional[str] = None) -> Optional[Dict]:
-        """
-        Get the experience assessment of a GitHub author based on the provided metrics.
-
-        :param repo: Repository name in the format 'owner/repo'
-        :type repo: str
-        :param commit_sha: Commit SHA for the author
-        :type commit_sha: str
-        :param defined_author_username: Optional defined author username (if available)
-        :type defined_author_username: Optional[str]
-        :return: Structured experience assessment
-        :rtype: Optional[Dict]
-        """
-        # Get the author's username from the commit
-        if not defined_author_username:
-            author_username = self.get_commit_author(repo, commit_sha)
-            if not author_username:
-                return
-        else:
-            author_username = defined_author_username
-
         try:
+            commit_info = self._get_commit_info(repo, commit_sha)
+            if not commit_info:
+                return None
+
+            commit_date = commit_info['commit_date']
+            author_username = defined_author_username or commit_info['username']
+            if not author_username:
+                return None
+
             user_details = self._get_user_details(author_username)
-            repo_contributions = self._get_repo_contributions(author_username, repo)
-            total_contributions = self._get_contributions(author_username)
-            code_reviews = self._get_total_code_reviews(author_username)
+            repo_contributions = abs(self._get_repo_contributions(author_username, repo, commit_date))
+            total_contributions = abs(self._get_total_contributions(author_username, commit_date))
+            code_reviews = abs(self._get_total_code_reviews(author_username, commit_date))
 
-            experience_score = self._calculate_experience_score(user_details, repo_contributions, total_contributions, code_reviews)
+            created_at = datetime.strptime(user_details['created_at'], '%Y-%m-%dT%H:%M:%SZ')
+            account_age_years = abs((commit_date - created_at).days / 365)
 
-            # Return structured experience assessment
+            experience_score = self._calculate_experience_score(
+                repo_contributions=repo_contributions,
+                total_contributions=total_contributions,
+                code_reviews=code_reviews,
+                account_age_years=account_age_years
+            )
+
             return {
                 "username": author_username,
                 "total_contributions": total_contributions,
                 "repo_contributions": repo_contributions,
                 "code_reviews": code_reviews,
-                "account_age_years": (datetime.now() - datetime.strptime(user_details['created_at'], '%Y-%m-%dT%H:%M:%SZ')).days / 365,
+                "account_age_years": account_age_years,
                 "experience_score": experience_score
             }
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching data for {author_username}: {str(e)}")
+
+        except Exception as e:
+            print(f"Error fetching data for commit {commit_sha}: {str(e)}")
             return None
 
-    def get_commit_author(self, repo: str, commit_sha: str) -> Optional[str]:
-        """
-        Get the author's GitHub username from a commit SHA.
-        
-        :param repo: Repository name in the format 'owner/repo'
-        :type repo: str
-        :param commit_sha: Commit SHA for the author
-        :type commit_sha: str
-        :return: Author's GitHub username
-        :rtype: Optional[str]
-        """
+    def _get_commit_info(self, repo: str, commit_sha: str) -> Optional[Dict]:
         url = f"https://api.github.com/repos/{repo}/commits/{commit_sha}"
-        response = requests.get(url, headers=self.headers)
-        response.raise_for_status()
+        response = self._make_request(url)
         commit_data = response.json()
 
-        # Get author's GitHub username (if available)
-        author = commit_data.get('author')
-        if author and 'login' in author:
-            return author['login']
-        else:
-            # Fallback to committer's username
-            committer = commit_data.get('committer')
-            if committer and 'login' in committer:
-                return committer['login']
-            
-        return None
+        author = commit_data.get('author', {})
+        committer = commit_data.get('committer', {})
+        username = author.get('login') if author else committer.get('login') if committer else None
+
+        if not username:
+            author = commit_data.get('commit', {}).get('author', {})
+            commiter = commit_data.get('commit', {}).get('committer', {})
+            username = author.get('name') if author else commiter.get('name') if commiter else None
+
+        if not username:
+            return None
+
+        # Case-specific handling for Zipkin project
+        if username == 'Adrian Cole' and repo.lower() == 'openzipkin/zipkin':
+            username = 'adriancole'
+
+        commit_date_str = commit_data['commit']['author']['date']
+        commit_date = datetime.strptime(commit_date_str, '%Y-%m-%dT%H:%M:%SZ')
+        return {'username': username, 'commit_date': commit_date}
 
     def _get_user_details(self, username: str) -> Dict:
-        """
-        Get the details of a GitHub user based on their username.
-
-        :param username: GitHub username
-        :type username: str
-        :return: User details
-        :rtype: Dict
-        """
         url = f"https://api.github.com/users/{username}"
-        response = requests.get(url, headers=self.headers)
-        response.raise_for_status()
+        response = self._make_request(url)
         return response.json()
-    
-    def _get_contributions(self, username: str) -> int:
-        """
-        Get the total contributions of a GitHub user.
 
-        :param username: GitHub username
-        :type username: str
-        :return: Total contributions
-        :rtype: int
-        """
-        url = f"https://github-contributions-api.deno.dev/{username}.json"
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()['totalContributions']
+    def _get_total_contributions(self, username: str, commit_date: datetime) -> int:
+        commit_date_str = commit_date.strftime('%Y-%m-%dT%H:%M:%SZ')
+        url = f"https://api.github.com/search/commits?q=author:{username}+author-date:<={commit_date_str}"
+        headers = {**self.headers, "Accept": "application/vnd.github.cloak-preview"}
+        response = self._make_request(url, headers)
+        return response.json().get('total_count', 0)
 
-    def _get_repo_contributions(self, username: str, repository: str) -> int:
-        """
-        Get the contributions of a GitHub user to a specific repository.
+    def _get_repo_contributions(self, username: str, repo: str, commit_date: datetime) -> int:
+        owner, repo_name = repo.split('/')
+        cache_key = (repo, commit_date.timestamp())
+        if cache_key in self.project_contributions:
+            contributors = self.project_contributions[cache_key]
+        else:
+            contributors = self._fetch_contributors_with_retry(owner, repo_name)
+            self.project_contributions[cache_key] = contributors
 
-        :param username: GitHub username
-        :type username: str
-        :param repository: Repository name in the format 'owner/repo'
-        :type repository: str
-        :return: Contributions to the repository
-        :rtype: int
-        """
-        owner, repo = str(repository).split('/')
-        
-        if repository in self.project_contributions and self.project_contributions[repository]:
-            contributor = next((c for c in self.project_contributions[repository] if c['author']['login'] == username), None)
-            if contributor:
-                return contributor['total']
-            else:
-                return 0
+        commit_timestamp = commit_date.timestamp()
+        for contributor in contributors:
+            if contributor['author']['login'] == username:
+                return sum(week['c'] for week in contributor['weeks'] if week['w'] <= commit_timestamp)
+        return 0
 
+    def _fetch_contributors_with_retry(self, owner: str, repo: str, max_retries: int = 10) -> list:
         url = f"https://api.github.com/repos/{owner}/{repo}/stats/contributors"
 
-        # Retry until the API is fully loaded
-        max_retries = 10
         for attempt in range(max_retries):
-            response = requests.get(url, headers=self.headers)
-            if response.status_code == 202:  # GitHub returns 202 if the stats are being generated
-                print("Stats are being generated, retrying...")
-                time.sleep(2 ** attempt)  
-                continue
-            response.raise_for_status()
-            contributors = response.json()
-            break
-        else:
-            return 0
+            try:
+                response = self._make_request(url)
+                if response.status_code == 202:
+                    time.sleep(2 ** attempt)
+                    continue
+                return response.json()
+            except requests.exceptions.RequestException as e:
+                if attempt == max_retries - 1:
+                    raise GitHubRateLimitError(f"Failed to fetch contributors after {max_retries} retries: {str(e)}")
+                time.sleep(2 ** attempt)
+        raise GitHubRateLimitError("Max retries exceeded for fetching contributors")
 
-        try:
-            # Find the user's contributions
-            contributor = next((c for c in contributors if c['author']['login'] == username), None)
-            self.project_contributions[repository] = contributors
-            if contributor:
-                return contributor['total']
-        except:
-            return 0
-        
-        return 0
-    
-    def _get_total_code_reviews(self, username: str) -> int:
-        """
-        Get the total number of code reviews done by a GitHub user.
+    def _get_total_code_reviews(self, username: str, commit_date: datetime) -> int:
+        commit_date_str = commit_date.strftime('%Y-%m-%dT%H:%M:%SZ')
+        url = f"https://api.github.com/search/issues?q=type:pr+author:{username}+created:<={commit_date_str}"
+        response = self._make_request(url)
+        return response.json().get('total_count', 0)
 
-        :param username: GitHub username
-        :type username: str
-        :return: Total code reviews
-        :rtype: int
-        """
-        url = f"https://api.github.com/search/issues?q=type:pr+author:{username}"
-        response = requests.get(url, headers=self.headers)
-        response.raise_for_status()
-        data = response.json()
-        if 'total_count' in data:
-            return data['total_count']
-        return 0
-
-    def _calculate_experience_score(self, user_details: Dict,
-                                      repo_contributions: int,
-                                      total_contributions: int,
-                                      code_reviews: int) -> Optional[float]:
-        """
-        Calculate the experience score of a GitHub author based on the provided metrics.
-
-        :param user_details: Details of the GitHub user
-        :type user_details: Dict
-        :param repo_contributions: Contributions to the repository
-        :type repo_contributions: int
-        :param total_contributions: Total contributions of the user
-        :type total_contributions: int
-        :param code_reviews: Total code reviews done by the user
-        :type code_reviews: int
-        :return: Experience score
-        :rtype: float
-        """
-        # Extract weights
-        repo_weight = self.weights.get("repo_score", 0)
-        total_contrib_weight = self.weights.get("total_contributions", 0)
-        account_age_weight = self.weights.get("account_age", 0)
-        reviews_weight = self.weights.get("reviews", 0)
-
-        # Calculate repo score with diminishing returns
-        repo_score = 1 - math.exp(-repo_contributions / 50)  # Smoother scaling up to 100+
-
-        # Calculate total contributions score with logarithmic scaling
+    def _calculate_experience_score(self, repo_contributions: int, total_contributions: int,
+                                    code_reviews: int, account_age_years: float) -> float:
+        repo_score = 1 - math.exp(-repo_contributions / 50)
         contrib_score = min(math.log10(total_contributions + 1) / 2, 1.0)
+        reviews_score = 1 - math.exp(-code_reviews / 50)
+        age_score = 1 - math.exp(-account_age_years / 3)
 
-        # Calculate code reviews score with diminishing returns
-        reviews_score = 1 - math.exp(-code_reviews / 50)  # Plateaus around 100+ reviews
+        weighted_score = (
+            self.weights["repo_score"] * repo_score +
+            self.weights["total_contributions"] * contrib_score +
+            self.weights["reviews"] * reviews_score +
+            self.weights["account_age"] * age_score
+        )
+        return min(weighted_score, 1.0)
 
-        # Calculate account age score with diminishing returns
-        days_since_creation = (datetime.now() - 
-                            datetime.strptime(user_details['created_at'], 
-                                            '%Y-%m-%dT%H:%M:%SZ')).days
-        years = days_since_creation / 365
-        age_score = 1 - math.exp(-years / 3)  # Smoother scaling, plateaus around 10 years
 
-        # Consider recent activity
-        if 'updated_at' in user_details:
-            days_since_last_activity = (datetime.now() - 
-                                    datetime.strptime(user_details['updated_at'], 
-                                                    '%Y-%m-%dT%H:%M:%SZ')).days
-            activity_factor = math.exp(-days_since_last_activity / 365)  # Decay over a year
-        else:
-            activity_factor = 1.0
+class GitHubRateLimitHandler:
+    def __init__(self, tokens: List[str]):
+        self.tokens = tokens
+        self.current_token_idx = 0
+        self.token_errors = {token: 0 for token in tokens}
+        self.max_errors = 3
 
-        # Calculate final score including code reviews
-        score = (repo_weight * repo_score +
-                total_contrib_weight * contrib_score +
-                account_age_weight * age_score +
-                reviews_weight * reviews_score) * activity_factor
+    def get_current_token(self) -> str:
+        return self.tokens[self.current_token_idx]
 
-        return min(score, 1.0)
+    def rotate_token(self) -> str:
+        self.current_token_idx = (self.current_token_idx + 1) % len(self.tokens)
+        return self.get_current_token()
+
+    def rotate_token_on_error(self) -> str:
+        current_token = self.get_current_token()
+        self.token_errors[current_token] += 1
+
+        if self.token_errors[current_token] >= self.max_errors:
+            print(f"Token {self.current_token_idx + 1} hit max errors, rotating...")
+            new_token = self.rotate_token()
+            self.token_errors[current_token] = 0
+            return new_token
+
+        return current_token
+
+    def check_rate_limit(self, token: str) -> Dict:
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json"
+        }
+        try:
+            response = requests.get("https://api.github.com/rate_limit", headers=headers)
+            response.raise_for_status()
+            return response.json()['resources']['core']
+        except requests.exceptions.RequestException:
+            return {'remaining': 0, 'reset': time.time() + 3600}
+
+    def wait_for_reset_if_needed(self) -> str:
+        while True:
+            current_token = self.get_current_token()
+            rate_info = self.check_rate_limit(current_token)
+
+            remaining = rate_info['remaining']
+            if remaining > 100:
+                return current_token
+
+            if all(self.check_rate_limit(token)['remaining'] <= 100 for token in self.tokens):
+                earliest_reset = min(
+                    self.check_rate_limit(token)['reset']
+                    for token in self.tokens
+                )
+                wait_time = earliest_reset - time.time() + 5
+                if wait_time > 0:
+                    print(f"All tokens near limit. Waiting {wait_time:.2f} seconds...")
+                    time.sleep(wait_time)
+
+            self.rotate_token()
