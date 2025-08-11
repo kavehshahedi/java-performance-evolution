@@ -1,0 +1,122 @@
+{
+    "hdrhistogram": {
+        "project_url": "HdrHistogram/HdrHistogram",
+        "project_kloc": 8.89,
+        "method_changes": 158,
+        "benchmarks": 317,
+        "candidate_commits": 73,
+        "perf": 29
+    },
+    "jctools": {
+        "project_url": "JCTools/JCTools",
+        "project_kloc": 31.48,
+        "method_changes": 339,
+        "benchmarks": 1042,
+        "candidate_commits": 339,
+        "perf": 55
+    },
+    "simpleflatmapper": {
+        "project_url": "arnaudroger/SimpleFlatMapper",
+        "project_kloc": 51.79,
+        "method_changes": 911,
+        "benchmarks": 1969,
+        "candidate_commits": 485,
+        "perf": 81
+    },
+    "objenesis": {
+        "project_url": "easymock/objenesis",
+        "project_kloc": 2.69,
+        "method_changes": 107,
+        "benchmarks": 784,
+        "candidate_commits": 72,
+        "perf": 15
+    },
+    "apm-agent-java": {
+        "project_url": "elastic/apm-agent-java",
+        "project_kloc": 80.22,
+        "method_changes": 891,
+        "benchmarks": 2984,
+        "candidate_commits": 889,
+        "perf": 168
+    },
+    "jetty": {
+        "project_url": "eclipse/jetty.project",
+        "project_kloc": 339.06,
+        "method_changes": 2472,
+        "benchmarks": 12720,
+        "candidate_commits": 2472,
+        "perf": 108
+    },
+    "netty": {
+        "project_url": "netty/netty",
+        "project_kloc": 216.98,
+        "method_changes": 4241,
+        "benchmarks": 7669,
+        "candidate_commits": 4240,
+        "perf": 87
+    },
+    "zipkin": {
+        "project_url": "openzipkin/zipkin",
+        "project_kloc": 23.51,
+        "method_changes": 656,
+        "benchmarks": 2726,
+        "candidate_commits": 615,
+        "perf": 90
+    },
+    "client-java": {
+        "project_url": "prometheus/client_java",
+        "project_kloc": 27.38,
+        "method_changes": 155,
+        "benchmarks": 667,
+        "candidate_commits": 154,
+        "perf": 17
+    },
+    "chronicle-core": {
+        "project_url": "OpenHFT/Chronicle-Core",
+        "project_kloc": 13.25,
+        "method_changes": 780,
+        "benchmarks": 3170,
+        "candidate_commits": 585,
+        "perf": 4
+    },
+    "fastjson2": {
+        "project_url": "alibaba/fastjson2",
+        "project_kloc": 178.5,
+        "method_changes": 1726,
+        "benchmarks": 3725,
+        "candidate_commits": 1726,
+        "perf": 315
+    },
+    "jdbi": {
+        "project_url": "jdbi/jdbi",
+        "project_kloc": 28.49,
+        "method_changes": 1266,
+        "benchmarks": 1919,
+        "candidate_commits": 313,
+        "perf": 144
+    },
+    "feign": {
+        "project_url": "OpenFeign/feign",
+        "project_kloc": 17.42,
+        "method_changes": 351,
+        "benchmarks": 1384,
+        "candidate_commits": 229,
+        "perf": 65
+    },
+    "protostuff": {
+        "project_url": "protostuff/protostuff",
+        "project_kloc": 42.29,
+        "method_changes": 448,
+        "benchmarks": 1354,
+        "candidate_commits": 448,
+        "perf": 7
+    },
+    "jersey": {
+        "project_url": "eclipse-ee4j/jersey",
+        "project_kloc": 158.91,
+        "method_changes": 310,
+        "benchmarks": 781,
+        "candidate_commits": 310,
+        "perf": 84
+    }
+}
