@@ -1,18 +1,22 @@
 {
     "8175ff51b212c85300748a8459114f241b84404b": {
         "username": "minborg",
-        "total_contributions": 814,
-        "repo_contributions": 146,
-        "code_reviews": 424,
-        "account_age_years": 10.536986301369863,
-        "experience_score": 0.9055979133919766
+        "total_contributions": 7245,
+        "repo_contributions": 121,
+        "code_reviews": 67,
+        "account_age_years": 7.63013698630137,
+        "experience_score": 0.8921420255546781,
+        "pca_score": 68.60538134395493,
+        "kmeans_category": "Mid"
     },
     "d562eb307d8c95b8cfe3c2dc3ee81827582ab5b7": {
         "username": "peter-lawrey",
-        "total_contributions": 1205,
-        "repo_contributions": 1085,
-        "code_reviews": 590,
-        "account_age_years": 13.145205479452056,
-        "experience_score": 0.8626802026867306
+        "total_contributions": 19172,
+        "repo_contributions": 1020,
+        "code_reviews": 197,
+        "account_age_years": 11.747945205479452,
+        "experience_score": 0.9911537495163271,
+        "pca_score": 101.32970597905248,
+        "kmeans_category": "Senior"
     }
 }

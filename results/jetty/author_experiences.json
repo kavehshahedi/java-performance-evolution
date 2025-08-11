@@ -1,450 +1,562 @@
 {
     "9a14de058da715f2d08c2bff58b548a39045ea85": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 77862,
+        "repo_contributions": 5553,
+        "code_reviews": 524,
+        "account_age_years": 12.471232876712328,
+        "experience_score": 0.996862329667465,
+        "pca_score": 121.53406332949349,
+        "kmeans_category": "Senior"
     },
     "5a24f900644f62b5746bbd05cfef7418df7bfbf0": {
         "username": "lachlan-roberts",
-        "total_contributions": 485,
-        "repo_contributions": 2292,
-        "code_reviews": 701,
-        "account_age_years": 8.515068493150684,
-        "experience_score": 0.9828949307585154
+        "total_contributions": 3294,
+        "repo_contributions": 1607,
+        "code_reviews": 445,
+        "account_age_years": 6.082191780821918,
+        "experience_score": 0.9736303430557534,
+        "pca_score": 69.08740101948959,
+        "kmeans_category": "Mid"
     },
     "385d943b0c29445da704763da7d107325b3d99d2": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78315,
+        "repo_contributions": 6014,
+        "code_reviews": 813,
+        "account_age_years": 15.334246575342465,
+        "experience_score": 0.9987944693591815,
+        "pca_score": 129.1941709407208,
+        "kmeans_category": "Senior"
     },
     "6188757500f2e27bb03c70b27c2d713e5ae90613": {
         "username": "lorban",
-        "total_contributions": 560,
-        "repo_contributions": 643,
-        "code_reviews": 455,
-        "account_age_years": 13.73972602739726,
-        "experience_score": 0.6212295425056487
+        "total_contributions": 6085,
+        "repo_contributions": 614,
+        "code_reviews": 423,
+        "account_age_years": 13.364383561643836,
+        "experience_score": 0.9976211223022066,
+        "pca_score": 93.28127447716453,
+        "kmeans_category": "Mid"
     },
     "57604d09558443dd80346f7bc63980481c2dea3c": {
         "username": "joakime",
-        "total_contributions": 1735,
-        "repo_contributions": 6909,
-        "code_reviews": 942,
-        "account_age_years": 14.791780821917808,
-        "experience_score": 0.9903818858885651
+        "total_contributions": 44625,
+        "repo_contributions": 4420,
+        "code_reviews": 220,
+        "account_age_years": 10.06027397260274,
+        "experience_score": 0.9899377834826072,
+        "pca_score": 102.16489312633628,
+        "kmeans_category": "Senior"
     },
     "692c01750057ca2cd1a54aaf6b07700364c1a62b": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 43267,
+        "repo_contributions": 3638,
+        "code_reviews": 101,
+        "account_age_years": 8.961643835616439,
+        "experience_score": 0.9567505933282164,
+        "pca_score": 98.70360367738422,
+        "kmeans_category": "Senior"
     },
     "6201d3b1072b05d9e683377f5741f467a44089fa": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 77843,
+        "repo_contributions": 5531,
+        "code_reviews": 500,
+        "account_age_years": 12.32054794520548,
+        "experience_score": 0.9966967396618946,
+        "pca_score": 120.06358459399323,
+        "kmeans_category": "Senior"
     },
     "fc9cbda52f6173df73ffe28db8e4cbef0e711932": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 48610,
+        "repo_contributions": 5301,
+        "code_reviews": 577,
+        "account_age_years": 13.893150684931507,
+        "experience_score": 0.9980486628270756,
+        "pca_score": 122.23149007422748,
+        "kmeans_category": "Senior"
     },
     "750584bc853d9ba300f8d3fb2433158f0968ebbf": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78276,
+        "repo_contributions": 5972,
+        "code_reviews": 757,
+        "account_age_years": 14.887671232876713,
+        "experience_score": 0.9986009298873785,
+        "pca_score": 127.7969155633139,
+        "kmeans_category": "Senior"
     },
     "a089fbf3ea41320a7906c0759f7d72e0db97c20f": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 48568,
+        "repo_contributions": 5288,
+        "code_reviews": 555,
+        "account_age_years": 13.684931506849315,
+        "experience_score": 0.9979072468858777,
+        "pca_score": 121.29036789737104,
+        "kmeans_category": "Senior"
     },
     "b4483d3b2a42e858bf783eb92a602711f26e192c": {
         "username": "lorban",
-        "total_contributions": 560,
-        "repo_contributions": 643,
-        "code_reviews": 455,
-        "account_age_years": 13.73972602739726,
-        "experience_score": 0.6212295425056487
+        "total_contributions": 4586,
+        "repo_contributions": 40,
+        "code_reviews": 184,
+        "account_age_years": 9.778082191780822,
+        "experience_score": 0.8512129777776984,
+        "pca_score": 67.20880228967475,
+        "kmeans_category": "Mid"
     },
     "4a6c2744a0d4ff404daee0a521e88ae386356e06": {
         "username": "marcphilipp",
-        "total_contributions": 2243,
+        "total_contributions": 73128,
         "repo_contributions": 0,
-        "code_reviews": 766,
-        "account_age_years": 14.7013698630137,
-        "experience_score": 0.6927936483387364
+        "code_reviews": 588,
+        "account_age_years": 12.402739726027397,
+        "experience_score": 0.6967951019987363,
+        "pca_score": 99.51742744456178,
+        "kmeans_category": "Senior"
     },
     "77ad0189ba10e7080646cc4fcf2b04b15d6004bc": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47446,
+        "repo_contributions": 4729,
+        "code_reviews": 328,
+        "account_age_years": 11.956164383561644,
+        "experience_score": 0.9959289826769222,
+        "pca_score": 113.36164779930786,
+        "kmeans_category": "Senior"
     },
     "e80063112045ed95263a3c00e0a18d671e04d833": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78245,
+        "repo_contributions": 5948,
+        "code_reviews": 736,
+        "account_age_years": 14.602739726027398,
+        "experience_score": 0.9984615072085523,
+        "pca_score": 127.41345494913648,
+        "kmeans_category": "Senior"
     },
     "5dc024298672b227c720961440c2b1787535714f": {
         "username": "lachlan-roberts",
-        "total_contributions": 485,
-        "repo_contributions": 2292,
-        "code_reviews": 701,
-        "account_age_years": 8.515068493150684,
-        "experience_score": 0.9828949307585154
+        "total_contributions": 1996,
+        "repo_contributions": 979,
+        "code_reviews": 249,
+        "account_age_years": 4.3780821917808215,
+        "experience_score": 0.9518045266717623,
+        "pca_score": 46.38658797816595,
+        "kmeans_category": "Junior"
     },
     "551710e9bbb1a917dea38c4bcfde3ab08455a1e6": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78324,
+        "repo_contributions": 6025,
+        "code_reviews": 819,
+        "account_age_years": 15.419178082191781,
+        "experience_score": 0.9988281218044454,
+        "pca_score": 129.63000939097336,
+        "kmeans_category": "Senior"
     },
     "c55363d43f6a2e0c9e20c16c7a7e3f427df877df": {
         "username": "lachlan-roberts",
-        "total_contributions": 485,
-        "repo_contributions": 2292,
-        "code_reviews": 701,
-        "account_age_years": 8.515068493150684,
-        "experience_score": 0.9828949307585154
+        "total_contributions": 3939,
+        "repo_contributions": 2142,
+        "code_reviews": 556,
+        "account_age_years": 7.298630136986302,
+        "experience_score": 0.982439508757081,
+        "pca_score": 80.3499798280368,
+        "kmeans_category": "Mid"
     },
     "d241c6694be97614f040ec9d0f8c8b34b0247d23": {
         "username": "lachlan-roberts",
-        "total_contributions": 485,
-        "repo_contributions": 2292,
-        "code_reviews": 701,
-        "account_age_years": 8.515068493150684,
-        "experience_score": 0.9828949307585154
+        "total_contributions": 1973,
+        "repo_contributions": 959,
+        "code_reviews": 246,
+        "account_age_years": 4.364383561643836,
+        "experience_score": 0.9514855503228151,
+        "pca_score": 46.16086091093074,
+        "kmeans_category": "Junior"
     },
     "aa09b8b7bda7ec28544cac509da6d8b084c8edd7": {
         "username": "lachlan-roberts",
-        "total_contributions": 485,
-        "repo_contributions": 2292,
-        "code_reviews": 701,
-        "account_age_years": 8.515068493150684,
-        "experience_score": 0.9828949307585154
+        "total_contributions": 2994,
+        "repo_contributions": 1490,
+        "code_reviews": 407,
+        "account_age_years": 5.561643835616438,
+        "experience_score": 0.9686014771245091,
+        "pca_score": 64.7520872243709,
+        "kmeans_category": "Mid"
     },
     "d2df0fc2e9eff2ba40fb75a594b11aa98470f06c": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 44837,
+        "repo_contributions": 4086,
+        "code_reviews": 169,
+        "account_age_years": 9.854794520547944,
+        "experience_score": 0.9839995063953765,
+        "pca_score": 101.82008147006383,
+        "kmeans_category": "Senior"
     },
     "474136de57eb8b6dfc851e85e81ad944430ecf46": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78102,
+        "repo_contributions": 5789,
+        "code_reviews": 635,
+        "account_age_years": 13.849315068493151,
+        "experience_score": 0.9980216470628763,
+        "pca_score": 124.77755231089043,
+        "kmeans_category": "Senior"
     },
     "b2203115e2ea2e488f982cf281e4e32c11db335f": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 46922,
+        "repo_contributions": 4567,
+        "code_reviews": 286,
+        "account_age_years": 11.213698630136987,
+        "experience_score": 0.9944192622680564,
+        "pca_score": 109.34465267716463,
+        "kmeans_category": "Senior"
     },
     "e2b00bd4e00fdd1e8f40b109e68a8b8f10eb6616": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47586,
+        "repo_contributions": 4792,
+        "code_reviews": 347,
+        "account_age_years": 12.112328767123287,
+        "experience_score": 0.9962294269808109,
+        "pca_score": 113.92011003111777,
+        "kmeans_category": "Senior"
     },
     "089e51f0bc02b63490e1038e0ec23d1d43adf9a8": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 44823,
+        "repo_contributions": 4086,
+        "code_reviews": 169,
+        "account_age_years": 9.849315068493151,
+        "experience_score": 0.9839858160336996,
+        "pca_score": 101.6356737676277,
+        "kmeans_category": "Senior"
     },
     "0ee0716d3345970c24534c1183f9f986506b3bd0": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78194,
+        "repo_contributions": 5894,
+        "code_reviews": 690,
+        "account_age_years": 14.273972602739725,
+        "experience_score": 0.9982831788640032,
+        "pca_score": 126.2849445616657,
+        "kmeans_category": "Senior"
     },
     "80f912a121855749dc42c7866b03ed75f75cc9aa": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78283,
+        "repo_contributions": 5979,
+        "code_reviews": 763,
+        "account_age_years": 14.923287671232877,
+        "experience_score": 0.9986174483766649,
+        "pca_score": 128.0351427460943,
+        "kmeans_category": "Senior"
     },
     "83154b4ffe4767ef44981598d6c26e6a5d32e57c": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47616,
+        "repo_contributions": 4826,
+        "code_reviews": 358,
+        "account_age_years": 12.164383561643836,
+        "experience_score": 0.9963379278348101,
+        "pca_score": 114.19737642444281,
+        "kmeans_category": "Senior"
     },
     "3c019fabd38c73e5052e19f23cb59b4cd3ae8746": {
         "username": "lorban",
-        "total_contributions": 560,
-        "repo_contributions": 643,
-        "code_reviews": 455,
-        "account_age_years": 13.73972602739726,
-        "experience_score": 0.6212295425056487
+        "total_contributions": 5392,
+        "repo_contributions": 278,
+        "code_reviews": 221,
+        "account_age_years": 10.756164383561643,
+        "experience_score": 0.990291628140376,
+        "pca_score": 77.2178509607097,
+        "kmeans_category": "Mid"
     },
     "95059356c988db708ef167bc0b1ddf443d837be3": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78304,
+        "repo_contributions": 6003,
+        "code_reviews": 795,
+        "account_age_years": 15.210958904109589,
+        "experience_score": 0.9987438864309104,
+        "pca_score": 128.92159682083198,
+        "kmeans_category": "Senior"
     },
     "8d69fc41a7f8c26fcd90fc0f7300f81eaede06be": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 44821,
+        "repo_contributions": 4086,
+        "code_reviews": 168,
+        "account_age_years": 9.846575342465753,
+        "experience_score": 0.9838070104176555,
+        "pca_score": 101.43253481230103,
+        "kmeans_category": "Senior"
     },
     "d744d097dec29ee0285c1ec17acf11f6484b38cc": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 76933,
+        "repo_contributions": 5101,
+        "code_reviews": 302,
+        "account_age_years": 10.246575342465754,
+        "experience_score": 0.9928327807982082,
+        "pca_score": 106.79293316593343,
+        "kmeans_category": "Senior"
     },
     "2b817f06c64a26003cdbaa25a3769c1c8b9178cf": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 77947,
+        "repo_contributions": 5657,
+        "code_reviews": 581,
+        "account_age_years": 13.252054794520548,
+        "experience_score": 0.9975845246514372,
+        "pca_score": 123.40920019502123,
+        "kmeans_category": "Senior"
     },
     "5aaec6e23f6b5e9dcc418c6121203ffb26c60c85": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 77247,
+        "repo_contributions": 5217,
+        "code_reviews": 367,
+        "account_age_years": 10.824657534246576,
+        "experience_score": 0.9944177245080114,
+        "pca_score": 109.84139066538101,
+        "kmeans_category": "Senior"
     },
     "de13ceff3619777dc1213a4dddc40d79ceedb3dd": {
         "username": "lorban",
-        "total_contributions": 560,
-        "repo_contributions": 643,
-        "code_reviews": 455,
-        "account_age_years": 13.73972602739726,
-        "experience_score": 0.6212295425056487
+        "total_contributions": 5515,
+        "repo_contributions": 365,
+        "code_reviews": 263,
+        "account_age_years": 11.526027397260274,
+        "experience_score": 0.9942084199466772,
+        "pca_score": 84.25182377106371,
+        "kmeans_category": "Mid"
     },
     "c19921e60f5a28d100d22620c177ba4582182987": {
         "username": "lachlan-roberts",
-        "total_contributions": 485,
-        "repo_contributions": 2292,
-        "code_reviews": 701,
-        "account_age_years": 8.515068493150684,
-        "experience_score": 0.9828949307585154
+        "total_contributions": 2989,
+        "repo_contributions": 1476,
+        "code_reviews": 405,
+        "account_age_years": 5.550684931506849,
+        "experience_score": 0.968483860912446,
+        "pca_score": 64.17367536333043,
+        "kmeans_category": "Mid"
     },
     "6d0bddc07af28fde5513efe445f17281fb116661": {
         "username": "lorban",
-        "total_contributions": 560,
-        "repo_contributions": 643,
-        "code_reviews": 455,
-        "account_age_years": 13.73972602739726,
-        "experience_score": 0.6212295425056487
+        "total_contributions": 6080,
+        "repo_contributions": 614,
+        "code_reviews": 422,
+        "account_age_years": 13.35890410958904,
+        "experience_score": 0.9976158031645266,
+        "pca_score": 93.09375120605571,
+        "kmeans_category": "Mid"
     },
     "be3d16bdbbb63cc0df7e4964d8a47e3e376a631d": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47417,
+        "repo_contributions": 4716,
+        "code_reviews": 323,
+        "account_age_years": 11.882191780821918,
+        "experience_score": 0.9957989626746881,
+        "pca_score": 112.84457751843887,
+        "kmeans_category": "Senior"
     },
     "377d0d131eb45d6a443175c13f1b65eb8efcd952": {
         "username": "lachlan-roberts",
-        "total_contributions": 485,
-        "repo_contributions": 2292,
-        "code_reviews": 701,
-        "account_age_years": 8.515068493150684,
-        "experience_score": 0.9828949307585154
+        "total_contributions": 2993,
+        "repo_contributions": 1476,
+        "code_reviews": 407,
+        "account_age_years": 5.553424657534246,
+        "experience_score": 0.9685155358516457,
+        "pca_score": 64.420545802638,
+        "kmeans_category": "Mid"
     },
     "ebc5e559f8bc8c8e66fe2123cb76b58386d6c29c": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78321,
+        "repo_contributions": 6021,
+        "code_reviews": 818,
+        "account_age_years": 15.41095890410959,
+        "experience_score": 0.9988249064412337,
+        "pca_score": 129.419898007956,
+        "kmeans_category": "Senior"
     },
     "aa21612006985bf3acf5ad7a0a6703830b4218c0": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 48353,
+        "repo_contributions": 5235,
+        "code_reviews": 504,
+        "account_age_years": 13.33972602739726,
+        "experience_score": 0.9976457965205273,
+        "pca_score": 119.70512427063304,
+        "kmeans_category": "Senior"
     },
     "930d91568a7012c3c7f04f2ab9de28336013916e": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 48626,
+        "repo_contributions": 5317,
+        "code_reviews": 583,
+        "account_age_years": 13.92876712328767,
+        "experience_score": 0.9980719388422173,
+        "pca_score": 122.54426240221538,
+        "kmeans_category": "Senior"
     },
     "c25e1aa7ff0df0ca26662dab19ed3fe78de4adb8": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78286,
+        "repo_contributions": 5982,
+        "code_reviews": 768,
+        "account_age_years": 14.945205479452055,
+        "experience_score": 0.9986275175842931,
+        "pca_score": 128.31240913941937,
+        "kmeans_category": "Senior"
     },
     "b7a7a53a18bd60c132d0a3e050bfa1125b924d42": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 76902,
+        "repo_contributions": 5090,
+        "code_reviews": 294,
+        "account_age_years": 10.221917808219178,
+        "experience_score": 0.9926752365820676,
+        "pca_score": 106.43912721542819,
+        "kmeans_category": "Senior"
     },
     "51120b1f0bda1a61e60079a8ab4d73d50700aa51": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 77652,
+        "repo_contributions": 5415,
+        "code_reviews": 446,
+        "account_age_years": 11.758904109589041,
+        "experience_score": 0.9959969091474347,
+        "pca_score": 116.53776395224483,
+        "kmeans_category": "Senior"
     },
     "af6ecfebfe077fed014125989a87864bd83b02dd": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47698,
+        "repo_contributions": 4883,
+        "code_reviews": 375,
+        "account_age_years": 12.356164383561644,
+        "experience_score": 0.9966086695140711,
+        "pca_score": 115.05107347419188,
+        "kmeans_category": "Senior"
     },
     "51fc906d378a04aeeb5a4a881069b2a466ed4e08": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78288,
+        "repo_contributions": 5985,
+        "code_reviews": 768,
+        "account_age_years": 14.967123287671233,
+        "experience_score": 0.9986375079244432,
+        "pca_score": 128.50690483821884,
+        "kmeans_category": "Senior"
     },
     "0ac34ff2b8a73d6d2f99bd8751ffac34791d78f3": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 77492,
+        "repo_contributions": 5338,
+        "code_reviews": 421,
+        "account_age_years": 11.473972602739726,
+        "experience_score": 0.9955797145612696,
+        "pca_score": 114.59370616737364,
+        "kmeans_category": "Senior"
     },
     "7e88b8234cd30552fe4f7cd6d6eaeef4d7459517": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78049,
+        "repo_contributions": 5734,
+        "code_reviews": 602,
+        "account_age_years": 13.580821917808219,
+        "experience_score": 0.9978357824657865,
+        "pca_score": 123.9941636809762,
+        "kmeans_category": "Senior"
     },
     "6f0623f48d7524fe615f9025b51d8353922c6db5": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47438,
+        "repo_contributions": 4722,
+        "code_reviews": 326,
+        "account_age_years": 11.895890410958904,
+        "experience_score": 0.9958391011913594,
+        "pca_score": 113.07030458567408,
+        "kmeans_category": "Senior"
     },
     "8b1c6bcd06237bc0175b085d9a66acd946844334": {
         "username": "joakime",
-        "total_contributions": 1735,
-        "repo_contributions": 6909,
-        "code_reviews": 942,
-        "account_age_years": 14.791780821917808,
-        "experience_score": 0.9903818858885651
+        "total_contributions": 50250,
+        "repo_contributions": 6758,
+        "code_reviews": 891,
+        "account_age_years": 14.23013698630137,
+        "experience_score": 0.9982581618074009,
+        "pca_score": 125.86563035600159,
+        "kmeans_category": "Senior"
     },
     "7275bf15a9094c85df484aa88fce44a3a1bb3de5": {
         "username": "gregw",
-        "total_contributions": 484,
-        "repo_contributions": 6039,
-        "code_reviews": 836,
-        "account_age_years": 15.608219178082193,
-        "experience_score": 0.9508338122656881
+        "total_contributions": 78150,
+        "repo_contributions": 5843,
+        "code_reviews": 656,
+        "account_age_years": 14.07945205479452,
+        "experience_score": 0.9981679413465097,
+        "pca_score": 125.54532525658679,
+        "kmeans_category": "Senior"
     },
     "1726c8778c0c1a2040d5aafeb265c59ad927e599": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 48630,
+        "repo_contributions": 5317,
+        "code_reviews": 584,
+        "account_age_years": 13.93972602739726,
+        "experience_score": 0.9980790040031916,
+        "pca_score": 122.72397783121527,
+        "kmeans_category": "Senior"
     },
     "e2690cc420ccc47a8c42be2a7e46634cb4449970": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 46662,
+        "repo_contributions": 4451,
+        "code_reviews": 274,
+        "account_age_years": 10.942465753424658,
+        "experience_score": 0.9937463705080296,
+        "pca_score": 107.04751392921024,
+        "kmeans_category": "Senior"
     },
     "d02406c1640ba47647775946f59893f9a2453116": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 48402,
+        "repo_contributions": 5250,
+        "code_reviews": 514,
+        "account_age_years": 13.413698630136986,
+        "experience_score": 0.9977047795842706,
+        "pca_score": 120.24631843175266,
+        "kmeans_category": "Senior"
     },
     "9e16d81cf8922c75e3d2d96c66442b896a9c69e1": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47924,
+        "repo_contributions": 5011,
+        "code_reviews": 418,
+        "account_age_years": 12.816438356164383,
+        "experience_score": 0.997151127164046,
+        "pca_score": 116.64592869292895,
+        "kmeans_category": "Senior"
     },
     "278ec1be69ab5380d53dd93e6b4579b5be49900c": {
         "username": "sbordet",
-        "total_contributions": 901,
-        "repo_contributions": 5346,
-        "code_reviews": 611,
-        "account_age_years": 14.136986301369863,
-        "experience_score": 0.7425314677456948
+        "total_contributions": 47825,
+        "repo_contributions": 4925,
+        "code_reviews": 400,
+        "account_age_years": 12.520547945205479,
+        "experience_score": 0.996836529211202,
+        "pca_score": 115.7922694840343,
+        "kmeans_category": "Senior"
     }
 }

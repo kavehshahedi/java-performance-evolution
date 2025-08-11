@@ -1,1762 +1,2202 @@
 {
     "f5a794287371c9a5ce76691c28ebc4336ac5f796": {
         "username": "eden-yuan",
-        "total_contributions": 0,
+        "total_contributions": 47,
         "repo_contributions": 1,
-        "code_reviews": 23,
-        "account_age_years": 6.2027397260273975,
-        "experience_score": 0.03255038398525337
+        "code_reviews": 18,
+        "account_age_years": 3.7041095890410958,
+        "experience_score": 0.4334922519623306,
+        "pca_score": 9.307947385155208,
+        "kmeans_category": "Junior"
     },
     "0c9cd8e6f22553250b7be324965928d9ed32119b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276226,
+        "repo_contributions": 1262,
+        "code_reviews": 494,
+        "account_age_years": 10.901369863013699,
+        "experience_score": 0.9947040270319776,
+        "pca_score": 116.27713630370035,
+        "kmeans_category": "Senior"
     },
     "ef5d5883fd56e27ad3a90e218285e1a72c5aba24": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277683,
+        "repo_contributions": 1544,
+        "code_reviews": 497,
+        "account_age_years": 11.098630136986301,
+        "experience_score": 0.9950409845078928,
+        "pca_score": 122.60005794338173,
+        "kmeans_category": "Senior"
     },
     "20a82d06624e3680ab7775fb94fefc40041c3f84": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276683,
+        "repo_contributions": 1348,
+        "code_reviews": 495,
+        "account_age_years": 10.95890410958904,
+        "experience_score": 0.9948046362235048,
+        "pca_score": 118.1488925711168,
+        "kmeans_category": "Senior"
     },
     "bfd444af0efbdb3be0bfb24d90f6a415a431badb": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281394,
+        "repo_contributions": 2236,
+        "code_reviews": 506,
+        "account_age_years": 11.561643835616438,
+        "experience_score": 0.9957504726827624,
+        "pca_score": 135.12768666077415,
+        "kmeans_category": "Senior"
     },
     "2b6093ae8d8a6d6489b3b324ffb127e91296cf81": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281594,
+        "repo_contributions": 2270,
+        "code_reviews": 507,
+        "account_age_years": 11.610958904109589,
+        "experience_score": 0.9958197921129152,
+        "pca_score": 135.73835692287736,
+        "kmeans_category": "Senior"
     },
     "99801dce36a3a8a81f5460fa643b713c8619e4cf": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276605,
+        "repo_contributions": 1336,
+        "code_reviews": 495,
+        "account_age_years": 10.934246575342465,
+        "experience_score": 0.9947618621589044,
+        "pca_score": 117.48928362474729,
+        "kmeans_category": "Senior"
     },
     "ae6d307e97cf6dcca17c55a6b1a8266fb68dfe82": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282924,
+        "repo_contributions": 2639,
+        "code_reviews": 554,
+        "account_age_years": 12.30958904109589,
+        "experience_score": 0.9966921880070903,
+        "pca_score": 144.29810931232942,
+        "kmeans_category": "Senior"
     },
     "2bd4b7e30b9c26521cae9eaed8b4c97affcbd1e5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281883,
+        "repo_contributions": 2358,
+        "code_reviews": 519,
+        "account_age_years": 11.73972602739726,
+        "experience_score": 0.995997111229098,
+        "pca_score": 138.14629768597516,
+        "kmeans_category": "Senior"
     },
     "39652900d258dd93acab6e5b07530cfb6512854b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281839,
+        "repo_contributions": 2333,
+        "code_reviews": 519,
+        "account_age_years": 11.72054794520548,
+        "experience_score": 0.9959714897969886,
+        "pca_score": 137.61541451465217,
+        "kmeans_category": "Senior"
     },
     "71a918cc866c87b6bbe00f381e1d69ed376a8b69": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277966,
+        "repo_contributions": 1589,
+        "code_reviews": 498,
+        "account_age_years": 11.126027397260273,
+        "experience_score": 0.9950861952358709,
+        "pca_score": 123.7740955923752,
+        "kmeans_category": "Senior"
     },
     "97c667e90732880c530fcfb92c0c4c51816d6503": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278156,
+        "repo_contributions": 1621,
+        "code_reviews": 498,
+        "account_age_years": 11.142465753424657,
+        "experience_score": 0.9951129820082706,
+        "pca_score": 124.40828660044527,
+        "kmeans_category": "Senior"
     },
     "231c3fdeded223782c0156908883dcc6d9b7f845": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275132,
+        "repo_contributions": 1108,
+        "code_reviews": 491,
+        "account_age_years": 10.810958904109588,
+        "experience_score": 0.9945415931632314,
+        "pca_score": 112.98633129946107,
+        "kmeans_category": "Senior"
     },
     "27a42c6cc3134e6758bf79752c8ab135f7175599": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277091,
+        "repo_contributions": 1431,
+        "code_reviews": 495,
+        "account_age_years": 11.032876712328767,
+        "experience_score": 0.9949308690968586,
+        "pca_score": 119.63732018928324,
+        "kmeans_category": "Senior"
     },
     "7f232dd655d22160d43b030efc83ae2ac4e052a6": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281113,
+        "repo_contributions": 2207,
+        "code_reviews": 505,
+        "account_age_years": 11.536986301369863,
+        "experience_score": 0.9957152808508865,
+        "pca_score": 134.38958158610615,
+        "kmeans_category": "Senior"
     },
     "5a2b97df3c1202f0b0de20ec87248118c6e24c54": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275443,
+        "repo_contributions": 1152,
+        "code_reviews": 491,
+        "account_age_years": 10.841095890410958,
+        "experience_score": 0.99459601619534,
+        "pca_score": 114.55762683179306,
+        "kmeans_category": "Senior"
     },
     "c61ab2a9e7a7031b896bb36453b58581c1931c5b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275084,
+        "repo_contributions": 1108,
+        "code_reviews": 491,
+        "account_age_years": 10.805479452054794,
+        "experience_score": 0.9945316392018889,
+        "pca_score": 112.63782385224292,
+        "kmeans_category": "Senior"
     },
     "2c162b91f8c4e27b4e2f4357f1e1e635162848b7": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275119,
+        "repo_contributions": 1108,
+        "code_reviews": 491,
+        "account_age_years": 10.808219178082192,
+        "experience_score": 0.9945366184551538,
+        "pca_score": 112.82223155467905,
+        "kmeans_category": "Senior"
     },
     "94a3d539485746b6e2f5f857fe7d88be1c48bb24": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282922,
+        "repo_contributions": 2639,
+        "code_reviews": 554,
+        "account_age_years": 12.304109589041095,
+        "experience_score": 0.9966861478669251,
+        "pca_score": 144.1340095675474,
+        "kmeans_category": "Senior"
     },
     "0a87ea16b2982968c075884289b6979178967aef": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 270519,
+        "repo_contributions": 349,
+        "code_reviews": 483,
+        "account_age_years": 10.526027397260274,
+        "experience_score": 0.9937176568721273,
+        "pca_score": 101.04377456433053,
+        "kmeans_category": "Senior"
     },
     "34a8b5983845d055adaf41181fb5e48ec7da822f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 273045,
+        "repo_contributions": 748,
+        "code_reviews": 490,
+        "account_age_years": 10.605479452054794,
+        "experience_score": 0.9941552221269246,
+        "pca_score": 108.09024470078027,
+        "kmeans_category": "Senior"
     },
     "ed7c90807b7b21a05d344aef593762f22c18c8f3": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279914,
+        "repo_contributions": 1984,
+        "code_reviews": 500,
+        "account_age_years": 11.424657534246576,
+        "experience_score": 0.9955511188055644,
+        "pca_score": 129.23698900425094,
+        "kmeans_category": "Senior"
     },
     "d120ce9e68d3eb1dc7fc4a538a0f4c336f7f04dd": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276842,
+        "repo_contributions": 1372,
+        "code_reviews": 495,
+        "account_age_years": 10.994520547945205,
+        "experience_score": 0.9948658036088107,
+        "pca_score": 119.1722069417132,
+        "kmeans_category": "Senior"
     },
     "a48420fb1b9ec08677f85bffa34a4336f2d1fdb3": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277336,
+        "repo_contributions": 1459,
+        "code_reviews": 497,
+        "account_age_years": 11.052054794520547,
+        "experience_score": 0.9949635830536605,
+        "pca_score": 120.65352707169451,
+        "kmeans_category": "Senior"
     },
     "dc890f50d6cfa9d09730857261e71413c85f257c": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283052,
+        "repo_contributions": 2765,
+        "code_reviews": 563,
+        "account_age_years": 12.501369863013698,
+        "experience_score": 0.9968974253658087,
+        "pca_score": 146.35533506009642,
+        "kmeans_category": "Senior"
     },
     "739e37417855c50bc6d6e685a6d54db2211c21bc": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282054,
+        "repo_contributions": 2439,
+        "code_reviews": 519,
+        "account_age_years": 11.830136986301369,
+        "experience_score": 0.9961157161414765,
+        "pca_score": 139.79358310335084,
+        "kmeans_category": "Senior"
     },
     "6ea5cf8171c129b163f71974ed5736b2958b5523": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283105,
+        "repo_contributions": 2807,
+        "code_reviews": 566,
+        "account_age_years": 12.545205479452054,
+        "experience_score": 0.9969425709734069,
+        "pca_score": 147.0501263579926,
+        "kmeans_category": "Senior"
     },
     "9005ad96e71f30c89cf1e20d4f92849992de55f1": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278279,
+        "repo_contributions": 1657,
+        "code_reviews": 498,
+        "account_age_years": 11.178082191780822,
+        "experience_score": 0.9951705189329121,
+        "pca_score": 125.07798354317812,
+        "kmeans_category": "Senior"
     },
     "750a830581868611306018778f519a08468b3c41": {
         "username": "rowstop",
-        "total_contributions": 133,
-        "repo_contributions": 24,
-        "code_reviews": 30,
-        "account_age_years": 2.6904109589041094,
-        "experience_score": 0.5890964623723983
+        "total_contributions": 21,
+        "repo_contributions": 15,
+        "code_reviews": 19,
+        "account_age_years": 2.0356164383561643,
+        "experience_score": 0.4231204574487839,
+        "pca_score": 8.037793795591481,
+        "kmeans_category": "Junior"
     },
     "1b2ab1cefe73e327db1896dcfa50967e59fa6417": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280981,
+        "repo_contributions": 2161,
+        "code_reviews": 505,
+        "account_age_years": 11.520547945205479,
+        "experience_score": 0.9956917949248636,
+        "pca_score": 133.15159552398356,
+        "kmeans_category": "Senior"
     },
     "b60e57924ed8495ae8b0979d1e0fa4988aeb8556": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276311,
+        "repo_contributions": 1297,
+        "code_reviews": 494,
+        "account_age_years": 10.90958904109589,
+        "experience_score": 0.9947184816782105,
+        "pca_score": 116.53242391053477,
+        "kmeans_category": "Senior"
     },
     "b1f2e48ca037b95d60bd0037e196da2247dda20d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280533,
+        "repo_contributions": 2073,
+        "code_reviews": 503,
+        "account_age_years": 11.471232876712328,
+        "experience_score": 0.9956201409253238,
+        "pca_score": 131.26477324448572,
+        "kmeans_category": "Senior"
     },
     "a3e184960bbf168367b53ffd0b68e60f4b337bd5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283057,
+        "repo_contributions": 2765,
+        "code_reviews": 564,
+        "account_age_years": 12.504109589041096,
+        "experience_score": 0.9969003182848348,
+        "pca_score": 146.54285833120522,
+        "kmeans_category": "Senior"
     },
     "2318fe7f404ef15fea10992fec3e1007c1fca246": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281284,
+        "repo_contributions": 2207,
+        "code_reviews": 506,
+        "account_age_years": 11.553424657534247,
+        "experience_score": 0.9957388417962592,
+        "pca_score": 134.8317831386315,
+        "kmeans_category": "Senior"
     },
     "0f505ba926dd2d1a53da332a315eb0bc7d4bdb8b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279064,
+        "repo_contributions": 1798,
+        "code_reviews": 499,
+        "account_age_years": 11.32876712328767,
+        "experience_score": 0.9954067594456613,
+        "pca_score": 127.77200376190997,
+        "kmeans_category": "Senior"
     },
     "3e2d9873ff9259b52e2209ec553e5c619821d0ce": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280322,
+        "repo_contributions": 2029,
+        "code_reviews": 500,
+        "account_age_years": 11.454794520547946,
+        "experience_score": 0.9955954735851106,
+        "pca_score": 130.58326091883862,
+        "kmeans_category": "Senior"
     },
     "36c7e8865baccab0779baa556925be1f8101b956": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 273125,
+        "repo_contributions": 748,
+        "code_reviews": 490,
+        "account_age_years": 10.608219178082193,
+        "experience_score": 0.994160544645457,
+        "pca_score": 108.2746524032164,
+        "kmeans_category": "Senior"
     },
     "c9f8367df14f20fe055e63fc0f329f1a96df404f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277758,
+        "repo_contributions": 1544,
+        "code_reviews": 498,
+        "account_age_years": 11.10958904109589,
+        "experience_score": 0.9950592612837678,
+        "pca_score": 123.31409232545055,
+        "kmeans_category": "Senior"
     },
     "2fe854b6f2195393dacc07d25db18e52b020ae5f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283137,
+        "repo_contributions": 2853,
+        "code_reviews": 566,
+        "account_age_years": 12.580821917808219,
+        "experience_score": 0.9969786188154086,
+        "pca_score": 147.61330549673696,
+        "kmeans_category": "Senior"
     },
     "858d5619718913e95b292d41045153af865cb002": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 273559,
+        "repo_contributions": 844,
+        "code_reviews": 491,
+        "account_age_years": 10.635616438356164,
+        "experience_score": 0.9942138593585805,
+        "pca_score": 109.13532739015984,
+        "kmeans_category": "Senior"
     },
     "051ef408f34a0fa3486dd958dae7717e8a030bf9": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 273363,
+        "repo_contributions": 790,
+        "code_reviews": 491,
+        "account_age_years": 10.621917808219179,
+        "experience_score": 0.9941874132333344,
+        "pca_score": 108.92563371435162,
+        "kmeans_category": "Senior"
     },
     "052ce00da78ae6b43da9498016e30b0c8ab3d135": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 270504,
+        "repo_contributions": 349,
+        "code_reviews": 483,
+        "account_age_years": 10.526027397260274,
+        "experience_score": 0.9937176568721273,
+        "pca_score": 100.92029073485675,
+        "kmeans_category": "Senior"
     },
     "0c56c24e127654ad072df26777442cc22ebfa101": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278438,
+        "repo_contributions": 1676,
+        "code_reviews": 498,
+        "account_age_years": 11.197260273972603,
+        "experience_score": 0.9952012185785206,
+        "pca_score": 125.8052624267045,
+        "kmeans_category": "Senior"
     },
     "0aee56020b0b1823d6ee76d9d41b1154c040f591": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277743,
+        "repo_contributions": 1544,
+        "code_reviews": 498,
+        "account_age_years": 11.106849315068493,
+        "experience_score": 0.995054757925897,
+        "pca_score": 123.00620079354063,
+        "kmeans_category": "Senior"
     },
     "90fb61a52feb2bba98c4d8d069592862d53e9155": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283136,
+        "repo_contributions": 2853,
+        "code_reviews": 566,
+        "account_age_years": 12.580821917808219,
+        "experience_score": 0.9969786188154086,
+        "pca_score": 147.4898216672632,
+        "kmeans_category": "Senior"
     },
     "7d86639d7fc2cec479968cc72d093220e4d47bdc": {
         "username": "mek1986",
-        "total_contributions": 41,
-        "repo_contributions": 20,
-        "code_reviews": 50,
-        "account_age_years": 7.205479452054795,
-        "experience_score": 0.6329989231141505
+        "total_contributions": 103,
+        "repo_contributions": 12,
+        "code_reviews": 15,
+        "account_age_years": 5.7835616438356166,
+        "experience_score": 0.5497150788590707,
+        "pca_score": 18.27460356409379,
+        "kmeans_category": "Junior"
     },
     "df460519926eca68592838e84610860b9ec0001f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282958,
+        "repo_contributions": 2680,
+        "code_reviews": 555,
+        "account_age_years": 12.378082191780821,
+        "experience_score": 0.9967668425618775,
+        "pca_score": 145.40795401682936,
+        "kmeans_category": "Senior"
     },
     "678c446270694a401153c461983793b0c094f677": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275227,
+        "repo_contributions": 1108,
+        "code_reviews": 491,
+        "account_age_years": 10.821917808219178,
+        "experience_score": 0.9945614466265886,
+        "pca_score": 113.64273027858911,
+        "kmeans_category": "Senior"
     },
     "3f05016e411be0d87a00e40f04d8eaaa45ff44c0": {
         "username": "ywzou",
-        "total_contributions": 11,
-        "repo_contributions": 2,
-        "code_reviews": 14,
-        "account_age_years": 9.64109589041096,
-        "experience_score": 0.387808102634662
+        "total_contributions": 36,
+        "repo_contributions": 1,
+        "code_reviews": 12,
+        "account_age_years": 9.284931506849315,
+        "experience_score": 0.44625343902008174,
+        "pca_score": 19.393969463050976,
+        "kmeans_category": "Junior"
     },
     "05e75cd25cc73992bad81413ace32168d439b9dd": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279929,
+        "repo_contributions": 1984,
+        "code_reviews": 500,
+        "account_age_years": 11.424657534246576,
+        "experience_score": 0.9955511188055644,
+        "pca_score": 129.36047283372474,
+        "kmeans_category": "Senior"
     },
     "348e49a8b847dc4b3d1b97a48840401767f218be": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281054,
+        "repo_contributions": 2161,
+        "code_reviews": 505,
+        "account_age_years": 11.531506849315068,
+        "experience_score": 0.9957074665034076,
+        "pca_score": 133.41723505703612,
+        "kmeans_category": "Senior"
     },
     "bf6193f31ab5438669ddb4aac58614842c07c069": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282945,
+        "repo_contributions": 2656,
+        "code_reviews": 554,
+        "account_age_years": 12.33972602739726,
+        "experience_score": 0.996725212295488,
+        "pca_score": 144.7784205369082,
+        "kmeans_category": "Senior"
     },
     "4287c3bad7ee709fcd8c045918a57c9bc0d094a5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283623,
+        "repo_contributions": 2883,
+        "code_reviews": 585,
+        "account_age_years": 12.728767123287671,
+        "experience_score": 0.9971248167596868,
+        "pca_score": 148.71028893619697,
+        "kmeans_category": "Senior"
     },
     "1874faf0e610b7a667acb4b8d3c3e0f7556c27a5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278618,
+        "repo_contributions": 1712,
+        "code_reviews": 498,
+        "account_age_years": 11.276712328767124,
+        "experience_score": 0.9953263326581049,
+        "pca_score": 126.45478337671067,
+        "kmeans_category": "Senior"
     },
     "52450ea20b300cbbbefe75c2528601f411b26918": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279934,
+        "repo_contributions": 1984,
+        "code_reviews": 500,
+        "account_age_years": 11.424657534246576,
+        "experience_score": 0.9955511188055644,
+        "pca_score": 129.48395666319854,
+        "kmeans_category": "Senior"
     },
     "514ea80622c428dd62d8e1b8ffea8ba1833f82d0": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276822,
+        "repo_contributions": 1372,
+        "code_reviews": 495,
+        "account_age_years": 10.98904109589041,
+        "experience_score": 0.9948564404437372,
+        "pca_score": 118.94718332396887,
+        "kmeans_category": "Senior"
     },
     "046d17d79f183fda2a8652ebb468f95a0cd7852c": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282914,
+        "repo_contributions": 2628,
+        "code_reviews": 554,
+        "account_age_years": 12.29041095890411,
+        "experience_score": 0.9966709991622776,
+        "pca_score": 143.67400630062272,
+        "kmeans_category": "Senior"
     },
     "42350acd27f43dadda0ea9f106c371c39048b122": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275265,
+        "repo_contributions": 1152,
+        "code_reviews": 491,
+        "account_age_years": 10.824657534246576,
+        "experience_score": 0.9945663987126198,
+        "pca_score": 114.02471168213881,
+        "kmeans_category": "Senior"
     },
     "9bac2832326d18bfc62d54c804f9b36d975b3001": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282959,
+        "repo_contributions": 2680,
+        "code_reviews": 555,
+        "account_age_years": 12.378082191780821,
+        "experience_score": 0.9967668425618775,
+        "pca_score": 145.53143784630316,
+        "kmeans_category": "Senior"
     },
     "37c584fbb9c71bc09aff95b92fe7b50314fdaed3": {
         "username": "kraity",
-        "total_contributions": 56,
-        "repo_contributions": 116,
-        "code_reviews": 93,
-        "account_age_years": 7.358904109589041,
-        "experience_score": 0.8506163843789232
+        "total_contributions": 920,
+        "repo_contributions": 102,
+        "code_reviews": 75,
+        "account_age_years": 5.934246575342466,
+        "experience_score": 0.8775419903593764,
+        "pca_score": 37.996100981473234,
+        "kmeans_category": "Junior"
     },
     "a6caf7d28d83767fd5a393f7281dce2bbc17afe6": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281108,
+        "repo_contributions": 2207,
+        "code_reviews": 505,
+        "account_age_years": 11.536986301369863,
+        "experience_score": 0.9957152808508865,
+        "pca_score": 134.26609775663238,
+        "kmeans_category": "Senior"
     },
     "c94a67ced6c313d5ed8a3957330e4b4c2a77c053": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272067,
+        "repo_contributions": 560,
+        "code_reviews": 488,
+        "account_age_years": 10.572602739726028,
+        "experience_score": 0.9940863988208558,
+        "pca_score": 105.61169050971434,
+        "kmeans_category": "Senior"
     },
     "d84ce8bf58a6c15bec894ba6b4cee633831832b6": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 175,
+        "repo_contributions": 50,
+        "code_reviews": 42,
+        "account_age_years": 7.035616438356165,
+        "experience_score": 0.7625430348866561,
+        "pca_score": 25.18021246534914,
+        "kmeans_category": "Junior"
     },
     "b46cceeb7bd8b2af3bec33d800ec8171bcbcf720": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280648,
+        "repo_contributions": 2127,
+        "code_reviews": 503,
+        "account_age_years": 11.495890410958904,
+        "experience_score": 0.995655904736249,
+        "pca_score": 131.64688661296282,
+        "kmeans_category": "Senior"
     },
     "1c5511a8eb206a9a8a47b0919af144bdab0ed188": {
         "username": "ShenFeng312",
-        "total_contributions": 76,
+        "total_contributions": 230,
         "repo_contributions": 6,
-        "code_reviews": 41,
-        "account_age_years": 5.567123287671233,
-        "experience_score": 0.5627284902484696
+        "code_reviews": 35,
+        "account_age_years": 4.868493150684931,
+        "experience_score": 0.5703096969885487,
+        "pca_score": 18.976026736776245,
+        "kmeans_category": "Junior"
     },
     "3856485e212931fadea0106ede56dd7871151efd": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 270609,
+        "repo_contributions": 349,
+        "code_reviews": 483,
+        "account_age_years": 10.528767123287672,
+        "experience_score": 0.9937231222355418,
+        "pca_score": 101.51576584102246,
+        "kmeans_category": "Senior"
     },
     "9d9f5d0e09b9203dfde8e65d0a2f939a54106d47": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 273030,
+        "repo_contributions": 748,
+        "code_reviews": 490,
+        "account_age_years": 10.605479452054794,
+        "experience_score": 0.9941552221269246,
+        "pca_score": 107.96676087130648,
+        "kmeans_category": "Senior"
     },
     "05e9a0a33beab425aebd1156d50f37e6c327a474": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 271692,
+        "repo_contributions": 560,
+        "code_reviews": 485,
+        "account_age_years": 10.561643835616438,
+        "experience_score": 0.9940639327190128,
+        "pca_score": 105.10066002247774,
+        "kmeans_category": "Senior"
     },
     "332263103071a3d3412a1b37c78e5585b44bb28b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275157,
+        "repo_contributions": 1108,
+        "code_reviews": 491,
+        "account_age_years": 10.813698630136987,
+        "experience_score": 0.9945465633302704,
+        "pca_score": 113.17073900189718,
+        "kmeans_category": "Senior"
     },
     "71b7df79c177ff6f70c1d17bfb0283a960caa152": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278136,
+        "repo_contributions": 1621,
+        "code_reviews": 498,
+        "account_age_years": 11.139726027397261,
+        "experience_score": 0.9951085277328309,
+        "pca_score": 124.24418685566324,
+        "kmeans_category": "Senior"
     },
     "59c2622b3c864d861f65d387830210a2ec30d9b5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281976,
+        "repo_contributions": 2411,
+        "code_reviews": 519,
+        "account_age_years": 11.791780821917808,
+        "experience_score": 0.9960658351078627,
+        "pca_score": 139.2252939839611,
+        "kmeans_category": "Senior"
     },
     "c2a2606d0ada7e8d468a643c2c55e4aaecda7bd9": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280790,
+        "repo_contributions": 2127,
+        "code_reviews": 503,
+        "account_age_years": 11.509589041095891,
+        "experience_score": 0.9956756468717414,
+        "pca_score": 131.97508610252683,
+        "kmeans_category": "Senior"
     },
     "0a946a4a7a61a8d268d383999f16546bf3e56797": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274999,
+        "repo_contributions": 1075,
+        "code_reviews": 491,
+        "account_age_years": 10.797260273972602,
+        "experience_score": 0.9945166740627616,
+        "pca_score": 112.16275457323691,
+        "kmeans_category": "Senior"
     },
     "3b093b413dcce3008029d32dbc97a41434edd66d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281821,
+        "repo_contributions": 2333,
+        "code_reviews": 519,
+        "account_age_years": 11.712328767123287,
+        "experience_score": 0.9959604589441229,
+        "pca_score": 137.28721502508816,
+        "kmeans_category": "Senior"
     },
     "d702e9182b7c2ae36da330f03d964e768912acdc": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283003,
+        "repo_contributions": 2709,
+        "code_reviews": 559,
+        "account_age_years": 12.449315068493151,
+        "experience_score": 0.9968429091761931,
+        "pca_score": 146.05120598863573,
+        "kmeans_category": "Senior"
     },
     "9a01b92234d923dc80767ccdf33f81b8fd540bb6": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 36,
+        "repo_contributions": 14,
+        "code_reviews": 6,
+        "account_age_years": 6.720547945205479,
+        "experience_score": 0.47627217155652535,
+        "pca_score": 17.15921048715916,
+        "kmeans_category": "Junior"
     },
     "d9481036e0d8f29c95be447a463254c22c21fc08": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272287,
+        "repo_contributions": 670,
+        "code_reviews": 489,
+        "account_age_years": 10.578082191780823,
+        "experience_score": 0.9941010896674665,
+        "pca_score": 106.58225041530505,
+        "kmeans_category": "Senior"
     },
     "67e1e7468465f8ebcbdba5a37ab0f416fb0bf8b8": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282790,
+        "repo_contributions": 2568,
+        "code_reviews": 553,
+        "account_age_years": 12.164383561643836,
+        "experience_score": 0.9965282592057507,
+        "pca_score": 142.8271032677118,
+        "kmeans_category": "Senior"
     },
     "31c859fea83d1b5431b8ae9a552ef618751ab2a3": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278433,
+        "repo_contributions": 1676,
+        "code_reviews": 498,
+        "account_age_years": 11.197260273972603,
+        "experience_score": 0.9952012185785206,
+        "pca_score": 125.6817785972307,
+        "kmeans_category": "Senior"
     },
     "bfd23e08f6d8aee587ca96bd69003ee03014464b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278319,
+        "repo_contributions": 1657,
+        "code_reviews": 498,
+        "account_age_years": 11.180821917808219,
+        "experience_score": 0.9951749166212265,
+        "pca_score": 125.24208328796014,
+        "kmeans_category": "Senior"
     },
     "8d73538af50f1f973a4870fbab74d26e9507b548": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274944,
+        "repo_contributions": 1075,
+        "code_reviews": 491,
+        "account_age_years": 10.791780821917808,
+        "experience_score": 0.9945066745456113,
+        "pca_score": 111.83455508367288,
+        "kmeans_category": "Senior"
     },
     "1551be035d07468a6d9fbb1bf31456ad3d072275": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275280,
+        "repo_contributions": 1152,
+        "code_reviews": 491,
+        "account_age_years": 10.827397260273973,
+        "experience_score": 0.994571346236568,
+        "pca_score": 114.20911938457493,
+        "kmeans_category": "Senior"
     },
     "824e2153aec7acaed9fa242222f6e20943dc15d9": {
         "username": "kraity",
-        "total_contributions": 56,
-        "repo_contributions": 116,
-        "code_reviews": 93,
-        "account_age_years": 7.358904109589041,
-        "experience_score": 0.8506163843789232
+        "total_contributions": 875,
+        "repo_contributions": 93,
+        "code_reviews": 71,
+        "account_age_years": 5.816438356164384,
+        "experience_score": 0.864094774961228,
+        "pca_score": 37.328401271784244,
+        "kmeans_category": "Junior"
     },
     "69b2c464c8f6cd5e9e9c917176d834b68cebe518": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274580,
+        "repo_contributions": 1009,
+        "code_reviews": 491,
+        "account_age_years": 10.758904109589041,
+        "experience_score": 0.9944462919987558,
+        "pca_score": 110.98058240343126,
+        "kmeans_category": "Senior"
     },
     "cf242485b488762f832d85a88e48b30183d1288a": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281811,
+        "repo_contributions": 2311,
+        "code_reviews": 519,
+        "account_age_years": 11.706849315068494,
+        "experience_score": 0.9959530882345817,
+        "pca_score": 136.70883790933507,
+        "kmeans_category": "Senior"
     },
     "a819a55f59292aa8150a4f2240c164cb518c8588": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275748,
+        "repo_contributions": 1188,
+        "code_reviews": 493,
+        "account_age_years": 10.863013698630137,
+        "experience_score": 0.9946357873921421,
+        "pca_score": 115.56515261682273,
+        "kmeans_category": "Senior"
     },
     "ada9479b56806901029519ba5ce9d3c5007eac07": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280954,
+        "repo_contributions": 2161,
+        "code_reviews": 505,
+        "account_age_years": 11.517808219178082,
+        "experience_score": 0.9956878680770906,
+        "pca_score": 132.84370399207364,
+        "kmeans_category": "Senior"
     },
     "e3cda143219c73ccccc42bbece3b259b427c56d7": {
         "username": "kraity",
-        "total_contributions": 56,
-        "repo_contributions": 116,
-        "code_reviews": 93,
-        "account_age_years": 7.358904109589041,
-        "experience_score": 0.8506163843789232
+        "total_contributions": 865,
+        "repo_contributions": 93,
+        "code_reviews": 69,
+        "account_age_years": 5.813698630136987,
+        "experience_score": 0.8616023504411479,
+        "pca_score": 36.91972861459278,
+        "kmeans_category": "Junior"
     },
     "9f10cb5c9a5219e097f644ed43df57153894afb9": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277366,
+        "repo_contributions": 1492,
+        "code_reviews": 497,
+        "account_age_years": 11.057534246575342,
+        "experience_score": 0.994972751600634,
+        "pca_score": 121.05581643289834,
+        "kmeans_category": "Senior"
     },
     "760cd5204b452fe989c179e56bca60056ef72c32": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283087,
+        "repo_contributions": 2782,
+        "code_reviews": 564,
+        "account_age_years": 12.531506849315068,
+        "experience_score": 0.9969284683264126,
+        "pca_score": 146.7931679223217,
+        "kmeans_category": "Senior"
     },
     "fa20ff9bc15715199d5764f3985edccad5213567": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276091,
+        "repo_contributions": 1262,
+        "code_reviews": 494,
+        "account_age_years": 10.887671232876713,
+        "experience_score": 0.9946798477793706,
+        "pca_score": 116.11303655891832,
+        "kmeans_category": "Senior"
     },
     "aeaec4fa83f45ae7013c1a268cfa9c84373f11e8": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279404,
+        "repo_contributions": 1865,
+        "code_reviews": 500,
+        "account_age_years": 11.36986301369863,
+        "experience_score": 0.9954693232900953,
+        "pca_score": 128.20561861562246,
+        "kmeans_category": "Senior"
     },
     "b00b2b7b43781f91b8506283bea7bb87b40b4089": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 270639,
+        "repo_contributions": 349,
+        "code_reviews": 483,
+        "account_age_years": 10.531506849315068,
+        "experience_score": 0.993728582610035,
+        "pca_score": 101.70017354345859,
+        "kmeans_category": "Senior"
     },
     "1932c06b9d14d3c92c78e06e71d7374907c1c811": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280277,
+        "repo_contributions": 2029,
+        "code_reviews": 500,
+        "account_age_years": 11.452054794520548,
+        "experience_score": 0.9955914597193024,
+        "pca_score": 130.39885321640247,
+        "kmeans_category": "Senior"
     },
     "f6801bcbd4c55351d46fa8ce162a8afacdd10def": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276078,
+        "repo_contributions": 1262,
+        "code_reviews": 494,
+        "account_age_years": 10.884931506849314,
+        "experience_score": 0.994674998665822,
+        "pca_score": 115.9489368141363,
+        "kmeans_category": "Senior"
     },
     "49187086ed42d64866ab127b4418bcd5553f71ad": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 209,
+        "repo_contributions": 59,
+        "code_reviews": 49,
+        "account_age_years": 7.293150684931507,
+        "experience_score": 0.7963997192382415,
+        "pca_score": 27.581104049326974,
+        "kmeans_category": "Junior"
     },
     "c8c5c104e31334035e227de165eb063120c229a1": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276653,
+        "repo_contributions": 1348,
+        "code_reviews": 495,
+        "account_age_years": 10.953424657534246,
+        "experience_score": 0.9947951612350894,
+        "pca_score": 117.94417691102657,
+        "kmeans_category": "Senior"
     },
     "2e2669d58af7d1ae5e639d77bd9ce1f8a5faab20": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282109,
+        "repo_contributions": 2454,
+        "code_reviews": 522,
+        "account_age_years": 11.849315068493151,
+        "experience_score": 0.9961408705323515,
+        "pca_score": 140.3032254084656,
+        "kmeans_category": "Senior"
     },
     "c1c6d2937ebd74ccbdcfa042c79ed82b8c8ee58b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 270569,
+        "repo_contributions": 349,
+        "code_reviews": 483,
+        "account_age_years": 10.528767123287672,
+        "experience_score": 0.9937231222355418,
+        "pca_score": 101.39228201154867,
+        "kmeans_category": "Senior"
     },
     "4d045f1ac2913a6826c404bfdbf90c0b63e233d0": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 235,
+        "repo_contributions": 86,
+        "code_reviews": 69,
+        "account_age_years": 7.671232876712328,
+        "experience_score": 0.8678793205088946,
+        "pca_score": 30.274271897349823,
+        "kmeans_category": "Junior"
     },
     "2fd5d439f021dd844e9f139fe9ce41c319bc1336": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282647,
+        "repo_contributions": 2521,
+        "code_reviews": 548,
+        "account_age_years": 12.013698630136986,
+        "experience_score": 0.9963492148750281,
+        "pca_score": 142.16219581805515,
+        "kmeans_category": "Senior"
     },
     "a037d802f8a57a4fe68de781091abafa66ec3de7": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282105,
+        "repo_contributions": 2454,
+        "code_reviews": 522,
+        "account_age_years": 11.849315068493151,
+        "experience_score": 0.9961408705323515,
+        "pca_score": 140.17974157899184,
+        "kmeans_category": "Senior"
     },
     "ee44fb2d87bc26299dae5a9155f5c168040a3366": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282401,
+        "repo_contributions": 2467,
+        "code_reviews": 529,
+        "account_age_years": 11.87945205479452,
+        "experience_score": 0.9961803258719776,
+        "pca_score": 140.57226625247262,
+        "kmeans_category": "Senior"
     },
     "20a2547cef7140ec7c8eed1824ed2cd37d00da3c": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 244,
+        "repo_contributions": 94,
+        "code_reviews": 78,
+        "account_age_years": 7.734246575342466,
+        "experience_score": 0.8865050577792164,
+        "pca_score": 31.281571593379155,
+        "kmeans_category": "Junior"
     },
     "b8519bfc538b5e6f97d7106a2d6388c403d4c378": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282765,
+        "repo_contributions": 2544,
+        "code_reviews": 553,
+        "account_age_years": 12.087671232876712,
+        "experience_score": 0.9964384411855787,
+        "pca_score": 142.47027587260683,
+        "kmeans_category": "Senior"
     },
     "8572567246e267638eb404a7e52759e5566d773f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 284193,
+        "repo_contributions": 2904,
+        "code_reviews": 615,
+        "account_age_years": 12.841095890410958,
+        "experience_score": 0.9972313407979347,
+        "pca_score": 149.20836093875363,
+        "kmeans_category": "Senior"
     },
     "e3cd07fd29633c38ab58b198e848ed2fb53ae4d7": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282823,
+        "repo_contributions": 2598,
+        "code_reviews": 553,
+        "account_age_years": 12.241095890410959,
+        "experience_score": 0.9966158096251387,
+        "pca_score": 143.19912863982552,
+        "kmeans_category": "Senior"
     },
     "55850bfeea445db31b9a89a64c46e26faadb15e8": {
         "username": "yanrongzhen",
-        "total_contributions": 43,
+        "total_contributions": 53,
         "repo_contributions": 1,
-        "code_reviews": 70,
-        "account_age_years": 2.4602739726027396,
-        "experience_score": 0.36427312586818456
+        "code_reviews": 5,
+        "account_age_years": 0.3780821917808219,
+        "experience_score": 0.26996212482028087,
+        "pca_score": 5.82005458563678,
+        "kmeans_category": "Junior"
     },
     "ab9500c5b4bc95b8724fd53689184b6fd9e3e5e8": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277876,
+        "repo_contributions": 1589,
+        "code_reviews": 498,
+        "account_age_years": 11.123287671232877,
+        "experience_score": 0.9950817164864518,
+        "pca_score": 123.58968788993909,
+        "kmeans_category": "Senior"
     },
     "fe8dece3df1d14f80d77b639285c9a9ce8b9ac31": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275473,
+        "repo_contributions": 1152,
+        "code_reviews": 491,
+        "account_age_years": 10.843835616438357,
+        "experience_score": 0.9946009366837056,
+        "pca_score": 114.86551836370299,
+        "kmeans_category": "Senior"
     },
     "744104b4617d5a9df6755d60cf096b6e4be4007f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282595,
+        "repo_contributions": 2488,
+        "code_reviews": 548,
+        "account_age_years": 11.972602739726028,
+        "experience_score": 0.9962989199524996,
+        "pca_score": 141.22522325872058,
+        "kmeans_category": "Senior"
     },
     "5e7a0d532aa8834aee4ce9094e31acce7510225b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277451,
+        "repo_contributions": 1492,
+        "code_reviews": 497,
+        "account_age_years": 11.065753424657535,
+        "experience_score": 0.9949864730601153,
+        "pca_score": 121.56842362489847,
+        "kmeans_category": "Senior"
     },
     "cab9445846b4e733123ed41e49b737ce524089dc": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282506,
+        "repo_contributions": 2484,
+        "code_reviews": 543,
+        "account_age_years": 11.931506849315069,
+        "experience_score": 0.9962474742631531,
+        "pca_score": 140.89484083454212,
+        "kmeans_category": "Senior"
     },
     "d9e923eab74a125af2e49046f269831766ec282c": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 145,
+        "repo_contributions": 35,
+        "code_reviews": 32,
+        "account_age_years": 6.980821917808219,
+        "experience_score": 0.6996825297176054,
+        "pca_score": 22.967116024819795,
+        "kmeans_category": "Junior"
     },
     "0a404974fb365f599a8ef6a28717fe8e49a61a6c": {
         "username": "wsxe9988",
-        "total_contributions": 4,
+        "total_contributions": 254,
         "repo_contributions": 40,
-        "code_reviews": 45,
-        "account_age_years": 11.032876712328767,
-        "experience_score": 0.5488563307512005
+        "code_reviews": 40,
+        "account_age_years": 8.76986301369863,
+        "experience_score": 0.7421177372899866,
+        "pca_score": 29.753731488964117,
+        "kmeans_category": "Junior"
     },
     "8af0c4b19d91322962c5a887d91bfdd3b1b40db5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274269,
+        "repo_contributions": 953,
+        "code_reviews": 491,
+        "account_age_years": 10.715068493150685,
+        "experience_score": 0.9943647451027486,
+        "pca_score": 110.3785553978552,
+        "kmeans_category": "Senior"
     },
     "808340a2d01584cca9ec5bfef083e7838d2cffa5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277618,
+        "repo_contributions": 1520,
+        "code_reviews": 497,
+        "account_age_years": 11.084931506849315,
+        "experience_score": 0.9950183439813374,
+        "pca_score": 121.98106491232042,
+        "kmeans_category": "Senior"
     },
     "c04070e73d316b527cfe61ad2dd05b713fdf95f4": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 241,
+        "repo_contributions": 91,
+        "code_reviews": 74,
+        "account_age_years": 7.712328767123288,
+        "experience_score": 0.8791876211592651,
+        "pca_score": 30.841287426901413,
+        "kmeans_category": "Junior"
     },
     "df7993c0dbd993fe7486ae7ae65fb20fa90eab4c": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280232,
+        "repo_contributions": 2029,
+        "code_reviews": 500,
+        "account_age_years": 11.449315068493151,
+        "experience_score": 0.9955874421861891,
+        "pca_score": 130.09096168449258,
+        "kmeans_category": "Senior"
     },
     "39f19a782af72932d90f74b1a03dbd5412af20e8": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278722,
+        "repo_contributions": 1745,
+        "code_reviews": 498,
+        "account_age_years": 11.284931506849315,
+        "experience_score": 0.9953390873810759,
+        "pca_score": 126.73548892184458,
+        "kmeans_category": "Senior"
     },
     "9259319fe6d7938ad897dc8667921a307f2ca0ba": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282617,
+        "repo_contributions": 2501,
+        "code_reviews": 548,
+        "account_age_years": 11.994520547945205,
+        "experience_score": 0.9963258296364785,
+        "pca_score": 141.57870872165668,
+        "kmeans_category": "Senior"
     },
     "92579b46b196ba69dcce56b49e5bda080628691d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275620,
+        "repo_contributions": 1188,
+        "code_reviews": 491,
+        "account_age_years": 10.860273972602739,
+        "experience_score": 0.9946303654499953,
+        "pca_score": 115.1512019245549,
+        "kmeans_category": "Senior"
     },
     "19c7b0a3b65a50a540eaf805a7d3177e88c0ebf2": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 127,
+        "repo_contributions": 27,
+        "code_reviews": 24,
+        "account_age_years": 6.93972602739726,
+        "experience_score": 0.6506916829840423,
+        "pca_score": 21.416376758703787,
+        "kmeans_category": "Junior"
     },
     "4e1e92cf4b0aefc250917cf06564e4e2e1e1bda0": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282985,
+        "repo_contributions": 2687,
+        "code_reviews": 559,
+        "account_age_years": 12.416438356164383,
+        "experience_score": 0.9968081590772363,
+        "pca_score": 145.85671028983623,
+        "kmeans_category": "Senior"
     },
     "e188f0215667a88fdb278f71635d6f426a6b339b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280976,
+        "repo_contributions": 2161,
+        "code_reviews": 505,
+        "account_age_years": 11.520547945205479,
+        "experience_score": 0.9956917949248636,
+        "pca_score": 133.02811169450976,
+        "kmeans_category": "Senior"
     },
     "d31819e1013e2445309d6f274c20d5053b124394": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278857,
+        "repo_contributions": 1745,
+        "code_reviews": 499,
+        "account_age_years": 11.301369863013699,
+        "experience_score": 0.9953647261493466,
+        "pca_score": 127.3526164102935,
+        "kmeans_category": "Senior"
     },
     "d45a1bb85b3b233009f8ea1b8a3ad3a9401d971c": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274254,
+        "repo_contributions": 953,
+        "code_reviews": 491,
+        "account_age_years": 10.712328767123287,
+        "experience_score": 0.9943596088172051,
+        "pca_score": 110.19414769541908,
+        "kmeans_category": "Senior"
     },
     "a0be963a48786e5f6a7396b811e1ebea19fae0ab": {
         "username": "rowstop",
-        "total_contributions": 133,
-        "repo_contributions": 24,
-        "code_reviews": 30,
-        "account_age_years": 2.6904109589041094,
-        "experience_score": 0.5890964623723983
+        "total_contributions": 20,
+        "repo_contributions": 14,
+        "code_reviews": 17,
+        "account_age_years": 2.0136986301369864,
+        "experience_score": 0.4083840901278902,
+        "pca_score": 7.619262326604033,
+        "kmeans_category": "Junior"
     },
     "2c39bf007c8ae15e2241388ac71ff7a438443e09": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278176,
+        "repo_contributions": 1634,
+        "code_reviews": 498,
+        "account_age_years": 11.153424657534247,
+        "experience_score": 0.9951307584873825,
+        "pca_score": 124.81247597505296,
+        "kmeans_category": "Senior"
     },
     "da3b4ac95db7af0ed8d6b8489650e0fdbfe52fb9": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272605,
+        "repo_contributions": 670,
+        "code_reviews": 490,
+        "account_age_years": 10.591780821917808,
+        "experience_score": 0.9941281774735199,
+        "pca_score": 107.2260520592479,
+        "kmeans_category": "Senior"
     },
     "76415d514956055816f6f4636cf11d3077de6842": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281088,
+        "repo_contributions": 2207,
+        "code_reviews": 505,
+        "account_age_years": 11.534246575342467,
+        "experience_score": 0.9957113754612444,
+        "pca_score": 134.08169005419623,
+        "kmeans_category": "Senior"
     },
     "87708f5e2db4ae26aae46bbe89b9dab43bf99af4": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282613,
+        "repo_contributions": 2501,
+        "code_reviews": 548,
+        "account_age_years": 11.994520547945205,
+        "experience_score": 0.9963258296364785,
+        "pca_score": 141.4552248921829,
+        "kmeans_category": "Senior"
     },
     "03a543564a5bfff890102d087a38189edcdbc507": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283145,
+        "repo_contributions": 2853,
+        "code_reviews": 566,
+        "account_age_years": 12.583561643835617,
+        "experience_score": 0.9969813740404145,
+        "pca_score": 147.8180211568272,
+        "kmeans_category": "Senior"
     },
     "4f41b125cc2c54d75ebb1447a13176652ce51a00": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280064,
+        "repo_contributions": 1984,
+        "code_reviews": 500,
+        "account_age_years": 11.435616438356165,
+        "experience_score": 0.9955672993936643,
+        "pca_score": 129.72928823859698,
+        "kmeans_category": "Senior"
     },
     "3cd69fc4b84dfe1470ae981a158ff3dc7c372d57": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281064,
+        "repo_contributions": 2161,
+        "code_reviews": 505,
+        "account_age_years": 11.531506849315068,
+        "experience_score": 0.9957074665034076,
+        "pca_score": 133.6642027159837,
+        "kmeans_category": "Senior"
     },
     "c09c5107937ad246c4b45f3fa683e2a948848e40": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281952,
+        "repo_contributions": 2411,
+        "code_reviews": 519,
+        "account_age_years": 11.789041095890411,
+        "experience_score": 0.9960622477137977,
+        "pca_score": 139.06119423917912,
+        "kmeans_category": "Senior"
     },
     "357a128b307553a8c0e0f79787573060eeb5b8be": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280272,
+        "repo_contributions": 2029,
+        "code_reviews": 500,
+        "account_age_years": 11.452054794520548,
+        "experience_score": 0.9955914597193024,
+        "pca_score": 130.2753693869287,
+        "kmeans_category": "Senior"
     },
     "1600401ae6f07d82df9f9d7b7fe4ec8a664b9f9f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276734,
+        "repo_contributions": 1363,
+        "code_reviews": 495,
+        "account_age_years": 10.975342465753425,
+        "experience_score": 0.9948329575743305,
+        "pca_score": 118.67656577519831,
+        "kmeans_category": "Senior"
     },
     "f2e8736aa93cca9dcf46d629b1c028202a9efcd3": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275079,
+        "repo_contributions": 1075,
+        "code_reviews": 491,
+        "account_age_years": 10.805479452054794,
+        "experience_score": 0.9945316391352281,
+        "pca_score": 112.34716227567303,
+        "kmeans_category": "Senior"
     },
     "049e17555d0fc6bbc3f1c01de19d3b4ec602a5da": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276688,
+        "repo_contributions": 1348,
+        "code_reviews": 495,
+        "account_age_years": 10.95890410958904,
+        "experience_score": 0.9948046362235048,
+        "pca_score": 118.2723764005906,
+        "kmeans_category": "Senior"
     },
     "966964d1c416e21451cd1fed9537a7252cdd8983": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 273774,
+        "repo_contributions": 844,
+        "code_reviews": 491,
+        "account_age_years": 10.652054794520549,
+        "experience_score": 0.9942454032046925,
+        "pca_score": 109.34004305025007,
+        "kmeans_category": "Senior"
     },
     "241f64295c9f61bb4d902156853c3f2a830f6632": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275172,
+        "repo_contributions": 1108,
+        "code_reviews": 491,
+        "account_age_years": 10.816438356164383,
+        "experience_score": 0.9945515289604159,
+        "pca_score": 113.47863053380709,
+        "kmeans_category": "Senior"
     },
     "fa0f55d075eab93d56b374fe5ba9c789294f59e5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282645,
+        "repo_contributions": 2521,
+        "code_reviews": 548,
+        "account_age_years": 12.013698630136986,
+        "experience_score": 0.9963492148750281,
+        "pca_score": 142.03871198858135,
+        "kmeans_category": "Senior"
     },
     "219275854fc8972461a896b901d8e1f2eee9cd41": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278448,
+        "repo_contributions": 1676,
+        "code_reviews": 498,
+        "account_age_years": 11.2,
+        "experience_score": 0.995205588243427,
+        "pca_score": 125.9896701291406,
+        "kmeans_category": "Senior"
     },
     "466632ce131840b85593dffccf089132b279b544": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280362,
+        "repo_contributions": 2029,
+        "code_reviews": 500,
+        "account_age_years": 11.457534246575342,
+        "experience_score": 0.9955994837869611,
+        "pca_score": 130.7473606636206,
+        "kmeans_category": "Senior"
     },
     "77628013de1c308769cca5ba4eccc14a4969649f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276618,
+        "repo_contributions": 1336,
+        "code_reviews": 495,
+        "account_age_years": 10.934246575342465,
+        "experience_score": 0.9947618621589044,
+        "pca_score": 117.61276745422107,
+        "kmeans_category": "Senior"
     },
     "70e39efa5f04c3a7bc62fdcd16399be86fdba655": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278787,
+        "repo_contributions": 1745,
+        "code_reviews": 498,
+        "account_age_years": 11.293150684931506,
+        "experience_score": 0.9953518072074257,
+        "pca_score": 127.00112845489714,
+        "kmeans_category": "Senior"
     },
     "5c605092df091e501e128f54fa4ca092889c15b7": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 271737,
+        "repo_contributions": 560,
+        "code_reviews": 485,
+        "account_age_years": 10.561643835616438,
+        "experience_score": 0.9940639327190128,
+        "pca_score": 105.22414385195154,
+        "kmeans_category": "Senior"
     },
     "6c2f6563d20992f1c5dd678ac8944da76b95cb1b": {
         "username": "CodePlayer",
-        "total_contributions": 24,
+        "total_contributions": 703,
         "repo_contributions": 12,
-        "code_reviews": 20,
-        "account_age_years": 11.687671232876712,
-        "experience_score": 0.33358498803744513
+        "code_reviews": 18,
+        "account_age_years": 10.457534246575342,
+        "experience_score": 0.5834669852350848,
+        "pca_score": 37.20694942870956,
+        "kmeans_category": "Junior"
     },
     "522d6d78dcd09b6b963d9ce20f3ae2b66edb06ac": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277421,
+        "repo_contributions": 1492,
+        "code_reviews": 497,
+        "account_age_years": 11.063013698630137,
+        "experience_score": 0.9949819034166563,
+        "pca_score": 121.40432388011646,
+        "kmeans_category": "Senior"
     },
     "fcbcf1edf6aed36963bb8e8c417f8723eb82e081": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276693,
+        "repo_contributions": 1348,
+        "code_reviews": 495,
+        "account_age_years": 10.95890410958904,
+        "experience_score": 0.9948046362235048,
+        "pca_score": 118.3958602300644,
+        "kmeans_category": "Senior"
     },
     "3e2c1dc77b83b43d2f217c0cce7bfdaf51e4e96f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276996,
+        "repo_contributions": 1431,
+        "code_reviews": 495,
+        "account_age_years": 11.01917808219178,
+        "experience_score": 0.9949077268614971,
+        "pca_score": 119.43260452919301,
+        "kmeans_category": "Senior"
     },
     "fc95c31ea55c49b4b2d2f2aaef39401bb89a6816": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274034,
+        "repo_contributions": 887,
+        "code_reviews": 491,
+        "account_age_years": 10.69041095890411,
+        "experience_score": 0.994318344888178,
+        "pca_score": 109.74423242485777,
+        "kmeans_category": "Senior"
     },
     "dc453297fd9d778f793efe7e802c68bb810adc00": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272875,
+        "repo_contributions": 748,
+        "code_reviews": 490,
+        "account_age_years": 10.597260273972603,
+        "experience_score": 0.9941392253757448,
+        "pca_score": 107.61825342408835,
+        "kmeans_category": "Senior"
     },
     "cec6283a5b4d17ab334e6916da53244d42132622": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276471,
+        "repo_contributions": 1336,
+        "code_reviews": 494,
+        "account_age_years": 10.92876712328767,
+        "experience_score": 0.9947520555739993,
+        "pca_score": 117.15652692224145,
+        "kmeans_category": "Senior"
     },
     "69cd5330f713e78d3c12233474cb97a9ee36d55d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281805,
+        "repo_contributions": 2311,
+        "code_reviews": 519,
+        "account_age_years": 11.7013698630137,
+        "experience_score": 0.9959457040502553,
+        "pca_score": 136.52443020689893,
+        "kmeans_category": "Senior"
     },
     "d6f623b900fc10847f381c80cc09f08ad40246d0": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277663,
+        "repo_contributions": 1520,
+        "code_reviews": 497,
+        "account_age_years": 11.09041095890411,
+        "experience_score": 0.9950274125996077,
+        "pca_score": 122.30926440188443,
+        "kmeans_category": "Senior"
     },
     "a99ea88b804006c1f5fe7aa381f59025c2ee1acf": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281813,
+        "repo_contributions": 2333,
+        "code_reviews": 519,
+        "account_age_years": 11.706849315068494,
+        "experience_score": 0.9959530882345817,
+        "pca_score": 136.93870757787002,
+        "kmeans_category": "Senior"
     },
     "b42e4cf114dc069a303d6bbaa84e99b16331b2e2": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 159,
+        "repo_contributions": 45,
+        "code_reviews": 37,
+        "account_age_years": 7.021917808219178,
+        "experience_score": 0.7394974074781469,
+        "pca_score": 24.07828912552142,
+        "kmeans_category": "Junior"
     },
     "c7fb6862a573b6ecf5072c4089eb713fca3dac52": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277296,
+        "repo_contributions": 1459,
+        "code_reviews": 497,
+        "account_age_years": 11.046575342465754,
+        "experience_score": 0.9949543977452107,
+        "pca_score": 120.4691193692584,
+        "kmeans_category": "Senior"
     },
     "357735aa7a5f01b2b1e25cf07edeede13d9a4da6": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281837,
+        "repo_contributions": 2333,
+        "code_reviews": 519,
+        "account_age_years": 11.717808219178082,
+        "experience_score": 0.9959678162034679,
+        "pca_score": 137.45131476987015,
+        "kmeans_category": "Senior"
     },
     "e81846ee7262583930b9a35123a4742599fe5eaa": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282629,
+        "repo_contributions": 2509,
+        "code_reviews": 548,
+        "account_age_years": 11.997260273972604,
+        "experience_score": 0.9963291795445398,
+        "pca_score": 141.80871035511902,
+        "kmeans_category": "Senior"
     },
     "59602612f8a7e1f807919a8145f810cfc2aa62ee": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282826,
+        "repo_contributions": 2598,
+        "code_reviews": 553,
+        "account_age_years": 12.243835616438357,
+        "experience_score": 0.996618895209687,
+        "pca_score": 143.36322838460754,
+        "kmeans_category": "Senior"
     },
     "0064afd0893d1f730ca8921152292fe17c405f16": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 271513,
+        "repo_contributions": 560,
+        "code_reviews": 484,
+        "account_age_years": 10.556164383561644,
+        "experience_score": 0.9940528066857499,
+        "pca_score": 104.86940526738803,
+        "kmeans_category": "Senior"
     },
     "7c19f1992030b22b1058d173e9490645c32e2317": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282940,
+        "repo_contributions": 2648,
+        "code_reviews": 554,
+        "account_age_years": 12.336986301369864,
+        "experience_score": 0.9967222237773758,
+        "pca_score": 144.54841890344585,
+        "kmeans_category": "Senior"
     },
     "494e4e09b0f95126a7c966fd7d4ec6f09cd49a52": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278583,
+        "repo_contributions": 1712,
+        "code_reviews": 498,
+        "account_age_years": 11.276712328767124,
+        "experience_score": 0.9953263326581049,
+        "pca_score": 126.33129954723687,
+        "kmeans_category": "Senior"
     },
     "bb52a519200653e851c584138d230149e35ae64d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274249,
+        "repo_contributions": 953,
+        "code_reviews": 491,
+        "account_age_years": 10.712328767123287,
+        "experience_score": 0.9943596088172051,
+        "pca_score": 110.07066386594529,
+        "kmeans_category": "Senior"
     },
     "aa88b482a025de26ed0a9590f2625812a25daf05": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278161,
+        "repo_contributions": 1621,
+        "code_reviews": 498,
+        "account_age_years": 11.147945205479452,
+        "experience_score": 0.9951218783649378,
+        "pca_score": 124.57238634522726,
+        "kmeans_category": "Senior"
     },
     "127031c13d708ef9991e6675075ed91593467f86": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277096,
+        "repo_contributions": 1431,
+        "code_reviews": 495,
+        "account_age_years": 11.032876712328767,
+        "experience_score": 0.9949308690968586,
+        "pca_score": 119.76080401875703,
+        "kmeans_category": "Senior"
     },
     "634391b493f5db08ea7301c858ba8ac0a0e5134d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279429,
+        "repo_contributions": 1865,
+        "code_reviews": 500,
+        "account_age_years": 11.372602739726027,
+        "experience_score": 0.9954734486451053,
+        "pca_score": 128.36971836040448,
+        "kmeans_category": "Senior"
     },
     "8dcd6d4db275a034c34d9fe13a50e8f314ebaff0": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272950,
+        "repo_contributions": 748,
+        "code_reviews": 490,
+        "account_age_years": 10.602739726027398,
+        "experience_score": 0.9941498947454246,
+        "pca_score": 107.78235316887037,
+        "kmeans_category": "Senior"
     },
     "18b07727633da4823a466b5df7426dc662015dfd": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280688,
+        "repo_contributions": 2127,
+        "code_reviews": 503,
+        "account_age_years": 11.498630136986302,
+        "experience_score": 0.9956598603783775,
+        "pca_score": 131.8109863577448,
+        "kmeans_category": "Senior"
     },
     "94ac60ed42e969d4c7b1299d35d9aa027cc88adf": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277186,
+        "repo_contributions": 1459,
+        "code_reviews": 496,
+        "account_age_years": 11.038356164383561,
+        "experience_score": 0.9949403448246259,
+        "pca_score": 120.17851744596992,
+        "kmeans_category": "Senior"
     },
     "c894edb0253f595a82a31e813fc8cc6964e9b031": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281179,
+        "repo_contributions": 2207,
+        "code_reviews": 506,
+        "account_age_years": 11.542465753424658,
+        "experience_score": 0.9957232842960343,
+        "pca_score": 134.66768339384947,
+        "kmeans_category": "Senior"
     },
     "d81ee9d51dc9b8f1885a103fc1e1aeaf5c3b24d4": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283134,
+        "repo_contributions": 2853,
+        "code_reviews": 566,
+        "account_age_years": 12.578082191780823,
+        "experience_score": 0.9969758610730662,
+        "pca_score": 147.30541396482707,
+        "kmeans_category": "Senior"
     },
     "43399ba5ae4b411245a92b023fcb99674131a029": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281893,
+        "repo_contributions": 2358,
+        "code_reviews": 519,
+        "account_age_years": 11.742465753424657,
+        "experience_score": 0.996000758081383,
+        "pca_score": 138.59798100501297,
+        "kmeans_category": "Senior"
     },
     "f115c40c82f73ea4c08e1ef549e5918ecc37de52": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272420,
+        "repo_contributions": 670,
+        "code_reviews": 490,
+        "account_age_years": 10.580821917808219,
+        "experience_score": 0.994106741065257,
+        "pca_score": 106.83692869672156,
+        "kmeans_category": "Senior"
     },
     "f3a464699e22ebc1523c0247db312564c1de00bc": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280900,
+        "repo_contributions": 2127,
+        "code_reviews": 504,
+        "account_age_years": 11.515068493150684,
+        "experience_score": 0.9956837301760015,
+        "pca_score": 132.21414869972548,
+        "kmeans_category": "Senior"
     },
     "e3d7022b8f7531f6c879ea040eb72cfc6c3055ac": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 273863,
+        "repo_contributions": 869,
+        "code_reviews": 491,
+        "account_age_years": 10.66027397260274,
+        "experience_score": 0.9942611159397597,
+        "pca_score": 109.54973672605828,
+        "kmeans_category": "Senior"
     },
     "4b9577ec715f2830693762a88ba151ded5162345": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275353,
+        "repo_contributions": 1152,
+        "code_reviews": 491,
+        "account_age_years": 10.832876712328767,
+        "experience_score": 0.9945812277399142,
+        "pca_score": 114.37321912935695,
+        "kmeans_category": "Senior"
     },
     "b261853449a05f5ea5be3acf542beba7eec0d07c": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272022,
+        "repo_contributions": 560,
+        "code_reviews": 488,
+        "account_age_years": 10.572602739726028,
+        "experience_score": 0.9940863988208558,
+        "pca_score": 105.48820668024054,
+        "kmeans_category": "Senior"
     },
     "e738baf58a5fcea9efe50a4999097b8729a3b426": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281885,
+        "repo_contributions": 2358,
+        "code_reviews": 519,
+        "account_age_years": 11.73972602739726,
+        "experience_score": 0.995997111229098,
+        "pca_score": 138.26978151544895,
+        "kmeans_category": "Senior"
     },
     "67d6ff7380b8152ec7129a7a1aed5e28c79ab0ab": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281996,
+        "repo_contributions": 2411,
+        "code_reviews": 519,
+        "account_age_years": 11.797260273972602,
+        "experience_score": 0.9960730000749916,
+        "pca_score": 139.38939372874313,
+        "kmeans_category": "Senior"
     },
     "710a04338484f65c6edc5f3a6ddf5ca82ab88be5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277748,
+        "repo_contributions": 1544,
+        "code_reviews": 498,
+        "account_age_years": 11.10958904109589,
+        "experience_score": 0.9950592612837678,
+        "pca_score": 123.19060849597675,
+        "kmeans_category": "Senior"
     },
     "4c8a93a38bdd37b324295ec1567fba364c115f11": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279565,
+        "repo_contributions": 1895,
+        "code_reviews": 500,
+        "account_age_years": 11.386301369863014,
+        "experience_score": 0.9954940190029419,
+        "pca_score": 128.65540192125636,
+        "kmeans_category": "Senior"
     },
     "e1270ef3f7d360b1f268cfdf7defb19ca945ca8e": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276331,
+        "repo_contributions": 1297,
+        "code_reviews": 494,
+        "account_age_years": 10.912328767123288,
+        "experience_score": 0.9947232910993741,
+        "pca_score": 116.69652365531678,
+        "kmeans_category": "Senior"
     },
     "a1d04661c0ca31d60e50c1fca688b89a42fb7253": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 279663,
+        "repo_contributions": 1895,
+        "code_reviews": 500,
+        "account_age_years": 11.4,
+        "experience_score": 0.9955144956463264,
+        "pca_score": 128.81950166603838,
+        "kmeans_category": "Senior"
     },
     "f6be02107543a2040ab1564006c128df78630219": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 276351,
+        "repo_contributions": 1297,
+        "code_reviews": 494,
+        "account_age_years": 10.917808219178083,
+        "experience_score": 0.9947328967752271,
+        "pca_score": 116.8809313577529,
+        "kmeans_category": "Senior"
     },
     "e4497d27388214bad4abe994f5dd0720d609e459": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 271073,
+        "repo_contributions": 449,
+        "code_reviews": 484,
+        "account_age_years": 10.545205479452054,
+        "experience_score": 0.993997445669181,
+        "pca_score": 103.34056559413374,
+        "kmeans_category": "Senior"
     },
     "69a6ca0911e727ba25d599db1e1a7994876e52dd": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278056,
+        "repo_contributions": 1621,
+        "code_reviews": 498,
+        "account_age_years": 11.134246575342466,
+        "experience_score": 0.9950996069691648,
+        "pca_score": 124.08008711088122,
+        "kmeans_category": "Senior"
     },
     "73b68ff582ba39cefac324fbb56e677f18656063": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282919,
+        "repo_contributions": 2628,
+        "code_reviews": 554,
+        "account_age_years": 12.295890410958904,
+        "experience_score": 0.9966770669460566,
+        "pca_score": 143.83810604540474,
+        "kmeans_category": "Senior"
     },
     "22309b6900ea551792d419215ef9bff2ffd01d23": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281585,
+        "repo_contributions": 2262,
+        "code_reviews": 507,
+        "account_age_years": 11.602739726027398,
+        "experience_score": 0.9958083508561958,
+        "pca_score": 135.51346527006044,
+        "kmeans_category": "Senior"
     },
     "39a221be1ab44016e702f96497f9a1248400a41f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274969,
+        "repo_contributions": 1075,
+        "code_reviews": 491,
+        "account_age_years": 10.794520547945206,
+        "experience_score": 0.994511676587181,
+        "pca_score": 111.9986548284549,
+        "kmeans_category": "Senior"
     },
     "8e378266b79dd60abb60e2b4b5fcf64dd20ababb": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 283147,
+        "repo_contributions": 2853,
+        "code_reviews": 566,
+        "account_age_years": 12.583561643835617,
+        "experience_score": 0.9969813740404145,
+        "pca_score": 147.941504986301,
+        "kmeans_category": "Senior"
     },
     "038f1126ce77ea19a77615d8b0a1012cc3e873a7": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281059,
+        "repo_contributions": 2161,
+        "code_reviews": 505,
+        "account_age_years": 11.531506849315068,
+        "experience_score": 0.9957074665034076,
+        "pca_score": 133.5407188865099,
+        "kmeans_category": "Senior"
     },
     "f8e5fa93de69cfd07b3e40b89b3a41865fa2535c": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278946,
+        "repo_contributions": 1765,
+        "code_reviews": 499,
+        "account_age_years": 11.30958904109589,
+        "experience_score": 0.995377376468622,
+        "pca_score": 127.57750806311047,
+        "kmeans_category": "Senior"
     },
     "61f6d9ec5e764254ac483e702a246c577e23dff4": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274489,
+        "repo_contributions": 1009,
+        "code_reviews": 491,
+        "account_age_years": 10.75068493150685,
+        "experience_score": 0.9944310927789517,
+        "pca_score": 110.77586674334103,
+        "kmeans_category": "Senior"
     },
     "1f1c9a45feec03618c78f9e3402b39ea2d283ac5": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275458,
+        "repo_contributions": 1152,
+        "code_reviews": 491,
+        "account_age_years": 10.841095890410958,
+        "experience_score": 0.99459601619534,
+        "pca_score": 114.68111066126686,
+        "kmeans_category": "Senior"
     },
     "bbe40e2a9ad63fec4e2ac5a4d9bacba54c999f9c": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 275162,
+        "repo_contributions": 1108,
+        "code_reviews": 491,
+        "account_age_years": 10.813698630136987,
+        "experience_score": 0.9945465633302704,
+        "pca_score": 113.29422283137097,
+        "kmeans_category": "Senior"
     },
     "92182952379483384b4d665ba4af489d5097d37d": {
         "username": "kraity",
-        "total_contributions": 56,
-        "repo_contributions": 116,
-        "code_reviews": 93,
-        "account_age_years": 7.358904109589041,
-        "experience_score": 0.8506163843789232
+        "total_contributions": 815,
+        "repo_contributions": 81,
+        "code_reviews": 61,
+        "account_age_years": 5.052054794520548,
+        "experience_score": 0.8296975328098517,
+        "pca_score": 32.96313772428359,
+        "kmeans_category": "Junior"
     },
     "f8971feb2e915bc7eb55a8019db7c76527210496": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277623,
+        "repo_contributions": 1520,
+        "code_reviews": 497,
+        "account_age_years": 11.084931506849315,
+        "experience_score": 0.9950183439813374,
+        "pca_score": 122.10454874179422,
+        "kmeans_category": "Senior"
     },
     "29848f507c5e1dea6ee647b57dca0f9c29f330b4": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281887,
+        "repo_contributions": 2358,
+        "code_reviews": 519,
+        "account_age_years": 11.742465753424657,
+        "experience_score": 0.996000758081383,
+        "pca_score": 138.47449717553917,
+        "kmeans_category": "Senior"
     },
     "205fda0131931c9f5de4757c27e356db5502547d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 278388,
+        "repo_contributions": 1657,
+        "code_reviews": 498,
+        "account_age_years": 11.189041095890412,
+        "experience_score": 0.9951880856149014,
+        "pca_score": 125.40618303274216,
+        "kmeans_category": "Senior"
     },
     "16787a1baa65c42e5b26fefde7bbcfc7bdbccc64": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281643,
+        "repo_contributions": 2286,
+        "code_reviews": 509,
+        "account_age_years": 11.632876712328768,
+        "experience_score": 0.9958505362248853,
+        "pca_score": 135.95627614800367,
+        "kmeans_category": "Senior"
     },
     "83ed727cadc8831df1c85e108b94ddfb862d493f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 271223,
+        "repo_contributions": 449,
+        "code_reviews": 484,
+        "account_age_years": 10.553424657534247,
+        "experience_score": 0.994013722411683,
+        "pca_score": 103.50466533891576,
+        "kmeans_category": "Senior"
     },
     "a44903acdddad2e61f24f81c601a3ef2247cecce": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 280910,
+        "repo_contributions": 2161,
+        "code_reviews": 504,
+        "account_age_years": 11.515068493150684,
+        "experience_score": 0.9956837301760015,
+        "pca_score": 132.56560218433034,
+        "kmeans_category": "Senior"
     },
     "2721ffa860e5299fa83e7f949140e7d6420d7ae0": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 270554,
+        "repo_contributions": 349,
+        "code_reviews": 483,
+        "account_age_years": 10.526027397260274,
+        "experience_score": 0.9937176568721273,
+        "pca_score": 101.16725839380433,
+        "kmeans_category": "Senior"
     },
     "834a333afdb02c6dba94d333dee8a19a5ff1391d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281771,
+        "repo_contributions": 2295,
+        "code_reviews": 519,
+        "account_age_years": 11.684931506849315,
+        "experience_score": 0.9959234704020004,
+        "pca_score": 136.31473653109074,
+        "kmeans_category": "Senior"
     },
     "ec1cfb6eec2b010cd5f5f20fca779a8da1aa8eab": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282948,
+        "repo_contributions": 2656,
+        "code_reviews": 554,
+        "account_age_years": 12.342465753424657,
+        "experience_score": 0.9967281980856058,
+        "pca_score": 144.9628282393443,
+        "kmeans_category": "Senior"
     },
     "49be545fcd5a03e7c199e89e39af44269bc191e7": {
         "username": "kraity",
-        "total_contributions": 56,
-        "repo_contributions": 116,
-        "code_reviews": 93,
-        "account_age_years": 7.358904109589041,
-        "experience_score": 0.8506163843789232
+        "total_contributions": 870,
+        "repo_contributions": 93,
+        "code_reviews": 71,
+        "account_age_years": 5.816438356164384,
+        "experience_score": 0.864094774961228,
+        "pca_score": 37.20491744231045,
+        "kmeans_category": "Junior"
     },
     "c527d9521f9dec755f099ed2907858720dd7a98b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 277371,
+        "repo_contributions": 1492,
+        "code_reviews": 497,
+        "account_age_years": 11.057534246575342,
+        "experience_score": 0.994972751600634,
+        "pca_score": 121.17930026237212,
+        "kmeans_category": "Senior"
     },
     "474cc1917ec397e5fd5485c1c97f2388a6f6a97f": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281817,
+        "repo_contributions": 2333,
+        "code_reviews": 519,
+        "account_age_years": 11.70958904109589,
+        "experience_score": 0.9959567752721625,
+        "pca_score": 137.12311528030614,
+        "kmeans_category": "Senior"
     },
     "b2f63f4a61d7148977c0f293ddba746f9f8b709b": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274740,
+        "repo_contributions": 1009,
+        "code_reviews": 491,
+        "account_age_years": 10.767123287671232,
+        "experience_score": 0.9944614496338531,
+        "pca_score": 111.14468214821326,
+        "kmeans_category": "Senior"
     },
     "ddb1c52d600a92c1c901a9dec8e21bb9fd862577": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 281875,
+        "repo_contributions": 2358,
+        "code_reviews": 519,
+        "account_age_years": 11.736986301369862,
+        "experience_score": 0.9959934610448329,
+        "pca_score": 137.96188998353904,
+        "kmeans_category": "Senior"
     },
     "2d6973da92aca7e77d1e19ce3321e5ecc08585bf": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 167,
+        "repo_contributions": 50,
+        "code_reviews": 40,
+        "account_age_years": 7.03013698630137,
+        "experience_score": 0.75810338724374,
+        "pca_score": 24.730105851074885,
+        "kmeans_category": "Junior"
     },
     "e2baa64e33c44ceeec71bbdfb6669e8869aad831": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274859,
+        "repo_contributions": 1045,
+        "code_reviews": 491,
+        "account_age_years": 10.783561643835617,
+        "experience_score": 0.9944916408698006,
+        "pca_score": 111.57926747683845,
+        "kmeans_category": "Senior"
     },
     "1a805cebc5727c1a10efca28bd4a3801db9a9af9": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 274795,
+        "repo_contributions": 1045,
+        "code_reviews": 491,
+        "account_age_years": 10.76986301369863,
+        "experience_score": 0.9944664932225986,
+        "pca_score": 111.41516773205645,
+        "kmeans_category": "Senior"
     },
     "236469ad08f6bf3cdcb84537d0f280df79f7794a": {
         "username": "yanxutao89",
-        "total_contributions": 128,
-        "repo_contributions": 104,
-        "code_reviews": 93,
-        "account_age_years": 8.158904109589042,
-        "experience_score": 0.8931292078904172
+        "total_contributions": 91,
+        "repo_contributions": 14,
+        "code_reviews": 16,
+        "account_age_years": 6.736986301369863,
+        "experience_score": 0.5660296109303198,
+        "pca_score": 19.239142555414187,
+        "kmeans_category": "Junior"
     },
     "7799c1d5c214195bf76da8094ed3e8b7d5f6e95d": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 282018,
+        "repo_contributions": 2411,
+        "code_reviews": 519,
+        "account_age_years": 11.802739726027397,
+        "experience_score": 0.9960801519673665,
+        "pca_score": 139.55349347352515,
+        "kmeans_category": "Senior"
     },
     "b8df39343be437b19f5db2159d16780ef2a5891a": {
         "username": "wenshao",
-        "total_contributions": 1409,
-        "repo_contributions": 2922,
-        "code_reviews": 651,
-        "account_age_years": 13.032876712328767,
-        "experience_score": 0.9546259543771993
+        "total_contributions": 272495,
+        "repo_contributions": 670,
+        "code_reviews": 490,
+        "account_age_years": 10.586301369863014,
+        "experience_score": 0.9941174690576999,
+        "pca_score": 107.00102844150356,
+        "kmeans_category": "Senior"
     }
 }

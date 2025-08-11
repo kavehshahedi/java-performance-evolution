@@ -1,34 +1,42 @@
 {
     "b87ab5758c5acbe740d9a7acb52f70f45ac789d3": {
         "username": "dyu",
-        "total_contributions": 109,
-        "repo_contributions": 121,
-        "code_reviews": 51,
-        "account_age_years": 15.542465753424658,
-        "experience_score": 0.8058018767828481
+        "total_contributions": 4991,
+        "repo_contributions": 83,
+        "code_reviews": 44,
+        "account_age_years": 10.443835616438356,
+        "experience_score": 0.8331089685029204,
+        "pca_score": 69.7036085851189,
+        "kmeans_category": "Mid"
     },
     "3a26b9899dfb9c6d3784db0fd72431c4664fcdc9": {
         "username": "dyu",
-        "total_contributions": 109,
-        "repo_contributions": 121,
-        "code_reviews": 51,
-        "account_age_years": 15.542465753424658,
-        "experience_score": 0.8058018767828481
+        "total_contributions": 1178,
+        "repo_contributions": 39,
+        "code_reviews": 20,
+        "account_age_years": 7.057534246575343,
+        "experience_score": 0.6758721948743439,
+        "pca_score": 36.21573469480493,
+        "kmeans_category": "Junior"
     },
     "8b09091191bf5b997a22d01309e293c51a76e784": {
         "username": "dyu",
-        "total_contributions": 109,
-        "repo_contributions": 121,
-        "code_reviews": 51,
-        "account_age_years": 15.542465753424658,
-        "experience_score": 0.8058018767828481
+        "total_contributions": 1174,
+        "repo_contributions": 39,
+        "code_reviews": 18,
+        "account_age_years": 7.054794520547945,
+        "experience_score": 0.6690157415955991,
+        "pca_score": 35.925132771516445,
+        "kmeans_category": "Junior"
     },
     "72e7c529f20b9e81a670591536cf9fc1846e9bab": {
         "username": "dyu",
-        "total_contributions": 109,
-        "repo_contributions": 121,
-        "code_reviews": 51,
-        "account_age_years": 15.542465753424658,
-        "experience_score": 0.8058018767828481
+        "total_contributions": 1182,
+        "repo_contributions": 39,
+        "code_reviews": 22,
+        "account_age_years": 7.057534246575343,
+        "experience_score": 0.6824431011124684,
+        "pca_score": 36.44072047169484,
+        "kmeans_category": "Junior"
     }
 }
